@@ -1,0 +1,20 @@
+[
+  {
+    "question": "A LGPD se aplica ao tratamento de dados pessoais feito exclusivamente para fins jornalísticos, artísticos ou acadêmicos?",
+    "context": "Art. 4º Esta Lei não se aplica ao tratamento de dados pessoais: [...] II - realizado para fins exclusivamente: a) jornalístico e artísticos; ou b) acadêmicos, aplicando-se a esta hipótese os arts. 7º e 11 desta Lei; III - realizado para fins exclusivos de: a) segurança pública; b) defesa nacional; c) segurança do Estado; ou d) atividades de investigação e repressão de infrações penais.",
+    "answer": "Não. A LGPD não se aplica ao tratamento de dados pessoais realizado para fins exclusivamente jornalísticos, artísticos ou acadêmicos (no caso dos acadêmicos, observados os arts. 7º e 11), nem para fins exclusivos de segurança pública, defesa nacional, segurança do Estado ou investigação e repressão de infrações penais.\n\n## Fontes utilizadas\n- Lei nº 13.709/2018 (LGPD), art. 4º",
+    "source": "Lei nº 13.709/2018 (LGPD)"
+  },
+  {
+    "question": "As normas do Código de Ética Médica valem também para atividades de ensino e pesquisa, ou apenas para o atendimento clínico?",
+    "context": "PREÂMBULO I - O presente Código de Ética Médica contém as normas que devem ser seguidas pelos médicos no exercício de sua profissão, inclusive nas atividades relativas a ensino, pesquisa e administração de serviços de saúde, bem como em quaisquer outras que utilizem o conhecimento advindo do estudo da medicina. II - As organizações de prestação de serviços médicos estão sujeitas às normas deste Código.",
+    "answer": "Valem também para ensino e pesquisa. O Código de Ética Médica contém as normas que os médicos devem seguir no exercício da profissão, inclusive nas atividades de ensino, pesquisa e administração de serviços de saúde. As organizações de prestação de serviços médicos também estão sujeitas a essas normas.\n\n## Fontes utilizadas\n- Código de Ética Médica (Resolução CFM nº 2.217/2018)",
+    "source": "Código de Ética Médica (CFM)"
+  },
+  {
+    "question": "Qual é o prazo para o médico apresentar defesa em um processo ético-profissional no CFM?",
+    "context": "CÓDIGO DE PROCESSO ÉTICO-PROFISSIONAL - 2022 (Resolução CFM nº 2.306/2022). Art. 1º A sindicância e o processo ético-profissional (PEP) nos Conselhos Regionais de Medicina (CRMs) e no Conselho Federal de Medicina (CFM) serão regidos por este Código de Processo Ético-Profissional e tramitarão em sigilo processual. Art. 2º A competência para julgar infrações éticas é do CRM em que o médico esteja inscrito ao tempo da ocorrência do fato punível.",
+    "answer": "Não encontrei informações suficientes nas fontes recuperadas para responder com segurança.",
+    "source": ""
+  }
+]

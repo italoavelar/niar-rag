@@ -1,0 +1,292 @@
+[
+  {
+    "document_id": "iso_38507_2022",
+    "title": "ISO/IEC 38507:2022",
+    "source_url": "https://www.iso.org/standard/56641.html",
+    "source_type": "HTML",
+    "origin": "estatico",
+    "relation": "raiz",
+    "text_length": 2037,
+    "chunks": 2
+  },
+  {
+    "document_id": "iso_22989_2022",
+    "title": "ISO/IEC 22989:2022",
+    "source_url": "https://www.iso.org/standard/74296.html",
+    "source_type": "HTML",
+    "origin": "estatico",
+    "relation": "raiz",
+    "text_length": 1600,
+    "chunks": 2
+  },
+  {
+    "document_id": "iso_24368_2022",
+    "title": "ISO/IEC TR 24368:2022",
+    "source_url": "https://www.iso.org/standard/78507.html",
+    "source_type": "HTML",
+    "origin": "estatico",
+    "relation": "raiz",
+    "text_length": 2888,
+    "chunks": 3
+  },
+  {
+    "document_id": "iso_42001_2023",
+    "title": "ISO/IEC 42001:2023",
+    "source_url": "https://www.iso.org/standard/42001",
+    "source_type": "HTML",
+    "origin": "estatico",
+    "relation": "raiz",
+    "text_length": 5493,
+    "chunks": 6
+  },
+  {
+    "document_id": "lgpd_BR_2018",
+    "title": "Lei Geral de Proteção de Dados Pessoais (LGPD)",
+    "source_url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+    "source_type": "HTML",
+    "origin": "estatico",
+    "relation": "raiz",
+    "text_length": 106882,
+    "chunks": 120
+  },
+  {
+    "document_id": "ai_principles_OECD_",
+    "title": "OECD AI Principles overview",
+    "source_url": "https://oecd.ai/en/ai-principles",
+    "source_type": "HTML",
+    "origin": "estatico",
+    "relation": "raiz",
+    "text_length": 2297,
+    "chunks": 3
+  },
+  {
+    "document_id": "resolucao_2_ANPD_2024",
+    "title": "Resolução CD/ANPD nº 2, de 27 de janeiro de 2022",
+    "source_url": "https://www.gov.br/anpd/pt-br/acesso-a-informacao/institucional/atos-normativos/regulamentacoes_anpd/resolucao-cd-anpd-no-2-de-27-de-janeiro-de-2022",
+    "source_type": "HTML",
+    "origin": "estatico",
+    "relation": "raiz",
+    "text_length": 12195,
+    "chunks": 14
+  },
+  {
+    "document_id": "dpia_ICO_",
+    "title": "What is a DPIA?",
+    "source_url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/data-protection-impact-assessments-dpias/what-is-a-dpia/#what1",
+    "source_type": "HTML",
+    "origin": "estatico",
+    "relation": "raiz",
+    "text_length": 9046,
+    "chunks": 10
+  },
+  {
+    "document_id": "cdc_BR_1990",
+    "title": "Código de Defesa do Consumidor",
+    "source_url": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm",
+    "source_type": "HTML",
+    "origin": "estatico",
+    "relation": "raiz",
+    "text_length": 82267,
+    "chunks": 92
+  },
+  {
+    "document_id": "iso_5338_2023",
+    "title": "ISO/IEC 5338:2023",
+    "source_url": "https://www.iso.org/standard/81118.html",
+    "source_type": "HTML",
+    "origin": "estatico",
+    "relation": "raiz",
+    "text_length": 1919,
+    "chunks": 2
+  },
+  {
+    "document_id": "iso_27701_2025",
+    "title": "ISO/IEC 27701:2025",
+    "source_url": "https://www.iso.org/standard/27701",
+    "source_type": "HTML",
+    "origin": "estatico",
+    "relation": "raiz",
+    "text_length": 2952,
+    "chunks": 3
+  },
+  {
+    "document_id": "iso_27001_2022",
+    "title": "ISO/IEC 27001:2022",
+    "source_url": "https://www.iso.org/standard/27001",
+    "source_type": "HTML",
+    "origin": "estatico",
+    "relation": "raiz",
+    "text_length": 8856,
+    "chunks": 10
+  },
+  {
+    "document_id": "iso_23894_2023",
+    "title": "ISO/IEC 23894:2023",
+    "source_url": "https://www.iso.org/standard/77304.html",
+    "source_type": "HTML",
+    "origin": "estatico",
+    "relation": "raiz",
+    "text_length": 1722,
+    "chunks": 2
+  },
+  {
+    "document_id": "lei_8080_BR_90",
+    "title": "Lei nº 8.080, de 19 de setembro de 1990",
+    "source_url": "https://www.planalto.gov.br/ccivil_03/leis/l8080.htm",
+    "source_type": "HTML",
+    "origin": "estatico",
+    "relation": "raiz",
+    "text_length": 71381,
+    "chunks": 82
+  },
+  {
+    "document_id": "cp_BR_1940",
+    "title": "Código Penal",
+    "source_url": "https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm",
+    "source_type": "HTML",
+    "origin": "estatico",
+    "relation": "raiz",
+    "text_length": 263388,
+    "chunks": 287
+  },
+  {
+    "document_id": "cf_BR_1988",
+    "title": "Constituição da República Federativa do Brasil de 1988",
+    "source_url": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+    "source_type": "HTML",
+    "origin": "estatico",
+    "relation": "raiz",
+    "text_length": 59715,
+    "chunks": 66
+  },
+  {
+    "document_id": "eca_BR_1990",
+    "title": "Estatuto da Criança e do Adolescente (ECA)",
+    "source_url": "https://www.planalto.gov.br/ccivil_03/leis/l8069.htm",
+    "source_type": "HTML",
+    "origin": "estatico",
+    "relation": "raiz",
+    "text_length": 9269,
+    "chunks": 11
+  },
+  {
+    "document_id": "lei_3268_BR_1957",
+    "title": "Lei nº 3.268, de 30 de setembro de 1957",
+    "source_url": "https://www.planalto.gov.br/ccivil_03/leis/l3268.htm",
+    "source_type": "HTML",
+    "origin": "estatico",
+    "relation": "raiz",
+    "text_length": 17608,
+    "chunks": 20
+  },
+  {
+    "document_id": "lei_6681_BR_1979",
+    "title": "Lei nº 6.681, de 16 de agosto de 1979",
+    "source_url": "https://www.planalto.gov.br/ccivil_03/leis/1970-1979/l6681.htm",
+    "source_type": "HTML",
+    "origin": "estatico",
+    "relation": "raiz",
+    "text_length": 5502,
+    "chunks": 6
+  },
+  {
+    "document_id": "decreto_44045_BR_1958",
+    "title": "Decreto nº 44.045, de 19 de julho de 1958",
+    "source_url": "https://www.planalto.gov.br/ccivil_03/decreto/1950-1969/d44045.htm",
+    "source_type": "HTML",
+    "origin": "estatico",
+    "relation": "raiz",
+    "text_length": 40515,
+    "chunks": 47
+  },
+  {
+    "document_id": "iso_25237_2017",
+    "title": "ISO 25237:2017",
+    "source_url": "https://www.iso.org/standard/63553.html",
+    "source_type": "HTML",
+    "origin": "estatico",
+    "relation": "raiz",
+    "text_length": 2624,
+    "chunks": 3
+  },
+  {
+    "document_id": "certificacao_SBIS_",
+    "title": "Certificação de Aplicações de Inteligência Artificial em Saúde",
+    "source_url": "https://sbis.org.br/certificacoes/certificacao-de-ia/",
+    "source_type": "HTML",
+    "origin": "estatico",
+    "relation": "raiz",
+    "text_length": 5566,
+    "chunks": 6
+  },
+  {
+    "document_id": "tcud_CEP_2015",
+    "title": "Termo de Compromisso de Utilização de Dados (TCUD)",
+    "source_url": "https://www.ufmg.br/bioetica/cep/tcud/",
+    "source_type": "HTML",
+    "origin": "estatico",
+    "relation": "raiz",
+    "text_length": 4636,
+    "chunks": 5
+  },
+  {
+    "document_id": "regulamento_interno_CEP_2024",
+    "title": "Regulamento Interno do Comitê de Ética em Pesquisa da Universidade Federal de Minas Gerais - CEP/UFMG",
+    "source_url": "https://www.ufmg.br/bioetica/cep/regimento/",
+    "source_type": "HTML",
+    "origin": "estatico",
+    "relation": "raiz",
+    "text_length": 46861,
+    "chunks": 53
+  },
+  {
+    "document_id": "relatorio_pesquisa_CEP_",
+    "title": "Relatório de Pesquisa (Comitê de Ética em Pesquisa)",
+    "source_url": "https://www.ufmg.br/bioetica/cep/modelo-de-relatorio-parcial-ou-final/",
+    "source_type": "HTML",
+    "origin": "estatico",
+    "relation": "raiz",
+    "text_length": 4003,
+    "chunks": 4
+  },
+  {
+    "document_id": "lei_14874_BR_2024",
+    "title": "Lei nº 14.874, de 28 de maio de 2024",
+    "source_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14874.htm",
+    "source_type": "HTML",
+    "origin": "estatico",
+    "relation": "raiz",
+    "text_length": 63188,
+    "chunks": 72
+  },
+  {
+    "document_id": "rnds_MS_",
+    "title": "Rede Nacional de Dados em Saúde",
+    "source_url": "https://www.gov.br/saude/pt-br/composicao/seidigi/rnds",
+    "source_type": "HTML",
+    "origin": "estatico",
+    "relation": "raiz",
+    "text_length": 3141,
+    "chunks": 4
+  },
+  {
+    "document_id": "lei_13787_BR_2018",
+    "title": "Lei nº 13.787, de 27 de dezembro de 2018",
+    "source_url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13787.htm",
+    "source_type": "HTML",
+    "origin": "estatico",
+    "relation": "raiz",
+    "text_length": 3938,
+    "chunks": 5
+  },
+  {
+    "document_id": "resolucao_19_ANPD_2024",
+    "title": "Resolução CD/ANPD nº 19, de 23 de agosto de 2024",
+    "source_url": "https://www.gov.br/anpd/pt-br/acesso-a-informacao/institucional/atos-normativos/regulamentacoes_anpd/resolucao-cd-anpd-no-19-de-23-de-agosto-de-2024",
+    "source_type": "HTML",
+    "origin": "estatico",
+    "relation": "raiz",
+    "text_length": 63599,
+    "chunks": 71
+  }
+]

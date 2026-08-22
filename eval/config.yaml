@@ -1,0 +1,204 @@
+# ============================================================================
+# Pipeline de Avaliação RAG — NIAR (jurídico-saúde / governança de IA)
+# Tudo aqui é dirigido por config para reprodutibilidade. Altere e re-rode.
+# ============================================================================
+
+seed: 42
+
+paths:
+  # Corpus = os chunks que já alimentam o Qdrant em produção.
+  corpus:        "../data/processed/documents.jsonl"
+  manifest:      "../corpus_manifest.csv"
+  # Artefatos da avaliação
+  golden_qa:     "data/golden_qa.jsonl"          # gold set ancorado (gerado + curado)
+  golden_review: "data/golden_qa_review.xlsx"    # planilha p/ curadoria humana
+  queries_csv:   "data/queries.csv"              # derivado p/ engine de retrieval
+  qrels_csv:     "data/qrels.csv"                # derivado (QueryId, ChunkId, Relevance)
+  results_dir:   "results"
+
+# ----------------------------------------------------------------------------
+# Geração do gold set (Etapa 01)
+# ----------------------------------------------------------------------------
+golden:
+  # ATENÇÃO: o gold set EM USO (data/golden_qa.jsonl) foi gerado com o Claude em
+  # sessão e integrado por eval/tools/build_gold_manual.py — este bloco NÃO o
+  # produziu. Ele governa apenas o caminho automatizado (01_build_golden.py), que
+  # é o fallback caso se queira regerar via API.
+  # O gerador precisa ser INDEPENDENTE dos modelos avaliados: ≠ Gemini (embedding),
+  # ≠ Qwen (gerador do RAG), ≠ Llama / gpt-oss (juízes).
+  generator:
+    provider: "groq"
+    model:    "moonshotai/kimi-k2-instruct"   # LLM independente (ajuste se indisponível)
+    temperature: 0.4
+  questions_per_chunk: 1          # perguntas factuais por chunk (1 = + diversidade de docs)
+  n_factual:      25             # alvo de factuais (amostra chunks até atingir)
+  sample_chunks: null            # null = todos os chunks (pools ricos p/ multi-hop)
+  min_chunk_chars: 400           # ignora chunks muito curtos (cabeçalhos etc.)
+  # Distribuição de tipos de pergunta (robustez do benchmark)
+  types:
+    factual:      true           # 1 chunk
+    multi_hop:    true           # 2+ chunks do mesmo documento
+    comparative:  true           # entre documentos/normas
+    unanswerable: true           # fora de escopo -> testa recusa correta
+  # alvo: 25 por TIPO → 100 no total (gold set enxuto p/ trilha de ferramentas).
+  n_multi_hop:    25
+  n_comparative:  25
+  n_unanswerable: 25
+  # Graus de relevância (qrels)
+  grade_source_chunk:   2        # chunk de onde a pergunta foi gerada
+  grade_neighbor_chunk: 1        # chunks vizinhos (mesma página/doc)
+  # Nota: não usamos dataset público. Os benchmarks PT-BR levantados (BR-TaxQA-R,
+  # legalbench.br, JurisTCU, HealthQA-BR) não cobrem o domínio (jurídico-saúde +
+  # governança de IA) nem a tarefa (geração fundamentada no NOSSO acervo).
+  # Justificativa completa na Seção 6.2 do documento.
+
+# ----------------------------------------------------------------------------
+# Recuperação (Etapa 02) — Cenários A / B / C
+# ----------------------------------------------------------------------------
+retrieval:
+  top_k:        100           # cada cenário (A e B) busca e retorna top-100 — buscas INDEPENDENTES
+  ndcg_k:       [5, 10]       # headline = nDCG@5
+  precision_k:  [5]
+  recall_k:     [5, 10, 100]  # Recall@100 = teto de recuperação (o chunk certo entrou no pool?)
+  f1_k:         [5]
+  mrr_k:        10
+
+  # Cenário A — BM25 bilíngue (pré-processa cada chunk na língua dele)
+  bm25:
+    enabled: true
+    k1: 1.5
+    b:  0.75
+    stemmer: "rslp"              # RSLP p/ PT, Snowball p/ EN (por idioma do chunk)
+    use_prf: false              # expansão pseudo-relevance feedback (opcional)
+    prf_docs: 5
+    prf_terms: 10
+    # CLIR: traduz a consulta PT→EN para o BM25 alcançar docs em inglês (senão o
+    # léxico é injustamente zerado no estrato EN). Roda 2 versões no 02:
+    #   A_bm25    (sem tradução) e A_bm25_mt (com) → ablation de graça.
+    # A fusão (C) usa a versão traduzida quando translate_query=true.
+    translate_query: true
+    translator:
+      provider: "groq"
+      model: "llama-3.3-70b-versatile"
+    # BM25 que alimenta a GERAÇÃO no Cenário A (etapa 03). Padrão: a versão
+    # traduzida — é a mais forte e a MESMA que a fusão (C) usa, então o cenário A
+    # representa o melhor BM25 possível, e não um espantalho. Use "A_bm25" para
+    # gerar a partir do léxico cru. Cai para A_bm25 se a traduzida não existir.
+    bm25_for_gen: "A_bm25_mt"
+
+  # Cenário B — Dense, busca SEPARADA no corpus inteiro.
+  # Comparação de viabilidade: Gemini (proprietário) vs BGE-m3 (aberto) — ambos
+  # multilíngues, pois o corpus é bilíngue (PT + EN). Ver seção 10.1 do documento.
+  dense:
+    enabled: true
+    embedders: ["gemini", "bge_m3"]   # ver bloco embedders abaixo
+    # full   = busca INDEPENDENTE no corpus inteiro (recomendado; fiel à produção; A e B comparáveis)
+    # rerank = re-ranqueia só o top-`top_k` do BM25 (opcional; recall do dense limitado ao BM25)
+    mode: "full"
+
+  # Fusão de DEPLOY (uma só): o 02 funde o MELHOR BM25 (sem/com tradução CLIR) com
+  # o MELHOR denso, escolhidos por nDCG@5 — simétrica por construção. Não é uma
+  # variável de comparação; é "o sistema que a gente implanta". Depois compara-se
+  # se a fusão supera cada componente (e quanto).
+  fusion:
+    enabled: true
+    rrf_k: 30
+    # denso que alimenta a GERAÇÃO no Cenário B (etapa 03). NÃO controla a fusão
+    # (o 02 auto-seleciona o vencedor). Use o denso que você implantaria.
+    dense_for_fusion: "gemini"
+
+# ----------------------------------------------------------------------------
+# Embedders (usados no Cenário B e na fusão)
+# ----------------------------------------------------------------------------
+embedders:
+  gemini:
+    type: "gemini"
+    model: "gemini-embedding-001"
+    dim: 3072
+    task_type_doc:   "RETRIEVAL_DOCUMENT"
+    task_type_query: "RETRIEVAL_QUERY"
+    normalize: true
+    # Avaliação contra a MESMA coleção do Qdrant de produção, se disponível:
+    use_qdrant: true
+    qdrant_collection: "niar_rag_documents"
+    batch_size: 20
+    sleep_between_batches: 8     # respeita rate limit da API Gemini
+
+  # Desafiante aberto: BGE-m3 (BAAI) — multilíngue, forte em recuperação
+  # cross-lingual, aberto e leve (~560M): roda em CPU, sem GPU/Colab.
+  bge_m3:
+    type: "sentence_transformers"
+    model: "BAAI/bge-m3"
+    dim: 1024
+    normalize: true
+    query_instruction: ""        # BGE-m3 não exige instrução na query
+    batch_size: 16
+    device: "auto"               # usa GPU se houver; senão CPU (ok p/ 560M)
+    offline: false               # embute o corpus localmente (fica em cache)
+
+  # Nota: o jua-4B-mixed (ufca-llms, PT-BR jurídico) foi CONSIDERADO e ABANDONADO —
+  # não casa com um corpus 65% em inglês (confundiria domínio com idioma). Ver 10.1.
+
+# ----------------------------------------------------------------------------
+# Geração (Etapa 03) — RAG sob avaliação
+# ----------------------------------------------------------------------------
+generation:
+  generator:
+    provider: "groq"
+    model: "qwen/qwen3.6-27b"        # o Qwen de produção
+    temperature: 0
+    max_tokens: 4096                 # teto, não gasto: só se paga o que for gerado
+    # O Qwen é modelo de raciocínio: com o <think> ligado ele gastava os 2048
+    # tokens PENSANDO (em inglês) e devolvia a resposta truncada — 99 de 100
+    # respostas do 1º run saíram cortadas ou com a tag <think> aberta.
+    # No Groq os valores aceitos para a família qwen3 são "none" e "default".
+    reasoning_effort: "none"
+  context_top_k: 5                 # nº de chunks no contexto (recomendado; use 4 p/ paridade c/ produção)
+  icl:
+    variants: [false, true]        # roda SEM e COM ICL (few-shot)
+    n_shots: 3                     # nº de exemplos few-shot (2 fundamentados + 1 de recusa)
+    # exemplos ficam em eval/data/icl_examples.json (criado pela Etapa 01)
+
+# ----------------------------------------------------------------------------
+# Juízes (Etapa 03/04) — LLM-as-a-judge, 2 modelos independentes
+# ----------------------------------------------------------------------------
+judges:
+  scale: 5                         # notas 1..5
+  temperature: 0
+  models:
+    - name: "llama"
+      provider: "groq"
+      model: "llama-3.3-70b-versatile"
+    - name: "gptoss"
+      provider: "groq"             # ou "cerebras"
+      model: "openai/gpt-oss-120b"
+  # Critérios avaliados (cada um 1..5, com justificativa)
+  criteria:
+    - faithfulness    # groundedness: resposta sustentada pelo contexto recuperado
+    - hallucination   # severidade de fatos/leis/números inventados (5 = nenhuma)
+    - answer_relevance
+    - correctness     # vs resposta-referência do gold set
+    - completeness
+    - citation        # seção "Fontes utilizadas" correta
+    - refusal         # recusou corretamente quando inanswerable?
+  # respostas com nota de alucinação <= este limiar contam como "alucinou" (taxa)
+  hallucination_threshold: 2
+
+# ----------------------------------------------------------------------------
+# Métricas
+# ----------------------------------------------------------------------------
+metrics:
+  georisk_alpha: 2.0               # penalização de risco (Dinçer et al., 2014)
+  significance:
+    test: "randomization"          # teste primário (randomização pareada)
+    n_permutations: 10000
+    n_bootstrap: 10000             # IC 95% do tamanho de efeito (Etapa 05)
+    agreement_bootstrap: 1000      # IC 95% das métricas de concordância (Etapa 04)
+    correction: "holm"             # múltiplas comparações: holm | bh | none
+    alpha: 0.05
+    # H1/RQ1 (não-inferioridade): queda de nDCG@5 ainda aceitável p/ considerar
+    # a migração para o embedding aberto viável. Julga-se pelo IC, não pelo p.
+    noninferiority_margin: 0.03
+    # H3/RQ3: concordância inter-juízes mínima (κ de Cohen ponderado) para as
+    # notas servirem de instrumento de avaliação — porta de entrada da RQ2.
+    kappa_min: 0.6

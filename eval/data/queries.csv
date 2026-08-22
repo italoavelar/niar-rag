@@ -1,0 +1,76 @@
+QueryId,Query
+q0001,"No acompanhamento de doenças crônicas por teleconsulta, é obrigatório algum atendimento presencial?"
+q0002,"No atendimento por telemedicina, o que precisa ser garantido quanto ao consentimento do paciente sobre o compartilhamento de suas informações?"
+q0003,"Na telemedicina, o compartilhamento das informações do paciente com outro profissional exige o quê?"
+q0004,Preciso do consentimento do titular para tratar dados pessoais que ele próprio tornou manifestamente públicos?
+q0005,"Quais direitos tem uma pessoa afetada por um sistema de IA, segundo o PL 2338/2023, independentemente do grau de risco do sistema?"
+q0006,"No PL 2338/2023, qual autoridade coordenaria o Sistema Nacional de Regulação e Governança de Inteligência Artificial (SIA)?"
+q0007,O PL 2338/2023 prevê tratamento diferenciado para startups e pequenas empresas?
+q0008,Um médico que atua como auditor pode receber remuneração vinculada ao sucesso da causa ou à glosa?
+q0009,Como o Código de Ética Médica trata a responsabilidade do médico por seus atos profissionais?
+q0010,A partir de quando passou a vigorar o novo Código de Ética Médica (Resolução CFM nº 2.217/2018)?
+q0011,As cláusulas mandatórias para transferência internacional de dados aprovadas pela ANPD podem ser alteradas pelas partes?
+q0012,"Um sistema de IA transparente é necessariamente preciso, seguro e justo?"
+q0013,O que o NIST AI RMF reconhece sobre os riscos das tecnologias de IA?
+q0014,Há usos de IA que a Recomendação da UNESCO sobre ética da IA proíbe?
+q0015,Como a ferramenta de avaliação de impacto ético da UNESCO classifica a gravidade de um impacto negativo?
+q0016,O direito à portabilidade de dados do GDPR se aplica quando o tratamento se baseia em obrigação legal do controlador?
+q0017,Que capacidade de segurança o GDPR exige diante de um incidente físico ou técnico?
+q0018,A Estratégia Brasileira de Inteligência Artificial menciona alguma ação relacionada ao viés algorítmico?
+q0019,O que a OMS entende por 'responsividade' (responsiveness) em inteligência artificial para a saúde?
+q0020,Que exemplos de controle a FDA sugere contra ataques de envenenamento de dados (data poisoning) em dispositivos habilitados por IA?
+q0021,Que informações sobre a população de pacientes a FDA sugere descrever para um dispositivo habilitado por IA?
+q0022,Quais são responsabilidades do Comitê de Ética em Pesquisa (CEP) segundo a Lei nº 14.874/2024?
+q0023,Qual é um dos objetivos do Espaço Europeu de Dados de Saúde (EEDS)?
+q0024,"No NIST AI RMF, o que a subcategoria MAP 1.6 recomenda sobre os requisitos do sistema?"
+q0025,"Segundo o PL 2338/2023, os agentes de IA de alto risco têm algum dever quanto às medidas de governança?"
+q0051,"Uma pessoa afetada por um sistema de IA de alto risco: que direitos ela tem e a que medidas de governança esse sistema está sujeito, segundo o PL 2338/2023?"
+q0052,"Na telemedicina, o que a Resolução CFM 2.314/2022 exige quanto ao consentimento para compartilhar informações e quanto ao acompanhamento presencial de doenças crônicas?"
+q0053,Que deveres o Código de Ética Médica impõe ao médico quanto à responsabilidade por seus atos e quanto à atuação como auditor?
+q0054,"Por que medir riscos de IA é desafiador e por que esses riscos diferem dos de software tradicional, segundo o NIST?"
+q0055,"Segundo a UNESCO, que usos de IA são proibidos e que mecanismos de responsabilização os sistemas de IA devem ter?"
+q0056,"No GDPR, quando se aplica o direito à portabilidade e que medidas de segurança o controlador deve garantir para os dados?"
+q0057,A Estratégia Brasileira de IA trata tanto do viés algorítmico quanto do impacto no trabalho — o que propõe em cada frente?
+q0058,"Para um dispositivo habilitado por IA, que informações sobre os pacientes descrever e que controles de cibersegurança considerar contra envenenamento de dados, segundo a FDA?"
+q0059,"Na pesquisa clínica, quais são as responsabilidades do Comitê de Ética em Pesquisa (CEP) e as do pesquisador, segundo a Lei nº 14.874/2024?"
+q0060,"Na transferência internacional de dados, o que a Resolução ANPD nº 19/2024 estabelece sobre as cláusulas mandatórias e sobre a responsabilização por danos ao titular?"
+q0061,Que sistema nacional o PL 2338/2023 autoriza para a governança da IA e que tratamento diferenciado prevê para startups?
+q0062,"Segundo a OMS, que risco surge quando grandes empresas de tecnologia controlam dados e algoritmos de saúde, e como as parcerias público-privadas (PPPs) se inserem nesse cenário?"
+q0063,Por que a Resolução CFM 2.314/2022 considera o atendimento presencial a referência e o que exige para compartilhar informações do paciente na telemedicina?
+q0064,"Segundo o NIST AI RMF, qual a relação entre transparência e responsabilização (accountability) e como a função MAP trata os requisitos do sistema?"
+q0065,A Recomendação da UNESCO proíbe certos usos de IA e classifica a gravidade dos impactos — o que proíbe e quais são os níveis de gravidade?
+q0066,"Na pesquisa clínica, o que é a instância nacional de ética em pesquisa e quais são as responsabilidades do CEP, segundo a Lei nº 14.874/2024?"
+q0067,Que responsabilidades cabem ao pesquisador e o que a Lei nº 14.874/2024 veda quanto ao material biológico armazenado em biobanco?
+q0068,"Segundo o NIST, os sistemas de IA só trazem benefícios, e é fácil medir seus riscos?"
+q0069,"No GDPR, que características as sanções administrativas devem ter e que medidas de segurança dos dados são exigidas?"
+q0070,A Estratégia Brasileira de IA aborda tanto o viés algorítmico quanto o uso de IA na segurança pública — o que diz sobre cada um?
+q0071,"Para um dispositivo habilitado por IA, que obrigações de sistema de qualidade e que descrição da população de pacientes a FDA espera?"
+q0072,A Resolução ANPD nº 19/2024: em que situações admite dados provenientes do exterior e que regra vale para as cláusulas mandatórias de transferência?
+q0073,"Segundo a OMS, o que exige a 'responsividade' de uma IA para saúde e que risco de poder existe quando poucas empresas controlam os dados de saúde?"
+q0074,"No PL 2338/2023, além dos direitos das pessoas afetadas pela IA, que estrutura pública é criada para regular e governar a IA?"
+q0075,A UNESCO exige mecanismos de responsabilização para a IA e classifica a gravidade dos impactos — o que exige e como classifica?
+q0076,Como o NIST AI RMF e a Recomendação da UNESCO tratam transparência e responsabilização (accountability) em IA?
+q0077,Como o PL 2338/2023 e o GDPR abordam os direitos das pessoas sobre seus dados pessoais?
+q0078,Como a Resolução CFM de telemedicina e a LGPD tratam a necessidade de consentimento para o uso de informações pessoais?
+q0079,Como a Recomendação da UNESCO e a Estratégia Brasileira de IA tratam usos sensíveis como vigilância e reconhecimento facial?
+q0080,Como o NIST AI RMF e o PL 2338/2023 lidam com a ideia de risco em sistemas de IA?
+q0081,Como o PL 2338/2023 e o NIST AI RMF estruturam a governança de sistemas de IA?
+q0082,Como a Resolução ANPD 19/2024 e o GDPR tratam a responsabilização e as sanções em proteção de dados?
+q0083,Como a FDA e o GDPR tratam a segurança dos dados em sistemas que processam dados sensíveis?
+q0084,Que princípios a OMS e a UNESCO defendem para uma IA confiável?
+q0085,Como o Código de Ética Médica e a Lei nº 14.874/2024 asseguram a isenção de quem fiscaliza a atividade médica e a pesquisa?
+q0086,Como a Resolução ANPD 19/2024 e o Código de Ética Médica atribuem responsabilidade por danos?
+q0087,Como a Estratégia Brasileira de IA e o PL 2338/2023 tratam o risco de viés e discriminação em sistemas de IA?
+q0088,Como a UNESCO e o NIST veem a avaliação de impacto de sistemas de IA?
+q0089,Como o PL 2338/2023 e a Estratégia Brasileira de IA tratam as startups de inteligência artificial no Brasil?
+q0090,Como o Espaço Europeu de Dados de Saúde e a LGPD abordam o uso de dados pessoais e de saúde?
+q0091,Como a OMS e o PL 2338/2023 tratam a questão de quem deve governar a inteligência artificial?
+q0092,Como a FDA (dispositivos com IA) e a Resolução CFM de telemedicina tratam a qualidade e a segurança do cuidado?
+q0093,Como a OMS e o PL 2338/2023 protegem contra viés e discriminação por sistemas de IA?
+q0094,Como a Recomendação da UNESCO e o Código de Ética Médica tratam a autonomia da decisão humana em situações críticas?
+q0095,Como o PL 2338/2023 e a FDA tratam a governança de sistemas de IA de maior risco em setores regulados?
+q0096,Como o NIST e a UNESCO propõem avaliar a gravidade ou a magnitude de impactos negativos da IA?
+q0097,Como o GDPR e a Resolução ANPD 19/2024 asseguram salvaguardas para os dados pessoais?
+q0098,Como o PL 2338/2023 e o NIST AI RMF tratam o dever de informar ou notificar as pessoas sobre sistemas de IA?
+q0099,Como o Espaço Europeu de Dados de Saúde e a OMS veem o uso secundário e o compartilhamento de dados de saúde?
+q0100,Que diretrizes o PL 2338/2023 e a Estratégia Brasileira de IA estabelecem para a atuação do poder público em IA?

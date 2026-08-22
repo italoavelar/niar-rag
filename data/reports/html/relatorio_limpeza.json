@@ -1,0 +1,2030 @@
+{
+  "descartados": [
+    {
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 60
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 267
+    },
+    {
+      "url": "https://www.in.gov.br/en/web/dou/-/portaria-mgi-n-3.485-de-24-de-abril-de-2026-702070785",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 448
+    },
+    {
+      "url": "https://www.in.gov.br/en/web/dou/-/resolucao-de-diretoria-colegiada-rdc-n-657-de-24-de-marco-de-2022-389603457",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 492
+    },
+    {
+      "url": "https://www.iso.org/standard/77608.html",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1330
+    },
+    {
+      "url": "https://www.iso.org/standard/77607.html",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1159
+    },
+    {
+      "url": "https://www.fda.gov/science-research/artificial-intelligence-and-medical-products/fda-digital-health-and-artificial-intelligence-glossary-educational-resource",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1296
+    },
+    {
+      "url": "https://www.in.gov.br/web/dou/-/retificacao-648877873",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 378
+    },
+    {
+      "url": "https://www.in.gov.br/web/dou/-/resolucao-n-32-de-26-de-janeiro-de-2026-683334547",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 434
+    },
+    {
+      "url": "https://www.in.gov.br/en/web/dou/-/resolucao-cd/anpd-n-18-de-16-de-julho-de-2024-572632074",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 452
+    },
+    {
+      "url": "https://www.in.gov.br/en/web/dou/-/resolucao-cd/anpd-n-15-de-24-de-abril-de-2024-556243024",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 452
+    },
+    {
+      "url": "https://www.in.gov.br/en/web/dou/-/enunciado-cd/anpd-n-1-de-22-de-maio-de-2023-485306934",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 448
+    },
+    {
+      "url": "https://eur-lex.europa.eu/advanced-search-form.html",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 56
+    },
+    {
+      "url": "https://eur-lex.europa.eu/content/help.html",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 159
+    },
+    {
+      "url": "https://www.iso.org/contents/data/standard/05/66/56641.detail.rss",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1291
+    },
+    {
+      "url": "https://www.iso.org/contents/data/standard/07/42/74296.detail.rss",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1279
+    },
+    {
+      "url": "https://www.iso.org/standard/88145.html",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 880
+    },
+    {
+      "url": "https://www.iso.org/standard/93144.html",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 713
+    },
+    {
+      "url": "https://www.iso.org/contents/data/standard/07/85/78507.detail.rss",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1270
+    },
+    {
+      "url": "https://www.iso.org/contents/data/standard/08/12/81230.detail.rss",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1248
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/_Ato2007-2010/2008/Lei/L11785.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1410
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/_Ato2007-2010/2008/Lei/L11800.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 983
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/_Ato2007-2010/2009/Lei/L11989.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 866
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/_Ato2007-2010/2009/Lei/L12039.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1240
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2017/Lei/L13486.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1261
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/1989_1994/RET/rlei-8078-90.doc",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 293
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/L8703.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1459
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/L9298.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 884
+    },
+    {
+      "url": "https://www.iso.org/contents/data/standard/07/76/77608.detail.rss",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1283
+    },
+    {
+      "url": "https://www.iso.org/contents/data/standard/07/76/77607.detail.rss",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1281
+    },
+    {
+      "url": "https://www.iso.org/contents/data/standard/08/11/81118.detail.rss",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1247
+    },
+    {
+      "url": "https://www.iso.org/contents/data/standard/08/58/85819.detail.rss",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1296
+    },
+    {
+      "url": "https://www.iso.org/standard/71670.html",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1398
+    },
+    {
+      "url": "https://www.iso.org/contents/data/standard/05/45/54534.html",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1363
+    },
+    {
+      "url": "https://www.iso.org/contents/data/standard/08/28/82875.detail.rss",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1295
+    },
+    {
+      "url": "https://www.iso.org/standard/66805.html",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 780
+    },
+    {
+      "url": "https://www.iso.org/standard/69378.html",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 780
+    },
+    {
+      "url": "https://www.iso.org/standard/88435.html",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1222
+    },
+    {
+      "url": "https://www.iso.org/contents/data/standard/07/73/77304.detail.rss",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1247
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/Decreto-Lei/Del2848.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 563
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/_Ato2011-2014/2013/Lei/L12864.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1110
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/_Ato2011-2014/2013/Lei/L12895.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1042
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/_Ato2023-2026/2023/Lei/L14654.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1240
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/_Ato2023-2026/2024/Lei/L14912.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1152
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/_Ato2023-2026/2025/Lei/L15126.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1316
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/_Ato2023-2026/2026/Lei/L15379.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1190
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/LEIS/1950-1969/L5346.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1437
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/LEIS/1980-1988/L6898.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1070
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/LEIS/1980-1988/L7251.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1255
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/LEIS/1989_1994/L8683.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 745
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/LEIS/L9127.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 994
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/LEIS/L9269.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 770
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/LEIS/LEIS_2001/L10224.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1050
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/_Ato2004-2006/2004/Lei/L10.886.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1168
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/_Ato2007-2010/2007/Lei/L11596.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1275
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/_Ato2007-2010/2009/Lei/L11923.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1153
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/_Ato2007-2010/2009/Lei/L12012.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1155
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/_Ato2007-2010/2009/Lei/L12033.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1254
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/_Ato2019-2022/2020/Lei/L14110.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1025
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/_Ato2023-2026/2025/Lei/L15123.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1491
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/LEIS/L7844.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1221
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/LEIS/L9265.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1476
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/constituicao/Emendas/ECR/ecr4.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1451
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/constituicao/Emendas/ECR/quadro_ecr.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 881
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/constituicao/Emendas/Emc/emc04.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1070
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/constituicao/Emendas/Emc/emc26.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1444
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/constituicao/Emendas/Emc/emc64.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1474
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/constituicao/Emendas/Emc/emc90.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1398
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/_Ato2019-2022/2019/Lei/L13798.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1224
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/_Ato2023-2026/2024/Lei/L14950.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1296
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/_Ato2023-2026/2025/Lei/L15243.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1405
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15450.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1302
+    },
+    {
+      "url": "https://www.planalto.gov.br/ccivil_03/_Ato2007-2010/2009/Decreto/D6821.htm",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1269
+    },
+    {
+      "url": "https://www.iso.org/contents/data/standard/06/35/63553.detail.rss",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1188
+    },
+    {
+      "url": "https://sbis.org.br/certificacoes/certificacao-de-ia/dimensoes-e-dominios-avaliados/",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 649
+    },
+    {
+      "url": "https://sbis.org.br/certificacoes/certificacao-de-ia/estagios-de-maturidade/",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1289
+    },
+    {
+      "url": "https://sbis.org.br/certificacoes/certificacao-de-ia/processo-de-inscricao-e-certificacao/",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 58
+    },
+    {
+      "url": "https://sbis.org.br/sistema-de-gestao-de-associados/",
+      "motivo": "texto_insuficiente_apos_limpeza",
+      "tamanho": 1240
+    }
+  ],
+  "blocos_removidos_automaticamente": [
+    {
+      "dominio": "eur-lex.europa.eu",
+      "trecho": "An official website of the European Union An official EU website How do you know?"
+    },
+    {
+      "dominio": "eur-lex.europa.eu",
+      "trecho": "This document is an excerpt from the EUR-Lex website Search tips Need more search options?"
+    },
+    {
+      "dominio": "www.planalto.gov.br",
+      "trecho": "O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:"
+    },
+    {
+      "dominio": "www.gov.br",
+      "trecho": "de segunda-feira a sexta-feira, das 8h às 20h, e aos sábados, das 8h às 18h."
+    },
+    {
+      "dominio": "www.gov.br",
+      "trecho": "Membro da Vaccine Safety Net (VSN) Organização Mundial da Saúde – OMS O logotipo da VSN é de propriedade da OMS e utilizado com autorização."
+    },
+    {
+      "dominio": "www.gov.br",
+      "trecho": "2º Esta Resolução entra em vigor na data de sua publicação."
+    },
+    {
+      "dominio": "www.gov.br",
+      "trecho": "©2025 - Ministério da Saúde | Todos os direitos reservados."
+    },
+    {
+      "dominio": "sbis.org.br",
+      "trecho": "Dimensões e domínios avaliados Estágios de maturidade Lista de requisitos técnicos Processo de inscrição e certificação Sistema de Gestão de Associados Plataforma desenvolvida com o objetivo de centralizar e simplificar o acesso às ações e informações relacionadas à associação."
+    }
+  ],
+  "candidatos_para_revisao_manual": [
+    {
+      "dominio": "www.iso.org",
+      "trecho": "International Standard published [ 60.60 ] Edition :",
+      "n_paginas": 11,
+      "total_paginas_dominio": 67,
+      "fracao": 0.16,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "The procedures used to develop this document and those intended for its further maintenance are described in the ISO/IEC Directives, Part 1.",
+      "n_paginas": 11,
+      "total_paginas_dominio": 67,
+      "fracao": 0.16,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Any trade name used in this document is information given for the convenience of users and does not constitute an endorsement.",
+      "n_paginas": 11,
+      "total_paginas_dominio": 67,
+      "fracao": 0.16,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "To view the full content, you will need to purchase the standard by clicking on the \"Buy\" button.",
+      "n_paginas": 11,
+      "total_paginas_dominio": 67,
+      "fracao": 0.16,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Any feedback or questions on this document should be directed to the user’s national standards body.",
+      "n_paginas": 10,
+      "total_paginas_dominio": 67,
+      "fracao": 0.15,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "National bodies that are members of ISO or IEC participate in the development of International Standards through technical committees established by the respective organization to deal with particular fields of technical activity.",
+      "n_paginas": 9,
+      "total_paginas_dominio": 67,
+      "fracao": 0.13,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "ISO and IEC technical committees collaborate in fields of mutual interest.",
+      "n_paginas": 9,
+      "total_paginas_dominio": 67,
+      "fracao": 0.13,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Other international organizations, governmental and non-governmental, in liaison with ISO and IEC, also take part in the work.",
+      "n_paginas": 9,
+      "total_paginas_dominio": 67,
+      "fracao": 0.13,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "In particular, the different approval criteria needed for the different types of document should be noted.",
+      "n_paginas": 9,
+      "total_paginas_dominio": 67,
+      "fracao": 0.13,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "ISO and IEC shall not be held responsible for identifying any or all such patent rights.",
+      "n_paginas": 9,
+      "total_paginas_dominio": 67,
+      "fracao": 0.13,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "available at https://www.iso.org/obp — IEC Electropedia:",
+      "n_paginas": 9,
+      "total_paginas_dominio": 67,
+      "fracao": 0.13,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "This document was drafted in accordance with the editorial rules of the ISO/IEC Directives, Part 2 (see www.iso.org/directives or www.iec.ch/members_experts/refdocs ).",
+      "n_paginas": 8,
+      "total_paginas_dominio": 67,
+      "fracao": 0.12,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights.",
+      "n_paginas": 8,
+      "total_paginas_dominio": 67,
+      "fracao": 0.12,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "For an explanation of the voluntary nature of standards, the meaning of ISO specific terms and expressions related to conformity assessment, as well as information about ISO's adherence to the World Trade Organization (WTO) principles in the Technical Barriers to Trade (TBT) see www.iso.org/iso/foreword.html .",
+      "n_paginas": 8,
+      "total_paginas_dominio": 67,
+      "fracao": 0.12,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "In the IEC, see www.iec.ch/understanding-standards .",
+      "n_paginas": 8,
+      "total_paginas_dominio": 67,
+      "fracao": 0.12,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "A complete listing of these bodies can be found at www.iso.org/members.html and www.iec.ch/national-committees .",
+      "n_paginas": 8,
+      "total_paginas_dominio": 67,
+      "fracao": 0.12,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "For dated references, only the edition cited applies.",
+      "n_paginas": 8,
+      "total_paginas_dominio": 67,
+      "fracao": 0.12,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "For undated references, the latest edition of the referenced document (including any amendments) applies.",
+      "n_paginas": 8,
+      "total_paginas_dominio": 67,
+      "fracao": 0.12,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "ISO and IEC maintain terminology databases for use in standardization at the following addresses:",
+      "n_paginas": 8,
+      "total_paginas_dominio": 67,
+      "fracao": 0.12,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Here are some of the relevant standards:",
+      "n_paginas": 8,
+      "total_paginas_dominio": 67,
+      "fracao": 0.12,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "2 Normative references The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document.",
+      "n_paginas": 6,
+      "total_paginas_dominio": 67,
+      "fracao": 0.09,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.planalto.gov.br",
+      "trecho": "Esta Lei entra em vigor na data de sua publicação.",
+      "n_paginas": 28,
+      "total_paginas_dominio": 309,
+      "fracao": 0.09,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.planalto.gov.br",
+      "trecho": "A PRESIDENTA DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:",
+      "n_paginas": 26,
+      "total_paginas_dominio": 309,
+      "fracao": 0.08,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.planalto.gov.br",
+      "trecho": "60 da Constituição Federal, promulgam a seguinte Emenda ao texto constitucional:",
+      "n_paginas": 25,
+      "total_paginas_dominio": 309,
+      "fracao": 0.08,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Please try changing the filter settings.",
+      "n_paginas": 5,
+      "total_paginas_dominio": 67,
+      "fracao": 0.07,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "en fr Foreword ISO (the International Organization for Standardization) and IEC (the International Electrotechnical Commission) form the specialized system for worldwide standardization.",
+      "n_paginas": 5,
+      "total_paginas_dominio": 67,
+      "fracao": 0.07,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Withdrawal of International Standard [ 95.99 ] Edition :",
+      "n_paginas": 5,
+      "total_paginas_dominio": 67,
+      "fracao": 0.07,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "This document was prepared by Joint Technical Committee ISO/IEC JTC 1, Information technology , Subcommittee SC 42, Artificial intelligence .",
+      "n_paginas": 4,
+      "total_paginas_dominio": 67,
+      "fracao": 0.06,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.planalto.gov.br",
+      "trecho": "2º Esta Lei entra em vigor na data de sua publicação.",
+      "n_paginas": 18,
+      "total_paginas_dominio": 309,
+      "fracao": 0.06,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.planalto.gov.br",
+      "trecho": "As Mesas da Câmara dos Deputados e do Senado Federal, nos termos do § 3º do art.",
+      "n_paginas": 20,
+      "total_paginas_dominio": 309,
+      "fracao": 0.06,
+      "parece_texto_legal": true
+    },
+    {
+      "dominio": "www.planalto.gov.br",
+      "trecho": "204º da Independência e 137º da República.",
+      "n_paginas": 16,
+      "total_paginas_dominio": 309,
+      "fracao": 0.05,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.planalto.gov.br",
+      "trecho": "3º Esta Lei entra em vigor na data de sua publicação.",
+      "n_paginas": 15,
+      "total_paginas_dominio": 309,
+      "fracao": 0.05,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Buy together Package - 10% discount AI and information security management package Enhance your organization's AI management and information security with this comprehensive standards package.",
+      "n_paginas": 3,
+      "total_paginas_dominio": 67,
+      "fracao": 0.04,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "not included in the text of the existing standard.",
+      "n_paginas": 3,
+      "total_paginas_dominio": 67,
+      "fracao": 0.04,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "How your data will be used Please see ISO privacy notice .",
+      "n_paginas": 3,
+      "total_paginas_dominio": 67,
+      "fracao": 0.04,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.",
+      "n_paginas": 3,
+      "total_paginas_dominio": 67,
+      "fracao": 0.04,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "This document is applicable to organizations who wish to undertake pseudonymization processes for themselves or to organizations who make a claim of trustworthiness for operations engaged in pseudonymization services.",
+      "n_paginas": 3,
+      "total_paginas_dominio": 67,
+      "fracao": 0.04,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "An effect is a deviation from the expected.",
+      "n_paginas": 3,
+      "total_paginas_dominio": 67,
+      "fracao": 0.04,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Objectives can have different aspects and categories and can be applied at different levels.",
+      "n_paginas": 3,
+      "total_paginas_dominio": 67,
+      "fracao": 0.04,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Risk is usually expressed in terms of risk sources, potential events, their consequences and their likelihood.",
+      "n_paginas": 3,
+      "total_paginas_dominio": 67,
+      "fracao": 0.04,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Performance can relate either to quantitative or qualitative findings.",
+      "n_paginas": 3,
+      "total_paginas_dominio": 67,
+      "fracao": 0.04,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Details of any patent rights identified during the development of the document will be in the Introduction and/or on the ISO list of patent declarations received (see www.iso.org/patents ) or the IEC list of patent declarations received (see https://patents.iec.ch ).",
+      "n_paginas": 3,
+      "total_paginas_dominio": 67,
+      "fracao": 0.04,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "ISO and IEC draw attention to the possibility that the implementation of this document may involve the use of (a) patent(s).",
+      "n_paginas": 3,
+      "total_paginas_dominio": 67,
+      "fracao": 0.04,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "ISO and IEC take no position concerning the evidence, validity or applicability of any claimed patent rights in respect thereof.",
+      "n_paginas": 3,
+      "total_paginas_dominio": 67,
+      "fracao": 0.04,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "As of the date of publication of this document, ISO and IEC had not received notice of (a) patent(s) which may be required to implement this document.",
+      "n_paginas": 3,
+      "total_paginas_dominio": 67,
+      "fracao": 0.04,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "However, implementers are cautioned that this may not represent the latest information, which may be obtained from the patent database available at www.iso.org/patents and https://patents.iec.ch .",
+      "n_paginas": 3,
+      "total_paginas_dominio": 67,
+      "fracao": 0.04,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "This document was drafted in accordance with the editorial rules of the ISO/IEC Directives, Part 2 (see www.iso.org/directives ).",
+      "n_paginas": 3,
+      "total_paginas_dominio": 67,
+      "fracao": 0.04,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "ISO and IEC maintain terminological databases for use in standardization at the following addresses:",
+      "n_paginas": 3,
+      "total_paginas_dominio": 67,
+      "fracao": 0.04,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.planalto.gov.br",
+      "trecho": ".................................................................",
+      "n_paginas": 11,
+      "total_paginas_dominio": 309,
+      "fracao": 0.04,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.planalto.gov.br",
+      "trecho": "197º da Independência e 130º da República.",
+      "n_paginas": 11,
+      "total_paginas_dominio": 309,
+      "fracao": 0.04,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.planalto.gov.br",
+      "trecho": "175º da Independência e 108º da República.",
+      "n_paginas": 11,
+      "total_paginas_dominio": 309,
+      "fracao": 0.04,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.planalto.gov.br",
+      "trecho": "............................................................................................",
+      "n_paginas": 11,
+      "total_paginas_dominio": 309,
+      "fracao": 0.04,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.planalto.gov.br",
+      "trecho": "O PRESIDENTE DA REPÚBLICA , no uso da atribuição que lhe confere o art.",
+      "n_paginas": 13,
+      "total_paginas_dominio": 309,
+      "fracao": 0.04,
+      "parece_texto_legal": true
+    },
+    {
+      "dominio": "www.planalto.gov.br",
+      "trecho": ".....................................................................................................................",
+      "n_paginas": 11,
+      "total_paginas_dominio": 309,
+      "fracao": 0.04,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.planalto.gov.br",
+      "trecho": "........................................................................................",
+      "n_paginas": 11,
+      "total_paginas_dominio": 309,
+      "fracao": 0.04,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.planalto.gov.br",
+      "trecho": ".........................................................................................................",
+      "n_paginas": 12,
+      "total_paginas_dominio": 309,
+      "fracao": 0.04,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.planalto.gov.br",
+      "trecho": ".............................................................................................",
+      "n_paginas": 12,
+      "total_paginas_dominio": 309,
+      "fracao": 0.04,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.planalto.gov.br",
+      "trecho": "........................................................................",
+      "n_paginas": 12,
+      "total_paginas_dominio": 309,
+      "fracao": 0.04,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "This document also provides guidance to a wider community, including:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "— external businesses or technical specialists, such as legal or accounting specialists, retail or industrial associations, or professional bodies;",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "— internal and external service providers (including consultants);",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "This document is applicable to the governance of current and future uses of AI as well as the implications of such use for the organization itself.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "This document is applicable to any organization, including public and private companies, government entities and not-for-profit organizations.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "This document is applicable to an organization of any size irrespective of their dependence on data or information technologies.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "ISO/IEC 42001:2023 ISO/IEC 27001:2022 English | PDF CHF 380 CHF 340 General information Status :",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "This document can be used in the development of other standards and in support of communications among diverse, interested parties or stakeholders.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "This document is applicable to all types of organizations (e.g.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "commercial enterprises, government agencies, not-for-profit organizations).",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Buy together Package - 10% discount AI data quality management package Ensure high-quality data for analytics and machine learning with our comprehensive ISO/IEC 5259 standards package.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "ISO 5259-1:2024 IEC 5259-2:2024 IEC 5259-3:2024 IEC 5259-4:2024 IEC 5259-5:2024 English | PDF CHF 734 CHF 660 General information Status :",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "— approaches to establish trust in AI systems through transparency, explainability, controllability, etc.;",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "— engineering pitfalls and typical associated threats and risks to AI systems, along with possible mitigation techniques and methods;",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "and — approaches to assess and achieve availability, resiliency, reliability, accuracy, safety, security and privacy of AI systems.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "The specification of levels of trustworthiness for AI systems is out of the scope of this document.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Measurement techniques and methods for assessing bias are described, with the aim to address and treat bias-related vulnerabilities.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "All AI system lifecycle phases are in scope, including but not limited to data collection, training, continual learning, design, testing, evaluation and use.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "This document provides processes that support the definition, control, management, execution and improvement of the AI system in its life cycle stages.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "These processes can also be used within an organization or a project when developing or acquiring AI systems.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "When an element of an AI system is traditional software or a traditional system, the software life cycle processes in ISO/IEC/IEEE 12207 and the system life cycle processes in ISO/IEC/IEEE 15288 can be used to implement that element.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "This package features three essential ISO/IEC standards:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "It defines requirements an ISMS must meet.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "The ISO/IEC 27001 standard provides companies of any size and from all sectors of activity with guidance for establishing, implementing, maintaining and continually improving an information security management system.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Conformity with ISO/IEC 27001 means that an organization or business has put in place a system to manage risks related to the security of data owned or handled by the company, and that this system respects all the best practices and principles enshrined in this International Standard.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Cookie consent is required Please view on Vimeo or adjust your privacy settings .",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "The guidance also aims to assist organizations to integrate risk management into their AI-related activities and functions.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "It moreover describes processes for the effective implementation and integration of AI risk management.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "The application of this guidance can be customized to any organization and its context.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "ISO 25237:2017 - defines one basic concept for pseudonymization (see Clause 5), - defines one basic methodology for pseudonymization services including organizational, as well as technical aspects (see Clause 6), - specifies a policy framework and minimal requirements for controlled re-identification (see Clause 7), - gives an overview of different use cases for pseudonymization that can be both reversible and irreversible (see Annex A), - gives a guide to risk assessment for re-identification (see Annex B), - provides an example of a system that uses de-identification (see Annex C), - provides informative requirements to an interoperability to pseudonymization services (see Annex D), and - specifies a policy framework and minimal requirements for trustworthy practices for the operations of a pseudonymization service (see Annex E).",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "ANSI ( United States ) Committee Manager :",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "+1.202.293.9287 / +1 212 398 00 23 Email:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Fundamental terms 95.99 ISO/IEC JTC 1 ISO 2382-1:1984 [Withdrawn] Data processing — Vocabulary — Part 1:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Fundamental terms 95.99 ISO/IEC JTC 1 ISO/IEC 2382-1:1993 [Withdrawn] Information technology — Vocabulary — Part 1:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Fundamental terms 95.99 ISO/IEC JTC 1 ISO 2382-2:1976 [Withdrawn] Data processing — Vocabulary — Part 2:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Arithmetic and logic operations 95.99 ISO/IEC JTC 1 ISO 2382-3:1976 [Withdrawn] Data processing — Vocabulary — Section 03 :",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Equipment technology (Selected terms) 95.99 ISO/IEC JTC 1 ISO 2382-3:1987 [Withdrawn] Information processing systems — Vocabulary — Part 3:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Equipment technology 95.99 ISO/IEC JTC 1 ISO 2382-4:1974 [Withdrawn] Data processing — Vocabulary — Section 04 :",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Organization of data 95.99 ISO/IEC JTC 1 ISO/IEC 2382-4:1999 Information technology — Vocabulary — Part 4:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Organization of data 90.92 ISO/IEC JTC 1/SC 32 ISO 2382-4:1987 [Withdrawn] Information processing systems — Vocabulary — Part 4:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Organization of data 95.99 ISO/IEC JTC 1 ISO 2382-5:1974 [Withdrawn] Data processing — Vocabulary — Section 05 :",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Representation of data 95.99 ISO/IEC JTC 1 ISO/IEC 2382-5:1999 [Withdrawn] Information technology — Vocabulary — Part 5:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Representation of data 95.99 ISO/IEC JTC 1/SC 32 ISO 2382-5:1989 [Withdrawn] Information processing systems — Vocabulary — Part 5:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Representation of data 95.99 ISO/IEC JTC 1 ISO 2382-6:1974 [Withdrawn] Data processing — Vocabulary — Section 06 :",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Preparation and handling of data 95.99 ISO/IEC JTC 1 ISO 2382-6:1987 [Withdrawn] Information processing systems — Vocabulary — Part 6:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Preparation and handling of data 95.99 ISO/IEC JTC 1/SC 32 ISO 2382-7:1977 [Withdrawn] Data processing — Vocabulary — Section 07 :",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Computer programming 90.92 ISO/IEC JTC 1 ISO 2382-8:1986 [Withdrawn] Information processing systems — Vocabulary — Part 8:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Control, integrity and security 95.99 ISO/IEC JTC 1 ISO/IEC 2382-8:1998 [Withdrawn] Information technology — Vocabulary — Part 8:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Security 95.99 ISO/IEC JTC 1 ISO 2382-9:1984 [Withdrawn] Data processing — Vocabulary — Part 9:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Data communication 95.99 ISO/IEC JTC 1 ISO/IEC 2382-9:1995 [Withdrawn] Information technology — Vocabulary — Part 9:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Data communication 95.99 ISO/IEC JTC 1 ISO 2382-10:1979 [Withdrawn] Data processing — Vocabulary — Part 10:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Operating techniques and facilities 95.99 ISO/IEC JTC 1 ISO 2382-11:1976 [Withdrawn] Data processing — Vocabulary — Section 11 :",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Reliability, maintenance and availability 95.99 ISO/IEC JTC 1 ISO/IEC 2382-14:1997 [Withdrawn] Information technology — Vocabulary — Part 14:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Information theory 95.99 ISO/IEC JTC 1 ISO/IEC 2382-16:1996 Information technology — Vocabulary — Part 16:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Distributed data processing 95.99 ISO/IEC JTC 1 ISO/IEC 2382-18:1999 [Withdrawn] Information technology — Vocabulary — Part 18:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Distributed data processing 95.99 ISO/IEC JTC 1 ISO 2382-19:1980 [Withdrawn] Data processing — Vocabulary — Section 19 :",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Analog computing 95.99 ISO/IEC JTC 1 ISO 2382-19:1989 Information processing systems — Vocabulary — Part 19:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Artificial intelligence — Basic concepts and expert systems 95.99 ISO/IEC JTC 1 ISO/IEC 2382-29:1999 [Withdrawn] Information technology — Vocabulary — Part 29:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Artificial intelligence — Speech recognition and synthesis 95.99 ISO/IEC JTC 1 ISO/IEC 2382-31:1997 [Withdrawn] Information technology — Vocabulary — Part 31:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Artificial intelligence — Machine learning 95.99 ISO/IEC JTC 1 ISO/IEC 2382-32:1999 [Withdrawn] Information technology — Vocabulary — Part 32:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Electronic Mail 95.99 ISO/IEC JTC 1 ISO/IEC 2382-34:1999 [Withdrawn] Information technology — Vocabulary — Part 34:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Artificial intelligence — Neural networks 95.99 ISO/IEC JTC 1 ISO/IEC 2382-36:2008 [Withdrawn] Information technology — Vocabulary — Part 36:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Learning, education and training 95.99 ISO/IEC JTC 1/SC 36 ISO/IEC 2382-36:2008/Cor 1:2012 [Withdrawn] Information technology — Vocabulary — Part 36:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Learning, education and training — Technical Corrigendum 1 95.99 ISO/IEC JTC 1/SC 36 ISO/IEC 2382-36:2013 [Withdrawn] Information technology — Vocabulary — Part 36:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Learning, education and training 95.99 ISO/IEC JTC 1/SC 36 ISO/IEC 2382-36:2019 Information technology — Vocabulary — Part 36:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Learning, education and training 90.93 ISO/IEC JTC 1/SC 36 ISO/IEC 2382-37:2012 [Withdrawn] Information technology — Vocabulary — Part 37:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Biometrics 95.99 ISO/IEC JTC 1/SC 37 ISO/IEC 2382-37:2017 [Withdrawn] Information technology — Vocabulary — Part 37:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Biometrics 95.99 ISO/IEC JTC 1/SC 37 ISO/IEC 2382-37:2022 Information technology — Vocabulary — Part 37:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Details of any patent rights identified during the development of the document will be in the Introduction and/or on the ISO list of patent declarations received (see www.iso.org/patents ) or the IEC list of patent declarations received (see patents.iec.ch ).",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "This package includes two essential components:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Nomenclature 95.99 ISO/TC 215 ISO/IEEE 11073-10101:2004/Amd 1:2017 [Withdrawn] Health informatics — Point-of-care medical device communication — Part 10101:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Additional definitions 95.99 ISO/TC 215 ISO/IEEE 11073-10101:2020 Health informatics — Device interoperability — Part 10101:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Point-of-care medical device communication — Nomenclature 90.93 ISO/TC 215 ISO/IEEE 11073-10101:2020/Amd 1 [Under development] Health informatics — Device interoperability — Part 10101:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Point-of-care medical device communication — Nomenclature — Amendment 1:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "2 Normative references There are no normative references in this document.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "3 Terms and definitions For the purposes of this document, the following terms and definitions apply.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Information can exist in numeric or symbolic form.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Information is data that has been contextualized, so that it is interpretable.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Concepts and models for information and communications technology security management 95.99 ISO/IEC JTC 1/SC 27 ISO/IEC TR 13335-1:1996 [Withdrawn] Information technology — Guidelines for the management of IT Security — Part 1:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Concepts and models for IT Security 95.99 ISO/IEC JTC 1/SC 27 ISO/IEC TR 13335-2:1997 [Withdrawn] Information technology — Guidelines for the management of IT Security — Part 2:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Managing and planning IT Security 95.99 ISO/IEC JTC 1/SC 27 ISO/IEC TR 13335-3:1998 [Withdrawn] Information technology — Guidelines for the management of IT Security — Part 3:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Techniques for the management of IT Security 95.99 ISO/IEC JTC 1/SC 27 ISO/IEC TR 13335-4:2000 [Withdrawn] Information technology — Guidelines for the management of IT Security — Part 4:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Selection of safeguards 95.99 ISO/IEC JTC 1/SC 27 ISO/IEC TR 13335-5:2001 [Withdrawn] Information technology — Guidelines for the management of IT Security — Part 5:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "available at https://www.electropedia.org/ 3.1 organization person or group of people that has its own functions with responsibilities, authorities and relationships to achieve its objectives (3.6) Note 1 to entry:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Top management has the power to delegate authority and provide resources within the organization.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "If the scope of the management system (3.4) covers only part of an organization, then top management refers to those who direct and control that part of the organization.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "3.4 management system set of interrelated or interacting elements of an organization (3.1) to establish policies (3.5) and objectives (3.6) , as well as processes (3.8) to achieve those objectives Note 1 to entry:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "A management system can address a single discipline or several disciplines.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "The management system elements include the organization’s structure, roles and responsibilities, planning and operation.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "3.5 policy intentions and direction of an organization (3.1) as formally expressed by its top management (3.3) 3.6 objective result to be achieved Note 1 to entry:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "An objective can be strategic, tactical, or operational.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Objectives can relate to different disciplines (such as finance, health and safety, and environment).",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "They can be, for example, organization-wide or specific to a project, product or process (3.8) .",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "An objective can be expressed in other ways, e.g.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "3.7 risk effect of uncertainty Note 1 to entry:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "An effect is a deviation from the expected — positive or negative.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Uncertainty is the state, even partial, of deficiency of information related to, understanding or knowledge of, an event, its consequence, or likelihood.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "3.8 process set of interrelated or interacting activities that uses or transforms inputs to deliver a result Note 1 to entry:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Whether the result of a process is called an output, a product or a service depends on the context of the reference.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "3.9 competence ability to apply knowledge and skills to achieve intended results 3.10 documented information information required to be controlled and maintained by an organization (3.1) and the medium on which it is contained Note 1 to entry:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Documented information can be in any format and media and from any source.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "— the management system (3.4) , including related processes (3.8) ;",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "— information created in order for the organization to operate (documentation);",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "— evidence of results achieved (records).",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "3.11 performance measurable result Note 1 to entry:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Performance can relate to managing activities, processes (3.8) , products, services, systems or organizations (3.1) .",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "3.12 continual improvement recurring activity to enhance performance (3.11) 3.13 effectiveness extent to which planned activities are realized and planned results are achieved 3.14 requirement need or expectation that is stated, generally implied or obligatory Note 1 to entry:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "“Generally implied” means that it is custom or common practice for the organization (3.1) and interested parties (3.2) that the need or expectation under consideration is implied.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "A specified requirement is one that is stated, e.g.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "3.15 conformity fulfilment of a requirement (3.14) 3.16 nonconformity non-fulfilment of a requirement (3.14) 3.17 corrective action action to eliminate the cause(s) of a nonconformity (3.16) and to prevent recurrence 3.18 audit systematic and independent process (3.8) for obtaining evidence and evaluating it objectively to determine the extent to which the audit criteria are fulfilled Note 1 to entry:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "An audit can be an internal audit (first party) or an external audit (second party or third party), and it can be a combined audit (combining two or more disciplines).",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "An internal audit is conducted by the organization (3.1) itself, or by an external party on its behalf.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "“Audit evidence” and “audit criteria” are defined in ISO 19011 .",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "3.19 measurement process (3.8) to determine a value 3.20 monitoring determining the status of a system, a process (3.8) or an activity Note 1 to entry:",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "To determine the status, there can be a need to check, supervise or critically observe.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "For an explanation of the voluntary nature of standards, the meaning of ISO specific terms and expressions related to conformity assessment, as well as information about ISO's adherence to the World Trade Organization (WTO) principles in the Technical Barriers to Trade (TBT), see www.iso.org/iso/foreword.html .",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "A complete listing of these bodies can be found at www.iso.org/members.html .",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "The work of preparing International Standards is normally carried out through ISO technical committees.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Each member body interested in a subject for which a technical committee has been established has the right to be represented on that committee.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "International organizations, governmental and non-governmental, in liaison with ISO, also take part in the work.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "ISO collaborates closely with the International Electrotechnical Commission (IEC) on all matters of electrotechnical standardization.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "ISO shall not be held responsible for identifying any or all such patent rights.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "Details of any patent rights identified during the development of the document will be in the Introduction and/or on the ISO list of patent declarations received (see www.iso.org/patents ).",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "available at https://www.electropedia.org/ Only informative sections of standards are publicly available.",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.iso.org",
+      "trecho": "ISO/IEC 27001:2022 General information Status :",
+      "n_paginas": 2,
+      "total_paginas_dominio": 67,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.planalto.gov.br",
+      "trecho": "CAPÍTULO I DISPOSIÇÕES PRELIMINARES Art.",
+      "n_paginas": 9,
+      "total_paginas_dominio": 309,
+      "fracao": 0.03,
+      "parece_texto_legal": true
+    },
+    {
+      "dominio": "www.planalto.gov.br",
+      "trecho": ".......................................................................................",
+      "n_paginas": 10,
+      "total_paginas_dominio": 309,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.planalto.gov.br",
+      "trecho": "Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:",
+      "n_paginas": 9,
+      "total_paginas_dominio": 309,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.planalto.gov.br",
+      "trecho": "192º da Independência e 125º da República.",
+      "n_paginas": 8,
+      "total_paginas_dominio": 309,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.planalto.gov.br",
+      "trecho": ".........................................................................................................................",
+      "n_paginas": 9,
+      "total_paginas_dominio": 309,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.planalto.gov.br",
+      "trecho": "......................................................................................................",
+      "n_paginas": 10,
+      "total_paginas_dominio": 309,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.planalto.gov.br",
+      "trecho": "....................................................................................................",
+      "n_paginas": 8,
+      "total_paginas_dominio": 309,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.planalto.gov.br",
+      "trecho": "........................................................................................................................",
+      "n_paginas": 10,
+      "total_paginas_dominio": 309,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.planalto.gov.br",
+      "trecho": ".....................................................................................................",
+      "n_paginas": 8,
+      "total_paginas_dominio": 309,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.planalto.gov.br",
+      "trecho": "4º Esta Lei entra em vigor na data de sua publicação.",
+      "n_paginas": 8,
+      "total_paginas_dominio": 309,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.planalto.gov.br",
+      "trecho": "62 da Constituição, adota a seguinte Medida Provisória, com força de lei:",
+      "n_paginas": 8,
+      "total_paginas_dominio": 309,
+      "fracao": 0.03,
+      "parece_texto_legal": true
+    },
+    {
+      "dominio": "www.planalto.gov.br",
+      "trecho": "................................................................................................................................",
+      "n_paginas": 9,
+      "total_paginas_dominio": 309,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.planalto.gov.br",
+      "trecho": "...................................................................................................................................",
+      "n_paginas": 8,
+      "total_paginas_dominio": 309,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.planalto.gov.br",
+      "trecho": "205º da Independência e 138º da República.",
+      "n_paginas": 8,
+      "total_paginas_dominio": 309,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.planalto.gov.br",
+      "trecho": ".............................................................................................................",
+      "n_paginas": 8,
+      "total_paginas_dominio": 309,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.planalto.gov.br",
+      "trecho": "...................................................................................",
+      "n_paginas": 10,
+      "total_paginas_dominio": 309,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    },
+    {
+      "dominio": "www.planalto.gov.br",
+      "trecho": "................................................................................................",
+      "n_paginas": 8,
+      "total_paginas_dominio": 309,
+      "fracao": 0.03,
+      "parece_texto_legal": false
+    }
+  ]
+}

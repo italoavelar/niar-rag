@@ -1,0 +1,33 @@
+# Dependências do AGENTE EM PRODUÇÃO (chatbot + servidor LangGraph).
+#
+# Deliberadamente SEM torch / transformers / sentence-transformers / faiss-cpu.
+# Motivo: langchain_core/language_models/base.py faz `try: from transformers
+# import GPT2TokenizerFast` no topo do módulo. Se o transformers estiver
+# instalado, ele é importado inteiro (~46 s nesta máquina) só para poder contar
+# tokens — algo que este agente nunca faz, porque a Groq tokeniza no servidor.
+# Sem o pacote instalado, o try cai no except e o custo some.
+# Medido: import do grafo 33 s COM transformers vs 3,5 s SEM.
+#
+# A pilha pesada continua necessária na AVALIAÇÃO (BGE-m3 em eval/lib/embedders.py)
+# e permanece no requirements.txt + eval/requirements-eval.txt, em outro venv.
+#
+# Instalar em um venv próprio, de preferência FORA do OneDrive (a sincronização
+# torna o import lento e imprevisível):
+#   python -m venv C:\dev\niar-agent
+#   C:\dev\niar-agent\Scripts\python.exe -m pip install -r requirements-agent.txt
+
+# --- orquestração ---
+langgraph
+langgraph-cli
+langgraph-api
+
+# --- modelos e cliente do vetor ---
+langchain-core            # @tool, mensagens (NÃO instalar o guarda-chuva `langchain`)
+langchain-groq            # gerador (chat_node)
+langchain-google-genai    # embedding da consulta (import tardio em tools.py)
+qdrant-client
+
+# --- utilitários ---
+numpy                     # normalize() do vetor de consulta
+python-dotenv
+streamlit                 # protótipo de interface (app.py)

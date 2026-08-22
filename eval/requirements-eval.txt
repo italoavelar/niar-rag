@@ -1,0 +1,14 @@
+# Dependências específicas da avaliação (além das do RAG em requirements.txt)
+numpy
+scipy
+scikit-learn
+pandas
+pyyaml
+tqdm
+openpyxl            # export do gold set p/ curadoria (.xlsx)
+rank_bm25           # Cenário A (BM25)
+nltk                # stopwords PT + stemmer RSLP
+krippendorff        # concordância entre juízes (alpha de Krippendorff)
+# já presentes no ambiente do RAG, listados p/ completude:
+# sentence-transformers, qdrant-client, langchain-groq,
+# langchain-google-genai, google-genai, python-dotenv
