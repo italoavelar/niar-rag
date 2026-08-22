@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import csv
 import json
 import re
@@ -7,14 +9,19 @@ from pathlib import Path
 import fitz
 from tqdm import tqdm
 
+from chunking import (
+    CHUNK_OVERLAP,
+    CHUNK_SIZE,
+    MIN_CHUNK_SIZE,
+    choose_split_point,
+    chunk_text,
+    clean_text,
+)
+
 
 INPUT_DIR = Path("docs/raw")
 MANIFEST_FILE = Path("corpus_manifest.csv")
 OUTPUT_FILE = Path("data/processed/pdf_chunks.jsonl")
-
-CHUNK_SIZE = 1200
-CHUNK_OVERLAP = 200
-MIN_CHUNK_SIZE = 120
 
 HEADER_FOOTER_SCAN_LINES = 4
 REPEATED_LINE_MIN_PAGES = 3
@@ -482,113 +489,6 @@ def lines_to_text(lines: list[str]) -> str:
     text = re.sub(r"\s+", " ", text)
 
     return text.strip()
-
-
-def clean_text(text: str) -> str:
-    """
-    Limpeza final do texto já estruturado.
-    """
-    text = text.replace("\u00a0", " ")
-    text = text.replace("\t", " ")
-    text = re.sub(r"\s+", " ", text)
-    return text.strip()
-
-
-def choose_split_point(
-    text: str,
-    start: int,
-    raw_end: int,
-    min_size: int,
-) -> int:
-    """
-    Escolhe um ponto de quebra mais natural para o chunk.
-    """
-    if raw_end >= len(text):
-        return len(text)
-
-    min_end = start + min_size
-
-    punctuation_candidates = [
-        text.rfind(". ", start, raw_end),
-        text.rfind("; ", start, raw_end),
-        text.rfind(": ", start, raw_end),
-        text.rfind("? ", start, raw_end),
-        text.rfind("! ", start, raw_end),
-    ]
-
-    best_punctuation = max(punctuation_candidates)
-
-    if best_punctuation >= min_end:
-        return best_punctuation + 1
-
-    whitespace = text.rfind(" ", start, raw_end)
-
-    if whitespace >= min_end:
-        return whitespace
-
-    return raw_end
-
-
-def chunk_text(
-    text: str,
-    chunk_size: int = CHUNK_SIZE,
-    overlap: int = CHUNK_OVERLAP,
-    min_chunk_size: int = MIN_CHUNK_SIZE,
-) -> list[str]:
-    """
-    Divide o texto em chunks com sobreposição, evitando cortar
-    palavras e reduzindo chunks finais muito pequenos.
-    """
-    if chunk_size <= 0:
-        raise ValueError("chunk_size deve ser maior que zero.")
-
-    if overlap < 0:
-        raise ValueError("overlap não pode ser negativo.")
-
-    if overlap >= chunk_size:
-        raise ValueError("overlap deve ser menor que chunk_size.")
-
-    text = clean_text(text)
-
-    if not text:
-        return []
-
-    if len(text) <= chunk_size:
-        return [text] if len(text) >= min_chunk_size else []
-
-    chunks = []
-    start = 0
-
-    while start < len(text):
-        raw_end = min(start + chunk_size, len(text))
-
-        end = choose_split_point(
-            text=text,
-            start=start,
-            raw_end=raw_end,
-            min_size=min_chunk_size,
-        )
-
-        chunk = text[start:end].strip()
-
-        if chunk:
-            chunks.append(chunk)
-
-        if end >= len(text):
-            break
-
-        new_start = max(end - overlap, start + 1)
-
-        if new_start <= start:
-            break
-
-        start = new_start
-
-    if len(chunks) >= 2 and len(chunks[-1]) < min_chunk_size:
-        chunks[-2] = f"{chunks[-2]} {chunks[-1]}".strip()
-        chunks.pop()
-
-    return chunks
 
 
 def build_chunk_record(
