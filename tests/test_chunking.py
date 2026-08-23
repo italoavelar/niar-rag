@@ -22,7 +22,7 @@ if str(SRC) not in sys.path:
 
 def _install_optional_dependency_stubs() -> None:
     """Permite importar os entrypoints sem exigir extração de PDF nos testes."""
-    if "fitz" not in sys.modules:
+    if "fitz" not in sys.modules and importlib.util.find_spec("fitz") is None:
         sys.modules["fitz"] = types.ModuleType("fitz")
 
     if "tqdm" not in sys.modules:

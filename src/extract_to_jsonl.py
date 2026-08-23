@@ -17,6 +17,7 @@ from chunking import (
     chunk_text,
     clean_text,
 )
+from structured_units import PackedChunk, extract_pdf_page_units, pack_structured_units
 
 
 INPUT_DIR = Path("docs/raw")
@@ -497,6 +498,7 @@ def build_chunk_record(
     page_index: int,
     chunk_index: int,
     chunk: str,
+    section_path: str | None = None,
 ) -> dict:
     """
     Cria o registro JSONL de um chunk com seus metadados.
@@ -545,6 +547,7 @@ def build_chunk_record(
                 "source_url",
                 "",
             ),
+            "section_path": section_path or "",
         },
     }
 
@@ -578,63 +581,78 @@ def process_document(
 
     document_text_found = False
 
-    for page_index, original_lines in enumerate(pages_lines, start=1):
-        if not original_lines:
-            global_stats["raw_empty_pages"] += 1
-            continue
+    # A segunda abertura preserva o comportamento de leitura inicial usado
+    # para margens/referências e disponibiliza a geometria das páginas para a
+    # extração de blocos e tabelas, sem materializar resultados em disco.
+    with fitz.open(pdf_file) as document:
+        for page_index, original_lines in enumerate(pages_lines, start=1):
+            if not original_lines:
+                global_stats["raw_empty_pages"] += 1
+                continue
 
-        page_lines = apply_references_cut(
-            page_index=page_index - 1,
-            lines=original_lines,
-            references_start=references_start,
-            cleaning_stats=global_stats,
-        )
+            page_lines = apply_references_cut(
+                page_index=page_index - 1,
+                lines=original_lines,
+                references_start=references_start,
+                cleaning_stats=global_stats,
+            )
 
-        page_lines = clean_page_lines(
-            lines=page_lines,
-            repeated_margin_lines=repeated_margin_lines,
-            cleaning_stats=global_stats,
-        )
+            page_lines = clean_page_lines(
+                lines=page_lines,
+                repeated_margin_lines=repeated_margin_lines,
+                cleaning_stats=global_stats,
+            )
 
-        if should_discard_noninformative_page(
-            lines=page_lines,
-            doc_metadata=doc_metadata,
-        ):
-            global_stats["noninformative_pages_removed"] += 1
-            continue
-
-        text = clean_text(lines_to_text(page_lines))
-
-        if not text:
-            global_stats["empty_pages_after_cleaning"] += 1
-            continue
-
-        chunks = chunk_text(text)
-
-        if not chunks:
-            global_stats["pages_without_chunks"] += 1
-            continue
-
-        document_text_found = True
-
-        for chunk_index, chunk in enumerate(chunks):
-            data = build_chunk_record(
-                pdf_file=pdf_file,
+            if should_discard_noninformative_page(
+                lines=page_lines,
                 doc_metadata=doc_metadata,
-                page_index=page_index,
-                chunk_index=chunk_index,
-                chunk=chunk,
-            )
+            ):
+                global_stats["noninformative_pages_removed"] += 1
+                continue
 
-            output_file.write(
-                json.dumps(
-                    data,
-                    ensure_ascii=False,
+            text = clean_text(lines_to_text(page_lines))
+
+            if not text:
+                global_stats["empty_pages_after_cleaning"] += 1
+                continue
+
+            units = extract_pdf_page_units(
+                page=document[page_index - 1],
+                page_number=page_index,
+                cleaned_lines=page_lines,
+            )
+            packed_chunks = pack_structured_units(units)
+
+            # Fallback conservador: nenhum conteúdo útil é descartado quando
+            # a estrutura do PDF não pode ser extraída com segurança.
+            if not packed_chunks:
+                packed_chunks = [PackedChunk(chunk) for chunk in chunk_text(text)]
+
+            if not packed_chunks:
+                global_stats["pages_without_chunks"] += 1
+                continue
+
+            document_text_found = True
+
+            for chunk_index, packed_chunk in enumerate(packed_chunks):
+                data = build_chunk_record(
+                    pdf_file=pdf_file,
+                    doc_metadata=doc_metadata,
+                    page_index=page_index,
+                    chunk_index=chunk_index,
+                    chunk=packed_chunk.text,
+                    section_path=packed_chunk.section_path,
                 )
-                + "\n"
-            )
 
-            global_stats["total_chunks"] += 1
+                output_file.write(
+                    json.dumps(
+                        data,
+                        ensure_ascii=False,
+                    )
+                    + "\n"
+                )
+
+                global_stats["total_chunks"] += 1
 
     return document_text_found
 
