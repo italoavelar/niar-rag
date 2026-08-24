@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import json
 import re
+import sys
 import unicodedata
 from pathlib import Path
 from typing import Dict, List, Optional, Sequence, Tuple
@@ -21,8 +22,21 @@ from typing import Dict, List, Optional, Sequence, Tuple
 import numpy as np
 from tqdm import tqdm
 
-from .common import ensure_dir, get_env
+from .common import PROJECT_ROOT, ensure_dir, get_env
 from .embedders import BaseEmbedder
+
+
+SRC_DIR = PROJECT_ROOT / "src"
+if str(SRC_DIR) not in sys.path:
+    sys.path.insert(0, str(SRC_DIR))
+
+from embedding_text import (  # noqa: E402
+    EMBEDDING_TEXT_PROFILE,
+    bge_cache_filename,
+    build_embedding_text,
+    corpus_embedding_fingerprint,
+    validate_embedding_cache_metadata,
+)
 
 
 # ════════════════════════════════════════════════════════════════════════════
@@ -44,6 +58,11 @@ def _ensure_nltk():
 # marcadores simples p/ detectar idioma do chunk (corpus é PT + EN)
 _PT_MARKERS = (" de ", " que ", " não ", " são ", " para ", " com ", " dos ", " uma ")
 _EN_MARKERS = (" the ", " of ", " and ", " shall ", " this ", " is ", " which ", " to ")
+
+
+def contextual_document_texts(corpus: Dict[str, dict], ids: Sequence[str]) -> List[str]:
+    """Representação de documentos compartilhada com a indexação Gemini."""
+    return [build_embedding_text(corpus[chunk_id]) for chunk_id in ids]
 
 
 def detect_lang(text: str) -> str:
@@ -193,24 +212,61 @@ class DenseRetriever:
         self.embedder = embedder
         self.ids: List[str] = list(corpus.keys())
         self._matrix: Optional[np.ndarray] = None
+        records = [corpus[chunk_id] for chunk_id in self.ids]
+        self.embedding_text_fingerprint = corpus_embedding_fingerprint(records)
+        self.embedding_model = getattr(
+            embedder,
+            "model_id",
+            getattr(embedder, "model", embedder.name),
+        )
 
         cache = None
         if cache_dir:
             ensure_dir(cache_dir)
-            # nome inclui o nº de docs p/ não confundir corpus completo vs subconjunto (rerank)
-            cache = Path(cache_dir) / f"dense_{embedder.name}_{len(self.ids)}.npz"
+            cache = Path(cache_dir) / bge_cache_filename(
+                embedder.name,
+                self.embedding_text_fingerprint,
+            )
 
         if cache and cache.exists() and not rebuild:
             data = np.load(cache, allow_pickle=True)
+            validate_embedding_cache_metadata(
+                {
+                    key: data[key]
+                    for key in (
+                        "embedding_text_profile",
+                        "embedding_text_fingerprint",
+                        "embedding_model",
+                    )
+                    if key in data.files
+                },
+                self.embedding_text_fingerprint,
+                self.embedding_model,
+            )
             self.ids = [str(x) for x in data["ids"]]   # evita np.str_ vazar adiante
+            if self.ids != list(corpus.keys()):
+                raise ValueError(
+                    "Cache incompatível: IDs não correspondem à ordem do corpus."
+                )
             self._matrix = data["matrix"].astype(np.float32)
             print(f"[Dense:{embedder.name}] cache carregado ({self._matrix.shape}) ← {cache.name}")
         else:
-            texts = [corpus[cid]["text"] for cid in self.ids]
+            texts = contextual_document_texts(corpus, self.ids)
             print(f"[Dense:{embedder.name}] Embutindo {len(texts)} chunks...")
             self._matrix = embedder.embed_documents(texts).astype(np.float32)
             if cache:
-                np.savez_compressed(cache, matrix=self._matrix, ids=np.array(self.ids))
+                np.savez_compressed(
+                    cache,
+                    matrix=self._matrix,
+                    ids=np.array(self.ids),
+                    embedding_text_profile=np.array(EMBEDDING_TEXT_PROFILE),
+                    embedding_text_fingerprint=np.array(
+                        self.embedding_text_fingerprint
+                    ),
+                    embedding_model=np.array(
+                        self.embedding_model
+                    ),
+                )
                 print(f"[Dense:{embedder.name}] cache salvo → {cache.name}")
 
     def search(self, query: str, top_k: int = 100) -> List[Tuple[str, float]]:

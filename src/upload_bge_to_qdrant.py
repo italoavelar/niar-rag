@@ -7,13 +7,18 @@ from dotenv import load_dotenv
 from qdrant_client import QdrantClient, models
 from tqdm import tqdm
 
+from embedding_text import (
+    EMBEDDING_TEXT_PROFILE,
+    bge_cache_filename,
+    corpus_embedding_fingerprint,
+    validate_embedding_cache_metadata,
+)
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
-CACHE_FILE = (
-    PROJECT_ROOT
-    / "eval/results/indexes/dense_bge_m3_5791.npz"
-)
+CACHE_DIR = PROJECT_ROOT / "eval/results/indexes"
+MODEL_KEY = "bge_m3"
+MODEL_ID = "BAAI/bge-m3"
 
 CORPUS_FILE = (
     PROJECT_ROOT
@@ -50,16 +55,69 @@ def build_payload(document: dict) -> dict:
         "chunk": metadata.get("chunk", ""),
         "document_type": metadata.get("document_type", ""),
         "author": metadata.get("author", ""),
+        "issuer": metadata.get("issuer", ""),
         "year": metadata.get("year", ""),
         "theme": metadata.get("theme", ""),
         "ria_dimensions": metadata.get("ria_dimensions", []),
         "source_url": metadata.get("source_url", ""),
-        "embedding_model": "BAAI/bge-m3",
+        "section_path": metadata.get("section_path", ""),
+        "embedding_model": MODEL_ID,
+        "embedding_text_profile": EMBEDDING_TEXT_PROFILE,
     }
+
+
+def validate_contextual_bge_cache(cached, fingerprint: str) -> None:
+    """Não permite subir vetores sem prova do perfil contextual atual."""
+    validate_embedding_cache_metadata(
+        {
+            key: cached[key]
+            for key in (
+                "embedding_text_profile",
+                "embedding_text_fingerprint",
+                "embedding_model",
+            )
+            if key in cached.files
+        },
+        fingerprint,
+        MODEL_ID,
+    )
 
 
 def main() -> None:
     load_dotenv(PROJECT_ROOT / ".env")
+
+    corpus = load_corpus()
+    corpus_fingerprint = corpus_embedding_fingerprint(corpus.values())
+    cache_file = CACHE_DIR / bge_cache_filename(
+        MODEL_KEY,
+        corpus_fingerprint,
+    )
+
+    if not cache_file.exists():
+        raise FileNotFoundError(
+            "Cache BGE contextual não encontrado: "
+            f"{cache_file}. Caches antigos de texto bruto não são compatíveis."
+        )
+
+    print("Carregando cache contextual do BGE-M3...")
+    cached = np.load(cache_file, allow_pickle=True)
+    validate_contextual_bge_cache(cached, corpus_fingerprint)
+
+    matrix = cached["matrix"].astype(np.float32)
+    chunk_ids = [str(value) for value in cached["ids"]]
+
+    if matrix.shape != (len(chunk_ids), EMBED_DIM):
+        raise ValueError(
+            "Formato inesperado do cache: "
+            f"matrix={matrix.shape}, ids={len(chunk_ids)}"
+        )
+
+    if chunk_ids != list(corpus.keys()):
+        raise ValueError(
+            "Cache incompatível: IDs não correspondem à ordem do corpus."
+        )
+
+    print(f"Vetores carregados: {matrix.shape}")
 
     qdrant_url = os.getenv("QDRANT_BGE_URL")
     qdrant_api_key = os.getenv("QDRANT_BGE_API_KEY")
@@ -74,37 +132,6 @@ def main() -> None:
     if not qdrant_api_key:
         raise RuntimeError(
             "QDRANT_BGE_API_KEY não foi definido no .env."
-        )
-
-    if not CACHE_FILE.exists():
-        raise FileNotFoundError(
-            f"Cache do BGE não encontrado: {CACHE_FILE}"
-        )
-
-    print("Carregando cache do BGE-M3...")
-    cached = np.load(CACHE_FILE, allow_pickle=True)
-
-    matrix = cached["matrix"].astype(np.float32)
-    chunk_ids = [str(value) for value in cached["ids"]]
-
-    if matrix.shape != (len(chunk_ids), EMBED_DIM):
-        raise ValueError(
-            "Formato inesperado do cache: "
-            f"matrix={matrix.shape}, ids={len(chunk_ids)}"
-        )
-
-    print(f"Vetores carregados: {matrix.shape}")
-    corpus = load_corpus()
-
-    missing_ids = [
-        chunk_id
-        for chunk_id in chunk_ids
-        if chunk_id not in corpus
-    ]
-
-    if missing_ids:
-        raise ValueError(
-            f"{len(missing_ids)} IDs do cache não existem no corpus."
         )
 
     print("Conectando ao Qdrant...")
