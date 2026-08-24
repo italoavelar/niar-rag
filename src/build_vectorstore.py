@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import json
 import time
 from pathlib import Path
@@ -11,13 +13,29 @@ from qdrant_client import QdrantClient
 from qdrant_client.http import models
 from dotenv import load_dotenv
 
+from embedding_text import (
+    EMBEDDING_TEXT_PROFILE,
+    build_embedding_text,
+    corpus_embedding_fingerprint,
+)
+
 COLLECTION_NAME = "niar_rag_documents"
 
 load_dotenv()
 
 # Configurações e constantes
 JSONL_FILE = Path("data/processed/documents.jsonl")
-BACKUP_FILE = Path("data/processed/embeddings_backup.jsonl")
+LEGACY_BACKUP_FILE = Path("data/processed/embeddings_backup.jsonl")
+BACKUP_FILE = Path(
+    os.getenv(
+        "GEMINI_CONTEXTUAL_BACKUP_FILE",
+        "data/processed/embeddings_context_v1_backup.jsonl",
+    )
+)
+if BACKUP_FILE == LEGACY_BACKUP_FILE:
+    raise ValueError(
+        "GEMINI_CONTEXTUAL_BACKUP_FILE não pode apontar para o backup legado."
+    )
 
 # Variáveis de ambiente para conexões
 QDRANT_URL = os.getenv("QDRANT_URL")
@@ -49,8 +67,13 @@ def load_documents():
 
     return documents
 
+
+def build_embedding_inputs(documents: list[dict]) -> list[str]:
+    """Monta as entradas contextuais sem alterar os registros originais."""
+    return [build_embedding_text(document) for document in documents]
+
 # Carrega o backup de embeddings já processados para evitar retrabalho em caso de falhas
-def load_backup():
+def load_backup(documents: list[dict]):
     processed_data = []
 
     if BACKUP_FILE.exists():
@@ -58,9 +81,34 @@ def load_backup():
             for line in file:
                 processed_data.append(json.loads(line))
 
-        print(f"Retomando de backup: {len(processed_data)} embeddings já salvos.")
+        if len(processed_data) > len(documents):
+            raise ValueError(
+                "Backup contextual possui mais registros que o corpus atual."
+            )
+
+        for index, item in enumerate(processed_data):
+            expected_fingerprint = corpus_embedding_fingerprint(
+                [documents[index]]
+            )
+            if item.get("embedding_text_profile") != EMBEDDING_TEXT_PROFILE:
+                raise ValueError(
+                    "Backup incompatível: perfil de embedding ausente ou diferente "
+                    f"de {EMBEDDING_TEXT_PROFILE!r}."
+                )
+            if item.get("embedding_text_fingerprint") != expected_fingerprint:
+                raise ValueError(
+                    "Backup incompatível: fingerprint do chunk contextual não confere."
+                )
+
+        print(
+            f"Retomando backup {EMBEDDING_TEXT_PROFILE}: "
+            f"{len(processed_data)} embeddings já salvos."
+        )
     else:
-        print("Nenhum backup encontrado. Iniciando do zero.")
+        print(
+            f"Nenhum backup {EMBEDDING_TEXT_PROFILE} encontrado. "
+            "Iniciando do zero."
+        )
 
     return processed_data
 
@@ -83,7 +131,7 @@ def generate_embeddings(documents, processed_data):
             desc="Gerando embeddings",
         ):
             batch = documents_to_process[i:i + BATCH_SIZE_EMBEDDINGS]
-            texts = [doc["text"] for doc in batch]
+            texts = build_embedding_inputs(batch)
 
             try:
                 response = client.models.embed_content(
@@ -99,6 +147,10 @@ def generate_embeddings(documents, processed_data):
                     record = {
                         "document": doc,
                         "vector": normalize(emb.values),
+                        "embedding_text_profile": EMBEDDING_TEXT_PROFILE,
+                        "embedding_text_fingerprint": (
+                            corpus_embedding_fingerprint([doc])
+                        ),
                     }
 
                     backup.write(json.dumps(record, ensure_ascii=False) + "\n")
@@ -128,10 +180,13 @@ def build_payload(doc: dict) -> dict:
         "chunk": metadata.get("chunk", ""),
         "document_type": metadata.get("document_type", ""),
         "author": metadata.get("author", ""),
+        "issuer": metadata.get("issuer", ""),
         "year": metadata.get("year", ""),
         "theme": metadata.get("theme", ""),
         "ria_dimensions": metadata.get("ria_dimensions", []),
         "source_url": metadata.get("source_url", ""),
+        "section_path": metadata.get("section_path", ""),
+        "embedding_text_profile": EMBEDDING_TEXT_PROFILE,
     }
 
 def recreate_collection(qdrant):
@@ -195,7 +250,7 @@ def build_vectorstore():
     documents = load_documents()
     print(f"{len(documents)} chunks encontrados.")
 
-    processed_data = load_backup()
+    processed_data = load_backup(documents)
     processed_data = generate_embeddings(documents, processed_data)
 
     upload_to_qdrant(processed_data)

@@ -1,20 +1,29 @@
+from __future__ import annotations
+
 import csv
 import json
 import re
 from collections import Counter
+from dataclasses import dataclass
 from pathlib import Path
 
 import fitz
 from tqdm import tqdm
 
+from chunking import (
+    CHUNK_OVERLAP,
+    CHUNK_SIZE,
+    MIN_CHUNK_SIZE,
+    choose_split_point,
+    chunk_text,
+    clean_text,
+)
+from structured_units import PackedChunk, extract_pdf_page_units, pack_structured_units
+
 
 INPUT_DIR = Path("docs/raw")
 MANIFEST_FILE = Path("corpus_manifest.csv")
 OUTPUT_FILE = Path("data/processed/pdf_chunks.jsonl")
-
-CHUNK_SIZE = 1200
-CHUNK_OVERLAP = 200
-MIN_CHUNK_SIZE = 120
 
 HEADER_FOOTER_SCAN_LINES = 4
 REPEATED_LINE_MIN_PAGES = 3
@@ -325,6 +334,175 @@ def is_toc_like_line(line: str) -> bool:
     )
 
 
+@dataclass(frozen=True)
+class NoninformativePageClassification:
+    """Decisão de descarte e estado estrutural de uma página."""
+
+    discard: bool
+    state: str
+    reason: str = ""
+    confidence: float = 0.0
+
+
+def _page_noninformative_signals(lines: list[str]) -> dict[str, object]:
+    """Calcula sinais locais, sem tomar decisão a partir da posição da página."""
+    first_lines_text = " ".join(lines[:8]).lower()
+    page_text = " ".join(lines)
+    page_text_lower = page_text.lower()
+
+    toc_heading = any(
+        heading in first_lines_text
+        for heading in ("sumário", "table of contents", "contents")
+    )
+    subject_index_heading = any(
+        heading in first_lines_text
+        for heading in (
+            "índice remissivo",
+            "indice remissivo",
+            "subject index",
+            "alphabetical index",
+        )
+    )
+    generic_index_heading = (
+        "índice" in first_lines_text or "indice" in first_lines_text
+    )
+    list_heading = any(
+        heading in first_lines_text
+        for heading in (
+            "lista de figuras",
+            "lista de tabelas",
+            "list of figures",
+            "list of tables",
+        )
+    )
+    acknowledgement_heading = any(
+        heading in first_lines_text
+        for heading in (
+            "agradecimentos",
+            "acknowledgements",
+            "acknowledgments",
+        )
+    )
+
+    toc_like_lines = sum(is_toc_like_line(line) for line in lines)
+    short_lines = sum(len(line) <= 110 for line in lines)
+    short_line_ratio = short_lines / len(lines) if lines else 0.0
+
+    # Entradas de índice costumam combinar um termo com localizadores como
+    # capítulo, artigo, parágrafo ou uma lista de números. O padrão requer um
+    # localizador explícito para não confundir uma tabela numérica comum.
+    reference_pattern = re.compile(
+        r"\b(?:cap(?:[íi]tulo)?\.?|art(?:igo)?s?\.?|§|"
+        r"par[aá]grafo|inciso|p(?:p)?\.)\s*"
+        r"(?:[IVXLCDM]+|\d+)",
+        flags=re.IGNORECASE,
+    )
+    index_reference_lines = sum(
+        bool(reference_pattern.search(line)) for line in lines
+    )
+    term_reference_entries = sum(
+        bool(
+            re.match(r"^[A-ZÁÉÍÓÚÀÂÊÔÃÕÇ].{2,90}", line)
+            and reference_pattern.search(line)
+        )
+        for line in lines
+    )
+    index_reference_ratio = (
+        index_reference_lines / len(lines) if lines else 0.0
+    )
+
+    # Uma página normativa deve prevalecer sobre sinais incidentais de
+    # referências: o artigo/dispositivo no início e linguagem prescritiva são
+    # estruturalmente incompatíveis com uma continuação de índice.
+    normative_lines = sum(
+        bool(
+            re.match(
+                r"^(?:(?:art\.?|artigo|par[aá]grafo|inciso)\b|"
+                r"§\s*(?:\d+\s*[ºo]?|[úu]nico)(?=\s|\.|$))",
+                line,
+                flags=re.IGNORECASE,
+            )
+            and re.search(
+                r"\b(?:deve|dever[aá]|[ée] vedado|fica vedado|"
+                r"proibido|obrigat[oó]rio)\b",
+                line,
+                flags=re.IGNORECASE,
+            )
+        )
+        for line in lines
+    )
+    has_normative_content = normative_lines > 0
+
+    glossary_definition_lines = sum(
+        bool(re.match(r"^[^:]{2,70}:\s+.{25,}$", line)) for line in lines
+    )
+    has_glossary_shape = glossary_definition_lines >= 2
+
+    prose_lines = sum(
+        len(line) >= 100 and bool(re.search(r"[.!?]$", line))
+        for line in lines
+    )
+
+    return {
+        "first_lines_text": first_lines_text,
+        "page_text": page_text_lower,
+        "toc_heading": toc_heading,
+        "subject_index_heading": subject_index_heading,
+        "generic_index_heading": generic_index_heading,
+        "list_heading": list_heading,
+        "acknowledgement_heading": acknowledgement_heading,
+        "toc_like_lines": toc_like_lines,
+        "short_line_ratio": short_line_ratio,
+        "index_reference_lines": index_reference_lines,
+        "index_reference_ratio": index_reference_ratio,
+        "term_reference_entries": term_reference_entries,
+        "has_normative_content": has_normative_content,
+        "has_glossary_shape": has_glossary_shape,
+        "prose_lines": prose_lines,
+    }
+
+
+def _static_noninformative_classification(
+    lines: list[str],
+    doc_metadata: dict,
+) -> NoninformativePageClassification | None:
+    """Preserva os filtros estáticos existentes numa forma auditável."""
+    if not lines:
+        return NoninformativePageClassification(True, "normal", "empty", 1.0)
+
+    signals = _page_noninformative_signals(lines)
+    is_legislation = is_legislation_document(doc_metadata)
+    page_length = len(str(signals["page_text"]))
+
+    # Mantém a compatibilidade com a regra anterior: o termo genérico
+    # "índice" ainda é considerado sumário quando apresenta leaders ou uma
+    # página curta. A classificação sequencial abaixo o reinterpreta como
+    # índice remissivo quando os sinais específicos forem fortes.
+    if (
+        (
+            signals["toc_heading"] or signals["generic_index_heading"]
+        )
+        and (
+            int(signals["toc_like_lines"]) >= 2 or page_length < 2500
+        )
+    ):
+        return NoninformativePageClassification(True, "normal", "toc_start", 0.9)
+
+    if signals["list_heading"]:
+        return NoninformativePageClassification(True, "normal", "list", 1.0)
+
+    if (
+        not is_legislation
+        and signals["acknowledgement_heading"]
+        and page_length < 3500
+    ):
+        return NoninformativePageClassification(
+            True, "normal", "acknowledgements", 0.8
+        )
+
+    return None
+
+
 def should_discard_noninformative_page(
     lines: list[str],
     doc_metadata: dict,
@@ -335,52 +513,118 @@ def should_discard_noninformative_page(
 
     A regra é conservadora para documentos legislativos.
     """
-    if not lines:
-        return True
+    return _static_noninformative_classification(lines, doc_metadata) is not None
 
-    is_legislation = is_legislation_document(doc_metadata)
 
-    first_lines_text = " ".join(lines[:8]).lower()
-    page_text = " ".join(lines).lower()
+def _is_confirmed_toc_start(signals: dict[str, object]) -> bool:
+    """Exige título explícito e estrutura de leaders para iniciar um sumário."""
+    return bool(
+        signals["toc_heading"]
+        and int(signals["toc_like_lines"]) >= 2
+    ) or bool(
+        signals["generic_index_heading"]
+        and int(signals["toc_like_lines"]) >= 2
+        and not signals["subject_index_heading"]
+    )
 
-    toc_headings = [
-        "sumário",
-        "índice",
-        "indice",
-        "table of contents",
-        "contents",
-    ]
 
-    list_headings = [
-        "lista de figuras",
-        "lista de tabelas",
-        "list of figures",
-        "list of tables",
-    ]
+def _is_toc_continuation(signals: dict[str, object]) -> bool:
+    """Continuação exige vários leaders; texto corrido encerra o estado.
 
-    acknowledgement_headings = [
-        "agradecimentos",
-        "acknowledgements",
-        "acknowledgments",
-    ]
+    Linhas de sumário em PDFs podem ser muito longas por causa dos leaders
+    pontilhados. Portanto, comprimento não é requisito: leaders repetidos e
+    ausência de prosa são os sinais estruturais relevantes.
+    """
+    return bool(
+        int(signals["toc_like_lines"]) >= 2
+        and int(signals["prose_lines"]) == 0
+    )
 
-    if any(heading in first_lines_text for heading in toc_headings):
-        toc_like_lines = sum(1 for line in lines if is_toc_like_line(line))
 
-        if toc_like_lines >= 2 or len(page_text) < 2500:
-            return True
+def _is_confirmed_subject_index(
+    signals: dict[str, object],
+    *,
+    require_heading: bool,
+) -> bool:
+    """Reconhece índice remissivo sem usar posição no documento como regra."""
+    if signals["has_normative_content"] or signals["has_glossary_shape"]:
+        return False
 
-    if any(heading in first_lines_text for heading in list_headings):
-        return True
-
-    if (
-        not is_legislation
-        and any(heading in first_lines_text for heading in acknowledgement_headings)
-        and len(page_text) < 3500
+    if require_heading and not (
+        signals["subject_index_heading"]
+        or signals["generic_index_heading"]
     ):
-        return True
+        return False
 
-    return False
+    return bool(
+        int(signals["index_reference_lines"]) >= 4
+        and float(signals["index_reference_ratio"]) >= 0.45
+        and int(signals["term_reference_entries"]) >= 2
+        and float(signals["short_line_ratio"]) >= 0.65
+        and int(signals["prose_lines"]) == 0
+    )
+
+
+def classify_noninformative_pages(
+    pages_lines: list[list[str]],
+    doc_metadata: dict,
+) -> list[NoninformativePageClassification]:
+    """Classifica páginas em ordem, incluindo continuações de sumário/índice.
+
+    A máquina de estados é intencionalmente conservadora: uma página que não
+    repete a estrutura esperada encerra imediatamente o estado. A posição no
+    documento não participa da decisão, apenas os sinais textuais locais e o
+    contexto da página anterior já confirmada.
+    """
+    state = "normal"
+    classifications = []
+
+    for lines in pages_lines:
+        signals = _page_noninformative_signals(lines)
+        static = _static_noninformative_classification(lines, doc_metadata)
+
+        if _is_confirmed_subject_index(signals, require_heading=True):
+            state = "subject_index"
+            classifications.append(
+                NoninformativePageClassification(
+                    True, state, "subject_index_start", 0.95
+                )
+            )
+            continue
+
+        if _is_confirmed_toc_start(signals):
+            state = "toc"
+            classifications.append(
+                NoninformativePageClassification(True, state, "toc_start", 0.95)
+            )
+            continue
+
+        if state == "toc" and _is_toc_continuation(signals):
+            classifications.append(
+                NoninformativePageClassification(
+                    True, state, "toc_continuation", 0.9
+                )
+            )
+            continue
+
+        if state == "subject_index" and _is_confirmed_subject_index(
+            signals, require_heading=False
+        ):
+            classifications.append(
+                NoninformativePageClassification(
+                    True, state, "subject_index_continuation", 0.9
+                )
+            )
+            continue
+
+        state = "normal"
+        if static is not None:
+            classifications.append(static)
+        else:
+            classifications.append(NoninformativePageClassification(False, state))
+
+    return classifications
+
 
 
 def find_references_start(
@@ -484,119 +728,13 @@ def lines_to_text(lines: list[str]) -> str:
     return text.strip()
 
 
-def clean_text(text: str) -> str:
-    """
-    Limpeza final do texto já estruturado.
-    """
-    text = text.replace("\u00a0", " ")
-    text = text.replace("\t", " ")
-    text = re.sub(r"\s+", " ", text)
-    return text.strip()
-
-
-def choose_split_point(
-    text: str,
-    start: int,
-    raw_end: int,
-    min_size: int,
-) -> int:
-    """
-    Escolhe um ponto de quebra mais natural para o chunk.
-    """
-    if raw_end >= len(text):
-        return len(text)
-
-    min_end = start + min_size
-
-    punctuation_candidates = [
-        text.rfind(". ", start, raw_end),
-        text.rfind("; ", start, raw_end),
-        text.rfind(": ", start, raw_end),
-        text.rfind("? ", start, raw_end),
-        text.rfind("! ", start, raw_end),
-    ]
-
-    best_punctuation = max(punctuation_candidates)
-
-    if best_punctuation >= min_end:
-        return best_punctuation + 1
-
-    whitespace = text.rfind(" ", start, raw_end)
-
-    if whitespace >= min_end:
-        return whitespace
-
-    return raw_end
-
-
-def chunk_text(
-    text: str,
-    chunk_size: int = CHUNK_SIZE,
-    overlap: int = CHUNK_OVERLAP,
-    min_chunk_size: int = MIN_CHUNK_SIZE,
-) -> list[str]:
-    """
-    Divide o texto em chunks com sobreposição, evitando cortar
-    palavras e reduzindo chunks finais muito pequenos.
-    """
-    if chunk_size <= 0:
-        raise ValueError("chunk_size deve ser maior que zero.")
-
-    if overlap < 0:
-        raise ValueError("overlap não pode ser negativo.")
-
-    if overlap >= chunk_size:
-        raise ValueError("overlap deve ser menor que chunk_size.")
-
-    text = clean_text(text)
-
-    if not text:
-        return []
-
-    if len(text) <= chunk_size:
-        return [text] if len(text) >= min_chunk_size else []
-
-    chunks = []
-    start = 0
-
-    while start < len(text):
-        raw_end = min(start + chunk_size, len(text))
-
-        end = choose_split_point(
-            text=text,
-            start=start,
-            raw_end=raw_end,
-            min_size=min_chunk_size,
-        )
-
-        chunk = text[start:end].strip()
-
-        if chunk:
-            chunks.append(chunk)
-
-        if end >= len(text):
-            break
-
-        new_start = max(end - overlap, start + 1)
-
-        if new_start <= start:
-            break
-
-        start = new_start
-
-    if len(chunks) >= 2 and len(chunks[-1]) < min_chunk_size:
-        chunks[-2] = f"{chunks[-2]} {chunks[-1]}".strip()
-        chunks.pop()
-
-    return chunks
-
-
 def build_chunk_record(
     pdf_file: Path,
     doc_metadata: dict,
     page_index: int,
     chunk_index: int,
     chunk: str,
+    section_path: str | None = None,
 ) -> dict:
     """
     Cria o registro JSONL de um chunk com seus metadados.
@@ -645,6 +783,7 @@ def build_chunk_record(
                 "source_url",
                 "",
             ),
+            "section_path": section_path or "",
         },
     }
 
@@ -676,65 +815,94 @@ def process_document(
         doc_metadata=doc_metadata,
     )
 
-    document_text_found = False
-
-    for page_index, original_lines in enumerate(pages_lines, start=1):
+    # As decisões que dependem da página anterior (continuações de sumário e
+    # índice remissivo) precisam enxergar o documento já limpo por inteiro,
+    # antes de descartar fisicamente qualquer página ou extrair sua estrutura.
+    cleaned_pages = []
+    for original_lines in pages_lines:
         if not original_lines:
-            global_stats["raw_empty_pages"] += 1
+            cleaned_pages.append([])
             continue
 
+        page_index = len(cleaned_pages)
         page_lines = apply_references_cut(
-            page_index=page_index - 1,
+            page_index=page_index,
             lines=original_lines,
             references_start=references_start,
             cleaning_stats=global_stats,
         )
-
-        page_lines = clean_page_lines(
-            lines=page_lines,
-            repeated_margin_lines=repeated_margin_lines,
-            cleaning_stats=global_stats,
+        cleaned_pages.append(
+            clean_page_lines(
+                lines=page_lines,
+                repeated_margin_lines=repeated_margin_lines,
+                cleaning_stats=global_stats,
+            )
         )
 
-        if should_discard_noninformative_page(
-            lines=page_lines,
-            doc_metadata=doc_metadata,
-        ):
-            global_stats["noninformative_pages_removed"] += 1
-            continue
+    page_classifications = classify_noninformative_pages(
+        cleaned_pages,
+        doc_metadata,
+    )
 
-        text = clean_text(lines_to_text(page_lines))
+    document_text_found = False
 
-        if not text:
-            global_stats["empty_pages_after_cleaning"] += 1
-            continue
+    # A segunda abertura preserva o comportamento de leitura inicial usado
+    # para margens/referências e disponibiliza a geometria das páginas para a
+    # extração de blocos e tabelas, sem materializar resultados em disco.
+    with fitz.open(pdf_file) as document:
+        for page_index, original_lines in enumerate(pages_lines, start=1):
+            if not original_lines:
+                global_stats["raw_empty_pages"] += 1
+                continue
 
-        chunks = chunk_text(text)
+            page_lines = cleaned_pages[page_index - 1]
+            if page_classifications[page_index - 1].discard:
+                global_stats["noninformative_pages_removed"] += 1
+                continue
 
-        if not chunks:
-            global_stats["pages_without_chunks"] += 1
-            continue
+            text = clean_text(lines_to_text(page_lines))
 
-        document_text_found = True
+            if not text:
+                global_stats["empty_pages_after_cleaning"] += 1
+                continue
 
-        for chunk_index, chunk in enumerate(chunks):
-            data = build_chunk_record(
-                pdf_file=pdf_file,
-                doc_metadata=doc_metadata,
-                page_index=page_index,
-                chunk_index=chunk_index,
-                chunk=chunk,
+            units = extract_pdf_page_units(
+                page=document[page_index - 1],
+                page_number=page_index,
+                cleaned_lines=page_lines,
             )
+            packed_chunks = pack_structured_units(units)
 
-            output_file.write(
-                json.dumps(
-                    data,
-                    ensure_ascii=False,
+            # Fallback conservador: nenhum conteúdo útil é descartado quando
+            # a estrutura do PDF não pode ser extraída com segurança.
+            if not packed_chunks:
+                packed_chunks = [PackedChunk(chunk) for chunk in chunk_text(text)]
+
+            if not packed_chunks:
+                global_stats["pages_without_chunks"] += 1
+                continue
+
+            document_text_found = True
+
+            for chunk_index, packed_chunk in enumerate(packed_chunks):
+                data = build_chunk_record(
+                    pdf_file=pdf_file,
+                    doc_metadata=doc_metadata,
+                    page_index=page_index,
+                    chunk_index=chunk_index,
+                    chunk=packed_chunk.text,
+                    section_path=packed_chunk.section_path,
                 )
-                + "\n"
-            )
 
-            global_stats["total_chunks"] += 1
+                output_file.write(
+                    json.dumps(
+                        data,
+                        ensure_ascii=False,
+                    )
+                    + "\n"
+                )
+
+                global_stats["total_chunks"] += 1
 
     return document_text_found
 

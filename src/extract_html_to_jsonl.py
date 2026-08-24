@@ -1,9 +1,12 @@
+from __future__ import annotations
+
 import csv
 import json
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
 
-from extract_to_jsonl import chunk_text, parse_ria_dimensions
+from chunking import chunk_text
+from extract_to_jsonl import parse_ria_dimensions
 
 
 MANIFEST_FILE = Path("corpus_manifest.csv")
