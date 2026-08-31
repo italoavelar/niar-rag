@@ -47,7 +47,7 @@
     "origin": "estatico",
     "relation": "raiz",
     "text_length": 106882,
-    "chunks": 120
+    "chunks": 115
   },
   {
     "document_id": "ai_principles_OECD_",
@@ -87,7 +87,7 @@
     "origin": "estatico",
     "relation": "raiz",
     "text_length": 82267,
-    "chunks": 92
+    "chunks": 88
   },
   {
     "document_id": "iso_5338_2023",
@@ -137,7 +137,7 @@
     "origin": "estatico",
     "relation": "raiz",
     "text_length": 71381,
-    "chunks": 82
+    "chunks": 76
   },
   {
     "document_id": "cp_BR_1940",
@@ -147,7 +147,7 @@
     "origin": "estatico",
     "relation": "raiz",
     "text_length": 263388,
-    "chunks": 287
+    "chunks": 282
   },
   {
     "document_id": "cf_BR_1988",
@@ -157,7 +157,7 @@
     "origin": "estatico",
     "relation": "raiz",
     "text_length": 59715,
-    "chunks": 66
+    "chunks": 63
   },
   {
     "document_id": "eca_BR_1990",
@@ -167,7 +167,7 @@
     "origin": "estatico",
     "relation": "raiz",
     "text_length": 9269,
-    "chunks": 11
+    "chunks": 10
   },
   {
     "document_id": "lei_3268_BR_1957",
@@ -177,7 +177,7 @@
     "origin": "estatico",
     "relation": "raiz",
     "text_length": 17608,
-    "chunks": 20
+    "chunks": 19
   },
   {
     "document_id": "lei_6681_BR_1979",
@@ -197,7 +197,7 @@
     "origin": "estatico",
     "relation": "raiz",
     "text_length": 40515,
-    "chunks": 47
+    "chunks": 44
   },
   {
     "document_id": "iso_25237_2017",
@@ -237,7 +237,7 @@
     "origin": "estatico",
     "relation": "raiz",
     "text_length": 46861,
-    "chunks": 53
+    "chunks": 51
   },
   {
     "document_id": "relatorio_pesquisa_CEP_",
@@ -257,7 +257,7 @@
     "origin": "estatico",
     "relation": "raiz",
     "text_length": 63188,
-    "chunks": 72
+    "chunks": 68
   },
   {
     "document_id": "rnds_MS_",
@@ -277,7 +277,7 @@
     "origin": "estatico",
     "relation": "raiz",
     "text_length": 3938,
-    "chunks": 5
+    "chunks": 4
   },
   {
     "document_id": "resolucao_19_ANPD_2024",
@@ -287,6 +287,6 @@
     "origin": "estatico",
     "relation": "raiz",
     "text_length": 63599,
-    "chunks": 71
+    "chunks": 69
   }
 ]
