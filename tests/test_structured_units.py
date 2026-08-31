@@ -73,8 +73,13 @@ class _FakeTable:
 
 
 class _FakeTablePage:
-    def __init__(self, tables: list[_FakeTable]) -> None:
+    def __init__(
+        self,
+        tables: list[_FakeTable],
+        text_lines: list[str] | None = None,
+    ) -> None:
         self._tables = tables
+        self._text_lines = text_lines or []
 
     def find_tables(self):
         return types.SimpleNamespace(tables=self._tables)
@@ -82,10 +87,94 @@ class _FakeTablePage:
     def get_text(self, mode: str, **_kwargs):
         if mode != "dict":
             raise AssertionError(f"modo inesperado: {mode}")
-        return {"blocks": []}
+        return {
+            "blocks": [
+                {
+                    "type": 0,
+                    "bbox": (0, 200, 300, 260),
+                    "lines": [
+                        {
+                            "bbox": (0, 200 + index * 12, 300, 210 + index * 12),
+                            "spans": [{"text": text, "font": "", "flags": 0}],
+                        }
+                        for index, text in enumerate(self._text_lines)
+                    ],
+                }
+            ] if self._text_lines else []
+        }
 
 
 class StructuredUnitPackingTests(unittest.TestCase):
+    def test_fully_empty_table_does_not_generate_units_or_chunks(self) -> None:
+        table = _FakeTable(
+            (10, 10, 200, 100),
+            ["", ""],
+            [["", ""], [" ", None]],
+        )
+
+        units = extract_pdf_page_units(_FakeTablePage([table]), 1, [])
+
+        self.assertFalse(units)
+        self.assertFalse(pack_structured_units(units))
+
+    def test_generic_headers_and_empty_rows_do_not_generate_a_table(self) -> None:
+        table = _FakeTable(
+            (10, 10, 200, 100),
+            ["", "", ""],
+            [[None, " ", ""], ["", None, ""]],
+        )
+
+        units = extract_pdf_page_units(_FakeTablePage([table]), 1, [])
+
+        self.assertFalse(units)
+
+    def test_empty_rows_are_removed_from_an_otherwise_useful_table(self) -> None:
+        table = _FakeTable(
+            (10, 10, 200, 100),
+            ["", ""],
+            [["", ""], ["", "Resultado preservado"], ["", ""]],
+        )
+
+        units = extract_pdf_page_units(
+            _FakeTablePage([table]),
+            1,
+            ["Resultado preservado"],
+        )
+
+        rows = [unit for unit in units if unit.kind == "table_row"]
+        self.assertEqual(len(rows), 1)
+        self.assertIn("Resultado preservado", rows[0].text)
+        self.assertEqual(len(pack_structured_units(units)), 1)
+
+    def test_removed_margin_content_does_not_reappear_as_a_table(self) -> None:
+        table = _FakeTable(
+            (10, 10, 200, 100),
+            ["", ""],
+            [["", ""], ["", "Conteúdo de rodapé removido"]],
+        )
+        page = _FakeTablePage([table], ["Conteúdo principal preservado"])
+
+        units = extract_pdf_page_units(page, 1, ["Conteúdo principal preservado"])
+
+        self.assertFalse(any(unit.kind.startswith("table") for unit in units))
+        self.assertEqual([unit.text for unit in units], ["Conteúdo principal preservado"])
+
+    def test_table_in_similar_position_is_kept_when_its_text_survives_cleaning(self) -> None:
+        table = _FakeTable(
+            (10, 10, 200, 100),
+            ["", ""],
+            [["", ""], ["", "Conteúdo de tabela preservado"]],
+        )
+
+        units = extract_pdf_page_units(
+            _FakeTablePage([table]),
+            1,
+            ["Conteúdo de tabela preservado"],
+        )
+
+        self.assertEqual(sum(unit.kind == "table" for unit in units), 1)
+        self.assertEqual(sum(unit.kind == "table_row" for unit in units), 1)
+
     def test_duplicate_table_detections_are_emitted_once(self) -> None:
         rows = [["Level", "Description"], ["Low", "Small impact."]]
         first = _FakeTable((10, 10, 200, 100), ["Level", "Description"], rows)
@@ -302,7 +391,7 @@ class UnescoTableRegressionTests(unittest.TestCase):
         combined = "\n".join(chunk.text for chunk in packed)
 
         self.assertEqual(table.table_headers, ("Coluna 1", "Coluna 2", "Coluna 3"))
-        self.assertEqual(len(rows), 5)
+        self.assertEqual(len(rows), 3)
         self.assertEqual(len(packed), 2)
         self.assertEqual(combined.count("8.2.1.5. Is the data being stored"), 1)
         self.assertEqual(combined.count("8.2.2.1. Has a privacy impact"), 1)

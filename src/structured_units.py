@@ -200,6 +200,48 @@ def _generic_table_headers(column_count: int) -> tuple[str, ...]:
     return tuple(f"Coluna {index + 1}" for index in range(column_count))
 
 
+def _nonempty_table_rows(rows: list[list[str | None]]) -> list[list[str | None]]:
+    """Remove linhas de grade sem qualquer texto antes do empacotamento."""
+    return [
+        row
+        for row in rows
+        if any(_normalize_text(cell or "") for cell in row)
+    ]
+
+
+def _table_is_supported_by_cleaned_content(
+    rows: list[list[str | None]],
+    cleaned_lines: list[str],
+) -> bool:
+    """Confirma que a tabela não reintroduz texto removido na limpeza prévia.
+
+    ``find_tables()`` pode identificar elementos gráficos da margem mesmo
+    depois de o pipeline textual ter removido o respectivo cabeçalho ou
+    rodapé. Uma tabela só é materializada quando ao menos uma célula ainda é
+    observável no conteúdo limpo da página. Sem ``cleaned_lines`` não há base
+    para a decisão negativa, o que preserva o uso isolado desta função.
+    """
+    nonempty_cells = [
+        _normalize_text(cell or "")
+        for row in rows
+        for cell in row
+        if _normalize_text(cell or "")
+    ]
+    if not nonempty_cells:
+        return False
+
+    normalized_lines = [_normalize_text(line) for line in cleaned_lines if _normalize_text(line)]
+    if not normalized_lines:
+        return True
+
+    cleaned_text = " ".join(normalized_lines)
+    table_text = " ".join(nonempty_cells)
+    return any(cell in cleaned_text for cell in nonempty_cells) or any(
+        len(line) >= 20 and line in table_text
+        for line in normalized_lines
+    )
+
+
 def _table_signature(
     headers: tuple[str, ...],
     rows: list[list[str | None]],
@@ -309,6 +351,13 @@ def extract_pdf_page_units(
         else:
             headers = _generic_table_headers(_table_column_count(rows, headers))
             data_rows = rows
+
+        data_rows = _nonempty_table_rows(data_rows)
+        if not data_rows or not _table_is_supported_by_cleaned_content(
+            data_rows,
+            cleaned_lines,
+        ):
+            continue
 
         table_bbox = tuple(table.bbox)
         signature = _table_signature(headers, data_rows)
