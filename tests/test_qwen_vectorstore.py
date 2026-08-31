@@ -38,7 +38,7 @@ class FakeQwenModel:
 
     def encode(self, texts, **kwargs):
         self.calls.append((list(texts), kwargs))
-        return [[0.0] * 4096 for _ in texts]
+        return [[0.0] * 1024 for _ in texts]
 
 
 class QwenVectorstoreTests(unittest.TestCase):
@@ -60,6 +60,21 @@ class QwenVectorstoreTests(unittest.TestCase):
         }
         record.update(overrides)
         return record
+
+    def test_default_qwen_profile_uses_0_6b_isolated_resources(self) -> None:
+        module = self.module
+
+        self.assertEqual(module.QWEN_EMBEDDING_MODEL, "Qwen/Qwen3-Embedding-0.6B")
+        self.assertEqual(module.QWEN_EMBEDDING_DIM, 1024)
+        self.assertEqual(module.BATCH_SIZE_EMBEDDINGS, 2)
+        self.assertEqual(
+            module.DEFAULT_COLLECTION_NAME,
+            "niar_rag_documents_qwen3_0_6b_context_v1",
+        )
+        self.assertEqual(
+            module.DEFAULT_BACKUP_FILE,
+            Path("data/processed/embeddings_qwen3_0_6b_context_v1_backup.jsonl"),
+        )
 
     def test_documents_use_contextual_text_without_mutating_record(self) -> None:
         document = _record(section_path="CAPÍTULO IX")
@@ -103,8 +118,8 @@ class QwenVectorstoreTests(unittest.TestCase):
         self.assertEqual(payload["texto"], "Conteúdo original.")
         self.assertEqual(payload["issuer"], "Emissor oficial")
         self.assertEqual(payload["section_path"], "CAPÍTULO IX")
-        self.assertEqual(payload["embedding_model"], "Qwen/Qwen3-Embedding-8B")
-        self.assertEqual(payload["embedding_dimension"], 4096)
+        self.assertEqual(payload["embedding_model"], "Qwen/Qwen3-Embedding-0.6B")
+        self.assertEqual(payload["embedding_dimension"], 1024)
         self.assertEqual(payload["embedding_text_profile"], "context-v1")
         self.assertNotIn("embedding_text", payload)
 
@@ -213,7 +228,10 @@ class QwenVectorstoreTests(unittest.TestCase):
         invalid_records = [
             self._backup_record(document, embedding_text_fingerprint="incompatível"),
             self._backup_record(document, embedding_model="outro-modelo"),
-            self._backup_record(document, embedding_dimension=1024),
+            self._backup_record(
+                document,
+                embedding_dimension=module.QWEN_EMBEDDING_DIM + 1,
+            ),
             self._backup_record(
                 document,
                 document={**document, "id": "outro_p1_c0"},

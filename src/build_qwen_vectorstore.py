@@ -1,4 +1,4 @@
-"""Indexação isolada com Qwen3-Embedding-8B e contexto documental.
+"""Indexação isolada com Qwen3-Embedding e contexto documental.
 
 Este entrypoint não reutiliza nem altera o pipeline Gemini, seus backups ou a
 coleção Qdrant legada. Ele só executa operações externas quando chamado como
@@ -21,12 +21,12 @@ from embedding_text import (
 )
 
 
-QWEN_EMBEDDING_MODEL = "Qwen/Qwen3-Embedding-8B"
-QWEN_EMBEDDING_DIM = 4096
+QWEN_EMBEDDING_MODEL = "Qwen/Qwen3-Embedding-0.6B"
+QWEN_EMBEDDING_DIM = 1024
 
 JSONL_FILE = Path("data/processed/documents.jsonl")
 DEFAULT_BACKUP_FILE = Path(
-    "data/processed/embeddings_qwen3_8b_context_v1_backup.jsonl"
+    "data/processed/embeddings_qwen3_0_6b_context_v1_backup.jsonl"
 )
 PROTECTED_BACKUP_FILES = frozenset(
     {
@@ -36,9 +36,9 @@ PROTECTED_BACKUP_FILES = frozenset(
 )
 
 LEGACY_COLLECTION_NAME = "niar_rag_documents"
-DEFAULT_COLLECTION_NAME = "niar_rag_documents_qwen3_8b_context_v1"
+DEFAULT_COLLECTION_NAME = "niar_rag_documents_qwen3_0_6b_context_v1"
 
-BATCH_SIZE_EMBEDDINGS = 8
+BATCH_SIZE_EMBEDDINGS = 2
 BATCH_SIZE_QDRANT = 64
 
 
@@ -356,7 +356,7 @@ def build_qwen_vectorstore(recreate: bool = False) -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Indexa o corpus com Qwen3-Embedding-8B.")
+    parser = argparse.ArgumentParser(description="Indexa o corpus com Qwen3-Embedding.")
     parser.add_argument(
         "--recreate",
         action="store_true",
