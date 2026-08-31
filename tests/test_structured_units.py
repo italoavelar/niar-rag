@@ -21,6 +21,7 @@ from structured_units import (
     StructuralUnit,
     _apply_structure_context,
     _classify_text_kind,
+    extract_pdf_page_units,
     pack_structured_units,
 )
 
@@ -51,7 +52,105 @@ def _table_units(rows: list[tuple[str, str]]) -> list[StructuralUnit]:
     return units
 
 
+class _FakeTable:
+    def __init__(
+        self,
+        bbox: tuple[float, float, float, float],
+        headers: list[str],
+        rows: list[list[str | None]],
+        *,
+        header_external: bool = False,
+    ) -> None:
+        self.bbox = bbox
+        self.header = types.SimpleNamespace(
+            names=headers,
+            external=header_external,
+        )
+        self._rows = rows
+
+    def extract(self) -> list[list[str | None]]:
+        return self._rows
+
+
+class _FakeTablePage:
+    def __init__(self, tables: list[_FakeTable]) -> None:
+        self._tables = tables
+
+    def find_tables(self):
+        return types.SimpleNamespace(tables=self._tables)
+
+    def get_text(self, mode: str, **_kwargs):
+        if mode != "dict":
+            raise AssertionError(f"modo inesperado: {mode}")
+        return {"blocks": []}
+
+
 class StructuredUnitPackingTests(unittest.TestCase):
+    def test_duplicate_table_detections_are_emitted_once(self) -> None:
+        rows = [["Level", "Description"], ["Low", "Small impact."]]
+        first = _FakeTable((10, 10, 200, 100), ["Level", "Description"], rows)
+        duplicate = _FakeTable((10, 10, 200, 100), ["Level", "Description"], rows)
+
+        units = extract_pdf_page_units(_FakeTablePage([first, duplicate]), 1, [])
+
+        self.assertEqual(sum(unit.kind == "table" for unit in units), 1)
+        self.assertEqual(sum(unit.kind == "table_row" for unit in units), 1)
+        packed = pack_structured_units(units)
+        self.assertEqual(len(packed), 1)
+        self.assertEqual(packed[0].text.count("Level: Low"), 1)
+
+    def test_different_tables_on_the_same_page_are_preserved(self) -> None:
+        first = _FakeTable(
+            (10, 10, 200, 100),
+            ["Level", "Description"],
+            [["Level", "Description"], ["Low", "Small impact."]],
+        )
+        second = _FakeTable(
+            (10, 120, 200, 210),
+            ["Level", "Description"],
+            [["Level", "Description"], ["High", "Major impact."]],
+        )
+
+        units = extract_pdf_page_units(_FakeTablePage([first, second]), 1, [])
+
+        self.assertEqual(sum(unit.kind == "table" for unit in units), 2)
+        self.assertEqual(sum("Low" in unit.text for unit in units), 1)
+        self.assertEqual(sum("High" in unit.text for unit in units), 1)
+
+    def test_same_headers_with_different_content_are_not_deduplicated(self) -> None:
+        first = _FakeTable(
+            (10, 10, 200, 100),
+            ["Level", "Description"],
+            [["Level", "Description"], ["Low", "Small impact."]],
+        )
+        second = _FakeTable(
+            (10, 10, 200, 100),
+            ["Level", "Description"],
+            [["Level", "Description"], ["High", "Major impact."]],
+        )
+
+        units = extract_pdf_page_units(_FakeTablePage([first, second]), 1, [])
+
+        self.assertEqual(sum(unit.kind == "table" for unit in units), 2)
+        self.assertEqual(sum("Low" in unit.text for unit in units), 1)
+        self.assertEqual(sum("High" in unit.text for unit in units), 1)
+
+    def test_long_single_cell_pseudo_header_is_kept_as_table_content(self) -> None:
+        long_text = "Pergunta extensa " * 45
+        table = _FakeTable(
+            (10, 10, 200, 100),
+            ["", long_text, ""],
+            [["", long_text, ""], ["", "Resposta", ""]],
+        )
+
+        units = extract_pdf_page_units(_FakeTablePage([table]), 1, [])
+
+        table = next(unit for unit in units if unit.kind == "table")
+        rows = [unit for unit in units if unit.kind == "table_row"]
+        self.assertEqual(table.table_headers, ("Coluna 1", "Coluna 2", "Coluna 3"))
+        self.assertEqual(len(rows), 2)
+        self.assertIn("Pergunta extensa", rows[0].text)
+
     def test_small_table_is_kept_in_one_chunk(self) -> None:
         packed = pack_structured_units(
             _table_units([("Low", "Small impact."), ("High", "Major impact.")])
@@ -169,22 +268,59 @@ class UnescoTableRegressionTests(unittest.TestCase):
         cls.extract_pdf_page_units = staticmethod(extract_pdf_page_units)
         cls.pdf_path = ROOT / "docs/raw/ethical_impact_assessment_UNESCO_2023.pdf"
 
+    def _clean_page_lines(self, document, page_index: int, metadata: dict) -> list[str]:
+        pages_lines = [self.extractor.extract_page_lines(page) for page in document]
+        repeated = self.extractor.detect_repeated_margin_lines(pages_lines)
+        references = self.extractor.find_references_start(pages_lines, metadata)
+        stats = Counter()
+        lines = self.extractor.apply_references_cut(
+            page_index,
+            pages_lines[page_index],
+            references,
+            stats,
+        )
+        return self.extractor.clean_page_lines(lines, repeated, stats)
+
+    def test_unesco_page_30_does_not_repeat_a_content_row_as_table_header(self) -> None:
+        metadata = self.extractor.load_manifest()[self.pdf_path.name]
+        with self.fitz.open(self.pdf_path) as document:
+            page = document[29]
+            detected = page.find_tables().tables
+            self.assertEqual(len(detected), 1)
+            self.assertEqual(detected[0].row_count, 5)
+            self.assertEqual(detected[0].col_count, 3)
+
+            units = self.extract_pdf_page_units(
+                page,
+                30,
+                self._clean_page_lines(document, 29, metadata),
+            )
+
+        table = next(unit for unit in units if unit.kind == "table")
+        rows = [unit for unit in units if unit.kind == "table_row"]
+        packed = pack_structured_units(units)
+        combined = "\n".join(chunk.text for chunk in packed)
+
+        self.assertEqual(table.table_headers, ("Coluna 1", "Coluna 2", "Coluna 3"))
+        self.assertEqual(len(rows), 5)
+        self.assertEqual(len(packed), 2)
+        self.assertEqual(combined.count("8.2.1.5. Is the data being stored"), 1)
+        self.assertEqual(combined.count("8.2.2.1. Has a privacy impact"), 1)
+
     def test_unesco_page_45_table_is_atomic_and_not_duplicated(self) -> None:
         metadata = self.extractor.load_manifest()[self.pdf_path.name]
         with self.fitz.open(self.pdf_path) as document:
-            pages_lines = [self.extractor.extract_page_lines(page) for page in document]
             page = document[44]
             detected = page.find_tables().tables
             self.assertEqual(len(detected), 1)
             self.assertEqual(detected[0].row_count, 5)
             self.assertEqual(detected[0].col_count, 2)
 
-            stats = Counter()
-            repeated = self.extractor.detect_repeated_margin_lines(pages_lines)
-            references = self.extractor.find_references_start(pages_lines, metadata)
-            lines = self.extractor.apply_references_cut(44, pages_lines[44], references, stats)
-            lines = self.extractor.clean_page_lines(lines, repeated, stats)
-            units = self.extract_pdf_page_units(page, 45, lines)
+            units = self.extract_pdf_page_units(
+                page,
+                45,
+                self._clean_page_lines(document, 44, metadata),
+            )
 
         table_rows = [unit for unit in units if unit.kind == "table_row"]
         common_text = [unit.text for unit in units if unit.kind == "text"]

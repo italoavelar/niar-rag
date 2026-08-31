@@ -160,6 +160,95 @@ def _table_headers(table) -> tuple[str, ...]:
     )
 
 
+def _table_column_count(rows: list[list[str | None]], headers: tuple[str, ...]) -> int:
+    return max([len(headers), *(len(row) for row in rows)], default=0)
+
+
+def _has_usable_table_header(
+    table,
+    rows: list[list[str | None]],
+    headers: tuple[str, ...],
+) -> bool:
+    """Evita promover uma linha de conteúdo longa a cabeçalho da tabela.
+
+    Em alguns PDFs, ``find_tables()`` informa uma primeira linha interna como
+    ``header`` embora ela seja conteúdo. O caso confiavelmente problemático é
+    uma tabela multicoluna com só uma célula de cabeçalho preenchida e extensa:
+    repetir esse texto como rótulo em cada fragmento cria chunks redundantes e
+    ainda remove a primeira linha de dados. Cabeçalhos externos e tabelas de
+    uma única coluna permanecem inalterados.
+    """
+    header = getattr(table, "header", None)
+    if bool(getattr(header, "external", False)):
+        return bool(headers)
+
+    raw_names = getattr(header, "names", None) or []
+    nonempty_names = [_normalize_text(name) for name in raw_names if _normalize_text(name)]
+    column_count = _table_column_count(rows, headers)
+
+    if not nonempty_names:
+        return False
+
+    return not (
+        column_count > 1
+        and len(nonempty_names) == 1
+        and len(nonempty_names[0]) > 240
+    )
+
+
+def _generic_table_headers(column_count: int) -> tuple[str, ...]:
+    return tuple(f"Coluna {index + 1}" for index in range(column_count))
+
+
+def _table_signature(
+    headers: tuple[str, ...],
+    rows: list[list[str | None]],
+) -> tuple[tuple[str, ...], tuple[tuple[str, ...], ...]]:
+    """Representação estrutural estável para comparar detecções de tabela."""
+    return (
+        tuple(_normalize_text(header) for header in headers),
+        tuple(
+            tuple(_normalize_text(cell or "") for cell in row)
+            for row in rows
+        ),
+    )
+
+
+def _bbox_overlap_of_smaller(
+    left: tuple[float, float, float, float],
+    right: tuple[float, float, float, float],
+) -> float:
+    """Fração da menor caixa coberta pela interseção das duas caixas."""
+    intersection_width = max(0.0, min(left[2], right[2]) - max(left[0], right[0]))
+    intersection_height = max(0.0, min(left[3], right[3]) - max(left[1], right[1]))
+    intersection = intersection_width * intersection_height
+    left_area = max(0.0, left[2] - left[0]) * max(0.0, left[3] - left[1])
+    right_area = max(0.0, right[2] - right[0]) * max(0.0, right[3] - right[1])
+    smaller_area = min(left_area, right_area)
+
+    if smaller_area == 0:
+        return 1.0 if left == right else 0.0
+    return intersection / smaller_area
+
+
+def _is_duplicate_table(
+    signature: tuple[tuple[str, ...], tuple[tuple[str, ...], ...]],
+    bbox: tuple[float, float, float, float],
+    seen_tables: list[
+        tuple[
+            tuple[tuple[str, ...], tuple[tuple[str, ...], ...]],
+            tuple[float, float, float, float],
+        ]
+    ],
+) -> bool:
+    """Identifica a mesma tabela detectada repetidamente na mesma região."""
+    return any(
+        signature == seen_signature
+        and _bbox_overlap_of_smaller(bbox, seen_bbox) >= 0.9
+        for seen_signature, seen_bbox in seen_tables
+    )
+
+
 def _serialize_table_row(headers: tuple[str, ...], row: list[str | None]) -> str:
     return "\n".join(
         f"{header}: {_normalize_text(cell or '')}"
@@ -198,12 +287,13 @@ def extract_pdf_page_units(
     sobre margens, ruído e referências antes de se criar as unidades.
     """
     tables = _page_tables(page)
-    table_bboxes = [tuple(table.bbox) for table in tables]
     allowed_lines = Counter(_normalize_text(line) for line in cleaned_lines)
     table_content = []
     entries = []
+    prepared_tables = []
+    seen_tables = []
 
-    for table_index, table in enumerate(tables):
+    for table in tables:
         headers = _table_headers(table)
         rows = table.extract()
         if not rows:
@@ -214,10 +304,22 @@ def extract_pdf_page_units(
         # começa na primeira linha de dados.
         header = getattr(table, "header", None)
         header_is_external = bool(getattr(header, "external", False))
-        data_rows = rows[1:] if headers and not header_is_external else rows
-        if not headers and rows:
-            headers = tuple(f"Coluna {index + 1}" for index in range(len(rows[0])))
+        if _has_usable_table_header(table, rows, headers):
+            data_rows = rows[1:] if not header_is_external else rows
+        else:
+            headers = _generic_table_headers(_table_column_count(rows, headers))
+            data_rows = rows
 
+        table_bbox = tuple(table.bbox)
+        signature = _table_signature(headers, data_rows)
+        if _is_duplicate_table(signature, table_bbox, seen_tables):
+            continue
+        seen_tables.append((signature, table_bbox))
+        prepared_tables.append((table_bbox, headers, data_rows))
+
+    table_bboxes = [table_bbox for table_bbox, _, _ in prepared_tables]
+
+    for table_index, (table_bbox, headers, data_rows) in enumerate(prepared_tables):
         table_content.append(_normalize_text(" ".join(headers)))
         table_content.extend(
             _normalize_text(" ".join(cell or "" for cell in row))
@@ -225,7 +327,6 @@ def extract_pdf_page_units(
         )
 
         table_id = f"p{page_number}-t{table_index}"
-        table_bbox = tuple(table.bbox)
         entries.append(
             (
                 table_bbox[1],
