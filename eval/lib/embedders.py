@@ -103,6 +103,10 @@ class SentenceTransformerEmbedder(BaseEmbedder):
         self.model_id = ecfg["model"]
         self.normalize = ecfg.get("normalize", True)
         self.query_instruction = ecfg.get("query_instruction", "") or ""
+        # Modelos assimetricos (Qwen3-Embedding) exigem um PROMPT nomeado na
+        # query, nao um prefixo textual. Sem ele a query fica fora da
+        # distribuicao de treino e o modelo e subestimado.
+        self.query_prompt_name = ecfg.get("query_prompt_name") or None
         self.batch_size = int(ecfg.get("batch_size", 8))
 
         device = ecfg.get("device", "auto")
@@ -117,21 +121,31 @@ class SentenceTransformerEmbedder(BaseEmbedder):
         self.dim = self._model.get_sentence_embedding_dimension()
         print(f"[{name}] dim = {self.dim}")
 
-    def _encode(self, texts: List[str]) -> np.ndarray:
-        emb = self._model.encode(
-            texts,
+    def _encode(self, texts: List[str], prompt_name: str = None) -> np.ndarray:
+        kwargs = dict(
             batch_size=self.batch_size,
             normalize_embeddings=self.normalize,
             convert_to_numpy=True,
             show_progress_bar=len(texts) > 32,
         )
+        if prompt_name:
+            kwargs["prompt_name"] = prompt_name
+        emb = self._model.encode(texts, **kwargs)
         return emb.astype(np.float32)
 
     def embed_documents(self, texts: List[str]) -> np.ndarray:
+        # Lado documento sempre sem prompt: e assim que os vetores do corpus
+        # foram gerados (Colab / build_qwen_vectorstore.embed_documents).
         return self._encode(texts)
 
     def embed_query(self, text: str) -> np.ndarray:
-        return self._encode([self.query_instruction + text])[0]
+        # So passa prompt_name quando ha um: assim os modelos simetricos
+        # (BGE-m3) mantem exatamente a chamada de antes.
+        prompt_name = getattr(self, "query_prompt_name", None)
+        texts = [self.query_instruction + text]
+        if prompt_name:
+            return self._encode(texts, prompt_name=prompt_name)[0]
+        return self._encode(texts)[0]
 
 
 # ── Precomputado (offline / Colab) ───────────────────────────────────────────
@@ -152,6 +166,20 @@ class PrecomputedEmbedder(BaseEmbedder):
         mat = data["matrix"].astype(np.float32)
         self.dim = int(mat.shape[1])
         self._qmap = {str(t): mat[i] for i, t in enumerate(data["qtexts"])}
+        # Sem isto o DenseRetriever cai em `embedder.name` ("qwen3_0_6b") e o
+        # cache de documentos, que guarda o id real ("Qwen/Qwen3-Embedding-0.6B"),
+        # e rejeitado por validate_embedding_cache_metadata.
+        if "embedding_model" in data.files:
+            self.model_id = str(data["embedding_model"])
+        # Prompt com que as consultas foram embutidas — registrado para auditoria
+        # e conferido pelos scripts da E1.
+        if "query_prompt_name" in data.files:
+            self.query_prompt_name = str(data["query_prompt_name"])
+
+    def has_query(self, text: str) -> bool:
+        """Ha vetor pre-computado para esta consulta? Deixa quem chama decidir
+        entre pular a consulta ou abortar, em vez de estourar KeyError no meio."""
+        return str(text) in self._qmap
 
     def embed_documents(self, texts: List[str]) -> np.ndarray:
         raise NotImplementedError(
