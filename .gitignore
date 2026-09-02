@@ -14,3 +14,12 @@ wheels/
 *.pkl
 .venv/
 .venv_wsl/
+venv
+
+# Artefatos de embedding: derivados de data/processed/documents.jsonl pelo
+# eval/colab_leme_completo.py. A procedencia e garantida pelo
+# embedding_text_fingerprint, nao pelos bytes — versiona-los nao acrescenta
+# reprodutibilidade e consome a cota de LFS. Regeram-se no Colab.
+data/processed/embeddings_*.jsonl
+eval/results/indexes/*.npz
+*.bak-bf16

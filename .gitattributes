@@ -1,2 +1,0 @@
-data/processed/embeddings_backup.jsonl filter=lfs diff=lfs merge=lfs -text
-data/processed/embeddings_qwen3_0_6b_context_v1_backup.jsonl filter=lfs diff=lfs merge=lfs -text
