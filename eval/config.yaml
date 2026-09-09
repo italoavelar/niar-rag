@@ -91,7 +91,7 @@ retrieval:
   # multilíngues, pois o corpus é bilíngue (PT + EN). Ver seção 10.1 do documento.
   dense:
     enabled: true
-    embedders: ["gemini", "bge_m3"]   # ver bloco embedders abaixo
+    embedders: ["gemini", "bge_m3", "qwen3_0_6b"]   # ver bloco embedders abaixo
     # full   = busca INDEPENDENTE no corpus inteiro (recomendado; fiel à produção; A e B comparáveis)
     # rerank = re-ranqueia só o top-`top_k` do BM25 (opcional; recall do dense limitado ao BM25)
     mode: "full"
@@ -120,7 +120,7 @@ embedders:
     normalize: true
     # Avaliação contra a MESMA coleção do Qdrant de produção, se disponível:
     use_qdrant: true
-    qdrant_collection: "niar_rag_documents"
+    qdrant_collection: "LEME_gemini"
     batch_size: 20
     sleep_between_batches: 8     # respeita rate limit da API Gemini
 
@@ -135,6 +135,24 @@ embedders:
     batch_size: 16
     device: "auto"               # usa GPU se houver; senão CPU (ok p/ 560M)
     offline: false               # embute o corpus localmente (fica em cache)
+
+  # Desafiante aberto 2 (E1): Qwen3-Embedding-0.6B — multilingue, mesma dimensao
+  # do BGE-m3 (1024). E ASSIMETRICO: a query leva prompt_name="query" e o
+  # documento vai sem prompt. Sem isso a query sai fora da distribuicao de
+  # treino e o modelo e injustamente subestimado. Ver Memoria.md secao 6 (E1).
+  # Vetores de documento: gerados no Colab em .jsonl e convertidos para o cache
+  # .npz por eval/tools/qwen_jsonl_to_npz.py.
+  qwen3_0_6b:
+    type: "sentence_transformers"
+    model: "Qwen/Qwen3-Embedding-0.6B"
+    dim: 1024
+    normalize: true
+    query_instruction: ""         # o prompt vai por query_prompt_name, nao por prefixo
+    query_prompt_name: "query"    # uso oficial (src/build_qwen_vectorstore.py:149)
+    batch_size: 16
+    device: "auto"
+    # true = nao carrega o modelo; le dense_qwen3_0_6b_queries.npz do Colab.
+    offline: false
 
   # Nota: o jua-4B-mixed (ufca-llms, PT-BR jurídico) foi CONSIDERADO e ABANDONADO —
   # não casa com um corpus 65% em inglês (confundiria domínio com idioma). Ver 10.1.

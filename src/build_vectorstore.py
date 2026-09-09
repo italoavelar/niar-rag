@@ -19,9 +19,12 @@ from embedding_text import (
     corpus_embedding_fingerprint,
 )
 
-COLLECTION_NAME = "niar_rag_documents"
-
 load_dotenv()
+
+# Colecao de destino da indexacao Gemini. Vem do .env para nao colidir com a
+# colecao que o agente serve (agent/utils/tools.py). Precisa casar com
+# eval/config.yaml -> embedders.gemini.qdrant_collection.
+COLLECTION_NAME = os.getenv("QDRANT_GEMINI_COLLECTION", "LEME_gemini")
 
 # Configurações e constantes
 JSONL_FILE = Path("data/processed/documents.jsonl")
@@ -46,6 +49,11 @@ EMBED_DIM = 3072
 
 BATCH_SIZE_EMBEDDINGS = 20
 BATCH_SIZE_QDRANT = 64
+
+# Pausa entre lotes. O padrao 15s foi calibrado para o limite por minuto do
+# free tier; em plano pago da para reduzir. Um 429 nao perde trabalho: o
+# backup e gravado a cada lote e a execucao retoma de onde parou.
+SLEEP_BETWEEN_BATCHES = float(os.getenv("GEMINI_SLEEP_BETWEEN_BATCHES", "15"))
 
 # Normaliza um vetor para ter norma 1 (unitário)
 def normalize(vec):
@@ -156,7 +164,7 @@ def generate_embeddings(documents, processed_data):
                     backup.write(json.dumps(record, ensure_ascii=False) + "\n")
                     processed_data.append(record)
 
-                time.sleep(15)
+                time.sleep(SLEEP_BETWEEN_BATCHES)
 
             except Exception as error:
                 print("Erro ao gerar embeddings. Progresso salvo no backup.")
@@ -192,7 +200,7 @@ def build_payload(doc: dict) -> dict:
 def recreate_collection(qdrant):
     if not COLLECTION_NAME:
         raise ValueError(
-            "COLLECTION_NAME está vazio. Defina o nome da collection em agent/utils/tools.py"
+            "COLLECTION_NAME esta vazio. Defina QDRANT_GEMINI_COLLECTION no .env."
         )
 
     print(f"Recriando coleção '{COLLECTION_NAME}' com {EMBED_DIM} dimensões...")
