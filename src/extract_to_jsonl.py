@@ -18,7 +18,12 @@ from chunking import (
     chunk_text,
     clean_text,
 )
-from structured_units import PackedChunk, extract_pdf_page_units, pack_structured_units
+from structured_units import (
+    PackedChunk,
+    extract_pdf_page_units,
+    merge_undersized_chunks,
+    pack_structured_units,
+)
 
 
 INPUT_DIR = Path("docs/raw")
@@ -163,6 +168,18 @@ def normalize_line_for_matching(line: str) -> str:
     return line.strip(" -–—•·.:;|")
 
 
+# Numeral romano estrito: aceita i, iv, xiv, mcmxc, mas recusa palavras como
+# "civil", "dim" ou "mild", que um casamento solto de [ivxlcdm] deixaria passar.
+_ROMAN_NUMERAL_RE = re.compile(
+    "^(?=[ivxlcdm])m*(c[md]|d?c{0,3})(x[cl]|l?x{0,3})(i[xv]|v?i{0,3})$",
+    flags=re.IGNORECASE,
+)
+
+
+def is_roman_numeral_line(line: str) -> bool:
+    """Numeração romana do pré-textual (i, ii, iv, xiv), isolada na linha."""
+    return bool(_ROMAN_NUMERAL_RE.match(line.strip("-–— ").strip()))
+
 def is_page_number_line(line: str) -> bool:
     """
     Detecta linhas que são apenas número de página.
@@ -177,7 +194,10 @@ def is_page_number_line(line: str) -> bool:
         r"^\d+\s+(of|de)\s+\d+$",
     ]
 
-    return any(re.match(pattern, line, flags=re.IGNORECASE) for pattern in patterns)
+    if any(re.match(p, line, flags=re.IGNORECASE) for p in patterns):
+        return True
+
+    return is_roman_numeral_line(line)
 
 
 def is_noise_line(line: str) -> bool:
@@ -877,6 +897,8 @@ def process_document(
             # a estrutura do PDF não pode ser extraída com segurança.
             if not packed_chunks:
                 packed_chunks = [PackedChunk(chunk) for chunk in chunk_text(text)]
+
+            packed_chunks = merge_undersized_chunks(packed_chunks)
 
             if not packed_chunks:
                 global_stats["pages_without_chunks"] += 1

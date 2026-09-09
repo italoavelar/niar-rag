@@ -30,6 +30,7 @@ def _install_optional_dependency_stubs() -> None:
 _install_optional_dependency_stubs()
 
 from extract_to_jsonl import (  # noqa: E402
+    is_page_number_line,
     classify_noninformative_pages,
     clean_page_lines,
     detect_repeated_margin_lines,
@@ -186,6 +187,23 @@ class NoninformativePageClassifierTests(unittest.TestCase):
         self.assertEqual(result[82].state, "normal")
         self.assertIn("COMPOSIÇÃO", lines_to_text(cleaned_pages[82]).upper())
 
+class RomanPageNumberTests(unittest.TestCase):
+    """A numeração romana do pré-textual escapava e virava chunk de 1 caractere."""
+
+    def test_roman_page_numbers_are_recognized(self) -> None:
+        for linha in ("i", "v", "vi", "vii", "viii", "xi", "xiii", "xiv", "- iv -"):
+            with self.subTest(linha=linha):
+                self.assertTrue(is_page_number_line(linha))
+
+    def test_words_made_of_roman_letters_are_not_page_numbers(self) -> None:
+        for linha in ("civil", "dim", "mild", "Article", "The"):
+            with self.subTest(linha=linha):
+                self.assertFalse(is_page_number_line(linha))
+
+    def test_arabic_page_numbers_keep_working(self) -> None:
+        self.assertTrue(is_page_number_line("42"))
+        self.assertTrue(is_page_number_line("3 / 10"))
+        self.assertFalse(is_page_number_line("42 paginas"))
 
 if __name__ == "__main__":
     unittest.main()

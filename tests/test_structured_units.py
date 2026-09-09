@@ -18,10 +18,12 @@ if str(SRC) not in sys.path:
 
 
 from structured_units import (
+    PackedChunk,
     StructuralUnit,
     _apply_structure_context,
     _classify_text_kind,
     extract_pdf_page_units,
+    merge_undersized_chunks,
     pack_structured_units,
 )
 
@@ -438,6 +440,73 @@ class UnescoTableRegressionTests(unittest.TestCase):
             row = next(row for row in table_rows if label in row.text)
             self.assertIn(description, row.text)
 
+
+class HeadingPackingRegressionTests(unittest.TestCase):
+    def test_consecutive_headings_are_not_lost(self) -> None:
+        """Regressao: o titulo pendente era sobrescrito e sumia do corpus."""
+        units = [
+            StructuralUnit("heading", "NIST AI 100-1", 0, 1),
+            StructuralUnit("heading", "Artificial Intelligence Risk", 1, 1),
+            StructuralUnit("text", "Corpo da secao com conteudo util.", 2, 1),
+        ]
+
+        packed = pack_structured_units(units)
+
+        combined = " ".join(chunk.text for chunk in packed)
+        self.assertIn("NIST AI 100-1", combined)
+        self.assertIn("Artificial Intelligence Risk", combined)
+        self.assertIn("Corpo da secao com conteudo util.", combined)
+
+    def test_trailing_heading_chain_is_emitted_together(self) -> None:
+        units = [
+            StructuralUnit("heading", "Primeiro titulo", 0, 1),
+            StructuralUnit("heading", "Segundo titulo", 1, 1),
+        ]
+
+        packed = pack_structured_units(units)
+
+        self.assertEqual(len(packed), 1)
+        self.assertIn("Primeiro titulo", packed[0].text)
+        self.assertIn("Segundo titulo", packed[0].text)
+
+class UndersizedChunkMergeTests(unittest.TestCase):
+    """Piso de MIN_CHUNK_SIZE, perdido quando o empacotador estrutural entrou."""
+
+    def test_short_chunk_merges_into_the_following_one(self) -> None:
+        packed = merge_undersized_chunks(
+            [PackedChunk("FOREWORD"), PackedChunk("c" * 300)],
+            min_chunk_size=120,
+        )
+
+        self.assertEqual(len(packed), 1)
+        self.assertTrue(packed[0].text.startswith("FOREWORD"))
+        self.assertIn("c" * 300, packed[0].text)
+
+    def test_trailing_short_chunk_merges_into_the_previous_one(self) -> None:
+        packed = merge_undersized_chunks(
+            [PackedChunk("c" * 300), PackedChunk("i")],
+            min_chunk_size=120,
+        )
+
+        self.assertEqual(len(packed), 1)
+        self.assertTrue(packed[0].text.endswith("i"))
+
+    def test_lone_short_chunk_is_discarded_like_chunk_text_does(self) -> None:
+        self.assertEqual(merge_undersized_chunks([PackedChunk("i")], 120), [])
+
+    def test_chunks_at_or_above_the_minimum_are_untouched(self) -> None:
+        original = [PackedChunk("a" * 120), PackedChunk("b" * 500)]
+
+        self.assertEqual(merge_undersized_chunks(original, 120), original)
+
+    def test_only_a_short_fragment_may_push_a_chunk_past_chunk_size(self) -> None:
+        packed = merge_undersized_chunks(
+            [PackedChunk("a" * 1200), PackedChunk("xi")],
+            min_chunk_size=120,
+        )
+
+        self.assertEqual(len(packed), 1)
+        self.assertLess(len(packed[0].text), 1200 + 120)
 
 if __name__ == "__main__":
     unittest.main()

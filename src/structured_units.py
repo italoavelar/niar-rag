@@ -618,6 +618,44 @@ def _pack_table(
     return packed
 
 
+def merge_undersized_chunks(
+    packed: list[PackedChunk],
+    min_chunk_size: int = MIN_CHUNK_SIZE,
+) -> list[PackedChunk]:
+    """Funde fragmentos abaixo do mínimo no vizinho da mesma página.
+
+    Segue o idioma de ``chunking._merge_small_final_chunk``: só o fragmento
+    curto justifica ultrapassar ``CHUNK_SIZE``, e o chunk resultante nunca
+    volta a ficar abaixo do mínimo, então a fusão não encadeia sem fim.
+    Um fragmento sozinho na página é descartado, como ``chunk_text`` já faz.
+    """
+    merged = list(packed)
+
+    while len(merged) > 1:
+        alvo = next(
+            (i for i, c in enumerate(merged) if len(c.text) < min_chunk_size),
+            None,
+        )
+        if alvo is None:
+            break
+
+        curto = merged.pop(alvo)
+        vizinho = alvo if alvo < len(merged) else alvo - 1
+        outro = merged[vizinho]
+        if vizinho == alvo:
+            texto = curto.text + "\n\n" + outro.text
+        else:
+            texto = outro.text + "\n\n" + curto.text
+        merged[vizinho] = PackedChunk(
+            texto,
+            outro.section_path or curto.section_path,
+        )
+
+    if len(merged) == 1 and len(merged[0].text) < min_chunk_size:
+        return []
+
+    return merged
+
 def pack_structured_units(
     units: list[StructuralUnit],
     chunk_size: int = CHUNK_SIZE,
@@ -645,7 +683,22 @@ def pack_structured_units(
 
         if unit.kind == "heading":
             flush()
-            pending_heading = unit
+            if pending_heading is None:
+                pending_heading = unit
+            else:
+                # Títulos consecutivos (capa, folha de rosto, título quebrado
+                # em duas linhas) pertencem ao mesmo bloco. Sobrescrever o
+                # pendente descartaria o texto do título anterior em silêncio.
+                pending_heading = StructuralUnit(
+                    kind="heading",
+                    text=pending_heading.text + "\n\n" + unit.text,
+                    source_order=pending_heading.source_order,
+                    page=pending_heading.page,
+                    bbox=pending_heading.bbox,
+                    section_path=(
+                        unit.section_path or pending_heading.section_path
+                    ),
+                )
             index += 1
             continue
 
