@@ -1,0 +1,30 @@
+{
+  "metric": "ndcg@5",
+  "contrast": "qwen3_0_6b - bge_m3",
+  "n_queries": 75,
+  "delta": -0.03692650039072573,
+  "ci95": [
+    -0.08773837826013846,
+    0.013218609341479408
+  ],
+  "p_value": 0.14998500149985,
+  "cliffs_delta": -0.0976,
+  "test": "paired_randomization",
+  "n_permutations": 10000,
+  "n_bootstrap": 10000,
+  "seed": 42,
+  "noninferiority_margin": 0.03,
+  "ci_dentro_da_margem": false,
+  "rerank_ceiling": {
+    "qwen3_0_6b": {
+      "teto@20": 0.6096904141502063,
+      "teto@50": 0.7279096049494519,
+      "teto@100": 0.8318053583452322
+    },
+    "bge_m3": {
+      "teto@20": 0.6789434213088991,
+      "teto@50": 0.7837476333432091,
+      "teto@100": 0.8743802989505607
+    }
+  }
+}

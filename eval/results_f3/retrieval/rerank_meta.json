@@ -1,0 +1,55 @@
+{
+  "modelo": "BAAI/bge-reranker-v2-m3",
+  "sistema_base": "B_dense_bge_m3",
+  "rankings_origem": "eval\\results_e2\\retrieval\\rankings\\B_dense_bge_m3.json",
+  "pools": [
+    20,
+    50,
+    100
+  ],
+  "max_candidates": 100,
+  "texto": "contextual",
+  "max_length": 512,
+  "n_pares": 7500,
+  "n_queries": 75,
+  "metrica": "ndcg@5",
+  "linha_base": 0.29082728903622607,
+  "ganhos": [
+    {
+      "pool": 20,
+      "sistema": "B_dense_bge_m3_rr20",
+      "ndcg@5": 0.4342044496198103,
+      "delta": 0.14337716058358418,
+      "ci_lo": 0.08406683522286976,
+      "ci_hi": 0.2028854462592409,
+      "p_value": 9.999000099990002e-05,
+      "consultas_melhoram": 44,
+      "consultas_pioram": 10,
+      "p_corrigido": 0.00029997000299970003
+    },
+    {
+      "pool": 50,
+      "sistema": "B_dense_bge_m3_rr50",
+      "ndcg@5": 0.43764788516343656,
+      "delta": 0.14682059612721035,
+      "ci_lo": 0.08634342079340737,
+      "ci_hi": 0.20757597280091006,
+      "p_value": 9.999000099990002e-05,
+      "consultas_melhoram": 44,
+      "consultas_pioram": 12,
+      "p_corrigido": 0.00029997000299970003
+    },
+    {
+      "pool": 100,
+      "sistema": "B_dense_bge_m3_rr100",
+      "ndcg@5": 0.4372265374904292,
+      "delta": 0.1463992484542031,
+      "ci_lo": 0.08501055181566379,
+      "ci_hi": 0.2078549934483153,
+      "p_value": 0.00019998000199980003,
+      "consultas_melhoram": 44,
+      "consultas_pioram": 11,
+      "p_corrigido": 0.00029997000299970003
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+sistema,modelo,ndcg@5,teto@20,teto@50,teto@100,margem@20
+qwen3_0_6b,Qwen/Qwen3-Embedding-0.6B,0.2539,0.6097,0.7279,0.8318,0.3558
+bge_m3,BAAI/bge-m3,0.2908,0.6789,0.7837,0.8744,0.3881

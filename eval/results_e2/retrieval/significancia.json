@@ -1,0 +1,36 @@
+{
+  "metric": "ndcg@5",
+  "contrast": "bge_m3 - gemini",
+  "n_queries": 75,
+  "delta": -0.15132592022108055,
+  "ci95": [
+    -0.218536779744833,
+    -0.08484331797577534
+  ],
+  "p_value": 9.999000099990002e-05,
+  "cliffs_delta": -0.2632888888888889,
+  "test": "paired_randomization",
+  "n_permutations": 10000,
+  "n_bootstrap": 10000,
+  "seed": 42,
+  "noninferiority_margin": 0.03,
+  "nao_inferioridade": {
+    "desafiante": "bge_m3",
+    "referencia": "gemini",
+    "margem": 0.03,
+    "limite_inferior": -0.218536779744833,
+    "dentro_da_margem": false
+  },
+  "rerank_ceiling": {
+    "bge_m3": {
+      "teto@20": 0.6789434213088991,
+      "teto@50": 0.7837476333432091,
+      "teto@100": 0.8743802989505607
+    },
+    "gemini": {
+      "teto@20": 0.7903604793338926,
+      "teto@50": 0.9014226804016868,
+      "teto@100": 0.9598066374815507
+    }
+  }
+}
