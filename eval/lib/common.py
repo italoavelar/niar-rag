@@ -122,7 +122,16 @@ def load_corpus(path: str | Path) -> Dict[str, dict]:
 
 def neighbors_same_doc(chunk_id: str, corpus: Dict[str, dict], window: int = 1) -> List[str]:
     """IDs de chunks vizinhos no mesmo documento (mesmo source, página±window).
-    IDs têm formato '{stem}_p{page}_c{chunk}'."""
+
+    A vizinhança sai de `metadata["source"]` e `metadata["page"]`, nunca do
+    formato do id — que desde 12/09/2026 é `<document_id>_<hash>` e não carrega
+    mais posição (ver src/chunk_id.py).
+
+    ATENÇÃO ao que isto significa quando é usado para anotar: devolve TODOS os
+    chunks da página vizinha, por proximidade física. Marcar esses chunks como
+    grau 1 é uma heurística posicional, não um julgamento de relevância — quem
+    lê a métrica precisa saber disso.
+    """
     doc = corpus.get(chunk_id)
     if not doc:
         return []
