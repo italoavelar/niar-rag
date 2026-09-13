@@ -17,6 +17,7 @@ Dependências: numpy (obrigatório), scipy (opcional; há fallback via math.erf)
 from __future__ import annotations
 
 import math
+import re
 from typing import Dict, List, Sequence
 
 import numpy as np
@@ -90,6 +91,79 @@ def average_precision(ranked: Sequence[str], rel: Dict[str, int], k: int = None)
     return score / len(relevant)
 
 
+# ── Completude de evidência ─────────────────────────────────────────────────
+# Por que existe: nDCG e Recall não distinguem "achou metade da evidência" de
+# "achou a metade certa". Numa pergunta que exige 2+ trechos (multi_hop dentro
+# de um documento, comparativa entre documentos), o que decide se a resposta
+# sai completa é se o conjunto INTEIRO de trechos exigidos chegou ao contexto.
+# Medir tipos conjuntivos por "pelo menos 1 trecho relevante" superestima:
+# multi_hop marcava 21/25 por esse critério e 3/25 pelo conjuntivo (10/set/2026).
+# Convenção: âncoras = chunks de grau >= `min_grade` (2 = trecho de onde a
+# pergunta nasceu; 1 = vizinho herdado, que não é evidência exigida).
+
+# Formato atual (desde 09/2026): id derivado do conteúdo, <doc>_<12 hex>,
+# com sufixo -2, -3… quando há colisão. Ver src/chunk_id.py.
+_PAT_HASH = re.compile(r"^(.*)_[0-9a-f]{12}(?:-\d+)?$")
+# Formatos legados, ainda presentes em resultados de experimento anteriores.
+_PAT_PDF = re.compile(r"^(.*)_p\d+_c\d+$")     # <doc>_p12_c3
+_PAT_HTML = re.compile(r"^(.*)_c\d+$")         # <doc>_c17
+
+
+def document_of(chunk_id: str) -> str:
+    """Documento de origem de um chunk_id.
+
+    A fonte canônica é `metadata["document_id"]` — use-a sempre que o corpus
+    estiver à mão. Esta função existe para quando só o id está disponível
+    (rankings salvos, qrels).
+
+    O formato do hash é testado PRIMEIRO de propósito: um hash pode, por acaso,
+    terminar em `c` seguido de dígitos e ser cortado errado pelo padrão legado
+    de HTML (acontece em ~0,04% dos ids, o que daria dois trechos silenciosamente
+    errados num corpus de 5.160).
+    """
+    m = _PAT_HASH.match(chunk_id) or _PAT_PDF.match(chunk_id) or _PAT_HTML.match(chunk_id)
+    return m.group(1) if m else chunk_id
+
+
+def _anchors(rel: Dict[str, int], min_grade: int) -> set:
+    return {c for c, g in rel.items() if g >= min_grade}
+
+
+def evidence_completeness_at_k(ranked: Sequence[str], rel: Dict[str, int],
+                               k: int, min_grade: int = 2) -> float:
+    """Fração das âncoras exigidas que chegaram ao top-k. Graduada, comparável
+    entre tipos com número diferente de âncoras."""
+    req = _anchors(rel, min_grade)
+    if not req:
+        return 0.0
+    return len(req & set(ranked[:k])) / len(req)
+
+
+def complete_evidence_at_k(ranked: Sequence[str], rel: Dict[str, int],
+                           k: int, min_grade: int = 2) -> float:
+    """1.0 se TODAS as âncoras exigidas estão no top-k (critério conjuntivo)."""
+    req = _anchors(rel, min_grade)
+    if not req:
+        return 0.0
+    return 1.0 if req <= set(ranked[:k]) else 0.0
+
+
+def document_coverage_at_k(ranked: Sequence[str], rel: Dict[str, int],
+                           k: int, min_grade: int = 2) -> float:
+    """1.0 se todo documento exigido tem ao menos uma âncora SUA no top-k.
+
+    Para comparativas é o que decide se a resposta cobre os dois lados. Note
+    que exige a âncora daquele documento — um chunk qualquer do documento certo
+    não conta, porque não é ele que sustenta a resposta.
+    """
+    req = _anchors(rel, min_grade)
+    if not req:
+        return 0.0
+    exigidos = {document_of(c) for c in req}
+    cobertos = {document_of(c) for c in req & set(ranked[:k])}
+    return 1.0 if exigidos <= cobertos else 0.0
+
+
 # ── Agregação de um run completo ────────────────────────────────────────────
 
 def per_query_ndcg(rankings: Dict[str, List[str]],
@@ -126,6 +200,12 @@ def evaluate_run(rankings: Dict[str, List[str]],
         _agg(f"f1@{k}", lambda r, rel, k=k: f1_at_k(r, rel, k))
     _agg(f"mrr@{mrr_k}", lambda r, rel: mrr_at_k(r, rel, mrr_k))
     _agg("map", lambda r, rel: average_precision(r, rel))
+    # completude de evidência: o que decide se a resposta sai completa em
+    # perguntas conjuntivas. Reportar junto do nDCG, nunca no lugar dele.
+    for k in ndcg_k:
+        _agg(f"completude@{k}", lambda r, rel, k=k: evidence_completeness_at_k(r, rel, k))
+        _agg(f"evidencia_completa@{k}", lambda r, rel, k=k: complete_evidence_at_k(r, rel, k))
+        _agg(f"cobertura_doc@{k}", lambda r, rel, k=k: document_coverage_at_k(r, rel, k))
 
     return out
 
@@ -208,6 +288,29 @@ if __name__ == "__main__":
     assert abs(recall_at_k(["a", "b", "x"], rel, 10) - 2 / 3) < 1e-9
     assert abs(mrr_at_k(["x", "a"], rel, 10) - 0.5) < 1e-9
     print("  nDCG / Recall / MRR  ✓")
+
+    # Completude: 2 âncoras (grau 2) + 1 vizinho (grau 1, não é evidência exigida)
+    rel2 = {"a": 2, "b": 2, "viz": 1}
+    assert evidence_completeness_at_k(["a", "x", "y"], rel2, 5) == 0.5
+    assert evidence_completeness_at_k(["a", "b"], rel2, 5) == 1.0
+    assert complete_evidence_at_k(["a", "x"], rel2, 5) == 0.0
+    assert complete_evidence_at_k(["a", "b", "x"], rel2, 5) == 1.0
+    # vizinho sozinho não completa nada
+    assert evidence_completeness_at_k(["viz"], rel2, 5) == 0.0
+    # o critério conjuntivo respeita o corte k
+    assert complete_evidence_at_k(["a", "x", "y", "z", "w", "b"], rel2, 5) == 0.0
+    # as três convenções de chunk_id resolvem para o documento certo
+    assert document_of("gdpr_regulation_EU_2016_p82_c0") == "gdpr_regulation_EU_2016"
+    assert document_of("lgpd_BR_2018_c17") == "lgpd_BR_2018"
+    assert document_of("gdpr_regulation_EU_2016_a3f91b2c4d5e") == "gdpr_regulation_EU_2016"
+    assert document_of("lgpd_BR_2018_a3f91b2c4d5e-2") == "lgpd_BR_2018"
+    # hash que por acaso parece id de HTML não pode ser cortado pelo padrão legado
+    assert document_of("norma_X_c12345678901") == "norma_X"
+    # cobertura por documento: precisa da âncora DAQUELE documento
+    rel3 = {"docA_p1_c0": 2, "docB_p9_c2": 2}
+    assert document_coverage_at_k(["docA_p1_c0", "docB_p9_c2"], rel3, 5) == 1.0
+    assert document_coverage_at_k(["docA_p1_c0", "docB_p3_c1"], rel3, 5) == 0.0
+    print("  completude / evidência completa / cobertura por documento  ✓")
 
     # GeoRisk — propriedade: sistemas idênticos → zRisk=0 → georisk=√(Si/n · 0.5)
     S_equal = np.array([[0.4, 0.8, 0.6], [0.4, 0.8, 0.6], [0.4, 0.8, 0.6]])
