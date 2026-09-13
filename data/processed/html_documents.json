@@ -47,7 +47,7 @@
     "origin": "estatico",
     "relation": "raiz",
     "text_length": 106882,
-    "chunks": 115
+    "chunks": 114
   },
   {
     "document_id": "ai_principles_OECD_",
@@ -67,7 +67,7 @@
     "origin": "estatico",
     "relation": "raiz",
     "text_length": 12195,
-    "chunks": 14
+    "chunks": 13
   },
   {
     "document_id": "dpia_ICO_",
@@ -117,7 +117,7 @@
     "origin": "estatico",
     "relation": "raiz",
     "text_length": 8856,
-    "chunks": 10
+    "chunks": 9
   },
   {
     "document_id": "iso_23894_2023",
@@ -237,7 +237,7 @@
     "origin": "estatico",
     "relation": "raiz",
     "text_length": 46861,
-    "chunks": 51
+    "chunks": 50
   },
   {
     "document_id": "relatorio_pesquisa_CEP_",
@@ -267,7 +267,7 @@
     "origin": "estatico",
     "relation": "raiz",
     "text_length": 3141,
-    "chunks": 4
+    "chunks": 3
   },
   {
     "document_id": "lei_13787_BR_2018",
