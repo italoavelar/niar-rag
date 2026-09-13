@@ -23,3 +23,11 @@ venv
 data/processed/embeddings_*.jsonl
 eval/results/indexes/*.npz
 *.bak-bf16
+
+# Backups locais que as ferramentas de migração criam antes de escrever
+# (eval/tools/migrar_ids_por_conteudo.py, reancorar_por_texto.py e a reextração
+# do corpus). São rede de segurança da máquina de quem rodou, não histórico: o
+# histórico é o próprio git. Alguns passam de 19 MB.
+*.bak-pre-migracao*
+*.bak-pre-reancoragem*
+*.bak-pre-rechunk*
