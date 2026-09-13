@@ -131,8 +131,13 @@ class ChunkerRegressionTests(unittest.TestCase):
         )
 
         self.assertEqual(merged, ["primeiro chunk fragmento final"])
-        self.assertEqual(chunking.chunk_text("x" * 119), [])
-        self.assertEqual(chunking.chunk_text("x" * 120), ["x" * 120])
+
+        # A fronteira é MIN_CHUNK_SIZE, não um número fixo: ela já mudou uma vez
+        # (120 → 300 em 13/09/2026) e o teste tem de acompanhar a constante, não
+        # travar o valor dela.
+        piso = chunking.MIN_CHUNK_SIZE
+        self.assertEqual(chunking.chunk_text("x" * (piso - 1)), [])
+        self.assertEqual(chunking.chunk_text("x" * piso), ["x" * piso])
 
     def test_pdf_and_html_entrypoints_share_the_same_chunker(self) -> None:
         _install_optional_dependency_stubs()

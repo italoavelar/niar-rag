@@ -17,6 +17,7 @@ if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
 
+from chunking import MIN_CHUNK_SIZE, TABLE_CHUNK_SIZE
 from structured_units import (
     PackedChunk,
     StructuralUnit,
@@ -266,7 +267,10 @@ class StructuredUnitPackingTests(unittest.TestCase):
             (f"L{index}", f"descricao-{index} " + ("x" * 390))
             for index in range(5)
         ]
-        packed = pack_structured_units(_table_units(rows))
+        # Teto explícito: o que se testa aqui é o mecanismo de corte entre
+        # linhas, não o valor de TABLE_CHUNK_SIZE. Com o teto de produção
+        # (2500) esta tabela caberia inteira, e o teste não exercitaria nada.
+        packed = pack_structured_units(_table_units(rows), table_chunk_size=1200)
 
         self.assertGreater(len(packed), 1)
         self.assertTrue(
@@ -276,9 +280,28 @@ class StructuredUnitPackingTests(unittest.TestCase):
         for index in range(5):
             self.assertEqual(combined.count(f"Level: L{index}"), 1)
 
+    def test_table_below_the_ceiling_stays_whole(self) -> None:
+        """Uma tabela-definição curta não pode ser partida.
+
+        Regressão do caso da UNESCO: partida ao meio, nenhuma das metades diz
+        que os níveis são quatro, e a pergunta vira irrespondível.
+        """
+        rows = [
+            (f"L{index}", f"descricao-{index} " + ("x" * 390))
+            for index in range(4)
+        ]
+        packed = pack_structured_units(_table_units(rows))
+
+        self.assertEqual(len(packed), 1)
+        self.assertLessEqual(len(packed[0].text), TABLE_CHUNK_SIZE)
+        for index in range(4):
+            self.assertIn(f"Level: L{index}", packed[0].text)
+
     def test_oversized_table_row_uses_fallback_with_table_context(self) -> None:
         row_text = "palavra " * 420
-        packed = pack_structured_units(_table_units([("Huge", row_text)]))
+        packed = pack_structured_units(
+            _table_units([("Huge", row_text)]), table_chunk_size=1200
+        )
 
         self.assertGreater(len(packed), 1)
         self.assertTrue(
@@ -394,7 +417,10 @@ class UnescoTableRegressionTests(unittest.TestCase):
 
         self.assertEqual(table.table_headers, ("Coluna 1", "Coluna 2", "Coluna 3"))
         self.assertEqual(len(rows), 3)
-        self.assertEqual(len(packed), 2)
+        # Era 2 enquanto a tabela era cortada pelo teto da prosa; com
+        # TABLE_CHUNK_SIZE cabe inteira. O que este teste guarda é a ausência de
+        # repetição da linha de conteúdo como cabeçalho, verificada abaixo.
+        self.assertEqual(len(packed), 1)
         self.assertEqual(combined.count("8.2.1.5. Is the data being stored"), 1)
         self.assertEqual(combined.count("8.2.2.1. Has a privacy impact"), 1)
 
@@ -420,7 +446,12 @@ class UnescoTableRegressionTests(unittest.TestCase):
         table_chunks = [chunk for chunk in packed if "[TABELA]" in chunk.text]
 
         self.assertEqual(len(table_rows), 4)
-        self.assertGreater(len(table_chunks), 1)
+        # Até 13/09/2026 este teste exigia len(table_chunks) > 1 — travava o
+        # sintoma. Com TABLE_CHUNK_SIZE a tabela dos quatro níveis cabe inteira,
+        # que é o comportamento que o nome do teste sempre prometeu.
+        self.assertEqual(len(table_chunks), 1)
+        for label in ("Catastrophic", "Critical", "Serious", "Moderate/ minor"):
+            self.assertIn(label, table_chunks[0].text)
         for label in ("Catastrophic", "Critical", "Serious", "Moderate/ minor"):
             self.assertEqual(sum(label in row.text for row in table_rows), 1)
         for row in table_rows:
@@ -493,6 +524,44 @@ class UndersizedChunkMergeTests(unittest.TestCase):
 
     def test_lone_short_chunk_is_discarded_like_chunk_text_does(self) -> None:
         self.assertEqual(merge_undersized_chunks([PackedChunk("i")], 120), [])
+
+    def test_lead_sentence_merges_into_the_table_it_introduces(self) -> None:
+        """A frase que apresenta a tabela precisa viajar junto com ela.
+
+        Caso real: página 45 do documento da UNESCO. A frase de 242 caracteres
+        que nomeia os quatro níveis de gravidade ficava isolada, acima do piso
+        antigo de 120 e portanto nunca candidata a fusão; a tabela que os
+        descreve vinha depois, em outro trecho. Nenhum dos dois, sozinho,
+        responde "quais são os níveis". O sistema respondeu que a UNESCO não
+        classifica gravidade, e o especialista marcou como alucinação.
+
+        Este é o caminho que o piso de 300 passa a exercitar: fundir prosa
+        DENTRO de um trecho [TABELA]…[/TABELA] — que o empacotador nunca
+        produz, e por isso não estava coberto.
+        """
+        lead = (
+            "For negative impacts, the scale of a given impact can be assessed "
+            "along a continuum of four Gravity level: Moderate/Minor, Serious, "
+            "Critical and Catastrophic."
+        )
+        tabela = (
+            "[TABELA]\nColunas: GRAVITY LEVEL | DESCRIPTION\n\n"
+            "GRAVITY LEVEL: Catastrophic\nDESCRIPTION: " + ("x" * 400) + "\n[/TABELA]"
+        )
+        self.assertLess(len(lead), MIN_CHUNK_SIZE)
+
+        packed = merge_undersized_chunks([PackedChunk(lead), PackedChunk(tabela)])
+
+        self.assertEqual(len(packed), 1)
+        texto = packed[0].text
+        self.assertIn("four Gravity level", texto)
+        self.assertIn("GRAVITY LEVEL: Catastrophic", texto)
+        # O invólucro da tabela continua íntegro e único: a fusão não pode
+        # aninhar nem duplicar o marcador.
+        self.assertEqual(texto.count("[TABELA]"), 1)
+        self.assertEqual(texto.count("[/TABELA]"), 1)
+        self.assertTrue(texto.startswith("For negative impacts"))
+        self.assertTrue(texto.rstrip().endswith("[/TABELA]"))
 
     def test_chunks_at_or_above_the_minimum_are_untouched(self) -> None:
         original = [PackedChunk("a" * 120), PackedChunk("b" * 500)]

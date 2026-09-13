@@ -7,7 +7,24 @@ import re
 
 CHUNK_SIZE = 1200
 CHUNK_OVERLAP = 200
-MIN_CHUNK_SIZE = 120
+
+# Piso de fragmento. Era 120 até 13/09/2026, e 120 é baixo demais: uma frase
+# solta de 242 caracteres ficava como trecho próprio, acima do piso e portanto
+# nunca candidata a fusão. Foi o que aconteceu na página 45 do documento da
+# UNESCO, onde a frase que nomeia os quatro níveis de gravidade ficou separada
+# da tabela que os descreve — e nenhuma das duas partes, sozinha, responde à
+# pergunta. Com 300, a frase funde na tabela seguinte e o trecho passa a
+# responder inteiro.
+MIN_CHUNK_SIZE = 300
+
+# Teto próprio para tabela. A prosa é cortada em CHUNK_SIZE; a tabela não pode
+# usar a mesma régua, porque cortar uma tabela-definição ao meio deixa cada
+# metade sem sentido: "Catastrophic, Critical" num trecho e "Serious,
+# Moderate/minor" no outro, sem que nenhum diga que os níveis são quatro.
+# 2500 mantém inteiras 13 das 24 tabelas hoje partidas no acervo. As demais são
+# tabelas de dados linha a linha (4.200 a 6.600 caracteres), onde partir é
+# legítimo e um trecho desse tamanho prejudicaria a recuperação.
+TABLE_CHUNK_SIZE = 2500
 
 # Limita cortes naturais ao fim da janela nominal. Com os valores padrão,
 # chunks normais terão entre 1000 e 1200 caracteres antes do overlap.

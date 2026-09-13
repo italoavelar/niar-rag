@@ -11,7 +11,13 @@ import re
 from collections import Counter
 from dataclasses import dataclass
 
-from chunking import CHUNK_OVERLAP, CHUNK_SIZE, MIN_CHUNK_SIZE, chunk_text
+from chunking import (
+    CHUNK_OVERLAP,
+    CHUNK_SIZE,
+    MIN_CHUNK_SIZE,
+    TABLE_CHUNK_SIZE,
+    chunk_text,
+)
 
 
 _ARTICLE_RE = re.compile(
@@ -660,8 +666,14 @@ def pack_structured_units(
     units: list[StructuralUnit],
     chunk_size: int = CHUNK_SIZE,
     overlap: int = CHUNK_OVERLAP,
+    table_chunk_size: int = TABLE_CHUNK_SIZE,
 ) -> list[PackedChunk]:
-    """Agrupa unidades sem cruzar linhas de tabela ou fronteiras explícitas."""
+    """Agrupa unidades sem cruzar linhas de tabela ou fronteiras explícitas.
+
+    Tabela usa ``table_chunk_size``, não ``chunk_size``: uma tabela-definição
+    cortada ao meio deixa as duas metades sem sentido — ver o comentário de
+    ``TABLE_CHUNK_SIZE`` em ``chunking.py``.
+    """
     if not units:
         return []
 
@@ -729,7 +741,7 @@ def pack_structured_units(
                 _pack_table(
                     unit,
                     rows,
-                    chunk_size,
+                    table_chunk_size,
                     overlap,
                     table_prefix,
                     caption,
