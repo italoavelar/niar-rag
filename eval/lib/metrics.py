@@ -116,10 +116,10 @@ def document_of(chunk_id: str) -> str:
     estiver à mão. Esta função existe para quando só o id está disponível
     (rankings salvos, qrels).
 
-    O formato do hash é testado PRIMEIRO de propósito: um hash pode, por acaso,
-    terminar em `c` seguido de dígitos e ser cortado errado pelo padrão legado
-    de HTML (acontece em ~0,04% dos ids, o que daria dois trechos silenciosamente
-    errados num corpus de 5.160).
+    Os três padrões existem porque o projeto teve três formatos de id. Sem o
+    padrão do hash, um id atual não casa com nenhum dos legados e a função
+    devolve o id inteiro — ou seja, cada trecho vira um documento seu, e
+    qualquer métrica por documento perde o sentido.
     """
     m = _PAT_HASH.match(chunk_id) or _PAT_PDF.match(chunk_id) or _PAT_HTML.match(chunk_id)
     return m.group(1) if m else chunk_id
@@ -279,6 +279,15 @@ def geo_risk(per_query_scores: Dict[str, Dict[str, float]],
 
 # ── Self-test ────────────────────────────────────────────────────────────────
 if __name__ == "__main__":
+    # O console do Windows costuma vir em cp1252 e quebra em acento e em traço
+    # de caixa. Não exigir que quem roda saiba de PYTHONIOENCODING.
+    import sys as _sys
+    for _fluxo in (_sys.stdout, _sys.stderr):
+        try:
+            _fluxo.reconfigure(encoding="utf-8")
+        except Exception:
+            pass
+
     print("── Self-test métricas ──")
 
     # nDCG: ranking perfeito = 1.0
