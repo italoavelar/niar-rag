@@ -163,7 +163,7 @@ embedders:
 generation:
   generator:
     provider: "groq"
-    model: "qwen/qwen3.6-27b"        # o Qwen de produção
+    model: "qwen/qwen3.8-27b"        # o Qwen de produção
     temperature: 0
     max_tokens: 4096                 # teto, não gasto: só se paga o que for gerado
     # O Qwen é modelo de raciocínio: com o <think> ligado ele gastava os 2048
