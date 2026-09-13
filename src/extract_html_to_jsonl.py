@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
 
+from chunk_id import chunk_id_por_conteudo
 from chunking import chunk_text
 from extract_to_jsonl import parse_ria_dimensions
 
@@ -227,7 +228,9 @@ def build_chunk_record(
     source_url = metadata["source_url"]
 
     return {
-        "id": f"{document_id}_c{chunk_index}",
+        # id derivado do conteúdo, não da posição — ver src/chunk_id.py.
+        # `chunk_index` continua no metadado, como informação de ordem.
+        "id": chunk_id_por_conteudo(document_id, chunk),
         "text": chunk,
         "metadata": {
             "document_id": document_id,

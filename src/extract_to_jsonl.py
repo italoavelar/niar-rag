@@ -10,6 +10,7 @@ from pathlib import Path
 import fitz
 from tqdm import tqdm
 
+from chunk_id import chunk_id_por_conteudo
 from chunking import (
     CHUNK_OVERLAP,
     CHUNK_SIZE,
@@ -760,11 +761,9 @@ def build_chunk_record(
     Cria o registro JSONL de um chunk com seus metadados.
     """
     return {
-        "id": (
-            f"{pdf_file.stem}_"
-            f"p{page_index}_"
-            f"c{chunk_index}"
-        ),
+        # id derivado do conteúdo, não da posição — ver src/chunk_id.py.
+        # Página e índice continuam no metadado, como informação de ordem.
+        "id": chunk_id_por_conteudo(pdf_file.stem, chunk),
         "text": chunk,
         "metadata": {
             "document_id": pdf_file.stem,
