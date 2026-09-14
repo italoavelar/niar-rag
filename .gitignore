@@ -31,3 +31,9 @@ eval/results/indexes/*.npz
 *.bak-pre-migracao*
 *.bak-pre-reancoragem*
 *.bak-pre-rechunk*
+
+# Lotes da Fase 1: o .md colável é reconstruível a partir do manifesto + corpus
+# (mesmos chunk_id, mesmo texto), então versioná-lo só duplica o corpus no git.
+# O manifesto .ids.json e a resposta .out.json FICAM: são a procedência — o que
+# foi oferecido ao modelo e o que ele devolveu.
+eval/lotes/*.md
