@@ -1,0 +1,255 @@
+
+====================================================================================================
+DOCUMENTO: predetermined_change_control_FDA_2023
+====================================================================================================
+Título: Predetermined Change Control Plans for Machine Learning-Enabled Medica
+Tipo: PDF
+Fonte: predetermined_change_control_FDA_2023.pdf
+Trechos: 7
+Caracteres: 7668
+Perguntas atuais: 0
+Sinal deôntico: 1
+Sinal dispositivo: 0
+Sinal loja: 0
+Páginas ausentes: 0
+Faixas ausentes: 
+Sugestão automática: SUSPEITO (pequeno demais)
+
+--- INÍCIO DO CONTEÚDO INDEXADO ---
+===== pág 1 · trecho 0 · 1020 chars · predetermined_change_control_FDA_2023_597aabc27709
+Predetermined Change Control Plans for Machine Learning-Enabled Medical Devices: Guiding Principles October 2023 In 2021, the U.S. Food and Drug Administration (FDA), Health Canada, and the U.K.’s Medicines and Healthcare products Regulatory Agency (MHRA) jointly identified 10 guiding principles that can inform the development of Good Machine Learning Practice (GMLP). GMLP supports the development of safe, effective, and high-quality artificial intelligence/machine learning technologies that can learn from real-world use and, in some cases, improve device performance. In this document, FDA, Health Canada, and MHRA jointly identified 5 guiding principles for predetermined change control plans. These principles draw upon the overarching GMLP guiding principles, in particular principle 10, which states that deployed models are monitored for performance and re-training risks are managed. Advancements in digital health technologies include artificial intelligence/machine learningenabled medical devices (MLMD).
+===== pág 1 · trecho 1 · 1195 chars · predetermined_change_control_FDA_2023_d014d171ea8d
+oyed models are monitored for performance and re-training risks are managed. Advancements in digital health technologies include artificial intelligence/machine learningenabled medical devices (MLMD). Regulatory expectations that are aligned with best practices for development and change management, such as those described in the GMLP Guiding Principles, can help to support the quality of such devices. Ultimately, this can lead to patient benefits such as earlier access to innovative technologies or more accurate diagnoses. The change management process helps to ensure the ongoing safety and effectiveness of devices in the face of change throughout the device’s total product lifecycle (TPLC). However, certain changes to MLMDs, such as changes to a model or algorithm, may be substantive or s
+
+--- FINAL DO CONTEÚDO INDEXADO ---
+ device is important to: • ensure the ongoing safety and effectiveness of the device with a PCCP • demonstrate that the benefits outweigh the associated risks and • establish that the risks are adequately managed and controlled Considerations for evidence supporting a PCCP include: • methods and metrics used to measure device performance are scientifically and clinically justified, in proportion to the risk and consistent with other evidence gathered throughout the TPLC • methods to generate evidence are specified that demonstrate the benefits and risks of the device before and after changes specified in the PCCP are implemented 4. Transparent: For PCCPs, the best practice is to provide clear and appropriate information and detailed plans for ongoing transparency to users and other stakeholders. This helps ensure that stakeholders stay aware of the device’s performance and use before and after changes are implemented. Consider, for example:
+===== pág 2 · trecho 2 · 957 chars · predetermined_change_control_FDA_2023_11353bac4588
+ngoing transparency to users and other stakeholders. This helps ensure that stakeholders stay aware of the device’s performance and use before and after changes are implemented. Consider, for example: • characterization of data used in development and modifications, demonstrated to reflect the intended population • comprehensive testing for planned changes • characterization of the device before and after implementation of changes • monitoring, detection, and response to deviations in device performance 5. Total Product Lifecycle (TPLC) Perspective: Creating and using a PCCP from a TPLC perspective can: • elevate the quality and integrity of a PCCP by continually considering the perspectives of all stakeholders as well as risk management practices throughout the TPLC • use and support existing regulatory, quality, and risk management measures throughout the TPLC to ensure device safety by monitoring, reporting and responding to safety concerns
+
+
+====================================================================================================
+DOCUMENTO: certificacao_SBIS_
+====================================================================================================
+Título: Certificação de Aplicações de Inteligência Artificial em Saúde
+Tipo: HTML
+Fonte: https://sbis.org.br/certificacoes/certificacao-de-ia/
+Trechos: 6
+Caracteres: 6571
+Perguntas atuais: 0
+Sinal deôntico: 0
+Sinal dispositivo: 0
+Sinal loja: 0
+Páginas ausentes: 0
+Faixas ausentes: 
+Sugestão automática: SUSPEITO (pequeno demais)
+
+--- INÍCIO DO CONTEÚDO INDEXADO ---
+===== pág None · trecho 0 · 1104 chars · certificacao_SBIS__427f996b4379
+Introdução O Processo de Certificação de Aplicações de Inteligência Artificial em Saúde visa, por meio de uma lista abrangente de requisitos, avaliar e atestar aspectos de qualidade de aplicações que utilizam funcionalidades baseadas em Inteligência Artificial (IA) com potencial impacto clínico, assistencial ou decisório direto sobre o cuidado com o paciente ou sobre a conduta de profissionais de saúde. Objetivos da Certificação de Aplicações de IA em Saúde • Garantir segurança e qualidade de soluções de IA em saúde Assegurar que sistemas com IA mantenham padrões mínimos de segurança clínica, proteção de dados, explicabilidade e desempenho confiável, reduzindo riscos ao paciente e ao profissional de saúde. • Fomentar boas práticas de desenvolvimento e governança de IA Incentivar fornecedores a adotar metodologias estruturadas, elevando a maturidade do setor. • Apoiar a conformidade regulatória e ética Oferecer um selo que ajude empresas e instituições a demonstrarem conformidade com as boas práticas para desenvolvimento de soluções de IA para a saúde, promovendo harmonização regulatória.
+===== pág None · trecho 1 · 1075 chars · certificacao_SBIS__05472c6ffac1
+ia e ética Oferecer um selo que ajude empresas e instituições a demonstrarem conformidade com as boas práticas para desenvolvimento de soluções de IA para a saúde, promovendo harmonização regulatória. • Estimular a inovação responsável Criar um ambiente em que fornecedores possam inovar com IA sabendo que existem critérios claros de avaliação, reduzindo barreiras de adoção pelas instituições de saúde e acelerando a transformação digital segura. Aplicações cujo uso de IA esteja restrito a processos estritamente administrativos, operacionais genéricos ou de apoio interno, sem impacto clínico , não são alvo desta certificação. Cenários de Aplicações Certificáveis 1. Recomendações e sugestões clínicas Aplicações que realizam recomendações e/ou
+
+--- FINAL DO CONTEÚDO INDEXADO ---
+ário do paciente com base em solicitações em linguagem natural feitas pelo profissional de saúde. 9. Análise populacional com impacto individual Aplicações que analisam grupos populacionais e geram ações que podem afetar pacientes individualmente. Exemplo: ferramentas para inclusão ou exclusão de indivíduos em programas de atenção crônica ou linhas de cuidado; atribuição de riscos para segmentação; recomendação de rastreios, exames ou protocolos individualizados. 10. Interação com pacientes, familiares ou cuidadores Aplicações que interagem com pacientes, familiares ou cuidadores utilizando dados clínicos, dados sensíveis e/ou conceitos clínicos para apoiar decisões ou engajamento. Exemplo: ferramentas de chatbot com IA para aconselhamento de cuidado ou soluções que simulam a atuação de enfermeiros ou médicos digitais, respondendo dúvidas e conduzindo fluxos de atendimento pré-definidos.
+===== pág None · trecho 5 · 1026 chars · certificacao_SBIS__440662fad0d1
+ferramentas de chatbot com IA para aconselhamento de cuidado ou soluções que simulam a atuação de enfermeiros ou médicos digitais, respondendo dúvidas e conduzindo fluxos de atendimento pré-definidos. Cenários de Aplicações Não Certificáveis 1. Aplicações administrativas ou de backoffice Ferramentas com uso de IA voltadas exclusivamente à gestão administrativa ou operacional. Exemplo: soluções para otimização de agendamentos, análise preditiva de faturamento, análise e prevenção de glosas, entre outras. 2. Ajustes visuais ou estruturais de dados administrativos Aplicações voltadas apenas à organização ou correção de dados administrativos. Exemplo: soluções para correção automática de campos. 3. Análise populacional sem individualização clínica Aplicações que utilizam exclusivamente dados anonimizados e não resultam em ações clínicas ou operacionais individualizadas. Exemplo: ferramentas para geração de estimativas agregadas de prevalência de doenças por região ou projeções epidemiológicas internas. Conheça mais
+
+
+====================================================================================================
+DOCUMENTO: tcud_CEP_2015
+====================================================================================================
+Título: Termo de Compromisso de Utilização de Dados (TCUD)
+Tipo: HTML
+Fonte: https://www.ufmg.br/bioetica/cep/tcud/
+Trechos: 5
+Caracteres: 5438
+Perguntas atuais: 0
+Sinal deôntico: 6
+Sinal dispositivo: 0
+Sinal loja: 0
+Páginas ausentes: 0
+Faixas ausentes: 
+Sugestão automática: SUSPEITO (pequeno demais)
+
+--- INÍCIO DO CONTEÚDO INDEXADO ---
+===== pág None · trecho 0 · 1078 chars · tcud_CEP_2015_76d73d98ed4d
+Termo de Compromisso de Utilização de Dados (TCUD) Instruções de preenchimento Obrigatório para pesquisa que utilizam e coletam informações em banco de dados de instituições, prontuários médicos ou odontológicos, excetuando os bancos de dados de acesso público (ex: dados disponíveis em consulta pública de processos nos sites dos tribunais de justiça). Adapte o modelo conforme as particularidades de seu projeto, substituindo as partes em vermelho. Todos os pesquisadores que terão acesso aos documentos do arquivo deverão informar o seu nome e seu registro de identidade (R.G.), e assinar este termo. Será vedado o acesso aos documentos a pessoas cujo nome e assinatura não constarem no documento. A anuência, ou modelo de carta de anuência, de acesso aos bancos de dados deve ser apresentada na submissão à Plataforma Brasil. As assinaturas dos responsáveis dos bancos de dados devem ser obrigatoriamente apresentadas na coleta de dados. As páginas devem ser enumeradas e uma via deste termo deve ser entregue à Instituição e outra ficar de posse do pesquisador responsável.
+===== pág None · trecho 1 · 1151 chars · tcud_CEP_2015_2f12fecd77d8
+dos devem ser obrigatoriamente apresentadas na coleta de dados. As páginas devem ser enumeradas e uma via deste termo deve ser entregue à Instituição e outra ficar de posse do pesquisador responsável. Esta folha de instruções deve ser removida da versão que será postada na Plataforma Brasil, permanecendo apenas o modelo do documento abaixo. Versão 2.0/2015 Termo de Compromisso de Utilização de Dados (TCUD) Identificação dos membros do grupo de pesquisa Nome completo (sem abreviação) RG Assinatura Identificação da pesquisa a)Título do Projeto: ______________________________________________________________________________ b) Departamento/Faculdade/Curso: ______________________________________________________________________________ c) Pesquisador Responsável: _________________
+
+--- FINAL DO CONTEÚDO INDEXADO ---
+alidade dos dados e a privacidade dos indivíduos que terão suas informações acessadas estão sob nossa responsabilidade. Também declaramos que não repassaremos os dados coletados ou o banco de dados em sua íntegra, ou parte dele, a pessoas não envolvidas na equipe da pesquisa. Os dados obtidos na pesquisa somente serão utilizados para este projeto. Todo e qualquer outro uso que venha a ser planejado, será objeto de novo projeto de pesquisa, que será submetido à apreciação do CEP UFMG. Devido à impossibilidade de obtenção do Termo de Consentimento Livre e Esclarecido de todos os sujeitos, assinaremos esse Termo de Consentimento de Uso de Banco de Dados, para a salvaguarda dos direitos dos participantes. Local, data. Nome completo (sem abreviação) Assinatura Autorização da Instituição Declaramos para os devidos fins, que cederemos aos pesquisadores apresentados neste termo, o acesso aos dados solicitados para serem utilizados nesta pesquisa.
+===== pág None · trecho 4 · 980 chars · tcud_CEP_2015_3ae1430c379f
+o) Assinatura Autorização da Instituição Declaramos para os devidos fins, que cederemos aos pesquisadores apresentados neste termo, o acesso aos dados solicitados para serem utilizados nesta pesquisa. Esta autorização está condicionada ao cumprimento do (a) pesquisador (a) aos requisitos da Resolução 466/12 e suas complementares, comprometendo-se o(a) mesmo(a) a utilizar os dados dos participantes da pesquisa, exclusivamente para os fins científicos, mantendo o sigilo e garantindo a não utilização das informações em prejuízo das pessoas e/ou das comunidades. Antes de iniciar a coleta de dados o/a pesquisador/a deverá apresentar o Parecer Consubstanciado devidamente aprovado, emitido por Comitê de Ética em Pesquisa Envolvendo Seres Humanos, credenciado ao Sistema CEP/CONEP. Local, data. ______________________________________________________________ Nome legível/assinatura e carimbo do responsável pela anuência da Instituição Clique para download para versão editável.
+
+
+====================================================================================================
+DOCUMENTO: relatorio_pesquisa_CEP_
+====================================================================================================
+Título: Relatório de Pesquisa (Comitê de Ética em Pesquisa)
+Tipo: HTML
+Fonte: https://www.ufmg.br/bioetica/cep/modelo-de-relatorio-parcial-ou-final/
+Trechos: 4
+Caracteres: 4606
+Perguntas atuais: 0
+Sinal deôntico: 3
+Sinal dispositivo: 0
+Sinal loja: 0
+Páginas ausentes: 0
+Faixas ausentes: 
+Sugestão automática: SUSPEITO (pequeno demais)
+
+--- INÍCIO DO CONTEÚDO INDEXADO ---
+===== pág None · trecho 0 · 1113 chars · relatorio_pesquisa_CEP__10c8b58816af
+Esse modelo é necessário para apreciação de notificação no CEP. Caso o protocolo não contemple algum campo específico, é possível assinalar como “NÃO SE APLICA”. Esse formulário se aplica para pesquisas nas áreas das ciências sociais e humanidades. Se a pesquisa envolva estudo clínico, o modelo de relatório final sugerido pela Conep está no link ao final da página ou clique aqui . RELATÓRIO DE PESQUISA (COMITÊ DE ÉTICA EM PESQUISA) [1] [ ] PARCIAL [ ] FINAL Relatório referente ao período de ___/ ___ / 20__ a ___/ ___ / 20__ [2] . CAAE n o: Título da Pesquisa: Pesquisador Responsável: E-mail: Pesquisadores assistentes Data da aprovação pelo COEP: Sobre a pesquisa Apresentação (apresentar o problema de pesquisa e seus objetivos) Desenvolvimento do projeto Explicitar as atividades desenvolvidas, enfatizando os procedimentos que afetem diretamente os participantes da pesquisa. (Detalhar as etapas do estudo, local de realização das atividades e condições de participação na pesquisa) Apontar os resultados alcançados Informar o número de participantes da pesquisa, por categoria de participante (exemplo:
+===== pág None · trecho 1 · 1133 chars · relatorio_pesquisa_CEP__03cfd8ff1f85
+do, local de realização das atividades e condições de participação na pesquisa) Apontar os resultados alcançados Informar o número de participantes da pesquisa, por categoria de participante (exemplo: se a mesma pesquisa abordar pacientes em um hospital e médicos, devem ser discriminados quantos participantes pacientes e médicos fizeram parte do estudo). Informar, para cada categoria de participante: Esse número é o proposto no projeto inicial? Caso tenha ocorrido inclusão ou exclusão de participante, é necessário justificar. 5.Indicar a ocorrência de desconfortos físicos, emocionais ou morais , imediatos ou tardios, comprometendo os participantes. Para estudos clínicos, DEVE ser apresentado neste campo lista dos eventos
+
+--- FINAL DO CONTEÚDO INDEXADO ---
+lizado. (Devolutiva feita ao grupo e/ou comunidade, a partir dos resultados da pesquisa) 8. Relatar se os resultados parciais ou totais foram publicados ou apresentados em congresso, indicando: os autores, o título do trabalho, o nome, local e data do evento. (Pede-se que a lista das publicações originadas do estudo sejam apresentadas em normas bibliográficas adequadas – pode-se indicar publicações no prelo. Caso não existam publicações já encaminhadas ou realizadas, indicar a intenção de publicação posterior) 9.Houve necessidade de alteração ou adequação de algum aspecto do projeto? (por exemplo: alteração de instrumento de pesquisa) Qual (is)? Detalhar e justificar as alterações [3] . 10. Outras informações que julgar pertinentes. .
+===== pág None · trecho 3 · 1177 chars · relatorio_pesquisa_CEP__a3712a7e1aaa
+ação ou adequação de algum aspecto do projeto? (por exemplo: alteração de instrumento de pesquisa) Qual (is)? Detalhar e justificar as alterações [3] . 10. Outras informações que julgar pertinentes. . Belo Horizonte, ____/____/_____ ______________________________________ Assinatura do Pesquisador Responsável [1] Este relatório NÃO deve ser usado como modelo para relatório final de estudos clínicos unicêntricos e multicêntricos, os quais têm modelo próprio regulamentado pela CONEP. [2] Pedidos de prorrogação – extensão de prazo da pesquisa devem ser realizados por meio de emenda na Plataforma Brasil. As datas aqui se referem às datas de execução aprovadas. [3] Modificações de aspectos do projeto aqui relatadas devem estar congruentes com pedidos de emenda ao protocolo de pesquisa na Plataforma Brasil. Versão em .docx do relatório parcial/final Orientações para elaboração de relatório final ( Estudos clínicos unicêntricos e multicêntricos envio via plataformaBrasil por notificação). Orientações para elaboração de relatório parcial/final e comunicação de encerramento do projeto. Tutorial de envio de notificação de relatório parcial ou final via plataformaBrasil.
+
+
+====================================================================================================
+DOCUMENTO: imdrf_good_ml_practice_2025
+====================================================================================================
+Título: Good machine learning practice for medical device development: Guiding
+Tipo: PDF
+Fonte: imdrf_good_ml_practice_2025.pdf
+Trechos: 5
+Caracteres: 4191
+Perguntas atuais: 0
+Sinal deôntico: 2
+Sinal dispositivo: 0
+Sinal loja: 0
+Páginas ausentes: 1
+Faixas ausentes: 3
+Sugestão automática: SUSPEITO (pequeno demais)
+
+--- INÍCIO DO CONTEÚDO INDEXADO ---
+===== pág 1 · trecho 0 · 529 chars · imdrf_good_ml_practice_2025_7f83d8d31e4b
+[TABELA]
+Colunas: Final Document | Coluna 2 | Coluna 3
+Final Document: IMDRF/AIML WG/N88 FINAL: 2025
+Coluna 2:
+Coluna 3:
+Final Document: Good machine learning practice for medical device development: Guiding principles
+Coluna 2:
+Coluna 3:
+Final Document:
+Coluna 2: AUTHORING GROUP
+Coluna 3:
+Final Document: Artificial Intelligence/Machine Learning-enabled Working Group
+Coluna 2: Artificial Intelligence/Machine Learning-enabled Working
+Coluna 3:
+Final Document:
+Coluna 2: Group
+Coluna 3:
+[/TABELA]
+27 January 2025
+===== pág 2 · trecho 0 · 1193 chars · imdrf_good_ml_practice_2025_943f41d62790
+Preface
+© Copyright 2025 by the International Medical Device Regulators Forum.
+This work is copyright. Subject to these Terms and Conditions, you may download, display, print, translate, modify and reproduce the whole or part of this work for your own personal use, for research, for educational purposes or, if you are part of an organisation, for internal use within your organisation, but only if you or your organisation do not use the reproduction for any commercial purpose and retain all disclaimer notices as part of that reproduction. If you use any part of this work, you must include the following acknowledgement (delete inapplicable):
+All other rights are reserved and you are not allowed to reproduce the whole or any part of this work in any way (electronic or otherwise) without first being given specific written permission from IMDRF to do so. Requests and inquiries concerning reproduction and rights are to be sent to the IMDRF Secretariat.
+Incorporation of this document, in part or in whole, into another document, or its translation into languages other than English, does not convey or represent an endorsement of any kind by the IMDRF.
+Naoyuki YASUDA, IMDRF Chair
+===== pág 4 · trecho 0 · 729 chars · imdrf_good_ml_practice_2025_5744faad5e60
+Introduction
+Artificial intelligence (AI) technologies, inclu
+
+--- FINAL DO CONTEÚDO INDEXADO ---
+s that incorporate AI. These principles are important to apply across the lifecycle of the medical device.
+===== pág 4 · trecho 1 · 611 chars · imdrf_good_ml_practice_2025_d263d8562210
+The 10 guiding principles for Good Machine Learning Practice (GMLP) presented in this document are a call to action to international standards organizations, international regulators, and other collaborative bodies to further advance GMLP. Areas of collaboration include research, creating educational tools and resources, international harmonization, and consensus standards, to inform regulatory policies and regulatory guidelines. These guiding principles may be used to adopt practices from other sectors, tailor them to the medical technology and healthcare, and to develop novel practices for this domain.
+===== pág 4 · trecho 2 · 1125 chars · imdrf_good_ml_practice_2025_f7245c33d61e
+Further advances in AI technologies in healthcare, exemplified by generative AI, highlight the importance of clearly describing a product’s intended use/ intended purpose and identifying its regulatory status. Moreover, generative AI may heighten the importance of GMLP, including fundamental software engineering practices. For example, healthcare technologies that incorporate generative AI may employ foundation models that are not under the provenance of the medical device manufacturers, thereby potentially introducing unique risks. Generative AI may also pose a more fundamental challenge with respect to demonstrating device performance. The regulatory science of measuring performance as well as characterizing and detecting errors in these models is maturing to meet this challenge.
+As the AI medical device field continues to evolve, so too must GMLP and consensus standards. Strong partnerships with our international public health partners are essential to empower responsible innovations in this area. Thus, we expect this collaborative work can inform future IMDRF efforts and other international engagements.
+
+
+====================================================================================================
+DOCUMENTO: rnds_MS_
+====================================================================================================
+Título: Rede Nacional de Dados em Saúde
+Tipo: HTML
+Fonte: https://www.gov.br/saude/pt-br/composicao/seidigi/rnds
+Trechos: 3
+Caracteres: 3743
+Perguntas atuais: 0
+Sinal deôntico: 0
+Sinal dispositivo: 0
+Sinal loja: 0
+Páginas ausentes: 0
+Faixas ausentes: 
+Sugestão automática: SUSPEITO (pequeno demais)
+
+--- INÍCIO DO CONTEÚDO INDEXADO ---
+===== pág None · trecho 0 · 1152 chars · rnds_MS__943e35cd1a32
+Info Rede Nacional de Dados em Saúde A Rede Nacional de Dados em Saúde (RNDS) é a plataforma oficial de interoperabilidade do Ministério da Saúde, para conectar sistemas de saúde em todo o Brasil. A RNDS estabelece a infraestrutura nacional para o compartilhamento padronizado de dados de saúde.. A RNDS adota padrões de segurança e de privacidade das informações de saúde, seguindo as diretrizes da Lei Geral de Proteção de Dados (LGPD). O acesso aos dados dos pacientes é restrito e utilizado exclusivamente para fins assistenciais e de gestão da saúde, para confidencialidade e uso adequado das informações. A interoperabilidade promovida pela RNDS permite que médicos, enfermeiros e odontólogos acessem o histórico clínico do paciente durante o atendimento, por meio do SUS Digital Profissional. Gestores de saúde também podem acessar informações agregadas para planejamento, monitoramento e aprimoramento das políticas públicas.. Os cidadãos podem consultar seus próprios dados de saúde pelo aplicativo Meu SUS Digital, acessando informações sobre atendimentos, vacinas, medicamentos e outros registros de saúde, de forma segura e individualizada.
+===== pág None · trecho 1 · 1159 chars · rnds_MS__34fdf6c106b8
+consultar seus próprios dados de saúde pelo aplicativo Meu SUS Digital, acessando informações sobre atendimentos, vacinas, medicamentos e outros registros de saúde, de forma segura e individualizada. Com a integração de instituições públicas e privadas, a RNDS centraliza e organiza as informações de saúde dos cidadãos, para a troca de informações entre diferentes redes de saúde. Jornada do cidadão e a RNDS Manaus-AM: O cidadão tomou uma vacina na UBS que utilizou o PEC e-SUS registrando as informações no sistema integrado à RNDS. Belém-PA: No ano seguinte, o cidadão foi atendido na Atenção Primária em Saúde, desta vez em uma unidade sem o PEC e-SUS, mas seus dados já estavam acessíveis na RNDS. Unaí-MG: Anos dep
+
+--- FINAL DO CONTEÚDO INDEXADO ---
+SUS, mas seus dados já estavam acessíveis na RNDS. Unaí-MG: Anos depois, o cidadão teve uma internação pelo plano de saúde onde o hospital utilizava um sistema próprio, mas a RNDS agregou a troca de informações entre os sistemas público e privado. Porto Alegre-RS: Em outra ocasião, o cidadão realizou um exame laboratorial de Covid-19 em um sistema privado, com os resultados integrados na RNDS, possibilitando acesso por profissionais de diferentes locais e por ele mesmo pelo aplicativo Meu SUS Digital.
+===== pág None · trecho 2 · 1430 chars · rnds_MS__3e10a1f07160
+xame laboratorial de Covid-19 em um sistema privado, com os resultados integrados na RNDS, possibilitando acesso por profissionais de diferentes locais e por ele mesmo pelo aplicativo Meu SUS Digital. Essa jornada mostra como a RNDS conecta os sistemas, para que o histórico de saúde do cidadão acompanhe sua trajetória por diferentes níveis de atenção, setores de saúde, tipos de prontuários e em qualquer estado ou município, para um cuidado contínuo e integrado. Como integrar à RNDS Atualizações técnicas Adesão à RNDS Guia integração Suporte a integradores Transformação digital A Rede Nacional de Dados em Saúde (RNDS) integra a transformação digital do Sistema Único de Saúde (SUS), compondo a infraestrutura nacional de interoperabilidade para o compartilhamento de informações em saúde no país. Os dados integrados à RNDS podem ser utilizados em atividades assistenciais, de vigilância em saúde, de planejamento e de gestão, conforme as regras de acesso e a legislação vigente. Os registros disponíveis na RNDS também podem ser consultados pelos cidadãos por meio do Meu SUS Digital, em conformidade com as normas de proteção de dados pessoais. de acesso e a legislação vigente. Os registros disponíveis na RNDS também podem ser consultados pelos cidadãos por meio do Meu SUS Digital, em conformidade com as normas de proteção de dados pessoais. Mais Informações Estrutura do Projeto Ouvidoria-Geral do SUS Teleatendente:
+
+
+====================================================================================================
+DOCUMENTO: ai_principles_OECD_
+====================================================================================================
+Título: OECD AI Principles overview
+Tipo: HTML
+Fonte: https://oecd.ai/en/ai-principles
+Trechos: 3
+Caracteres: 2698
+Perguntas atuais: 0
+Sinal deôntico: 0
+Sinal dispositivo: 0
+Sinal loja: 0
+Páginas ausentes: 0
+Faixas ausentes: 
+Sugestão automática: SUSPEITO (pequeno demais)
+
+--- INÍCIO DO CONTEÚDO INDEXADO ---
+===== pág None · trecho 0 · 1181 chars · ai_principles_OECD__9a4b175318f4
+OECD AI Principles overview The OECD AI Principles promote use of AI that is innovative and trustworthy and that respects human rights and democratic values. Adopted in May 2019, they set standards for AI that are practical and flexible enough to stand the test of time. Principles for trustworthy AI The OECD AI Principles were initially adopted in 2019 and updated in May 2024 . Adherents updated them to consider new technological and policy developments, ensuring they remain robust and fit for purpose. The Principles guide AI actors in their efforts to develop trustworthy AI and provide policymakers with recommendations for effective AI policies. Countries use the OECD AI Principles and related tools to shape policies and create AI risk frameworks, building a foundation for global interoperability between jurisdictions. Today, the European Union , the Council of Europe, the United States , and the United Nations and other jurisdictions use the OECD’s definition of an AI system and lifecycle below in their legislative and regulatory frameworks and guidance. The principles, definition and lifecycle are all part of the OECD Recommendation on Artificial Intelligence.
+===== pág None · trecho 1 · 1192 chars · ai_principles_OECD__3a90279b661d
+AI system and lifecycle below in their legislative and regulatory frameworks and guidance. The principles, definition and lifecycle are all part of the OECD Recommendation on Artificial Intelligence. Values-based principles Inclusive growth, sustainable development and well-being Human rights and democratic values, including fairness and privacy Transparency and explainability Robustness, security and safety Accountability Recommendations for policymakers Investing in AI research and development Fostering an inclusive AI-enabling ecosystem Shaping an enabling interoperable governance and policy environment for AI Building human capacity and preparing for labour 
+
+--- FINAL DO CONTEÚDO INDEXADO ---
+ropean Union , the Council of Europe, the United States , and the United Nations and other jurisdictions use the OECD’s definition of an AI system and lifecycle below in their legislative and regulatory frameworks and guidance. The principles, definition and lifecycle are all part of the OECD Recommendation on Artificial Intelligence.
+===== pág None · trecho 1 · 1192 chars · ai_principles_OECD__3a90279b661d
+AI system and lifecycle below in their legislative and regulatory frameworks and guidance. The principles, definition and lifecycle are all part of the OECD Recommendation on Artificial Intelligence. Values-based principles Inclusive growth, sustainable development and well-being Human rights and democratic values, including fairness and privacy Transparency and explainability Robustness, security and safety Accountability Recommendations for policymakers Investing in AI research and development Fostering an inclusive AI-enabling ecosystem Shaping an enabling interoperable governance and policy environment for AI Building human capacity and preparing for labour market transition International co-operation for trustworthy AI Countries adhering to the AI Principles The OECD Recommendation on AI is the first intergovernmental standard on AI. Today, there are 47 adherents to the Principles. See list of adherents AI terms & concepts AI system AI system lifecycle An AI system is a machine-based system that, for explicit or implicit objectives, infers, from the input it receives, how to generate outputs such as predictions, content, recommendations, or decisions that can influence
+===== pág None · trecho 2 · 323 chars · ai_principles_OECD__1b36586be9b7
+chine-based system that, for explicit or implicit objectives, infers, from the input it receives, how to generate outputs such as predictions, content, recommendations, or decisions that can influence physical or virtual environments. Different AI systems vary in their levels of autonomy and adaptiveness after deployment.
+
+
+====================================================================================================
+DOCUMENTO: transparency_ml_devices_FDA_2024
+====================================================================================================
+Título: Transparency for Machine Learning-Enabled Medical Devices: Guiding Pri
+Tipo: PDF
+Fonte: transparency_ml_devices_FDA_2024.pdf
+Trechos: 13
+Caracteres: 14337
+Perguntas atuais: 0
+Sinal deôntico: 0
+Sinal dispositivo: 0
+Sinal loja: 0
+Páginas ausentes: 0
+Faixas ausentes: 
+Sugestão automática: SUSPEITO (sem marca de norma)
+
+--- INÍCIO DO CONTEÚDO INDEXADO ---
+===== pág 1 · trecho 0 · 1108 chars · transparency_ml_devices_FDA_2024_06ac6f2ba00e
+Transparency for Machine Learning-Enabled Medical Devices: Guiding Principles June 2024 In 2021, the U.S. Food and Drug Administration (FDA), Health Canada and the United Kingdom’s Medicines and Healthcare products Regulatory Agency (MHRA) jointly identified 10 guiding principles for good machine learning practice (GMLP). GMLP supports the development of safe, effective and high-quality artificial intelligence/machine learning technologies that can learn from real-world use and, in some cases, improve device performance. Learn more: Good machine learning practice for medical device development: Guiding principles The FDA, Health Canada and MHRA have further identified guiding principles for transparency for machine learning-enabled medical devices (MLMDs). These principles build upon the GMLP principles, especially: • principle 7: Focus is placed on the performance of the human-AI team. • principle 9: Users are provided clear, essential information. While the guiding principles presented here promote transparency for MLMDs, transparency is a good practice to consider for all medical devices.
+===== pág 1 · trecho 1 · 1156 chars · transparency_ml_devices_FDA_2024_635be9f4de9d
+ple 9: Users are provided clear, essential information. While the guiding principles presented here promote transparency for MLMDs, transparency is a good practice to consider for all medical devices. In this document, “transparency” describes the degree to which appropriate information about a MLMD (including its intended use, development, performance and, when available, logic) is clearly communicated to relevant audiences. “Logic” refers to information about how an output or result was reached or the basis for a decision or action. The degree to which this logic can be explained in a way that a person can understand is known as “explainability”. Logic and explainability are aspects of transparency. Effective tr
+
+--- FINAL DO CONTEÚDO INDEXADO ---
+ons about the device to support patient outcomes. Why: Transparency supports: Motivation for • safe and effective use. transparency • patient-centered care. • identification and evaluation of risks and benefits of a device. • informed decision-making and risk management. • device maintenance and detection of errors or performance degradation. • health equity through identification of bias. • increased fluency and confidence in MLMD use, increased adoption of the technology. What: Enabling an understanding of the MLMD includes sharing relevant information on: Relevant • device characterization and intended use. information • how the device fits into health care workflow, including the intended impact on the judgment of a health care professional. • device performance.
+===== pág 4 · trecho 2 · 1138 chars · transparency_ml_devices_FDA_2024_bd4ed49787c7
+evice characterization and intended use. information • how the device fits into health care workflow, including the intended impact on the judgment of a health care professional. • device performance. • device benefits and risks. • product development and risk management activities across the lifecycle. • logic of the model, when available. • device limitations, including biases, confidence intervals and data characterization gaps. • how safety and effectiveness are maintained across the lifecycle. Where: Maximizing the utility of the software user interface can: Placement of • make information more responsive. information • allow information to be personalized, adaptive and reciprocal. • address user needs through a variety of modalities. When: Timely communication can support successful transparency, such as: Timing of • considering information needs at different stages of the total product lifecycle. communication • providing notifications of device updates. • providing targeted information when it’s needed in the workflow. How: Human-centered design principles can support transparency. Methods to support transparency
+

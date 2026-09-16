@@ -1,0 +1,218 @@
+
+====================================================================================================
+DOCUMENTO: ai_device_software_guidance_FDA_2025
+====================================================================================================
+Páginas no PDF: 67
+Última página indexada: 67
+Páginas ausentes: [3]
+Ausentes COM texto extraível: [3]
+Ausentes sem/pouco texto: []
+
+--- Página 3 | TEXTO_PRESENTE | 3266 chars ---
+Contains Nonbinding Recommendations Draft – Not for Implementation Table of Contents 61 I. Introduction ............................................................................................................................ 1 62 II. Scope ...................................................................................................................................... 2 63 III. TPLC Approach: General Principles .............................................................................
+
+====================================================================================================
+DOCUMENTO: ai_ml_discussion_paper_FDA_2021
+====================================================================================================
+Páginas no PDF: 20
+Última página indexada: 20
+Páginas ausentes: [1]
+Ausentes COM texto extraível: []
+Ausentes sem/pouco texto: [1]
+
+--- Página 1 | SEM_OU_POUCO_TEXTO | 17 chars ---
+pg. 1 www.fda.gov
+
+====================================================================================================
+DOCUMENTO: ai_risk_management_framework_NIST_2023
+====================================================================================================
+Páginas no PDF: 48
+Última página indexada: 47
+Páginas ausentes: [1, 4, 5, 48]
+Ausentes COM texto extraível: [4, 5]
+Ausentes sem/pouco texto: [1, 48]
+
+--- Página 1 | SEM_OU_POUCO_TEXTO | 76 chars ---
+NIST AI 100-1 Artificial Intelligence Risk Management Framework (AI RMF 1.0)
+
+--- Página 4 | TEXTO_PRESENTE | 1235 chars ---
+Table of Contents Executive Summary 1 Part 1: Foundational Information 4 1 Framing Risk 4 1.1 Understanding and Addressing Risks, Impacts, and Harms 4 1.2 Challenges for AI Risk Management 5 1.2.1 Risk Measurement 5 1.2.2 Risk Tolerance 7 1.2.3 Risk Prioritization 7 1.2.4 Organizational Integration and Management of Risk 8 2 Audience 9 3 AI Risks and Trustworthiness 12 3.1 Valid and Reliable 13 3.2 Safe 14 3.3 Secure and Resilient 15 3.4 Accountable and Transparent 15 3.5 Explainable and Interpr
+
+--- Página 5 | TEXTO_PRESENTE | 1639 chars ---
+NIST AI 100-1 AI RMF 1.0 List of Figures Fig. 1 Examples of potential harms related to AI systems. Trustworthy AI systems and their responsible use can mitigate negative risks and contribute to bene- fits for people, organizations, and ecosystems. 5 Fig. 2 Lifecycle and Key Dimensions of an AI System. Modified from OECD (2022) OECD Framework for the Classification of AI systems — OECD Digital Economy Papers. The two inner circles show AI systems’ key di- mensions and the outer circle shows AI li
+
+--- Página 48 | SEM_OU_POUCO_TEXTO | 88 chars ---
+This publication is available free of charge from: https://doi.org/10.6028/NIST.AI.100-1
+
+====================================================================================================
+DOCUMENTO: aiml_samd_action_plan_FDA_2021
+====================================================================================================
+Páginas no PDF: 8
+Última página indexada: 8
+Páginas ausentes: [1]
+Ausentes COM texto extraível: [1]
+Ausentes sem/pouco texto: []
+
+--- Página 1 | TEXTO_PRESENTE | 180 chars ---
+U.S. FOOD & DRUG CENTER FOR DEVICES & RADIOLOGICAL HEALTH Artificial Intelligence/Machine Learning (AI/ML)-Based.:Jf/<X Software as a Medical Device (SaMD) Action Plan January 2021
+
+====================================================================================================
+DOCUMENTO: estrategia_brasileira_ia_MCTI_2021
+====================================================================================================
+Páginas no PDF: 52
+Última página indexada: 52
+Páginas ausentes: [1, 2, 13, 14]
+Ausentes COM texto extraível: [2, 13, 14]
+Ausentes sem/pouco texto: [1]
+
+--- Página 1 | SEM_OU_POUCO_TEXTO | 143 chars ---
+Estratégia Brasileira de Inteligência Artificial -EBIA- Ministério da Ciência, Tecnologia e Inovações Secretaria de Empreendedorismo e Inovação
+
+--- Página 2 | TEXTO_PRESENTE | 3932 chars ---
+1 ESTRATÉGIA BRASILEIRA DE INTELIGÊNCIA ARTIFICIAL Sumário Apresentação ................................................................................................................................................. 2 Introdução ..................................................................................................................................................... 4 Metodologia Adotada .................................................................................................
+
+--- Página 13 | TEXTO_PRESENTE | 1969 chars ---
+12 ESTRATÉGIA BRASILEIRA DE INTELIGÊNCIA ARTIFICIAL No que tange à formação de profissionais, cabe dar destaque ao “Índice de Competitividade Global de Talentos” (GTCI), relatório anual que avalia e classifica os países com base em sua capacidade de gerar, atrair e reter talentos. Em sua edição “2020 Highlights”, o Índice aborda o tema do Talento Global na Era da Inteligência Artificial e explora como o desenvolvimento de tal capacidade altera a natureza do trabalho , o que demanda uma reavaliaç
+
+--- Página 14 | TEXTO_PRESENTE | 482 chars ---
+13 ESTRATÉGIA BRASILEIRA DE INTELIGÊNCIA ARTIFICIAL Índice de Competividade Global de Talentos (GCTI) para os países da América Latina e Caribe Fonte: https://gtcistudy.com/the-gtci-index/ Considerando o desempenho do Brasil, o país ocupa, atualmente, o 80º lugar l no ranking mundial é 80º lugar de 132 países avaliados, tendo caído da 49ª posição em 2014. Em relação às cidades brasileiras constantes do ranking internacional, temos São Paulo em 84º lugar, conforme figura abaixo:
+
+====================================================================================================
+DOCUMENTO: gdpr_regulation_EU_2016
+====================================================================================================
+Páginas no PDF: 88
+Última página indexada: 87
+Páginas ausentes: [88]
+Ausentes COM texto extraível: [88]
+Ausentes sem/pouco texto: []
+
+--- Página 88 | TEXTO_PRESENTE | 303 chars ---
+This Regulation shall be binding in its entirety and directly applicable in all Member State s. Done at Br ussels, 27 Apr il 2016. For the Eur opean P arliament The Pres ident M. SCH ULZ For the Council The President J.A. HENNIS-PL ASSC HAERT 4.5.2016 L 119/88 Official Jour nal of the European Union EN
+
+====================================================================================================
+DOCUMENTO: imdrf_ml_medical_devices_terms_2022
+====================================================================================================
+Páginas no PDF: 18
+Última página indexada: 18
+Páginas ausentes: [1, 3]
+Ausentes COM texto extraível: [1, 3]
+Ausentes sem/pouco texto: []
+
+--- Página 1 | TEXTO_PRESENTE | 188 chars ---
+6 May 2022 Final Document IMDRF/AIMD WG/N67 Machine Learning-enabled Medical Devices: Key Terms and Definitions AUTHORING GROUP Artificial Intelligence Medical Devices (AIMD) Working Group
+
+--- Página 3 | TEXTO_PRESENTE | 868 chars ---
+IMDRF/AIMD WG/N67 3 Contents Preface 2 Contents 3 1. Introduction 4 2. Scope 5 3. References 6 3.1. IMDRF / GHTF 6 3.2. Standards 6 3.3. Other Documents 6 4. General Overview of Artificial Intelligence and Machine Learning Concepts 7 5. Key Definitions 9 5.1. Machine Learning-enabled Medical Device (MLMD) 9 5.2. IMDRF Terms 9 6. Definitions/Reference Definitions/Technical Standards Definitions 10 6.1. Bias 10 6.2. Continuous Learning 11 6.3. Reference Standard 11 6.4. Reliability 11 6.5. Semi-Su
+
+====================================================================================================
+DOCUMENTO: imdrf_samd_clinical_evaluation_2017
+====================================================================================================
+Páginas no PDF: 30
+Última página indexada: 21
+Páginas ausentes: [2, 5, 22, 23, 24, 25, 26, 27, 28, 29, 30]
+Ausentes COM texto extraível: [2, 5, 22, 23, 24, 25, 26, 27, 28, 29, 30]
+Ausentes sem/pouco texto: []
+
+--- Página 2 | TEXTO_PRESENTE | 2637 chars ---
+IMDRF/SaMD WG/N41FINAL:2017 _____________________________________________________________________________________________ 21 September 2017 Page 2 of 30 Table of Contents 1.0 Executive Summary ....................................................................................................... 4 2.0 Background .................................................................................................................... 6 3.0 Introduction ..................................................
+
+--- Página 5 | TEXTO_PRESENTE | 177 chars ---
+IMDRF/SaMD WG/N41FINAL:2017 _____________________________________________________________________________________________ 21 September 2017 Page 5 of 30 Figure 2- SaMD Landscape
+
+--- Página 22 | TEXTO_PRESENTE | 2148 chars ---
+IMDRF/SaMD WG/N41FINAL:2017 _____________________________________________________________________________________________ 21 September 2017 Page 22 of 30 References IMDRF Documents: 1. SaMD N10: Software as a Medical Device (SaMD): Key Definitions -- http://www.imdrf.org/docs/imdrf/final/technical/imdrf-tech-131209-samd-key-definitions- 140901.pdf 2. SaMD N12: Software as a Medical Device (SaMD): Possible Framework for Risk Categorization and Corresponding Considerations -- http://www.imdrf.org/
+
+--- Página 23 | TEXTO_PRESENTE | 2376 chars ---
+IMDRF/SaMD WG/N41FINAL:2017 _____________________________________________________________________________________________ 21 September 2017 Page 23 of 30 12. GHTF SG1 N68:2012: Essential Principles of Safety and Performance of Medical Devices -- http://www.imdrf.org/docs/ghtf/final/sg1/technical-docs/ghtf-sg1-n68-2012-safety- performance-medical-devices-121102.pdf 13. GHTF SG5 N7:2012: Clinical Evidence for IVD medical devices - Scientific Validity Determination and Performance Evaluation-- http
+
+--- Página 24 | TEXTO_PRESENTE | 2688 chars ---
+IMDRF/SaMD WG/N41FINAL:2017 _____________________________________________________________________________________________ 21 September 2017 Page 24 of 30 Glossary Algorithm -- a finite set of instructions (or rules) that defines a sequence of operations for solving a particular computational problem for all problem instances for a problem set. Analytical Validation -- measures the ability of a SaMD to accurately and reliably generate the intended technical output, from the input data. Basic Prog
+
+--- Página 25 | TEXTO_PRESENTE | 2950 chars ---
+IMDRF/SaMD WG/N41FINAL:2017 _____________________________________________________________________________________________ 21 September 2017 Page 25 of 30 Additional resources: see Section 6.2 in GHTF G5 N2R8:2007[8] Clinical Trials -- A properly conducted clinical investigation, including compliance to the clinical investigation plan and local laws and regulations, ensures the protection of human subjects, the integrity of the data and that the data obtained is acceptable for the purpose of demo
+
+--- Página 26 | TEXTO_PRESENTE | 2910 chars ---
+IMDRF/SaMD WG/N41FINAL:2017 _____________________________________________________________________________________________ 21 September 2017 Page 26 of 30 Effectiveness -- when it can be determined that a device, based upon valid scientific evidence, that in a significant portion of the target population, the use of the device for its intended uses and conditions of use, when accompanied by adequate directions for use and warnings against unsafe use, will provide clinically significant results. (
+
+--- Página 27 | TEXTO_PRESENTE | 2638 chars ---
+IMDRF/SaMD WG/N41FINAL:2017 _____________________________________________________________________________________________ 21 September 2017 Page 27 of 30 interpreted as the increase in the odds of disease given a test negative result relative to the pretest odds. Additional resources: see Section 7.2 in GHTF SG5 N7:2012[13] Likelihood Ratio Positive (LR+) -- sensitivity / (1 – specificity) = ratio of the probabilities of testing positive in patients with and without disease or clinical condition
+
+--- Página 28 | TEXTO_PRESENTE | 2741 chars ---
+IMDRF/SaMD WG/N41FINAL:2017 _____________________________________________________________________________________________ 21 September 2017 Page 28 of 30 Performance (Studies) -- establish or confirm aspects of device performance which cannot be determined by analytical validation, literature and/or previous experience gained by routine testing. Additional resources: see Section 5.0 in GHTF SG5 N8:2012[16] Positive Predictive Value (PPV) -- proportion of test positive patients who have the disea
+
+--- Página 29 | TEXTO_PRESENTE | 2738 chars ---
+IMDRF/SaMD WG/N41FINAL:2017 _____________________________________________________________________________________________ 21 September 2017 Page 29 of 30 Scientific Validity -- refers to the extent to which the SaMD’s output (concept, conclusion, measurements) is clinically accepted or well founded (existence of an established scientific framework or body of evidence) that corresponds accurately in the real world to the healthcare situation and condition identified in the SaMD definition stateme
+
+--- Página 30 | TEXTO_PRESENTE | 215 chars ---
+IMDRF/SaMD WG/N41FINAL:2017 _____________________________________________________________________________________________ 21 September 2017 Page 30 of 30 Additional resources: see Section 2.7 in GHTF SG3 N18:2010[6]
+
+====================================================================================================
+DOCUMENTO: imdrf_samd_risk_framework_2014
+====================================================================================================
+Páginas no PDF: 30
+Última página indexada: 30
+Páginas ausentes: [2]
+Ausentes COM texto extraível: [2]
+Ausentes sem/pouco texto: []
+
+--- Página 2 | TEXTO_PRESENTE | 3641 chars ---
+IMDRF/SaMD WG/N12FINAL:2014 _____________________________________________________________________________________________ _____________________________________________________________________________________________ 18 September 2014 Page 2 of 30 Table of Contents 1.0 Introduction ........................................................................................................................ 4 2.0 Scope......................................................................................
+
+====================================================================================================
+DOCUMENTO: justice_data_governance_OECD_2024
+====================================================================================================
+Páginas no PDF: 56
+Última página indexada: 47
+Páginas ausentes: [1, 2, 5, 6, 48, 49, 50, 51, 52, 53, 54, 55, 56]
+Ausentes COM texto extraível: [1, 5, 6, 48, 49, 50, 51, 52, 53, 54, 55, 56]
+Ausentes sem/pouco texto: [2]
+
+--- Página 1 | TEXTO_PRESENTE | 186 chars ---
+OECD Working Papers on Public Governance No. 74 Towards effective governance of justice data Natalie Byrom, Mariane Piccinin- Barbieri, Peter Wells https://dx.doi.org/10.1787/d2950e02-en
+
+--- Página 2 | SEM_OU_POUCO_TEXTO | 49 chars ---
+Towards effective governance of justice data PUBE
+
+--- Página 5 | TEXTO_PRESENTE | 2345 chars ---
+4  TOWARDS EFFECTIVE GOVERNANCE OF JUSTICE DATA © OECD 2024 Acknowledgments This working paper was prepared by the OECD Directorate for Public Governance (GOV) under the leadership of Elsa Pilichowski, Director for Public Governance, and overall supervision by Tatyana Teplova, Head of the Division for Policy Coherence for the SDGs and Senior Justice Counsellor. This policy paper was reviewed and validated by Gillian Dorner , Deputy Director, and Elizabeth Manning, Advisor. This paper was drafte
+
+--- Página 6 | TEXTO_PRESENTE | 965 chars ---
+ 5 TOWARDS EFFECTIVE GOVERNANCE OF JUSTICE DATA © OECD 2024 Table of contents Abstract 3 Acknowledgments 4 1 The role of data in delivering people-centred justice 7 Context 7 Why do policymakers need new justice data governance frameworks to support a transition to people-centred justice? 8 2 Objectives and values of data governance for people-centred justice 17 Context 17 Achieving the objectives in practice 17 Upholding the values of the people-centred justice framework 23 Applying the object
+
+--- Página 48 | TEXTO_PRESENTE | 2271 chars ---
+ 47 TOWARDS EFFECTIVE GOVERNANCE OF JUSTICE DATA © OECD 2024 References ADR UK (2023), Meet the ADR UK Ambassadors, https://www.adruk.org/about-us/adr-uk- ambassadors/. [52] Aitken, M. et al. (2019), Consensus Statement on Public Involvement and Engagement with Data Intensive Health Research, https://doi.org/10.23889/ijpds.v4i1.586. [15] ALI (2021), Algorithmic accountability for the public sector Learning from the first wave of policy implementation, https://www.adalovelaceinstitute.org/report
+
+--- Página 49 | TEXTO_PRESENTE | 2817 chars ---
+48  TOWARDS EFFECTIVE GOVERNANCE OF JUSTICE DATA © OECD 2024 Chapman, Peter et al. (2021), Grasping the Justice Gap: Opportunities and Challenges for People-Centered Justice Data, https://worldjusticeproject.org/sites/default/files/documents/Grasping-the-Justice- Gap_Challenge-Paper_final.pdf. [3] CMA (2016), Retail banking market investigation: overview, https://www.gov.uk/government/publications/retail-banking-market-investigation-overview. [62] Cour de Cassation (2024), Cour de Cassation: re
+
+--- Página 50 | TEXTO_PRESENTE | 2871 chars ---
+ 49 TOWARDS EFFECTIVE GOVERNANCE OF JUSTICE DATA © OECD 2024 And Amending Certain Union Legislative Acts, https://eur-lex.europa.eu/legal- content/EN/TXT/?uri=CELEX%3A52021PC0206. European Union (2019), Change to CEU 2019 for uniqueness and link to Interoperability between EU information systems: Council adopts regulations, https://www.consilium.europa.eu/en/press/press-releases/2019/05/14/interoperability- between-eu-information-systems-council-adopts-regulations/. [88] FCA (2022), The future 
+
+--- Página 51 | TEXTO_PRESENTE | 2558 chars ---
+50  TOWARDS EFFECTIVE GOVERNANCE OF JUSTICE DATA © OECD 2024 GovLab (2020), Responsible Data Re-Use Framework, https://thedataassembly.org/files/nyc- data-assembly-report.pdf. [19] Grimmelikhuijsen, S. (2015), “The effects of judicial transparency on public trust: Evidence from a field experiment”, Public Administration, Vol. 93, https://doi.org/10.1111/padm.12149. [39] GSMA (2018), The Data Value Chain, https://www.gsma.com/publicpolicy/wp- content/uploads/2018/06/GSMA_Data_Value_Chain_June_20
+
+--- Página 52 | TEXTO_PRESENTE | 2697 chars ---
+ 51 TOWARDS EFFECTIVE GOVERNANCE OF JUSTICE DATA © OECD 2024 Maurino, G. (2020), Putting People at the Center, A case study on access to justice centers in Argentina, https://530cfd94-d934-468b-a1c7- c67a84734064.filesusr.com/ugd/6c192f_2bfcbb9af90d423083933789ab4b433c.pdf . [21] NCSC (2024), National Center for State Courts: About us, https://www.ncsc.org/about-us. [49] Nesta (2019), Renewing Regulation: ‘anticipatory regulation’ in an age of disruption , https://www.nesta.org.uk/report/renewi
+
+--- Página 53 | TEXTO_PRESENTE | 2538 chars ---
+52  TOWARDS EFFECTIVE GOVERNANCE OF JUSTICE DATA © OECD 2024 Pope, R. (2019), Playbook: Government as a Platform, https://ash.harvard.edu/files/ash/files/293091_hvd_ash_gvmnt_as_platform_v2.pdf . [74] Porton, A. Gromis, A. & Desmond, M. (2021), Inaccuracies in Eviction Records: Implications for Renters and Researchers, https://doi.org/10.1080/10511482.2020.1748084. [7] Ridpath J. (2022), Introducing IF’s Responsible Technology by Design Framework, https://medium.com/writing-by-if/introducing-if
+
+--- Página 54 | TEXTO_PRESENTE | 3002 chars ---
+ 53 TOWARDS EFFECTIVE GOVERNANCE OF JUSTICE DATA © OECD 2024 Glossary Access to justice: Access to Justice refers to the ability of people, businesses and communities to prevent conflicts and obtain effective, fair, equitable and timely resolution of their legal and justice -related needs (OECD, 2023[1]). Accessible justice services : To be accessible legal and justice services must be designed to actively overcome the range of barriers and provide the assistance that people require, recognisin
+
+--- Página 55 | TEXTO_PRESENTE | 4347 chars ---
+54  TOWARDS EFFECTIVE GOVERNANCE OF JUSTICE DATA © OECD 2024 Effective justice systems: Effective justice systems and services support individuals to secure outcomes that reflect their substantive legal rights, and provide fair and just resolution to problems (OECD, 2021[2]). Equitable justice systems : Justice systems and services that implement policies and processes that promote equality and take steps to gather the demographic information needed to demonstrate their efficacy. Interoperabili
+
+--- Página 56 | TEXTO_PRESENTE | 293 chars ---
+ 55 TOWARDS EFFECTIVE GOVERNANCE OF JUSTICE DATA © OECD 2024 Register: An authoritative list you can trust (Downey, 2015[72]). Standard: Reusable agreements that make it easier for people and organisations to publish, access, share and use better quality data (Open Data Institute, 2018[82]).
+
+====================================================================================================
+DOCUMENTO: resolucao_1627_CFM_2001
+====================================================================================================
+Páginas no PDF: 18
+Última página indexada: 17
+Páginas ausentes: [18]
+Ausentes COM texto extraível: []
+Ausentes sem/pouco texto: [18]
+
+--- Página 18 | SEM_OU_POUCO_TEXTO | 0 chars ---
