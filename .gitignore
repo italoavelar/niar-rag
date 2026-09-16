@@ -37,3 +37,4 @@ eval/results/indexes/*.npz
 # O manifesto .ids.json e a resposta .out.json FICAM: são a procedência — o que
 # foi oferecido ao modelo e o que ele devolveu.
 eval/lotes/*.md
+chaves_groq
