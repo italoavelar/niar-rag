@@ -130,7 +130,7 @@ def retrieve_information(query: str) -> str:
         results = client.query_points(
             collection_name=COLLECTION_NAME,
             query=embedding,
-            limit=4,
+            limit=5,
             score_threshold=0.60 # exige pelo menos 60% de similaridade 
         )
         
