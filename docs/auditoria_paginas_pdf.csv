@@ -1,0 +1,35 @@
+﻿document_id,paginas_pdf,paginas_indexadas,ultima_indexada,paginas_ausentes,faixas_ausentes,status
+ai_device_software_guidance_FDA_2025,67,66,67,1,3,PAGINAS_INTERNAS_AUSENTES
+ai_framework_convention_council_europe_2024,12,12,12,0,,OK
+ai_ml_discussion_paper_FDA_2021,20,19,20,1,1,PAGINAS_INTERNAS_AUSENTES
+ai_risk_management_framework_NIST_2023,48,44,47,4,"1, 4-5, 48",POSSIVEL_TRUNCAMENTO_FINAL
+aiml_samd_action_plan_FDA_2021,8,7,8,1,1,PAGINAS_INTERNAS_AUSENTES
+codigo_etica_medica_CFM_2019,110,55,106,55,"1-3, 5-8, 12, 16, 20, 26, 32, 38, 40, 42, 46, 48, 52-82, 86, 102, 104, 107-110",POSSIVEL_TRUNCAMENTO_FINAL
+de_identifying_government_datasets_NIST_2023,122,85,91,37,"1, 6, 13, 42, 44-45, 92-122",POSSIVEL_TRUNCAMENTO_FINAL
+estrategia_brasileira_ia_MCTI_2021,52,48,52,4,"1-2, 13-14",PAGINAS_INTERNAS_AUSENTES
+ethical_impact_assessment_UNESCO_2023,51,42,47,9,"1, 3-4, 9, 17, 48-51",POSSIVEL_TRUNCAMENTO_FINAL
+ethics_governance_ai_health_WHO_2021,165,125,129,40,"1, 3-4, 7, 130-165",POSSIVEL_TRUNCAMENTO_FINAL
+european_health_data_space_EU_2025,96,96,96,0,,OK
+gdpr_regulation_EU_2016,88,87,87,1,88,POSSIVEL_TRUNCAMENTO_FINAL
+global_digital_health_strategy_WHO_2020_2027,60,46,59,14,"1, 3-5, 8, 11, 16, 20, 31, 38, 40, 46-47, 60",POSSIVEL_TRUNCAMENTO_FINAL
+good_ml_practice_guiding_principles_FDA_2021,2,2,2,0,,OK
+imdrf_good_ml_practice_2025,9,3,4,6,"3, 5-9",POSSIVEL_TRUNCAMENTO_FINAL
+imdrf_ml_medical_devices_terms_2022,18,16,18,2,"1, 3",PAGINAS_INTERNAS_AUSENTES
+imdrf_samd_clinical_evaluation_2017,30,19,21,11,"2, 5, 22-30",POSSIVEL_TRUNCAMENTO_FINAL
+imdrf_samd_risk_framework_2014,30,29,30,1,2,PAGINAS_INTERNAS_AUSENTES
+justice_data_governance_OECD_2024,56,43,47,13,"1-2, 5-6, 48-56",POSSIVEL_TRUNCAMENTO_FINAL
+multimodal_models_guidance_WHO_2024,98,67,79,31,"1-3, 5-7, 9, 24-25, 47-49, 80-98",POSSIVEL_TRUNCAMENTO_FINAL
+plano_brasileiro_ia_BR_2025,108,97,105,11,"1-3, 9-10, 30, 53, 94, 106-108",POSSIVEL_TRUNCAMENTO_FINAL
+predetermined_change_control_FDA_2023,2,2,2,0,,OK
+projeto_lei_2338_BR_2023,36,36,36,0,,OK
+regulatory_considerations_ai_health_WHO_2024,80,52,66,28,"1-3, 5-6, 8, 16, 19, 23, 27, 35, 42, 48, 54, 67-80",POSSIVEL_TRUNCAMENTO_FINAL
+resolucao_1627_CFM_2001,18,17,17,1,18,POSSIVEL_TRUNCAMENTO_FINAL
+resolucao_1638_CFM_2002,3,3,3,0,,OK
+resolucao_1821_CFM_2007,6,6,6,0,,OK
+resolucao_2306_CFM_2022,33,33,33,0,,OK
+resolucao_2314_CFM_2022,9,9,9,0,,OK
+resolucao_2336_CFM_2023,17,17,17,0,,OK
+resolucao_2424_CFM_2025,3,3,3,0,,OK
+resolucao_2454_CFM_2026,15,15,15,0,,OK
+resolucao_UFMG_01_2022,8,8,8,0,,OK
+transparency_ml_devices_FDA_2024,4,4,4,0,,OK

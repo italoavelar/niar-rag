@@ -1,0 +1,442 @@
+
+==============================================================================================================
+DOCUMENTO: cp_BR_1940
+==============================================================================================================
+Fonte: https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm
+HTTP: 200
+URL final: https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm
+STATUS: FORTE_CORRESPONDENCIA
+Snapshot chars: 263388
+Fonte chars: 263755
+Snapshot encontrado na fonte: 99.93%
+Fonte encontrada no snapshot: 99.71%
+
+--- INÍCIO DO SNAPSHOT ---
+Presidência da República Casa Civil Subchefia para Assuntos Jurídicos DECRETO-LEI N o 2.848, DE 7 DE DEZEMBRO DE 1940 Vigência (Vide Lei nº 1.521, de 1951) (Vide Lei nº 5.741, de 1971) (Vide Lei nº 5.988, de 1973) (Vide Lei nº 6.015, de 1973) (Vide Lei nº 6.404, de 1976) (Vide Lei nº 6.515, de 1977) (Vide Lei nº 6.538, de 1978) (Vide Lei nº 6.710, de 1979) (Vide Lei nº 7.492, de 1986) (Vide Lei nº 8.176, de 1991) Código Penal. O PRESIDENTE DA REPÚBLICA , usando da atribuição que lhe confere o art. 180 da Constituição, decreta a seguinte Lei: PARTE GERAL TÍTULO I DA APLICAÇÃO DA LEI PENAL (Redação dada pela Lei nº 7.209, de 11.7.1984) Anterioridade da Lei Art. 1 º - Não há crime sem lei anter
+
+--- FINAL DO SNAPSHOT ---
+). (Incluído pela Lei nº 14.197, de 2021) (Vigência) DISPOSIÇÕES FINAIS Art. 360 - Ressalvada a legislação especial sobre os crimes contra a existência, a segurança e a integridade do Estado e contra a guarda e o emprego da economia popular, os crimes de imprensa e os de falência, os de responsabilidade do Presidente da República e dos Governadores ou Interventores, e os crimes militares, revogam-se as disposições em contrário. Art. 361 - Este Código entrará em vigor no dia 1º de janeiro de 1942. Rio de Janeiro, 7 de dezembro de 1940; 119º da Independência e 52º da República. GETÚLIO VARGAS Francisco Campos Este texto não substitui o publicado no DOU de 31.12.1940 e retificado em 3.1.1941 *
+
+--- INÍCIO DA FONTE ATUAL ---
+Presidência da República Casa Civil Subchefia para Assuntos Jurídicos DECRETO-LEI N o 2.848, DE 7 DE DEZEMBRO DE 1940 Vigência (Vide Lei nº 1.521, de 1951) (Vide Lei nº 5.741, de 1971) (Vide Lei nº 5.988, de 1973) (Vide Lei nº 6.015, de 1973) (Vide Lei nº 6.404, de 1976) (Vide Lei nº 6.515, de 1977) (Vide Lei nº 6.538, de 1978) (Vide Lei nº 6.710, de 1979) (Vide Lei nº 7.492, de 1986) (Vide Lei nº 8.176, de 1991) Código Penal. O PRESIDENTE DA REPÚBLICA , usando da atribuição que lhe confere o art. 180 da Constituição, decreta a seguinte Lei: PARTE GERAL TÍTULO I DA APLICAÇÃO DA LEI PENAL (Redação dada pela Lei nº 7.209, de 11.7.1984) Anterioridade da Lei Art. 1 º - Não há crime sem lei anter
+
+--- FINAL DA FONTE ATUAL ---
+). (Incluído pela Lei nº 14.197, de 2021) (Vigência) DISPOSIÇÕES FINAIS Art. 360 - Ressalvada a legislação especial sobre os crimes contra a existência, a segurança e a integridade do Estado e contra a guarda e o emprego da economia popular, os crimes de imprensa e os de falência, os de responsabilidade do Presidente da República e dos Governadores ou Interventores, e os crimes militares, revogam-se as disposições em contrário. Art. 361 - Este Código entrará em vigor no dia 1º de janeiro de 1942. Rio de Janeiro, 7 de dezembro de 1940; 119º da Independência e 52º da República. GETÚLIO VARGAS Francisco Campos Este texto não substitui o publicado no DOU de 31.12.1940 e retificado em 3.1.1941 *
+
+--- POSSÍVEIS BLOCOS DA FONTE AUSENTES DO SNAPSHOT ---
+[nenhum bloco relevante detectado]
+
+
+==============================================================================================================
+DOCUMENTO: lgpd_BR_2018
+==============================================================================================================
+Fonte: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm
+HTTP: 200
+URL final: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm
+STATUS: FORTE_CORRESPONDENCIA
+Snapshot chars: 106882
+Fonte chars: 106982
+Snapshot encontrado na fonte: 99.97%
+Fonte encontrada no snapshot: 99.83%
+
+--- INÍCIO DO SNAPSHOT ---
+Presidência da República Secretaria-Geral Subchefia para Assuntos Jurídicos LEI Nº 13.709, DE 14 DE AGOSTO DE 2018 Texto compilado Mensagem de veto Vigência Dispõe sobre a proteção de dados pessoais e altera a Lei nº 12.965, de 23 de abril de 2014 (Marco Civil da Internet). Lei Geral de Proteção de Dados Pessoais (LGPD). (Redação dada pela Lei nº 13.853, de 2019) Vigência CAPÍTULO I DISPOSIÇÕES PRELIMINARES Art. 1º Esta Lei dispõe sobre o tratamento de dados pessoais, inclusive nos meios digitais, por pessoa natural ou por pessoa jurídica de direito público ou privado, com o objetivo de proteger os direitos fundamentais de liberdade e de privacidade e o livre desenvolvimento da personalidade
+
+--- FINAL DO SNAPSHOT ---
+ de maio de 2021, quanto aos demais artigos. (Redação dada pela Medida Provisória nº 959, de 2020) (Convertida na Lei nº 14.058, de 2020) II - 24 (vinte e quatro) meses após a data de sua publicação, quanto aos demais artigos. (Incluído pela Lei nº 13.853, de 2019) Brasília , 14 de agosto de 2018; 197º da Independência e 130º da República. MICHEL TEMER Torquato Jardim Aloysio Nunes Ferreira Filho Eduardo Refinetti Guardia Esteves Pedro Colnago Junior Gilberto Magalhães Occhi Gilberto Kassab Wagner de Campos Rosário Gustavo do Vale Rocha Ilan Goldfajn Raul Jungmann Eliseu Padilha Este texto não substitui o publicado no DOU de 15.8.2018, e republicado parcialmente em 15.8.2018 - Edição extra *
+
+--- INÍCIO DA FONTE ATUAL ---
+Presidência da República Secretaria-Geral Subchefia para Assuntos Jurídicos LEI Nº 13.709, DE 14 DE AGOSTO DE 2018 Texto compilado Mensagem de veto Vigência Dispõe sobre a proteção de dados pessoais e altera a Lei nº 12.965, de 23 de abril de 2014 (Marco Civil da Internet). Lei Geral de Proteção de Dados Pessoais (LGPD). (Redação dada pela Lei nº 13.853, de 2019) Vigência O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei: CAPÍTULO I DISPOSIÇÕES PRELIMINARES Art. 1º Esta Lei dispõe sobre o tratamento de dados pessoais, inclusive nos meios digitais, por pessoa natural ou por pessoa jurídica de direito público ou privado, com o objetivo de proteg
+
+--- FINAL DA FONTE ATUAL ---
+ de maio de 2021, quanto aos demais artigos. (Redação dada pela Medida Provisória nº 959, de 2020) (Convertida na Lei nº 14.058, de 2020) II - 24 (vinte e quatro) meses após a data de sua publicação, quanto aos demais artigos. (Incluído pela Lei nº 13.853, de 2019) Brasília , 14 de agosto de 2018; 197º da Independência e 130º da República. MICHEL TEMER Torquato Jardim Aloysio Nunes Ferreira Filho Eduardo Refinetti Guardia Esteves Pedro Colnago Junior Gilberto Magalhães Occhi Gilberto Kassab Wagner de Campos Rosário Gustavo do Vale Rocha Ilan Goldfajn Raul Jungmann Eliseu Padilha Este texto não substitui o publicado no DOU de 15.8.2018, e republicado parcialmente em 15.8.2018 - Edição extra *
+
+--- POSSÍVEIS BLOCOS DA FONTE AUSENTES DO SNAPSHOT ---
+
+Cobertura no snapshot: 0.0%
+O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
+
+Cobertura no snapshot: 0.0%
+.......................................................................................
+
+Cobertura no snapshot: 0.0%
+..............................................................................” (NR)
+
+
+==============================================================================================================
+DOCUMENTO: cdc_BR_1990
+==============================================================================================================
+Fonte: https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm
+HTTP: 200
+URL final: https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm
+STATUS: FORTE_CORRESPONDENCIA
+Snapshot chars: 82267
+Fonte chars: 82288
+Snapshot encontrado na fonte: 99.97%
+Fonte encontrada no snapshot: 99.95%
+
+--- INÍCIO DO SNAPSHOT ---
+Presidência da República Casa Civil Subchefia para Assuntos Jurídicos LEI Nº 8.078, DE 11 DE SETEMBRO DE 1990. Vigência Mensagem de veto Regulamento Regulamento Regulamento (Vide Decreto nº 2.181, de 1997) (Vide pela Lei nº 13.425, de 2017) (Vigência) (Vide Decreto nº 11.034, de 2022) (Vigência) Regulamento Vigência Regulamento Dispõe sobre a proteção do consumidor e dá outras providências. O PRESIDENTE DA REPÚBLICA, faço saber que o Congresso Nacional decreta e eu sanciono a seguinte lei: TÍTULO I Dos Direitos do Consumidor CAPÍTULO I Disposições Gerais Art. 1° O presente código estabelece normas de proteção e defesa do consumidor, de ordem pública e interesse social, nos termos dos arts. 5
+
+--- FINAL DO SNAPSHOT ---
+uais". Art. 117. Acrescente-se à Lei n° 7.347, de 24 de julho de 1985, o seguinte dispositivo, renumerando-se os seguintes: "Art. 21. Aplicam-se à defesa dos direitos e interesses difusos, coletivos e individuais, no que for cabível, os dispositivos do Título III da lei que instituiu o Código de Defesa do Consumidor". Art. 118. Este código entrará em vigor dentro de cento e oitenta dias a contar de sua publicação. Art. 119. Revogam-se as disposições em contrário. Brasília, 11 de setembro de 1990; 169° da Independência e 102° da República. FERNANDO COLLOR Bernardo Cabral Zélia M. Cardoso de Mello Ozires Silva Este texto não substitui o publicado no DOU de 12.9.1990 e Retificado em 10.1.2007 *
+
+--- INÍCIO DA FONTE ATUAL ---
+Presidência da República Casa Civil Subchefia para Assuntos Jurídicos LEI Nº 8.078, DE 11 DE SETEMBRO DE 1990. Vigência Mensagem de veto Regulamento Regulamento Regulamento (Vide Decreto nº 2.181, de 1997) (Vide pela Lei nº 13.425, de 2017) (Vigência) (Vide Decreto nº 11.034, de 2022) (Vigência) Regulamento Vigência Regulamento Regulamento Vigência Dispõe sobre a proteção do consumidor e dá outras providências. O PRESIDENTE DA REPÚBLICA, faço saber que o Congresso Nacional decreta e eu sanciono a seguinte lei: TÍTULO I Dos Direitos do Consumidor CAPÍTULO I Disposições Gerais Art. 1° O presente código estabelece normas de proteção e defesa do consumidor, de ordem pública e interesse social, n
+
+--- FINAL DA FONTE ATUAL ---
+uais". Art. 117. Acrescente-se à Lei n° 7.347, de 24 de julho de 1985, o seguinte dispositivo, renumerando-se os seguintes: "Art. 21. Aplicam-se à defesa dos direitos e interesses difusos, coletivos e individuais, no que for cabível, os dispositivos do Título III da lei que instituiu o Código de Defesa do Consumidor". Art. 118. Este código entrará em vigor dentro de cento e oitenta dias a contar de sua publicação. Art. 119. Revogam-se as disposições em contrário. Brasília, 11 de setembro de 1990; 169° da Independência e 102° da República. FERNANDO COLLOR Bernardo Cabral Zélia M. Cardoso de Mello Ozires Silva Este texto não substitui o publicado no DOU de 12.9.1990 e Retificado em 10.1.2007 *
+
+--- POSSÍVEIS BLOCOS DA FONTE AUSENTES DO SNAPSHOT ---
+[nenhum bloco relevante detectado]
+
+
+==============================================================================================================
+DOCUMENTO: lei_8080_BR_90
+==============================================================================================================
+Fonte: https://www.planalto.gov.br/ccivil_03/leis/l8080.htm
+HTTP: 200
+URL final: https://www.planalto.gov.br/ccivil_03/leis/l8080.htm
+STATUS: FORTE_CORRESPONDENCIA
+Snapshot chars: 71381
+Fonte chars: 72223
+Snapshot encontrado na fonte: 99.87%
+Fonte encontrada no snapshot: 98.64%
+
+--- INÍCIO DO SNAPSHOT ---
+Presidência da República Casa Civil Subchefia para Assuntos Jurídicos LEI Nº 8.080, DE 19 DE SETEMBRO DE 1990. Mensagem de veto Regulamento Regulamento Vide Lei 14.758, de 2023 Vigência Vide Lei nº 14.977, de 2024 Vigência Vide Lei nº 15.390, de 2026) Vigência Dispõe sobre as condições para a promoção, proteção e recuperação da saúde, a organização e o funcionamento dos serviços correspondentes e dá outras providências. O PRESIDENTE DA REPÚBLICA, faço saber que o Congresso Nacional decreta e eu sanciono a seguinte lei: DISPOSIÇÃO PRELIMINAR Art. 1º Esta lei regula, em todo o território nacional, as ações e serviços de saúde, executados isolada ou conjuntamente, em caráter permanente ou event
+
+--- FINAL DO SNAPSHOT ---
+elas desenvolvidas pelos laboratórios de genética humana, produção e fornecimento de medicamentos e produtos para saúde, laboratórios de analises clínicas, anatomia patológica e de diagnóstico por imagem e são livres à participação direta ou indireta de empresas ou de capitais estrangeiros. (Incluído pela Lei nº 13.097, de 2015) Art. 54. Esta lei entra em vigor na data de sua publicação. Art. 55. São revogadas a Lei nº. 2.312, de 3 de setembro de 1954 , a Lei nº. 6.229, de 17 de julho de 1975 , e demais disposições em contrário. Brasília, 19 de setembro de 1990; 169º da Independência e 102º da República. FERNANDO COLLOR Alceni Guerra Este texto não substitui o publicado no DOU de 20.9.1990 *
+
+--- INÍCIO DA FONTE ATUAL ---
+Presidência da República Casa Civil Subchefia para Assuntos Jurídicos LEI Nº 8.080, DE 19 DE SETEMBRO DE 1990. Mensagem de veto Regulamento Regulamento Vide Lei 14.758, de 2023 Vigência Vide Lei nº 14.977, de 2024 Vigência Vide Lei nº 15.390, de 2026) Vigência Dispõe sobre as condições para a promoção, proteção e recuperação da saúde, a organização e o funcionamento dos serviços correspondentes e dá outras providências. O PRESIDENTE DA REPÚBLICA, faço saber que o Congresso Nacional decreta e eu sanciono a seguinte lei: DISPOSIÇÃO PRELIMINAR Art. 1º Esta lei regula, em todo o território nacional, as ações e serviços de saúde, executados isolada ou conjuntamente, em caráter permanente ou event
+
+--- FINAL DA FONTE ATUAL ---
+elas desenvolvidas pelos laboratórios de genética humana, produção e fornecimento de medicamentos e produtos para saúde, laboratórios de analises clínicas, anatomia patológica e de diagnóstico por imagem e são livres à participação direta ou indireta de empresas ou de capitais estrangeiros. (Incluído pela Lei nº 13.097, de 2015) Art. 54. Esta lei entra em vigor na data de sua publicação. Art. 55. São revogadas a Lei nº. 2.312, de 3 de setembro de 1954 , a Lei nº. 6.229, de 17 de julho de 1975 , e demais disposições em contrário. Brasília, 19 de setembro de 1990; 169º da Independência e 102º da República. FERNANDO COLLOR Alceni Guerra Este texto não substitui o publicado no DOU de 20.9.1990 *
+
+--- POSSÍVEIS BLOCOS DA FONTE AUSENTES DO SNAPSHOT ---
+
+Cobertura no snapshot: 1.8%
+§ 6º Entende-se por Complexo Econômico-Industrial da Saúde (Ceis) a base econômica, produtiva e tecnológica dos serviços de saúde existente no País, que contempla a produção e a inovação de produtos estratégicos para a saúde, como medicamentos, vacinas, soros, hemoderivados, dispositivos médicos, insumos farmacêuticos ativos, componentes e insumos críticos para a produção. (Incluído pela Lei nº 15.471, de 2026)
+
+Cobertura no snapshot: 5.0%
+XIII - a formulação e a execução de instrumentos de políticas públicas para o Ceis, como o uso do poder de compra do SUS, o financiamento, a regulação, o desenvolvimento científico, tecnológico e industrial e outros incentivos. (Incluído pela Lei nº 15.471, de 2026)
+
+Cobertura no snapshot: 0.0%
+f) de promoção do desenvolvimento produtivo, tecnológico e da inovação do Complexo Econômico-Industrial da Saúde (Ceis); (Incluída pela Lei nº 15.471, de 2026)
+
+
+==============================================================================================================
+DOCUMENTO: resolucao_19_ANPD_2024
+==============================================================================================================
+Fonte: https://www.gov.br/anpd/pt-br/acesso-a-informacao/institucional/atos-normativos/regulamentacoes_anpd/resolucao-cd-anpd-no-19-de-23-de-agosto-de-2024
+HTTP: 200
+URL final: https://www.gov.br/anpd/pt-br/acesso-a-informacao/institucional/atos-normativos/regulamentacoes_anpd/resolucao-cd-anpd-no-19-de-23-de-agosto-de-2024
+STATUS: FORTE_CORRESPONDENCIA
+Snapshot chars: 63599
+Fonte chars: 64117
+Snapshot encontrado na fonte: 99.28%
+Fonte encontrada no snapshot: 98.72%
+
+--- INÍCIO DO SNAPSHOT ---
+Resolução CD/ANPD nº 19, de 23 de agosto de 2024 Aprova o Regulamento de Transferência Internacional de Dados e o conteúdo das cláusulas-padrão contratuais. Publicado em 26/04/2024 08:49 Modificado em 18/08/2025 14:33 Compartilhe : RESOLUÇÃO CD/ANPD Nº 19, DE 23 DE AGOSTO DE 2024 Aprova o Regulamento de Transferência Internacional de Dados e o conteúdo das cláusulas-padrão contratuais. Observação : Este texto não substitui a publicação no DOU de 23/08/2024 , alterado pela RETIFICAÇÃO de 18/08/2025. O CONSELHO DIRETOR DA AUTORIDADE NACIONAL DE PROTEÇÃO DE DADOS (ANPD), com base nas competências previstas no art. 55-J, inciso XIII, da Lei nº 13.709, de 14 de agosto de 2018, no art.2º, inciso X
+
+--- FINAL DO SNAPSHOT ---
+ir a segurança das operações realizadas, tais como a coleta, a transmissão e o armazenamento dos dados: Seção IV - Cláusulas Adicionais e Anexos (OBS: Nesta Seção, de preenchimento e de divulgação facultativos, podem ser incluídas Cláusulas Adicionais e Anexos, a critério das Partes, para disciplinar, entre outras, questões de natureza comercial, rescisão contratual, prazo de vigência e eleição de foro no Brasil. Conforme previsto no Regulamento de Transferência Internacional de Dados, as Cláusulas estabelecidas nesta Seção ou em Contratos Coligados não poderão excluir, modificar ou contrariar, direta ou indiretamente, as Cláusulas previstas nas Seções I, II e III). Local, data. Assinaturas.
+
+--- INÍCIO DA FONTE ATUAL ---
+Resolução CD/ANPD nº 19, de 23 de agosto de 2024 Resolução CD/ANPD nº 19, de 23 de agosto de 2024 Aprova o Regulamento de Transferência Internacional de Dados e o conteúdo das cláusulas-padrão contratuais. Publicado em 26/04/2024 08:49 Modificado em 02/09/2026 17:24 Compartilhe : Resolução CD/ANPD nº 19, de 23 de agosto de 2024 RESOLUÇÃO CD/ANPD Nº 19, DE 23 DE AGOSTO DE 2024 Aprova o Regulamento de Transferência Internacional de Dados e o conteúdo das cláusulas-padrão contratuais. Observação : Este texto não substitui a publicação no DOU de 23/08/2024 , alterado pela RETIFICAÇÃO de 18/08/2025. O CONSELHO DIRETOR DA AUTORIDADE NACIONAL DE PROTEÇÃO DE DADOS (ANPD), com base nas competências p
+
+--- FINAL DA FONTE ATUAL ---
+ir a segurança das operações realizadas, tais como a coleta, a transmissão e o armazenamento dos dados: Seção IV - Cláusulas Adicionais e Anexos (OBS: Nesta Seção, de preenchimento e de divulgação facultativos, podem ser incluídas Cláusulas Adicionais e Anexos, a critério das Partes, para disciplinar, entre outras, questões de natureza comercial, rescisão contratual, prazo de vigência e eleição de foro no Brasil. Conforme previsto no Regulamento de Transferência Internacional de Dados, as Cláusulas estabelecidas nesta Seção ou em Contratos Coligados não poderão excluir, modificar ou contrariar, direta ou indiretamente, as Cláusulas previstas nas Seções I, II e III). Local, data. Assinaturas.
+
+--- POSSÍVEIS BLOCOS DA FONTE AUSENTES DO SNAPSHOT ---
+[nenhum bloco relevante detectado]
+
+
+==============================================================================================================
+DOCUMENTO: lei_14874_BR_2024
+==============================================================================================================
+Fonte: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14874.htm
+HTTP: 200
+URL final: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14874.htm
+STATUS: FORTE_CORRESPONDENCIA
+Snapshot chars: 63188
+Fonte chars: 63288
+Snapshot encontrado na fonte: 99.95%
+Fonte encontrada no snapshot: 99.76%
+
+--- INÍCIO DO SNAPSHOT ---
+Presidência da República Casa Civil Secretaria Especial para Assuntos Jurídicos LEI Nº 14.874, DE 28 DE MAIO DE 2024 Vigência Mensagem de veto (Promulgação partes vetadas) Dispõe sobre a pesquisa com seres humanos e institui o Sistema Nacional de Ética em Pesquisa com Seres Humanos. CAPÍTULO I DISPOSIÇÕES GERAIS Art. 1º . Esta Lei dispõe sobre princípios, diretrizes e regras para a condução de pesquisas com seres humanos por instituições públicas ou privadas e institui o Sistema Nacional de Ética em Pesquisa com Seres Humanos. Art. 2º Para os efeitos desta Lei, consideram-se: I - acesso direto: permissão que agente ou instituição autorizados nos termos desta Lei têm para examinar, analisar, 
+
+--- FINAL DO SNAPSHOT ---
+om vistas ao bem público, ao progresso da ciência em âmbito nacional e à obediência ao princípio da eficiência na administração pública, os órgãos e entidades, públicos ou privados, responsáveis pela análise e aprovação de pesquisas no País deverão aprimorar continuamente suas atividades e serviços, de modo a reduzir os prazos de suas análises e pareceres. Art. 65. Esta Lei entra em vigor após decorridos 90 (noventa) dias de sua publicação oficial. Brasília, 28 de maio de 2024; 203 o da Independência e 136 o da República. LUIZ INÁCIO LULA DA SILVA Camilo Sobreira de Santana Sonia Bone de Sousa Silva Santos Nísia Verônica Trindade Lima Este texto não substitui o publicado no DOU de 29.5.2024.
+
+--- INÍCIO DA FONTE ATUAL ---
+Presidência da República Casa Civil Secretaria Especial para Assuntos Jurídicos LEI Nº 14.874, DE 28 DE MAIO DE 2024 Vigência Mensagem de veto (Promulgação partes vetadas) Dispõe sobre a pesquisa com seres humanos e institui o Sistema Nacional de Ética em Pesquisa com Seres Humanos. O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei: CAPÍTULO I DISPOSIÇÕES GERAIS Art. 1º . Esta Lei dispõe sobre princípios, diretrizes e regras para a condução de pesquisas com seres humanos por instituições públicas ou privadas e institui o Sistema Nacional de Ética em Pesquisa com Seres Humanos. Art. 2º Para os efeitos desta Lei, consideram-se: I - acesso direto
+
+--- FINAL DA FONTE ATUAL ---
+om vistas ao bem público, ao progresso da ciência em âmbito nacional e à obediência ao princípio da eficiência na administração pública, os órgãos e entidades, públicos ou privados, responsáveis pela análise e aprovação de pesquisas no País deverão aprimorar continuamente suas atividades e serviços, de modo a reduzir os prazos de suas análises e pareceres. Art. 65. Esta Lei entra em vigor após decorridos 90 (noventa) dias de sua publicação oficial. Brasília, 28 de maio de 2024; 203 o da Independência e 136 o da República. LUIZ INÁCIO LULA DA SILVA Camilo Sobreira de Santana Sonia Bone de Sousa Silva Santos Nísia Verônica Trindade Lima Este texto não substitui o publicado no DOU de 29.5.2024.
+
+--- POSSÍVEIS BLOCOS DA FONTE AUSENTES DO SNAPSHOT ---
+
+Cobertura no snapshot: 0.0%
+O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
+
+
+==============================================================================================================
+DOCUMENTO: cf_BR_1988
+==============================================================================================================
+Fonte: https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm
+HTTP: 200
+URL final: https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm
+STATUS: FORTE_CORRESPONDENCIA
+Snapshot chars: 59715
+Fonte chars: 59715
+Snapshot encontrado na fonte: 100.0%
+Fonte encontrada no snapshot: 100.0%
+
+--- INÍCIO DO SNAPSHOT ---
+Presidência da República Casa Civil Subchefia para Assuntos Jurídicos CONSTITUIÇÃO DA REPÚBLICA FEDERATIVA DO BRASIL DE 1988 Vide Emenda Constitucional nº 91, de 2016 Vide Emenda Constitucional nº 106, de 2020 Vide Emenda Constitucional nº 107, de 2020 (Vide Emenda Constitucional nº 132, de 2023) Vigência (Vide Emenda Constitucional nº 132, de 2023) Vigência Emendas Constitucionais Emendas Constitucionais de Revisão Ato das Disposições Constitucionais Transitórias Atos decorrentes do disposto no § 3º do art. 5º ÍNDICE TEMÁTICO Texto compilado PREÂMBULO Nós, representantes do povo brasileiro, reunidos em Assembléia Nacional Constituinte para instituir um Estado Democrático, destinado a assegu
+
+--- FINAL DO SNAPSHOT ---
+oteção à infância e à juventude; XVI - organização, garantias, direitos e deveres das polícias civis. § 1º No âmbito da legislação concorrente, a competência da União limitar-se-á a estabelecer normas gerais. (Vide Lei nº 13.874, de 2019) § 2º A competência da União para legislar sobre normas gerais não exclui a competência suplementar dos Estados. (Vide Lei nº 13.874, de 2019) § 3º Inexistindo lei federal sobre normas gerais, os Estados exercerão a competência legislativa plena, para atender a suas peculiaridades. (Vide Lei nº 13.874, de 2019) § 4º A superveniência de lei federal sobre normas gerais suspende a eficácia da lei estadual, no que lhe for contrário. (Vide Lei nº 13.874, de 2019)
+
+--- INÍCIO DA FONTE ATUAL ---
+Presidência da República Casa Civil Subchefia para Assuntos Jurídicos CONSTITUIÇÃO DA REPÚBLICA FEDERATIVA DO BRASIL DE 1988 Vide Emenda Constitucional nº 91, de 2016 Vide Emenda Constitucional nº 106, de 2020 Vide Emenda Constitucional nº 107, de 2020 (Vide Emenda Constitucional nº 132, de 2023) Vigência (Vide Emenda Constitucional nº 132, de 2023) Vigência Emendas Constitucionais Emendas Constitucionais de Revisão Ato das Disposições Constitucionais Transitórias Atos decorrentes do disposto no § 3º do art. 5º ÍNDICE TEMÁTICO Texto compilado PREÂMBULO Nós, representantes do povo brasileiro, reunidos em Assembléia Nacional Constituinte para instituir um Estado Democrático, destinado a assegu
+
+--- FINAL DA FONTE ATUAL ---
+oteção à infância e à juventude; XVI - organização, garantias, direitos e deveres das polícias civis. § 1º No âmbito da legislação concorrente, a competência da União limitar-se-á a estabelecer normas gerais. (Vide Lei nº 13.874, de 2019) § 2º A competência da União para legislar sobre normas gerais não exclui a competência suplementar dos Estados. (Vide Lei nº 13.874, de 2019) § 3º Inexistindo lei federal sobre normas gerais, os Estados exercerão a competência legislativa plena, para atender a suas peculiaridades. (Vide Lei nº 13.874, de 2019) § 4º A superveniência de lei federal sobre normas gerais suspende a eficácia da lei estadual, no que lhe for contrário. (Vide Lei nº 13.874, de 2019)
+
+--- POSSÍVEIS BLOCOS DA FONTE AUSENTES DO SNAPSHOT ---
+[nenhum bloco relevante detectado]
+
+
+==============================================================================================================
+DOCUMENTO: regulamento_interno_CEP_2024
+==============================================================================================================
+Fonte: https://www.ufmg.br/bioetica/cep/regimento/
+HTTP: 200
+URL final: https://www.ufmg.br/bioetica/cep/regimento/
+STATUS: FORTE_CORRESPONDENCIA
+Snapshot chars: 46861
+Fonte chars: 46861
+Snapshot encontrado na fonte: 100.0%
+Fonte encontrada no snapshot: 100.0%
+
+--- INÍCIO DO SNAPSHOT ---
+COMITÊ DE ÉTICA EM PESQUISA DA UNIVERSIDADE FEDERAL DE MINAS GERAIS – CEP/UFMG REGULAMENTO INTERNO CAPÍTULO I DO ÓRGÃO E SEUS FINS Art. 1 o O Comitê de Ética em Pesquisa da Universidade Federal de Minas Gerais (CEP/UFMG), instituído pela Resolução nº 027/2007, de 13 de dezembro de 2007 do Conselho Universitário da UFMG alterada pela Resolução nº 11, de 05 de dezembro de 2017, é órgão vinculado administrativamente à Reitoria e, de acordo com o que determina a Resolução nº 466/12 do Conselho Nacional de Saúde do Ministério da Saúde (CNS/MS), é autônomo em suas decisões, de caráter multidisciplinar e multiprofissional, e visa identificar, analisar e avaliar as implicações éticas em pesquisas ci
+
+--- FINAL DO SNAPSHOT ---
+o Conselho Nacional de Saúde, inclusive eventuais diretrizes específicas instituídas por esse Conselho. Art.49. Este regimento interno do CEP foi aprovado por sua plenária, com quórum de no mínimo de dois terços dos membros, comprovando-se por meio de assinatura ou ata da reunião que o aprovou. 1º O regimento interno somente entrará em vigor após aprovação da Conep. Art. 50. O prazo de validade do registro do CEP será de 4 (quatro) anos, sendo que ao final desse período deverá ser solicitada a renovação do registro junto à Conep, conforme disposto no artigo 7ª da Resolução CNS número 706/2023. Belo Horizonte, 06 de agosto de 2024 Profa. Dra. Corinne Davis Rodrigues Coordenadora do CEP – UFMG
+
+--- INÍCIO DA FONTE ATUAL ---
+COMITÊ DE ÉTICA EM PESQUISA DA UNIVERSIDADE FEDERAL DE MINAS GERAIS – CEP/UFMG REGULAMENTO INTERNO CAPÍTULO I DO ÓRGÃO E SEUS FINS Art. 1 o O Comitê de Ética em Pesquisa da Universidade Federal de Minas Gerais (CEP/UFMG), instituído pela Resolução nº 027/2007, de 13 de dezembro de 2007 do Conselho Universitário da UFMG alterada pela Resolução nº 11, de 05 de dezembro de 2017, é órgão vinculado administrativamente à Reitoria e, de acordo com o que determina a Resolução nº 466/12 do Conselho Nacional de Saúde do Ministério da Saúde (CNS/MS), é autônomo em suas decisões, de caráter multidisciplinar e multiprofissional, e visa identificar, analisar e avaliar as implicações éticas em pesquisas ci
+
+--- FINAL DA FONTE ATUAL ---
+o Conselho Nacional de Saúde, inclusive eventuais diretrizes específicas instituídas por esse Conselho. Art.49. Este regimento interno do CEP foi aprovado por sua plenária, com quórum de no mínimo de dois terços dos membros, comprovando-se por meio de assinatura ou ata da reunião que o aprovou. 1º O regimento interno somente entrará em vigor após aprovação da Conep. Art. 50. O prazo de validade do registro do CEP será de 4 (quatro) anos, sendo que ao final desse período deverá ser solicitada a renovação do registro junto à Conep, conforme disposto no artigo 7ª da Resolução CNS número 706/2023. Belo Horizonte, 06 de agosto de 2024 Profa. Dra. Corinne Davis Rodrigues Coordenadora do CEP – UFMG
+
+--- POSSÍVEIS BLOCOS DA FONTE AUSENTES DO SNAPSHOT ---
+[nenhum bloco relevante detectado]
+
+
+==============================================================================================================
+DOCUMENTO: decreto_44045_BR_1958
+==============================================================================================================
+Fonte: https://www.planalto.gov.br/ccivil_03/decreto/1950-1969/d44045.htm
+HTTP: 200
+URL final: https://www.planalto.gov.br/ccivil_03/decreto/1950-1969/d44045.htm
+STATUS: FORTE_CORRESPONDENCIA
+Snapshot chars: 40515
+Fonte chars: 40515
+Snapshot encontrado na fonte: 100.0%
+Fonte encontrada no snapshot: 100.0%
+
+--- INÍCIO DO SNAPSHOT ---
+Presidência da República Casa Civil Subchefia para Assuntos Jurídicos DECRETO N o 44.045, DE 19 DE JULHO DE 1958. Aprova o Regulamento do Conselho Federal e Conselhos regionais de Medicina a que se refere a Lei nº 3.268, de 30 de setembro de 1957. O PRESIDENTE DA REPÚBLICA , usando da atribuição que lhe confere o artigo 87, inciso I, da Constituição, DECRETA: Art . 1º Fica aprovado o Regulamento do Conselho Federal de Medicina e Conselhos Regionais de Medicina que, assinado pelo Ministro de Estado dos Negócios da Saúde, com êste baixa. Art . 2º Êste decreto entrará em vigor na data da sua publicação, revogadas as disposições em contrário. Rio de Janeiro, em 19 de julho de 1958; 137º da Indep
+
+--- FINAL DO SNAPSHOT ---
+lho Federal baixará instruções com uma tabela de emolumentos (anuidades, taxas de inscrição, carteiras, etc.), a serem cobradas pelos Conselhos Regionais de todo o país. Art . 45. A exigência da apresentação da carteira profissional do médico, assim como a obrigatoriedade de indicar no seu receituário o respectivo número de sua carteira dos Conselhos Regionais, só se tornarão efetivos a partir de cento e oitenta (180) dias depois da publicação do presente Regulamento. Art . 46. Os Conselhos Regionais de Medicina providenciarão a feitura ou a reforma de seus Regimentos Internos de conformidade com a Lei nº 3.268, de 30-9-1957 . Art . 47. Revogam-se as disposições em contrário. MÁRIO PINOTTI *
+
+--- INÍCIO DA FONTE ATUAL ---
+Presidência da República Casa Civil Subchefia para Assuntos Jurídicos DECRETO N o 44.045, DE 19 DE JULHO DE 1958. Aprova o Regulamento do Conselho Federal e Conselhos regionais de Medicina a que se refere a Lei nº 3.268, de 30 de setembro de 1957. O PRESIDENTE DA REPÚBLICA , usando da atribuição que lhe confere o artigo 87, inciso I, da Constituição, DECRETA: Art . 1º Fica aprovado o Regulamento do Conselho Federal de Medicina e Conselhos Regionais de Medicina que, assinado pelo Ministro de Estado dos Negócios da Saúde, com êste baixa. Art . 2º Êste decreto entrará em vigor na data da sua publicação, revogadas as disposições em contrário. Rio de Janeiro, em 19 de julho de 1958; 137º da Indep
+
+--- FINAL DA FONTE ATUAL ---
+lho Federal baixará instruções com uma tabela de emolumentos (anuidades, taxas de inscrição, carteiras, etc.), a serem cobradas pelos Conselhos Regionais de todo o país. Art . 45. A exigência da apresentação da carteira profissional do médico, assim como a obrigatoriedade de indicar no seu receituário o respectivo número de sua carteira dos Conselhos Regionais, só se tornarão efetivos a partir de cento e oitenta (180) dias depois da publicação do presente Regulamento. Art . 46. Os Conselhos Regionais de Medicina providenciarão a feitura ou a reforma de seus Regimentos Internos de conformidade com a Lei nº 3.268, de 30-9-1957 . Art . 47. Revogam-se as disposições em contrário. MÁRIO PINOTTI *
+
+--- POSSÍVEIS BLOCOS DA FONTE AUSENTES DO SNAPSHOT ---
+[nenhum bloco relevante detectado]
+
+
+==============================================================================================================
+DOCUMENTO: lei_3268_BR_1957
+==============================================================================================================
+Fonte: https://www.planalto.gov.br/ccivil_03/leis/l3268.htm
+HTTP: 200
+URL final: https://www.planalto.gov.br/ccivil_03/leis/l3268.htm
+STATUS: FORTE_CORRESPONDENCIA
+Snapshot chars: 17608
+Fonte chars: 17608
+Snapshot encontrado na fonte: 100.0%
+Fonte encontrada no snapshot: 100.0%
+
+--- INÍCIO DO SNAPSHOT ---
+Presidência da República Casa Civil Subchefia para Assuntos Jurídicos LEI N o 3.268, DE 30 DE SETEMBRO DE 1957. Regulamento Vide Lei nº 5.526, de 1968 Dispõe sôbre os Conselhos de Medicina, e dá outras providências. O PRESIDENTE DA REPÚBLICA: Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei: Art. 1º O Conselho Federal e os Conselhos Regionais de Medicina, instituídos pelo Decreto-lei nº 7.955, de 13 de setembro de 1945 , passam a constituir em seu conjunto uma autarquia, sendo cada um dêles dotado de personalidade jurídica de direito público, com autonomia administrativa e financeira. Art. 2º O Conselho Federal e os Conselhos Regionais de Medicina são os órgãos superv
+
+--- FINAL DO SNAPSHOT ---
+Conselhos de Medicina no Distrito Federal e nas capitais dos Estados e Territórios, tanto quanto possível em edifícios públicos. Art. 35. O Conselho Federal de Medicina elaborará o projeto de decreto de regulamentação desta lei, apresentando-o ao Poder Executivo dentro em 120 (cento e vinte) dias a contar da data de sua publicação. Art. 36. Esta lei entrará em vigor na data de sua publicação, revogados o Decreto-lei nº 7.955, de 13 de setembro de 1945 , e disposições em contrário. Rio de Janeiro, 30 de setembro de 1957; 136º da Independência e 69º da República. JUSCELINO KUBITSCHEK Clovis Salgado Parsifal Barbosa Maurício de Medeiros Este texto não substitui o publicado no DOU de 1.10.1957 *
+
+--- INÍCIO DA FONTE ATUAL ---
+Presidência da República Casa Civil Subchefia para Assuntos Jurídicos LEI N o 3.268, DE 30 DE SETEMBRO DE 1957. Regulamento Vide Lei nº 5.526, de 1968 Dispõe sôbre os Conselhos de Medicina, e dá outras providências. O PRESIDENTE DA REPÚBLICA: Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei: Art. 1º O Conselho Federal e os Conselhos Regionais de Medicina, instituídos pelo Decreto-lei nº 7.955, de 13 de setembro de 1945 , passam a constituir em seu conjunto uma autarquia, sendo cada um dêles dotado de personalidade jurídica de direito público, com autonomia administrativa e financeira. Art. 2º O Conselho Federal e os Conselhos Regionais de Medicina são os órgãos superv
+
+--- FINAL DA FONTE ATUAL ---
+Conselhos de Medicina no Distrito Federal e nas capitais dos Estados e Territórios, tanto quanto possível em edifícios públicos. Art. 35. O Conselho Federal de Medicina elaborará o projeto de decreto de regulamentação desta lei, apresentando-o ao Poder Executivo dentro em 120 (cento e vinte) dias a contar da data de sua publicação. Art. 36. Esta lei entrará em vigor na data de sua publicação, revogados o Decreto-lei nº 7.955, de 13 de setembro de 1945 , e disposições em contrário. Rio de Janeiro, 30 de setembro de 1957; 136º da Independência e 69º da República. JUSCELINO KUBITSCHEK Clovis Salgado Parsifal Barbosa Maurício de Medeiros Este texto não substitui o publicado no DOU de 1.10.1957 *
+
+--- POSSÍVEIS BLOCOS DA FONTE AUSENTES DO SNAPSHOT ---
+[nenhum bloco relevante detectado]
+
+
+==============================================================================================================
+DOCUMENTO: resolucao_2_ANPD_2024
+==============================================================================================================
+Fonte: https://www.gov.br/anpd/pt-br/acesso-a-informacao/institucional/atos-normativos/regulamentacoes_anpd/resolucao-cd-anpd-no-2-de-27-de-janeiro-de-2022
+HTTP: 200
+URL final: https://www.gov.br/anpd/pt-br/acesso-a-informacao/institucional/atos-normativos/regulamentacoes_anpd/resolucao-cd-anpd-no-2-de-27-de-janeiro-de-2022
+STATUS: FORTE_CORRESPONDENCIA
+Snapshot chars: 12195
+Fonte chars: 12314
+Snapshot encontrado na fonte: 98.23%
+Fonte encontrada no snapshot: 97.43%
+
+--- INÍCIO DO SNAPSHOT ---
+Resolução CD/ANPD nº 2, de 27 de janeiro de 2022 Aprova o Regulamento de aplicação da Lei nº 13.709, de 14 de agosto de 2018, Lei Geral de Proteção de Dados Pessoais (LGPD), para agentes de tratamento de pequeno porte. Publicado em 26/04/2024 08:49 Modificado em 04/07/2025 15:25 Compartilhe : RESOLUÇÃO CD/ANPD Nº 2, DE 27 DE JANEIRO DE 2022 Aprova o Regulamento de aplicação da Lei nº 13.709, de 14 de agosto de 2018, Lei Geral de Proteção de Dados Pessoais (LGPD), para agentes de tratamento de pequeno porte. Observação : Este texto não substitui a publicação no DOU de 28/01/2022 , alterado pela Resolução CD/ANPD nº 15, de 25 de abril de 2024 . O CONSELHO DIRETOR DA AUTORIDADE NACIONAL DE PROT
+
+--- FINAL DO SNAPSHOT ---
+ agentes de tratamento. Parágrafo único. Os prazos não dispostos neste regulamento para agentes de tratamento de pequeno porte serão determinados por regulamentação específica. Art. 15. Os agentes de tratamento de pequeno porte podem fornecer a declaração simplificada de que trata o art. 19, I, da LGPD no prazo de até quinze dias, contados da data do requerimento do titular. TÍTULO IV DISPOSIÇÕES FINAIS Art. 16. A ANPD poderá determinar ao agente de tratamento de pequeno porte o cumprimento das obrigações dispensadas ou flexibilizadas neste regulamento, considerando as circunstâncias relevantes da situação, tais como a natureza ou o volume das operações, bem como os riscos para os titulares.
+
+--- INÍCIO DA FONTE ATUAL ---
+Resolução CD/ANPD nº 2, de 27 de janeiro de 2022 Resolução CD/ANPD nº 2, de 27 de janeiro de 2022 Aprova o Regulamento de aplicação da Lei nº 13.709, de 14 de agosto de 2018, Lei Geral de Proteção de Dados Pessoais (LGPD), para agentes de tratamento de pequeno porte. Publicado em 26/04/2024 08:49 Modificado em 02/09/2026 17:24 Compartilhe : RESOLUÇÃO CD/ANPD Nº 2, DE 27 DE JANEIRO DE 2022 RESOLUÇÃO CD/ANPD Nº 2, DE 27 DE JANEIRO DE 2022 Aprova o Regulamento de aplicação da Lei nº 13.709, de 14 de agosto de 2018, Lei Geral de Proteção de Dados Pessoais (LGPD), para agentes de tratamento de pequeno porte. Observação : Este texto não substitui a publicação no DOU de 28/01/2022 , alterado pela R
+
+--- FINAL DA FONTE ATUAL ---
+ agentes de tratamento. Parágrafo único. Os prazos não dispostos neste regulamento para agentes de tratamento de pequeno porte serão determinados por regulamentação específica. Art. 15. Os agentes de tratamento de pequeno porte podem fornecer a declaração simplificada de que trata o art. 19, I, da LGPD no prazo de até quinze dias, contados da data do requerimento do titular. TÍTULO IV DISPOSIÇÕES FINAIS Art. 16. A ANPD poderá determinar ao agente de tratamento de pequeno porte o cumprimento das obrigações dispensadas ou flexibilizadas neste regulamento, considerando as circunstâncias relevantes da situação, tais como a natureza ou o volume das operações, bem como os riscos para os titulares.
+
+--- POSSÍVEIS BLOCOS DA FONTE AUSENTES DO SNAPSHOT ---
+[nenhum bloco relevante detectado]
+
+
+==============================================================================================================
+DOCUMENTO: eca_BR_1990
+==============================================================================================================
+Fonte: https://www.planalto.gov.br/ccivil_03/leis/l8069.htm
+HTTP: 200
+URL final: https://www.planalto.gov.br/ccivil_03/leis/l8069.htm
+STATUS: FORTE_CORRESPONDENCIA
+Snapshot chars: 9269
+Fonte chars: 9269
+Snapshot encontrado na fonte: 100.0%
+Fonte encontrada no snapshot: 100.0%
+
+--- INÍCIO DO SNAPSHOT ---
+Presidência da República Casa Civil Subchefia para Assuntos Jurídicos LEI Nº 8.069, DE 13 DE JULHO DE 1990. Texto compilado Vigência (Vide Lei nº 14.987, de 2024) Vigência (Vide Lei nº 14.950, de 2024) Vigência (Vide Lei nº 15.243, de 2025) Vigência (Vide Lei nº 15.450, de 2026) Vigência Dispõe sobre o Estatuto da Criança e do Adolescente e dá outras providências. O PRESIDENTE DA REPÚBLICA: Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei: Título I Das Disposições Preliminares Art. 1º Esta Lei dispõe sobre a proteção integral à criança e ao adolescente. Art. 2º Considera-se criança, para os efeitos desta Lei, a pessoa até doze anos de idade incompletos, e adolescente 
+
+--- FINAL DO SNAPSHOT ---
+nhamento de acordo com o prognóstico. (Incluído pela Lei nº 14.721, de 2023) (Vigência) Art. 8º-A. Fica instituída a Semana Nacional de Prevenção da Gravidez na Adolescência, a ser realizada anualmente na semana que incluir o dia 1º de fevereiro, com o objetivo de disseminar informações sobre medidas preventivas e educativas que contribuam para a redução da incidência da gravidez na adolescência. (Incluído pela Lei nº 13.798, de 2019) Parágrafo único. As ações destinadas a efetivar o disposto no caput deste artigo ficarão a cargo do poder público, em conjunto com organizações da sociedade civil, e serão dirigidas prioritariamente ao público adolescente. (Incluído pela Lei nº 13.798, de 2019)
+
+--- INÍCIO DA FONTE ATUAL ---
+Presidência da República Casa Civil Subchefia para Assuntos Jurídicos LEI Nº 8.069, DE 13 DE JULHO DE 1990. Texto compilado Vigência (Vide Lei nº 14.987, de 2024) Vigência (Vide Lei nº 14.950, de 2024) Vigência (Vide Lei nº 15.243, de 2025) Vigência (Vide Lei nº 15.450, de 2026) Vigência Dispõe sobre o Estatuto da Criança e do Adolescente e dá outras providências. O PRESIDENTE DA REPÚBLICA: Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei: Título I Das Disposições Preliminares Art. 1º Esta Lei dispõe sobre a proteção integral à criança e ao adolescente. Art. 2º Considera-se criança, para os efeitos desta Lei, a pessoa até doze anos de idade incompletos, e adolescente 
+
+--- FINAL DA FONTE ATUAL ---
+nhamento de acordo com o prognóstico. (Incluído pela Lei nº 14.721, de 2023) (Vigência) Art. 8º-A. Fica instituída a Semana Nacional de Prevenção da Gravidez na Adolescência, a ser realizada anualmente na semana que incluir o dia 1º de fevereiro, com o objetivo de disseminar informações sobre medidas preventivas e educativas que contribuam para a redução da incidência da gravidez na adolescência. (Incluído pela Lei nº 13.798, de 2019) Parágrafo único. As ações destinadas a efetivar o disposto no caput deste artigo ficarão a cargo do poder público, em conjunto com organizações da sociedade civil, e serão dirigidas prioritariamente ao público adolescente. (Incluído pela Lei nº 13.798, de 2019)
+
+--- POSSÍVEIS BLOCOS DA FONTE AUSENTES DO SNAPSHOT ---
+[nenhum bloco relevante detectado]
+
+
+==============================================================================================================
+DOCUMENTO: dpia_ICO_
+==============================================================================================================
+Fonte: https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/data-protection-impact-assessments-dpias/what-is-a-dpia/#what1
+HTTP: 200
+URL final: https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/data-protection-impact-assessments-dpias/what-is-a-dpia/#what1
+STATUS: FORTE_CORRESPONDENCIA
+Snapshot chars: 9046
+Fonte chars: 8953
+Snapshot encontrado na fonte: 96.17%
+Fonte encontrada no snapshot: 96.89%
+
+--- INÍCIO DO SNAPSHOT ---
+What is a DPIA? The Data (Use and Access) Act 2025 got Royal Assent on 19 June 2025. All the provisions affecting data protection law and the Privacy and Electronic Regulations Communications are now in force. The Department for Science and Innovation (DSIT) has set out the commencement plans. You can find more details on the Gov.uk website . Contents In detail What is a DPIA? Why are DPIAs important? How are DPIAs used? What kind of 'risk' do they assess? What is a DPIA? A DPIA is a process designed to help you systematically analyse, identify and minimise the data protection risks of a project or plan. It is a key part of your accountability obligations under the UK GDPR, and when done pro
+
+--- FINAL DO SNAPSHOT ---
+example, it may be a significant risk if your intended processing leads to a loss of public trust. A DPIA must assess the level of risk, and in particular whether it is ‘high risk’. The UK GDPR is clear that assessing the level of risk involves looking at both the likelihood and the severity of the potential harm. For more guidance on what this all means in practice, see the section on how to carry out a DPIA. Further reading - European Data Protection Board WP29 produced guidelines on data protection impact assessments , which have been endorsed by the EDPB. See also the working party’s Statement on the role of a risk-based approach in data protection legal frameworks (WP218, 30 May 2014) .
+
+--- INÍCIO DA FONTE ATUAL ---
+What is a DPIA? Due to changes made by the Data (Use and Access) Act, this guidance is under review and may be subject to change. The Plans for new and updated guidance page will tell you about which guidance will be updated and when this will happen. Contents In detail What is a DPIA? Why are DPIAs important? How are DPIAs used? What kind of 'risk' do they assess? What is a DPIA? A DPIA is a process designed to help you systematically analyse, identify and minimise the data protection risks of a project or plan. It is a key part of your accountability obligations under the UK GDPR, and when done properly helps you assess and demonstrate how you comply with all of your data protection obliga
+
+--- FINAL DA FONTE ATUAL ---
+example, it may be a significant risk if your intended processing leads to a loss of public trust. A DPIA must assess the level of risk, and in particular whether it is ‘high risk’. The UK GDPR is clear that assessing the level of risk involves looking at both the likelihood and the severity of the potential harm. For more guidance on what this all means in practice, see the section on how to carry out a DPIA. Further reading - European Data Protection Board WP29 produced guidelines on data protection impact assessments , which have been endorsed by the EDPB. See also the working party’s Statement on the role of a risk-based approach in data protection legal frameworks (WP218, 30 May 2014) .
+
+--- POSSÍVEIS BLOCOS DA FONTE AUSENTES DO SNAPSHOT ---
+
+Cobertura no snapshot: 5.0%
+Due to changes made by the Data (Use and Access) Act, this guidance is under review and may be subject to change. The Plans for new and updated guidance page will tell you about which guidance will be updated and when this will happen.
+
+
+==============================================================================================================
+DOCUMENTO: lei_6681_BR_1979
+==============================================================================================================
+Fonte: https://www.planalto.gov.br/ccivil_03/leis/1970-1979/l6681.htm
+HTTP: 200
+URL final: https://www.planalto.gov.br/ccivil_03/leis/1970-1979/l6681.htm
+STATUS: FORTE_CORRESPONDENCIA
+Snapshot chars: 5502
+Fonte chars: 5502
+Snapshot encontrado na fonte: 100.0%
+Fonte encontrada no snapshot: 100.0%
+
+--- INÍCIO DO SNAPSHOT ---
+Presidência da República Casa Civil Subchefia para Assuntos Jurídicos LEI N o 6.681, DE 16 DE AGOSTO DE 1979. Dispõe sobre a inscrição de médicos, cirurgiões-dentistas e farmacêuticos militares em Conselhos Regionais de Medicina, Odontologia e Farmácia, e dá outras providências. O PRESIDENTE DA REPÚBLICA Faço saber que o CONGRESSO NACIONAL decreta e eu sanciono a seguinte Lei: Art . 1º Os médicos, cirurgiões-dentistas e farmacêuticos, em serviço ativo nas Forças Armadas, como integrantes dos respectivos Serviços de Saúde, inscrever-se-ão nos Conselhos Regionais de Medicina, Odontologia e Farmácia, de acordo com as disposições dos respectivos Regulamentos, mediante prova que ateste essa condi
+
+--- FINAL DO SNAPSHOT ---
+-á o prescrito nos parágrafos 2º e 3º do art. 2º, do art. 5º e seu parágrafo único, e nos arts. 3º, 4º e 6º desta lei, devendo ser anotada em sua Carteira Profissional a qualificação médico militar convocado, cirurgião-dentista militar convocado ou farmacêutico militar convocado. Art . 8º Esta lei entrará em vigor na data de sua publicação. Art . 9º Ficam revogadas a Lei nº 5.526, de 5 de novembro de 1968 , e demais disposições em contrário. Brasília, em 16 de agosto de 1979; 158º da Independência e 91º da República. JOÃO B. DE FIGUEIREDO Maximiano Fonseca Walter Pires Murillo Macêdo Délio Jardim de Mattos Samuel Augusto Alves Corrêa Este texto não substitui o publicado no DOU de 17.8.1979 *
+
+--- INÍCIO DA FONTE ATUAL ---
+Presidência da República Casa Civil Subchefia para Assuntos Jurídicos LEI N o 6.681, DE 16 DE AGOSTO DE 1979. Dispõe sobre a inscrição de médicos, cirurgiões-dentistas e farmacêuticos militares em Conselhos Regionais de Medicina, Odontologia e Farmácia, e dá outras providências. O PRESIDENTE DA REPÚBLICA Faço saber que o CONGRESSO NACIONAL decreta e eu sanciono a seguinte Lei: Art . 1º Os médicos, cirurgiões-dentistas e farmacêuticos, em serviço ativo nas Forças Armadas, como integrantes dos respectivos Serviços de Saúde, inscrever-se-ão nos Conselhos Regionais de Medicina, Odontologia e Farmácia, de acordo com as disposições dos respectivos Regulamentos, mediante prova que ateste essa condi
+
+--- FINAL DA FONTE ATUAL ---
+-á o prescrito nos parágrafos 2º e 3º do art. 2º, do art. 5º e seu parágrafo único, e nos arts. 3º, 4º e 6º desta lei, devendo ser anotada em sua Carteira Profissional a qualificação médico militar convocado, cirurgião-dentista militar convocado ou farmacêutico militar convocado. Art . 8º Esta lei entrará em vigor na data de sua publicação. Art . 9º Ficam revogadas a Lei nº 5.526, de 5 de novembro de 1968 , e demais disposições em contrário. Brasília, em 16 de agosto de 1979; 158º da Independência e 91º da República. JOÃO B. DE FIGUEIREDO Maximiano Fonseca Walter Pires Murillo Macêdo Délio Jardim de Mattos Samuel Augusto Alves Corrêa Este texto não substitui o publicado no DOU de 17.8.1979 *
+
+--- POSSÍVEIS BLOCOS DA FONTE AUSENTES DO SNAPSHOT ---
+[nenhum bloco relevante detectado]
+
+
+==============================================================================================================
+DOCUMENTO: lei_13787_BR_2018
+==============================================================================================================
+Fonte: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13787.htm
+HTTP: 200
+URL final: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13787.htm
+STATUS: FORTE_CORRESPONDENCIA
+Snapshot chars: 3938
+Fonte chars: 4038
+Snapshot encontrado na fonte: 99.29%
+Fonte encontrada no snapshot: 96.4%
+
+--- INÍCIO DO SNAPSHOT ---
+Presidência da República Secretaria-Geral Subchefia para Assuntos Jurídicos LEI Nº 13.787, DE 27 DE DEZEMBRO DE 2018. Dispõe sobre a digitalização e a utilização de sistemas informatizados para a guarda, o armazenamento e o manuseio de prontuário de paciente. Art. 1º A digitalização e a utilização de sistemas informatizados para a guarda, o armazenamento e o manuseio de prontuário de paciente são regidas por esta Lei e pela Lei nº 13.709, de 14 de agosto de 2018 . Art. 2º O processo de digitalização de prontuário de paciente será realizado de forma a assegurar a integridade, a autenticidade e a confidencialidade do documento digital. § 1º Os métodos de digitalização devem reproduzir todas as
+
+--- FINAL DO SNAPSHOT ---
+ilo e a confidencialidade das informações. § 4º A destinação final de todos os prontuários e a sua eliminação serão registradas na forma de regulamento. § 5º As disposições deste artigo aplicam-se a todos os prontuários de paciente, independentemente de sua forma de armazenamento, inclusive aos microfilmados e aos arquivados eletronicamente em meio óptico, bem como aos constituídos por documentos gerados e mantidos originalmente de forma eletrônica. Art. 7º Esta Lei entra em vigor na data de sua publicação. Brasília, 27 de dezembro de 2018; 197º da Independência e 130º da República. MICHEL TEMER Torquato Jardim Gustavo do Vale Rocha Este texto não substitui o publicado no DOU de 28.12.2018 *
+
+--- INÍCIO DA FONTE ATUAL ---
+Presidência da República Secretaria-Geral Subchefia para Assuntos Jurídicos LEI Nº 13.787, DE 27 DE DEZEMBRO DE 2018. Dispõe sobre a digitalização e a utilização de sistemas informatizados para a guarda, o armazenamento e o manuseio de prontuário de paciente. O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei: Art. 1º A digitalização e a utilização de sistemas informatizados para a guarda, o armazenamento e o manuseio de prontuário de paciente são regidas por esta Lei e pela Lei nº 13.709, de 14 de agosto de 2018 . Art. 2º O processo de digitalização de prontuário de paciente será realizado de forma a assegurar a integridade, a autenticidade e 
+
+--- FINAL DA FONTE ATUAL ---
+ilo e a confidencialidade das informações. § 4º A destinação final de todos os prontuários e a sua eliminação serão registradas na forma de regulamento. § 5º As disposições deste artigo aplicam-se a todos os prontuários de paciente, independentemente de sua forma de armazenamento, inclusive aos microfilmados e aos arquivados eletronicamente em meio óptico, bem como aos constituídos por documentos gerados e mantidos originalmente de forma eletrônica. Art. 7º Esta Lei entra em vigor na data de sua publicação. Brasília, 27 de dezembro de 2018; 197º da Independência e 130º da República. MICHEL TEMER Torquato Jardim Gustavo do Vale Rocha Este texto não substitui o publicado no DOU de 28.12.2018 *
+
+--- POSSÍVEIS BLOCOS DA FONTE AUSENTES DO SNAPSHOT ---
+
+Cobertura no snapshot: 0.0%
+O PRESIDENTE DA REPÚBLICA Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei:
+

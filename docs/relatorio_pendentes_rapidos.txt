@@ -1,0 +1,870 @@
+
+==============================================================================================================
+DOCUMENTO: european_health_data_space_EU_2025
+==============================================================================================================
+Título: Regulation (EU) 2025/327 of the European Parliament and of the Council
+Tipo: PDF
+Fonte: european_health_data_space_EU_2025.pdf
+Trechos: 490
+Caracteres: 528168
+Perguntas atuais: 3
+Sinais: deontico=713 | dispositivo=130 | loja=0
+Auditoria de páginas: OK | PDF=96 | indexadas=96 | ausentes=nenhuma
+
+--- INÍCIO ---
+Jornal Oficial PT da União Europeia Série L 2025/327 5.3.2025 REGULAMENTO (UE) 2025/327 DO PARLAMENTO EUROPEU E DO CONSELHO de 11 de fevereiro de 2025 relativo ao Espaço Europeu de Dados de Saúde e que altera a Diretiva 2011/24/UE e o Regulamento (UE) 2024/2847 (Texto relevante para efeitos do EEE) O PARLAMENTO EUROPEU E O CONSELHO DA UNIÃO EUROPEIA, Tendo em conta o Tratado sobre o Funcionamento da União Europeia, nomeadamente os artigos 16.o e 114.o, Tendo em conta a proposta da Comissão Europeia, Após transmissão do projeto de ato legislativo aos parlamentos nacionais, Tendo em conta o parecer do Comité Económico e Social Europeu (1), Tendo em conta o parecer do Comité das Regiões (2), Deliberando de acordo com o processo legislativo ordinário (3), Considerando o seguinte: (1) O presente regulamento tem por objetivo criar o Espaço Europeu de Dados de Saúde («EEDS»), a fim de melhorar o acesso e o controlo pelas pessoas singulares relativamente aos seus dados de saúde eletrónicos pessoais no contexto dos cuidados de saúde, bem como atingir com maior eficácia outros fins relacionados com a utilização de dados de saúde eletrónicos nos sectores dos cuidados de saúde e da prestação
+essoais no contexto dos cuidados de saúde, bem como atingir com maior eficácia outros fins relacionados com a utilização de dados de saúde eletrónicos nos sectores dos cuidados de saúde e da prestação de cuidados que possam beneficiar a sociedade, designadamente a investigação, a inovação, a elaboração de políticas, a preparação e resposta a ameaças sanitárias, incluindo a prevenção e combate de futuras pandemias, a segurança dos doentes, a medicina personalizada, as estatísticas oficiais ou as atividades de regulamentação. Além disso, o presente regulamento tem por objetivo melhorar o funciona
+
+--- MEIO ---
+conformidade com a Diretiva (UE) 2019/882 do Parlamento Europeu e do Conselho (31); f) Supervisionar os pontos de contacto nacionais para a saúde digital e cooperar com outras autoridades de saúde digital e com a Comissão no desenvolvimento futuro da «A minha saúde @ UE» (MyHealth@EU); g) Assegurar a aplicação, a nível nacional, do formato europeu de intercâmbio de registos de saúde eletrónicos, em cooperação com as autoridades nacionais e as partes interessadas; h) Contribuir, a nível da União, para o desenvolvimento do formato europeu de intercâmbio de registos de saúde eletrónicos para a elaboração de especificações comuns nos termos do artigo 36.o, que abordem preocupações em matéria de qualidade, interoperabilidade, segurança, proteção, facilidade de utilização, acessibilidade, não discriminação ou direitos fundamentais, e para a elaboração das especificações da base de dados da UE para o registo dos sistemas de RSE e as aplicações de bem-estar a que se refere o artigo 49.o;
+não discriminação ou direitos fundamentais, e para a elaboração das especificações da base de dados da UE para o registo dos sistemas de RSE e as aplicações de bem-estar a que se refere o artigo 49.o; i) Se aplicável, conduzir atividades de fiscalização do mercado em conformidade com o artigo 43.o, assegurando igualmente que sejam evitados quaisquer conflitos de interesses; j) Reforçar as capacidades nacionais com vista à aplicação dos requisitos relativos à interoperabilidade e à segurança dos de dados de saúde eletrónicos para utilização primária e participar em intercâmbios de informações e em atividades de reforço de capacidades a nível da União; k) Cooperar com as autoridades de fiscalização do mercado, participar nas atividades relacionadas com a gestão dos riscos colocados pelos sistemas
+
+--- FINAL ---
+de demonstrar a conformidade do sistema de RSE com os requisitos previstos no capítulo III, em especial com os requisitos essenciais aplicáveis. 5. Uma cópia da ficha de informações a que se refere o artigo 38.o. 6. Uma cópia da declaração de conformidade UE. ELI: http://data.europa.eu/eli/reg/2025/327/oj 95/96
+ANEXO IV Declaração de conformidade UE A declaração de conformidade UE dos componentes de software harmonizados do sistema de RSE deve conter todas as seguintes informações: 1. O nome do sistema de RSE, a versão e qualquer referência inequívoca adicional que permita identificar o sistema de RSE. 2. Nome e endereço do fabricante ou, se for caso disso, do seu mandatário. 3. Menção de que a declaração de conformidade UE é emitida sob a exclusiva responsabilidade do fabricante. 4. Menção que ateste que o sistema de RSE em causa é conforme com as disposições do capítulo III e, se for caso disso, com outro direito da União aplicável que preveja a emissão de declarações de conformidade UE, complementada pelo resultado obtido no ambiente de testes referido no artigo 40.o. 5. Referências a quaisquer normas harmonizadas relevantes utilizadas e em relação às quais é declarada a conformidade. 6. Referências a quaisquer especificações comuns utilizadas e em relação às quais é declarada a conformidade. 7. O local e a data de emissão da declaração, bem como a assinatura, o nome e a função da pessoa que assinou, e, se for caso disso, a indicação da pessoa em nome da qual foi assinada. 8. conformidade. 7. O local e a data de emissão da declaração, bem como a assinatura, o nome e a função da pessoa que assinou, e, se for caso disso, a indicação da pessoa em nome da qual foi assinada. 8. Se for caso disso, informações adicionais. 96/96 ELI: http://data.europa.eu/eli/reg/2025/327/oj
+
+
+==============================================================================================================
+DOCUMENTO: cp_BR_1940
+==============================================================================================================
+Título: Código Penal
+Tipo: HTML
+Fonte: https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm
+Trechos: 282
+Caracteres: 319817
+Perguntas atuais: 0
+Sinais: deontico=16 | dispositivo=1116 | loja=0
+Auditoria de páginas: N/A (HTML ou sem PDF local)
+
+--- INÍCIO ---
+Presidência da República Casa Civil Subchefia para Assuntos Jurídicos DECRETO-LEI N o 2.848, DE 7 DE DEZEMBRO DE 1940 Vigência (Vide Lei nº 1.521, de 1951) (Vide Lei nº 5.741, de 1971) (Vide Lei nº 5.988, de 1973) (Vide Lei nº 6.015, de 1973) (Vide Lei nº 6.404, de 1976) (Vide Lei nº 6.515, de 1977) (Vide Lei nº 6.538, de 1978) (Vide Lei nº 6.710, de 1979) (Vide Lei nº 7.492, de 1986) (Vide Lei nº 8.176, de 1991) Código Penal. O PRESIDENTE DA REPÚBLICA , usando da atribuição que lhe confere o art. 180 da Constituição, decreta a seguinte Lei: PARTE GERAL TÍTULO I DA APLICAÇÃO DA LEI PENAL (Redação dada pela Lei nº 7.209, de 11.7.1984) Anterioridade da Lei Art. 1 º - Não há crime sem lei anterior que o defina. Não há pena sem prévia cominação legal. (Redação dada pela Lei nº 7.209, de 11.7.1984) Lei penal no tempo Art. 2º - Ninguém pode ser punido por fato que lei posterior deixa de considerar crime, cessando em virtude dela a execução e os efeitos penais da sentença condenatória. (Redação dada pela Lei nº 7.209, de 11.7.1984) Parágrafo único - A lei posterior, que de qualquer modo favorecer o agente, aplica-se aos fatos anteriores, ainda que decididos por sentença condenatória
+(Redação dada pela Lei nº 7.209, de 11.7.1984) Parágrafo único - A lei posterior, que de qualquer modo favorecer o agente, aplica-se aos fatos anteriores, ainda que decididos por sentença condenatória transitada em julgado. (Redação dada pela Lei nº 7.209, de 11.7.1984) Lei excepcional ou temporária (Incluído pela Lei nº 7.209, de 11.7.1984) Art. 3º - A lei excepcional ou temporária, embora decorrido o período de sua duração ou cessadas as circunstâncias que a determinaram, aplica-se ao fato praticado durante sua vigência. (Redação dada pela Lei nº 7.209, de 1984) Tempo do crime Art. 4º - Considera
+
+--- MEIO ---
+; (Incluído pela Lei nº 9.983, de 2000) III - pagar benefício devido a segurado, quando as respectivas cotas ou valores já tiverem sido reembolsados à empresa pela previdência social. (Incluído pela Lei nº 9.983, de 2000) § 2 o É extinta a punibilidade se o agente, espontaneamente, declara, confessa e efetua o pagamento das contribuições, importâncias ou valores e presta as informações devidas à previdência social, na forma definida em lei ou regulamento, antes do início da ação fiscal.
+confessa e efetua o pagamento das contribuições, importâncias ou valores e presta as informações devidas à previdência social, na forma definida em lei ou regulamento, antes do início da ação fiscal. (Incluído pela Lei nº 9.983, de 2000) § 3 o É facultado ao juiz deixar de aplicar a pena ou aplicar somente a de multa se o agente for primário e de bons antecedentes, desde que: (Incluído pela Lei nº 9.983, de 2000) I – tenha promovido, após o início da ação fiscal e antes de oferecida a denúncia, o pagamento da contribuição social previdenciária, inclusive acessórios; ou (Incluído pela Lei nº 9.983, de 2000) II – o valor das contribuições devidas, inclusive acessórios, seja igual ou inferior àquele estabelecido pela previdência social, administrativamente, como sendo o mínimo para o ajuizamento de suas execuções fiscais. (Incluído pela Lei nº 9.983, de 2000) § 4 o A faculdade prevista no § 3 o deste artigo não se aplica aos casos de parcelamento de contribuições cujo valor, inclusive dos acessórios, seja superior àquele estabelecido, administrativamente, como sendo o mínimo para o ajuizamento de suas execuções fiscais.
+s casos de parcelamento de contribuições cujo valor, inclusive dos acessórios, seja superior àquele estabelecido, administrativamente, como sendo o mínimo para o ajuizamento
+
+--- FINAL ---
+a Lei nº 14.197, de 2021) (Vigência) CAPÍTULO V (Incluído pela Lei nº 14.197, de 2021) (Vigência) (VETADO) (Incluído pela Lei nº 14.197, de 2021) (Vigência) CAPÍTULO VI (Incluído pela Lei nº 14.197, de 2021) (Vigência) DISPOSIÇÕES COMUNS Art. 359-T.
+Incluído pela Lei nº 14.197, de 2021) (Vigência) (VETADO) (Incluído pela Lei nº 14.197, de 2021) (Vigência) CAPÍTULO VI (Incluído pela Lei nº 14.197, de 2021) (Vigência) DISPOSIÇÕES COMUNS Art. 359-T. Não constitui crime previsto neste Título a manifestação crítica aos poderes constitucionais nem a atividade jornalística ou a reivindicação de direitos e garantias constitucionais por meio de passeatas, de reuniões, de greves, de aglomerações ou de qualquer outra forma de manifestação política com propósitos sociais. (Incluído pela Lei nº 14.197, de 2021) (Vigência) (VETADO) (Incluído pela Lei nº 14.197, de 2021) (Vigência) Art. 359-U. (VETADO). (Incluído pela Lei nº 14.197, de 2021) (Vigência) DISPOSIÇÕES FINAIS Art. 360 - Ressalvada a legislação especial sobre os crimes contra a existência, a segurança e a integridade do Estado e contra a guarda e o emprego da economia popular, os crimes de imprensa e os de falência, os de responsabilidade do Presidente da República e dos Governadores ou Interventores, e os crimes militares, revogam-se as disposições em contrário. Art. 361 - Este Código entrará em vigor no dia 1º de janeiro de 1942. Rio de Janeiro, 7 de dezembro de 1940;
+vernadores ou Interventores, e os crimes militares, revogam-se as disposições em contrário. Art. 361 - Este Código entrará em vigor no dia 1º de janeiro de 1942. Rio de Janeiro, 7 de dezembro de 1940; 119º da Independência e 52º da República. GETÚLIO VARGAS Francisco Campos Este texto não substitui o publicado no DOU de 31.12.1940 e retificado em 3.1.1941 *
+
+
+==============================================================================================================
+DOCUMENTO: lgpd_BR_2018
+==============================================================================================================
+Título: Lei Geral de Proteção de Dados Pessoais (LGPD)
+Tipo: HTML
+Fonte: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm
+Trechos: 114
+Caracteres: 129777
+Perguntas atuais: 3
+Sinais: deontico=67 | dispositivo=338 | loja=0
+Auditoria de páginas: N/A (HTML ou sem PDF local)
+
+--- INÍCIO ---
+Presidência da República Secretaria-Geral Subchefia para Assuntos Jurídicos LEI Nº 13.709, DE 14 DE AGOSTO DE 2018 Texto compilado Mensagem de veto Vigência Dispõe sobre a proteção de dados pessoais e altera a Lei nº 12.965, de 23 de abril de 2014 (Marco Civil da Internet). Lei Geral de Proteção de Dados Pessoais (LGPD). (Redação dada pela Lei nº 13.853, de 2019) Vigência CAPÍTULO I DISPOSIÇÕES PRELIMINARES Art. 1º Esta Lei dispõe sobre o tratamento de dados pessoais, inclusive nos meios digitais, por pessoa natural ou por pessoa jurídica de direito público ou privado, com o objetivo de proteger os direitos fundamentais de liberdade e de privacidade e o livre desenvolvimento da personalidade da pessoa natural. Parágrafo único. As normas gerais contidas nesta Lei são de interesse nacional e devem ser observadas pela União, Estados, Distrito Federal e Municípios. (Incluído pela Lei nº 13.853, de 2019) Vigência Art. 2º A disciplina da proteção de dados pessoais tem como fundamentos: I - o respeito à privacidade; II - a autodeterminação informativa; III - a liberdade de expressão, de informação, de comunicação e de opinião; IV - a inviolabilidade da intimidade, da honra e da imagem;
+- o respeito à privacidade; II - a autodeterminação informativa; III - a liberdade de expressão, de informação, de comunicação e de opinião; IV - a inviolabilidade da intimidade, da honra e da imagem; V - o desenvolvimento econômico e tecnológico e a inovação; VI - a livre iniciativa, a livre concorrência e a defesa do consumidor; e VII - os direitos humanos, o livre desenvolvimento da personalidade, a dignidade e o exercício da cidadania pelas pessoas naturais. Art. 3º Esta Lei aplica-se a qualquer operação de tratamento realizada por pessoa natural ou por pessoa jurídica de direito público ou 
+
+--- MEIO ---
+ar providências; III - orientar os funcionários e os contratados da entidade a respeito das práticas a serem tomadas em relação à proteção de dados pessoais; e IV - executar as demais atribuições determinadas pelo controlador ou estabelecidas em normas complementares. § 3º A autoridade nacional poderá estabelecer normas complementares sobre a definição e as atribuições do encarregado, inclusive hipóteses de dispensa da necessidade de sua indicação, conforme a natureza e o porte da entidade ou o volume de operações de tratamento de dados. § 4º (VETADO) . (Incluído pela Lei nº 13.853, de 2019) Vigência Seção III Da Responsabilidade e do Ressarcimento de Danos Art. 42.
+o porte da entidade ou o volume de operações de tratamento de dados. § 4º (VETADO) . (Incluído pela Lei nº 13.853, de 2019) Vigência Seção III Da Responsabilidade e do Ressarcimento de Danos Art. 42. O controlador ou o operador que, em razão do exercício de atividade de tratamento de dados pessoais, causar a outrem dano patrimonial, moral, individual ou coletivo, em violação à legislação de proteção de dados pessoais, é obrigado a repará-lo. § 1º A fim de assegurar a efetiva indenização ao titular dos dados: I - o operador responde solidariamente pelos danos causados pelo tratamento quando descumprir as obrigações da legislação de proteção de dados ou quando não tiver seguido as instruções lícitas do controlador, hipótese em que o operador equipara-se ao controlador, salvo nos casos de exclusão previstos no art. 43 desta Lei; II - os controladores que estiverem diretamente envolvidos no tratamento do qual decorreram danos ao titular dos dados respondem solidariamente, salvo nos casos de exclusão previstos no art. 43 desta Lei.
+os controladores que estiverem diretamente envolvidos no tratamento do qual decorr
+
+--- FINAL ---
+8 de dezembro de 2018; e (Incluído pela Medida Provisória nº 869, de 2018) II - vinte e quatro meses após a data de sua publicação quanto aos demais artigos. (Incluído pela Medida Provisória nº 869, de 2018) Art. 65. Esta Lei entra em vigor: (Redação dada pela Lei nº 13.853, de 2019) I - dia 28 de dezembro de 2018, quanto aos arts.
+anto aos demais artigos. (Incluído pela Medida Provisória nº 869, de 2018) Art. 65. Esta Lei entra em vigor: (Redação dada pela Lei nº 13.853, de 2019) I - dia 28 de dezembro de 2018, quanto aos arts. 55-A, 55-B, 55-C, 55-D, 55-E, 55-F, 55-G, 55-H, 55-I, 55-J, 55-K, 55-L, 58-A e 58-B; e (Incluído pela Lei nº 13.853, de 2019) I-A  dia 1º de agosto de 2021, quanto aos arts. 52, 53 e 54; (Incluído pela Lei nº 14.010, de 2020) II - 24 (vinte e quatro) meses após a data de sua publicação, quanto aos demais artigos. (Incluído pela Lei nº 13.853, de 2019) II - em 3 de maio de 2021, quanto aos demais artigos. (Redação dada pela Medida Provisória nº 959, de 2020) (Convertida na Lei nº 14.058, de 2020) II - 24 (vinte e quatro) meses após a data de sua publicação, quanto aos demais artigos. (Incluído pela Lei nº 13.853, de 2019) Brasília , 14 de agosto de 2018; 197º da Independência e 130º da República. MICHEL TEMER Torquato Jardim Aloysio Nunes Ferreira Filho Eduardo Refinetti Guardia Esteves Pedro Colnago Junior Gilberto Magalhães Occhi Gilberto Kassab Wagner de Campos Rosário Gustavo do Vale Rocha Ilan Goldfajn Raul Jungmann Eliseu Padilha Este texto não substitui o publicado no DOU de s Pedro Colnago Junior Gilberto Magalhães Occhi Gilberto Kassab Wagner de Campos Rosário Gustavo do Vale Rocha Ilan Goldfajn Raul Jungmann Eliseu Padilha Este texto não substitui o publicado no DOU de 15.8.2018, e republicado parcialmente em 15.8.2018 - Edição extra *
+
+
+==============================================================================================================
+DOCUMENTO: projeto_lei_2338_BR_2023
+==============================================================================================================
+Título: PL 2338/2023
+Tipo: PDF
+Fonte: projeto_lei_2338_BR_2023.pdf
+Trechos: 104
+Caracteres: 106505
+Perguntas atuais: 17
+Sinais: deontico=43 | dispositivo=214 | loja=0
+Auditoria de páginas: OK | PDF=36 | indexadas=36 | ausentes=nenhuma
+
+--- INÍCIO ---
+Dispõe sobre o desenvolvimento, o fomento e o uso ético e responsável da PL inteligência artificial com base naApresentação: centralidade da pessoa humana. O Congresso Nacional decreta: CAPÍTULO I DISPOSIÇÕES PRELIMINARES Art. 1º Esta Lei estabelece normas gerais de caráter nacional para a governança responsável de sistemas de inteligência artificial (IA) no Brasil, com o objetivo de proteger os direitos fundamentais, estimular a inovação responsável e a competitividade e garantir a implementação de sistemas seguros e confiáveis, em benefício da pessoa humana, do regime democrático e do desenvolvimento social, científico, tecnológico e econômico. § 1º Esta Lei não se aplica ao sistema de IA: I – utilizado por pessoa natural para fim exclusivamente particular e não econômico; II – desenvolvido e utilizado única e exclusivamente para fins de defesa nacional; III – utilizado em atividades de investigação, pesquisa, testagem e desenvolvimento de sistemas, aplicações ou modelos de IA antes de serem colocados em circulação no mercado ou colocados em serviço, sendo observadas para as referidas atividades a legislação aplicável, em especial a Lei nº 8.078, de 11 de setembro de 1990
+A antes de serem colocados em circulação no mercado ou colocados em serviço, sendo observadas para as referidas atividades a legislação aplicável, em especial a Lei nº 8.078, de 11 de setembro de 1990 (Código de Defesa do Consumidor), a Lei nº 13.709, de 14 de agosto de 2018 (Lei Geral de Proteção de Dados Pessoais), a Lei nº 6.938, de 31 de agosto de 1981 (Política Nacional do Meio Ambiente), e a Lei nº 9.610, de 19 de fevereiro de 1998 (Lei dos Direitos Autorais), devendo a testagem em condições reais observar o disposto nesta Lei; IV – utilizado em serviços que se limitem ao provimento de infraest
+
+--- MEIO ---
+ente viável; III – documentar os riscos não mitigáveis remanescentes após o desenvolvimento; IV – processar e incorporar apenas conjuntos de dados coletados e tratados em conformidade com as exigências legais e sujeitos a uma adequada governança de dados, em especial quando se tratar de dados pessoais, de acordo com a Lei nº 13.709, de 14 de agosto de 2018 (Lei Geral de Proteção de Dados Pessoais) e o Capítulo II desta Lei; *CD252287612600*
+- 18 V – publicar resumo do conjunto de dados utilizados no treinamento do sistema, nos termos de regulamentação; PL VI – conceber e desenvolver os sistemas de IA de propósito geral e generativaApresentação: recorrendo às normas aplicáveis para, considerando o contexto de uso, reduzir a utilização de energia, a utilização de recursos e os resíduos, bem como para aumentar a eficiência energética e a eficiência global do sistema; VII – elaborar documentação técnica e instruções de utilização inteligíveis, a fim de permitir que os desenvolvedores, distribuidores e aplicadores tenham clareza sobre o funcionamento do sistema. § 1º O cumprimento dos requisitos estabelecidos neste artigo independe de o sistema ser fornecido como modelo autônomo ou incorporado a outro sistema de IA ou a produto, ou fornecido sob licenças gratuitas e de código aberto, como serviço, assim como por meio de outros canais de distribuição. § 2º Os desenvolvedores de sistemas de IA de propósito geral e generativa poderão formular códigos de boas práticas, ou aderir a eles, para demonstrar conformidade às obrigações estipuladas neste artigo. Art. 32.
+nvolvedores de sistemas de IA de propósito geral e generativa poderão formular códigos de boas práticas, ou aderir a eles, para demonstrar conformidade às obrigações estipuladas neste artigo. Art. 32. Os desenvolvedores
+
+--- FINAL ---
+............................................. § 6º Nas hipóteses do inciso I do caput, alíneas “a”, “b” e “d”, será priorizada a execução de pesquisas e projetos de inteligência artificial por parte dos diversos atores nos setores público e privado, ou por meio de parceria público-privada.” (NR) Art. 77. A regulação de aspectos associados à circulação de conteúdo online e que possam afetar a liberdade de expressão, inclusive o uso de IA para moderação e recomendação de conteúdo, somente poderá ser feita por meio de legislação específica. Art. 78. A implementação desta Lei observará o ato jurídico perfeito, o direito adquirido e a coisa julgada. Art. 79. Considerando o impacto da transformação tecnológica, caberá ao SIA, a cada quadriênio, promover estudos e emitir parecer opinativo a ser enviado ao Congresso Nacional quanto à necessidade de aprimoramento das normas estabelecidas nesta Lei. Art. 80. Esta Lei entra em vigor após decorridos 730 (setecentos e trinta) dias de sua publicação oficial.
+Congresso Nacional quanto à necessidade de aprimoramento das normas estabelecidas nesta Lei. Art. 80. Esta Lei entra em vigor após decorridos 730 (setecentos e trinta) dias de sua publicação oficial. § 1º Entram em vigor após 180 (cento e oitenta) dias da publicação desta Lei: I – o art. 13; II – as regras previstas na Seção V do Capítulo IV; e *CD252287612600*
+III – as regras previstas na Seção IV do Capítulo X, salvo o art. 62, que possui vigência imediata. PL § 2º Entram em vigor na data de publicação desta Lei: Apresentação: I – as disposições do Capítulo IX, com exceção do art. 50; II – as seguintes Seções do Capítulo X: a) Seção III; e b) Seção V. Senado Federal, em 31 de janeiro de 2025. Senador Rodrigo Pacheco Presidente do Senado Federal *CD252287612600* ivb/pl23-2338rev
+
+
+==============================================================================================================
+DOCUMENTO: cdc_BR_1990
+==============================================================================================================
+Título: Código de Defesa do Consumidor
+Tipo: HTML
+Fonte: https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm
+Trechos: 88
+Caracteres: 99739
+Perguntas atuais: 0
+Sinais: deontico=26 | dispositivo=347 | loja=0
+Auditoria de páginas: N/A (HTML ou sem PDF local)
+
+--- INÍCIO ---
+Presidência da República Casa Civil Subchefia para Assuntos Jurídicos LEI Nº 8.078, DE 11 DE SETEMBRO DE 1990. Vigência Mensagem de veto Regulamento Regulamento Regulamento (Vide Decreto nº 2.181, de 1997) (Vide pela Lei nº 13.425, de 2017) (Vigência) (Vide Decreto nº 11.034, de 2022) (Vigência) Regulamento Vigência Regulamento Dispõe sobre a proteção do consumidor e dá outras providências. O PRESIDENTE DA REPÚBLICA, faço saber que o Congresso Nacional decreta e eu sanciono a seguinte lei: TÍTULO I Dos Direitos do Consumidor CAPÍTULO I Disposições Gerais Art. 1° O presente código estabelece normas de proteção e defesa do consumidor, de ordem pública e interesse social, nos termos dos arts. 5°, inciso XXXII, 170, inciso V, da Constituição Federal e art. 48 de suas Disposições Transitórias. Art. 2° Consumidor é toda pessoa física ou jurídica que adquire ou utiliza produto ou serviço como destinatário final. Parágrafo único. Equipara-se a consumidor a coletividade de pessoas, ainda que indetermináveis, que haja intervindo nas relações de consumo. Art.
+ou utiliza produto ou serviço como destinatário final. Parágrafo único. Equipara-se a consumidor a coletividade de pessoas, ainda que indetermináveis, que haja intervindo nas relações de consumo. Art. 3° Fornecedor é toda pessoa física ou jurídica, pública ou privada, nacional ou estrangeira, bem como os entes despersonalizados, que desenvolvem atividade de produção, montagem, criação, construção, transformação, importação, exportação, distribuição ou comercialização de produtos ou prestação de serviços. § 1° Produto é qualquer bem, móvel ou imóvel, material ou imaterial. § 2° Serviço é qualquer atividade fornecida no mercado de consumo, mediante remuneração, inclusive as de natureza bancária, financeira, de crédito e securit
+
+--- MEIO ---
+, no mínimo, de 2 (dois) dias; (Incluído pela Lei nº 14.181, de 2021) IV - o nome e o endereço, inclusive o eletrônico, do fornecedor; (Incluído pela Lei nº 14.181, de 2021) V - o direito do consumidor à liquidação antecipada e não onerosa do débito, nos termos do § 2º do art. 52 deste Código e da regulamentação em vigor. (Incluído pela Lei nº 14.181, de 2021) § 1º As informações referidas no art. 52 deste Código e no caput deste artigo devem constar de forma clara e resumida do próprio contrato, da fatura ou de instrumento apartado, de fácil acesso ao consumidor. (Incluído pela Lei nº 14.181, de 2021) § 2º Para efeitos deste Código, o custo efetivo total da operação de crédito ao consumidor consistirá em taxa percentual anual e compreenderá todos os valores cobrados do consumidor, sem prejuízo do cálculo padronizado pela autoridade reguladora do sistema financeiro.
+crédito ao consumidor consistirá em taxa percentual anual e compreenderá todos os valores cobrados do consumidor, sem prejuízo do cálculo padronizado pela autoridade reguladora do sistema financeiro. (Incluído pela Lei nº 14.181, de 2021) § 3º Sem prejuízo do disposto no art. 37 deste Código, a oferta de crédito ao consumidor e a oferta de venda a prazo, ou a fatura mensal, conforme o caso, devem indicar, no mínimo, o custo efetivo total, o agente financiador e a soma total a pagar, com e sem financiamento. (Incluído pela Lei nº 14.181, de 2021) Art. 54-C. É vedado, expressa ou implicitamente, na oferta de crédito ao consumidor, publicitária ou não: (Incluído pela Lei nº 14.181, de 2021) I - (VETADO); (Incluído pela Lei nº 14.181, de 2021) II - indicar que a operação de crédito poderá ser concluída sem consulta a serviços de proteção ao crédito ou sem avaliação da situação financeira do consumidor; (Incluído
+
+--- FINAL ---
+natória, sem que a associação autora lhe promova a execução, deverá fazê-lo o Ministério Público, facultada igual iniciativa aos demais legitimados". Art. 115. Suprima-se o caput do art. 17 da Lei n° 7.347, de 24 de julho de 1985 , passando o parágrafo único a constituir o caput, com a seguinte redação: Art. 17. Em caso de litigância de má-fé, a associação autora e os diretores responsáveis pela propositura da ação serão solidariamente condenados em honorários advocatícios e ao décuplo das custas, sem prejuízo da responsabilidade por perdas e danos. Art. 116. Dê-se a seguinte redação ao art. 18 da Lei n° 7.347, de 24 de julho de 1985: "Art. 18. Nas ações de que trata esta lei, não haverá adiantamento de custas, emolumentos, honorários periciais e quaisquer outras despesas, nem condenação da associação autora, salvo comprovada má-fé, em honorários de advogado, custas e despesas processuais". Art. 117. Acrescente-se à Lei n° 7.347, de 24 de julho de 1985, o seguinte dispositivo, renumerando-se os seguintes: "Art. 21.
+provada má-fé, em honorários de advogado, custas e despesas processuais". Art. 117. Acrescente-se à Lei n° 7.347, de 24 de julho de 1985, o seguinte dispositivo, renumerando-se os seguintes: "Art. 21. Aplicam-se à defesa dos direitos e interesses difusos, coletivos e individuais, no que for cabível, os dispositivos do Título III da lei que instituiu o Código de Defesa do Consumidor". Art. 118. Este código entrará em vigor dentro de cento e oitenta dias a contar de sua publicação. Art. 119. Revogam-se as disposições em contrário. Brasília, 11 de setembro de 1990; 169° da Independência e 102° da República. FERNANDO COLLOR Bernardo Cabral Zélia M. Cardoso de Mello Ozires Silva Este texto não substitui o publicado no DOU de 12.9.1990 e Retificado em 10.1.2007 *
+
+
+==============================================================================================================
+DOCUMENTO: lei_8080_BR_90
+==============================================================================================================
+Título: Lei nº 8.080, de 19 de setembro de 1990
+Tipo: HTML
+Fonte: https://www.planalto.gov.br/ccivil_03/leis/l8080.htm
+Trechos: 76
+Caracteres: 86449
+Perguntas atuais: 0
+Sinais: deontico=21 | dispositivo=244 | loja=0
+Auditoria de páginas: N/A (HTML ou sem PDF local)
+
+--- INÍCIO ---
+Presidência da República Casa Civil Subchefia para Assuntos Jurídicos LEI Nº 8.080, DE 19 DE SETEMBRO DE 1990. Mensagem de veto Regulamento Regulamento Vide Lei 14.758, de 2023 Vigência Vide Lei nº 14.977, de 2024 Vigência Vide Lei nº 15.390, de 2026) Vigência Dispõe sobre as condições para a promoção, proteção e recuperação da saúde, a organização e o funcionamento dos serviços correspondentes e dá outras providências. O PRESIDENTE DA REPÚBLICA, faço saber que o Congresso Nacional decreta e eu sanciono a seguinte lei: DISPOSIÇÃO PRELIMINAR Art. 1º Esta lei regula, em todo o território nacional, as ações e serviços de saúde, executados isolada ou conjuntamente, em caráter permanente ou eventual, por pessoas naturais ou jurídicas de direito Público ou privado. TÍTULO I DAS DISPOSIÇÕES GERAIS Art. 2º A saúde é um direito fundamental do ser humano, devendo o Estado prover as condições indispensáveis ao seu pleno exercício. § 1º O dever do Estado de garantir a saúde consiste na formulação e execução de políticas econômicas e sociais que visem à redução de riscos de doenças e de outros agravos e no estabelecimento de condições que assegurem acesso universal e igualitário às ações e aos
+e execução de políticas econômicas e sociais que visem à redução de riscos de doenças e de outros agravos e no estabelecimento de condições que assegurem acesso universal e igualitário às ações e aos serviços para a sua promoção, proteção e recuperação. § 2º O dever do Estado não exclui o das pessoas, da família, das empresas e da sociedade. Art. 3º A saúde tem como fatores determinantes e condicionantes, entre outros, a alimentação, a moradia, o saneamento básico, o meio ambiente, o trabalho, a renda, a educação, o transporte, o lazer e o acesso aos bens e serviços essenciais; os níveis de sa
+
+--- MEIO ---
+e solicitar a indicação de outro, independentemente de justificativa, registrando-se o nome escolhido no documento gerado durante o atendimento.
+nal para a paciente, que poderá recusar o nome indicado e solicitar a indicação de outro, independentemente de justificativa, registrando-se o nome escolhido no documento gerado durante o atendimento. (Redação dada pela Lei nº 14.737, de 2023) § 2º-A Em caso de atendimento com sedação, a eventual renúncia da paciente ao direito previsto neste artigo deverá ser feita por escrito, após o esclarecimento dos seus direitos, com no mínimo 24 (vinte e quatro) horas de antecedência, assinada por ela e arquivada em seu prontuário. (Incluído pela Lei nº 14.737, de 2023) § 3 o Ficam os hospitais de todo o País obrigados a manter, em local visível de suas dependências, aviso informando sobre o direito estabelecido no caput deste artigo. (Incluído pela Lei nº 12.895, de 2013) § 3º As unidades de saúde de todo o País ficam obrigadas a manter, em local visível de suas dependências, aviso que informe sobre o direito estabelecido neste artigo. (Redação dada pela Lei nº 14.737, de 2023) § 4º No caso de atendimento realizado em centro cirúrgico ou unidade de terapia intensiva com restrições relacionadas à segurança ou à saúde dos pacientes, devidamente justificadas pelo corpo clínico, somente
+so de atendimento realizado em centro cirúrgico ou unidade de terapia intensiva com restrições relacionadas à segurança ou à saúde dos pacientes, devidamente justificadas pelo corpo clínico, somente será admitido acompanhante que seja profissional de saúde. (Incluído pela Lei nº 14.737, de 2023) § 5º Em casos de urgência e emergência, os profissionais de saúde ficam autorizados a agir na proteção e defesa da saúde e da vida da paciente, ainda que na aus
+
+--- FINAL ---
+ somente serão analisados e concedidos, na forma prevista no regulamento de que trata o § 1º, para os entes federativos que cumprirem o disposto no § 2º deste artigo. (Incluído pela Lei nº 15.233, de 2025) Art. 48. (Vetado) . Art. 49. (Vetado) . Art. 50. Os convênios entre a União, os Estados e os Municípios, celebrados para implantação dos Sistemas Unificados e Descentralizados de Saúde, ficarão rescindidos à proporção que seu objeto for sendo absorvido pelo Sistema Único de Saúde (SUS). Art. 51. (Vetado) . Art. 52. Sem prejuízo de outras sanções cabíveis, constitui crime de emprego irregular de verbas ou rendas públicas (Código Penal, art.
+absorvido pelo Sistema Único de Saúde (SUS). Art. 51. (Vetado) . Art. 52. Sem prejuízo de outras sanções cabíveis, constitui crime de emprego irregular de verbas ou rendas públicas (Código Penal, art. 315) a utilização de recursos financeiros do Sistema Único de Saúde (SUS) em finalidades diversas das previstas nesta lei. Art. 53. (Vetado) . Art. 53-A. Na qualidade de ações e serviços de saúde, as atividades de apoio à assistência à saúde são aquelas desenvolvidas pelos laboratórios de genética humana, produção e fornecimento de medicamentos e produtos para saúde, laboratórios de analises clínicas, anatomia patológica e de diagnóstico por imagem e são livres à participação direta ou indireta de empresas ou de capitais estrangeiros. (Incluído pela Lei nº 13.097, de 2015) Art. 54. Esta lei entra em vigor na data de sua publicação. Art. 55. São revogadas a Lei nº. 2.312, de 3 de setembro de 1954 , a Lei nº. 6.229, de 17 de julho de 1975 , e demais disposições em contrário. Brasília, 19 de setembro de 1990; 169º da Independência e 102º da República. FERNANDO COLLOR Alceni Guerra Este texto não substitui o publicado no DOU de 20.9.1990 *
+
+
+==============================================================================================================
+DOCUMENTO: resolucao_2306_CFM_2022
+==============================================================================================================
+Título: Resolução CFM nº 2.306/2022
+Tipo: PDF
+Fonte: resolucao_2306_CFM_2022.pdf
+Trechos: 118
+Caracteres: 77872
+Perguntas atuais: 0
+Sinais: deontico=54 | dispositivo=316 | loja=0
+Auditoria de páginas: OK | PDF=33 | indexadas=33 | ausentes=nenhuma
+
+--- INÍCIO ---
+RESOLUÇÃO CFM Nº 2.306/2022
+Publicada no D.O.U. de 25 de março de 2022, Seção I, p. 27
+Aprova o Código de Processo Ético-Profissional (CPEP) no âmbito do Conselho Federal de Medicina (CFM) e Conselhos Regionais de Medicina (CRMs).
+O CONSELHO FEDERAL DE MEDICINA, no uso das atribuições que lhe confere a Lei nº 3.268, de 30 de setembro de 1957, regulamentada pelo Decreto nº 44.045, de 19 de julho de 1958, alterado pelo Decreto nº 10.911, de 22 de dezembro de 2021, Lei nº 12.842, de 10 de julho de 2013 e Decreto nº 8.516, de 10 de setembro de 2015, e,
+CONSIDERANDO os termos da Lei nº 6.838, de 29 de outubro de 1980 e da Lei nº 9.784, de 29 de janeiro de 1999;
+CONSIDERANDO que as normas do processo ético-profissional devem submeter-se aos dispositivos constitucionais vigentes;
+CONSIDERANDO as propostas formuladas pelos Conselhos Regionais de Medicina (CRMs) para a atualização e revisão do Código de Processo Ético-Profissional (CPEP);
+CONSIDERANDO que os Conselhos de Medicina são, ao mesmo tempo, julgadores e disciplinadores da classe médica, cabendo-lhes zelar e trabalhar, utilizando todos os meios a seu alcance, pelo perfeito desempenho ético da medicina e pelo prestígio e bom conceito da profissão e dos que a exerçam legalmente;
+CONSIDERANDO o que ficou decidido na sessão plenária de 17 de março de 2022,
+RESOLVE:
+Art. 1º Aprovar o Código de Processo Ético-Profissional (CPEP) anexo, que passa a fazer parte desta resolução.
+§ 1º Tornar obrigatória sua aplicação em todo o território nacional no âmbito dos Conselhos Federal e Regionais de Medicina.
+§ 2º As normas do Código de Processo Ético-Profissional (CPEP) são aplicadas de imediato às sindicâncias e aos processos ético-profissionais (PEP) em trâmite, sem prejuízo da validade dos atos processuais realizados sob a vigência 
+
+--- MEIO ---
+sença do instrutor, dos colaboradores de apoio do CRM e dos patronos das partes, quando houver.
+Art. 60. As partes, após intimação pelo instrutor, são obrigadas a apresentar as testemunhas que indicarem, independentemente da intimação destas, para serem ouvidas nas datas designadas.
+Parágrafo único. Caso a testemunha não possa comparecer na data designada poderá a parte solicitar, antecipadamente, de forma justificada, a redesignação do depoimento.
+Art. 61. Adiado, por qualquer motivo, o ato processual, o instrutor marcará desde logo, sempre que possível, na presença das partes e testemunhas, dia e hora para seu prosseguimento, do que se lavrará termo nos autos.
+Art. 62. O instrutor designado pela corregedoria preside a audiência e lhe incumbe:
+I − manter a ordem e o decoro na audiência, dentro de suas prerrogativas;
+II − ordenar que se retirem da sala de audiência os que se comportarem inconvenientemente;
+III - registrar, com exatidão, todos os requerimentos apresentados em audiência e eventuais intercorrências.
+Art. 63. As provas orais serão produzidas em audiência, ouvindo-se, nesta ordem:
+I − o denunciante;
+II − as testemunhas indicadas pelo denunciante, pelo instrutor e, por fim, as indicadas pelo denunciado;
+III − o denunciado.
+§ 1º As oitivas poderão ser realizadas numa só audiência e, dependendo das circunstâncias, poderão ser designadas várias datas e horários.
+§ 2º As testemunhas indicadas pelo instrutor poderão ser ouvidas em qualquer fase processual, garantindo-se o contraditório.
+Art. 64. Após a qualificação e antes de iniciado o depoimento, as partes poderão contraditar a testemunha ou arguir circunstâncias ou defeitos, que a tornem suspeita de parcialidade. O instrutor fará consignar a contradita ou arguição e a resposta da testemunha.
+Parágrafo único. A 
+
+--- FINAL ---
+equação e a modernização do CPEP concluiu-se que sua existência não fazia mais sentido. O instituto da “acareação” também foi extinto, pois a sua utilização se mostrou obsoleta e de pouquíssima utilidade. O procedimento da Interdição Cautelar foi ajustado para deixar mais claras as suas fases, assim como para determinar a intimação do médico interditando antes da tomada de decisão pelo plenário do CRM.
+Assim, com o propósito de consolidar os debates e conferir maior substância jurídica em torno do texto a ser codificado, foi instituída pela Presidência do CFM uma Comissão para acompanhamento e sistematização do novo CPEP, sob a presidência do Corregedor do CFM que também foi designado relator desta Resolução.
+Os CRMs foram instados a apresentar propostas, objetivando o aperfeiçoamento do CPEP, tendo a comissão recebido várias contribuições que foram objeto de análise e debate no curso de 21 encontros virtuais exclusivamente com a Comissão e três encontros mistos (presencial e virtual) com os corregedores e assessores Jurídicos dos CRMs e a Comissão. Algumas propostas foram acolhidas, outras foram rejeitadas, outras acolhidas parcialmente no decorrer das discussões.
+Por fim, várias normas procedimentais que se encontravam em resoluções esparsas foram incorporadas para que o aplicador deste CPEP não perdesse a noção sistêmica do ordenamento que rege as sindicâncias e os processos éticos no âmbito dos Conselhos Federal e Regionais de Medicina.
+Este Código tem por objetivo, ao fim e ao cabo, a perspectiva de adequar e padronizar as rotinas de processamento dos atos processuais que deverão ser obedecidos por todos os integrantes do sistema conselhal, pois o CPEP tem alcance em todo o território nacional.
+Brasília, 17 de março de 2022.
+JOSÉ ALBERTINO SOUZA
+Conselheiro relator
+
+
+==============================================================================================================
+DOCUMENTO: resolucao_19_ANPD_2024
+==============================================================================================================
+Título: Resolução CD/ANPD nº 19, de 23 de agosto de 2024
+Tipo: HTML
+Fonte: https://www.gov.br/anpd/pt-br/acesso-a-informacao/institucional/atos-normativos/regulamentacoes_anpd/resolucao-cd-anpd-no-19-de-23-de-agosto-de-2024
+Trechos: 69
+Caracteres: 77250
+Perguntas atuais: 6
+Sinais: deontico=36 | dispositivo=103 | loja=0
+Auditoria de páginas: N/A (HTML ou sem PDF local)
+
+--- INÍCIO ---
+Resolução CD/ANPD nº 19, de 23 de agosto de 2024 Aprova o Regulamento de Transferência Internacional de Dados e o conteúdo das cláusulas-padrão contratuais. Publicado em 26/04/2024 08:49 Modificado em 18/08/2025 14:33 Compartilhe : RESOLUÇÃO CD/ANPD Nº 19, DE 23 DE AGOSTO DE 2024 Aprova o Regulamento de Transferência Internacional de Dados e o conteúdo das cláusulas-padrão contratuais. Observação : Este texto não substitui a publicação no DOU de 23/08/2024 , alterado pela RETIFICAÇÃO de 18/08/2025. O CONSELHO DIRETOR DA AUTORIDADE NACIONAL DE PROTEÇÃO DE DADOS (ANPD), com base nas competências previstas no art. 55-J, inciso XIII, da Lei nº 13.709, de 14 de agosto de 2018, no art.2º, inciso XIII, do Anexo I, do Decreto nº 10.474, de 26 de agosto de 2020, no art. 5º, inciso I, do Regimento Interno da ANPD, e tendo em vista a deliberação tomada no processo nº 00261.000968/2021-06, resolve: Art. 1º Esta Resolução aprova, na forma dos Anexos I e II, o Regulamento de Transferência Internacional de Dados e o conteúdo das cláusulas-padrão contratuais, nos termos do art. 33, incisos I e II, alíneas 'a', 'b' e 'c', art. 34, art. 35, caput e §§ 1º, 2º e 5º, e art.
+o de Transferência Internacional de Dados e o conteúdo das cláusulas-padrão contratuais, nos termos do art. 33, incisos I e II, alíneas 'a', 'b' e 'c', art. 34, art. 35, caput e §§ 1º, 2º e 5º, e art. 36 da Lei nº 13.709, de 14 de agosto de 2018. Art. Parágrafo único. Os agentes de tratamento que utilizam cláusulas contratuais para realizar transferências internacionais de dados deverão incorporar as cláusulas-padrão contratuais aprovadas pela ANPD aos seus respectivos instrumentos contratuais, no prazo de até 12 (doze) meses, contados da data de publicação desta Resolução. WALDEMAR GONÇALVES ORTUNHO JUNIOR Diretor-Presi
+
+--- MEIO ---
+ação da transferência internacional de dados, na forma prevista pelo art. 17, §§ 2º e 3º, observadas as condicionantes estabelecidas na decisão de aprovação. Seção III Alterações Art. 33. As alterações nas cláusulas contratuais específicas e nas normas corporativas globais dependem de prévia aprovação da ANPD, observado o procedimento descrito neste Capítulo. Parágrafo único. O Conselho Diretor poderá estabelecer procedimento simplificado para a aprovação de alterações que não afetem as garantias apresentadas como suficientes de observância dos princípios, dos direitos do titular e do regime de proteção de dados previsto na Lei nº 13.709, de 14 de agosto de 2018. CAPÍTULO IX DISPOSIÇÕES FINAIS Art. 34. Caberá pedido de reconsideração das decisões do Conselho Diretor, devidamente fundamentado, no prazo de 10 (dez) dias úteis, contados da ciência oficial pelo interessado, na forma do art. 12 do Anexo da Resolução CD/ANPD nº 1, de 28 de outubro de 2021, nos procedimentos instaurados para: I - emissão de decisão de adequação;
+contados da ciência oficial pelo interessado, na forma do art. 12 do Anexo da Resolução CD/ANPD nº 1, de 28 de outubro de 2021, nos procedimentos instaurados para: I - emissão de decisão de adequação; II - reconhecimento de equivalência de cláusulas-padrão contratuais; ou III - aprovação de cláusulas contratuais específicas e normas corporativas globais. Parágrafo único. O pedido de reconsideração será distribuído e tramitará na forma do Regimento Interno da ANPD. ANEXO II CLÁUSULAS-PADRÃO CONTRATUAIS (OBS: Conforme previsto no Anexo I - Regulamento de Transferência Internacional de Dados, as Cláusulas previstas neste ANEXO II poderão integrar contrato celebrado para reger, especificamente, a transferência internacional de dados ou contrato com objeto 
+
+--- FINAL ---
+oro eleito pelas Partes na Seção IV. 24.2. Os Titulares podem ajuizar ações judiciais contra o Exportador ou o Importador, conforme sua escolha, perante os tribunais competentes no Brasil, inclusive naqueles localizados no local de sua residência. 24.3. Em comum acordo, as Partes poderão se valer da arbitragem para resolver os conflitos decorrentes destas Cláusulas, desde que realizada no Brasil e conforme as disposições da Lei de Arbitragem. Seção III - Medidas De Segurança (OBS: Nesta Seção deve ser incluído o detalhamento das medidas de segurança adotadas, incluindo medidas específicas para a proteção de dados sensíveis e de crianças e adolescentes.
+edidas De Segurança (OBS: Nesta Seção deve ser incluído o detalhamento das medidas de segurança adotadas, incluindo medidas específicas para a proteção de dados sensíveis e de crianças e adolescentes. As medidas podem contemplar, entre outros, os seguintes aspectos, conforme indicados no quadro abaixo). (i) governança e supervisão de processos internos: (ii) medidas de segurança técnicas e administrativas, incluindo medidas para garantir a segurança das operações realizadas, tais como a coleta, a transmissão e o armazenamento dos dados: Seção IV - Cláusulas Adicionais e Anexos (OBS: Nesta Seção, de preenchimento e de divulgação facultativos, podem ser incluídas Cláusulas Adicionais e Anexos, a critério das Partes, para disciplinar, entre outras, questões de natureza comercial, rescisão contratual, prazo de vigência e eleição de foro no Brasil. Conforme previsto no Regulamento de Transferência Internacional de Dados, as Cláusulas estabelecidas nesta Seção ou em Contratos Coligados não poderão excluir, modificar ou contrariar, direta ou indiretamente, as Cláusulas previstas nas Seções I, II e III). Local, data. Assinaturas.
+
+
+==============================================================================================================
+DOCUMENTO: lei_14874_BR_2024
+==============================================================================================================
+Título: Lei nº 14.874, de 28 de maio de 2024
+Tipo: HTML
+Fonte: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14874.htm
+Trechos: 68
+Caracteres: 76643
+Perguntas atuais: 5
+Sinais: deontico=40 | dispositivo=166 | loja=0
+Auditoria de páginas: N/A (HTML ou sem PDF local)
+
+--- INÍCIO ---
+Presidência da República Casa Civil Secretaria Especial para Assuntos Jurídicos LEI Nº 14.874, DE 28 DE MAIO DE 2024 Vigência Mensagem de veto (Promulgação partes vetadas) Dispõe sobre a pesquisa com seres humanos e institui o Sistema Nacional de Ética em Pesquisa com Seres Humanos. CAPÍTULO I DISPOSIÇÕES GERAIS Art. 1º . Esta Lei dispõe sobre princípios, diretrizes e regras para a condução de pesquisas com seres humanos por instituições públicas ou privadas e institui o Sistema Nacional de Ética em Pesquisa com Seres Humanos. Art. 2º Para os efeitos desta Lei, consideram-se: I - acesso direto: permissão que agente ou instituição autorizados nos termos desta Lei têm para examinar, analisar, verificar e reproduzir registros e relatórios de pesquisa, mediante o compromisso de respeito ao sigilo e à confidencialidade dos dados a que tiverem acesso; II - assentimento: anuência da criança, do adolescente ou do indivíduo legalmente incapaz em participar voluntariamente da pesquisa, após ter sido informado e esclarecido sobre todos os aspectos relevantes de sua participação, na medida de sua capacidade de compreensão e de acordo com suas singularidades, sem prejuízo do necessário
+após ter sido informado e esclarecido sobre todos os aspectos relevantes de sua participação, na medida de sua capacidade de compreensão e de acordo com suas singularidades, sem prejuízo do necessário consentimento dos responsáveis legais; III - auditoria: exame sistemático e independente das atividades e dos documentos relacionados à pesquisa, para determinar se foram realizados e se os dados foram registrados, analisados e precisamente relatados de acordo com o protocolo da pesquisa, com os Procedimentos Operacionais Padrão (POPs), com as boas práticas e com as demais exigências previstas em regulam
+
+--- MEIO ---
+os aspectos relevantes da pesquisa, inclusive a aprovação pelo CEP.
+4º O pesquisador ou o profissional por ele designado deverá informar de forma completa ao participante ou a seu representante legal os aspectos relevantes da pesquisa, inclusive a aprovação pelo CEP. § 5º Caso o participante da pesquisa ou seu representante legal não seja capaz de ler, testemunha imparcial estará presente durante todo o ato de leitura e de esclarecimento do TCLE, devendo, após o consentimento verbal do participante ou de seu representante legal, datar, escrever seu nome de forma legível e assinar o TCLE. § 6º A inclusão de participante em pesquisa em situação de emergência e sem o seu consentimento prévio seguirá o disposto no protocolo aprovado, devendo-se, na primeira oportunidade possível, informar o fato ao participante da pesquisa ou a seu representante legal e coletar a decisão quanto à sua permanência na pesquisa. § 7º O participante da pesquisa ou seu representante legal poderá retirar seu consentimento a qualquer tempo, independentemente de justificativa, sem que sobre ele recaia qualquer ônus ou prejuízo. Art. 19. A pesquisa será conduzida de forma a garantir o anonimato e a privacidade do participante, bem como o sigilo das informações.
+ustificativa, sem que sobre ele recaia qualquer ônus ou prejuízo. Art. 19. A pesquisa será conduzida de forma a garantir o anonimato e a privacidade do participante, bem como o sigilo das informações. § 1º A privacidade do participante é questão de foro íntimo. § 2º O sigilo das informações técnicas da pesquisa deverá ser levantado no que for necessário à análise de eventos adversos graves. § 3º Em caso de evento adverso grave, o participante, seus representantes legais ou seus sucessores poderão divulgar detalhes relativos à participação do p
+
+--- FINAL ---
+ia e sujeita o infrator às penalidades previstas na Lei nº 6.437, de 20 de agosto de 1977 , e em regulamentos sanitários específicos, sem prejuízo das sanções civis e penais cabíveis. Art. 61. A proteção e o anonimato de dados pessoais dos participantes das pesquisas são regulados por esta Lei, aplicada subsidiariamente a Lei nº 13.709, de 14 de agosto de 2018 (Lei Geral de Proteção de Dados Pessoais). Art. 62. Aplicar-se-ão aos produtos e dispositivos médicos e aos produtos de terapias avançadas experimentais as disposições desta Lei, no que couber. Art. 63. Esta Lei e seus termos aplicar-se-ão às pesquisas com seres humanos em todas as áreas do conhecimento, no que couber, e conforme regulamento. Parágrafo único.
+sições desta Lei, no que couber. Art. 63. Esta Lei e seus termos aplicar-se-ão às pesquisas com seres humanos em todas as áreas do conhecimento, no que couber, e conforme regulamento. Parágrafo único. Regulamento disporá sobre eventuais especificidades das pesquisas em ciências humanas e sociais, com vistas ao progresso da ciência e à devida aplicação desta Lei. Art. 64. Com vistas ao bem público, ao progresso da ciência em âmbito nacional e à obediência ao princípio da eficiência na administração pública, os órgãos e entidades, públicos ou privados, responsáveis pela análise e aprovação de pesquisas no País deverão aprimorar continuamente suas atividades e serviços, de modo a reduzir os prazos de suas análises e pareceres. Art. 65. Esta Lei entra em vigor após decorridos 90 (noventa) dias de sua publicação oficial. Brasília, 28 de maio de 2024; 203 o da Independência e 136 o da República. LUIZ INÁCIO LULA DA SILVA Camilo Sobreira de Santana Sonia Bone de Sousa Silva Santos Nísia Verônica Trindade Lima Este texto não substitui o publicado no DOU de 29.5.2024.
+
+
+==============================================================================================================
+DOCUMENTO: cf_BR_1988
+==============================================================================================================
+Título: Constituição da República Federativa do Brasil de 1988
+Tipo: HTML
+Fonte: https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm
+Trechos: 63
+Caracteres: 72166
+Perguntas atuais: 0
+Sinais: deontico=9 | dispositivo=109 | loja=0
+Auditoria de páginas: N/A (HTML ou sem PDF local)
+
+--- INÍCIO ---
+Presidência da República Casa Civil Subchefia para Assuntos Jurídicos CONSTITUIÇÃO DA REPÚBLICA FEDERATIVA DO BRASIL DE 1988 Vide Emenda Constitucional nº 91, de 2016 Vide Emenda Constitucional nº 106, de 2020 Vide Emenda Constitucional nº 107, de 2020 (Vide Emenda Constitucional nº 132, de 2023) Vigência (Vide Emenda Constitucional nº 132, de 2023) Vigência Emendas Constitucionais Emendas Constitucionais de Revisão Ato das Disposições Constitucionais Transitórias Atos decorrentes do disposto no § 3º do art. 5º ÍNDICE TEMÁTICO Texto compilado PREÂMBULO Nós, representantes do povo brasileiro, reunidos em Assembléia Nacional Constituinte para instituir um Estado Democrático, destinado a assegurar o exercício dos direitos sociais e individuais, a liberdade, a segurança, o bem-estar, o desenvolvimento, a igualdade e a justiça como valores supremos de uma sociedade fraterna, pluralista e sem preconceitos, fundada na harmonia social e comprometida, na ordem interna e internacional, com a solução pacífica das controvérsias, promulgamos, sob a proteção de Deus, a seguinte CONSTITUIÇÃO DA REPÚBLICA FEDERATIVA DO BRASIL. TÍTULO I Dos Princípios Fundamentais Art.
+rna e internacional, com a solução pacífica das controvérsias, promulgamos, sob a proteção de Deus, a seguinte CONSTITUIÇÃO DA REPÚBLICA FEDERATIVA DO BRASIL. TÍTULO I Dos Princípios Fundamentais Art. 1º A República Federativa do Brasil, formada pela união indissolúvel dos Estados e Municípios e do Distrito Federal, constitui-se em Estado Democrático de Direito e tem como fundamentos: I - a soberania; II - a cidadania; III - a dignidade da pessoa humana; IV - os valores sociais do trabalho e da livre iniciativa; (Vide Lei nº 13.874, de 2019) V - o pluralismo político. Parágrafo único. Todo o poder emana do povo, que o exe
+
+--- MEIO ---
+nte e Vice-Presidente da República; II - de Presidente da Câmara dos Deputados; III - de Presidente do Senado Federal; IV - de Ministro do Supremo Tribunal Federal; V - da carreira diplomática; VI - de oficial das Forças Armadas. VII - de Ministro de Estado da Defesa. (Incluído pela Emenda Constitucional nº 23, de 1999) § 4º - Será declarada a perda da nacionalidade do brasileiro que: I - tiver cancelada sua naturalização, por sentença judicial, em virtude de atividade nociva ao interesse nacional;
+al nº 23, de 1999) § 4º - Será declarada a perda da nacionalidade do brasileiro que: I - tiver cancelada sua naturalização, por sentença judicial, em virtude de atividade nociva ao interesse nacional; I - tiver cancelada sua naturalização, por sentença judicial, em virtude de fraude relacionada ao processo de naturalização ou de atentado contra a ordem constitucional e o Estado Democrático; (Redação dada pela Emenda Constitucional nº 131, de 2023) II - adquirir outra nacionalidade por naturalização voluntária. II - adquirir outra nacionalidade, salvo nos casos: (Redação dada pela Emenda Constitucional de Revisão nº 3, de 1994) a) de reconhecimento de nacionalidade originária pela lei estrangeira; (Incluído pela Emenda Constitucional de Revisão nº 3, de 1994) b) de imposição de naturalização, pela norma estrangeira, ao brasileiro residente em estado estrangeiro, como condição para permanência em seu território ou para o exercício de direitos civis; (Incluído pela Emenda Constitucional de Revisão nº 3, de 1994) II - fizer pedido expresso de perda da nacionalidade brasileira perante autoridade brasileira competente, ressalvadas situações que acarretem apatridia.
+Emenda Constitucional de Revisão nº 3, de 1994) II - fizer pedido expresso de perda da nacionalidade brasileira perant
+
+--- FINAL ---
+- florestas, caça, pesca, fauna, conservação da natureza, defesa do solo e dos recursos naturais, proteção do meio ambiente e controle da poluição; VII - proteção ao patrimônio histórico, cultural, artístico, turístico e paisagístico; VIII - responsabilidade por dano ao meio ambiente, ao consumidor, a bens e direitos de valor artístico, estético, histórico, turístico e paisagístico; IX - educação, cultura, ensino e desporto; IX - educação, cultura, ensino, desporto, ciência, tecnologia, pesquisa, desenvolvimento e inovação; (Redação dada pela Emenda Constitucional nº 85, de 2015) X - criação, funcionamento e processo do juizado de pequenas causas; XI - procedimentos em matéria processual; XII - previdência social, proteção e defesa da saúde;
+enda Constitucional nº 85, de 2015) X - criação, funcionamento e processo do juizado de pequenas causas; XI - procedimentos em matéria processual; XII - previdência social, proteção e defesa da saúde; (Vide ADPF 672) XIII - assistência jurídica e Defensoria pública; XIV - proteção e integração social das pessoas portadoras de deficiência; XV - proteção à infância e à juventude; XVI - organização, garantias, direitos e deveres das polícias civis. § 1º No âmbito da legislação concorrente, a competência da União limitar-se-á a estabelecer normas gerais. (Vide Lei nº 13.874, de 2019) § 2º A competência da União para legislar sobre normas gerais não exclui a competência suplementar dos Estados. (Vide Lei nº 13.874, de 2019) § 3º Inexistindo lei federal sobre normas gerais, os Estados exercerão a competência legislativa plena, para atender a suas peculiaridades. (Vide Lei nº 13.874, de 2019) § 4º A superveniência de lei federal sobre normas gerais suspende a eficácia da lei estadual, no que lhe for contrário. (Vide Lei nº 13.874, de 2019)
+
+
+==============================================================================================================
+DOCUMENTO: regulamento_interno_CEP_2024
+==============================================================================================================
+Título: Regulamento Interno do Comitê de Ética em Pesquisa da Universidade Fed
+Tipo: HTML
+Fonte: https://www.ufmg.br/bioetica/cep/regimento/
+Trechos: 50
+Caracteres: 56904
+Perguntas atuais: 0
+Sinais: deontico=38 | dispositivo=78 | loja=0
+Auditoria de páginas: N/A (HTML ou sem PDF local)
+
+--- INÍCIO ---
+COMITÊ DE ÉTICA EM PESQUISA DA UNIVERSIDADE FEDERAL DE MINAS GERAIS – CEP/UFMG REGULAMENTO INTERNO CAPÍTULO I DO ÓRGÃO E SEUS FINS Art. 1 o O Comitê de Ética em Pesquisa da Universidade Federal de Minas Gerais (CEP/UFMG), instituído pela Resolução nº 027/2007, de 13 de dezembro de 2007 do Conselho Universitário da UFMG alterada pela Resolução nº 11, de 05 de dezembro de 2017, é órgão vinculado administrativamente à Reitoria e, de acordo com o que determina a Resolução nº 466/12 do Conselho Nacional de Saúde do Ministério da Saúde (CNS/MS), é autônomo em suas decisões, de caráter multidisciplinar e multiprofissional, e visa identificar, analisar e avaliar as implicações éticas em pesquisas científicas que envolvam seres humanos. 1 o O CEP/UFMG é encarregado da avaliação ética de qualquer projeto de pesquisa envolvendo seres humanos que seja realizado sob a responsabilidade de pesquisadores da UFMG ou solicitados pela CONEP, desde que o projeto esteja conforme com os padrões metodológicos e científicos reconhecidos.
+seres humanos que seja realizado sob a responsabilidade de pesquisadores da UFMG ou solicitados pela CONEP, desde que o projeto esteja conforme com os padrões metodológicos e científicos reconhecidos. 2 o O CEP/UFMG cumpre a Resolução vigente do Conselho Nacional de Saúde do Ministério da Saúde (CNS/MS) observando que a eticidade da pesquisa implica “respeito ao participante da pesquisa em sua dignidade e autonomia, reconhecendo sua vulnerabilidade, assegurando sua vontade de contribuir, permanecer, ou não, na pesquisa, por intermédio de manifestação expressa, livre e esclarecida.” 3 o O CEP/UFMG deve emitir pareceres consubstanciados sobre os aspectos éticos das atividades de pesquisa envolvendo seres humanos, prevendo o impacto de tais atividades sobre o bem
+
+--- MEIO ---
+l e que apresentarem toda a documentação solicitada, em Português, acompanhado dos originais em língua estrangeira, quando houver. Art. 24. Todos os protocolos devem conter: – folha de rosto: todos os campos devem ser preenchidos, datados e assinados, com identificação dos signatários. O título da pesquisa será apresentado em língua portuguesa e será idêntico ao do projeto de pesquisa. A folha de rosto gerada pela Plataforma conterá o termo de compromisso do pesquisador principal que assinará concordando e se responsabilizando com os termos da Resolução 466/12 do CNS/MS, portanto não sendo necessário termo de compromisso à parte dos colaboradores;
+isso do pesquisador principal que assinará concordando e se responsabilizando com os termos da Resolução 466/12 do CNS/MS, portanto não sendo necessário termo de compromisso à parte dos colaboradores; – declarações pertinentes, conforme a lista de checagem apresentada no Anexo II da Norma No. 01/13, devidamente assinadas. Incluir para ciência cartas de anuência ou modelo de cartas de anuência quando aplicado a pesquisas que envolvem coparticipação cuja instituição não tenha um Comitê de Ética. Aos centros coparticipantes/participantes que possuem comitê de ética próprio deve-se obrigatoriamente incluí-los na Plataforma Brasil em campo próprio, para que seja apreciado também em seu Comitê de Ética. Incluir para ciência, quando existirem, termos de acordos e parcerias institucionais com a UFMG e declarações de financiamento. Incluir obrigatoriamente parecer consubstanciado aprovado por órgão competente do Departamento de origem do pesquisador responsável ou equivalente do âmbito da UFMG. São aceitos os pareceres oriundos dos Centros Institucionais de Tecnologia e Inovação conforme regulamentação da resolução 02/2023 de 20/04/202
+
+--- FINAL ---
+lano de permanente para os membros do CEP, bem como da comunidade acadêmica e promoção da educação em ética em pesquisa envolvendo seres humanos, em conformidade à Norma Operacional nº 001/13; Art. 47. O presente Regulamento somente pode ser alterado por proposta de pelo menos 2/ (dois terços) dos membros do CEP/UFMG comprovado por meio de assinatura ou ata da reunião que o aprovou. Art.48.
+Art. 47. O presente Regulamento somente pode ser alterado por proposta de pelo menos 2/ (dois terços) dos membros do CEP/UFMG comprovado por meio de assinatura ou ata da reunião que o aprovou. Art.48. Os casos omissos no presente Regulamento devem ser encaminhados à coordenação para apreciação pelo colegiado. Parágrafo único. Aplicam-se, de forma subsidiária e no que não for incompatível, as disposições da Resolução nº 466/12 e da Resolução nº 510/2016, bem como da Norma Operacional 001/2013, todas do Conselho Nacional de Saúde, inclusive eventuais diretrizes específicas instituídas por esse Conselho. Art.49. Este regimento interno do CEP foi aprovado por sua plenária, com quórum de no mínimo de dois terços dos membros, comprovando-se por meio de assinatura ou ata da reunião que o aprovou. 1º O regimento interno somente entrará em vigor após aprovação da Conep. Art. 50. O prazo de validade do registro do CEP será de 4 (quatro) anos, sendo que ao final desse período deverá ser solicitada a renovação do registro junto à Conep, conforme disposto no artigo 7ª da Resolução CNS número 706/2023. Belo Horizonte, 06 de agosto de 2024 Profa. Dra. ue ao final desse período deverá ser solicitada a renovação do registro junto à Conep, conforme disposto no artigo 7ª da Resolução CNS número 706/2023. Belo Horizonte, 06 de agosto de 2024 Profa. Dra. Corinne Davis Rodrigues Coordenadora do CEP – UFMG
+
+
+==============================================================================================================
+DOCUMENTO: decreto_44045_BR_1958
+==============================================================================================================
+Título: Decreto nº 44.045, de 19 de julho de 1958
+Tipo: HTML
+Fonte: https://www.planalto.gov.br/ccivil_03/decreto/1950-1969/d44045.htm
+Trechos: 44
+Caracteres: 49152
+Perguntas atuais: 0
+Sinais: deontico=18 | dispositivo=89 | loja=0
+Auditoria de páginas: N/A (HTML ou sem PDF local)
+
+--- INÍCIO ---
+Presidência da República Casa Civil Subchefia para Assuntos Jurídicos DECRETO N o 44.045, DE 19 DE JULHO DE 1958. Aprova o Regulamento do Conselho Federal e Conselhos regionais de Medicina a que se refere a Lei nº 3.268, de 30 de setembro de 1957. O PRESIDENTE DA REPÚBLICA , usando da atribuição que lhe confere o artigo 87, inciso I, da Constituição, DECRETA: Art . 1º Fica aprovado o Regulamento do Conselho Federal de Medicina e Conselhos Regionais de Medicina que, assinado pelo Ministro de Estado dos Negócios da Saúde, com êste baixa. Art . 2º Êste decreto entrará em vigor na data da sua publicação, revogadas as disposições em contrário. Rio de Janeiro, em 19 de julho de 1958; 137º da Independência e 70º da República. JUSCELINO KUBITSCHEK Mário Pinotti Este texto não substitui o publicado no DOU de 12.8.1958 PROJETO DO REGULAMENTO A QUE SE REFERE A LEI Nº 3.268, DE 30 DE SETEMBRO DE 1957 CAPÍTULO I DA INSCRIÇÃO Art . 1º Os médicos legalmente habilitados ao exercício da profissão em virtude dos diplomas que lhes foram conferidos pelas Faculdades de Medicina oficiais ou reconhecidas do país só poderão desempenhá-lo efetivamente depois de inscreverem-se nos Conselhos Regionais de
+m virtude dos diplomas que lhes foram conferidos pelas Faculdades de Medicina oficiais ou reconhecidas do país só poderão desempenhá-lo efetivamente depois de inscreverem-se nos Conselhos Regionais de Medicina que jurisdicionarem a área de sua atividade profissional. Parágrafo único. A obrigatoriedade da inscrição a que se refere o presente artigo abrange todos os profissionais militantes, sem distinção de cargos ou funções públicas. Art . 2º O pedido de inscrição do médico deverá ser dirigido ao Presidente do competente Conselho Regional de Medicina, com declaração de: a) nome por extenso; (Revo
+
+--- MEIO ---
+tituídos por vinte e um conselheiros efetivos e os seus suplentes, em conformidade com o disposto no § 1º do art. 4º da Lei nº 3.268, de 1957 . (Redação dada pelo Decreto nº 10.911, de 2021) (Vigência) § 1º O conselheiro suplente eleito somente entrará em exercício na hipótese de impedimento do conselheiro efetivo, por mais de trinta dias, ou na hipótese de vacância, para concluírem o mandato em curso.
+º O conselheiro suplente eleito somente entrará em exercício na hipótese de impedimento do conselheiro efetivo, por mais de trinta dias, ou na hipótese de vacância, para concluírem o mandato em curso. (Redação dada pelo Decreto nº 10.911, de 2021) (Vigência) § 2º Independentemente do disposto no § 1º, os conselheiros suplentes eleitos poderão ser designados para o exercício de atividades necessárias ao funcionamento do Conselho Federal de Medicina e do Conselho Regional de Medicina respectivo, exceto para ocupar cargo diretivo. (Redação dada pelo Decreto nº 10.911, de 2021) (Vigência) § 3º Os conselheiros serão indicados pela Associação Médica Brasileira sediada na capital do respectivo Estado ou do Distrito Federal entre os seus associados. (Incluído pelo Decreto nº 10.911, de 2021) (Vigência) § 4º Os conselheiros indicados pela Associação Médica Brasileira e respectivo suplente serão designados para o período do mandato e, exceto na hipótese de renúncia, não poderão ser substituídos no curso do mandato. (Incluído pelo Decreto nº 10.911, de 2021) (Vigência) Art. 24-A. Aos Conselhos Regionais de Medicina compete:
+ndato e, exceto na hipótese de renúncia, não poderão ser substituídos no curso do mandato. (Incluído pelo Decreto nº 10.911, de 2021) (Vigência) Art. 24-A. Aos Conselhos Regionais de Medicina compete: (Incluído pelo Decreto nº 10.911, de 2021) (Vigência) I - deli
+
+--- FINAL ---
+rmos do disposto em seu regimento interno. (Incluído pelo Decreto nº 10.911, de 2021 (Vigência) § 2º Na hipótese de existirem vagas no Conselho Regional e não houver suplentes aptos à convocação em quantidade suficiente para o seu funcionamento, serão convocadas
+eto nº 10.911, de 2021 (Vigência) § 2º Na hipótese de existirem vagas no Conselho Regional e não houver suplentes aptos à convocação em quantidade suficiente para o seu funcionamento, serão convocadas eleições suplementares para o preenchimento das vagas de membros efetivos e suplentes, nos termos das normas do Conselho Federal de Medicina. (Incluído pelo Decreto nº 10.911, de 2021 (Vigência) Art . 43. Os casos omissos do presente regulamento serão resolvidos pelo Conselho Federal de Medicina. CAPÍTULO VII DAS DISPOSIÇÕES TRANSITÓRIAS Art . 44. Dentro do prazo de trinta (30) dias após a aprovação do presente Regulamento, o Conselho Federal baixará instruções com uma tabela de emolumentos (anuidades, taxas de inscrição, carteiras, etc.), a serem cobradas pelos Conselhos Regionais de todo o país. Art . 45. A exigência da apresentação da carteira profissional do médico, assim como a obrigatoriedade de indicar no seu receituário o respectivo número de sua carteira dos Conselhos Regionais, só se tornarão efetivos a partir de cento e oitenta (180) dias depois da publicação do presente Regulamento. Art . 46.
+r no seu receituário o respectivo número de sua carteira dos Conselhos Regionais, só se tornarão efetivos a partir de cento e oitenta (180) dias depois da publicação do presente Regulamento. Art . 46. Os Conselhos Regionais de Medicina providenciarão a feitura ou a reforma de seus Regimentos Internos de conformidade com a Lei nº 3.268, de 30-9-1957 . Art . 47. Revogam-se as disposições em contrário. MÁRIO PINOTTI *
+
+
+==============================================================================================================
+DOCUMENTO: resolucao_2336_CFM_2023
+==============================================================================================================
+Título: Resolução CFM nº 2.336/2023
+Tipo: PDF
+Fonte: resolucao_2336_CFM_2023.pdf
+Trechos: 51
+Caracteres: 43527
+Perguntas atuais: 0
+Sinais: deontico=21 | dispositivo=52 | loja=0
+Auditoria de páginas: OK | PDF=17 | indexadas=17 | ausentes=nenhuma
+
+--- INÍCIO ---
+RESOLUÇÃO CFM Nº 2.336/2023 Publicado em: 13/09/2023 | Edição: 175 | Seção: 1 | Página: 312 Dispõe sobre publicidade e propaganda médicas. O CONSELHO FEDERAL DE MEDICINA (CFM), no uso das atribuições conferidas pela Lei nº 3.268, de 30 de setembro de 1957, regulamentada pelo Decreto nº 44.045, de 19 de julho de 1958; CONSIDERANDO o disposto no Decreto-Lei nº 20.931, de 11 de janeiro de 1932, que regula e fiscaliza o exercício da medicina e outras profissões, e seu Decreto regulamentador nº 24.492, de 28 de junho de 1934; o Decreto-Lei nº 4.113, de 14 de fevereiro de 1942, que regula a propaganda de médicos e outros profissionais; e a Lei nº 13.709, de 14 de agosto de 2018 (alterada pela Lei nº 13.853, de 8 de julho de 2019), Lei Geral de Proteção de Dados; CONSIDERANDO que cabe ao Conselho Federal de Medicina “zelar e trabalhar por todos os meios ao seu alcance, pelo perfeito desempenho ético da medicina e pelo prestígio e bom conceito da profissão e dos que a exercem legalmente”, conforme a Lei nº 3.268/1957; CONSIDERANDO a necessidade de revisar periodicamente as regras de publicidade e propaganda médica;
+prestígio e bom conceito da profissão e dos que a exercem legalmente”, conforme a Lei nº 3.268/1957; CONSIDERANDO a necessidade de revisar periodicamente as regras de publicidade e propaganda médica; CONSIDERANDO a necessidade de estabelecer marco diferencial entre “redes sociais próprias do médico e de seus estabelecimentos assistenciais (pessoas jurídicas)” e “empresas jornalísticas, televisivas, radiofônicas e na modernidade, plataformas comerciais ancoradas na Internet como Blogs e outros”, para adequar-se na modernidade aos termos do Decreto-lei nº 4.113/1942; CONSIDERANDO ser necessário estabelecer distinção entre as matérias propagandísticas/publicitárias para
+
+--- MEIO ---
+itação sem identificar o patrocinador da ação.
+§5º Entende-se por conteúdo inverídico toda propaganda ou publicidade com o anúncio de práticas revolucionárias ou milagrosas, ou novos procedimentos que não tenham sido aprovados para uso médico pelo CFM.
+CAPÍTULO VII
+DOS DEVERES
+Art. 12. É dever do médico, inclusive os ocupantes de cargos diretivos:
+I– solicitar retificação a qualquer meio de comunicação não próprio, bem como informar ao CRM, sem prejuízo de futuras apurações de responsabilidade, caso não concorde com o teor de declarações a si atribuídas em textos ou peças (gráficas ou audiovisuais) divulgadas de forma a transgredir os critérios definidos nesta Resolução;
+II– adotar tom sóbrio, impessoal e verídico na emissão de boletins médicos, sempre preservando o sigilo médico.
+§ 1º A divulgação dos boletins médicos caberá ao médico assistente ou seu substituto, ao diretor técnico da instituição ou ao CRM, quando o médico considerar pertinente.
+§ 2º O boletim médico, em caso de pacientes internados em estabelecimentos assistenciais, deverá, sempre, ser assinado pelo médico assistente e subscrito pelo Diretor Técnico- Médico da instituição ou, em sua falta, por seu substituto.
+CAPÍTULO VIII
+DOS DIREITOS
+Art. 13. É direito do médico e de estabelecimentos de natureza médica:
+I– utilizar qualquer meio ou canal de comunicação não próprio, quando convidado, para dar entrevistas e publicar artigos sobre assuntos médicos, com finalidade educativa, de divulgação científica, de promoção da saúde e do bem-estar públicos, desde que respeitadas as proibições previstas nesta Resolução;
+II– comprar espaço em qualquer dos veículos de comunicação descritos acima para fazer propaganda/publicidade;
+III– em suas redes sociais próprias fazer publicidade/propaganda para formar, manter ou 
+
+--- FINAL ---
+ “local de atividade profissional”, de acordo com uma interpretação literal e sistemática dos decretos acima indicados. Nesse sentido, devem ser levados em consideração o princípio da boa-fé objetiva do médico e os princípios constitucionais da livre iniciativa, da livre concorrência e da liberdade econômica.
+Continua a vedação quanto a médico ser diretor técnico de farmácia, ter consultório nas dependências de farmácias e óticas, ou fazer vendas casadas, indicando esses estabelecimentos para seus pacientes e familiares. Também fica vedada a publicidade desses estabelecimentos por parte de médicos quando neles forem investidores, por se configurar a condenada interação entre médicos e tais estabelecimentos.
+No capítulo sobre a utilização de imagem por médicos e seus estabelecimentos assistenciais, autoriza-se o uso de imagem de paciente, inclusive com o antes e o depois, mas exclusivamente em caráter educativo, situação em que o médico expõe quando uma pessoa deve procurar ajuda médica, as intervenções possíveis, a intervenção em si, a resultante e resultados insatisfatórios, gerando para a sociedade um ciclo virtuoso com ênfase no bom nome da medicina, no que faz e como faz. Em respeito à verdade, o profissional também expõe os não desejados resultados insatisfatórios. Para tanto, pode
+utilizar banco de imagens de terceiros (declarando a fonte em respeito aos direitos autorais) ou próprio ou do estabelecimento ao qual pertença, relatando os termos de consentimento para seu uso.
+Com tais fundamentos, espera-se contribuir para que a publicidade/propaganda médica seja honesta e apresente o médico e os serviços em que atua de modo claro, conciso e respeitável, fazendo jus a pertencer à nobre profissão dos discípulos de Esculápio.
+EMMANUEL FORTES SILVEIRA CAVALCANTI
+Relator
+
+
+==============================================================================================================
+DOCUMENTO: resolucao_2454_CFM_2026
+==============================================================================================================
+Título: Resolução CFM nº 2.454, de 11 de fevereiro de 2026
+Tipo: PDF
+Fonte: resolucao_2454_CFM_2026.pdf
+Trechos: 47
+Caracteres: 39345
+Perguntas atuais: 0
+Sinais: deontico=43 | dispositivo=60 | loja=0
+Auditoria de páginas: OK | PDF=15 | indexadas=15 | ausentes=nenhuma
+
+--- INÍCIO ---
+RESOLUÇÃO CFM N° 2.454, DE 11 DE FEVEREIRO DE 2026
+Publicado em: 27/02/2026 | Edição: 39 | Seção: 1 | Página: 158
+Publicado em: 05/03/2026 | Edição: 43 | Seção: 1 | Página: 91 - Retificação
+Normatiza o uso da inteligência artificial na medicina.
+O CONSELHO FEDERAL DE MEDICINA, no uso das atribuições conferidas pela Lei n° 3.268, de 30 de setembro de 1957, regulamentada pelo Decreto n° 44.045, de 19 de julho de 1958, considerando as deliberações tomadas na 5ª Sessão Plenária Extraordinária, realizada em 11 de fevereiro de 2026,
+RESOLVE:
+CAPÍTULO I
+DAS DEFINIÇÕES, FUNDAMENTOS E PRINCÍPIOS GERAIS
+Art. 1° Esta resolução estabelece normas para a pesquisa, o desenvolvimento, a governança, a auditoria, o monitoramento, a capacitação e o uso responsável de soluções que adotem modelos, sistemas e aplicações de Inteligência Artificial (IA) na área da medicina, com o objetivo de promover o desenvolvimento tecnológico e a eficiência dos serviços médicos de modo seguro, transparente, isonômico e ético, em benefício dos pacientes e com estrita observância de seus direitos fundamentais.
+§ 1° A governança dos modelos, sistemas e aplicações de IA na medicina deverá respeitar a autonomia dos médicos e das instituições médicas, permitindo o desenvolvimento e a implementação de soluções inovadoras localmente ajustadas aos contextos específicos de cada serviço médico, desde que observados os padrões de auditoria, monitoramento e transparência definidos nesta resolução.
+§ 2° A auditoria e o monitoramento dos modelos, sistemas e aplicações de IA serão realizados com base em critérios proporcionais ao impacto, garantindo que os modelos, sistemas e aplicações sejam auditáveis ou monitoráveis de forma prática e acessível, respeitando o segredo industrial e comercial.
+Art. 1°
+§ 3° A transparência
+
+--- MEIO ---
+rofissional de saúde (médico, e conforme o caso outros profissionais da equipe
+multiprofissional) ou gestor de instituição médica que utilize o sistema inteligente no desempenho
+de suas atividades, podendo enquadrar-se em diferentes perfis conforme sua função e área de atuação dentro da instituição; VIII. Usuário externo: a pessoa externa à instituição de saúde que interaja diretamente com o sistema
+de IA incluindo pacientes, familiares ou responsáveis legais, alunos de medicina em contato com ferramentas educacionais de IA, pesquisadores externos, bem como o público leigo que utilize aplicações de IA em saúde disponibilizadas diretamente a consumidores; IX. Distribuidor: a pessoa natural ou jurídica, pública ou privada, que disponibiliza e distribui um
+sistema de IA para que terceiro o opere, a título oneroso ou gratuito (por exemplo, uma empresa que fornece a um hospital uma plataforma de IA para este utilizá-la em seus serviços); X. Inteligência Artificial Generativa (IA generativa ou IAGen): o sistema de IA especificamente
+destinado a gerar ou modificar significativamente conteúdo de variados tipos – incluindo texto, imagens, áudio, vídeo ou código de software – a partir de prompts (entradas) dados pelo usuário, utilizando modelos de aprendizagem treinados em grandes volumes de dados. Exemplos incluem modelos de linguagem de larga escala capazes de produzir relatos médicos ou responder perguntas, e algoritmos geradores de imagens médicas sintéticas; XI. Modelo de linguagem de larga escala (LLM): subclassificação de IA generativa consistente em
+modelos de processamento de linguagem natural treinados em bases extensas de textos, capazes de compreender e gerar linguagem em formato escrito. Aplicações na medicina incluem assistentes virtuais para profissionais e pacient
+
+--- FINAL ---
+ejados sobre a população. Havendo incerteza substancial sobre a segurança de uma aplicação de IA, deverá prevalecer a cautela, com testes adicionais ou restrições de uso até que a confiabilidade seja comprovada;
+IX. Proporcionalidade e não maleficência: as soluções de IA devem empregar métodos proporcionais aos fins legítimos buscados, evitando-se complexidades desnecessárias que possam acarretar riscos adicionais. Em consonância com o princípio hipocrático de “primeiro, não causar dano”, todo uso de IA na medicina deve ser orientado a minimizar possíveis malefícios, garantindo que os benefícios esperados superem os riscos envolvidos;
+X. Livre iniciativa, desenvolvimento econômico e concorrência leal no âmbito da saúde digital: respeitando-se a legislação vigente, esta Resolução busca criar ambiente favorável à inovação responsável em saúde, estimulando tanto iniciativas públicas quanto privadas a desenvolverem soluções de IA úteis, dentro de parâmetros éticos e legais claros. A competição saudável e a colaboração entre entes públicos, academia e empresas privadas são encorajadas, visando ampliar o acesso a ferramentas de IA de qualidade para todo o sistema de saúde, ao mesmo tempo em que se protege o consumidor/paciente de práticas abusivas;
+XI. Transparência científica e educação: promove-se o acesso à informação e à educação acerca das tecnologias de IA e suas aplicações em saúde. Os conhecimentos gerados pelo uso dessas soluções
+– incluindo suas validações clínicas, resultados e limitações identificadas – devem ser compartilhados com a comunidade científica e com os formuladores de políticas, sempre resguardando dados pessoais, de modo a ampliar o conhecimento coletivo e guiar futuras melhorias nas práticas médicas.
+JEANCARLO FERNANDES CAVALCANTE
+Conselheiro Relator
+
+
+==============================================================================================================
+DOCUMENTO: ai_framework_convention_council_europe_2024
+==============================================================================================================
+Título: Council of Europe Framework Convention on Artificial Intelligence and 
+Tipo: PDF
+Fonte: ai_framework_convention_council_europe_2024.pdf
+Trechos: 34
+Caracteres: 36099
+Perguntas atuais: 0
+Sinais: deontico=79 | dispositivo=56 | loja=0
+Auditoria de páginas: OK | PDF=12 | indexadas=12 | ausentes=nenhuma
+
+--- INÍCIO ---
+Council of Europe Treaty Series - No. 225
+Council of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law
+Vilnius, 5.IX.2024
+Preamble
+The member States of the Council of Europe and the other signatories hereto,
+Considering that the aim of the Council of Europe is to achieve greater unity between its members, based in particular on the respect for human rights, democracy and the rule of law;
+Recognising the value of fostering co-operation between the Parties to this Convention and of extending such co-operation to other States that share the same values;
+Conscious of the accelerating developments in science and technology and the profound changes brought about through activities within the lifecycle of artificial intelligence systems, which have the potential to promote human prosperity as well as individual and societal well- being, sustainable development, gender equality and the empowerment of all women and girls, as well as other important goals and interests, by enhancing progress and innovation;
+Recognising that activities within the lifecycle of artificial intelligence systems may offer unprecedented opportunities to protect and promote human rights, democracy and the rule of law;
+Concerned that certain activities within the lifecycle of artificial intelligence systems may undermine human dignity and individual autonomy, human rights, democracy and the rule of law;
+Concerned about the risks of discrimination in digital contexts, particularly those involving artificial intelligence systems, and their potential effect of creating or aggravating inequalities, including those experienced by women and individuals in vulnerable situations, regarding the enjoyment of their human rights and their full, equal and effective 
+
+--- MEIO ---
+cular persons whose rights may be impacted; d apply iteratively throughout the activities within the lifecycle of the artificial intelligence system;
+the perspectives of relevant stakeholders, in particular persons whose rights may be impacted; d apply iteratively throughout the activities within the lifecycle of the artificial intelligence system; e include monitoring for risks and adverse impacts to human rights, democracy, and the rule of law; f include documentation of risks, actual and potential impacts, and the risk management approach; and g require, where appropriate, testing of artificial intelligence systems before making them available for first use and when they are significantly modified. 3 Each Party shall adopt or maintain measures that seek to ensure that adverse impacts of artificial intelligence systems to human rights, democracy, and the rule of law are adequately addressed. Such adverse impacts and measures to address them should be documented and inform the relevant risk management measures described in paragraph 2. 4 Each Party shall assess the need for a moratorium or ban or other appropriate measures in respect of certain uses of artificial intelligence systems where it considers such uses incompatible with the respect for human rights, the functioning of democracy or the rule of law.
+ate measures in respect of certain uses of artificial intelligence systems where it considers such uses incompatible with the respect for human rights, the functioning of democracy or the rule of law. Chapter VI – Implementation of the Convention Article 17 – Non-discrimination The implementation of the provisions of this Convention by the Parties shall be secured without discrimination on any ground, in accordance with their international human rights obligations.
+
+
+--- FINAL ---
+General.
+e. 2 Such denunciation shall become effective on the first day of the month following the expiration of a period of three months after the date of receipt of the notification by the Secretary General. Article 36 – Notification The Secretary General of the Council of Europe shall notify the member States of the Council of Europe, the non-member States which have participated in the elaboration of this Convention, the European Union, any signatory, any contracting State, any Party and any other State which has been invited to accede to this Convention, of: a any signature; b the deposit of any instrument of ratification, acceptance, approval or accession; c any date of entry into force of this Convention, in accordance with Article 30, paragraphs 3 and 4, and Article 31, paragraph 2; d any amendment adopted in accordance with Article 28 and the date on which such an amendment enters into force; e any declaration made in pursuance of Article 3, paragraph 1, sub-paragraph b; f any reservation and withdrawal of a reservation made in pursuance of Article 34;
+g any denunciation made in pursuance of Article 35; h any other act, declaration, notification or communication relating to this Convention. In witness whereof the undersigned, being duly authorised thereto, have signed this Convention. Done in Vilnius, this 5th day of September 2024, in English and in French, both texts being equally authentic, in a single copy which shall be deposited in the archives of the Council of Europe. The Secretary General of the Council of Europe shall transmit certified copies to each member State of the Council of Europe, to the non-member States which have participated in the elaboration of this Convention, to the European Union and to any State invited to accede to this Convention.
+
+
+==============================================================================================================
+DOCUMENTO: resolucao_2314_CFM_2022
+==============================================================================================================
+Título: Resolução CFM nº 2.314/2022
+Tipo: PDF
+Fonte: resolucao_2314_CFM_2022.pdf
+Trechos: 30
+Caracteres: 25322
+Perguntas atuais: 7
+Sinais: deontico=19 | dispositivo=54 | loja=0
+Auditoria de páginas: OK | PDF=9 | indexadas=9 | ausentes=nenhuma
+
+--- INÍCIO ---
+RESOLUÇÃO CFM nº 2.314/2022 (Publicada no D.O.U. de 05 de maio de 2022, Seção I, p. 227)
+Define e regulamenta a telemedicina, como forma de serviços médicos mediados por tecnologias de comunicação. O CONSELHO FEDERAL DE MEDICINA (CFM), no uso das atribuições que lhe confere a Lei nº 3.268, de 30 de setembro de 1957, regulamentada pelo Decreto nº 44.045, de 19 de julho de 1958, alterado pelo Decreto nº 10.911, de 22 de dezembro de 2021, Lei nº 12.842, de 10 de julho de 2013, e Decreto nº 8.516, de 10 de setembro de 2015, e CONSIDERANDO que cabe ao Conselho Federal de Medicina (CFM) disciplinar o exercício profissional médico e zelar pela boa prática médica no país;
+CONSIDERANDO a constante inovação e o desenvolvimento de novas tecnologias digitais de informação e comunicação que facilitam o intercâmbio de informação entre médicos e entre médicos e pacientes;
+CONSIDERANDO que, a despeito das consequências positivas da telemedicina, existem muitos preceitos éticos e legais que precisam ser assegurados;
+CONSIDERANDO o Código de Ética Médica vigente;
+CONSIDERANDO que a telemedicina deve contribuir para favorecer a relação médico- paciente;
+CONSIDERANDO que a medicina, ao ser exercida com a utilização dos meios tecnológicos e digitais seguros, deve visar o benefício e os melhores resultados ao paciente, o médico deve avaliar se a telemedicina é o método mais adequado às necessidades do paciente, naquela situação;
+CONSIDERANDO que o termo telessaúde é amplo e abrange outros profissionais da saúde, enquanto telemedicina é específico para a medicina e se refere a atos e procedimentos realizados ou sob responsabilidade de médicos;
+CONSIDERANDO que o termo telessaúde se aplica ao uso das tecnologias de informação e comunicação para transferir informações de dados e serviços clínic
+
+--- MEIO ---
+oleta de dados clínicos, sua transmissão, processamento e manejo, sem que o paciente precise se deslocar até uma unidade de saúde.
+§ 2º Deve ser realizado por indicação e justificativa do médico assistente do paciente, com garantia de segurança e confidencialidade, tanto na transmissão quanto no recebimento de dados.
+§ 3º A transmissão dos dados deve ser realizada sob a responsabilidade técnica da instituição de vinculação do paciente.
+Art. 10
+§ 4º A interpretação dos dados e emissão de laudos deve ser feita por médico regularmente inscrito no CRM de sua jurisdição e com registro de qualificação de especialista (RQE) na área relacionada a exames especializados.
+§ 5º A coordenação do serviço médico deverá promover o devido treinamento de recursos humanos locais, inclusive os pacientes, que poderão intermediar o atendimento.
+§ 6º Todos os dados resultados do telemonitoramento, incluindo resultados de exames, avaliação clínica e prescrição e profissionais envolvidos devem ser adequadamente registrados no prontuário do paciente.
+Art. 11. A TELETRIAGEM médica é o ato realizado por um médico, com avaliação dos sintomas do paciente, a distância, para regulação ambulatorial ou hospitalar, com definição e direcionamento do paciente ao tipo adequado de assistência que necessita ou a um especialista.
+§ 1º O médico deve destacar e registrar que se trata apenas de uma impressão diagnóstica e de gravidade, o médico tem autonomia da decisão de qual recurso será utilizado em benefício do paciente, não se confundindo com consulta médica.
+§ 2º Na teletriagem médica o estabelecimento/sistema de saúde deve oferecer e garantir todo o sistema de regulação para encaminhamento dos pacientes sob sua responsabilidade.
+Art. 12. A TELECONSULTORIA médica é ato de consultoria mediado por TDICs entre
+
+--- FINAL ---
+olar a propagação de infecções, foram adotadas medidas restritivas à mobilidade das pessoas, como isolamento social e quarentena, e a busca de contatos. A liberação da telemedicina no Brasil pelo governo brasileiro durante a crise sanitária, prevista no texto legal da lei federal, em caráter excepcional e transitório, trouxe a possibilidade de assistência médica, mantendo o distanciamento social e colaborou para amenizar a gravidade da crise no sistema de saúde desencadeada pela pandemia. Porém, apesar desses resultados, não foram criadas limitações de segurança ao seu uso e a falta de uma regulamentação adequada mostrou fragilidades em, por si só, garantir os princípios da ética médica obrigatórios ao exercício da medicina, assim como a segurança dos pacientes, além da privacidade, confidencialidade e a integridade de seus dados.
+Vivemos em um país continental e com diversas peculiaridades regionais. A franca evolução da sociedade, as inovações que possam surgir a todo tempo após aprovação desta resolução, faz com que esta resolução seja revisada constantemente, acompanhando o dinamismo da sociedade e beneficiando o ser humano a ser atendido, podendo ser modificada posteriormente, de acordo com o aparecimento de novas tecnologias.
+O fato de a crise sanitária ter propiciado um significativo aumento no uso da telemedicina impõe uma atualização urgente de atos normativos do CFM, especificamente sobre esse método, para estabelecer as balizas éticas para as diferentes modalidades de telemedicina, conforme as competências previstas na Lei nº 3.268/1957, em que delega ao Conselho Federal de Medicina a fiscalização, normatização e julgamento do exercício da medicina.
+DONIZETTI DIMER GIAMBERDINO FILHO
+Conselheiro Relator
+ROSYLANE NASCIMENTO DAS MERCÊS ROCHA
+Conselheira relatora
+
+
+==============================================================================================================
+DOCUMENTO: lei_3268_BR_1957
+==============================================================================================================
+Título: Lei nº 3.268, de 30 de setembro de 1957
+Tipo: HTML
+Fonte: https://www.planalto.gov.br/ccivil_03/leis/l3268.htm
+Trechos: 19
+Caracteres: 21224
+Perguntas atuais: 0
+Sinais: deontico=0 | dispositivo=72 | loja=0
+Auditoria de páginas: N/A (HTML ou sem PDF local)
+
+--- INÍCIO ---
+Presidência da República Casa Civil Subchefia para Assuntos Jurídicos LEI N o 3.268, DE 30 DE SETEMBRO DE 1957. Regulamento Vide Lei nº 5.526, de 1968 Dispõe sôbre os Conselhos de Medicina, e dá outras providências. O PRESIDENTE DA REPÚBLICA: Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei: Art. 1º O Conselho Federal e os Conselhos Regionais de Medicina, instituídos pelo Decreto-lei nº 7.955, de 13 de setembro de 1945 , passam a constituir em seu conjunto uma autarquia, sendo cada um dêles dotado de personalidade jurídica de direito público, com autonomia administrativa e financeira. Art. 2º O Conselho Federal e os Conselhos Regionais de Medicina são os órgãos supervisores da ética profissional em tôda a República e ao mesmo tempo, julgadores e disciplinadores da classe médica, cabendo-lhes zelar e trabalhar por todos os meios ao seu alcance, pelo perfeito desempenho ético da medicina e pelo prestígio e bom conceito da profissão e dos que a exerçam legalmente. Art. 3º Haverá na Capital da República um Conselho Federal, com jurisdição em todo o Território Nacional, ao qual ficam subordinados os Conselhos Regionais;
+a profissão e dos que a exerçam legalmente. Art. 3º Haverá na Capital da República um Conselho Federal, com jurisdição em todo o Território Nacional, ao qual ficam subordinados os Conselhos Regionais; e, em cada capital de Estado e Território e no Distrito Federal, um Conselho Regional, denominado segundo sua jurisdição, que alcançará, respectivamente, a do Estado, a do Território e a do Distrito Federal. Art. 4º O Conselho Federal de Medicina compor-se-á de 10 (dez) membros e outros tantos suplentes, de nacionalidade brasileira. Parágrafo único. Dos 10 (dez) membros e respectivos suplentes do Conselho Federal, 9 (nove) serão eleitos, 
+
+--- MEIO ---
+ art. 22; e) doações e legados; f) subvenções oficiais; g) bens e valores adquiridos. Art. 17. Os médicos só poderão exercer legalmente a medicina, em qualquer de seus ramos ou especialidades, após o prévio registro de seus títulos, diplomas, certificados ou cartas no Ministério da Educação e Cultura e de sua inscrição no Conselho Regional de Medicina, sob cuja jurisdição se achar o local de sua atividade. (Vide Medida Provisória nº 621, de 2013) Art. 17-A.
+rtas no Ministério da Educação e Cultura e de sua inscrição no Conselho Regional de Medicina, sob cuja jurisdição se achar o local de sua atividade. (Vide Medida Provisória nº 621, de 2013) Art. 17-A. A obtenção de nível proficiente na segunda etapa do Exame Nacional de Avaliação da Formação Médica  Enamed será requisito obrigatório para realizar a inscrição de que trata o art. 17, aplicável aos estudantes que ingressarem no curso de graduação em Medicina a partir da data de publicação da Medida Provisória nº 1.370, de 19 de junho de 2026 . (Incluído pela Medida Provisória nº 1.370, de 2026) Art. 18. Aos profissionais registrados de acôrdo com esta lei será entregue uma carteira profissional que os habilitará ao exercício da medicina em todo o País. § 1º No caso em que o profissional tiver de exercer temporàriamente, à medicina em outra jurisdição, apresentará sua carteira para ser visada pelo Presidente do Conselho Regional desta jurisdição. § 2º Se o médico inscrito no Conselho Regional de um Estado passar a exercer, de modo permanente, atividade em outra região, assim se entendendo o exercício da profissão por mais de 90 (noventa) dias, na nova jurisdição, ficará obrigado a
+Regional de um Estado passar a exercer, de modo permanente, atividade em outra região, assim se entendendo o exercício da profissão por mais 
+
+--- FINAL ---
+nselhos Regionais o Código de Deontologia Médica, vigorará o Código de Ética da Associação Médica Brasileira. Art. 31. O pessoal a serviço dos Conselhos de Medicina será inscrito, para efeito de previdência social, no Instituto de Previdência e Assistência dos Servidores do Estado, em conformidade com o art. 2º do Decreto-lei nº 3.347, de 12 de junho de 1941 . Art. 32. As diretorias provisórias, a que se refere o art. 28, organizarão a tabela de emolumentos devidos pelos inscritos, submetendo-a à aprovação do Conselho Federal. Art. 33. O Poder Executivo providenciará a entrega ao Conselho Federal de Medicina, logo após a publicação da presente lei, de 40% (quarenta por certo) da totalidade do impôsto sindical pago pelos médicos a fim de que sejam empregados na instalação do mesmo Conselho e dos Conselhos Regionais. Art. 34. O Govêrno Federal tomará medidas para a instalação condigna dos Conselhos de Medicina no Distrito Federal e nas capitais dos Estados e Territórios, tanto quanto possível em edifícios públicos. Art. 35.
+Govêrno Federal tomará medidas para a instalação condigna dos Conselhos de Medicina no Distrito Federal e nas capitais dos Estados e Territórios, tanto quanto possível em edifícios públicos. Art. 35. O Conselho Federal de Medicina elaborará o projeto de decreto de regulamentação desta lei, apresentando-o ao Poder Executivo dentro em 120 (cento e vinte) dias a contar da data de sua publicação. Art. 36. Esta lei entrará em vigor na data de sua publicação, revogados o Decreto-lei nº 7.955, de 13 de setembro de 1945 , e disposições em contrário. Rio de Janeiro, 30 de setembro de 1957; 136º da Independência e 69º da República. JUSCELINO KUBITSCHEK Clovis Salgado Parsifal Barbosa Maurício de Medeiros Este texto não substitui o publicado no DOU de 1.10.1957 *
+
+
+==============================================================================================================
+DOCUMENTO: resolucao_1821_CFM_2007
+==============================================================================================================
+Título: Resolução CFM nº 1.821/2007
+Tipo: PDF
+Fonte: resolucao_1821_CFM_2007.pdf
+Trechos: 23
+Caracteres: 20220
+Perguntas atuais: 0
+Sinais: deontico=5 | dispositivo=14 | loja=0
+Auditoria de páginas: OK | PDF=6 | indexadas=6 | ausentes=nenhuma
+
+--- INÍCIO ---
+[TABELA]
+Colunas: Coluna 1 | Coluna 2
+Coluna 1: RESOLUÇÃO CFM Nº 1.821/2007
+Coluna 2:
+Coluna 1: (Publicada no D.O.U. de 23 nov. 2007, Seção I, pg.252)
+Coluna 2:
+Coluna 1: Modificada pela Resolução CFM nº. 2.218/2018
+Coluna 2:
+Coluna 1: *Ver também Lei nº 13.787/2018
+Coluna 2:
+Coluna 1:
+Coluna 2: Aprova as normas técnicas concernentes à digitalização e
+Coluna 1:
+Coluna 2: uso dos sistemas informatizados para a guarda e
+Coluna 1:
+Coluna 2: manuseio dos documentos dos prontuários dos pacientes,
+Coluna 1:
+Coluna 2: autorizando a eliminação do papel e a troca de
+Coluna 1:
+Coluna 2: informação identificada em saúde.
+Coluna 1: O CONSELHO FEDERAL DE MEDICINA, no uso das atribuições que lhe confere a Lei nº 3.268,
+Coluna 2:
+Coluna 1: de 30 de setembro de 1957, alterada pela Lei nº 11.000, de 15 de dezembro de 2004,
+Coluna 2:
+Coluna 1: regulamentada pelo Decreto nº 44.045, de 19 de julho de 1958, e
+Coluna 2:
+Coluna 1: CONSIDERANDO que o médico tem o dever de elaborar um prontuário para cada paciente
+Coluna 2:
+Coluna 1: a que assiste;
+Coluna 2:
+Coluna 1: CONSIDERANDO que o Conselho Federal de Medicina (CFM) é a autoridade certificadora dos
+Coluna 2:
+Coluna 1: médicos do Brasil (AC) e distribuirá o CRM-Digital aos médicos interessados, que será um
+Coluna 2:
+Coluna 1: certificado padrão ICP-Brasil;
+Coluna 2:
+Coluna 1: CONSIDERANDO que as unidades de serviços de apoio, diagnóstico e terapêutica têm
+Coluna 2:
+Coluna 1: documentos próprios, que fazem parte dos prontuários dos pacientes;
+Coluna 2:
+Coluna 1: CONSIDERANDO o crescente volume de documentos armazenados pelos vários tipos
+Coluna 2:
+Coluna 1: de estabelecimentos de saúde, conforme definição de tipos de unidades do Cadastro
+Coluna 2:
+Coluna 1: Nacional de Estabelecimentos de Saúde, do Ministério da Saúde;
+Coluna 2:
+Coluna 1: CO
+
+--- MEIO ---
+ representante legal, permitam o fornecimento de cópias autênticas das informações a ele pertinentes. Existe, hoje, um volume crescente de documentos armazenados pelos vários tipos de estabelecimentos de saúde, conforme definição de tipos de unidades do Cadastro Nacional de Estabelecimentos de Saúde, do Ministério da Saúde. As unidades de serviços de apoio, diagnóstico e terapêutica têm documentos próprios, que fazem parte dos prontuários dos pacientes. Além disso, os avanços da tecnologia da informação e de telecomunicações oferecem novos métodos de armazenamento e transmissão de dados.
+mentos próprios, que fazem parte dos prontuários dos pacientes. Além disso, os avanços da tecnologia da informação e de telecomunicações oferecem novos métodos de armazenamento e transmissão de dados. O disposto no Manual de Certificação para Sistemas de Registro Eletrônico em Saúde, elaborado, conforme convênio, pelo Conselho Federal de Medicina e Sociedade Brasileira de Informática em Saúde garante que, para eliminar o papel, os sistemas informatizados para guarda e manuseio de prontuários de pacientes, atendam integralmente aos requisitos do “Nível de garantia de segurança 2 (NGS2)”. Ao atender o “Nível de garantia de segurança 1 (NGS1)”, o sistema informatizado já possui um bom nível de segurança, entretanto, a eliminação do papel só é possível com a utilização de certificado digital padrão ICP-Brasil, segundo determinação da legislação em vigor sobre documento eletrônico no Brasil, descrita abaixo. A validade jurídica dos documentos eletrônicos como prova é garantida conforme o disposto nos artigos 104, 212, 221, 225 e 421 do Código Civil e nos artigos 131, 154, 244, 332 e 383 do Código de Processo Civil.
+jurídica dos documentos eletrônicos como prova é garantida conforme o dispost
+
+--- FINAL ---
+aiz da ICP-Brasil. A Resolução n° 4, de 22 de novembro de 2001, do Comitê Gestor da ICP-Brasil, altera a Declaração de Práticas de Certificação da AC Raiz da ICP-Brasil. A Resolução n° 13, de 26 de abril de 2002, do Comitê Gestor da ICP-Brasil, altera a Declaração de Práticas de Certificação da AC Raiz da ICP-Brasil (autoridade certificadora), estabelecendo o vínculo entre o par Raiz da ICP-Brasil, os critérios e procedimentos de chaves e seu titular. A Resolução n° 19, de 8 de maio de 2003, do Comitê Gestor da ICP-Brasil, aprova o modelo eletrônico Revalidação dos Dados Cadastrais e Solicitação de Novo Certificado, de que trata a Resolução n° 1, de 25 de setembro de 2001, do Comitê Gestor da ICP-Brasil. O Parecer nº 16, de 4 de novembro de 1997, do Conselho Nacional de Educação, dispõe sobre o arquivamento eletrônico em CDs ou outros meios, dos documentos escolares das instituições de ensino (Ministério da Educação) que em seu art. 1º. dispõe que:
+nselho Nacional de Educação, dispõe sobre o arquivamento eletrônico em CDs ou outros meios, dos documentos escolares das instituições de ensino (Ministério da Educação) que em seu art. 1º. dispõe que: “O arquivamento de documentos escolares, das instituições de ensino, observará as seguintes modalidades: (c) em disquete ou CD-ROM obtido por sistema computadorizado”. Com isso, o Conselho Federal de Medicina reconhece a importância do uso de sistemas informatizados para a guarda e manuseio de prontuários de pacientes e para a troca de informação identificada em saúde, bem como a digitalização dos prontuários em papel, como instrumento de modernização, com conseqüente melhoria no atendimento ao paciente. É dever do CFM garantir ao médico amplo respaldo legal na utilização desses sistemas, motivo pelo qual publica esta Resolução.
+
+
+==============================================================================================================
+DOCUMENTO: resolucao_UFMG_01_2022
+==============================================================================================================
+Título: Resolução nº 01/2022, de 17 de fevereiro de 2022
+Tipo: PDF
+Fonte: resolucao_UFMG_01_2022.pdf
+Trechos: 24
+Caracteres: 17538
+Perguntas atuais: 0
+Sinais: deontico=11 | dispositivo=54 | loja=0
+Auditoria de páginas: OK | PDF=8 | indexadas=8 | ausentes=nenhuma
+
+--- INÍCIO ---
+RESOLUÇÃO No 01/2022, DE 17 DE FEVEREIRO DE 2022 Autoriza a criação de Comitês de Ética em Pesquisa envolvendo seres humanos no âmbito da UFMG e aprova o Regimento dos CEPs-UFMG, revogando a Resolução no 11/2017, de 05/12/2017. O CONSELHO UNIVERSITÁRIO DA UNIVERSIDADE FEDERAL DE MINAS GERAIS, no uso de suas atribuições estatutárias e regimentais, considerando o Parecer no 10/2021 da Comissão de Legislação, resolve: Art. 1o Autorizar a aprovação de criação de Comitês de Ética em Pesquisa envolvendo seres humanos (CEPs-UFMG) no âmbito desta Universidade. Parágrafo único. A criação a que se refere o caput deste artigo deverá atender as normas determinadas pela Comissão Nacional de Ética em Pesquisa (CONEP) e ser aprovada pela Câmara de Pesquisa do Conselho de Ensino, Pesquisa e Extensão (CEPE). Art. 2o A realização de pesquisa envolvendo seres humanos no âmbito da UFMG deverá ser precedida da apreciação e aprovação por um de seus Comitês de Ética em Pesquisa e, quando couber, pela CONEP, exceto nos casos em que essa avaliação seja dispensável conforme normatização vigente da CONEP. Parágrafo único.
+o e aprovação por um de seus Comitês de Ética em Pesquisa e, quando couber, pela CONEP, exceto nos casos em que essa avaliação seja dispensável conforme normatização vigente da CONEP. Parágrafo único. As disposições contidas no caput deste artigo não isentam o pesquisador de se responsabilizar pelo atendimento às regulamentações específicas da sua área de pesquisa. Art. 3o Aprovar o Regimento dos Comitês de Ética em Pesquisa da UFMG envolvendo seres humanos (CEPs-UFMG), anexo à presente Resolução. Art. 4o Revogar as disposições em contrário, em especial a Resolução no 11/2017, de 5 de dezembro de 2017. Art. 5o A presente Resolução entra em vigor nesta data. Professora Sandra Reg
+
+--- MEIO ---
+ seu regulamento interno, com o detalhamento de suas atividades operacionais;
+XI - propor a alteração no quantitativo de seus membros para apreciação da Câmara de Pesquisa do CEPE.
+Parágrafo único. Observado o disposto no inciso V do caput deste artigo, após o período mínimo a que se refere o inciso, apenas as cartas de aprovação dos projetos de pesquisa permanecerão sob guarda dos Comitês.
+CAPÍTULO III
+SEÇÃO I DA COMPOSIÇÃO E DO FUNCIONAMENTO
+Art. 14. A Câmara de Pesquisa do CEPE definirá o quantitativo dos membros de cada Comitê de Ética em Pesquisa envolvendo seres humanos, de acordo com a previsão de demanda, garantindo a multidisciplinaridade, a experiência comprovada em pesquisa, a diversidade e respeitando as diretrizes de representação a seguir, devendo incluir:
+I - servidores docentes da UFMG provenientes das três grandes áreas do conhecimento, a saber: Ciências da Vida, englobando Ciências Agrárias e Veterinárias, Ciências Biológicas e Ciências da Saúde; Humanidades, englobando Letras e Artes, Ciências Humanas e Sociais Aplicadas; e Ciências da Natureza, englobando Ciências Exatas e da Terra e Engenharias;
+II - servidores técnico-administrativos em educação, eleitos por seus pares;
+III - representante(s) da comunidade externa à Universidade, indicado(s) pelo plenário do respectivo Comitê de Ética em Pesquisa da UFMG envolvendo seres humanos; IV - representante(s) discentes de Pós-Graduação (doutorandos) regularmente matriculados na UFMG, indicados pelos Colegiados de Cursos de PósGraduação e sorteados pelo plenário do respectivo Comitê de Ética em Pesquisa da UFMG envolvendo seres humanos. § 1o O mandato dos membros indicados nos incisos de I a III será de 3 (três) anos, permitida uma recondução. § 2o O mandato dos membros discentes será de 1 (um) ano, permiti
+
+--- FINAL ---
+ Compete ao subcoordenador: I - substituir o coordenador nos seus impedimentos eventuais; II - desempenhar as funções que lhe forem delegadas pelo coordenador. CAPÍTULO IV SEÇÃO I DAS DISPOSIÇÕES TRANSITÓRIAS Art. 27.
+ordenador: I - substituir o coordenador nos seus impedimentos eventuais; II - desempenhar as funções que lhe forem delegadas pelo coordenador. CAPÍTULO IV SEÇÃO I DAS DISPOSIÇÕES TRANSITÓRIAS Art. 27. Os mandatos dos atuais membros não se extinguem com a aprovação deste Regimento. Art. 28. No prazo máximo de 90 (noventa) dias, contados da aprovação do presente Regimento pelo Conselho Universitário, o atual CEP-UFMG proporá à Câmara de Pesquisa do CEPE as modificações na composição de seus membros, de acordo com sua demanda. SEÇÃO II DAS DISPOSIÇÕES FINAIS Art. 29. O presente Regimento poderá ser modificado pelo Conselho Universitário por proposta do CEPE. Parágrafo único. A proposta a ser apreciada pelo CEPE será apresentada pela Câmara de Pesquisa ouvidos os Comitês de Ética em Pesquisa da UFMG envolvendo seres humanos.
+Art. 30. Os casos omissos no presente Regimento serão dirimidos pela Câmara de Pesquisa do CEPE, ouvidos os Comitês de Ética em Pesquisa da UFMG envolvendo seres humanos, pelo voto de, no mínimo, 2/3 (dois terços) dos seus membros.
+Art. 31. Cabe a cada Comitê de Ética em Pesquisa da UFMG envolvendo seres humanos estabelecer seu próprio regulamento interno, seguindo as diretrizes deste Regimento, em reunião expressamente convocada para esse fim, exigindo-se o voto favorável de 2/3 (dois terços) de seus membros.
+Art. 32. Revogam-se as disposições em contrário, em especial a Resolução no 11/2017, de 05/12/2017.
+Art. 33. O presente Regimento entra em vigor nesta data
+Professora Sandra Regina Goulart Almeida
+Presidente do Conselho Universitário
+
+
+==============================================================================================================
+DOCUMENTO: resolucao_2_ANPD_2024
+==============================================================================================================
+Título: Resolução CD/ANPD nº 2, de 27 de janeiro de 2022
+Tipo: HTML
+Fonte: https://www.gov.br/anpd/pt-br/acesso-a-informacao/institucional/atos-normativos/regulamentacoes_anpd/resolucao-cd-anpd-no-2-de-27-de-janeiro-de-2022
+Trechos: 13
+Caracteres: 14807
+Perguntas atuais: 0
+Sinais: deontico=2 | dispositivo=43 | loja=0
+Auditoria de páginas: N/A (HTML ou sem PDF local)
+
+--- INÍCIO ---
+Resolução CD/ANPD nº 2, de 27 de janeiro de 2022 Aprova o Regulamento de aplicação da Lei nº 13.709, de 14 de agosto de 2018, Lei Geral de Proteção de Dados Pessoais (LGPD), para agentes de tratamento de pequeno porte. Publicado em 26/04/2024 08:49 Modificado em 04/07/2025 15:25 Compartilhe : RESOLUÇÃO CD/ANPD Nº 2, DE 27 DE JANEIRO DE 2022 Aprova o Regulamento de aplicação da Lei nº 13.709, de 14 de agosto de 2018, Lei Geral de Proteção de Dados Pessoais (LGPD), para agentes de tratamento de pequeno porte. Observação : Este texto não substitui a publicação no DOU de 28/01/2022 , alterado pela Resolução CD/ANPD nº 15, de 25 de abril de 2024 . O CONSELHO DIRETOR DA AUTORIDADE NACIONAL DE PROTEÇÃO DE DADOS (ANPD) , com base nas competências previstas no art. 55-J, inciso XVIII, da Lei nº 13.709, de 14 de agosto de 2018, no art. 2º, inciso XVIII, do Anexo I do Decreto nº 10.474, de 26 de agosto de 2020, no art. 5º, inciso I do Regimento Interno da ANPD, tendo em vista a deliberação tomada no Circuito Deliberativo nº 04/2022, e pelo que consta no processo 00261.000054/2021-37, resolve: Art.
+o de 2020, no art. 5º, inciso I do Regimento Interno da ANPD, tendo em vista a deliberação tomada no Circuito Deliberativo nº 04/2022, e pelo que consta no processo 00261.000054/2021-37, resolve: Art. 1º Aprovar o Regulamento de aplicação da Lei nº 13.709, de 14 de agosto de 2018, Lei Geral de Proteção de Dados Pessoais (LGPD), para agentes de tratamento de pequeno porte. Art. WALDEMAR GONÇALVES ORTUNHO JUNIOR Diretor-Presidente ANEXO I REGULAMENTO DE APLICAÇÃO DA LEI Nº 13.709, DE 14 DE AGOSTO DE 2018, LEI GERAL DE PROTEÇÃO DE DADOS PESSOAIS (LGPD), PARA AGENTES DE TRATAMENTO DE PEQUENO PORTE TÍTULO I DISPOSIÇÕES GERAIS CAPÍTULO I DISPOSIÇÕES PRELIMINARES Art. 1º Este regulamento tem po
+
+--- MEIO ---
+is será caracterizado, dentre outras situações, naquelas em que a atividade de tratamento puder impedir o exercício de direitos ou a utilização de um serviço, assim como ocasionar danos materiais ou morais aos titulares, tais como discriminação, violação à integridade física, ao direito à
+puder impedir o exercício de direitos ou a utilização de um serviço, assim como ocasionar danos materiais ou morais aos titulares, tais como discriminação, violação à integridade física, ao direito à imagem e à reputação, fraudes financeiras ou roubo de identidade. § 3º A ANPD poderá disponibilizar guias e orientações com o objetivo de auxiliar os agentes de tratamento de pequeno porte na avaliação do tratamento de alto risco. Art. 5º Caberá ao agente de tratamento de pequeno porte, quando solicitado pela ANPD, comprovar que se enquadra nas disposições do art. 2º e do art. 3º deste regulamento em até quinze dias. TÍTULO II DO TRATAMENTO DE DADOS PESSOAIS PELOS AGENTES DE TRATAMENTO DE PEQUENO PORTE CAPÍTULO I DAS DISPOSIÇÕES GERAIS Art. 6º A dispensa ou flexibilização das obrigações dispostas neste regulamento não isenta os agentes de tratamento de pequeno porte do cumprimento dos demais dispositivos da LGPD, inclusive das bases legais e dos princípios, de outras disposições legais, regulamentares e contratuais relativas à proteção de dados pessoais, bem como direitos dos titulares.
+s dispositivos da LGPD, inclusive das bases legais e dos princípios, de outras disposições legais, regulamentares e contratuais relativas à proteção de dados pessoais, bem como direitos dos titulares. CAPÍTULO II DAS OBRIGAÇÕES DO AGENTE DE TRATAMENTO DE PEQUENO PORTE Seção I Das obrigações relacionadas aos direitos do titular Art. 7º Os agentes de tratamento de pequeno porte devem disponibilizar informaçõe
+
+--- FINAL ---
+ conferidos aos demais agentes de tratamento, conforme os termos da mencionada regulamentação; II - no caso da comunicação, à ANPD e ao titular, da ocorrência de incidente de segurança que possa acarretar risco ou dano relevante aos titulares, nos termos do Regulamento de Comunicação de Incidente de Segurança , aprovado pela Resolução CD/ANPD nº 15, de 24 de abril de 2024;
+segurança que possa acarretar risco ou dano relevante aos titulares, nos termos do Regulamento de Comunicação de Incidente de Segurança , aprovado pela Resolução CD/ANPD nº 15, de 24 de abril de 2024; (Redação dada pela RESOLUÇÃO CD/ANPD Nº 15, DE 24 DE ABRIL DE 2024 ) III - no fornecimento de declaração clara e completa, prevista no art. 19, II da LGPD; IV - em relação aos prazos estabelecidos nos normativos próprios para a apresentação de informações, documentos, relatórios e registros solicitados pela ANPD a outros agentes de tratamento. Parágrafo único. Os prazos não dispostos neste regulamento para agentes de tratamento de pequeno porte serão determinados por regulamentação específica. Art. 15. Os agentes de tratamento de pequeno porte podem fornecer a declaração simplificada de que trata o art. 19, I, da LGPD no prazo de até quinze dias, contados da data do requerimento do titular. TÍTULO IV DISPOSIÇÕES FINAIS Art. 16. A ANPD poderá determinar ao agente de tratamento de pequeno porte o cumprimento das obrigações dispensadas ou flexibilizadas neste regulamento, considerando as circunstâncias relevantes da situação, tais como a natureza ou o volume das operações, bem como os o porte o cumprimento das obrigações dispensadas ou flexibilizadas neste regulamento, considerando as circunstâncias relevantes da situação, tais como a natureza ou o volume das operações, bem como os riscos para os titulares.
+
+
+==============================================================================================================
+DOCUMENTO: eca_BR_1990
+==============================================================================================================
+Título: Estatuto da Criança e do Adolescente (ECA)
+Tipo: HTML
+Fonte: https://www.planalto.gov.br/ccivil_03/leis/l8069.htm
+Trechos: 10
+Caracteres: 11078
+Perguntas atuais: 0
+Sinais: deontico=4 | dispositivo=35 | loja=0
+Auditoria de páginas: N/A (HTML ou sem PDF local)
+
+--- INÍCIO ---
+Presidência da República Casa Civil Subchefia para Assuntos Jurídicos LEI Nº 8.069, DE 13 DE JULHO DE 1990. Texto compilado Vigência (Vide Lei nº 14.987, de 2024) Vigência (Vide Lei nº 14.950, de 2024) Vigência (Vide Lei nº 15.243, de 2025) Vigência (Vide Lei nº 15.450, de 2026) Vigência Dispõe sobre o Estatuto da Criança e do Adolescente e dá outras providências. O PRESIDENTE DA REPÚBLICA: Faço saber que o Congresso Nacional decreta e eu sanciono a seguinte Lei: Título I Das Disposições Preliminares Art. 1º Esta Lei dispõe sobre a proteção integral à criança e ao adolescente. Art. 2º Considera-se criança, para os efeitos desta Lei, a pessoa até doze anos de idade incompletos, e adolescente aquela entre doze e dezoito anos de idade. Parágrafo único. Nos casos expressos em lei, aplica-se excepcionalmente este Estatuto às pessoas entre dezoito e vinte e um anos de idade. Art. 3º A criança e o adolescente gozam de todos os direitos fundamentais inerentes à pessoa humana, sem prejuízo da proteção integral de que trata esta Lei, assegurando-se-lhes, por lei ou por outros meios, todas as oportunidades e facilidades, a fim de lhes facultar o desenvolvimento físico, mental, moral,
+uízo da proteção integral de que trata esta Lei, assegurando-se-lhes, por lei ou por outros meios, todas as oportunidades e facilidades, a fim de lhes facultar o desenvolvimento físico, mental, moral, espiritual e social, em condições de liberdade e de dignidade. Parágrafo único. Os direitos enunciados nesta Lei aplicam-se a todas as crianças e adolescentes, sem discriminação de nascimento, situação familiar, idade, sexo, raça, etnia ou cor, religião ou crença, deficiência, condição pessoal de desenvolvimento e aprendizagem, condição econômica, ambiente social, região e local de moradia ou outra condi
+
+--- MEIO ---
+ da lei qualquer atentado, por ação ou omissão, aos seus direitos fundamentais. Parágrafo único. Considera-se conduta ilícita, sujeita a reparação de danos, sem prejuízo de outras sanções cabíveis, a ação ou a omissão que ofenda direito fundamental de criança ou de adolescente previsto nesta Lei, incluídos os casos de abandono afetivo. (Incluído pela Lei nº 15.240, de 2025) Art. 6º Na interpretação desta Lei levar-se-ão em conta os fins sociais a que ela se dirige, as exigências do bem comum, os direitos e deveres individuais e coletivos, e a condição peculiar da criança e do adolescente como pessoas em desenvolvimento. Título II Dos Direitos Fundamentais Capítulo I Do Direito à Vida e à Saúde Art. 7º A criança e o adolescente têm direito a proteção à vida e à saúde, mediante a efetivação de políticas sociais públicas que permitam o nascimento e o desenvolvimento sadio e harmonioso, em condições dignas de existência. Art. 8º É assegurado à gestante, através do Sistema Único de Saúde, o atendimento pré e perinatal. Art.
+permitam o nascimento e o desenvolvimento sadio e harmonioso, em condições dignas de existência. Art. 8º É assegurado à gestante, através do Sistema Único de Saúde, o atendimento pré e perinatal. Art. 8º É assegurado a todas as mulheres o acesso aos programas e às políticas de saúde da mulher e de planejamento reprodutivo e, às gestantes, nutrição adequada, atenção humanizada à gravidez, ao parto e ao puerpério e atendimento pré-natal, perinatal e pós-natal integral no âmbito do Sistema Único de Saúde. (Redação dada pela Lei nº 13.257, de 2016) § 1º A gestante será encaminhada aos diferentes níveis de atendimento, segundo critérios médicos específicos, obedecendo-se aos princípios de regionalização e hierarquização do Sistema. § 1º O atendimento pré-natal
+
+--- FINAL ---
+e outras intervenções cirúrgicas por motivos médicos. (Incluído pela Lei nº 13.257, de 2016) § 9º A atenção primária à saúde fará a busca ativa da gestante que não iniciar ou que abandonar as consultas de pré-natal, bem como da puérpera que não comparecer às consultas pós-parto. (Incluído pela Lei nº 13.257, de 2016) § 10. Incumbe ao poder público garantir, à gestante e à mulher com filho na primeira infância que se encontrem sob custódia em unidade de privação de liberdade, ambiência que atenda às normas sanitárias e assistenciais do Sistema Único de Saúde para o acolhimento do filho, em articulação com o sistema de ensino competente, visando ao desenvolvimento integral da criança. (Incluído pela Lei nº 13.257, de 2016) § 11. A assistência psicológica à gestante, à parturiente e à puérpera deve ser indicada após avaliação do profissional de saúde no pré-natal e no puerpério, com encaminhamento de acordo com o prognóstico. (Incluído pela Lei nº 14.721, de 2023) (Vigência) Art. 8º-A.
+pera deve ser indicada após avaliação do profissional de saúde no pré-natal e no puerpério, com encaminhamento de acordo com o prognóstico. (Incluído pela Lei nº 14.721, de 2023) (Vigência) Art. 8º-A. Fica instituída a Semana Nacional de Prevenção da Gravidez na Adolescência, a ser realizada anualmente na semana que incluir o dia 1º de fevereiro, com o objetivo de disseminar informações sobre medidas preventivas e educativas que contribuam para a redução da incidência da gravidez na adolescência. (Incluído pela Lei nº 13.798, de 2019) Parágrafo único. As ações destinadas a efetivar o disposto no caput deste artigo ficarão a cargo do poder público, em conjunto com organizações da sociedade civil, e serão dirigidas prioritariamente ao público adolescente. (Incluído pela Lei nº 13.798, de 2019)
+
+
+==============================================================================================================
+DOCUMENTO: dpia_ICO_
+==============================================================================================================
+Título: What is a DPIA?
+Tipo: HTML
+Fonte: https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/data-protection-impact-assessments-dpias/what-is-a-dpia/#what1
+Trechos: 10
+Caracteres: 10855
+Perguntas atuais: 0
+Sinais: deontico=14 | dispositivo=3 | loja=0
+Auditoria de páginas: N/A (HTML ou sem PDF local)
+
+--- INÍCIO ---
+What is a DPIA? The Data (Use and Access) Act 2025 got Royal Assent on 19 June 2025. All the provisions affecting data protection law and the Privacy and Electronic Regulations Communications are now in force. The Department for Science and Innovation (DSIT) has set out the commencement plans. You can find more details on the Gov.uk website . Contents In detail What is a DPIA? Why are DPIAs important? How are DPIAs used? What kind of 'risk' do they assess? What is a DPIA? A DPIA is a process designed to help you systematically analyse, identify and minimise the data protection risks of a project or plan. It is a key part of your accountability obligations under the UK GDPR, and when done properly helps you assess and demonstrate how you comply with all of your data protection obligations. It does not have to eradicate all risk, but should help you minimise and determine whether or not the level of risk is acceptable in the circumstances, taking into account the benefits of what you want to achieve. DPIAs are designed to be a flexible and scalable tool that you can apply to a wide range of sectors and projects.
+le in the circumstances, taking into account the benefits of what you want to achieve. DPIAs are designed to be a flexible and scalable tool that you can apply to a wide range of sectors and projects. Conducting a DPIA does not have to be complex or time-consuming in every case, but there must be a level of rigour in proportion to the privacy risks arising. There is no definitive DPIA template that you must follow. You can use our suggested template if you wish, or you may want to develop your own template and process to suit your particular needs, using this guidance as a starting point. Why are DPIAs important? DPIAs are an essential part of your accountability 
+
+--- MEIO ---
+uals. Conducting a DPIA can help you to build trust and engagement with the people using your services, and improve your understanding of their needs, concerns and expectations. There can also be financial benefits. Identifying a problem early on generally means a simpler and less costly solution, as well as avoiding potential reputational damage later on. A DPIA can also reduce the ongoing costs of a project by minimising the amount of information you collect where possible, and devising more straightforward processes for staff. In more detail – ICO guidance Read the ICO guidance on the Article 25 requirement to implement data protection by design and default . How are DPIAs used? A DPIA can cover a single processing operation, or a group of similar processing operations. You may even be able to rely on an existing DPIA if it covered a similar processing operation with similar risks. A group of controllers can also do a joint DPIA for a group project or industry-wide initiative.
+en be able to rely on an existing DPIA if it covered a similar processing operation with similar risks. A group of controllers can also do a joint DPIA for a group project or industry-wide initiative. For new technologies, you may be able to use a DPIA done by the product developer to inform your own DPIA on your implementation plans. You can use an effective DPIA throughout the development and implementation of a project or proposal, embedded into existing project management or other organisational processes. For new projects, DPIAs are a vital part of data protection by design. They build in data protection compliance at an early stage, when there is most scope for influencing how the proposal is developed and implemented. However, it’s important to remember that DPIAs are also relevant if yo
+
+--- FINAL ---
+arying likelihood and severity, may result from data processing which could lead to physical, material or non-material damage, in particular: where the processing may give rise to discrimination, identity theft or fraud, financial loss, damage to the reputation, loss of confidentiality of personal data protected by professional secrecy, unauthorised reversal of pseudonymisation, or any other significant economic or social disadvantage; where data subjects might be deprived of their rights and freedoms or prevented from exercising control over their personal data…” The focus is therefore on any potential harm to individuals. However, the risk-based approach is not just about actual damage and should also look at the possibility for more intangible harm. It includes any “significant economic or social disadvantage”. The impact on society as a whole may also be a relevant risk factor.
+ge and should also look at the possibility for more intangible harm. It includes any “significant economic or social disadvantage”. The impact on society as a whole may also be a relevant risk factor. For example, it may be a significant risk if your intended processing leads to a loss of public trust. A DPIA must assess the level of risk, and in particular whether it is ‘high risk’. The UK GDPR is clear that assessing the level of risk involves looking at both the likelihood and the severity of the potential harm. For more guidance on what this all means in practice, see the section on how to carry out a DPIA. Further reading - European Data Protection Board WP29 produced guidelines on data protection impact assessments , which have been endorsed by the EDPB. See also the working party’s Statement on the role of a risk-based approach in data protection legal frameworks (WP218, 30 May 2014) .
+
+
+==============================================================================================================
+DOCUMENTO: good_ml_practice_guiding_principles_FDA_2021
+==============================================================================================================
+Título: Good Machine Learning Practice for Medical Device Development: Guiding
+Tipo: PDF
+Fonte: good_ml_practice_guiding_principles_FDA_2021.pdf
+Trechos: 9
+Caracteres: 8139
+Perguntas atuais: 0
+Sinais: deontico=3 | dispositivo=0 | loja=1
+Auditoria de páginas: OK | PDF=2 | indexadas=2 | ausentes=nenhuma
+
+--- INÍCIO ---
+Good Machine Learning Practice for Medical Device Development: Guiding Principles October 2021 The U.S. Food and Drug Administration (FDA), Health Canada, and the United Kingdom’s Medicines and Healthcare products Regulatory Agency (MHRA) have jointly identified 10 guiding principles that can inform the development of Good Machine Learning Practice (GMLP). These guiding principles will help promote safe, effective, and high-quality medical devices that use artificial intelligence and machine learning (AI/ML). Artificial intelligence and machine learning technologies have the potential to transform health care by deriving new and important insights from the vast amount of data generated during the delivery of health care every day. They use software algorithms to learn from real-world use and in some situations may use this information to improve the product’s performance. But they also present unique considerations due to their complexity and the iterative and data-driven nature of their development. These 10 guiding principles are intended to lay the foundation for developing Good Machine Learning Practice that addresses the unique nature of these products.
+ata-driven nature of their development. These 10 guiding principles are intended to lay the foundation for developing Good Machine Learning Practice that addresses the unique nature of these products. They will also help cultivate future growth in this rapidly progressing field. The 10 guiding principles identify areas where the International Medical Device Regulators Forum (IMDRF), international standards organizations, and other collaborative bodies could work to advance GMLP. Areas of collaboration include research, creating educational tools and resources, international harmonization, and consensus standards, wh
+
+--- MEIO ---
+veraged Throughout the Total Product Life Cycle: In-depth understanding of a model’s intended integration into clinical workflow, and the desired benefits and associated patient risks, can help ensure that ML- enabled medical devices are safe and effective and address clinically meaningful needs over the lifecycle of the device.
+2. Good Software Engineering and Security Practices Are Implemented: Model design is implemented with attention to the “fundamentals”: good software engineering practices, data quality assurance, data management, and robust cybersecurity practices. These practices include methodical risk management and design process that can appropriately capture and communicate design, implementation, and risk management decisions and rationale, as well as ensure data authenticity and integrity.
+3. Clinical Study Participants and Data Sets Are Representative of the Intended Patient Population: Data collection protocols should ensure that the relevant characteristics of the intended patient population (for example, in terms of age, sex, race, and ethnicity), use, and measurement inputs are sufficiently represented in a sample of adequate size in the clinical study and training and test datasets, so that results can be reasonably generalized to the population of interest. This is important to manage any bias, promote appropriate and generalizable performance across the intended patient population, assess usability, and identify circumstances where the model may underperform.
+4. Training Data Sets Are Independent of Test Sets: Training and test datasets are selected and maintained to be appropriately independent of one another. All potential sources of dependence, including patient, data acquisition, and site factors, are considered and addressed to assure indepe
+
+--- FINAL ---
+ emphasis on the performance of the Human-AI team, rather than just the performance of the model in isolation.
+8. Testing Demonstrates Device Performance During Clinically Relevant Conditions: Statistically sound test plans are developed and executed to generate clinically relevant device performance information independently of the training data set. Considerations include the intended patient population, important subgroups, clinical environment and use by the Human-AI team, measurement inputs, and potential confounding factors.
+9. Users Are Provided Clear, Essential Information: Users are provided ready access to clear, contextually relevant information that is appropriate for the intended audience (such as health care providers or patients) including: the product’s intended use and indications for use, performance of the model for appropriate subgroups, characteristics of the data used to train and test the model, acceptable inputs, known limitations, user interface interpretation, and clinical workflow integration of the model. Users are also made aware of device modifications and updates from real-world performance monitoring, the basis for decision-making when available, and a means to communicate product concerns to the developer.
+10. Deployed Models Are Monitored for Performance and Re-training Risks Are Managed: Deployed models have the capability to be monitored in “real world” use with a focus on maintained or improved safety and performance. Additionally, when models are periodically or continually trained after deployment, there are appropriate controls in place to manage risks of overfitting, unintended bias, or degradation of the model (for example, dataset drift) that may impact the safety and performance of the model as it is used by the Human-AI team.
+
+
+==============================================================================================================
+DOCUMENTO: lei_6681_BR_1979
+==============================================================================================================
+Título: Lei nº 6.681, de 16 de agosto de 1979
+Tipo: HTML
+Fonte: https://www.planalto.gov.br/ccivil_03/leis/1970-1979/l6681.htm
+Trechos: 6
+Caracteres: 6507
+Perguntas atuais: 0
+Sinais: deontico=3 | dispositivo=5 | loja=0
+Auditoria de páginas: N/A (HTML ou sem PDF local)
+
+--- INÍCIO ---
+Presidência da República Casa Civil Subchefia para Assuntos Jurídicos LEI N o 6.681, DE 16 DE AGOSTO DE 1979. Dispõe sobre a inscrição de médicos, cirurgiões-dentistas e farmacêuticos militares em Conselhos Regionais de Medicina, Odontologia e Farmácia, e dá outras providências. O PRESIDENTE DA REPÚBLICA Faço saber que o CONGRESSO NACIONAL decreta e eu sanciono a seguinte Lei: Art . 1º Os médicos, cirurgiões-dentistas e farmacêuticos, em serviço ativo nas Forças Armadas, como integrantes dos respectivos Serviços de Saúde, inscrever-se-ão nos Conselhos Regionais de Medicina, Odontologia e Farmácia, de acordo com as disposições dos respectivos Regulamentos, mediante prova que ateste essa condição, fornecida pelos órgãos competentes dos Ministérios da Marinha, do Exército e da Aeronáutica. Parágrafo único. A inscrição será efetuada no Conselho Regional sob a jurisdição do qual se achar o local de atividades do médico, cirurgião-dentista ou farmacêutico a que se refere o presente artigo, independente de sindicalização, do pagamento de imposto sindical e da anuidade prevista no respectivo Regulamento. Art .
+o médico, cirurgião-dentista ou farmacêutico a que se refere o presente artigo, independente de sindicalização, do pagamento de imposto sindical e da anuidade prevista no respectivo Regulamento. Art . 2º Nas Carteiras Profissionais a serem excedidas pelos Conselhos Regionais, em nome dos médicos, cirurgiões-dentistas e farmacêuticos a que se refere o art. 1º desta Lei, constará, além das indicações estatuídas em Lei ou Regulamento, a qualificação médico militar, cirurgião-dentista militar ou farmacêutico militar. § 1º Os médicos, cirurgiões-dentistas e farmacêuticos militares já inscritos nos respectivos Conselhos Regionais providenciarão, mediante a apresentação do atest
+
+--- MEIO ---
+ após a vigência desta Lei e já estejam inscritos em Conselhos Regionais de Medicina, Odontologia ou de Farmácia. § 3º Os médicos, cirurgiões-dentistas e farmacêuticos, a que se refere o parágrafo anterior, terão lançada em suas Carteiras Profissionais a qualificação médico militar, cirurgião-dentista militar ou farmacêutico militar, e ficarão isentos da sindicalização, do pagamento de imposto sindical e de anuidades. Art . 3º Os médicos, cirurgiões-dentistas e farmacêuticos em Serviço Ativo nas Forças Armadas, quando inscritos em um Conselho Regional e mandados servir em área situada na jurisdição de outro Conselho Regional, apresentarão ao Presidente, deste, para fins de visto, a Carteira Profissional de que são portadores. Art . 4º É vedado aos médicos, cirurgiões-dentistas e farmacêuticos militares participarem de eleições nos Conselhos em que estiverem inscritos, quer como candidatos, quer como eleitores. Art .
+dores. Art . 4º É vedado aos médicos, cirurgiões-dentistas e farmacêuticos militares participarem de eleições nos Conselhos em que estiverem inscritos, quer como candidatos, quer como eleitores. Art . 5º Os médicos, cirurgiões-dentistas e farmacêuticos militares, no exercício de atividades técnico-profissionais decorrentes de sua condição militar, não estão sujeitos à ação disciplinar dos Conselhos Regionais nos quais estiverem inscritos, e sim, à da Força Singular a que pertencerem, à qual cabe promover e calcular a estrita observância das normas de ética profissional por parte dos seus integrantes. Parágrafo único. No exercício de atividades profissionais não decorrentes da sua condição de militar, ficam os médicos, cirurgiões-dentistas e farmacêuticos militares sob a jurisdição do Conselho Regional no qual estiverem inscritos, que, em caso de infração da 
+
+--- FINAL ---
+ Armadas. § 1º Se desejarem continuar a exercer a respectiva profissão, deverão os médicos, cirurgiões - dentistas e farmacêuticos, ao serem desligados do Serviço Ativo das Forças Armadas, requerer ao Presidente do Conselho no qual estiverem inscritos o cancelamento, em sua Carteira Profissional, da qualificação médico militar, "cirurgião-dentista militar ou farmacêutico militar. § 2º Fica assegurada, aos que usarem da faculdade prevista no parágrafo anterior, a isenção do pagamento de quaisquer imposto ou anuidades correspondentes ao período em que estiverem inscritos nos Conselhos Regionais de Medicina, Odontologia ou Farmácia, nas condições previstas no art. 1º desta Lei. Art .
+e quaisquer imposto ou anuidades correspondentes ao período em que estiverem inscritos nos Conselhos Regionais de Medicina, Odontologia ou Farmácia, nas condições previstas no art. 1º desta Lei. Art . 7º Ao médico, cirurgião-dentista e farmacêutico, civil ou militar da Reserva não Remunerada das Forças Armadas, convocado para o Serviço de Saúde de uma das Forças Singulares, em caráter temporário, aplicar-se-á o prescrito nos parágrafos 2º e 3º do art. 2º, do art. 5º e seu parágrafo único, e nos arts. 3º, 4º e 6º desta lei, devendo ser anotada em sua Carteira Profissional a qualificação médico militar convocado, cirurgião-dentista militar convocado ou farmacêutico militar convocado. Art . 8º Esta lei entrará em vigor na data de sua publicação. Art . 9º Ficam revogadas a Lei nº 5.526, de 5 de novembro de 1968 , e demais disposições em contrário. Brasília, em 16 de agosto de 1979; 158º da Independência e 91º da República. JOÃO B. DE FIGUEIREDO Maximiano Fonseca Walter Pires Murillo Macêdo Délio Jardim de Mattos Samuel Augusto Alves Corrêa Este texto não substitui o publicado no DOU de 17.8.1979 *
+
+
+==============================================================================================================
+DOCUMENTO: resolucao_2424_CFM_2025
+==============================================================================================================
+Título: Resolução CFM nº 2.424, de 27 de março de 2025
+Tipo: PDF
+Fonte: resolucao_2424_CFM_2025.pdf
+Trechos: 8
+Caracteres: 6390
+Perguntas atuais: 0
+Sinais: deontico=1 | dispositivo=16 | loja=0
+Auditoria de páginas: OK | PDF=3 | indexadas=3 | ausentes=nenhuma
+
+--- INÍCIO ---
+RESOLUÇÃO CFM N° 2.424, DE 27 DE MARÇO DE 2025 Publicado em: 30/04/2025 | Edição: 81 | Seção: 1 | Página: 491 Altera a Resolução CFM n° 2.306/2022, que aprovou o Código de Processo Ético-Profissional (CPEP) no âmbito do Conselho Federal de Medicina (CFM) e dos Conselhos Regionais de Medicina (CRM). O CONSELHO FEDERAL DE MEDICINA, no uso das atribuições conferidas pela Lei nº 3.268, de 30 de setembro de 1957, regulamentada pelo Decreto n° 44.045, de 19 de julho de 1958, considerando as deliberações tomadas na Sessão Plenária Extraordinária realizada em 27 de março de 2025, RESOLVE: Art. 1° O § 1° do art. 1º da Resolução CFM n° 2.306, de 25 de maio de 2022, que aprova o Código de Processo Ético-Profissional (CPEP), passa a vigorar com a seguinte redação: “Parágrafo único. A sindicância e o processo ético-profissional poderão tramitar em formato eletrônico, nos termos de Resolução específica do CFM.” (NR) Art. 2° O art. 9° da Resolução CFM n° 2.306, de 25 de maio de 2022, que aprova o Código de Processo Ético-Profissional (CPEP), passa a vigorar com a seguinte redação: “Art.
+ão específica do CFM.” (NR) Art. 2° O art. 9° da Resolução CFM n° 2.306, de 25 de maio de 2022, que aprova o Código de Processo Ético-Profissional (CPEP), passa a vigorar com a seguinte redação: “Art. 9° A Presidência dos Conselhos Federal e Regionais de Medicina poderá delegar às respectivas Corregedorias a competência para designar sindicante, instrutor e relator, assim como lavrar portarias e assinaturas dos documentos pertinentes às sindicâncias e aos PEPs.” (NR) Art. 3° Fica acrescido o art. 9°-A, caput, e incisos I e II à Resolução CFM n° 2.306, de 25 de março de 2022, que aprova o Código de Processo Ético-Profissional (CPEP), com a seguinte redação: “Art. 9°-A. Os delegados regionais poderão: I 
+
+--- MEIO ---
+cia e no PEP dependerá de despacho da Corregedoria.” (NR) Art. 4° Fica acrescido o art. 9°-B à Resolução CFM n° 2.306, de 25 de março de 2022, que aprova o Código de Processo Ético-Profissional (CPEP), com a seguinte redação: “Art. 9°-B. Os delegados serão indicados pela Diretoria do CRM e aprovados pelo seu Plenário.” (NR) Art. 5° Fica alterado o § 3° e instituído o § 5° do art. 106 da Resolução CFM n° 2.306, de 25 de maio de 2022, que aprova o Código de Processo Ético-Profissional (CPEP), os quais passam a vigorar com as seguintes redações: “Art. 106. […] § 3° Haverá impedimento para participar de julgamento de recurso em sindicância e PEP oriundos da unidade da federação que o elegeu, quando o(a) conselheiro(a) federal tenha atuado, na fase da sindicância ou no PEP, ainda que como delegado. […] § 5° O(A) conselheiro(a) indicado pela Associação Médica Brasileira (AMB), ou por associação médica federada à AMB, estará impedido de participar em sindicância ou PEP, inclusive em grau de recurso, que tenha em um de seus polos entidade afiliada a seus quadros ou que tenha apresentado a denúncia.” (NR) Art.
+à AMB, estará impedido de participar em sindicância ou PEP, inclusive em grau de recurso, que tenha em um de seus polos entidade afiliada a seus quadros ou que tenha apresentado a denúncia.” (NR) Art. 6° Esta resolução entra em vigor na data da sua publicação. JOSÉ HIRAN DA SILVA GALLO ALEXANDRE DE MENEZES RODRIGUES Presidente do CFM Secretário-Geral do CFM
+EXPOSIÇÃO DE MOTIVOS DA RESOLUÇÃO CFM N° 2.424/2025
+O art. 37 da Carta Magna exige da Administração Pública a observância dos princípios da legalidade e da eficiência, entre outros. Para atender ao princípio da legalidade, o CFM edita a presente Resolução; e, para dar mais eficiência aos atos administrativos processuais
+
+--- FINAL ---
+, consequentemente, a sua instrução e emissão de relatório conclusivo. A instrução é uma preocupação também no âmbito dos processos ético-profissionais (PEPs), em razão da complexidade dos atos processuais a serem praticados, em especial a condução de oitivas. Por outro lado, notadamente os CRMs com maior número de médicos inscritos, o número de conselheiros ainda é o mesmo desde a Lei n° 3.268/1957, qual seja, 20 (vinte) conselheiros eleitos e 1 (um) representante da Associação Médica Brasileira (AMB).
+É importante ressaltar que a sindicância não tem por objetivo punir (sancionar) eventual falta ético-disciplinar do médico. A sindicância, no âmbito dos Conselhos de Medicina, tem por característica a informalidade e a sumariedade na investigação de indícios (meros indícios) de autoria (quem é o autor do fato) e materialidade (se há uma norma ética violada), objetivando evitar a desnecessária e prematura instauração de processo ético. É somente após a aprovação do relatório conclusivo da sindicância que o PEP é instaurado, e, em seu bojo, à luz do contraditório e da ampla defesa, será possível a aplicação de quaisquer das sanções previstas em uma das alíneas do art. 22 da Lei n° 3.268/1957.
+É com espírito inovador que esta Resolução propõe instituir e autorizar que o delegado regional possa contribuir na prática de atos instrutórios de modo a viabilizar o rápido desfecho das apurações éticas no sentido do seu arquivamento ou da abertura de PEP.
+Esta iniciativa, somada ao projeto de implantação da digitalização das atividades judicantes dos Conselhos de Medicina (Projeto PAe), inclusive a utilização da videoconferência, contribuirão para o alcance da tão almejada celeridade e eficiência na prática dos atos da Administração Pública.
+JOSÉ ALBERTINO SOUZA
+Conselheiro relator
+
+
+==============================================================================================================
+DOCUMENTO: resolucao_1638_CFM_2002
+==============================================================================================================
+Título: Resolução CFM nº 1.638/2002
+Tipo: PDF
+Fonte: resolucao_1638_CFM_2002.pdf
+Trechos: 6
+Caracteres: 5490
+Perguntas atuais: 0
+Sinais: deontico=7 | dispositivo=8 | loja=0
+Auditoria de páginas: OK | PDF=3 | indexadas=3 | ausentes=nenhuma
+
+--- INÍCIO ---
+RESOLUÇÃO CFM nº 1.638/2002 (Publicada no D.O.U. de 9 de agosto de 2002, Seção I, p.184-5)
+VER TAMBÉM RESOLUÇÃO CFM 1821/2007
+Define prontuário médico e torna obrigatória a criação da Comissão de Revisão de Prontuários nas instituições de saúde.
+O CONSELHO FEDERAL DE MEDICINA, no uso das atribuições que lhe confere a Lei nº 3.268, de 30 de setembro de 1957, regulamentada pelo Decreto nº 44.045, de 19 de julho de 1958, e
+CONSIDERANDO que o médico tem o dever de elaborar o prontuário para cada paciente a que assiste, conforme previsto no art. 69 do Código de Ética Médica;
+CONSIDERANDO que o prontuário é documento valioso para o paciente, para o médico que o assiste e para as instituições de saúde, bem como para o ensino, a pesquisa e os serviços públicos de saúde, além de instrumento de defesa legal;
+CONSIDERANDO que compete à instituição de saúde e/ou ao médico o dever de guarda do prontuário, e que o mesmo deve estar disponível nos ambulatórios, nas enfermarias e nos serviços de emergência para permitir a continuidade do tratamento do paciente e documentar a atuação de cada profissional;
+CONSIDERANDO que as instituições de saúde devem garantir supervisão permanente dos prontuários sob sua guarda, visando manter a qualidade e preservação das informações neles contidas;
+CONSIDERANDO que para o armazenamento e a eliminação de documentos do prontuário devem prevalecer os critérios médico-científicos, históricos e sociais de relevância para o ensino, a pesquisa e a prática médica;
+CONSIDERANDO a legislação arquivística brasileira, que normatiza a guarda, a temporalidade e a classificação dos documentos, inclusive dos prontuários médicos;
+CONSIDERANDO o teor do Parecer CFM nº 30/2002, aprovado na Sessão Plenária de 10 de julho de 2002;
+CONSIDERANDO, finalmente, o decidido em 
+
+--- MEIO ---
+RESOLVE: Art. 1º - Definir prontuário médico como o documento único constituído de um conjunto de informações, sinais e imagens registradas, geradas a partir de fatos, acontecimentos e situações sobre a saúde do paciente e a assistência a ele prestada, de caráter legal, sigiloso e científico, que possibilita a comunicação entre membros da equipe multiprofissional e a continuidade da assistência prestada ao indivíduo. Art. 2º - Determinar que a responsabilidade pelo prontuário médico cabe: I. Ao médico assistente e aos demais profissionais que compartilham do atendimento; II. À hierarquia médica da instituição, nas suas respectivas áreas de atuação, que tem como dever zelar pela qualidade da prática médica ali desenvolvida; III. À hierarquia médica constituída pelas chefias de equipe, chefias da Clínica, do setor até o diretor da Divisão Médica e/ou diretor técnico. Art. 3º - Tornar obrigatória a criação das Comissões de Revisão de Prontuários nos estabelecimentos e/ou instituições de saúde onde se presta assistência médica. Art.
+isão Médica e/ou diretor técnico. Art. 3º - Tornar obrigatória a criação das Comissões de Revisão de Prontuários nos estabelecimentos e/ou instituições de saúde onde se presta assistência médica. Art. 4º - A Comissão de que trata o artigo anterior será criada por designação da Direção do estabelecimento, por eleição do Corpo Clínico ou por qualquer outro método que a instituição julgar adequado, devendo ser coordenada por um médico. Art. 5º - Compete à Comissão de Revisão de Prontuários: I. Observar os itens que deverão constar obrigatoriamente do prontuário confeccionado em qualquer suporte, eletrônico ou papel: a. Identificação do paciente – nome completo, data de nascimento (dia, mês e ano com quatro dígitos), sexo, nome da mãe, naturalidade 
+
+--- FINAL ---
+cimento), endereço completo (nome da via pública, número, complemento, bairro/distrito, município, estado e CEP); b. Anamnese, exame físico, exames complementares solicitados e seus respectivos resultados, hipóteses diagnósticas, diagnóstico definitivo e tratamento efetuado; c.
+distrito, município, estado e CEP); b. Anamnese, exame físico, exames complementares solicitados e seus respectivos resultados, hipóteses diagnósticas, diagnóstico definitivo e tratamento efetuado; c. Evolução diária do paciente, com data e hora, discriminação de todos os procedimentos aos quais o mesmo foi submetido e identificação dos profissionais que os realizaram, assinados eletronicamente quando elaborados e/ou armazenados em meio eletrônico; d. Nos prontuários em suporte de papel é obrigatória a legibilidade da letra do profissional que atendeu o paciente, bem como a identificação dos profissionais prestadores do atendimento. São também obrigatórias a assinatura e o respectivo número do CRM; e. Nos casos emergenciais, nos quais seja impossível a colheita de história clínica do paciente, deverá constar relato médico completo de todos os
+procedimentos realizados e que tenham possibilitado o diagnóstico e/ou a remoção para outra unidade. I. Assegurar a responsabilidade do preenchimento, guarda e manuseio dos prontuários, que cabem ao médico assistente, à chefia da equipe, à chefia da Clínica e à Direção técnica da unidade. Art. 6º - A Comissão de Revisão de Prontuários deverá manter estreita relação com a Comissão de Ética Médica da unidade, com a qual deverão ser discutidos os resultados das avaliações realizadas. Art. 7º - Esta resolução entrará em vigor na data de sua publicação. Brasília-DF, 10 de julho de 2002. EDSON DE OLIVEIRA ANDRADE RUBENS DOS SANTOS SILVA Presidente Secretário-Geral
+
+
+==============================================================================================================
+DOCUMENTO: lei_13787_BR_2018
+==============================================================================================================
+Título: Lei nº 13.787, de 27 de dezembro de 2018
+Tipo: HTML
+Fonte: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13787.htm
+Trechos: 4
+Caracteres: 4541
+Perguntas atuais: 0
+Sinais: deontico=3 | dispositivo=20 | loja=0
+Auditoria de páginas: N/A (HTML ou sem PDF local)
+
+--- INÍCIO ---
+Presidência da República Secretaria-Geral Subchefia para Assuntos Jurídicos LEI Nº 13.787, DE 27 DE DEZEMBRO DE 2018. Dispõe sobre a digitalização e a utilização de sistemas informatizados para a guarda, o armazenamento e o manuseio de prontuário de paciente. Art. 1º A digitalização e a utilização de sistemas informatizados para a guarda, o armazenamento e o manuseio de prontuário de paciente são regidas por esta Lei e pela Lei nº 13.709, de 14 de agosto de 2018 . Art. 2º O processo de digitalização de prontuário de paciente será realizado de forma a assegurar a integridade, a autenticidade e a confidencialidade do documento digital. § 1º Os métodos de digitalização devem reproduzir todas as informações contidas nos documentos originais. § 2º No processo de digitalização será utilizado certificado digital emitido no âmbito da Infraestrutura de Chaves Públicas Brasileira (ICP-Brasil) ou outro padrão legalmente aceito. § 3º O processo de digitalização deve obedecer a requisitos dispostos em regulamento. Art. 3º Os documentos originais poderão ser destruídos após a sua digitalização, observados os requisitos constantes do art.
+cesso de digitalização deve obedecer a requisitos dispostos em regulamento. Art. 3º Os documentos originais poderão ser destruídos após a sua digitalização, observados os requisitos constantes do art. 2º desta Lei, e após análise obrigatória de comissão permanente de revisão de prontuários e avaliação de documentos, especificamente criada para essa finalidade. § 1º A comissão a que se refere o caput deste artigo constatará a integridade dos documentos digitais e avalizará a eliminação dos documentos que os originaram. § 2º Os documentos de valor histórico, assim identificados pela comissão a que se refere o caput deste artigo, serão preservados de ac
+
+--- MEIO ---
+e obrigatória de comissão permanente de revisão de prontuários e avaliação de documentos, especificamente criada para essa finalidade. § 1º A comissão a que se refere o caput deste artigo constatará a integridade dos documentos digitais e avalizará a eliminação dos documentos que os originaram. § 2º Os documentos de valor histórico, assim identificados pela comissão a que se refere o caput deste artigo, serão preservados de acordo com o disposto na legislação arquivística. Art. 4º Os meios de armazenamento de documentos digitais deverão protegê-los do acesso, do uso, da alteração, da reprodução e da destruição não autorizados. Parágrafo único. Os documentos oriundos da digitalização de prontuários de pacientes serão controlados por meio de sistema especializado de gerenciamento eletrônico de documentos, cujas características e requisitos serão especificados em regulamento. Art.
+o de prontuários de pacientes serão controlados por meio de sistema especializado de gerenciamento eletrônico de documentos, cujas características e requisitos serão especificados em regulamento. Art. 5º O documento digitalizado em conformidade com as normas estabelecidas nesta Lei e nos respectivos regulamentos terá o mesmo valor probatório do documento original para todos os fins de direito. § 1º Para fins do disposto no caput deste artigo é mandatório que a guarda, o armazenamento e o manuseio dos documentos digitalizados também estejam em conformidade com as normas estabelecidas nesta Lei e nos respectivos regulamentos. § 2º Poderão ser implementados sistemas de certificação para a verificação da conformidade normativa dos processos referida no caput deste artigo. Art. 6º Decorrido o prazo mínimo de 20 (vinte) anos a partir do último registro, os prontuários em suporte de papel e os digitaliz
+
+--- FINAL ---
+enamento e o manuseio dos documentos digitalizados também estejam em conformidade com as normas estabelecidas nesta Lei e nos respectivos regulamentos. § 2º Poderão ser implementados sistemas de certificação para a verificação da conformidade normativa dos processos referida no caput deste artigo. Art. 6º Decorrido o prazo mínimo de 20 (vinte) anos a partir do último registro, os prontuários em suporte de papel e os digitalizados poderão ser eliminados. § 1º Prazos diferenciados para a guarda de prontuário de paciente, em papel ou digitalizado, poderão ser fixados em regulamento, de acordo com o potencial de uso em estudos e pesquisas nas áreas das ciências da saúde, humanas e sociais, bem como para fins
+e paciente, em papel ou digitalizado, poderão ser fixados em regulamento, de acordo com o potencial de uso em estudos e pesquisas nas áreas das ciências da saúde, humanas e sociais, bem como para fins legais e probatórios. § 2º Alternativamente à eliminação, o prontuário poderá ser devolvido ao paciente. § 3º O processo de eliminação deverá resguardar a intimidade do paciente e o sigilo e a confidencialidade das informações. § 4º A destinação final de todos os prontuários e a sua eliminação serão registradas na forma de regulamento. § 5º As disposições deste artigo aplicam-se a todos os prontuários de paciente, independentemente de sua forma de armazenamento, inclusive aos microfilmados e aos arquivados eletronicamente em meio óptico, bem como aos constituídos por documentos gerados e mantidos originalmente de forma eletrônica. Art. 7º Esta Lei entra em vigor na data de sua publicação. Brasília, 27 de dezembro de 2018; 197º da Independência e 130º da República. MICHEL TEMER Torquato Jardim Gustavo do Vale Rocha Este texto não substitui o publicado no DOU de 28.12.2018 *
+

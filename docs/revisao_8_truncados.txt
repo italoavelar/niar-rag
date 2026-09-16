@@ -1,0 +1,811 @@
+
+==============================================================================================================
+DOCUMENTO: ethics_governance_ai_health_WHO_2021
+==============================================================================================================
+Título: Ethics and governance of artificial intelligence for health: WHO guida
+Páginas no PDF: 165
+Última página indexada: 129
+Ausentes: 1, 3-4, 7, 130-165
+Buracos internos: 1, 3-4, 7
+Ausência no final: 130-165
+
+--- PÁGINAS AUSENTES ---
+
+[PÁGINA 1] REVISAR | 134 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 1 WHO GUIDANCE ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH
+
+[PÁGINA 3] POSSIVEL_INDICE_SUMARIO | 4268 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 3 Foreword..................................................................................................................................................... v Acknowledgements................................................................................................................................ vii Abbreviations and acronyms............................................................................................................... x Executive summary................................................................................................................................. xi 1. Introduction.......................................................................................................................................... 1 2. Artificial intelligence.......................................................................................................................... 4 3. Applications of artificial in
+
+[PÁGINA 4] TEXTO_SIGNIFICATIVO | 3035 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 4 6.8 Impacts of artificial intelligence on labour and employment in health and medicine................................................................................................ 58 6.9 Challenges in commercialization of artificial intelligence for health care........ 61 6.10 Artificial intelligence and climate change................................................................ 64 7. Building an ethical approach to use of artificial intelligence for health......................... 65 7.1 Ethical, transparent design of technologies........................................................... 65 7.2 Engagement and role of the public and demonstration of trustworthiness to providers and patients......................................................... 69 7.3 Impact assessment...................................................................................................... 72 7.4 Research agenda for ethical use of artif
+
+[PÁGINA 7] TEXTO_SIGNIFICATIVO | 2188 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 7 Development of this guidance document was led by Andreas Reis (Co-Lead, Health Ethics and Governance Unit, department of Research for Health) and Sameer Pujari (department of Digital Health and Innovation), under the overall guidance of John Reeder (Director, Research for Health), Bernardo Mariano (Director, Digital Health and Innovation) and Soumya Swaminathan (Chief Scientist). Rohit Malpani (consultant, France) was the lead writer. The Co-Chairs of the Expert Group, Effy Vayena (ETH Zurich, Switzerland) and Partha Majumder (National Institute of Biomedical Genomics, India), provided overall guidance for the drafting of the report. WHO is grateful to the following individuals who contributed to development of this guidance. External expert group Najeeb Al Shorbaji, eHealth Development Association, Jordan Arisa Ema, Institute for Future Initiatives, The University of Tokyo, Japan Amel Ghoulia, H3Africa, H3ABioNet, Tunisia J
+
+[PÁGINA 130] PROVAVEL_CONTEUDO_SUBSTANTIVO | 3792 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 114 1. Report of the Secretary-General on SDG progress. Special edition. New York City (NY): United Nations; 2019 (https://sustainabledevelopment.un.org/content/documents/24978Report_of_the_SG_on_SDG_ Progress_2019.pdf, accessed 8 November 2020). 2. Timmermans S, Kaufman R. Technologies and health inequities. Ann Rev Sociol. 2020;46:583–602. 3. Report of the Special Rapporteur on the Promotion and protection of the right to freedom and expression. United Nations General Assembly. 73rd Session (A/73/348). New York City (NY): United Nations; 2018 (https://undocs.org/pdf?symbol=en/A/73/348; accessed 7 January 2021). 4. Recommendation of the Council on Artificial Intelligence (OECD Legal Instruments. OECD/ LEGAL/O449). Paris: Organization for Economic Co-operation and Development; 2019 (https:// legalinstruments.oecd.org/en/instruments/OECD-LEGAL-0449#mainText, accessed 2 December 2020). 5. Hao K. What is machine learning? Machine
+
+[PÁGINA 131] TEXTO_SIGNIFICATIVO | 3926 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 115 19. Innovative, affordable screening and treatment to prevent cervical cancer. Geneva: Unitaid; 2021 (https://unitaid.org/project/innovative-affordable-screening-and-treatment-to-prevent-cervical- cancer/#en, accessed February 2021). 20. Fan R, Zhang N, Yang L, Ke J, Zhao D, Cui Q. AI-based prediction for the risk of coronary heart disease among patients with type 2 diabetes mellitus. Sci Rep. 2020;10:14457. 21. Yan Y, Zhang JW, Zang GY, Pu J. The primary use of artificial intelligence in cardiovascular diseases: What kind of potential role does artificial intelligence play in future medicine? J Geriatr Cardiol. 2019;16(8):585–91. 22. Chaki J, Thillai Ganesh S, Cidham SK, Theertan SA. Machine learning and artificial intelligence based diabetes mellitus detection and self-management: a systematic review. J King Saud Univ Comput Inf Sci. 2020 (https://doi.org/10.1016/j.jksuci.2020.06.013). 23. Singh J. Artificial intelligenc
+
+[PÁGINA 132] TEXTO_SIGNIFICATIVO | 3740 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 116 37. Babic B, Cohen IG, Evgeniou T, Gerke S, Trichakis N. Can AI fairly decide who gets an organ transplant. Harvard Business Review, 1 December 2020. Cambridge (MA): Harvard Business Publishing (https://hbr.org/2020/12/can-ai-fairly-decide-who-gets-an-organ-transplant, accessed 3 December 2020). 38. Raza S. Artificial intelligence for genomic medicine. Cambridge: PHG Foundation, University of Cambridge; 2020 (https://www.phgfoundation.org/documents/artifical-intelligence-for-genomic- medicine.pdf, accessed 11 December 2020). 39. Fleming N. How artificial intelligence is changing drug discovery. Nature Spotlight: Biopharmaceuticals, 30 May 2018 (https://www.nature.com/articles/d41586-018-05267-x, accessed 13 October 2020). 40. New Ebola treatment using artificial intelligence. San Francisco (CA): Atomwise; 2015 (https://www. atomwise.com/2015/03/24/new-ebola-treatment-using-artificial-intelligence/, accessed February 2020).
+
+[PÁGINA 133] PROVAVEL_CONTEUDO_SUBSTANTIVO | 4096 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 117 55. Toh A. Big Data could undermine the COVID-19 response. Wired, 12 April 2020 (https://www.wired. com/story/big-data-could-undermine-the-covid-19-response/, accessed February 2021). 56. McDonald SM. Ebola: A big data disaster. Privacy, property, and the law of disaster experimentation (CIS Papers 2016.01). Delhi: Centre for Internet and Society; 2016 (https://cis-india.org/papers/ ebola-a-big-data-disaster, accessed 20 February 2021). 57. Hao K., Doctors are using AI to triage COVID-19 patients. The tools may be here to stay. MIT Technology Review. 23 April 2020 (https://www.technologyreview.com/2020/04/23/1000410/ai- triage-covid-19-patients-health-care/, accessed 4 October 2020). 58. AI and control of COVID-19 coronavirus. Strasbourg: Council of Europe; 2020 (https://www.coe.int/ en/web/artificial-intelligence/ai-and-control-of-covid-19-coronavirus, accessed 17 September 2020). 59. Ethical considerations to guide the u
+
+[PÁGINA 134] PROVAVEL_CONTEUDO_SUBSTANTIVO | 3844 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 118 72. General recommendations for the processing of personal data in artificial intelligence. Brussels: Red IberoAmerica de Proteccion de Datos, European Union; 2019 (https://www.redipd.org/sites/ default/files/2020-02/guide-general-recommendations-processing-personal-data-ai.pdf, accessed 27 October 2020). 73. Specific guidelines for compliance with the principles and rights that govern the protection of personal data in artificial intelligence projects. Brussels: Red IberoAmerica de Proteccion de Datos, European Union; 2019 (https://www.redipd.org/sites/default/files/2020-02/guide-specific- guidelines-ai-projects.pdf, accessed 27 October 2020). 74. Recommendation CM/Rec (2019)2 of the Committee of Ministers to Member States on the protection of health-related data. Strasbourg: Council of Europe; 2019 (https://www.apda.ad/sites/ default/files/2019-03/CM_Rec%282019%292E_EN.pdf, accessed 14 April 2020). 75. African Union Conv
+
+[PÁGINA 135] PROVAVEL_CONTEUDO_SUBSTANTIVO | 3834 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 119 86. AI utilisation guidelines. The Conference Towards AI Society. Paris: Organization for Economic Co-operation and Development; 2019 (https://www.oecd.ai/dashboards/policy-initiatives/2019-data- policyInitiatives-24346, accessed 5 February 2021). 87. Governance principles for the new generation artificial intelligence – Developing responsible artificial intelligence. China Daily, 17 June 2019 (http://www.chinadaily.com.cn/a/201906/17/ WS5d07486ba3103dbf14328ab7.html, accessed 20 April 2021). 88. Beijing AI principles. Beijing: Beijing Academy of Artificial Intelligence; 25 May 2019. (https://www. baai.ac.cn/news/beijing-ai-principles-en.html, accessed 20 April 2021) 89. Singapore wins international award for its artificial intelligence governance and ethics initiatives. Singapore: InfoComm Media Development Authority, 9 April 2019 (https://www.imda.gov.sg/news- and-events/Media-Room/Media-Releases/2019/singapore-wins-inte
+
+[PÁGINA 136] TEXTO_SIGNIFICATIVO | 3821 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 120 101. Public debate. Strasbourg: Council of Europe; 2021 (https://www.coe.int/en/web/bioethics/public- debate, accessed 17 August 2020). 102. Morozov E. To save everything, click here. New York City (NY): Public Affairs; 2014. 103. Matheny M, Thadaney Israni S, Ahmed M, Whicher D, editors. Artificial intelligence in health care: The hope, the hype, the promise, the peril. Washington DC: National Academy of Medicine; 2019 (https://nam.edu/artificial-intelligence-special-publication/, accessed 18 November 2020). 104. Gasser U, Ienca M, Scheibner J, Sleigh J, Vayena E. Digital tools against COVID-19: Taxonomy, ethical challenges, and navigation aid. Lancet Digit Health. 2020;2(8):e425–34. 105. Fenech M, Strukelj N, Buston O. The ethical, social, and political challenges of artificial intelligence in healthcare. London: Future Advocacy; 2018 (https://cms.wellcome.org/sites/default/files/ai-in- health-ethical-social-political-ch
+
+[PÁGINA 137] PROVAVEL_CONTEUDO_SUBSTANTIVO | 3749 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 121 119. Mozur P , Zhong R, Krolik A. In coronavirus fight, China gives citizens a color code, with red flags. The New York Times, 1 March 2020 (https://www.nytimes.com/2020/03/01/business/china- coronavirus-surveillance.html, accessed 14 June 2020). 120. Angwadi centres, digital tracking in India’s blueprint for COVID-19 vaccine drive. The Wire (Science), 6 November 2020 (https://science.thewire.in/health/anganwadi-centres-digital-tracking-in-indias- blueprint-for-covid-19-vaccination-drive/, accessed 13 January 2021). 121. Immunity passports and COVID-19: An explainer. London: Privacy International; 2020 (https:// privacyinternational.org/explainer/4075/immunity-passports-and-covid-19-explainer, accessed 30 November 2020). 122. Fisher M, Han CS. How South Korea flattened the curve. The New York Times, 23 March 2020 (https://www.nytimes.com/2020/03/23/world/asia/coronavirus-south-korea-flatten-curve.html, accessed 7 December 
+
+[PÁGINA 138] PROVAVEL_CONTEUDO_SUBSTANTIVO | 3760 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 122 135. Lewis P , Conn D, Pegg D. UK government using confidential patient data in coronavirus response. The Guardian, 12 April 2020 (https://www.theguardian.com/world/2020/apr/12/uk-government- using-confidential-patient-data-in-coronavirus-response, accessed 30 November 2020). 136. Hern A. Anonymous browsing data can be easily exposed, researchers reveal. The Guardian, 1 August 2017 (https://www.theguardian.com/technology/2017/aug/01/data-browsing-habits- brokers, accessed 12 February 2020). 137. Ross C. At Mayo Clinic, sharing patient data with companies fuels AI innovation – and concerns about consent. STAT News, 3 June 2020 (https://www.statnews.com/2020/06/03/mayo-clinic- patient-data-fuels-artificial-intelligence-consent-concerns/, accessed 18 November 2020). 138. Mann L. Left to other peoples’ devices? A political economy perspective on the Big Data revolution in development. Dev Change. 2017;49(2):doi: 10.1111/dech.1
+
+[PÁGINA 139] TEXTO_SIGNIFICATIVO | 3700 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 123 152. Hurtgen H, Kerkhoff S, Lubatschowski J, Möller M. Rethinking AI talent strategy as automated machine learning comes of age. New York City (NY): McKinsey and Co., 2020 (https://www. mckinsey.com/business-functions/mckinsey-analytics/our-insights/rethinking-ai-talent-strategy-as- automated-machine-learning-comes-of-age, accessed 4 November 2020). 153. Dixon-Woods M, Pronovost PJ. Patient safety and the problem of many hands. BMJ Qual Saf. 2016;25(7):485–8. 154. Van de Poel I, Royakkers L, Zwart SD, de Lima T, Doorn N, Fahlquist JN. Moral responsibility and the problem of many hands. New York City (NY): Routledge; 2015. 155. Braun M, Hummel P , Beck S, Dabrock P . Primer on an ethics of AI-based decision support systems in the clinic. J Med Ethics. 2020;doi:10.1136/medethics-2019-105860. 156. Metcalf J, Moss E, Boyd D. Owning ethics: Corporate logics, Silicon Valley, and the institutionalisation of ethics. Soc Res. 2019;
+
+[PÁGINA 140] TEXTO_SIGNIFICATIVO | 3770 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 124 172. Our work with Google Health UK. London: NHS Royal Free London; 2019 (https://www.royalfree. nhs.uk/patients-visitors/how-we-use-patient-information/our-work-with-deepmind/, accessed 12 February 2021). 173. Shepherd C. China’s online health platforms boom in wake of coronavirus. The Financial Times, 16 December 2020 (https://www.ft.com/content/22b22543-0fb5-4a8a-8ec0-e3fd067a5190, accessed 1 February 2021). 174. Bridging gaps in healthcare industry with technology. Shenzhen: Tencent Holdings Ltd; 2019 (https://www.tencent.com/en-us/articles/2200933.html, accessed 6 November 2020). 175. How Baidu, Alibaba, and Tencent aim to disrupt Chinese health care. Forkast, 28 January 2020 (https://forkast.news/baidu-alibaba-tencent-china-health-care-blo/, accessed 13 February 2021). 176. Jourdan A. AI ambulances and robot doctors: China seeks digital salve to ease hospital strain. Reuters, 28 June 2018 (https://de.reuters.com/arti
+
+[PÁGINA 141] TEXTO_SIGNIFICATIVO | 3593 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 125 188. Sobre la predicción automática de embarazos adolescents [On automatic prediction of adolescent pregnancies]. Buenos Aires: Universidad de Buenos Aires, Laboratorio de Inteligencia Artificial Aplicada; 2018 (https://www.dropbox.com/s/r7w4hln3p5xum3v/%5BLIAA%5D%20Sobre%20la%20 predicci%C3%B3n%20autom%C3%A1tica%20de%20embarazos%20adolescentes.pdf, accessed 12 February 2021). 189. Venturini J. Surveillance and social control: How technology reinforces structural inequality in Latin America. London: Privacy International; 2019 (https://privacyinternational.org/news-analysis/3263/ surveillance-and-social-control-how-technology-reinforces-structural-inequality, accessed 12 February 2021). 190. Ortiz Freuler J, Iglesias C. Algorithms and artificial intelligence in Latin America: A study of implementation by governments in Argentina and Uruguay. Washington DC: World Wide Web Foundation; 2018 (http://webfoundation.org/docs/2018
+
+[PÁGINA 142] PROVAVEL_CONTEUDO_SUBSTANTIVO | 3748 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 126 204. Contag M, Li G, Pawlowski A, Domke F, Levchenko K, Holz T et al. How they did it: An analysis of emission defeat devices in modern automobiles. In: IEEE Symposium on Security and Privacy. San Diego (CA): University of California at San Diego; 2017 (https://cseweb.ucsd.edu/~klevchen/diesel- sp17.pdf, accessed 8 November 2020). 205. Baraniuk C. How tech bugs could be killing thousands in our hospitals. New Scientist, 16 May 2018 (https://www.newscientist.com/article/mg23831781-700-how-tech-bugs-could-be- killing-thousands-in-our-hospitals/, accessed 20 August 2020). 206. Xu K, Soucat A, Kutzin J, Siroka A, Aranguren Garcia M, Dupuy J et al. Global spending on health: A world in transition. Geneva; World Health Organization; 2019 (https://apps.who.int/iris/bitstream/ handle/10665/330357/WHO-HIS-HGF-HF-WorkingPaper-19.4-eng.pdf?ua=1, accessed 25 February 2021). 207. Vayena E, Haeusermann T, Adjekum A, Blasimme A. Digital 
+
+[PÁGINA 143] TEXTO_SIGNIFICATIVO | 3903 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 127 222. Bridging gaps in healthcare industry with technology. Shenzhen: Tencent Holdings Ltd; 2019 (https://www.tencent.com/en-us/articles/2200933.html, accessed 24 November 2020). 223. Veale M. Privacy is not the problem with the Google-Apple contact-tracing toolkit. The Guardian, 1 July 2020 (https://www.theguardian.com/commentisfree/2020/jul/01/apple-google-contact- tracing-app-tech-giant-digital-rights, accessed 24 November 2020). 224. Hao K. Training an AI model can emit as much carbon as five cars in their lifetime. MIT Technology Review, 6 June 2019 (https://www.technologyreview.com/2019/06/06/239031/training-a-single-ai- model-can-emit-as-much-carbon-as-five-cars-in-their-lifetimes/, accessed 12 December 2020) 225. DeWeerdt S. It’s time to talk about the carbon footprint of artificial intelligence. Anthropocene, 10 November 2020 (https://www.anthropocenemagazine.org/2020/11/time-to-talk-about-carbon- footprint-artific
+
+[PÁGINA 144] PROVAVEL_CONTEUDO_SUBSTANTIVO | 3848 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 128 238. Artificial intelligence and health, summary report of a roundtable held on 16 January 2019. London: Academy of Medical Sciences; 2019 (https://acmedsci.ac.uk/file-download/77652269, accessed 17 February 2020). 239. Our data driven future in healthcare. People and partnerships at the heart of health-related technologies. London: Academy of Medical Sciences; 2018 (https://acmedsci.ac.uk/file- download/74634438, accessed 17 February 2020). 240. Trust in technology. London: HSBC Holdings Ltd; undated (http://www.hsbc.com/trust-in- technology-report, accessed April 2021). 241. Trustworthy AI in health: Background paper for the G20 AI dialogue, digital economy, and trade. Paris: Organization for Economic Co-operation and development; 2020 (https://www.oecd.org/ health/trustworthy-artificial-intelligence-in-health.pdf, accessed 11 November 2020). 242. Blog: ICO regulatory sandbox. London: Information Commissioner’s Office; 2
+
+[PÁGINA 145] PROVAVEL_CONTEUDO_SUBSTANTIVO | 3939 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 129 254. Price WN, Gerke S, Cohen IG. Potential liability for physicians using artificial intelligence. JAMA. 2019;322(18):1765–6. 255. Price WN. Artificial intelligence in healthcare: Applications and legal implications. The SciTech Lawyer. 2017;14(1). University of Michigan Law School Scholarship Repository (https://repository. law.umich.edu/cgi/viewcontent.cgi?article=2932&context=articles, accessed April 2021). 256. Gerke S, Minssen T, Cohen G. Chapter 12. Ethical and legal challenges of artificial intelligence- driven healthcare. In: Bohr A, Memarzadeh K, editors. Artificial intelligence in healthcare. Cambridge (MA): Academic Press;2020:295–336. 257. Ordish J. Briefing. Legal liability for machine learning in healthcare. Cambridge: PHG Foundation; 2018 (https://www.phgfoundation.org/documents/briefing-note-legal-liability-for-machine- learning-in-healthcare.pdf, accessed 22 November 2020). 258. Minssen T, Mimler M, Mak V
+
+[PÁGINA 146] PROVAVEL_CONTEUDO_SUBSTANTIVO | 3957 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 130 269. Otake T. Medical big data to be pooled for disease research and drug development in Japan. Japan Times, 15 May 2017 (https://www.japantimes.co.jp/news/2017/05/15/reference/medical-big-data- pooled-disease-research-drug-development-japan/#:~:text=The%20law%2C%20commonly%20 called%20Jisedai,the%20development%20of%20new%20drugs, accessed 14 February 2021). 270. Regulations on data governance – questions and answers. Brussels: European Commission; 2020 (https:// ec.europa.eu/commission/presscorner/detail/en/QANDA_20_2103, accessed 13 December 2020). 271. Spector-Bagdady K, Hutchinson R, O’Brien Kaleba E, Kheterpal S. Sharing health data and biospecimens with industry – A principle-driven, practical approach. NEJM. 2020;382(22):2072–5. 272. Greenberg Z. What is the blood of a poor person worth? New York Times, 1 February 2019 (https://www. nytimes.com/2019/02/01/sunday-review/blood-plasma-industry.html, accessed 17 Novembe
+
+[PÁGINA 147] PROVAVEL_CONTEUDO_SUBSTANTIVO | 3824 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 131 285. HHS finalizes historic rules to provide patients with more control of their patient data. Washington DC: Department of Health and Human Services; 2020 (https://www.hhs.gov/about/ news/2020/03/09/hhs-finalizes-historic-rules-to-provide-patients-more-control-of-their-health-data. html, accessed 12 September 2020) 286. All of Us Research Program. Bethesda (MD): National Institutes of Health; 2020 (https://allofus.nih. gov/, accessed 14 November 2020). 287. European health data space. Brussels; European Commission; 2020 (https://ec.europa.eu/health/ ehealth/dataspace_en, accessed 14 November 2020). 288. Digital innovation hub programme prospectus. Appendix: Principles for participation. London: Health Data Research UK; 2019 (https://www.hdruk.ac.uk/wp-content/uploads/2019/07/Digital- Innovation-Hub-Programme-Prospectus-Appendix-Principles-for-Participation.pdf, accessed 15 November 2020). 289. Ornstein C, Thomas K. Sloan 
+
+[PÁGINA 148] PROVAVEL_CONTEUDO_SUBSTANTIVO | 3806 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 132 298. European Open Science Cloud (https://www.eosc-portal.eu/). 299. Corrales Compagnucci, M, Minssen T, Seitz C, Aboy M. Lost on the high seas without a safe harbor or a shield? Navigating cross-border data transfers in the pharmaceutical sector after Schrems II invalidation of the EU-US privacy shield. Eur Pharmaceut Law Rev. 2020;4(3):153–60. 300. Abbott R. Inventive machines: Rethinking invention and patentability. In: Seuba X, Geiger C, Penin J, editors. Intellectual property and digital trade in the age of artificial intelligence and big data (Global perspectives and challenges for the intellectual property system. Issue No. 5). Geneva: International Centre for Trade and Sustainable Development; Strasbourg: Center for International Intellectual Property Studies; 2018 (http://www.ceipi.edu/fileadmin/upload/DUN/CEIPI/Documents/ Publications_CEIPI___ICTSD/CEIPI-ICTSD_Issue_5_Final.pdf, accessed 22 August 2020). 301. EPO
+
+[PÁGINA 149] PROVAVEL_CONTEUDO_SUBSTANTIVO | 3725 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 133 313. Isaac M, Wakabayashi D, Cave D, Lee E. Facebook blocks news in Australia, diverging with Google on proposed law. The New York Times, 17 February 2021. (https://www.nytimes.com/2021/02/17/ technology/facebook-google-australia-news.html, accessed 24 February 2021). 314. Taylor J. Facebook’s botched Australia new ban hits health departments, charities, and its own pages. The Guardian, 18 February 2021 (https://www.theguardian.com/technology/2021/feb/18/ facebook-blocks-health-departments-charities-and-its-own-pages-in-botched-australia-news-ban, accessed 24 February 2021). 315. Taylor J, McGowan M, Bland A. Misinformation runs rampant as Facebook says it may take a week before it unblocks some pages. The Guardian, 19 February 2021 (https://www.theguardian.com/ technology/2021/feb/19/misinformation-runs-rampant-as-facebook-says-it-may-take-a-week- before-it-unblocks-some-pages, accessed 24 February 2021). 316. Internation
+
+[PÁGINA 150] TEXTO_SIGNIFICATIVO | 1723 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 134 329. Revealed: 50 million Facebook profiles harvested for Cambridge Analytica in major data breach. The Guardian, 17 March 2018 (https://www.theguardian.com/news/2018/mar/17/cambridge- analytica-facebook-influence-us-election, accessed 23 November 2020). 330. Vayena E, Blasimme A, Cohen IG. Machine learning in medicine: Addressing ethical challenges. PLoS Med. 2018;15(11):e1002689. 331. AI Policy Observatory fact sheet. Paris: Organization for Economic Co-operation and Development; 2020 (https://www.oecd.org/going-digital/ai/about-the-oecd-ai-policy-observatory.pdf, accessed 17 November 2020). 332. Rao AS, Verweij G. Sizing the prize: What’s the real value of AI for your business and can you capitalise? London: Pricewaterhouse Coopers; 2019 (https://www.pwc.com/gx/en/issues/analytics/ assets/pwc-ai-analysis-sizing-the-prize-report.pdf, accessed 24 August 2020) 333. Davis SLM. Perspective. The Trojan horse: Digital health, 
+
+[PÁGINA 151] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2278 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 135 The following provides practical guidance for several key groups that use AI in the health field: AI designers and developers, ministries of health and health care institutions and providers. It reflects the main principles, ideas and recommendations in this report. A1. Considerations for AI developers The following considerations are for individuals, research organizations and companies involved in the design, deployment and updating of AI technologies used in health. AI developers include professionals with expertise in computer science or AI, who often also have a background in clinical or health care. Some AI developers are not sited in health systems, even though the products they design will play an increasingly important role in health. Some providers and hospitals are investing in and designing AI technologies and should consider the issues listed below with their existing ethical obligations as medical providers. 
+
+[PÁGINA 152] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2600 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 136 • Will use of the tool have indirect outcomes? • Are the validity and efficiency of the tool limited over time? 2. Engage multiple stakeholders and understand contexts. AI technologies used in health care depend on the context and must be designed to work appropriately for different types of health-care providers and different uses by patients or practitioners before, during or after clinical care. Specific considerations: • Define all possible contexts in which the AI technology will be used, including geographical scope, users’ background and main languages, digital skills and regulatory frameworks. • Involve individuals who understand various contexts in design to align the objectives and expected outcomes and avoid transferring bias from the data and amplifying it. • Design, discuss and validate the formulation, conceptualization, proposed approach and solution with stakeholders in the targeted settings, including poli
+
+[PÁGINA 153] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2217 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 137 • What would be the impact and consequences of the unexpected outcomes? • What are the available resources and potential trade-offs? • What approaches would mitigate risk? 5. Address biases. Biases in data due to past or continuing discrimination could be replicated. An AI technology should be used only if such bias can be mitigated. AI should be designed to reduce inequities and bias. Specific considerations: • Determine how the study data were collected and how new study data will be collected, and look for any bias in the data according to the context. • Consider the majority and minority groups included in the data and whether any under-representation that results in bias can be mitigated. • Examine the effects of ethnicity, age, race, gender and other traits, and ensure that AI technologies with biases do not have negative impacts on individuals and groups according to these different characteristics. • Prepare effect
+
+[PÁGINA 154] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2450 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 138 Specific considerations: • Adhere to country-specific or regional export rules and guidelines, such as the EU GDPR, Singapore’s Personal Data Protection Act or the US Health Insurance Portability and Accountability Act. • Identify open concepts and open norms that should be specified for compliance, e.g. in GDPR Article 22, the “far reaching effects” in “Person may not be subjected solely to automated decision procedure with far reaching effects”. • Define relevant open norms and concepts that can be justified to affected parties and experts with relevant knowledge of the application. 2. Establish data management plans. Clear management plans and protection guidelines should be established for data collection, storage, organization and access to ensure data security and safeguard privacy and confidentiality. Specific considerations: • Understand the data collection and sharing requirements and regulations in the countries,
+
+[PÁGINA 155] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2209 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 139 Specific considerations (examples of standards): • ISO standards (security and privacy) • US National Institute of Standards and Technology (security and privacy) • IEEE 7000 series (privacy and fairness) • Health Level 7 (transfer of administrative and clinical health data) Deploying an AI technology and improving it after deployment 1. Engage and educate multiple stakeholders for deployment and maintenance. Prioritize inclusivity throughout to ensure better understanding of needs and to build adapted solutions for multiple stakeholders. Specific considerations • Clearly delineate responsibility for what to do, when and how. • Design, discuss and validate the proposed approach with various stakeholders in all targeted regions, including policy- and decision-makers, project owners and leaders, project managers, solution engineers and developers, potential users, domain experts and experts in ethics and information privacy.
+
+[PÁGINA 156] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2652 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 140 A2. Considerations for ministries of health The following considerations are intended for ministries of health, which will have the primary responsibility for determining whether and how AI technologies should be integrated into health systems, the conditions under which they should be used, the protection of individuals that must accompany use of such technologies and policies that can address both expected and unexpected ethical challenges. Evaluation, regulation, deployment and oversight of AI technologies will require inter-ministerial coordination. Thus, while these considerations are directed to ministries of health, implementation will require collaboration with other relevant ministries, such as of information technology and education. These considerations are not comprehensive but may be a starting-point for ministries of health to ensure that the use of AI technologies is consonant with the wider objective of the
+
+[PÁGINA 157] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2364 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 141 are identified and addressed (or avoided entirely) and an approved AI device can be re-tested and monitored to measure its performance and any changes that may occur once it has been approved. Regulatory agencies can support testing, transparent communication of outcomes and monitoring of’ the performance and efficacy of a technology. Many LMIC still lack sufficient regulatory capacity to assess drugs, vaccines and devices, and the rapid arrival of AI technologies could mean that their regulatory agencies cannot accurately assess or regulate such technologies for the public good. Specific considerations • Countries should have sufficient regulatory capacity to ensure rigorous scrutiny of AI technologies on which countries rely in health care. • For certain low-risk AI technologies, regulators may consider “lighter” premarket scrutiny. • AI technologies should be tested prospectively in randomized trials and not against exi
+
+[PÁGINA 158] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2363 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 142 Prepare for the introduction and use of AI technologies. 1. Institutional preparedness and technical capacity Ministries of health should have the necessary human and technical resources to realize the full benefits of AI technologies for health while mitigating any negative impacts. Specific considerations • Training and capacity-building based on established criteria should be organized for government officials to evaluate whether an AI technology is based on ethical principles. • Health-care authorities and medical professionals should be involved and engaged in AI design and, when possible, software engineering. • Civil society, medical staff and patient groups should be consulted about the introduction of AI technology and included in both external audit and monitoring of its functioning. • The introduction of an AI technology should be accompanied by appropriate investments by the health system to capture its benefit
+
+[PÁGINA 159] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2303 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 143 regulated, with the informed consent of data providers (patients). • Access to and use of data from digital self-care applications and/or wearable technologies should also be regulated. Data from these applications and technologies should be collected, stored and used in accordance with principles for data minimization. • Patients and consumers who provide data should have access to and be allowed to reuse and thereby benefit from their data. Their data should not be monopolized by an AI technology provider. • Quality control measures should be implemented to ensure the representativeness of data from different population groups. • Mechanisms and procedures should be in place to collect relevant patient data to train AI technology according to the environment, culture and specifics of the community in which the technology is intended to be used. • Patients and consumers should know what data are used in training AI systems
+
+[PÁGINA 160] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2626 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 144 3. Privacy, confidentiality and informed consent in the collection and use of patient data The autonomy and trust of patients who provide data are paramount, especially meaningful individual control over data. Health-data processing should include respect for the right to privacy and should ensure that patients maintain control over decisions, including their informed consent. Specific considerations: • Up-to-date data protection and confidentiality laws should be a prerequisite for use of AI. • Independent oversight and other forms of redress should be available to protect patient privacy and data confidentiality. • Data protection supervisory agencies should have sufficient resources for effective privacy protection. • Ministries of health should employ experts to determine whether AI tools meet standards of privacy to foster the general trust of patients who provide data. • Ministries of health should have a protocol fo
+
+[PÁGINA 161] PROVAVEL_CONTEUDO_SUBSTANTIVO | 744 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 145 AI should be extended carefully to avoid situations in which large numbers of people receive an accurate diagnosis of a health condition in the absence of appropriate treatment options. Specific considerations • Ministries of health have a duty to ensure equitable access to all to AI-based health care, regardless of gender, geography, ethnicity and other conditions. • Ministries of health have a duty to provide treatment after AI-based testing and confirmation of disease. • Ministries of health should ensure that the benefits of data from AI are fairly shared with the patients who provided the data for AI training and not monopolized by technology service providers. ANNEX
+
+[PÁGINA 162] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2470 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 146 A3. Considerations for health-care institutions and providers The following considerations are intended for health-care institutions and providers, such as hospitals, doctors and nurses. While programmers may be those primarily responsible for the design of AI technologies and ministries of health and regulatory agencies for approval and selection of such technologies for use, health-care providers determine which technologies to use and how and may also provide direct feedback to the health-care system, the medical community and the designers of the technologies about whether they meet the needs of patients. The following is not comprehensive but may be used as a starting point as health-care providers increase use of AI for health care. Use of AI technologies for health outside regular health-care settings is discussed in section 3.1 of the report. Three areas are considered: whether the AI technology is necessary and ap
+
+[PÁGINA 163] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2130 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 147 Specific considerations: • Ensure that AI with certain biases does not have negative impacts according to race or ethnicity or that the bias can be mitigated. • If bias cannot be removed, ensure that this is stated transparently and reflected in decisions, e.g. to be taken into consideration by a provider or patient. 4. Safeguard privacy Health-care providers must prevent re-identification, especially for datasets that can be linked by third parties to re-identify individuals. Specific considerations • Understand issues related to privacy and reverse engineering. • Ensure that any option for use of an AI technology in a clinical setting favours privacy and that any reduction in privacy is actively agreed. • Take the necessary measures to prevent leakage of identifiable information. 5. Institute regular challenge and review. Even if an AI technology is deemed appropriate up front, it must be subject to regular challenge and
+
+[PÁGINA 164] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2311 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 148 • Confirm the support of experts, including partnerships with academic institutions and commercial entities, and appropriate agreements with respect to IP , accountability, confidentiality, ethics, access and commercialization. • Establish commonly agreed ethical principles for the collection, sharing and use of the data and its governance. 2. Understand local perspectives. The perspectives of local consumers should be recognized, particularly the sovereignty of indigenous peoples over their data for the collective benefit of people. This includes determining whether the health service has a “social license” to use AI, i.e. the consent of communities and/or individuals. Specific considerations: • Public and consumer communication and education about AI should be adequate. • Providers should secure a “social license” from the communities involved. • Providers should ensure sovereignty and governance of indigenous population
+
+[PÁGINA 165] POSSIVEL_CAPA_FRONT_MATTER | 270 chars
+ETHICS AND GOVERNANCE OF ARTIFICIAL INTELLIGENCE FOR HEALTH 149 Health Ethics and Governance Unit Research for Health Department Digital Health and Innovation Department Division of the Chief Scientist World Health Organization Avenue Appia 20 1121 Geneva 27 Switzerland
+
+--- RESUMO AUTOMÁTICO ---
+Provável conteúdo substantivo: 4, 7, 130-164
+Provável capa/índice/front matter: 3, 165
+Sem/pouco texto extraível: nenhuma
+
+==============================================================================================================
+DOCUMENTO: plano_brasileiro_ia_BR_2025
+==============================================================================================================
+Título: Plano Brasileiro de Inteligência Artificial
+Páginas no PDF: 108
+Última página indexada: 105
+Ausentes: 1-3, 9-10, 30, 53, 94, 106-108
+Buracos internos: 1-3, 9-10, 30, 53, 94
+Ausência no final: 106-108
+
+--- PÁGINAS AUSENTES ---
+
+[PÁGINA 1] POUCO_TEXTO | 65 chars
+Plano Brasileiro de Inteligência Artiﬁcial IA para o bem de todos
+
+[PÁGINA 2] SEM_TEXTO_EXTRAIVEL | 0 chars
+[sem texto extraível]
+
+[PÁGINA 3] REVISAR | 85 chars
+Brasília – DF 2025 Plano Brasileiro de Inteligência Artificial IA para o bem de todos
+
+[PÁGINA 9] POSSIVEL_INDICE_SUMARIO | 1065 chars
+Sumário Apresentação 9 Introdução 11 1. O contexto da inteligência artificial no mundo e no Brasil 15 1.1. O que é inteligência artificial? 15 1.2. O potencial transformador da inteligência artificial 15 1.3. Janelas de oportunidades para o Brasil 19 1.4. Aspectos econômicos da IA e desafios para aplicação na indústria brasileira 20 2. O que é uma IA para o Bem de Todos? 25 3. Plano de ação 29 3.1. Premissas e objetivo 29 3.2. Montante de Investimentos 30 3.3. Ações de impacto imediato 30 3.4. Ações estruturantes 31 3.4.1. Eixo 1: Infraestrutura e desenvolvimento de IA 34 3.4.2. Eixo 2: Difusão, formação e capacitação em IA 37 3.4.3. Eixo 3: IA para melhoria do serviço público 38 3.4.4. Eixo 4: IA para inovação empresarial 41 3.4.5. Eixo 5: Apoio ao processo regulatório e de governança da IA 42 4. Governança e monitoramento do Plano de IA para o Bem de Todos 45 Anexo 1. Ações de impacto imediato 47 Anexo 2. Ações estruturantes 67 Anexo 3. Glossário dos termos utilizados no PBIA 93 Sigl
+
+[PÁGINA 10] SEM_TEXTO_EXTRAIVEL | 0 chars
+[sem texto extraível]
+
+[PÁGINA 30] SEM_TEXTO_EXTRAIVEL | 0 chars
+[sem texto extraível]
+
+[PÁGINA 53] POSSIVEL_INDICE_SUMARIO | 2523 chars
+IA para o bem de todos Plano Brasileiro de Inteligência Artificial 51 » Impactos esperados: avanço na eficiência diagnóstica; fortalecimento de parcerias; melhoria na qualidade dos serviços de saúde; estímulo à inovação no setor de saúde; promoção da visibilidade internacional; transformação no atendimento em saúde; melhoria na qualidade de vida da população idosa; e redução dos custos com saúde pública. » Indicadores: Resultados: número total de amostras coletadas e integradas na base de dados nacional de pessoas idosas; índice de correlação entre dados de saúde e variáveis climáticas; taxa de precisão diagnóstica de chatbot comparada a diagnósticos clínicos; avaliação qualitativa e quantitativa de protótipos por profissionais de saúde e pacientes. Impactos: indicadores de qualidade de vida de idosos; número de casos de doenças em idosos. » Recursos: R$ 9.623.723,00 (recursos orçamentários). » Instituições envolvidas: MS e Universidade Federal de Pernambuco (UFPE). Agricultura e Pecuá
+
+[PÁGINA 94] SEM_TEXTO_EXTRAIVEL | 0 chars
+[sem texto extraível]
+
+[PÁGINA 106] SEM_TEXTO_EXTRAIVEL | 0 chars
+[sem texto extraível]
+
+[PÁGINA 107] SEM_TEXTO_EXTRAIVEL | 0 chars
+[sem texto extraível]
+
+[PÁGINA 108] POUCO_TEXTO | 65 chars
+Plano Brasileiro de Inteligência Artiﬁcial IA para o bem de todos
+
+--- RESUMO AUTOMÁTICO ---
+Provável conteúdo substantivo: nenhuma
+Provável capa/índice/front matter: 9, 53
+Sem/pouco texto extraível: 1-2, 10, 30, 94, 106-108
+
+==============================================================================================================
+DOCUMENTO: de_identifying_government_datasets_NIST_2023
+==============================================================================================================
+Título: De-Identifying Government Datasets: Techniques and Governance
+Páginas no PDF: 122
+Última página indexada: 91
+Ausentes: 1, 6, 13, 42, 44-45, 92-122
+Buracos internos: 1, 6, 13, 42, 44-45
+Ausência no final: 92-122
+
+--- PÁGINAS AUSENTES ---
+
+[PÁGINA 1] POSSIVEL_CAPA_FRONT_MATTER | 267 chars
+NIST Special Publication NIST SP 800-188 De-Identifying Government Datasets: Techniques and Governance Simson Garfnkel Joseph Near Aref N. Dajani Phyllis Singer Barbara Guttman This publication is available free of charge from: https://doi.org/10.6028/NIST.SP.800-188
+
+[PÁGINA 6] REVISAR | 222 chars
+Keywords data life cycle; de-identifcation; differential privacy; direct identifers; Disclosure Review Board; k-anonymity; privacy; pseudonymization; quasi-identifers; re-identifcation; syn- thetic data; The Five Safes. ii
+
+[PÁGINA 13] TEXTO_SIGNIFICATIVO | 1975 chars
+Acknowledgments The authors wish to thank the U.S. Census Bureau for its help in researching and preparing this publication, with specifc thanks to John Abowd, Ron Jarmin, Christa Jones, and Laura McKenna. The authors would also like to thank Luk Arbuckle, Andrew Baker, Paul Black, Daniel Barth-Jones, Christi Dant, Khaled El Emam, Robert Gellman, Tom Krenzke, Naomi Lefkovitz, Bradley Malin, Kevin Mangold, John Moehrke, Linda Sanchez, Denise Sturdy, and Chris Traver for providing comments on previous drafts and their valuable insights, all of which were helpful in creating this publication. The authors also wish to thank several organizations that provided useful comments on previous drafts of this publication: Anonos (with comments from Odia Kagan Partner, Chair of GDPR Com- pliance and International Privacy, Fox Rothschild LLP); the Association for Computing Machinery’s U.S. Technology Policy Committee; the Defense Contract Management Agency (DCMA) Informa- tion Assurance Directorate;
+
+[PÁGINA 42] TEXTO_SIGNIFICATIVO | 2527 chars
+NIST SP 800-188 September 2023 NIST SP 800-188 DE-IDENTIFYING GOVERNMENT DATASETS 30 Figure 1 Michener et al.’s view of the data life cycle is a true cycle, with analysis guiding future collection. It is unclear how de-identification fits into a circular life cycle model, as the data owner typically retains access to the identified data. However, if the organization employs de-identification, it could be performed during the Collect, or between Collect and Assure if identified data were collected but the identifying information was not actually needed. Alternatively, de-identification could be applied after Describe and prior to Deposit, to avoid archiving identifying information. Chisholm and others describe the data life cycle as a linear process that involves Data Capture → Data Maintenance → Data Synthesis → Data Usage → {Data Publication & Data Archival} → Data Purging:99 Figure 2 Chisholm's view of the data life cycle is a linear process with a branching point after data usage. 9
+
+[PÁGINA 44] REVISAR | 244 chars
+NIST SP 800-188 September 2023 NIST SP 800-188 DE-IDENTIFYING GOVERNMENT DATASETS 32 Figure 3 Life cycle model for government data releases, from Altman et al. Fig. 3. Altman’s “modern approach to privacy-aware government data releases” [97] 30
+
+[PÁGINA 45] PROVAVEL_CONTEUDO_SUBSTANTIVO | 1688 chars
+NIST SP 800-188 September 2023 NIST SP 800-188 DE-IDENTIFYING GOVERNMENT DATASETS 33 Figure 4 Conceptual diagram of the relationship between post-transformation identifiability, level of expected harm, and suitability of selected privacy controls for a data release. From Altman et al. Agencies performing de-identification should document that: • Techniques used to perform the de-identification are theoretically sound and generally accepted;100 • Software used to perform the de-identification is reliable for the intended task; 100 Specifically, agencies may wish to mirror the language of the HIPAA Privacy Rule’s expert determination method, which states: “The second way to de-identify PHI is to have a qualified statistician determine, using(1) A person with appropriate knowledge of and experience with generally accepted statistical and scientific principles and methods, for rendering information not individually identifiable: (i) Applying such principles and methods, determines that the
+
+[PÁGINA 92] TEXTO_SIGNIFICATIVO | 2276 chars
+References [1] July 27, 2020. URL : https://www.nist.gov/blogs/cybersecurity-insights/differential- privacy-privacy-preserving-data-analysis-introduction-our. [2] 115th Congress (2017–2018). Public Law 115-435: The Foundations for Evidence- Based Policymaking Act of 2018. 2018. URL : https://www.congress.gov/bill/115th- congress/house-bill/4174. [3] 45 CFR 164 Health Insurance Portability and Accountability Act of 1996 (HIPAA) Privacy Rule Safe Harbor method Standard: De-identifcationof protected health information. [4] 81 FR 49689: Revision of OMB Circular No. A-130, “Managing Information as a Strategic Resource. July 28, 2016. URL : https : / / www. cio . gov / policies - and - priorities/circular-a-130/. [5] 95th Congress. Public Law 95-416. Oct. 5, 1978. URL : https://www.census.gov/ history/pdf/NARA Legislation.pdf. [6] John Abowd et al. “The 2020 Census Disclosure Avoidance System TopDown Al- gorithm”. In: Harvard Data Science Review Special Issue 2 (June 24, 2022). URL : https:/
+
+[PÁGINA 93] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2642 chars
+NIST SP 800-188 September 2023 [12] Micah Altman et al. “Towards a Modern Approach to Privacy-Aware Government Data Releases”. In: Berkeley Technology Law Journal 30 (3), pp. 1967–2072. URL : http://papers.ssrn.com/sol3/papers.cfm?abstract id=2779266. [13] AMD. AMD Secure Encrypted Virtualization (SEV). Last accessed July 13, 2022. 2022. URL : https://developer.amd.com/sev/. [14] Olivia Angiuli, Joe Blitzstein, and Jim Waldo. “How to De-Identify Your Data”. In: Commun. ACM 58.12 (Nov. 2015), pp. 48–55. ISSN : 0001-0782. DOI : 10.1145/ 2814340. URL : https://doi.org/10.1145/2814340. [15] Luk Arbuckle. “Aggregated data provides a false sense of security”. In: Privacy Tech (Apr. 27, 2020). [16] Luk Arbuckle and Felix Ritchie. “The Five Safes of Risk-Based Anonymization”. In: IEEE Security & Privacy 17.5 (2019), pp. 84–89. DOI : 10.1109/MSEC.2019. 2929282. [17] ASTM International. ASTM E1869-04 (Reapproved 2014) Standard Guide for Con- fdentiality, Privacy, Access, and Data Security Princi
+
+[PÁGINA 94] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2623 chars
+NIST SP 800-188 September 2023 [25] George Bush. Executive Order 13402:Strengthening Federal Efforts to Protect Against Identity Theft. May 10, 2006. URL : https://www.gpo.gov/fdsys/pkg/FR-2006-05- 15/pdf/06-4552.pdf. [26] G. Camarillo, C. Holmberg, and Y . Gao. Re-INVITE and Target-Refresh Request Handling in the Session Initiation Protocol (SIP). RFC 6141 (Proposed Standard). Internet Engineering Task Force, Mar. 2011. URL : www.ietf.org/rfc/rfc6141.txt. [27] David Carrell et al. “Hiding in plain sight: Use of realistic surrogates to reduce exposure of protected health information in clinical text”. In: Journal of the Ameri- can Medical Informatics Association : JAMIA 20 (2 July 2012), pp. 342–348. DOI : 10.1136/amiajnl-2012-001034. [28] Ann Cavoukian. Privacy by Design: The 7 Foundational Principles. Ontario, CA, Jan. 2011. URL : https://www.ipc.on.ca/wp-content/uploads/Resources/7foundationalprinciples. pdf. [29] Census Bureau Data Stewardship Program. DS025: Organization of the Di
+
+[PÁGINA 95] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2670 chars
+NIST SP 800-188 September 2023 [37] Tore Dalenius. “Finding a Needle in a Haystack, or Identifying Anonymous Census Records”. In: Journal of Offcial Statistics 2 (3 1986), pp. 329–336. [38] Tore Dalenius. “Towards a methodology for statistical disclosure control”. In: Statis- tik Tidskrift 15 (1977), pp. 429–444. [39] Jon P. Daries et al. “Privacy, Anonymity, and Big Data in the Social Sciences”. In: Communications of the ACM 57 (6 Sept. 2014), pp. 56–63. [40] Data Protection Toolkit: Report and Resources on Statistical Disclosure Limitation Methodology and Tiered Data Access (formerly “Statistical Policy Working Paper #22”), rev. 2022.01. Nov. 28, 2022. URL : https://nces.ed.gov/fcsm/dpt. [41] Tess DeBlanc-Knowles et al. National Strategy to Advance Privacy-Preserving Data Sharing and Analytics. Mar. 2023. URL : https://www.whitehouse.gov/wp- content/uploads/2023/03/National- Strategy- to- Advance- Privacy- Preserving- Data-Sharing-and-Analytics.pdf. [42] Tanvi Desai, Felix Ritchie, a
+
+[PÁGINA 96] TEXTO_SIGNIFICATIVO | 2665 chars
+NIST SP 800-188 September 2023 [49] Cynthia Dwork. “Differential Privacy”. In: 33rd International Colloquium on Au- tomata, Languages and Programming, part II (ICALP 2006). V ol. 4052. Lecture Notes in Computer Science. Springer Verlag, July 2006, pp. 1–12. ISBN : 3-540- 35907-9. URL : https://www.microsoft.com/en-us/research/publication/differential- privacy/. [50] Cynthia Dwork and Moni Naor. “On the Diffculties of Disclosure Prevention in Statistical Databases or The Case for Differential Privacy”. In: Journal of Privacy and Confdentiality 2.1 (Sept. 2010), pp. 93–107. DOI : 10.29012/jpc.v2i1.585. URL : https://journalprivacyconfdentiality.org/index.php/jpc/article/view/585. [51] Cynthia Dwork and Aaron Roth. “The Algorithmic Foundations of Differential Pri- vacy”. In: Foundations and Trends in Theoretical Computer Science. V ol. 9. 3–4. NOW, 2014, pp. 211–407. [52] Cynthia Dwork et al. “Calibrating Noise to Sensitivity in Private Data Analysis”. In: Theory of Cryptography. Ed. by S
+
+[PÁGINA 97] TEXTO_SIGNIFICATIVO | 2558 chars
+NIST SP 800-188 September 2023 [60] Ali Farzanehfar, Florimond Houssiau, and Yves-Alexandre de Montjoye. “The risk of re-identifcation remains high even in country-scale location datasets”. In: Pat- terns 2.3 (2021), p. 100204. ISSN : 2666-3899. DOI : https://doi.org/10.1016/j. patter. 2021 . 100204. URL : https : / / www. sciencedirect . com / science / article / pii / S2666389921000143. [61] I. P. Fellegi. “On the Question of Statistical Confdentiality”. In: Journal of the American Statistical Association 67.337 (1972), pp. 7–18. DOI : 10.1080/01621459. 1972.10481199. [62] Matthew Fredrikson et al. “Privacy in Pharmacogenetics: An End-to-End Case Study of Personalized Warfarin Dosing”. In: 23rd USENIX Security Symposium. San Diego, CA, Aug. 20, 2014. URL : https : / / www. usenix . org / system / fles / conference/usenixsecurity14/sec14-paper-fredrikson-privacy.pdf. [63] Matthew Fredrikson et al. “Privacy in Pharmacogenetics: An End-to-End Case Study of Personalized Warfarin Dosing”.
+
+[PÁGINA 98] TEXTO_SIGNIFICATIVO | 2620 chars
+NIST SP 800-188 September 2023 [72] Ruobin Gong, Erica L. Groshen, and Salil Vadhan. “Harnessing the Known Un- knowns: Differential Privacy and the 2020 Census”. In: Harvard Data Science Re- view Special Issue 2 (June 24, 2022). URL : https://hdsr.mitpress.mit.edu/pub/ fgyf5cne. [73] E. Green and F. Richie. “Data Access Project: Final Report”. In: (June 2016). URL : https://eprints.uwe.ac.uk/31874. [74] Melissa Gymrek et al. “Identifying Personal Genomes by Surname Inference”. In: Science 339 (6117 Jan. 2013), pp. 321–329. [75] Michael Hawes. The Census Bureau’s Simulated Reconstruction-Abetted Re-identifcation Attack on the 2010 Census. May 7, 2021. URL : https://www.census.gov/data/ academy/webinars/2021/disclosure- avoidance- series/simulated- reconstruction- abetted-re-identifcation-attack-on-the-2010-census.html. [76] Michael B. Hawes. “Implementing Differential Privacy: Seven Lessons From the 2020 United States Census”. In: Harvard Data Science Review 2.2 (Apr. 30, 2020). URL : h
+
+[PÁGINA 99] TEXTO_SIGNIFICATIVO | 2581 chars
+NIST SP 800-188 September 2023 [85] ISO/TS 25237:2008(E) Health Informatics — Pseudonymization. Geneva, Switzer- land, 2008. [86] Auguste Kerckhoffs. “II. Desiderata De La Cryptographie Militaire”. In: Journal des sciences militaires IX (Jan. 1883), pp. 5–38. [87] Shehab Khan. ““Human chimera”: Man fails paternity test because genes in his saliva are different to those in sperm”. In: The Independent (Oct. 24, 2015). [88] Daniel Kifer et al. “Bayesian and Frequentist Semantics for Common Variations of Differential Privacy: Applications to the 2020 Census”. In: arXiv preprint arXiv:2209.03310 (2022). [89] Vladimir Kolesnikov et al. “Effcient Batched Oblivious PRF with Applications to Private Set Intersection”. In: Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security. CCS ’16. Vienna, Austria: Association for Computing Machinery, 2016, pp. 818–829. ISBN : 9781450341394. DOI : 10 . 1145/2976749.2978381. URL : https://doi.org/10.1145/2976749.2978381. [90] Le
+
+[PÁGINA 100] TEXTO_SIGNIFICATIVO | 2837 chars
+NIST SP 800-188 September 2023 [97] M. Altman M et al. “Towards a Modern Approach to Privacy-Aware Government Data Release”. In: Berkeley Journal of Technology Law Internet (2016). URL : https: //lawcat.berkeley.edu/record/1127405?ln=en. [98] Ashwin Machanavajjhala et al. “l-diversity: Privacy beyond k-anonymity”. In: Proc. 22nd Intnl. Conf. Data Engg. (ICDE). 2006. [99] Ashwin Machanavajjhala et al. “Privacy: Theory meets Practice on the Map”. In: 2008 IEEE 24th International Conference on Data Engineering. 2008, pp. 277– 286. DOI : 10.1109/ICDE.2008.4497436. [100] Management and Budget Offce. Statistical Policy Directive No. 1: Fundamental Responsibilities of Federal Statistical Agencies and Recognized Statistical Units. Dec. 2, 2014. URL : https://www.federalregister.gov/documents/2014/12/02/2014- 28326/statistical-policy-directive-no-1-fundamental-responsibilities-of-federal- statistical-agencies-and. [101] Sean Martin. When De-identifying Patient Information, Follow the HITRUST Fr
+
+[PÁGINA 101] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2626 chars
+NIST SP 800-188 September 2023 [108] Arvind Narayanan and Ed Felten. No silver bullet: De-identifcation still doesn’t work. Working Paper. July 9, 2014. URL : http://randomwalker.info/publications/ no-silver-bullet-de-identifcation.pdf. [109] Arvind Narayanan and Vitaly Shmatikov. “Robust De-anonymization of Large Sparse Datasets”. In: 2008 IEEE Symposium on Security and Privacy (sp 2008). 2008, pp. 111–125. DOI : 10.1109/SP.2008.33. [110] National Center for Environmental Health. Planning for an Emergency: Strategies for Identifying and Engaging At-Risk Groups. Centers for Disease Control, 2015. URL : https://www.cdc.gov/nceh/hsb/disaster/atriskguidance.pdf. [111] National COVID Cohort Collaborative. N3C Privacy-Preserving Record Linkage. Last accessed February 18, 2023. 2023. URL : https://covid.cd2h.org/PPRL. [112] NIST Big Data Interoperability Framework: Volume 1, Defnitions. 2015. DOI : 10. 6028/NIST.SP.1500-1. URL : https://nvlpubs.nist.gov/nistpubs/SpecialPublications/ NIST.SP.
+
+[PÁGINA 102] TEXTO_SIGNIFICATIVO | 2619 chars
+NIST SP 800-188 September 2023 [119] Offce of Civil Rights, US Department of Health and Human Services. Individuals’ Right under HIPAA to Access their Health Information 45 CFR § 164.524. Last accessed June 17, 2022. 2022. URL : https://www.hhs.gov/hipaa/for-professionals/ privacy/guidance/access/index.html. [120] Offce of Management and Budget. Circular A110 Revised 11/19/93, as further amended 9/30/99. URL : https : / / obamawhitehouse . archives . gov / omb / circulars a110/. [121] Offce of Management and Budget. Statistical Programs and Standards. 2022. URL : https : / / www. whitehouse . gov / omb / information - regulatory - affairs / statistical - programs-standards/. [122] Offce of Safeguards, US Internal Revenue Service. Publication 1075: Tax Infor- mation Security Guidelines For Federal, State and Local Agencies. 2021. URL : https://www.irs.gov/pub/irs-pdf/p1075.pdf. [123] Paul Ohm. “Broken Promises of Privacy: Responding to the Surprising Failure of Anonymization”. In: UCLA 
+
+[PÁGINA 103] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2530 chars
+NIST SP 800-188 September 2023 [131] Sandro Pinto and Nuno Santos. “Demystifying Arm TrustZone: A Comprehensive Survey”. In: ACM Comput. Surv. 51.6 (Jan. 2019). ISSN : 0360-0300. DOI : 10.1145/ 3291047. URL : https://doi.org/10.1145/3291047. [132] Private Lives and Public Policies: Confdentiality and Accessibility of Government Statistics. Panel on Confdentiality and Data Access, National Research Council, 1993, p. 288. URL : http://www.nap.edu/catalog/2122/. [133] Public Law 93-579: The Privacy Act of 1974. 88 Stat. 1896, 5 U.S.C. § 552a. 1974. [134] William H. Rehnquist. Department of State v. Washington Post Co., 456 U.S. 595 (1982). 1982. URL : https://www.loc.gov/item/usrep456595/. [135] Diane Ridgeway et al. Challenge Design and Lessons Learned from the 2018 Dif- ferential Privacy Challenges. 2021. DOI : 10 . 6028 / NIST. TN . 2151. URL : https : //nvlpubs.nist.gov/nistpubs/TechnicalNotes/NIST.TN.2151.pdf. [136] Felix Ritchie. “Microdata access and privacy: What have we learned o
+
+[PÁGINA 104] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2681 chars
+NIST SP 800-188 September 2023 [143] Philip Steel and Jon Sperling. The Impact of Multiple Geographies and Geographic Detail on Disclosure Risk: Interactions between Census Tract and ZIP Code Tab- ulation Geography. 2001. URL : https://www.census.gov/content/dam/Census/ library/working-papers/2001/adrm/steel-sperling-2001.pdf. [144] Jackson M. Steinkamp et al. “Evaluation of Automated Public De-Identifcation Tools on a Corpus of Radiology Reports”. In: Radiol Artif Intell 2 (6 Oct. 14, 2020). URL : https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8082401/. [145] John Paul Stevens. U.S. Dept. of Justice v. Reporters Committee For Freedom of Press, 489 U.S. 749 (1989). 1988. URL : https://www.loc.gov/item/usrep489749/. [146] John Paul Stevens. United States Department of State v. Ray et al., 502 U.S. 164 (1991). 1991. URL : https://www.loc.gov/item/usrep502164/. [147] Kevin Stine et al. Volume I: guide for mapping types of information and infor- mation systems to security categories. Gaither
+
+[PÁGINA 105] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2695 chars
+NIST SP 800-188 September 2023 [155] “The Debate Over ‘Re-Identifcation’ Of Health Information: What Do We Risk?” In: Health Affairs Blog (Aug. 10, 2012). DOI : 10.1377/hblog20120810.021952. URL : https://www.healthaffairs.org/do/10.1377/forefront.20120810.021952. [156] Title V of the E-Government Act of 2002: Confdential Information Protection and Statistical Effciency Act (CIPSEA) PL 107–347,116 Stat. 2899, 44 USC § 101 Section 502(8). [157] TransCelerate Biopharma, Inc. Data De-identifcation and Anonymization of Indi- vidual Patient Data in Clinical Studies—A Model Approach. 2013. [158] Michael Carl Tschantz and Jeannette M. Wing. Formal Methods for Privacy. Tech. rep. CMU-CS-09-154. Pittsburg, PA: Carnegie Mellon University, Aug. 2009. URL : http://reports-archive.adm.cs.cmu.edu/anon/2009/CMU-CS-09-154.pdf. [159] A. M. Turing. “On Computable Numbers, with an Application to the Entschei- dungsproblem”. In: Proceedings of the London Mathematical Society, Series 2 (42 1936), pp. 230–2
+
+[PÁGINA 106] PROVAVEL_CONTEUDO_SUBSTANTIVO | 1086 chars
+NIST SP 800-188 September 2023 [168] Russell T. V ought. Phase 1 Implementation of the Foundations for Evidence-Based Policymaking Act of 2018: Learning Agendas, Personnel, and Planning Guidance. URL : https://www.whitehouse.gov/wp-content/uploads/2019/07/M-19-23.pdf. [169] Isabel Wagner and David Eckhoff. “Technical Privacy Metrics: A Systematic Sur- vey”. In: ACM Comput. Surv. 51.3 (June 2018). ISSN : 0360-0300. DOI : 10.1145/ 3168389. URL : https://doi.org/10.1145/3168389. [170] Charlie Warzel and Stuart A. Thompson. “How Your Phone Betrays Democracy”. In: The New York Times (Dec. 2019). URL : https://www.nytimes.com/interactive/ 2019/12/21/opinion/location-data-democracy-protests.html. [171] Cathy Wasserman and Eric Ossiander. Department of Health Agency Standards for Reporting Data with Small Numbers. May 2018. URL : https://doh.wa.gov/sites/ default/fles/legacy/Documents/1500//SmallNumbers.pdf. [172] Leon Willenborg and Ton de Waal. “Chapter 3 Data Analytic Impact of SDC Techniqu
+
+[PÁGINA 107] PROVAVEL_CONTEUDO_SUBSTANTIVO | 1920 chars
+Appendix A. Standards • ASTM E1869-04(2014) Standard Guide for Confdentiality, Privacy, Access, and Data Security Principles for Health Information Including Electronic Health Records • DICOM PS3.15 2016d – Security and System Management Profles Chapter E At- tribute Confdentiality Profles, DICOM Standards Committee, NEMA 2016. http: //dicom.nema.org/medical/dicom/current/output/html/part15.html#chapter E • HITRUST De-Identifcation Working Group (2015, March). De-Identifcation Frame- work: A Consistent, Managed Methodology for the De-Identifcation of Personal Data and the Sharing of Compliance and Risk Information. Frisco, TX: HITRUST. Retrieved from https://hitrustalliance.net/de-identifcation-license-agreement/ • ISO 8000-2:2012(E) Data quality – Part 2: V ocabulary, 2012. ISO, Geneva, Switzer- land. 2012. • ISO/IEC 27559:2022 Privacy enhancing data de-identifcation framework. ISO, Geneva, Switzerland. 2022. • ISO/IEC 20889:2018, Information technology – Security techniques – Privacy
+
+[PÁGINA 108] TEXTO_SIGNIFICATIVO | 2467 chars
+NIST SP 800-188 September 2023 • Kevin Stine et al. Volume I: guide for mapping types of information and information systems to security categories. Gaithersburg, MD, 2008. DOI : 10.6028/NIST.SP.800- 60v1r1. URL : https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800- 60v1r1.pdf • Simson L. Garfnkel. De-identifcation of personal information. 2015. DOI : 10.6028/ NIST.IR.8053. URL : https://nvlpubs.nist.gov/nistpubs/ir/2015/NIST.IR.8053.pdf • Simson L. Garfnkel. Government Data De-Identifcation Stakeholder’s Meeting June 29, 2016 Meeting Report. 2016. DOI : 10.6028/NIST.IR.8150. URL : https: //nvlpubs.nist.gov/nistpubs/ir/2016/NIST.IR.8150.pdf Appendix A.2. Other U.S. Government Publications • Census Confdentiality and Privacy: 1790-2002, US Census Bureau, 2003. https: //www.census.gov/prod/2003pubs/conmono2.pdf • Coded Private Information or Specimens Use in Research (2008), Guidance, U.S. Department of Health & Human Services, Offce of Human Research Protections, Octob
+
+[PÁGINA 109] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2614 chars
+privacy/privacy- NIST SP 800-188 September 2023 November 26, 2012. http://www.hhs.gov/ocr/privacy/hipaa/understanding/coveredentities/ De-identifcation/hhs deid guidance.pdf • Data Release Policy for Vital Statistics Micro-data Files, U.S. Centers for Disease Control and Prevention, April 1, 2019. http://www.cdc.gov/nchs/nvss/dvs data release. htm • Linking Data for Health Services Research: A Framework and Instructional Guide. Dusetzina SB, Tyree S, Meyer AM, Meyer A, Green L, Carpenter WR. (Prepared by the University of North Carolina at Chapel Hill under Contract No. 290-2010- 000141.) AHRQ Publication No. 14-EHC033-EF. Rockville, MD: Agency for Health- care Research and Quality; September 2014. • National Center for Health Statistics Data Release and Access Policy for Micro-data and Compressed Vital Statistics File, Centers for Disease Control, April 26, 2011. http://www.cdc.gov/nchs/nvss/dvs data release.htm • National Center for Health Statistics Policy on Micro-Data Disseminatio
+
+[PÁGINA 110] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2361 chars
+NIST SP 800-188 September 2023 • Anonymisation: Managing data protection risk, Code of Practice 2012, Information Commissioner’s Offce. https://ico.org.uk/media/for-organisations/documents/1061/anonymisation- code.pdf. 108 pages. • The Anonymisation Decision-Making Framework, Mark Elliot, Elaine Mackey, Kieron O’Hara and Caroline Tudor, UKAN, University of Manchester, July 2016. http: //ukanon.net/ukan-resources/ukan-decision-making-framework/ Reports and Books • The Algorithmic Foundations of Differential Privacy, Cynthia Dwork and Aaron Roth, (Foundations and Trends in Theoretical Computer Science). Now Publishers, August 11, 2014. https://www.cis.upenn.edu/ ∼aaroth/privacybook.html • Anonymizing Health Data, Khaled El Emam and Luk Arbuckle, O’Reilly, 2013. • Building an Anonymization Pipeline, Luk Arbuckle and Khaled El Emam, O’Reilly, 2020. • Confdentiality, Disclosure and Data Access: Theory and Practical Applications for Statistical Agencies, P. Doyle and J. Lane, North-Holland P
+
+[PÁGINA 111] TEXTO_SIGNIFICATIVO | 1598 chars
+NIST SP 800-188 September 2023 How-To Articles • Leah Krehling, De-Identifcation Guideline, WHISPERLAB, Technical Report WL- 2020-01, Department of Electrical and Computer Engineering, Western University, 2020. • Olivia Angiuli, Joe Blitstein, and Jim Waldo, How to De-Identify Your Data, Com- munications of the ACM, December 2015. • Jor¨ g Drechsler, Stefan Bender, Susanne Rassler¨ , Comparing fully and partially syn- thetic datasets for statistical disclosure control in the German IAB Establishment Panel. 2007, United Nations, Economic Commission for Europe. Working paper, 11, New York, 8 p. • Ebaa Fayyoumi and B. John Oommen, A survey on statistical disclosure control and micro-aggregation techniques for secure statistical databases. 2010, Software Prac- tice and Experience. 40, 12 (November 2010), 1161-1188. DOI=10.1002/spe.v40:12 https://dx.doi.org/10.1002/spe.v40:12 • Jingchen Hu, Jerome P. Reiter, and Quanli Wang, Disclosure Risk Evaluation for Fully Synthetic Categorical Data, P
+
+[PÁGINA 112] TEXTO_SIGNIFICATIVO | 1190 chars
+Appendix B. List of Symbols, Abbreviations, and Acronyms Selected acronyms and abbreviations used in this paper are defned below. ACM Association for Computing Machinery AHRQ Agenc y for Healthcare Research and Quality AMD Advanced Micro Devices ARM Advanced RISC Machines (formerly Acron RISC Machine) ARMP Average Record Matching Probability ASTM ASTM (formerly the American Society for Testing and Materials) CED-DA Center for Enterprise Dissemination-Disclosure Avoidance CFR Code of Federal Regulations CIO Chief Information Offcer CIPSEA The Confdential Information Protection and Statistical Effciency Act of 2002 CNSS Committee on National Security Systems CNSSI Committee on National Security Systems Instruction CPU Central Processing Unit CRC (formerly the Chemical Rubber Company) DCMA Defense Contract Management Agency DICOM Digital Imaging and Communications in Medicine DOI Digital Object Identifer DRB Disclosure Review Board DUA Data Use Agreement EDDRB Department of Education Disc
+
+[PÁGINA 113] TEXTO_SIGNIFICATIVO | 1359 chars
+NIST SP 800-188 September 2023 HHS Health and Human Services HIPAA Health Insurance Portability and Accountability Act HITR UST (formerly the Health Industry Trust Alliance) IAB Institut fur¨ Arbeitsmarkt-und Berufsforschung (Germany’s Institute for Employment and Research) ICSP Interagency Council on Statistical Polic y IEC International Electrotechnical Commission IHE Integrating the Healthcare Enterprise IHSN International Household Survey Network IRB Institutional Review Board IRS Internal Revenue Service ISO (formerly International Organization for Standardization) ISO/TS ISO Technical Standard ITL Information Technology Laboratory KIRP Known Inclusion Re-Identifcation Probability MCC Millennium Challenge Corporation MIT Massachusetts Institute of Technology MPC Multi-Party Computation NEMA National Electrical Manufacturers Association NIST National Institute of Standards and Technology NIST IR National Institute of Standards and Technology Interagency or Internal Report NIST SP N
+
+[PÁGINA 114] REVISAR | 436 chars
+NIST SP 800-188 September 2023 PUF Public Use File RMP Record-Matching Probability SDC Statistical Disclosure Control SDL Statistical Disclosure Limitation SHA Secure Hash Algorithm SLA Service-Level Agreement SME Subject-Matter Expert TEE Trusted Execution Environments UIRP Unknown Inclusion Re-Identifcation Probability UKAN United Kingdom Advocacy Network WHISPERLAB W estern Information Security and Privacy Research Laboratory 100
+
+[PÁGINA 115] TEXTO_SIGNIFICATIVO | 2026 chars
+Appendix C. Glossary Selected terms used in the publication are defned below. Where noted, the defnition is sourced from another publication. accuracy Closeness of computations or estimates to the exact or true values that the statis- tics were intended to measure. (OECD Glossary) ambiguity rule See p,q rule. anonymity Condition in identifcation whereby an entity can be recognized as distinct, without suffcient identity information to establish a link to a known identity. (ISO/IEC 24760-1:2011) anonymization A process that removes the association between the identifying dataset and the data subject. (ISO 25237-2008) anticipated re-identifcation rate When an organization contemplates performing re-identifcation, the re-identifcation rate that the resulting de-identifed data are likely to have. attacker A person who seeks to exploit potential vulnerabilities of a system. attribute Characteristic or property of an entity that can be used to describe its state, ap- pearance, or other aspec
+
+[PÁGINA 116] TEXTO_SIGNIFICATIVO | 2255 chars
+NIST SP 800-188 September 2023 control Measure that is modifying risk. Note: controls include any process, policy, device, practice, or other actions that modify risk. (ISO/IEC 27000:2014) correct re-identifcations Putative re-identifcations that correctly infer an individual’s identity and associated data. covered entity Under HIPAA, a health plan, a health care clearinghouse, or a health care provider that conducts certain health care transactions electronically (e.g., billing). (HIPAA Privacy Rule) data Re-interpretable representation of information in a formalized manner suitable for communication, interpretation, or processing. (ISO 8000-2:2012(E)) data accuracy Closeness of agreement between a property value and the true value. (ISO 8000-2:2012(E) data dictionary Collection of data dictionary entries that allows lookup by entity identi- fer. (ISO 8000-2:2012(E)) data dictionary entry Description of an entity type containing, at a minimum, an unam- biguous identifer, a term, and a
+
+[PÁGINA 117] TEXTO_SIGNIFICATIVO | 2715 chars
+NIST SP 800-188 September 2023 de-identifed information Records that have had enough PII removed or obscured such that the remaining information does not identify an individual, and there is no rea- sonable basis to believe that the information can be used to identify an individual. differ ential privacy A rigorous mathematical defnition of disclosure that considers the risk that an individual’s confdential data may be learned as a result of a mathematical analysis based on that data being made publicly available. direct identifer An attribute that alone enables unique identifcation of a data principal within a specifc operational context.39 39Here and throughout, the operational context includes the information that the entity processing (e.g., de- identifying) the data possesses, together with information that third parties and potential attackers can possess or that is in the public domain (ISO/IEC 20889:2018). (ISO/IEC 20889:2018) dir ect identifying data Data that directly identif
+
+[PÁGINA 118] TEXTO_SIGNIFICATIVO | 2768 chars
+NIST SP 800-188 September 2023 harm Any adverse effects that would be experienced by an individual (i.e., that may be socially, physically, or fnancially damaging) or an organization if the confdentiality of PII were breached. Health Insurance Portability and Accountability Act of 1996 (HIPAA) A federal statute that called on the federal Department of Health and Human Services to establish reg- ulatory standards to protect the privacy and security of individually identifable health information. See https://www.hhs.gov/hipaa/for-professionals/index.html. HIPAA Privacy Rule Establishes national standards to protect individuals’ medical records and other personal health information and applies to health plans, health care clear- inghouses, and those health care providers that conduct certain health care trans- actions electronically. (HIPAA Privacy Rule, 45 CFR 160, 162, 164). See https: //www.hhs.gov/hipaa/for-professionals/privacy/index.html. identifcation The process of using claimed o
+
+[PÁGINA 119] TEXTO_SIGNIFICATIVO | 2761 chars
+NIST SP 800-188 September 2023 masking The process of systematically removing a feld or replacing it with a value in a way that does not preserve the analytic utility of the value, such as replacing a phone number with asterisks or a randomly generated pseudonym. [59] motivated intruder test The ‘motivated intruder’ is taken to be a person who starts with- out any prior knowledge but who wishes to identify the individual from whose per- sonal data the anonymised data have been derived. This test is meant to assess whether the motivated intruder would be successful. [81] (n,k) rule A cell is regarded as confdential, if the n largest units contribute more than k % to the cell total, e.g., n=2 and k=85 means that a cell is defned as risky if the two largest units contribute more than 85 % to the cell total. The n and k are given by the statistical authority. In some NSOs [national statistical offce] the values of n and k are confdential. (OECD Glossary of Statistical Terms) noise A conven
+
+[PÁGINA 120] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2672 chars
+NIST SP 800-188 September 2023 personal data Any information relating to an identifed or identifable natural person (data subject). (ISO/TS 25237:2008) personal identifer Information with the purpose of uniquely identifying a person within a given context. (ISO/TS 25237:2008) personal information See personal data. personally identifable information (PII) Information that can be used to distinguish or trace an individual’s identity, either alone or when combined with other information that is linked or linkable to a specifc individual. (A-130) perturbation-based methods Perturbation-based methods falsify the data before publica- tion by introducing an element of error purposely for confdentiality reasons. This error can be inserted in the cell values after the table is created, which means the er- ror is introduced to the output of the data and will, therefore, be referred to as output perturbation, or the error can be inserted in the original data on the microdata level, which is the 
+
+[PÁGINA 121] TEXTO_SIGNIFICATIVO | 2353 chars
+NIST SP 800-188 September 2023 covered entity in its role as employer. (HIPAA Privacy Rule, 45 CFR 160.103). See https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html. pseudonym Personal identifer that is different from the normally used personal identifer. (ISO/TS 25237:2008) pseudonymization De-identifcation technique that replaces an identifer (or identifers) for a data principal with a pseudonym in order to hide the identity of that data prin- cipal. (ISO/TS 20889:2018) putati ve re-identifcations Apparent re-identifcations that may or may not be correct. quality Degree to which a set of inherent characteristics fulfls requirements. (ISO 8000- 2:2012(E)) quasi-identifer A variable that can be used to identify an individual through association with another variable. re-identifcation A process by which information is attributed to de-identifed data in or- der to identify the individual to whom the de-identifed data relate. (OECD-LEGAL- 0433)[117] r e-identif
+
+[PÁGINA 122] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2486 chars
+NIST SP 800-188 September 2023 of an information system. Part of risk management, incorporates threat and vulner- ability analyses, and considers mitigations provided by security controls planned or in place. Synonymous with risk analysis. (NIST SP 800-39) Safe Harbor Within the context of de-identifcation, refers to the Safe Harbor method for de-identifying protected health information in accordance with the Health Insurance Portability and Accountability Act (HIPAA) Privacy Rule. See https://www.hhs.gov/ hipaa/for-professionals/privacy/special-topics/de-identifcation/index.html. statistical disclosure limitation (also statistical disclosure control) The set of methods to reduce the risk of disclosing information on individuals, businesses or other orga- nizations. Such methods are only related to the dissemination step and are usually based on restricting the amount of or modifying the data released. (OECD Glossary of Statistical Terms) suppr ession One of the most commonly used ways
+
+--- RESUMO AUTOMÁTICO ---
+Provável conteúdo substantivo: 13, 42, 45, 92-113, 115-122
+Provável capa/índice/front matter: 1
+Sem/pouco texto extraível: nenhuma
+
+==============================================================================================================
+DOCUMENTO: multimodal_models_guidance_WHO_2024
+==============================================================================================================
+Título: Ethics and governance of artificial intelligence for health. Guidance 
+Páginas no PDF: 98
+Última página indexada: 79
+Ausentes: 1-3, 5-7, 9, 24-25, 47-49, 80-98
+Buracos internos: 1-3, 5-7, 9, 24-25, 47-49
+Ausência no final: 80-98
+
+--- PÁGINAS AUSENTES ---
+
+[PÁGINA 1] REVISAR | 96 chars
+Ethics and governance of artificial intelligence for health Guidance on large multi-modal models
+
+[PÁGINA 2] SEM_TEXTO_EXTRAIVEL | 0 chars
+[sem texto extraível]
+
+[PÁGINA 3] REVISAR | 96 chars
+Ethics and governance of artificial intelligence for health Guidance on large multi-modal models
+
+[PÁGINA 5] POSSIVEL_INDICE_SUMARIO | 2600 chars
+iiiContents Contents Acknowledgements ................................................................................................v Abbreviations ........................................................................................................vii Executive summary .............................................................................................viii 1 Introduction ...................................................................................................1 1.1 Significance of LMMs .................................................................................3 1.2 WHO guidance on ethics and governance of AI for health ...................... 4 I. Applications, challenges and risks of LMMs ..................................................7 2 Applications and challenges of use of LMMs in health .................................8 2.1 Diagnosis and clinical care ........................................................................8 2.2 Patient-centred appl
+
+[PÁGINA 6] PROVAVEL_CONTEUDO_SUBSTANTIVO | 1517 chars
+iv Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models 5 Provision with general-purpose foundation models (LMMs) .....................45 5.1 Risks to be addressed when providing a health-care service or application with a general-purpose foundation model (LMM).............. 45 5.2 Measures that governments can introduce to address such risks and ethical principles that should be upheld ........................................ 46 6 Deployment with general-purpose foundation models (LMMs) ................53 6.1 Risks to be addressed when deploying a health-care service or application with a general-purpose foundation model (LMM).............. 53 6.2 On-going responsibilities of developers and providers during deployment ............................................................................................. 54 6.3 Responsibilities of deployers ..................................................................54 6.4 Government programmes 
+
+[PÁGINA 7] TEXTO_SIGNIFICATIVO | 2575 chars
+vAcknowledgements Acknowledgements Development of this World Health Organization (WHO) guidance was led by Andreas Reis (co-lead of the Health Ethics and Governance unit in the Department of Research for Health) and Sameer Pujari (Department of Digital Health and Innovation), under the overall guidance of John Reeder (Director, Research for Health), Alain Labrique (Director, Digital Health and Innovation) and Jeremy Farrar (Chief Scientist). Rohit Malpani (consultant, France) was the lead writer. The co-chairs of the WHO expert group on ethics and governance of AI for health, Effy Vayena (ETH Zurich, Switzerland) and Partha Majumder (Indian Statistical Institute and National Institute of Biomedical Genomics, India), provided overall guidance on drafting of the report and leadership of the expert group. WHO is grateful to the following individuals who contributed to development of this guidance. WHO expert group on ethics and governance of AI for health Najeeb Al Shorbaji, eHealth Devel
+
+[PÁGINA 9] REVISAR | 117 chars
+viiAcknowledgements Abbreviations AI artificial intelligence LMM large multi-modal model USA United States of America
+
+[PÁGINA 24] SEM_TEXTO_EXTRAIVEL | 0 chars
+[sem texto extraível]
+
+[PÁGINA 25] POUCO_TEXTO | 45 chars
+I. Applications, challenges and risks of LMMs
+
+[PÁGINA 47] SEM_TEXTO_EXTRAIVEL | 0 chars
+[sem texto extraível]
+
+[PÁGINA 48] SEM_TEXTO_EXTRAIVEL | 0 chars
+[sem texto extraível]
+
+[PÁGINA 49] POUCO_TEXTO | 61 chars
+II. Ethics and governance of LMMs in health care and medicine
+
+[PÁGINA 80] TEXTO_SIGNIFICATIVO | 2169 chars
+62 Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models References 1. Ethics and governance of artificial intelligence for health. Geneva: World Health Organization; 2021 (https://www.who.int/publications/i/item/9789240029200, accessed 26 May 2023). 2. Khullar D. Can A.I. treat mental illness? The New Yorker, 27 February 2023 (https:// www.newyorker.com/magazine/2023/03/06/can-ai-treat-mental-illness, accessed 29 May 2023). 3. Acosta JN, Falcone GJ, Rajpurkar P , Topol EJ. Multimodal biomedical AI. Nat Med. 2022;28(9):1773–84. doi:10.1038/s41591-022-01981-2. 4. Hariri Y, Harris T, Raskin A. You can have the blue pill or the red pill, and we’re out of blue pills. The New York Times, 24 March 2023 (https://www.nytimes.com/2023/03/24/ opinion/yuval-harari-ai-chatgpt.html, accessed 26 May 2023). 5. Moor M, Banerjee O, Abad ZSH, Krumholz HM, Leskovec J, Topol EJ et al. Foundation models for generalist medical artificial intelligence, Nature. 2023
+
+[PÁGINA 81] TEXTO_SIGNIFICATIVO | 2592 chars
+63References 11. Martin A. Google CEO Sunder Pichai admits people don’t fully understand how chatbot AI works, Evening Standard, 17 April 2023 (https://www.standard.co.uk/tech/google-ceo- sundar-pichai-understand-ai-chatbot-bard-b1074589.html, accessed 26 May 2023). 12. Roose K. A conversation with Bing’s chatbot left me deeply unsettled. The New York Times, 16 February 2023 (https://www.nytimes.com/2023/02/16/technology/bing- chatbot-microsoft-chatgpt.html, accessed 26 May 2023). 13. Marcus G. AI platforms like ChatGPT are easy to use but potentially dangerous, Scientific American, 19 December 2022 (https://www.scientificamerican.com/article/ai-platforms- like-chatgpt-are-easy-to-use-but-also-potentially-dangerous/, accessed 26 May 2023). 14. Bubeck S, Chandrasekaran V, Eldan R, Gehrke J, Horvitz E, Kamar E et al. Sparks of artificial general intelligence: early experiments with GPT-4. ArXiv:2302.12712. 15. McGowran L. OpenAI criticised for lack of transparency around ChatGPT-4. Silic
+
+[PÁGINA 82] TEXTO_SIGNIFICATIVO | 2620 chars
+64 Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models 23. Singhal K, Azizi S, Tu T, Mahdavi SS, Wei J, Chung HW et al. Large language models encode clinical knowledge. Nature. 2023;620:172–80. doi:10.1038/s41586-023-06291-2. 24. Kulkarni PA, Singh H. Artificial intelligence in clinical diagnosis: opportunities, challenges, and hype. JAMA. 2023;330(4):317–8. doi:10.1001/jama.2023.11440. 25. Subbamaran N. ChatGPT will see you now: Doctors using AI to answer patient questions. Wall Street Journal, 28 April 2023 (https://www.wsj.com/articles/dr-chatgpt-physicians- are-sending-patients-advice-using-ai-945cf60b, accessed 28 May 2023). 26. Ayers JW, Poliak A, Dredze M, Leas EC, Zhu Z, Kelley JB et al. Comparing physician and artificial intelligence chatbot responses to patient questions posted to a public social media forum. JAMA Intern Med. 2023; 183(6):589–96. doi: 10.1001/jamainternmed.2023.1838. 27. Lee P , Bubeck S, Petro J. Benefits, limits
+
+[PÁGINA 83] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2406 chars
+65References 35. Metz, Cade. Chatbots may 'hallucinate' more often than many realize, The New York Times, 6 November 2023 (https://www.nytimes.com/2023/11/06/technology/chatbots- hallucination-rates.html, accessed 7 November 2023). 36. Acar OA. AI prompt engineering isn’t the future, Harvard Business Review, 6 June 2023 (https://hbr.org/2023/06/ai-prompt-engineering-isnt-the-future?registration=success, accessed 26 June 2023). 37. GPT-4 system card. Open AI, 23 March 2023 (https://cdn.openai.com/papers/gpt-4- system-card.pdf, accessed 28 May 2023). 38. GPT-4. OpenAI, 14 March 2023 (https://openai.com/research/gpt-4, accessed 28 May 2023). 39. Radford A, Kleinman Z. ChatGPT can now access up-to-date information. BBC News, 27 September 2022 (https://www.bbc.com/news/technology-66940771, accessed 1 October 2023). 40. Kruge S, Ostermaier A, Uhl M. The moral authority of ChatGPT. ArXiv:23101.07098. doi:10.48550/arXiv.23101.07098. 41. Mickle T, Metz C, Grant N. The chatbots are here, and the
+
+[PÁGINA 84] TEXTO_SIGNIFICATIVO | 2576 chars
+66 Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models 47. Smuha NA, De Ketalaere M, Coeckelbergh M, Dewitte P , Poullet Y. Open letter: We are not ready for manipulative AI – urgent need for action. KU Leuven, 31 March 2023 (https:// www.law.kuleuven.be/ai-summer-school/open-brief/open-letter-manipulative-ai, accessed 29 May 2023). 48. Cuthbertson A. “No, I’m not a robot”: ChatGPT successor tricks worker into thinking it is human. Independent, 15 March 2023 (https://www.independent.co.uk/tech/chatgpt- gpt4-ai-openai-b2301523.html, accessed 26 June 2023). 49. Walker L. Belgian man dies by suicide following exchanges with chatbot, The Brussels Times, 28 March 2023 (https://www.brusselstimes.com/430098/belgian-man-commits- suicide-following-exchanges-with-chatgpt, accessed 29 May 2023). 50. DeGuerin M. Oops: Samsung employees leaked confidential data to ChatGPT. Gizmodo, 6 April 2023 (https://gizmodo.com/chatgpt-ai-samsung-employees-leak-data
+
+[PÁGINA 85] TEXTO_SIGNIFICATIVO | 2485 chars
+67References 58. Hallman J. AI language models show bias against people with disabilities, study finds. University Park (PA): Penn State University; 2022 (https://www.psu.edu/news/ information-sciences-and-technology/story/ai-language-models-show-bias-against- people-disabilities/, accessed 11 September 2023). 59. Harrer S. Attention is not all you need: the complicated case of ethically using large language models in healthcare and medicine. eBioMedicine. 2023;90:194512. doi:10.1016/j.ebiom.2023.104512. 60. Lohr S. AI may someday work medical miracles. For now, it helps do paperwork. The New York Times, 26 June 2023 (https://www.nytimes.com/2023/06/26/technology/ai- health-care-documentation.html, accessed 10 July 2023). 61. Eddy N. Epic, Microsoft partner to use generative AI for better EHRs. Healthcare IT News, 18 April 2023 (https://www.healthcareitnews.com/news/epic-microsoft-partner-use- generative-ai-better-ehrs, accessed 31 May 2023). 62. Nuance and Microsoft announce the first
+
+[PÁGINA 86] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2657 chars
+68 Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models 70. Monitoring the building blocks of health systems: a handbook of indicators and their measurement strategies. Geneva: World Health Organization; 2010 (https://apps.who.int/ iris/bitstream/handle/10665/258734/9789241564052-eng.pdf, accessed 26 June 2023). 71. Morozov E. The true threat of artificial intelligence. The New York Times, 30 June 2023 (https://www.nytimes.com/2023/06/30/opinion/artificial-intelligence-danger.html, accessed 2 July 2023). 72. Introducing ChatGPTPlus. San Francisco (CA): Open AI; 2023 (https://openai.com/blog/ chatgpt-plus, accessed 1 June 2023). 73. The hidden workforce that helped filter violence and abuse out of ChatGPT. Wall Street Journal, 11 July 2023 (https://www.wsj.com/podcasts/the-journal/the-hidden- workforce-that-helped-filter-violence-and-abuse-out-of-chatgpt/ffc2427f-bdd8-47b7- 9a4b-27e7267cf413, accessed 13 July 2023). 74. Firth N. Language mode
+
+[PÁGINA 87] TEXTO_SIGNIFICATIVO | 2417 chars
+69References 81. A new era of generative AI for everyone. Dublin: Accenture; 2023 (https://www.accenture. com/content/dam/accenture/final/accenture-com/document/Accenture-A-New-Era-of- Generative-AI-for-Everyone.pdf, accessed 1 June 2023). 82. Burgess M. The security hole at the heart of ChatGPT and Bing. Wired, 25 May 2023 (https://www.wired.co.uk/article/chatgpt-prompt-injection-attack-security, accessed 1 June 2023). 83. Heikkila M. Open AI’s hunger for data is coming back to bite it. MIT Technology Review, 19 April 2023 (https://www.technologyreview.com/2023/04/19/1071789/openais-hunger- for-data-is-coming-back-to-bite-it/, accessed 1 June 2023). 84. General Data Protection Regulation, Regulation 2016//679 of the European Parliament and of the Council, 27 April 2016. Strasbourg: European Parliament; 2016 (https://eur-lex. europa.eu/eli/reg/2016/679/oj, accessed 27 September 2023). 85. The impact of the General Data Protection Regulation on artificial intelligence (STOA Options Brie
+
+[PÁGINA 88] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2519 chars
+70 Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models 92. Lomas N. ChatGPT maker OpenAI accused of string of data protection breaches in GDPR complaint filed by privacy researcher. TechCrunch, 30 August 2023. (https://consent. yahoo.com/v2/collectConsent?sessionId=3_cc-session_6bdecae4-d7b6-448f-8e26- e7805c03b964, accessed 11 September 2023). 93. Fung B. The FTC should investigate Open AI and block GPT over “deceptive” behaviour, AI policy group claims. CNN, 30 March 2023. (https://edition.cnn.com/2023/03/30/tech/ ftc-openai-gpt-ai-think-tank/index.html, accessed 2 June 2023). 94. Waters R, Murgia M, Espinoza J. Open AI warns over split with Europe as AI regulation advances. Financial Times, 25 May 2023 (https://www.ft.com/content/5814b408-8111- 49a9-8885-8a8434022352 , accessed 1 June 2023). 95. Technology-facilitated gender-based violence: Making all spaces safe. New York: United Nations Population Fund; 2021 (https://www.unfpa.org/publ
+
+[PÁGINA 89] TEXTO_SIGNIFICATIVO | 2795 chars
+71References 103. A new partnership to promote responsible AI. Google Blogs, 26 July 2023 (https://blog. google/outreach-initiatives/public-policy/google-microsoft-openai-anthropic-frontier- model-forum/#:~:text=Anthropic%2C%20Google%2C%20Microsoft%20and%20 OpenAI%20are%20launching%20the%20Frontier%20Model,development%20of%20 frontier%20AI%20models, accessed 29 July 2023). 104. Fact sheet: Biden–Harris Administration secures voluntary commitments from leading artificial intelligence companies to manage the risks posed by AI. Washington DC: The White House, 21 July 2023 (https://www.whitehouse.gov/briefing-room/statements- releases/2023/07/21/fact-sheet-biden-harris-administration-secures-voluntary- commitments-from-leading-artificial-intelligence-companies-to-manage-the-risks- posed-by-ai/, accessed 29 July 2023). 105. Volpicelli G. Europe pitches AI pact to curtail the booming tech’s risk. Politico, 26 May 2023 (https://www.politico.eu/article/big-tech-rumble-europe-global-artificial-
+
+[PÁGINA 90] TEXTO_SIGNIFICATIVO | 2443 chars
+72 Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models 113. Li P . Making AI less “thirsty”: Uncovering and addressing the secret water footprint of AI models. ArXiv. 2023;2304.03271v. doi:10.48550/arXiv.2304.03271. 114. Syed N. The secret water footprint of AI technology. The Markup, 15 April 2023 (https:// themarkup.org/hello-world/2023/04/15/the-secret-water-footprint-of-ai-technology, accessed 2 June 2023). 115. Livingstone G. It’s pillage: Thirsty Uruguayans blast Google’s plan to exploit water supply. The Guardian, 11 July 2023 (https://www.theguardian.com/world/2023/jul/11/ uruguay-drought-water-google-data-center, accessed 12 July 2023). 116. Thornhill J. The sceptical case on generative AI. Financial Times, 17 August 2023. (https://www.ft.com/content/ed323f48-fe86-4d22-8151-eed15581c337, accessed 11 September 2023). 117. Marcus G. The imminent enshittification of the Internet. Substack, 16 August 2023 (https://garymarcus.substack.c
+
+[PÁGINA 91] TEXTO_SIGNIFICATIVO | 2585 chars
+73References 125. Baxter K, Schelsinger, N. Managing the risks of generative AI. Harvard Business Review, 6 June 2023 (https://hbr.org/2023/06/managing-the-risks-of-generative-ai, accessed 17 June 2023). 126. Samuelson P . Generative AI meets copyright. Science. 2023;381(6654):158–61. doi:10.1126/science.adi0656. 127. El-Mhamdi E, Farhadkhani S, Guerraoui R, Gupta N, Hoang L, Pinot R et al. On the impossible safety of large AI models. arXiv. 2209.15259v2. doi:10.48550.arXiv.2209.15259. 128. Open AI. GPT-4 technical report. arXiv:2303.08774v3. doi:10.48550/arXiv.2302.08774. 129. Murgia M. Open AI’s red team: experts hired to “break” ChatGPT. Financial Times, 14 April 2023 (https://www.ft.com/content/0876687a-f8b7-4b39-b513-5fee942831e8, accessed 10 July 2023). 130. Clegg N. Openness on AI is the way forward for tech. Financial Times, 11 July 2023 (https://www.ft.com/content/ac3b585a-ce50-43d1-b71d-14dfe6dce999, accessed 11 July 2023). 131. Huang S, Toner H, Haluza Z, Creemers R, Webster
+
+[PÁGINA 92] TEXTO_SIGNIFICATIVO | 2773 chars
+74 Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models 136. Spirling A. Why open-source generative AI models are an ethical way forward for science. Nature. 2023;616(7957):413. doi:10.1038/d41586-023-01295-4. 137. Vincent J. Meta’s powerful AI language model has leaked online – What happens now? The Verge, 8 March 2023 (https://www.theverge.com/2023/3/8/23629362/meta-ai- language-model-llama-leak-online-misuse, accessed 29 July 2023). 138. Maffuli S. Meta’s Llama 2 license is not open source. Open Source Initiative, 20 July 2023 (https://blog.opensource.org/metas-llama-2-license-is-not-open-source/, accessed 29 July 2023). 139. Marble A. Software licenses masquerading as open source. marble.onl, 1 June 2023 (http://marble.onl/posts/software-licenses-masquerading-as-open-source.html, accessed 29 July 2023). 140. Keary T. Report finds 82% of open-source software components “inherently risky”. Venture Beat, 17 April 2023 ( https://venturebeat.
+
+[PÁGINA 93] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2366 chars
+75References 147. Sijbrandij Sid. AI weights are not “open source”. Open Core Ventures, 27 June 2023. (https://opencoreventures.com/blog/2023-06-27-ai-weights-are-not-open-source/, accessed 29 July 2023). 148. Meeker H. Towards an open weights definition. Copyleft Currents, 8 June 2023 (https:// heathermeeker.com/2023/06/08/toward-an-open-weights-definition/, accessed 29 July 2023). 149. Dastin J, Tong A. Google, one of AI’s biggest backers, warns its own staff about chatbots. Reuters, 15 June 2023 (https://www.reuters.com/technology/google-one-ais-biggest- backers-warns-own-staff-about-chatbots-2023-06-15/, accessed 9 July 2023). 150. Kanter GP , Packel EA. Health care privacy risks of AI chatbots. JAMA. 2023;330(4):311–2. doi:10.1001/jama.2023.9618. 151. Interim measures for the management of generative artificial intelligence services. Beijing: Cyberspace Administration of China; 13 2023. (http://www.cac.gov.cn/2023- 07/13/c_1690898327029107.htm, accessed 29 July 2023). 152. Sataria
+
+[PÁGINA 94] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2349 chars
+76 Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models 159. Ghost in the machine: Addressing the harm of generative AI. Forbrukerradet. Oslo: Norwegian Concumer Council; 2023 (https://storage02.forbrukerradet.no/ media/2023/06/generative-ai-rapport-2023.pdf, accessed 9 July 2023). 160. Mökander J, Floridi L. Ethics-based auditing to develop trustworthy AI. Minds & Machines, 2021. doi:10.1007/s11023-021-09557-8. 161. Minssen T, Vayena E, Cohen IG. The challenges for regulating medical use of ChatGPT and other large language models. JAMA. 2023;330(4):315–6. doi: 10.1001/jama.2023.9651. 162. Questions and Answers: AI Liability Directive. Brussels: European Commission; 2022 (https://ec.europa.eu/commission/presscorner/detail/en/QANDA_22_5793, accessed 20 June 2023). 163. Duffourc MN, Gerke S. The proposed EU directives for AI liability leave worrying gaps likely to impact medical AI. NP J Digit Med. 2023;6(1):77. doi:10.1038/s41746-023-00823-w.
+
+[PÁGINA 95] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2175 chars
+77Annex. Methods Annex. Methods This guidance was developed by consensus. WHO relied upon its Expert Group on the Ethics and Governance of Artificial Intelligence for Health, consisting of 20 experts from all WHO regions who met fortnightly for approximately four months. The Expert Group applied the Consensus Principles and Recommendations from previously issued guidance on the ethics and governance of artificial intelligence for health to the emerging use of LMMs in healthcare and medicine. The Expert Group first compiled a preliminary mapping of the potential uses and benefits of large multi-modal models, as well as the risks, at the level of the end-user. The Expert Group also identified risks that health systems and societies could encounter with the use of such AI systems. This was supplemented by a comprehensive literature search of: (a) existing and proposed uses of LMMs in healthcare that have materialized over several years of its progressive evolution and use, (b) anticipated
+
+[PÁGINA 96] SEM_TEXTO_EXTRAIVEL | 0 chars
+[sem texto extraível]
+
+[PÁGINA 97] SEM_TEXTO_EXTRAIVEL | 0 chars
+[sem texto extraível]
+
+[PÁGINA 98] POSSIVEL_CAPA_FRONT_MATTER | 100 chars
+World Health Organization 20 Avenue Appia CH-1211 Geneva 27 Switzerland Website: https://www.who.int
+
+--- RESUMO AUTOMÁTICO ---
+Provável conteúdo substantivo: 6-7, 80-95
+Provável capa/índice/front matter: 5, 98
+Sem/pouco texto extraível: 2, 24-25, 47-49, 96-97
+
+==============================================================================================================
+DOCUMENTO: regulatory_considerations_ai_health_WHO_2024
+==============================================================================================================
+Título: Regulatory considerations on artificial intelligence for health
+Páginas no PDF: 80
+Última página indexada: 66
+Ausentes: 1-3, 5-6, 8, 16, 19, 23, 27, 35, 42, 48, 54, 67-80
+Buracos internos: 1-3, 5-6, 8, 16, 19, 23, 27, 35, 42, 48, 54
+Ausência no final: 67-80
+
+--- PÁGINAS AUSENTES ---
+
+[PÁGINA 1] POUCO_TEXTO | 63 chars
+Regulatory considerations on artificial intelligence for health
+
+[PÁGINA 2] POUCO_TEXTO | 63 chars
+Regulatory considerations on artificial intelligence for health
+
+[PÁGINA 3] POUCO_TEXTO | 63 chars
+Regulatory considerations on artificial intelligence for health
+
+[PÁGINA 5] POSSIVEL_INDICE_SUMARIO | 4596 chars
+Regulatory considerations on artificial intelligence for health iii CONTENTS Foreword ...............................................................................................................................................................................v Acknowledgements ....................................................................................................................................................................vii Abbreviations and acronyms ...................................................................................................................................................ix Executive summary .....................................................................................................................................................................xi 1. Introduction .............................................................................................................................................................................
+
+[PÁGINA 6] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2133 chars
+Regulatory considerations on artificial intelligence for health iv 5.5 Privacy and data protection ............................................................................................... 33 5.5.1 Current landscape ............................................................................................................................................33 5.5.2 Documentation and transparency ...............................................................................................................35 5.5.3 AI regulatory sandboxes .................................................................................................................................37 5.6 Engagement and collaboration .......................................................................................... 39 5.6.1 Discussion on strategies of profiled regulatory bodies ............................................................................43 5.6.2 Two successful instances of engagement ..........
+
+[PÁGINA 8] POSSIVEL_CAPA_FRONT_MATTER | 306 chars
+Regulatory considerations on artificial intelligence for health vi will be guided by appropriate regulatory considerations so that all populations can safely and effectively benefit from the great promise these technologies hold for the future. Dr. Jeremy Farrar, Chief Scientist, World Health Organization
+
+[PÁGINA 16] POUCO_TEXTO | 67 chars
+Regulatory considerations on artificial intelligence for health xiv
+
+[PÁGINA 19] REVISAR | 331 chars
+Regulatory considerations on artificial intelligence for health 3 3. DEFINITIONS, FUNDAMENTAL CONCEPTS AND DECLARATIONS OF INTEREST For the purpose of this document, some key terms and concepts are defined and/ or explained in the Annex, as is the approach used to assess and manage external participants’ declarations of interest.
+
+[PÁGINA 23] REVISAR | 96 chars
+Regulatory considerations on artificial intelligence for health 7 DOCUMENTATION AND TRANSPARENCY
+
+[PÁGINA 27] REVISAR | 149 chars
+Regulatory considerations on artificial intelligence for health 11 RISK MANAGEMENT AND ARTIFICIAL INTELLIGENCE SYSTEMS DEVELOPMENT LIFECYCLE APPROACH
+
+[PÁGINA 35] REVISAR | 118 chars
+Regulatory considerations on artificial intelligence for health 19 INTENDED USE AND ANALYTICAL AND CLINICAL VALIDATION
+
+[PÁGINA 42] POUCO_TEXTO | 79 chars
+Regulatory considerations on artificial intelligence for health 26 DATA QUALITY
+
+[PÁGINA 48] REVISAR | 94 chars
+Regulatory considerations on artificial intelligence for health 32 PRIVACY AND DATA PROTECTION
+
+[PÁGINA 54] REVISAR | 95 chars
+Regulatory considerations on artificial intelligence for health 38 ENGAGEMENT AND COLLABORATION
+
+[PÁGINA 67] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2527 chars
+Regulatory considerations on artificial intelligence for health 51 REFERENCES 1. Global Strategy on Digital Health 2020–2025. Geneva: World Health Organization; 2020 (https://apps. who.int/iris/handle/10665/344249, accessed 25 July 2023). 2. The 17 Goals – Sustainable Development (online). New York (NY): United Nations; 2020. (https://sdgs. un.org/goals, accessed 25 July 2023). 3. Thirteenth General Programme of Work 2019−2023. Geneva: World Health Organization (https://www. who.int/about/what-we-do/thirteenth-general-programme-of-work-2019---2023, accessed 25 July 2023). 4. Proposed regulatory framework for modifications to artificial intelligence/machine learning (AI/ ML)-based software as a medical device (SaMD). Discussion paper and request for feedback. Silver Spring (MD): US Food and Drug Administration; 2019 (https://www.fda.gov/files/medical%20devices/ published/US-FDA-Artificial-Intelligence-and-Machine-Learning-Discussion-Paper.pdf, accessed 25 July 2023). 5. Informal innovat
+
+[PÁGINA 68] PROVAVEL_CONTEUDO_SUBSTANTIVO | 3041 chars
+Regulatory considerations on artificial intelligence for health 52 11. Wu E, Wu K, Daneshjou R, Ouyang D, Ho DE, Zou J. How medical AI devices are evaluated: limitations and recommendations from an analysis of FDA approvals. Nat Med. 2021;27(4):582–4. 12. Liu X, Cruz Rivera S, Moher D, Calvert MJ, Denniston AK; SPIRIT-AI and CONSORT-AI Working Group. Reporting guidelines for clinical trial reports for interventions involving artificial intelligence: the CONSORT-AI extension. Nat Med. 2020;26(9):1364–74. 13. Rivera SC, Liu X, Chan A, Denniston AK, Calvert MJ. Guidelines for clinical trial protocols for interventions involving artificial intelligence: the SPIRIT-AI extension. BMJ 2020;370:m3210. 14. Guidance for post-market surveillance and market surveillance of medical devices, including in vitro diagnostics. Geneva: World Health Organization; 2020 (https://apps.who.int/iris/handle/10665/337551, accessed 25 July 2023). 15. Software as a Medical Device (SaMD): key definitions. Internati
+
+[PÁGINA 69] TEXTO_SIGNIFICATIVO | 2988 chars
+Regulatory considerations on artificial intelligence for health 53 23. Notification No.0831-14, 31 August 2020 (Chinese). Handling with applications for confirmation of PACMP for medical devices, PSEHB/SD (in Japanese). Tokyo: Ministry of Health, Labour and Welfare; 2020 (https://www.mhlw.go.jp/content/11120000/000665757.pdf, accessed 25 July 2023). 24. Workshop on clinical evaluation of AI for health. Geneva: International Telecommunication Union; 2020 (https://www.itu.int/en/ITU-T/focusgroups/ai4h/Pages/ws/2010.aspx, accessed 25 July 2023). 25. Schörverth E, et.al. FG-AI4H Open Code Initiative – evaluation and reporting package. In: proceedings of the ITU/WHO Focus Group on Artificial Intelligence for Health (FG-AI4H) – Meeting K; 2021. 26. Sendak M-P , Gao M, Brajer N, Balu S. Presenting machine learning model information to clinical end users with model facts labels. NP J digital medicine. 2020;3(1):1–4. 27. Verks B, Oala L. Data and artificial intelligence assessment methods (DAIS
+
+[PÁGINA 70] TEXTO_SIGNIFICATIVO | 2934 chars
+Regulatory considerations on artificial intelligence for health 54 36. AI audit.org (website) (https://aiaudit.org/, accessed 25 July 2023). 37. Software as a medical device (SaMD): clinical evaluation. International Medical Device Regulators Forum; 2016 (http://www.imdrf.org/docs/imdrf/final/consultations/imdrf-cons-samd-ce.pdf, accessed 25 July 2023). 38. Evidence standards framework for digital health technologies. London: National Institute for Health and Care Excellence (NICE); 2019 (https://www.nice.org.uk/Media/Default/About/what-we-do/our- programmes/evidence-standards-framework/digital-evidence-standards-framework.pdf, accessed 25 July 2023). 39. Topol EJ. Welcoming new guidelines for AI clinical research. Nat Med. 2020;26(9):1318–20. 40. Real-world data: assessing electronic health records and medical claims data to support regulatory decision-making for drug and biological products. Draft guidance for industry. Silver Spring (MD): US Food and Drug Administration; 2021 (https
+
+[PÁGINA 71] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2944 chars
+Regulatory considerations on artificial intelligence for health 55 49. Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation) (Text with EEA relevance). 50. Adequacy decisions: how the EU determines if a non-EU country has an adequate level of data protection. Brussels: European Commission (https://ec.europa.eu/info/law/law-topic/data-protection/ international-dimension-data-protection/adequacy-decisions_en, accessed 25 July 2023). 51. NIST privacy framework: a tool for improving privacy through enterprise risk management. Washington (DC): National Institute of Standards and Technology (NIST), US Department of Commerce; 2020 (https://www.nist.gov/system/files/documents/2020/01/16/NIST%20Privacy%20Framework_V1.0.pdf, accessed 25 July 2023). 52. India’s Personal Dat
+
+[PÁGINA 72] TEXTO_SIGNIFICATIVO | 3161 chars
+Regulatory considerations on artificial intelligence for health 56 61. Communication on enabling the digital transformation of health and care in the Digital Single Market; empowering citizens and building a healthier society. Brussels: European Commission; 2018 (https:// digital-strategy.ec.europa.eu/en/library/communication-enabling-digital-transformation-health-and- care-digital-single-market-empowering, accessed 25 July 2023) 62. E-services. Singapore: Health Sciences Authority (HAS) (https://www.hsa.gov.sg/e-services, accessed 25 July 2023). 63. International Association for Public Participation (IAP2) Spectrum. International Association for Public Participation; 2007 (https://www.iap2.org/, accessed 20 March 2023). 64. Ho D. Artificial intelligence in cancer therapy. Science. 2020;367(6481):982–3. (https://science. sciencemag.org/content/367/6481/982, accessed 20 March 2023). 65. Ho D. Addressing COVID-19 drug development with artificial intelligence. Adv Intell Syst. 2020;2(5):2
+
+[PÁGINA 73] TEXTO_SIGNIFICATIVO | 543 chars
+Regulatory considerations on artificial intelligence for health 57 73. Pagallo U, Casanovas P , Madelin R. The middle-out approach: assessing models of legal governance in data protection, artificial intelligence, and the Web of Data. The Theory and Practice of Legislation. 2019;7(1):1–25. 74. Stakeholder communications. Sydney: Atlassian (https://www.atlassian.com/team-playbook/plays/ stakeholder-communications-plan, accessed 25 July 2023). 75. Clarke R. Regulatory alternatives for AI. Computer Law & Security Review. 2019;35(4):398–409.
+
+[PÁGINA 74] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2903 chars
+Regulatory considerations on artificial intelligence for health 58 ANNEX. DEFINITIONS, FUNDAMENTAL CONCEPTS AND DECLARATIONS OF INTEREST • Definitions and concepts The FG-AI4H is proposing a new deliverable titled: “FG-AI4H terms and definitions” which aims to establish a new deliverable for the FG-AI4H with a glossary with agreed terminology in AI for health. The objectives of the new deliverable are the consistent use of terms across various deliverables, including WG-RC, and the promotion of harmonized use of important AI for health terms across the different disciplines involved in this cross-disciplinary field. However, this section applies to terms and concepts as they are used for the purpose of this document as part of the WG-RC. For more general terms across the FG, please refer to the FG-AI4H terms and definitions deliverable. 1. Artificial Intelligence AI is a branch of computer science, statistics and engineering that uses algorithms or models to perform tasks and exhibit b
+
+[PÁGINA 75] PROVAVEL_CONTEUDO_SUBSTANTIVO | 3610 chars
+Regulatory considerations on artificial intelligence for health 59 help facilitate the understanding of the algorithm decision-making process (explainability). Documentation should allow for the tracing and audits of the development process and the steps taken in the development and validation of the AI system if needed and appropriate. This includes ensuring that changes and deviations from pre-specified approaches and protocols are tracked, recorded and justified. Although effective documentation is only one element that supports transparency, it is a key regulatory principle. 5. Privacy Privacy is a broad and multidimensional concept. It is a universally accepted fundamental human right. 14 In nearly every nation, numerous statutes, constitutional rights and judicial decisions seek to protect privacy. The concept of privacy includes the control over personal information, often referred to as data or information privacy. Data privacy is focused on the use and governance of personal d
+
+[PÁGINA 76] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2946 chars
+Regulatory considerations on artificial intelligence for health 60 10. Software as a medical device (SaMD) SaMD is defined by the IMDRF as “software intended to be used for one or more medical purposes that perform these purposes without being part of a hardware medical device”(7). 11. AI system The IMDRF (1) defines an AI system as a software that is developed with one or more of the techniques and approaches listed below* and can, for a given set of human-defined objectives, generate outputs such as content, predictions, recommendations or decisions that influence the environments they interact with. *AI techniques and approaches: (a) machine learning approaches, including supervised, unsupervised and reinforcement learning, using a wide variety of methods, including deep learning; (b) logic- and knowledge-based approaches, including knowledge representation, inductive (logic) programming, knowledge bases, inference and deductive engines, (symbolic) reasoning and expert systems; (c) 
+
+[PÁGINA 77] TEXTO_SIGNIFICATIVO | 1430 chars
+Regulatory considerations on artificial intelligence for health 61 3. Kearns M, Roth A. The ethical algorithm: the science of socially aware algorithm design. New York (NY): Oxford University Press, 2019. 4. Real-world data: assessing electronic health records and medical claims data to support regulatory decision-making for drug and biological products. Draft guidance for industry. Silver Spring (MD): US Food and Drug Administration; 2021 (https://www.fda.gov/regulatory-information/search-fda-guidance- documents/real-world-data-assessing-electronic-health-records-and-medical-claims-data-support- regulatory, accessed 25 July 2023). 5. Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation) (Text with EEA relevance). 6. Vayena E, Dzenowagis J, Brownstein JS, Sheikh 
+
+[PÁGINA 78] SEM_TEXTO_EXTRAIVEL | 0 chars
+[sem texto extraível]
+
+[PÁGINA 79] SEM_TEXTO_EXTRAIVEL | 0 chars
+[sem texto extraível]
+
+[PÁGINA 80] POSSIVEL_CAPA_FRONT_MATTER | 197 chars
+Regulatory considerations on artificial intelligence for health 64 Digital Health and Innovation Division of the Chief Scientist World Health Organization Avenue Appia 20 1121 Geneva 27 Switzerland
+
+--- RESUMO AUTOMÁTICO ---
+Provável conteúdo substantivo: 6, 67-77
+Provável capa/índice/front matter: 5, 8, 80
+Sem/pouco texto extraível: 1-3, 16, 42, 78-79
+
+==============================================================================================================
+DOCUMENTO: ethical_impact_assessment_UNESCO_2023
+==============================================================================================================
+Título: Ethical impact assessment: a tool of the Recommendation on the Ethics 
+Páginas no PDF: 51
+Última página indexada: 47
+Ausentes: 1, 3-4, 9, 17, 48-51
+Buracos internos: 1, 3-4, 9, 17
+Ausência no final: 48-51
+
+--- PÁGINAS AUSENTES ---
+
+[PÁGINA 1] PROVAVEL_CONTEUDO_SUBSTANTIVO | 95 chars
+Ethical Impact Assessment A Tool of the Recommendation on the Ethics of Artificial Intelligence
+
+[PÁGINA 3] PROVAVEL_CONTEUDO_SUBSTANTIVO | 95 chars
+Ethical Impact Assessment A Tool of the Recommendation on the Ethics of Artificial Intelligence
+
+[PÁGINA 4] POSSIVEL_INDICE_SUMARIO | 645 chars
+4 Table of Contents FOREWORD 5 SCOPING QUESTIONS 9 1. Project Description 10 2. P roportionality Screening and Do No Harm 12 3. P roject Governance (Establishing Roles and Responsibilities) 13 4. M ultistakeholder Governance 15 IMPLEMENTING THE UNESCO PRINCIPLES 1 7 5. Safety and Security 18 6. F airness, Non-Discrimination, Diversity 21 7. Sustainability 25 8. P rivacy and Data Protection 29 9. Human O versight and Determination 33 10. Transparency and Explainability; Accountability and Responsibility 36 11. A wareness and Literacy 40 ANNEX: GUIDANCE ON FILLING IN THE SUB-SECTIONS ‘IDENTIFYING AND MITIGATING IMPACTS ’ 43 BIBLIOGRAPHY 48
+
+[PÁGINA 9] POUCO_TEXTO | 19 chars
+9 Scoping Questions
+
+[PÁGINA 17] POUCO_TEXTO | 37 chars
+17 Implementing the UNESCO Principles
+
+[PÁGINA 48] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2934 chars
+48 Ethical Impact Assessment A Tool of the Recommendation on the Ethics of Artificial Intelligence Bibliography Abu Elyounes D (2019) Contextual Fairness: A Legal and Policy Analysis of Algorithmic Fairness. Journal of Law, Technology and Policy. Elsevier BV. DOI: 10.2139/SSRN.3478296. Andraško J, Mesarčík M and Hamuľák O (2021) The regulatory intersections between artificial intelligence, data protection and cyber security: challenges and opportunities for the EU legal framework. AI and Society 36(2). Springer Science and Business Media Deutschland GmbH: 623–636. DOI: 10.1007/S00146-020-01125-5/METRICS. Bommasani R, Hudson DA, Adeli E, et al. (2021) On the Opportunities and Risks of Foundation Models. Arrive. Available at: https://arxiv.org/abs/2108.07258v3 (accessed 13 June 2023). Buolamwini J and Gebru T (2018) Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification. Proceedings of the 1st Conference on Fairness, Accountability and Transparency. PMLR. 
+
+[PÁGINA 49] TEXTO_SIGNIFICATIVO | 3092 chars
+49 Bibliography Green B and Chen Y (2019) Disparate interactions: An algorithm-in-the-loop analysis of fairness in risk assessments. FAT* 2019 - Proceedings of the 2019 Conference on Fairness, Accountability, and Transparency. Association for Computing Machinery, Inc: 90–99. DOI: 10.1145/3287560.3287563. Guo W and Caliskan A (2021) Detecting Emergent Intersectional Biases: Contextualized Word Embeddings Contain a Distribution of Human-like Biases. AIES 2021 - Proceedings of the 2021 AAAI/ACM Conference on AI, Ethics, and Society. Association for Computing Machinery, Inc: 122–133. DOI: 10.1145/3461702.3462536. Henderson P , Hu J, Romoff J, et al. (2020) Towards the Systematic Reporting of the Energy and Carbon Footprints of Machine Learning. Journal of Machine Learning Research 21. Microtome Publishing: 1–44. Available at: https://arxiv. org/abs/2002.05651v2 (accessed 17 April 2023). Howard A (2021) Real Talk: Intersectionality and AI. Available at:https://sloanreview.mit.edu/article/re
+
+[PÁGINA 50] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2928 chars
+50 Ethical Impact Assessment A Tool of the Recommendation on the Ethics of Artificial Intelligence Leslie D, Burr C, Aitken M, et al. (2022) Human rights, democracy, and the rule of law assurance framework for AI systems: A proposal. Zenodo. DOI: 10.5281/ZENODO.5981676. Long D and Magerko B (2020) What is AI Literacy? Competencies and Design Considerations. CHI ’20: Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems. Association for Computing Machinery: 1–16. DOI: 10.1145/3313831.3376727. Mantelero A (2022) Human Rights Impact Assessment and AI. In: Beyond Data: Human Rights, Ethical, and Social Impact Assessment in AI. T.M.C. Asser Press. Navarro L, Roura M, Franquesa D, et al. (2021) A guide to the circular economy of digital devices. Available at: https:// circulartech.apc.org/books/a-guide-to-the-circular-economy-of-digital-devices (accessed 13 June 2023). OECD (2022) The OECD Framework for the Classification of AI systems. Available at: www.oecd.ai/classi
+
+[PÁGINA 51] PROVAVEL_CONTEUDO_SUBSTANTIVO | 1305 chars
+51 Ethical Impact Assessment A Tool of the Recommendation on the Ethics of Artificial Intelligence van Bekkum M and Zuiderveen Borgesius F (2023) Using sensitive data to prevent discrimination by artificial intelligence: Does the GDPR need a new exception? Computer Law & Security Review 48. Elsevier Advanced Technology: 105770. DOI: 10.1016/J.CLSR.2022.105770. Wachter S, Mittelstadt B and Russell C (2017) Counterfactual Explanations Without Opening the Black Box: Automated Decisions and the GDPR. Harvard Journal of Law & Technology 32(2). Elsevier BV. DOI: 10.2139/SSRN.3063289. Whittlestone J, Alexandrova A, Nyrup R, et al. (2019) The role and limits of principles in AI ethics: Towards a focus on tensions. AIES 2019 - Proceedings of the 2019 AAAI/ACM Conference on AI, Ethics, and Society. Association for Computing Machinery, Inc: 195–200. DOI: 10.1145/3306618.3314289. Wood A, Altman M, Bembenek A, et al. (2018) Differential Privacy: A Primer for a Non-Technical Audience. Vanderbilt Jou
+
+--- RESUMO AUTOMÁTICO ---
+Provável conteúdo substantivo: 1, 3, 48-51
+Provável capa/índice/front matter: 4
+Sem/pouco texto extraível: 9, 17
+
+==============================================================================================================
+DOCUMENTO: global_digital_health_strategy_WHO_2020_2027
+==============================================================================================================
+Título: Global strategy on digital health 2020 - 2027
+Páginas no PDF: 60
+Última página indexada: 59
+Ausentes: 1, 3-5, 8, 11, 16, 20, 31, 38, 40, 46-47, 60
+Buracos internos: 1, 3-5, 8, 11, 16, 20, 31, 38, 40, 46-47
+Ausência no final: 60
+
+--- PÁGINAS AUSENTES ---
+
+[PÁGINA 1] POUCO_TEXTO | 45 chars
+1 Global strategy on digital health 2020-2027
+
+[PÁGINA 3] POSSIVEL_INDICE_SUMARIO | 1331 chars
+ACKNOWLEDGEMENTS 2 INTRODUCTION 4 DIGITAL TECHNOLOGIES – SHAPING THE FUTURE OF GLOBAL HEALTH 7 VISION 10 PURPOSE 11 GUIDING PRINCIPLES 15 1. Acknowledge that institutionalization of digital health in the national health system requir es a decision and commitment by countries 15 2. Recognize that successful digital health initiatives requir e an integrated strategy 15 3. Promote the appropriate use of digital technologies for health 16 4. Recognize the urgent need to addr ess the major impediments faced by least-developed countries implementing digital health technologies 17 STRATEGIC OBJECTIVES 19 1. Promote global collaboration and advance the transfer of knowledge on digital health 19 2. Advance the implementation of national digital health strategies 21 3. Strengthen governance for digital health at global, regional and national levels 23 4. Advocate people-centred health systems that ar e enabled by digital health 26 FRAMEWORK FOR ACTION 30 1. Commit 30 2. Catalyse 30 3. Measure 31
+
+[PÁGINA 4] PROVAVEL_CONTEUDO_SUBSTANTIVO | 2234 chars
+2 The development of the global strategy on digital health underwent a two-year co-creation journey before its adoption at the Seventy- third World Health Assembly (WHA). The initial draft of the strategy document was drafted and disseminated for comments through an internal consultation in early 2019. An outline of scheduled consultations was then communicated to Member States at an information session held in Geneva in March 2019, followed by a global public consultation from March to May of the same year. Various consultations with Member States were held between June and October 2019, including a global consultation convened in Geneva and a series of discussions during the regional committee meetings. The strategy was presented as part of the agenda item (EB146/26) in the Executive Board in February 2020. Having considered the report on the draft global strategy on digital health, the board decided to recommend an adoption of the document to the Seventy-third WHA. In responding to 
+
+[PÁGINA 5] TEXTO_SIGNIFICATIVO | 1539 chars
+3 Kuzmanovic, Ledia Lazeri, Tormod Lund, Myrna Marti, Clarisse Mason, Natela Menabde, Raman Minhas, Oliver Morgan, Lincoln Moura, Nhu Linh Nguyen, David Novillo Ortiz, Olushayo Olu, Ibrahim Ouakrim, Lorraine Pablo-Ugale, Andy Pattison, Liliana, Pievaroli, Bardan Rana, Marge Reinap, Andreas Reis, Elena Sartorius, Mubashar Sheikh, Norman Sinappen, Peter Singer, Yves Souteyrand, Rutendo Urenje, Heini Utunen, Adriana Velazquez Berumen, Isabelle Wachsmuth, Tana Wuliji, Jean-Marie Yameogo. WHO collaborating centres, other UN agencies and entities, representatives from industry, civil society, academic and research institutes and many individuals also submitted inputs and suggestions during the public consultation process. The department of Digital Health and Innovation would like to extend its gratitude to all Member States delegates who provided comments during the preparation of this document. The department would like to extend its appreciation to the Digital Health Technical Advisory Gro
+
+[PÁGINA 8] POUCO_TEXTO | 42 chars
+Photo credit: Getty Images / SeventyFour 6
+
+[PÁGINA 11] POUCO_TEXTO | 48 chars
+9Photo credit: WHO / Blink Media - Juliana Tan 9
+
+[PÁGINA 16] POUCO_TEXTO | 45 chars
+14Photo credit: WHO / NOOR / Benedicte Kurzen
+
+[PÁGINA 20] POUCO_TEXTO | 43 chars
+18Photo credit: Getty Images / miriam-doerr
+
+[PÁGINA 31] POUCO_TEXTO | 49 chars
+29 Photo credit: WHO / Blink Media - Ethiram Jabi
+
+[PÁGINA 38] POUCO_TEXTO | 38 chars
+3636Photo credit: Getty Images / Gajic
+
+[PÁGINA 40] REVISAR | 114 chars
+3838Photo credit: WHO / Blink Media – Saiyna Bashir - ( , ;,:,:� j � � -- • '"'""-- ., J , ........ ...... .,,, "'
+
+[PÁGINA 46] POUCO_TEXTO | 41 chars
+4444Photo credit: WHO / NOOR / Arko Datto
+
+[PÁGINA 47] REVISAR | 125 chars
+PROPOSED ACTIONS FOR MEMBER STATES, THE SECRETARIAT AND PARTNERS FOR IMPLEMENTING THE GLOBAL STRATEGY ON DIGITAL HEALTH ANNEX
+
+[PÁGINA 60] SEM_TEXTO_EXTRAIVEL | 0 chars
+[sem texto extraível]
+
+--- RESUMO AUTOMÁTICO ---
+Provável conteúdo substantivo: 4-5
+Provável capa/índice/front matter: 3
+Sem/pouco texto extraível: 1, 8, 11, 16, 20, 31, 38, 46, 60
+
+==============================================================================================================
+DOCUMENTO: codigo_etica_medica_CFM_2019
+==============================================================================================================
+Título: Resolução CFM nº 2.217, de 27 de setembro de 2018
+Páginas no PDF: 110
+Última página indexada: 106
+Ausentes: 1-3, 5-8, 12, 16, 20, 26, 32, 38, 40, 42, 46, 48, 52-82, 86, 102, 104, 107-110
+Buracos internos: 1-3, 5-8, 12, 16, 20, 26, 32, 38, 40, 42, 46, 48, 52-82, 86, 102, 104
+Ausência no final: 107-110
+
+--- PÁGINAS AUSENTES ---
+
+[PÁGINA 1] POUCO_TEXTO | 70 chars
+CÓDIGO DE ÉTICA MÉDICA RE S OL U ÇÃ O CFM Nº 2 21 7 DE 2 7 / 09 / 2018
+
+[PÁGINA 2] SEM_TEXTO_EXTRAIVEL | 0 chars
+[sem texto extraível]
+
+[PÁGINA 3] REVISAR | 180 chars
+CONSELHO FEDERAL DE MEDICINA CÓDIGO DE ÉTICA MÉDICA Resolução CFM n° 2.217, de 27 de setembro de 2018, modificada pelas Resoluções CFM nº 2.222/2018 e 2.226/2019 CFM Brasília, 2019
+
+[PÁGINA 5] SEM_TEXTO_EXTRAIVEL | 0 chars
+[sem texto extraível]
+
+[PÁGINA 6] SEM_TEXTO_EXTRAIVEL | 0 chars
+[sem texto extraível]
+
+[PÁGINA 7] POSSIVEL_INDICE_SUMARIO | 1461 chars
+Sumário Apresentação ..................................................................................................... 7 Resolução CFM nº 2.217/2018.................................................................. 11 Preâmbulo..........................................................................................................13 Capítulo I Princípios fundamentais...........................................................................15 Capítulo II Direitos dos médicos...................................................................................19 Capítulo III Responsabilidade profissional.................................................................21 Capítulo IV Direitos humanos....................................................................................... 25 Capítulo V Relação com pacientes e familiares..................................................... 27 Capítulo VI Doação e transplante de órgãos e tecidos........................................ 29 Cap
+
+[PÁGINA 8] POSSIVEL_INDICE_SUMARIO | 1416 chars
+Capítulo XI Auditoria e perícia médica....................................................................... 39 Capítulo XII Ensino e pesquisa médica........................................................................ 41 Capítulo XIII Publicidade médica ................................................................................... 43 Capítulo XIV Disposições gerais....................................................................................... 45 Exposição de Motivos da Resolução CFM nº 2.217/2018........... 47 Anexos................................................................................................................. 51 Índice Remissivo do Código de Ética Médica........................................ 53 Composição do Conselho Federal de Medicina Diretoria.......................................................................................................... 81 Conselheiros titulares.........................................................................
+
+[PÁGINA 12] SEM_TEXTO_EXTRAIVEL | 0 chars
+[sem texto extraível]
+
+[PÁGINA 16] SEM_TEXTO_EXTRAIVEL | 0 chars
+[sem texto extraível]
+
+[PÁGINA 20] SEM_TEXTO_EXTRAIVEL | 0 chars
+[sem texto extraível]
+
+[PÁGINA 26] SEM_TEXTO_EXTRAIVEL | 0 chars
+[sem texto extraível]
+
+[PÁGINA 32] SEM_TEXTO_EXTRAIVEL | 0 chars
+[sem texto extraível]
+
+[PÁGINA 38] PROVAVEL_CONTEUDO_SUBSTANTIVO | 264 chars
+CÓDIGO DE ÉTICA MÉDICA 36 Art. 78. Deixar de orientar seus auxiliares e alunos a respeitar o sigilo profissional e zelar para que seja por eles mantido. Art. 79. D eixar de guardar o sigilo profissional na cobrança de honorários por meio judicial ou extrajudicial.
+
+[PÁGINA 40] PROVAVEL_CONTEUDO_SUBSTANTIVO | 1316 chars
+CÓDIGO DE ÉTICA MÉDICA 38 do médico no Conselho Regional de Medicina. § 2º O pr ontuário estar á sob a guar da do médic o ou da instituição que assiste o paciente. § 3º Cabe ao médic o assistente ou a seu substitut o elaborar e entregar o sumár io de alta ao pacien te ou, na sua impossibilidade , ao seu representante legal. Art. 88. Negar ao pacien te ou , na sua impossibilidade , a seu representante legal, acesso a seu prontuário, deixar de lhe f ornecer cópia quando solicitada, bem c omo deixar de lhe dar e xplicações necessárias à sua compreensão, salvo quando ocasionarem riscos ao próprio paciente ou a terceiros. Art. 89. Liberar c ópias do pr ontuário sob sua guar da e xceto para a tender a or dem judicial ou par a sua pr ópria def esa, assim como quando autorizado por escrito pelo paciente. § 1º Quando r equisitado judicialmen te, o pr ontuário ser á encaminhado ao juízo requisitante. § 2º Quando o pr ontuário f or apr esentado em sua pr ópria defesa, o médic o dev erá solicitar 
+
+[PÁGINA 42] SEM_TEXTO_EXTRAIVEL | 0 chars
+[sem texto extraível]
+
+[PÁGINA 46] SEM_TEXTO_EXTRAIVEL | 0 chars
+[sem texto extraível]
+
+[PÁGINA 48] SEM_TEXTO_EXTRAIVEL | 0 chars
+[sem texto extraível]
+
+[PÁGINA 52] SEM_TEXTO_EXTRAIVEL | 0 chars
+[sem texto extraível]
+
+[PÁGINA 53] POUCO_TEXTO | 32 chars
+CÓDIGO DE ÉTICA MÉDICA 51 ANEXOS
+
+[PÁGINA 54] SEM_TEXTO_EXTRAIVEL | 0 chars
+[sem texto extraível]
+
+[PÁGINA 55] POSSIVEL_INDICE_SUMARIO | 688 chars
+CÓDIGO DE ÉTICA MÉDICA 53 ÍNDICE REMISSIVO DO CÓDIGO DE ÉTICA MÉDICA4 Resolução CFM nº 2.217/2018 A Abandonar paciente Cap. III – art. 7°-9° Cap. V – art. 36 Abandonar plantão Cap. III – art. 7°-9° Aborto Cap. III – art. 15 Abreviar a vida Ver também Eutanásia Cap. V – art. 41 Abuso de poder Cap. III – art. 1° Cap. IV – art. 22 e 30 Cap. V – art. 40 Cap. VII – art. 47, 52 e 56 Cap. XI – art. 94 Cap. XII – art. 107 Acesso ao prontuário Cap. X – art. 85-90 Acobertar erro Cap. VII – art. 50 Cap. I- VI Acórdãos dos Conselhos de Medicina Cap. III – art. 18 Acumpliciamento Cap. III – art. 10 Acúmulo de consultas Cap. II- VIII Cap. V – art. 35 4Elaborado pela equipe da Biblioteca do CFM
+
+[PÁGINA 56] PROVAVEL_CONTEUDO_SUBSTANTIVO | 884 chars
+CÓDIGO DE ÉTICA MÉDICA 54 Adolescente Ver também Menor de idade Cap. X – art. 74 Cap. XII – art. 101 §1º Agenciar pacientes Cap. VIII – art. 64 Ajuste prévio de honorário Cap. VIII – art. 61 Aliciar paciente Cap. VIII – art. 64 Alta médica Cap. X – art. 86, 87 §3º Alterar prescrição Cap. VII – art. 52 Cap. XI – art. 97 Alterar tratamento Cap. VII – art. 52 Cap. XI – art. 97 Aluno Cap. IX – art. 78 Animais, pesquisa Cap. I- XXIV Anticoncepção Ver também Método Contraceptivo Cap. V – art. 42 Anúncio comercial Cap. IX – art. 75 Cap. XIII – art. 115 e 117 Aprimoramento profissional Cap. I- II, V, XV, XXIII Cap. V – art. 32 Cap. XII – art. 102 e 106 Área de atuação Cap. XIII – art. 114 Assentimento livre e esclarecido Cap. XII – art. 101 §1º Assinatura de folha em branco Cap. III – art. 11 Assistente técnico Cap. XI – art. 94 Atendimento, tempo Cap. II- VIII Cap. III – art. 8º
+
+[PÁGINA 57] PROVAVEL_CONTEUDO_SUBSTANTIVO | 790 chars
+CÓDIGO DE ÉTICA MÉDICA 55 Atendimento médico à distância Cap. V – art. 37 §1º Atendimento não prestado Cap. VIII – art. 59 Atestado médico Cap. III – art. 11 Cap. X – art. 80-84 e 91 Atestado de óbito Cap. IX – art. 77 Cap. X – art. 83 e 84 Atividade administrativa Preâmbulo I Atividade de ensino Preâmbulo I Cap. IX – art. 78 Cap. XII – art. 99-110 Atividade de pesquisa Preâmbulo I Cap. XII – art. 99-110 Atividade laboral Cap. I- XII Ato médico Cap. I- XIV, XVI, XIX Cap. III – art. 4°-5°, 11 e 14 Cap. VIII – art. 60 e 66 Ato médico desnecessário Cap. III – art.1° Ato médico não praticado Cap. III – art. 5° Cap. X – art. 80 e 83 Cap. XI – art. 92 Ato médico, recusa Cap I- VII Cap. II- IX Cap. V – art. 36 Ato danoso Cap. III – art. 1° Cap. V – art. 34 Cap. IX – art. 74 Cap. XIV- II
+
+[PÁGINA 58] PROVAVEL_CONTEUDO_SUBSTANTIVO | 714 chars
+CÓDIGO DE ÉTICA MÉDICA 56 Ato ilícito Cap. I- XVIII Cap. III – art.10 e 14 Cap. IV – art. 30 Cap. VII – art. 50 Atualização profissional Cap. I- II,V, XV e XXIII Cap. V – art. 32 Cap. XII – art. 102 e 106 Auditor Cap. VII – art. 52 Cap. XI – art. 92-98 Auditoria Cap. VII – art. 52 Cap. XI – art. 92-98 Ausência de outro médico Cap. I- VII Cap. III – art. 8° e 9° Cap. V – art. 33 Ausência ao plantão, ao trabalho Cap. III – art. 7°-9° Autonomia do médico Cap. I- VII, VIII e XVI Cap. II- VIII Cap. III – art. 20 Autonomia do paciente Cap. I- XXI e XXIII Cap. III – art. 15 Cap. IV – art. 24 Cap. V – art. 31, 41e 42 Cap. IX – art. 74 Cap. XII – art. 101 e 110 Autoria Cap. XII – art. 107 e108 Cap. XIII – art. 116
+
+[PÁGINA 59] PROVAVEL_CONTEUDO_SUBSTANTIVO | 742 chars
+CÓDIGO DE ÉTICA MÉDICA 57 B Benefício do paciente Cap. I- II, V, XVI, XVII e XXIII Cap. III – art. 13 e 20 Cap. V – art. 32 Cap. VII – art. 52 Cap. X – art. 91 Boletim médico Cap. X – art. 80 Brindes, vantagens Cap. I- X Cap. III – art. 20 C Capacidade de discernimento Cap. IX – art. 74 Cap. XII – art. 101 §1º Capacidade profissional do médico Cap. I- II Caráter presumido da responsabilidade médica Cap. I- XIX Cap. III – ar t. 1º, par ágrafo único Células germinativas Cap. III – art. 16 Cerceamento de trabalho Cap. VII – art. 47 e 56 Charlatanismo Cap. III – art. 10 Chefia médica Cap. III – art. 19 Cap. VII – art. 47, 52 e 56 Cap. VIII – art. 63 e 67 Cap. IX – art. 78 Clínica privada Cap. X – art. 82 Clonagem Cap. III – art. 15 e 16
+
+[PÁGINA 60] PROVAVEL_CONTEUDO_SUBSTANTIVO | 815 chars
+CÓDIGO DE ÉTICA MÉDICA 58 Cobrança de honorários Cap. VIII – art. 58-72 Cap. IX – art. 79 Cobrança irregular Cap. VIII – art. 65 e 66 Comercialização da medicina Cap. I- X Comercialização de produtos médicos Cap. VIII – art. 69 Comercialização de órgãos/ tecidos Cap. VI – art. 46 Comissão, receber Cap. VIII – art. 59 Cap. XI – art. 96 Comissão de ética Preâmbulo I Cap. II- III e IV Cap. VII – art. 57 Comissão de Ética em Pesquisa Cap. XII – art. 101 §1º e 2º Complementação de honorário Cap. VIII – art. 65 e 66 Comunicação ao CRM Preâmbulo I Cap. II- III, IV e V Cap. III – art. 12 Comunicação com o paciente Cap. III – art.13 e 15 Cap. IV – art. 22 Cap. V – art. 34, 36 e 42 Cap. VI – art. 44 Cap. X – art. 88 Cap. XII – art. 101 e 103 Cap. XIII – art. 111 Comunicação em massa Cap. XIII – art. 111, 112 e 114
+
+[PÁGINA 61] PROVAVEL_CONTEUDO_SUBSTANTIVO | 724 chars
+CÓDIGO DE ÉTICA MÉDICA 59 Comunidade, pesquisa Cap. XII – art. 103 Conceito profissional Cap. I- IV Concorrência desleal Cap. VII – art. 51 Concurso, prêmio Cap. VIII – art. 71 Condição social Cap. I- II Condição de trabalho do médico Cap. I- II, XIV e XV Cap. II- IV Cap. III – art. 19 Conduta antiética Cap. VII – art. 47, 50 e 57 Cap. XIII – art. 111 e 112 Conferência médica Cap. V – art. 39 Cap. VII – art. 53 e 54 Confidencialidade Cap. I- XI e XXV Cap. VII – art. 54 Cap. IX – art. 73-79 Cap. XII – art. 110 Conflito de interesse Cap. I- XXIII Cap. XII – art. 109 Conhecimento científico Cap. I - XXIII Consciência do médico Cap. II- IX Conselho de Medicina Cap. III – art. 17 e 18 Cap. VII – art. 57 Cap. X – art. 90
+
+[PÁGINA 62] PROVAVEL_CONTEUDO_SUBSTANTIVO | 810 chars
+CÓDIGO DE ÉTICA MÉDICA 60 Consentimento informado Cap. III – art. 4° e 15 Cap. IV – art. 22 Cap. VI – art. 44 Cap. IX – art. 73 e 77 Cap. XII – art. 101, 102 e 110 Consórcio Cap. VIII – art. 72 Constrangimento ilegal Cap. IV – art. 26 Consulta Cap. V – art. 35 Consulta, acúmulo Cap. II- VIII Consulta, duração Cap. II- VIII Consulta à distância Cap. V – art. 37 Cap. XIII – art. 114 Contraceptivo Cap. V – art. 42 Cópia de prontuário Cap. X – art. 88-90 Corpo clínico Cap. II- VI Corpo de delito Cap. XI – art. 95 Criança Ver também Menor de idade Cap. IX – art. 74 Cap. XII – art. 101 §1º Criopreservação Cap. III – art. 15 Cuidado paliativo Cap. I- XXII Cap. V – art. 36 e 41 Curandeirismo Cap. III – art. 10 D Dados científicos Cap. I- XIX Cap. XII – art. 107-109 Dano (atos danosos) Cap. III – art.1° e 36
+
+[PÁGINA 63] PROVAVEL_CONTEUDO_SUBSTANTIVO | 741 chars
+CÓDIGO DE ÉTICA MÉDICA 61 Decisão médica Cap. I- XXI Declaração de óbito Cap. IX – art. 77 Deficiência física Cap. II – I, XI Denúncia Cap. I- XVIII Cap. II- III Cap. III – art. 12 Cap. IV – art. 25 e 28 Cap. VII – art. 57 Desagravo Cap. II- VII Descoberta científica Cap. XIII – art. 116 Desempenho ético da medicina Cap. I- IV Cap. III – art. 19 Cap. V – art. 36 Desconto nos honorários Cap. VIII – art. 67 Desempenho ético Cap. V – art. 36 Desobediência às normas dos Conselhos Cap. III – art. 18 Desrespeito ao pudor Cap. V – art. 38 Desviar paciente Cap. VIII – art. 64 Dever de atualização Cap. I- V Dever de conduta Cap. XI – art. 98 Cap. XII – art. 102 Dever legal Cap. IX – art. 73 Cap. XI – art. 98 Diagnóstico Cap. XIII – art. 114
+
+[PÁGINA 64] PROVAVEL_CONTEUDO_SUBSTANTIVO | 755 chars
+CÓDIGO DE ÉTICA MÉDICA 62 Diagnóstico de morte Cap. VI – art. 43 Dignidade do paciente Cap. I- VI, XXV Cap. IV – art. 23 Cap. V – art. 38 Cap. XII – art. 99 e 110 Dignidade profissional do médico Cap. I- XV Direito autoral Cap. XIII – art. 117 Direção Clínica/Técnica Cap. II- IV Cap. III – art. 19 Cap. VII – art. 47 e 52 Cap. VIII – art. 67 Cap. XIII – art. 118 Direito de internação Cap. II- VI Cap. VII – art. 47 Direito do médico Cap. II- I-XI Cap. III – art. 19 Cap. V – art. 36 Direito do paciente Cap. I- XVI Cap. III – art. 13 Cap. IV – art. 22 e 30 Cap. V – art. 31e 42 Cap. X – art. 84 e 88 Cap. XII – art. 101 e 102 Diretor Clínico/Diretor Técnico Cap. II- IV Cap. III – art. 19 Cap. VII – art. 47 e 52 Cap. VIII – art. 67 Cap. XIII – art. 118
+
+[PÁGINA 65] PROVAVEL_CONTEUDO_SUBSTANTIVO | 663 chars
+CÓDIGO DE ÉTICA MÉDICA 63 Direitos humanos Cap. IV – art. 22 e 30 Cap. XII – art. 99 Discriminação Cap. I- XXV Cap. II- I Cap. IV – art. 23 Cap. V – art. 36 Cap. VII – art. 47 Cap. XII – art. 110 Disposição regimental Cap. I- XVI Divulgação de assuntos médicos Cap. IX – art. 75 Cap. XIII – art. 111 e 118 Doação de órgãos Cap. VI – art. 43 e 46 Doador incapaz Cap. VI – art. 45 Docente Preâmbulo I Cap. IX – art. 78 Cap. XII – art. 109 e 110 Documentos médicos (prontuário, laudo...) Cap. III – art. 11 Cap. X – art. 80-91 Doença incapacitante Cap. XIV- I Doente terminal Cap. V – art. 36 e 41 Dupla cobrança Cap. VIII – art. 66 Duração da consulta Cap. II- VIII
+
+[PÁGINA 66] PROVAVEL_CONTEUDO_SUBSTANTIVO | 729 chars
+CÓDIGO DE ÉTICA MÉDICA 64 E Ecossistema Cap. I- XIII Educação médica continuada Cap. I- V Cap. V – art. 32 Educação sanitária Cap. I- XIV Embrião humano Cap. III – art.15 Emergência Cap. I- II, V, VII Cap. III – art. 7° Cap. V – art. 33 e 37 Cap. XI – art. 97 Empresa seguradora Cap. IX – art. 77 Encaminhamento de paciente Cap. VII – art. 53 Cap. VIII – art. 59 Cap. X – art. 86 Engenharia genética Cap. III – art. 15 e 16 Ensino – atividade de Preâmbulo I Cap. XII – art. 99-110 Equipe de transplante Cap. VI – art. 43 Erro médico Cap. III – art.1°-21 Esclarecimento ao paciente Cap. III – art.13 e 15 Cap. IV – art. 22 Cap. V – art. 34, 36 e 42 Cap. VI – art. 44 Cap. X – art. 88 Cap. XII – art. 101 e 103 Cap. XIII – art. 111
+
+[PÁGINA 67] PROVAVEL_CONTEUDO_SUBSTANTIVO | 797 chars
+CÓDIGO DE ÉTICA MÉDICA 65 Escolha de sexo Cap. III – art. 15 Estatuto do hospital Cap. I- XVI Cap. III – art. 20 Escolha, liberdade de (médico) Cap. I- VIII Cap. II- VIII Cap. III – art. 20 Escolha, liberdade de (paciente) Cap. IV – art. 24 Especialidade médica Cap. XIII – art. 114 Estatuto do hospital Cap. I- XVI Cap. III – art. 20 Esterilização cirúrgica Cap. III – art.15 Cap. V – art. 42 Estimativa de custo Cap. VIII – art. 61 Etnia Cap. I- II Eugenia Cap. III – art. 15 Cap. XII – art. 99 Eutanásia Cap. V – art. 41 Exagerar número de consultas Cap. V – art. 35 Exagerar gravidade Cap. V – art. 35 Cap. X – art. 80 Exame médico-pericial Cap. XI – art. 95 Exercício ético da medicina Cap. I- XV e XXVI Exercício ilegal da medicina Cap. III – art. 10 Exercício simultâneo Cap. VIII – art. 69
+
+[PÁGINA 68] PROVAVEL_CONTEUDO_SUBSTANTIVO | 833 chars
+CÓDIGO DE ÉTICA MÉDICA 66 Exploração do trabalho médico Cap. VIII – art. 63 Exposição do paciente Cap. IX – art. 75 Experimentação com seres humanos Cap. III – art. 15 Cap. XII – art. 99-110 F Falsidade ideológica Cap. X – art. 80 Falhas contratuais Cap. II- II Falhas em normas institucionais Cap. II- III Farmácia, exercício simultâneo Cap. VIII – art. 69 Farmácia, interação Cap. VIII – art. 68 Fato público, revelar Cap. IX – art. 73 Fecundação artificial Cap. III – art. 15 Ficha clínica VER Prontuário Financiador privado Cap. III – art. 20 Cap. XII – art. 104 Financiador público Cap. III – art. 20 Cap. XII – art. 104 Fiscalização pelo CRM Preâmbulo IV e V Formulário de instituição pública Cap. X – art. 82 Formulário de seguradora Cap. IX – art. 77 Foto de paciente Cap. IX – art. 75 Futilidade terapêutica Cap. V – art. 41
+
+[PÁGINA 69] PROVAVEL_CONTEUDO_SUBSTANTIVO | 589 chars
+CÓDIGO DE ÉTICA MÉDICA 67 G Genética Cap. III – art. 15 e 16 Genoma humano Cap. III – art. 15 e 16 Glosa Cap. XI – art. 96 Greve Cap. II- V Cap. III – art. 7° e 18 Greve de fome Cap. IV – art. 26 Guarda de prontuário Cap. X – art. 87 e 89 H Herança genética Cap. I- XXV Hierarquia médica Cap. III – art. 19 Cap. VII – art. 47 e 56 Cap. VIII – art. 63 Honorários médicos Cap. I- II Cap. III – art. 20 Cap. V – art. 40 Cap. VIII – art. 58 e 72 Cap. IX – art. 79 Cap. XI – art. 98 I Imagem do paciente Cap. IX – art. 75 Impedimento justo Cap. III – art. 9° Cap. IX – art. 73 Cap. XI – art. 93
+
+[PÁGINA 70] PROVAVEL_CONTEUDO_SUBSTANTIVO | 827 chars
+CÓDIGO DE ÉTICA MÉDICA 68 Imperícia Cap. III – art. 1° Implantes Cap. VIII – art. 69 Imprudência Cap. III – art. 1° Indústria farmacêutica Cap. III – art. 20 Cap. VIII – art. 68 Cap. XII – art. 104 e 109 Informações confidenciais Cap. IX – art. 76 Informática em saúde Cap. V – art. 37 Infração ética, comunicação do CRM Preâmbulo IV Cap. I- XVIII Cap. II- III Inscrição nos Conselhos de medicina Preâmbulo III Cap. I- XIV Cap. III – art. 11 Cap. X – art. 87 Cap. XIII – art. 118 Inseminação artificial Cap. III – art. 15 Integridade física do paciente Cap. I- XXV Cap. IV – art. 27 e 28 Integridade mental do paciente Cap. IV – art. 27 e 28 Interação com farmácia, indústria farmacêutica ou ótica Cap. VIII – art. 68 Interdição cautelar Cap. II- XIV Interferência na atuação do médico Cap. III – art. 20 Cap. XI – art. 93 e 94
+
+[PÁGINA 71] PROVAVEL_CONTEUDO_SUBSTANTIVO | 733 chars
+CÓDIGO DE ÉTICA MÉDICA 69 Internação Cap. IV – art. 28 Internação compulsória Cap. IV – art. 28 Internação, direito Cap. II- VI Internet Cap. V – art. 37 Intimação dos Conselhos de Medicina Cap. III – art. 17 Cap. X – art. 90 Investigação policial Cap. IV – art. 27 J Junta médica Cap. V – art. 39 Cap. VII – art. 54 e 55 Justa causa (quebra de sigilo) Cap. IX – art. 73 Justo impedimento Cap. III – art. 9° L Laboratório farmacêutico Cap. III – art. 20 Cap. VIII – art. 68 Cap. XII – art.104 e 109 Laqueadura tubária Cap. III – art. 15 Cap. V – art. 42 Laudo médico Cap. III – art. 11 Cap. X – art. 80, 81 e 86 Cap. XI – art. 92 Legislação sanitária Cap. I- XIV Cap. III – art. 21 Letra do médico Cap. III – art. 11 Cap. X – art. 87
+
+[PÁGINA 72] PROVAVEL_CONTEUDO_SUBSTANTIVO | 842 chars
+CÓDIGO DE ÉTICA MÉDICA 70 Liberdade de decisão, de escolha profissional Cap. I- II e VII Cap. III – art. 20 Limite de escolha Cap. I- XVI Lucro Cap. I- X M Manipulação genética Cap. III – art. 15 Medicamentos Cap. VIII – art. 68 e 69 Cap. XII – art. 109 Medicina exercida como comércio Cap. I- IX Medicina legal Cap. X – art. 83 Cap. XI – art. 95 Medicina do trabalho Cap. I- XII Cap. III – art. 12 e13 Cap. IX – art. 76 Cap. XI – art. 93 Médico auditor Cap. VII – art. 52 Cap. XI – art. 92-98 Médico com deficiência física Cap. II- I e XI Médico como testemunha Cap. IX – art. 73 Médico do trabalho Cap. III – art. 12 e 13 Cap. IX – art. 76 Cap. XI – art. 93 Médico perito VER Perito Médico Cap. X – art. 89 Cap. XI – art. 92 e 98 Meio ambiente Cap. I-XIII Menor de idade VER TAMBÉM Adolescente, Criança Cap. IX – art. 74 Cap. XII – art. 101
+
+[PÁGINA 73] PROVAVEL_CONTEUDO_SUBSTANTIVO | 731 chars
+CÓDIGO DE ÉTICA MÉDICA 71 Mercantilização da medicina Cap. I- IX e X Cap. III – art. 20 Cap. VI – art. 46 Cap. VIII – art. 58, 63, 68 e 72 Cap. XIII – art. 116 Método contraceptivo Cap. V – art. 42 Mídias sociais Cap. V – art. 37 Morte Cap. VI – art. 43 Cap. IX – art. 77 Morte violenta Cap. X – art. 84 Motivo de força maior (justo) Cap. V – art. 36 e 37 Cap. IX – art. 73 Cap. X – art. 89 Movimento da categoria médica Cap. I- XV N Nacionalidade Cap. I- II Necropsia Cap. X – art. 83 Negligência Cap. III – art. 1º Normas éticas (dos Conselhos de Medicina) Cap. I- XXIV Cap. III – art. 17 e 18 Notificação dos Conselhos de Medicina Cap. III – art. 17 Novas tecnologias Cap. I- XXV O Objeção de consciência Cap. I- VII Cap. II– IX
+
+[PÁGINA 74] PROVAVEL_CONTEUDO_SUBSTANTIVO | 777 chars
+CÓDIGO DE ÉTICA MÉDICA 72 Obrigação de resultado Cap. VIII – art. 62 Obstinação terapêutica Cap. V – art. 41 Omissão Cap. III – art. 1°, 7° e 9° Cap. V – art. 33 Omissão de informações médicas Cap. VII – art. 53 e 55 Opinião política Cap. I- X Cap. II- I Órgão (para doação) Cap. VI – art. 43-46 Ordem judicial Cap. X – art. 89 Orientação sexual Cap. II- I Órteses Cap. VIII – art. 69 Ótica, interação Cap. VIII – art. 68 Ortotanásia Cap. I- XXII P Paciente, benefício ao Cap. I- XVI, XXII e XXIII Paciente falecido Cap. IX – art. 73 Paciente terminal Cap. I- XXII Cap. V – art. 36 e 41 Paralisação Cap. II- V Cap. III – art. 7° e 8° Pena de morte Cap. IV – art. 29 Perícia médica Cap. I- XIV Cap. XI – art. 92-98 Cap. XIV- I Perito médico Cap. X – art. 89 Cap. XI – art. 92-98
+
+[PÁGINA 75] PROVAVEL_CONTEUDO_SUBSTANTIVO | 758 chars
+CÓDIGO DE ÉTICA MÉDICA 73 Pesquisa clínica Preâmbulo I Cap. I- XXIII e XXIV Cap. XII – art. 99-110 Cap. XIII – art. 113 Pesquisa em animais Cap. I- XXIV Pesquisa em seres humanos Cap. I- XXIII e XXIV Cap. III – art. 15 Cap. XII – art. 99-110 Cap. XIII – art. 113 Placebo Cap. XII – art. 106 Plano de saúde Cap. VIII – art. 72 Plantão Cap. III – art. 7° e 9° Cap. V – art. 33 Cap. VII – art. 55 Cap. X – art. 83 Política Cap. I- X Cap. II- I Cap. XII – art. 99 Preceptor Cap. IX – art. 78 Premio Cap. VIII – art. 71 Prescrição médica Cap. V – art. 37 Cap. VIII – art. 68 e 69 Cap. XIII – art. 114 Presunção de responsabilidade Cap. I- XIX Princípio da autonomia Cap. I- VIII e XXI Cap. I- II, IV, VIII e IX Cap. IV – art. 22, 24 e 26 Cap. V – art. 31, 36 e 42
+
+[PÁGINA 76] PROVAVEL_CONTEUDO_SUBSTANTIVO | 788 chars
+CÓDIGO DE ÉTICA MÉDICA 74 Princípio da beneficência Cap. I- VI, XVII e XXV Cap. V – art. 31-34 Cap. XII – art. 103 e 110 Procedimento degradante Cap. IV – art. 25 Procedimento diagnóstico Cap. I- XXII Procedimento experimental Cap. XII – art. 102 Cap. XIII – art. 113 Procedimento terapêutico Cap. I- XXI e XXII Professor Preâmbulo I Cap. IX – art. 78 Cap. XII – art. 109 e110 Progresso científico Cap. I- V Prolongamento da vida Cap. VI – art. 43 Prontuário médico Cap. X – art. 80, 85, 87-90 Cap. XI – art. 101 §2º Propaganda Cap. IX – art. 75 Cap. XIII – art. 111-118 Prótese Cap. VIII – art. 69 Protocolo de pesquisa Cap. XII – art. 100 Publicação médica Cap. XII – art. 107-109 Cap. XIII – art. 117 Publicidade médica Cap. IX – art. 75 Cap. XIII – art. 111-118 Pudor Cap. V – art. 38
+
+[PÁGINA 77] PROVAVEL_CONTEUDO_SUBSTANTIVO | 730 chars
+CÓDIGO DE ÉTICA MÉDICA 75 Q Quadro clínico do paciente Cap. VII – art. 54 e 55 Quebra de sigilo Cap. IX – art. 79 Cap. X – art. 89 e 90 R Raça Cap. I- II Receber comissão, vantagem Cap. VIII – art. 59 Receita médica Cap. III – art. 11 Recusar atendimento Cap. I- VII Cap. II- IV e IX Cap. III – art. 7° Cap. V – art. 33 e 36 Redes sociais Cap. V – art. 37 Regimento de hospital Cap. I- XVI Registro no CRM Cap. III – art. 11 Cap. X – art. 87 Cap. XIII – art. 118 Relação de consumo Cap. I- XX Relação médico-paciente Cap. IV – art. 22-30 Cap. V – art. 31-42 Cap. XI – art. 93 Cap. XII – art. 105 e 110 Relacionamento com outros profissionais Cap. I- XVII e XVIII Cap. III – art. 2°, 3° e 6° Cap. VIII – art. 70 Cap. XII – art. 107
+
+[PÁGINA 78] PROVAVEL_CONTEUDO_SUBSTANTIVO | 780 chars
+CÓDIGO DE ÉTICA MÉDICA 76 Relacionamento entre médicos Cap. I- XVII e XVIII Cap. III – art. 2°, 3°, 6° e 19 Cap. IV – ar t. 23, parágrafo único Cap. VII – art. 47-57 Cap. VIII – art. 70 Cap. XI – art. 97 Cap. XII – art. 107 Religião Cap. I- X Cap. II- I Remuneração profissional Cap. I- III, XV, II, V e X Cap. VIII – art. 58-72 Cap. IX – art. 79 Cap. XI – art. 98 Renunciar atendimento Cap. V – art. 36 Representante legal Cap. III – art. 4° Cap. IV – art. 22 Cap. V – ar t. 31, 34, 36, 39, 41, 44 e 45 Cap. VII – art. 54 Cap. IX – art. 74 e 77 Cap. X – art. 86-88 e 91 Cap. XII – art. 101, 102 e 110 Reprodução assistida Cap. III – art. 15 Resoluções dos Conselhos de Medicina Cap. III – art. 18 Respeito ao colega Cap. I- XVII e XVIII Cap. VII – art. 48 e 49 Cap. VII – art. 52
+
+[PÁGINA 79] PROVAVEL_CONTEUDO_SUBSTANTIVO | 737 chars
+CÓDIGO DE ÉTICA MÉDICA 77 Responsabilidade profissional Cap. I- XIV, XIX e XXIII Cap. III – art. 1º-20 Cap. V – art. 32 Restrição terapêutica Cap. V – art. 32 Retenção de honorário Cap. VIII – art. 67 Risco iminente de morte Cap. IV – art. 22 e 26 Cap. V – art. 31 Cap. XI – art. 97 Risco á saúde Cap. I- XII Cap. III – art. 7° e 12 Cap. VI – art. 44 Cap. IX – art. 74 e 76 Cap. X – art. 88 S Saúde pública Cap. I- XIV Cap. XII – art. 103 Segredo profissional Cap. I- XI, XXV Cap. VII – art. 54 Cap. IX – art. 73-79 Cap. X – art. 85, 89 e 90 Cap. XII – art. 110 Segunda opinião Cap. V – art. 39 Sensacionalismo Cap. XIII – art. 112 Ser humano Cap. I- I, II, VI Cap. IV – art. 23 Seres humanos geneticamente modificados Cap. III – art. 15
+
+[PÁGINA 80] POSSIVEL_INDICE_SUMARIO | 794 chars
+CÓDIGO DE ÉTICA MÉDICA 78 Serviços médicos Preâmbulo I Sigilo profissional Cap. I- XI e XXV Cap. VII – art. 54 Cap. IX – art. 73-79 Cap. X – art. 85, 89 e 90 Cap. XII – art. 110 Situação clínica irreversível Cap. I- XXII Situação clínica terminal Cap. I- XXII Sofrimento físico Cap. I- VI Sofrimento moral Cap. I- VI Solicitação de alta Cap. X – art. 86 Solicitação de exame Cap. X – art. 82 Solidariedade de classe, categoria Cap. VII – art. 48 Sumário de alta Cap. X – art. 87 § 3º Suspensão das atividades Cap. II- V Cap. III – art. 7° e 8° Cap. XIV- II T Telemedicina Cap. V – art. 37 Tempo de consulta Cap. II- VIII Terapêutica experimental Cap. XII – art. 102, parágrafo único e 106 Terapia gênica Cap. III – art. 15 e 16 Termo de consentimento Cap. III – art. 4° e 15 Cap. XII – art. 101
+
+[PÁGINA 81] PROVAVEL_CONTEUDO_SUBSTANTIVO | 711 chars
+CÓDIGO DE ÉTICA MÉDICA 79 Testemunha Cap. IX – art. 73 Título de especialista Cap. XIII – art. 114 Tortura Cap. I- VI Cap. IV – art. 25 Trabalho científico Cap. XII – art. 107 e 108 Cap. XIII – art. 117 Transferência de paciente Cap. X – art. 86 Transplante de órgãos, tecidos Cap. III – art. 15 Cap. VI – art. 43-46 U Urgência Cap. I- VII Cap. II- V Cap. III – art. 7° Cap. V – art. 33 e 37 Cap. XI – art. 97 V Vantagem emocional Cap. V – art. 40 Vantagem financeira Cap. V – art. 40 Cap. VIII – art. 59 e 64 Cap. X – art. 81 Cap. XI – art. 96 Cap. XII – art. 104 Vasectomia Cap. III – art. 15 Cap. V – art. 42 Verificação médico-legal Cap. X – art. 83 Cap. XI – art. 92 e 95 Vetar tratamento Cap. XI – art. 97
+
+[PÁGINA 82] PROVAVEL_CONTEUDO_SUBSTANTIVO | 283 chars
+CÓDIGO DE ÉTICA MÉDICA 80 Vida, abreviação da, perigo da, risco de Cap. IV – art. 22 e 26 Cap. V – art. 31 Cap. XI – art. 97 Voluntário de pesquisa Cap. XII – art. 105 Vontade expressa do paciente Cap. V – art. 41 Vulnerabilidade, pesquisa Cap. I- XXIV Cap. XII – art. 101, 103 e 105
+
+[PÁGINA 86] SEM_TEXTO_EXTRAIVEL | 0 chars
+[sem texto extraível]
+
+[PÁGINA 102] REVISAR | 245 chars
+CÓDIGO DE ÉTICA MÉDICA 100 TOCANTINS Eduardo Francisco de Assis Braga (coordenador) Fabiana Cândida de Queiroz Santos Anjos Francisca Brasilino Saraiva Hélio Hermenegildo Marques Maués Nemésio Tomasella de Oliveira Wesley Monteiro de Castro Neri
+
+[PÁGINA 104] SEM_TEXTO_EXTRAIVEL | 0 chars
+[sem texto extraível]
+
+[PÁGINA 107] REVISAR | 221 chars
+CÓDIGO DE ÉTICA MÉDICA 105 Rejane Maria de Medeiros Thais Habli Brandao Dutra Vevila Junqueira da Silva Setor de Biblioteca e Revista Bioética (SEBRB) Eliane Maria de Medeiros e Silva Rameque Beserra Antunes de Figueiredo
+
+[PÁGINA 108] SEM_TEXTO_EXTRAIVEL | 0 chars
+[sem texto extraível]
+
+[PÁGINA 109] SEM_TEXTO_EXTRAIVEL | 0 chars
+[sem texto extraível]
+
+[PÁGINA 110] REVISAR | 93 chars
+Defendendo princípios, aperfeiçoando práticas. Defendendo princípios, aperfeiçoando práticas.
+
+--- RESUMO AUTOMÁTICO ---
+Provável conteúdo substantivo: 38, 40, 56-79, 81-82
+Provável capa/índice/front matter: 7-8, 55, 80
+Sem/pouco texto extraível: 1-2, 5-6, 12, 16, 20, 26, 32, 42, 46, 48, 52-54, 86, 104, 108-109
