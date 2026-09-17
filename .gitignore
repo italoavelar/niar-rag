@@ -15,6 +15,7 @@ wheels/
 .venv/
 .venv_wsl/
 venv
+.DS_Store
 
 # Artefatos de embedding: derivados de data/processed/documents.jsonl pelo
 # eval/colab_leme_completo.py. A procedencia e garantida pelo
