@@ -633,7 +633,7 @@ def merge_undersized_chunks(
     Segue o idioma de ``chunking._merge_small_final_chunk``: só o fragmento
     curto justifica ultrapassar ``CHUNK_SIZE``, e o chunk resultante nunca
     volta a ficar abaixo do mínimo, então a fusão não encadeia sem fim.
-    Um fragmento sozinho na página é descartado, como ``chunk_text`` já faz.
+    Um fragmento sozinho na página é preservado, como ``chunk_text`` já faz.
     """
     merged = list(packed)
 
@@ -656,9 +656,6 @@ def merge_undersized_chunks(
             texto,
             outro.section_path or curto.section_path,
         )
-
-    if len(merged) == 1 and len(merged[0].text) < min_chunk_size:
-        return []
 
     return merged
 

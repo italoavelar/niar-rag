@@ -184,6 +184,15 @@ def chunk_text(
 ) -> list[str]:
     """Divide texto em chunks sobrepostos, sem perder cobertura."""
     text = clean_text(text)
+    if not text:
+        return []
+
+    # O piso orienta a agregação, mas não autoriza apagar uma página útil.
+    # Chamadores que podem agregar entre páginas devem fazê-lo explicitamente;
+    # aqui, um texto curto isolado continua sendo recuperável.
+    if len(text) < min_chunk_size:
+        return [text]
+
     spans = _chunk_spans(
         text=text,
         chunk_size=chunk_size,

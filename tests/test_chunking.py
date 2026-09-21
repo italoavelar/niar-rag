@@ -136,7 +136,10 @@ class ChunkerRegressionTests(unittest.TestCase):
         # (120 → 300 em 13/09/2026) e o teste tem de acompanhar a constante, não
         # travar o valor dela.
         piso = chunking.MIN_CHUNK_SIZE
-        self.assertEqual(chunking.chunk_text("x" * (piso - 1)), [])
+        self.assertEqual(
+            chunking.chunk_text("x" * (piso - 1)),
+            ["x" * (piso - 1)],
+        )
         self.assertEqual(chunking.chunk_text("x" * piso), ["x" * piso])
 
     def test_pdf_and_html_entrypoints_share_the_same_chunker(self) -> None:

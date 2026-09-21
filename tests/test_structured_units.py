@@ -522,8 +522,11 @@ class UndersizedChunkMergeTests(unittest.TestCase):
         self.assertEqual(len(packed), 1)
         self.assertTrue(packed[0].text.endswith("i"))
 
-    def test_lone_short_chunk_is_discarded_like_chunk_text_does(self) -> None:
-        self.assertEqual(merge_undersized_chunks([PackedChunk("i")], 120), [])
+    def test_lone_short_chunk_is_preserved_like_chunk_text_does(self) -> None:
+        self.assertEqual(
+            merge_undersized_chunks([PackedChunk("i")], 120),
+            [PackedChunk("i")],
+        )
 
     def test_lead_sentence_merges_into_the_table_it_introduces(self) -> None:
         """A frase que apresenta a tabela precisa viajar junto com ela.
