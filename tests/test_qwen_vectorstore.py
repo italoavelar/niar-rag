@@ -11,6 +11,7 @@ import types
 import unittest
 from copy import deepcopy
 from pathlib import Path
+from unittest.mock import patch
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -46,8 +47,17 @@ class QwenVectorstoreTests(unittest.TestCase):
     def setUpClass(cls) -> None:
         cls.module = importlib.import_module("build_qwen_vectorstore")
 
-    def _backup_record(self, source_document: dict, **overrides: object) -> dict:
+    def _backup_record(
+        self,
+        source_document: dict,
+        corpus_fingerprint: str | None = None,
+        **overrides: object,
+    ) -> dict:
         module = self.module
+        corpus_fingerprint = (
+            corpus_fingerprint
+            or module.corpus_embedding_fingerprint([source_document])
+        )
         record = {
             "embedding_model": module.QWEN_EMBEDDING_MODEL,
             "embedding_dimension": module.QWEN_EMBEDDING_DIM,
@@ -55,6 +65,7 @@ class QwenVectorstoreTests(unittest.TestCase):
             "embedding_text_fingerprint": module.corpus_embedding_fingerprint(
                 [source_document]
             ),
+            "corpus_embedding_fingerprint": corpus_fingerprint,
             "document": source_document,
             "vector": [0.0] * module.QWEN_EMBEDDING_DIM,
         }
@@ -68,8 +79,8 @@ class QwenVectorstoreTests(unittest.TestCase):
         self.assertEqual(module.QWEN_EMBEDDING_DIM, 1024)
         self.assertEqual(module.BATCH_SIZE_EMBEDDINGS, 2)
         self.assertEqual(
-            module.DEFAULT_COLLECTION_NAME,
-            "niar_rag_documents_qwen3_0_6b_context_v1",
+            module.collection_name_for_fingerprint("a" * 64),
+            "niar_rag_documents_qwen3_0_6b_context_v1_aaaaaaaaaaaaaaaa",
         )
         self.assertEqual(
             module.DEFAULT_BACKUP_FILE,
@@ -113,7 +124,7 @@ class QwenVectorstoreTests(unittest.TestCase):
     def test_payload_preserves_original_text_and_qwen_metadata(self) -> None:
         document = _record(section_path="CAPÍTULO IX", issuer="Emissor oficial")
 
-        payload = self.module.build_payload(document)
+        payload = self.module.build_payload(document, "f" * 64)
 
         self.assertEqual(payload["texto"], "Conteúdo original.")
         self.assertEqual(payload["issuer"], "Emissor oficial")
@@ -121,6 +132,7 @@ class QwenVectorstoreTests(unittest.TestCase):
         self.assertEqual(payload["embedding_model"], "Qwen/Qwen3-Embedding-0.6B")
         self.assertEqual(payload["embedding_dimension"], 1024)
         self.assertEqual(payload["embedding_text_profile"], "context-v1")
+        self.assertEqual(payload["corpus_embedding_fingerprint"], "f" * 64)
         self.assertNotIn("embedding_text", payload)
 
     def test_backup_path_is_new_and_legacy_paths_are_rejected(self) -> None:
@@ -140,7 +152,7 @@ class QwenVectorstoreTests(unittest.TestCase):
 
         self.assertEqual(
             module.validate_collection_name(None),
-            module.DEFAULT_COLLECTION_NAME,
+            module.COLLECTION_NAME_PREFIX,
         )
         with self.assertRaisesRegex(ValueError, "niar_rag_documents"):
             module.validate_collection_name("niar_rag_documents")
@@ -184,7 +196,7 @@ class QwenVectorstoreTests(unittest.TestCase):
 
             def get_collections(self):
                 return types.SimpleNamespace(
-                    collections=[types.SimpleNamespace(name=module.DEFAULT_COLLECTION_NAME)]
+                    collections=[types.SimpleNamespace(name=module.COLLECTION_NAME_PREFIX)]
                 )
 
         qdrant = types.ModuleType("qdrant_client")
@@ -202,7 +214,9 @@ class QwenVectorstoreTests(unittest.TestCase):
         os.environ["QDRANT_QWEN_API_KEY"] = "test-key"
         try:
             with self.assertRaisesRegex(ValueError, "já existe"):
-                module.upload_to_qdrant([])
+                module.upload_to_qdrant(
+                    [], corpus_fingerprint="f" * 64
+                )
         finally:
             if previous_qdrant is None:
                 del sys.modules["qdrant_client"]
@@ -244,7 +258,11 @@ class QwenVectorstoreTests(unittest.TestCase):
                     backup = Path(temporary_directory) / "qwen-backup.jsonl"
                     backup.write_text(json.dumps(invalid) + "\n", encoding="utf-8")
                     with self.assertRaises(ValueError):
-                        module.load_backup([document], backup)
+                        module.load_backup(
+                            [document],
+                            backup,
+                            module.corpus_embedding_fingerprint([document]),
+                        )
 
     def test_backup_validates_context_profile(self) -> None:
         module = self.module
@@ -255,7 +273,188 @@ class QwenVectorstoreTests(unittest.TestCase):
             backup = Path(temporary_directory) / "qwen-backup.jsonl"
             backup.write_text(json.dumps(invalid) + "\n", encoding="utf-8")
             with self.assertRaisesRegex(ValueError, "perfil"):
-                module.load_backup([document], backup)
+                module.load_backup(
+                    [document],
+                    backup,
+                    module.corpus_embedding_fingerprint([document]),
+                )
+
+    def test_backup_rejects_other_global_corpus_fingerprint(self) -> None:
+        module = self.module
+        document = _record()
+        backup_record = self._backup_record(
+            document, corpus_fingerprint="outro-corpus"
+        )
+
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            backup = Path(temporary_directory) / "qwen-backup.jsonl"
+            backup.write_text(json.dumps(backup_record) + "\n", encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "fingerprint global"):
+                module.load_backup(
+                    [document],
+                    backup,
+                    module.corpus_embedding_fingerprint([document]),
+                )
+
+    def test_generate_embeddings_records_global_fingerprint(self) -> None:
+        module = self.module
+        document = _record()
+        fingerprint = module.corpus_embedding_fingerprint([document])
+
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            backup = Path(temporary_directory) / "qwen-backup.jsonl"
+            module.generate_embeddings(
+                [document], [], backup, fingerprint, model=FakeQwenModel()
+            )
+            saved = json.loads(backup.read_text(encoding="utf-8"))
+            self.assertEqual(saved["corpus_embedding_fingerprint"], fingerprint)
+            self.assertEqual(saved["document"], document)
+
+    def test_upload_only_rejects_incomplete_backup_before_connecting(self) -> None:
+        module = self.module
+        documents = [_record(), {**_record(), "id": "documento_p2_c0"}]
+        fingerprint = module.corpus_embedding_fingerprint(documents)
+        incomplete = self._backup_record(documents[0], fingerprint)
+
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            backup = Path(temporary_directory) / "qwen-backup.jsonl"
+            backup.write_text(json.dumps(incomplete) + "\n", encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "incompleto"):
+                module.load_backup(
+                    documents, backup, fingerprint, require_complete=True
+                )
+
+    def test_generate_only_does_not_call_qdrant(self) -> None:
+        module = self.module
+        document = _record()
+        fingerprint = module.corpus_embedding_fingerprint([document])
+        valid = self._backup_record(document, fingerprint)
+        dotenv = types.ModuleType("dotenv")
+        dotenv.load_dotenv = lambda: None
+
+        with patch.dict(sys.modules, {"dotenv": dotenv}), patch.object(
+            module, "load_documents", return_value=[document]
+        ), patch.object(module, "resolve_backup_file", return_value=Path("fake")), patch.object(
+            module, "load_backup", side_effect=[[], [valid]]
+        ), patch.object(module, "generate_embeddings") as generate, patch.object(
+            module, "upload_to_qdrant"
+        ) as upload:
+            module.build_qwen_vectorstore("generate-only")
+
+        generate.assert_called_once()
+        upload.assert_not_called()
+
+    def test_upload_only_does_not_load_model(self) -> None:
+        module = self.module
+        document = _record()
+        fingerprint = module.corpus_embedding_fingerprint([document])
+        valid = self._backup_record(document, fingerprint)
+        dotenv = types.ModuleType("dotenv")
+        dotenv.load_dotenv = lambda: None
+
+        with patch.dict(sys.modules, {"dotenv": dotenv}), patch.object(
+            module, "load_documents", return_value=[document]
+        ), patch.object(module, "resolve_backup_file", return_value=Path("fake")), patch.object(
+            module, "load_backup", return_value=[valid]
+        ), patch.object(module, "load_qwen_model", side_effect=AssertionError), patch.object(
+            module, "upload_to_qdrant"
+        ) as upload:
+            module.build_qwen_vectorstore("upload-only")
+
+        upload.assert_called_once()
+
+    def _verify_with_points(self, documents: list[dict], points: list[dict]) -> None:
+        module = self.module
+
+        class FakeQdrantClient:
+            calls = []
+
+            def __init__(self, **_kwargs) -> None:
+                pass
+
+            def get_collections(self):
+                return types.SimpleNamespace(
+                    collections=[types.SimpleNamespace(name="qwen-test")]
+                )
+
+            def get_collection(self, _name):
+                return types.SimpleNamespace(
+                    config=types.SimpleNamespace(
+                        params=types.SimpleNamespace(
+                            vectors=types.SimpleNamespace(size=1024)
+                        )
+                    )
+                )
+
+            def count(self, _name, exact):
+                self.calls.append(("count", exact))
+                return types.SimpleNamespace(count=len(points))
+
+            def scroll(self, _name, **_kwargs):
+                self.calls.append(("scroll",))
+                return [types.SimpleNamespace(payload=point) for point in points], None
+
+            def create_collection(self, *_args, **_kwargs):
+                raise AssertionError("verify não pode criar coleção")
+
+            def recreate_collection(self, *_args, **_kwargs):
+                raise AssertionError("verify não pode recriar coleção")
+
+            def upsert(self, *_args, **_kwargs):
+                raise AssertionError("verify não pode fazer upload")
+
+        qdrant = types.ModuleType("qdrant_client")
+        qdrant.QdrantClient = FakeQdrantClient
+        old_url = os.environ.pop("QDRANT_URL", None)
+        old_qwen_url = os.environ.get("QDRANT_QWEN_URL")
+        old_qwen_key = os.environ.get("QDRANT_QWEN_API_KEY")
+        os.environ["QDRANT_QWEN_URL"] = "https://qwen.invalid"
+        os.environ["QDRANT_QWEN_API_KEY"] = "test-key"
+        try:
+            with patch.dict(sys.modules, {"qdrant_client": qdrant}):
+                module.verify_qdrant_collection(
+                    documents,
+                    module.corpus_embedding_fingerprint(documents),
+                    "qwen-test",
+                )
+        finally:
+            if old_url is not None:
+                os.environ["QDRANT_URL"] = old_url
+            if old_qwen_url is None:
+                del os.environ["QDRANT_QWEN_URL"]
+            else:
+                os.environ["QDRANT_QWEN_URL"] = old_qwen_url
+            if old_qwen_key is None:
+                del os.environ["QDRANT_QWEN_API_KEY"]
+            else:
+                os.environ["QDRANT_QWEN_API_KEY"] = old_qwen_key
+
+    def test_verify_is_read_only_and_accepts_exact_ids(self) -> None:
+        documents = [_record(), {**_record(), "id": "documento_p2_c0"}]
+        fingerprint = self.module.corpus_embedding_fingerprint(documents)
+        points = [
+            self.module.build_payload(document, fingerprint)
+            for document in documents
+        ]
+        self._verify_with_points(documents, points)
+
+    def test_verify_detects_missing_extra_and_duplicate_ids(self) -> None:
+        documents = [_record(), {**_record(), "id": "documento_p2_c0"}]
+        fingerprint = self.module.corpus_embedding_fingerprint(documents)
+        valid = self.module.build_payload(documents[0], fingerprint)
+
+        cases = {
+            "ausentes": [valid],
+            "extras": [
+                valid,
+                {**self.module.build_payload(documents[1], fingerprint), "id_original": "extra"},
+            ],
+            "duplicado": [valid, valid],
+        }
+        for label, points in cases.items():
+            with self.subTest(label=label):
+                with self.assertRaises(ValueError):
+                    self._verify_with_points(documents, points)
 
 
 if __name__ == "__main__":

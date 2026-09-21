@@ -36,7 +36,7 @@ PROTECTED_BACKUP_FILES = frozenset(
 )
 
 LEGACY_COLLECTION_NAME = "niar_rag_documents"
-DEFAULT_COLLECTION_NAME = "niar_rag_documents_qwen3_0_6b_context_v1"
+COLLECTION_NAME_PREFIX = "niar_rag_documents_qwen3_0_6b_context_v1"
 
 BATCH_SIZE_EMBEDDINGS = 2
 BATCH_SIZE_QDRANT = 64
@@ -61,12 +61,27 @@ def resolve_backup_file(configured_path: str | None = None) -> Path:
     return backup_file
 
 
-def validate_collection_name(configured_name: str | None = None) -> str:
+def collection_name_for_fingerprint(corpus_fingerprint: str) -> str:
+    """Nome imutável da coleção associado ao corpus contextual."""
+    if not corpus_fingerprint:
+        raise ValueError("Fingerprint global do corpus não pode ser vazio.")
+    return f"{COLLECTION_NAME_PREFIX}_{corpus_fingerprint[:16]}"
+
+
+def validate_collection_name(
+    configured_name: str | None = None,
+    *,
+    corpus_fingerprint: str | None = None,
+) -> str:
     """Impede que o pipeline Qwen escreva na coleção Gemini legada."""
     collection = (
         configured_name
         or os.getenv("QDRANT_QWEN_COLLECTION")
-        or DEFAULT_COLLECTION_NAME
+        or (
+            collection_name_for_fingerprint(corpus_fingerprint)
+            if corpus_fingerprint
+            else COLLECTION_NAME_PREFIX
+        )
     ).strip()
 
     if not collection:
@@ -182,7 +197,23 @@ def _validate_backup_item(item: dict, expected_document: dict) -> None:
     _vector_as_list(item.get("vector", []))
 
 
-def load_backup(documents: list[dict], backup_file: Path) -> list[dict]:
+def _validate_backup_global_fingerprint(
+    item: dict,
+    corpus_fingerprint: str,
+) -> None:
+    if item.get("corpus_embedding_fingerprint") != corpus_fingerprint:
+        raise ValueError(
+            "Backup Qwen incompatível: fingerprint global do corpus não confere."
+        )
+
+
+def load_backup(
+    documents: list[dict],
+    backup_file: Path,
+    corpus_fingerprint: str,
+    *,
+    require_complete: bool = False,
+) -> list[dict]:
     """Lê somente um backup Qwen compatível; nunca tenta o backup Gemini."""
     backup_file = resolve_backup_file(str(backup_file))
     if not backup_file.exists():
@@ -199,6 +230,13 @@ def load_backup(documents: list[dict], backup_file: Path) -> list[dict]:
 
     for index, item in enumerate(records):
         _validate_backup_item(item, documents[index])
+        _validate_backup_global_fingerprint(item, corpus_fingerprint)
+
+    if require_complete and len(records) != len(documents):
+        raise ValueError(
+            "Backup Qwen incompleto para upload: "
+            f"{len(records)} de {len(documents)} registros."
+        )
 
     return records
 
@@ -207,6 +245,7 @@ def generate_embeddings(
     documents: list[dict],
     processed_data: list[dict],
     backup_file: Path,
+    corpus_fingerprint: str,
     model=None,
 ) -> list[dict]:
     """Gera somente os chunks pendentes e os salva no backup Qwen exclusivo."""
@@ -237,6 +276,7 @@ def generate_embeddings(
                     "embedding_dimension": QWEN_EMBEDDING_DIM,
                     "embedding_text_profile": EMBEDDING_TEXT_PROFILE,
                     "embedding_text_fingerprint": document_fingerprint(document),
+                    "corpus_embedding_fingerprint": corpus_fingerprint,
                     "document": document,
                     "vector": _vector_as_list(vector),
                 }
@@ -246,7 +286,7 @@ def generate_embeddings(
     return processed_data
 
 
-def build_payload(document: dict) -> dict:
+def build_payload(document: dict, corpus_fingerprint: str) -> dict:
     """Mantém texto original no payload e registra o perfil do vetor Qwen."""
     metadata = document.get("metadata", {})
     return {
@@ -269,6 +309,7 @@ def build_payload(document: dict) -> dict:
         "embedding_model": QWEN_EMBEDDING_MODEL,
         "embedding_dimension": QWEN_EMBEDDING_DIM,
         "embedding_text_profile": EMBEDDING_TEXT_PROFILE,
+        "corpus_embedding_fingerprint": corpus_fingerprint,
     }
 
 
@@ -279,6 +320,7 @@ def _collection_names(client) -> set[str]:
 def upload_to_qdrant(
     processed_data: list[dict],
     *,
+    corpus_fingerprint: str,
     recreate: bool = False,
     collection_name: str | None = None,
 ) -> None:
@@ -331,39 +373,201 @@ def upload_to_qdrant(
             models.PointStruct(
                 id=start + offset,
                 vector=item["vector"],
-                payload=build_payload(item["document"]),
+                payload=build_payload(
+                    item["document"], corpus_fingerprint
+                ),
             )
             for offset, item in enumerate(batch)
         ]
         client.upsert(collection_name=collection, points=points, wait=True)
 
 
-def build_qwen_vectorstore(recreate: bool = False) -> None:
-    """Orquestra a indexação Qwen somente quando executada explicitamente."""
+def verify_qdrant_collection(
+    documents: list[dict],
+    corpus_fingerprint: str,
+    collection_name: str,
+) -> None:
+    """Compara o corpus local à coleção sem criar ou alterar recursos remotos."""
+    qdrant_url = os.getenv("QDRANT_QWEN_URL")
+    qdrant_api_key = os.getenv("QDRANT_QWEN_API_KEY")
+    if not qdrant_url or not qdrant_api_key:
+        raise RuntimeError(
+            "Defina QDRANT_QWEN_URL e QDRANT_QWEN_API_KEY para verificar Qwen."
+        )
+    validate_qdrant_environment_urls(qdrant_url)
+
+    from qdrant_client import QdrantClient
+
+    client = QdrantClient(url=qdrant_url, api_key=qdrant_api_key)
+    if collection_name not in _collection_names(client):
+        raise ValueError(f"Coleção Qwen inexistente: {collection_name!r}.")
+
+    info = client.get_collection(collection_name)
+    vectors = info.config.params.vectors
+    dimension = vectors.size if hasattr(vectors, "size") else vectors["size"]
+    if dimension != QWEN_EMBEDDING_DIM:
+        raise ValueError(
+            f"Dimensão Qdrant incompatível: {dimension}; "
+            f"esperado {QWEN_EMBEDDING_DIM}."
+        )
+
+    expected_ids = [str(document["id"]) for document in documents]
+    expected_set = set(expected_ids)
+    if len(expected_set) != len(expected_ids):
+        raise ValueError("Corpus local contém IDs de chunk duplicados.")
+
+    count = client.count(collection_name, exact=True).count
+    if count != len(expected_ids):
+        raise ValueError(
+            f"Quantidade de pontos incompatível: {count}; "
+            f"esperado {len(expected_ids)}."
+        )
+
+    found_ids: list[str] = []
+    offset = None
+    while True:
+        points, offset = client.scroll(
+            collection_name,
+            limit=BATCH_SIZE_QDRANT,
+            offset=offset,
+            with_payload=True,
+            with_vectors=False,
+        )
+        for point in points:
+            payload = point.payload or {}
+            if payload.get("embedding_model") != QWEN_EMBEDDING_MODEL:
+                raise ValueError("Modelo Qwen incompatível no payload.")
+            if payload.get("embedding_dimension") != QWEN_EMBEDDING_DIM:
+                raise ValueError("Dimensão Qwen incompatível no payload.")
+            if payload.get("embedding_text_profile") != EMBEDDING_TEXT_PROFILE:
+                raise ValueError("Perfil textual incompatível no payload.")
+            if payload.get("corpus_embedding_fingerprint") != corpus_fingerprint:
+                raise ValueError("Fingerprint global incompatível no payload.")
+            original_id = str(payload.get("id_original") or "")
+            if not original_id:
+                raise ValueError("Ponto Qdrant sem id_original.")
+            found_ids.append(original_id)
+        if offset is None:
+            break
+
+    found_set = set(found_ids)
+    if len(found_ids) != len(found_set):
+        raise ValueError("Coleção Qdrant contém id_original duplicado.")
+    missing = expected_set - found_set
+    extra = found_set - expected_set
+    if missing or extra:
+        raise ValueError(
+            "IDs Qdrant não correspondem ao corpus: "
+            f"ausentes={len(missing)}, extras={len(extra)}."
+        )
+
+    print("Verificação Qwen concluída com sucesso.")
+    print(f"Coleção: {collection_name}")
+    print(f"Pontos/IDs: {len(found_ids)}")
+    print(f"Fingerprint: {corpus_fingerprint}")
+
+
+def _print_run_summary(
+    documents: list[dict],
+    corpus_fingerprint: str,
+) -> None:
+    print(f"Modelo: {QWEN_EMBEDDING_MODEL}")
+    print(f"Dimensão: {QWEN_EMBEDDING_DIM}")
+    print(f"Perfil: {EMBEDDING_TEXT_PROFILE}")
+    print(f"Fingerprint: {corpus_fingerprint}")
+    print(f"Chunks: {len(documents)}")
+
+
+def build_qwen_vectorstore(
+    mode: str,
+    *,
+    recreate: bool = False,
+    collection_name: str | None = None,
+) -> None:
+    """Executa uma fase explícita da indexação Qwen."""
     from dotenv import load_dotenv
 
     load_dotenv()
-    backup_file = resolve_backup_file()
-    collection_name = validate_collection_name()
     documents = load_documents()
-    processed_data = load_backup(documents, backup_file)
-    processed_data = generate_embeddings(documents, processed_data, backup_file)
-    upload_to_qdrant(
-        processed_data,
-        recreate=recreate,
-        collection_name=collection_name,
+    corpus_fingerprint = corpus_embedding_fingerprint(documents)
+    collection = validate_collection_name(
+        collection_name or collection_name_for_fingerprint(corpus_fingerprint),
+        corpus_fingerprint=corpus_fingerprint,
     )
+    backup_file = resolve_backup_file()
+
+    if mode == "generate-only":
+        processed_data = load_backup(
+            documents, backup_file, corpus_fingerprint
+        )
+        generate_embeddings(
+            documents, processed_data, backup_file, corpus_fingerprint
+        )
+        load_backup(
+            documents, backup_file, corpus_fingerprint, require_complete=True
+        )
+        _print_run_summary(documents, corpus_fingerprint)
+        return
+
+    if mode == "upload-only":
+        processed_data = load_backup(
+            documents, backup_file, corpus_fingerprint, require_complete=True
+        )
+        upload_to_qdrant(
+            processed_data,
+            corpus_fingerprint=corpus_fingerprint,
+            recreate=recreate,
+            collection_name=collection,
+        )
+        return
+
+    if mode == "verify":
+        verify_qdrant_collection(documents, corpus_fingerprint, collection)
+        return
+
+    raise ValueError(f"Modo Qwen desconhecido: {mode!r}.")
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Indexa o corpus com Qwen3-Embedding.")
+    mode = parser.add_mutually_exclusive_group(required=True)
+    mode.add_argument(
+        "--generate-only",
+        action="store_true",
+        help="Gera e valida apenas o backup Qwen; não acessa Qdrant.",
+    )
+    mode.add_argument(
+        "--upload-only",
+        action="store_true",
+        help="Envia somente um backup Qwen completo e validado.",
+    )
+    mode.add_argument(
+        "--verify",
+        action="store_true",
+        help="Compara a coleção Qwen ao corpus local sem alterá-la.",
+    )
     parser.add_argument(
         "--recreate",
         action="store_true",
         help="Recria a coleção Qwen se ela já existir (operação destrutiva).",
     )
+    parser.add_argument(
+        "--collection",
+        help="Coleção Qwen de destino; omita para usar o nome versionado.",
+    )
     args = parser.parse_args()
-    build_qwen_vectorstore(recreate=args.recreate)
+    if args.recreate and not args.upload_only:
+        parser.error("--recreate só pode ser usado com --upload-only.")
+    selected_mode = (
+        "generate-only" if args.generate_only else
+        "upload-only" if args.upload_only else
+        "verify"
+    )
+    build_qwen_vectorstore(
+        selected_mode,
+        recreate=args.recreate,
+        collection_name=args.collection,
+    )
 
 
 if __name__ == "__main__":
