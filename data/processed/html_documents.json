@@ -1,45 +1,5 @@
 [
   {
-    "document_id": "iso_38507_2022",
-    "title": "ISO/IEC 38507:2022",
-    "source_url": "https://www.iso.org/standard/56641.html",
-    "source_type": "HTML",
-    "origin": "estatico",
-    "relation": "raiz",
-    "text_length": 2037,
-    "chunks": 2
-  },
-  {
-    "document_id": "iso_22989_2022",
-    "title": "ISO/IEC 22989:2022",
-    "source_url": "https://www.iso.org/standard/74296.html",
-    "source_type": "HTML",
-    "origin": "estatico",
-    "relation": "raiz",
-    "text_length": 1600,
-    "chunks": 2
-  },
-  {
-    "document_id": "iso_24368_2022",
-    "title": "ISO/IEC TR 24368:2022",
-    "source_url": "https://www.iso.org/standard/78507.html",
-    "source_type": "HTML",
-    "origin": "estatico",
-    "relation": "raiz",
-    "text_length": 2888,
-    "chunks": 3
-  },
-  {
-    "document_id": "iso_42001_2023",
-    "title": "ISO/IEC 42001:2023",
-    "source_url": "https://www.iso.org/standard/42001",
-    "source_type": "HTML",
-    "origin": "estatico",
-    "relation": "raiz",
-    "text_length": 5493,
-    "chunks": 6
-  },
-  {
     "document_id": "lgpd_BR_2018",
     "title": "Lei Geral de Proteção de Dados Pessoais (LGPD)",
     "source_url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
@@ -56,7 +16,7 @@
     "source_type": "HTML",
     "origin": "estatico",
     "relation": "raiz",
-    "text_length": 2297,
+    "text_length": 2992,
     "chunks": 3
   },
   {
@@ -90,46 +50,6 @@
     "chunks": 88
   },
   {
-    "document_id": "iso_5338_2023",
-    "title": "ISO/IEC 5338:2023",
-    "source_url": "https://www.iso.org/standard/81118.html",
-    "source_type": "HTML",
-    "origin": "estatico",
-    "relation": "raiz",
-    "text_length": 1919,
-    "chunks": 2
-  },
-  {
-    "document_id": "iso_27701_2025",
-    "title": "ISO/IEC 27701:2025",
-    "source_url": "https://www.iso.org/standard/27701",
-    "source_type": "HTML",
-    "origin": "estatico",
-    "relation": "raiz",
-    "text_length": 2952,
-    "chunks": 3
-  },
-  {
-    "document_id": "iso_27001_2022",
-    "title": "ISO/IEC 27001:2022",
-    "source_url": "https://www.iso.org/standard/27001",
-    "source_type": "HTML",
-    "origin": "estatico",
-    "relation": "raiz",
-    "text_length": 8856,
-    "chunks": 9
-  },
-  {
-    "document_id": "iso_23894_2023",
-    "title": "ISO/IEC 23894:2023",
-    "source_url": "https://www.iso.org/standard/77304.html",
-    "source_type": "HTML",
-    "origin": "estatico",
-    "relation": "raiz",
-    "text_length": 1722,
-    "chunks": 2
-  },
-  {
     "document_id": "lei_8080_BR_90",
     "title": "Lei nº 8.080, de 19 de setembro de 1990",
     "source_url": "https://www.planalto.gov.br/ccivil_03/leis/l8080.htm",
@@ -156,8 +76,8 @@
     "source_type": "HTML",
     "origin": "estatico",
     "relation": "raiz",
-    "text_length": 59715,
-    "chunks": 63
+    "text_length": 863654,
+    "chunks": 920
   },
   {
     "document_id": "eca_BR_1990",
@@ -166,8 +86,8 @@
     "source_type": "HTML",
     "origin": "estatico",
     "relation": "raiz",
-    "text_length": 9269,
-    "chunks": 10
+    "text_length": 286142,
+    "chunks": 308
   },
   {
     "document_id": "lei_3268_BR_1957",
@@ -198,16 +118,6 @@
     "relation": "raiz",
     "text_length": 40515,
     "chunks": 44
-  },
-  {
-    "document_id": "iso_25237_2017",
-    "title": "ISO 25237:2017",
-    "source_url": "https://www.iso.org/standard/63553.html",
-    "source_type": "HTML",
-    "origin": "estatico",
-    "relation": "raiz",
-    "text_length": 2624,
-    "chunks": 3
   },
   {
     "document_id": "certificacao_SBIS_",
