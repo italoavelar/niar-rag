@@ -73,6 +73,37 @@ _MARCACAO = re.compile(r"\[/?TABELA\]|Colunas:[^\n]*\n?|Nota:[^\n]*")
 def so_conteudo(texto: str) -> str:
     return normalizar_texto(_MARCACAO.sub(" ", texto or ""))
 
+
+# A âncora guardada em `qrels_text` é uma FOTO do texto no dia em que foi
+# julgada — com o ruído de extração que o corpus tinha naquele dia. Quando a
+# limpeza remove esse ruído, o texto antigo deixa de ser substring do novo e a
+# âncora se perde, embora o conteúdo seja o mesmo. Medido em 22/set: 48 linhas
+# de qrels e 10 perguntas sumiriam por isso.
+#
+# Limpar a âncora com as MESMAS regras antes de comparar resolve. As regras
+# moram em eval/experimento_embedding/limpar.py; o lugar natural delas é src/,
+# e é para lá que devem ir quando alguém mexer nisto de novo.
+sys.path.insert(0, str(EVAL / "experimento_embedding"))
+try:
+    from limpar import documento_com_numeracao_de_linha as _doc_numerado
+    from limpar import limpar as _limpar_corpus
+except Exception:  # pragma: no cover - a reancoragem funciona sem esta passada
+    _limpar_corpus = _doc_numerado = None
+
+
+def como_o_corpus_limpo(texto: str, numerado: bool = False) -> str:
+    """A âncora antiga passada pelas mesmas regras que limparam o corpus.
+
+    `numerado` precisa vir de fora: remover numeração de linha é decisão do
+    DOCUMENTO, e limpar a âncora sem ela não reproduz o que aconteceu com o
+    corpus. Foi o que derrubou 22 âncoras e 7 perguntas na primeira tentativa —
+    as do `ai_device_software_guidance_FDA_2025`, cujo texto guardado ainda
+    tinha os números de linha que o corpus já não tem.
+    """
+    if not texto or _limpar_corpus is None:
+        return ""
+    return normalizar_texto(_limpar_corpus(texto, numerado=numerado)[0])
+
 CORPUS = PROJECT_ROOT / "data/processed/documents.jsonl"
 QRELS = EVAL / "data/qrels.csv"
 GOLDEN = EVAL / "data/golden_qa.jsonl"
@@ -164,6 +195,24 @@ def main() -> None:
                 # empacotador reescreve quando duas metades voltam a ser uma.
                 nu = so_conteudo(textos.get(cid, ""))
                 candidatos = [c for c, _, sc in por_doc[doc] if nu and nu in sc]
+
+            if not candidatos:
+                # 3a passada: a âncora ainda traz o ruído que a limpeza tirou do
+                # corpus. Passa a âncora pelas mesmas regras e compara de novo.
+                # Tenta as DUAS formas de limpar a ancora: sem e com remocao de
+                # numeracao de linha. Detectar o documento aqui nao funciona --
+                # o corpus ja foi limpo, entao a numeracao ja sumiu dele e a
+                # densidade nao acusa mais nada. Tentar as duas nao arrisca:
+                # remover numeracao exige uma corrida de 4+ inteiros seguidos,
+                # que prosa normativa nao tem, e a primeira tentativa que casar
+                # vence.
+                for numerado in (False, True):
+                    lc = como_o_corpus_limpo(textos.get(cid, ""), numerado)
+                    candidatos = [c for c, t, _ in por_doc[doc] if lc and lc in t]
+                    if not candidatos:
+                        candidatos = [c for c, t, _ in por_doc[doc] if lc and t and t in lc]
+                    if candidatos:
+                        break
 
             if len(candidatos) == 1:
                 contagem["remapeada"] += 1

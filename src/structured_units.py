@@ -202,6 +202,9 @@ def _has_usable_table_header(
     )
 
 
+_GENERIC_HEADER_RE = re.compile(r"Coluna\s+\d+")
+
+
 def _generic_table_headers(column_count: int) -> tuple[str, ...]:
     return tuple(f"Coluna {index + 1}" for index in range(column_count))
 
@@ -297,7 +300,45 @@ def _is_duplicate_table(
     )
 
 
+def _is_generic_headers(headers: tuple[str, ...]) -> bool:
+    """Cabeçalho inventado por `_generic_table_headers`, não lido do PDF."""
+    return bool(headers) and all(
+        _GENERIC_HEADER_RE.fullmatch(header.strip()) for header in headers
+    )
+
+
 def _serialize_table_row(headers: tuple[str, ...], row: list[str | None]) -> str:
+    """Serializa a linha. Sem cabeçalho real, emite só o conteúdo das células.
+
+    Quando `find_tables()` não acha cabeçalho, `_generic_table_headers` inventa
+    "Coluna 1", "Coluna 2"… Prefixar cada célula com esse nome produzia texto que
+    não responde nada e ainda ocupa vaga no top-k:
+
+        Coluna 1: 6.2.1. Preventing discriminatory outcomes:
+        Coluna 3:
+
+    Medido em 22/set sobre o acervo recortado: **5,3% dos trechos** carregavam
+    esse andaime, concentrados no UNESCO. O conteúdo das células é legítimo — o
+    rótulo falso é que não é. Sem cabeçalho real, as células vão separadas por
+    " | ", e célula vazia é descartada em vez de virar "Coluna 3:" solto.
+
+    UMA COLUNA NÃO É TABELA. `find_tables()` também enquadra como tabela a caixa
+    de texto — o "Box 1." dos relatórios da OCDE, a capa do IMDRF. Aí o
+    "cabeçalho" é a LEGENDA da caixa, e prefixá-la em cada linha injeta o título
+    inteiro no meio de toda frase:
+
+        Box 1. Courts' case management systems...: In the US, landlords are
+        Box 1. Courts' case management systems...: courts' case management
+
+    O prefixo só informa alguma coisa quando há mais de uma coluna para
+    distinguir. Com uma só, a identidade da coluna é trivial e o rótulo é ruído.
+    Medido em 22/set: 52 trechos assim, 51 deles da OCDE. A tabela de verdade
+    (UNESCO, "SIGNIFICANCE LEVEL | DESCRIPTION") tem duas colunas e continua
+    prefixada, que é onde o prefixo serve.
+    """
+    if len(headers) < 2 or _is_generic_headers(headers):
+        celulas = [_normalize_text(cell or "") for cell in row]
+        return " | ".join(c for c in celulas if c)
     return "\n".join(
         f"{header}: {_normalize_text(cell or '')}"
         for header, cell in zip(headers, row)

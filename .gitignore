@@ -39,3 +39,30 @@ eval/results/indexes/*.npz
 # foi oferecido ao modelo e o que ele devolveu.
 eval/lotes/*.md
 chaves_groq
+
+# Cópia do .env que a troca de credencial deixa para trás. Contém chave de API
+# em texto puro — nunca entra no git.
+.env.bak-*
+
+# Backups que limpar.py --producao cria antes de reescrever o corpus. Mesma
+# razão dos .bak-pre-reancoragem acima: rede de segurança local, não histórico.
+# São ~87 MB hoje.
+*.bak-pre-limpeza*
+
+# Vetores do experimento de recorte: 863 MB de .npz mais o cache binário de
+# retomada do Gemini. Derivados de dados/*.jsonl pelo colab_embutir.py e pelo
+# gemini_embutir.py, e a procedência é o embedding_text_profile gravado dentro
+# do próprio arquivo. Versionar não acrescenta reprodutibilidade.
+# recorte_resultados.json FICA: é o resultado, não o insumo.
+eval/experimento_embedding/resultados/*.npz
+eval/experimento_embedding/resultados/*.npz.bak-*
+eval/experimento_embedding/resultados/cache_gemini.*
+
+# Corpora recortados do experimento: 63 MB regeráveis em segundos por
+# `python eval/experimento_embedding/bench_tamanho.py recortar`, a partir do
+# corpus versionado. O que NÃO é regerável — as perguntas, as passagens
+# sorteadas e a amostra de documentos — fica versionado ao lado.
+eval/experimento_embedding/dados/T*.jsonl
+eval/experimento_embedding/dados/PC*.jsonl
+eval/experimento_embedding/dados/PC*_pais.json
+eval/experimento_embedding/dados/corpus_limpo.jsonl

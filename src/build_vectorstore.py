@@ -17,6 +17,7 @@ from embedding_text import (
     EMBEDDING_TEXT_PROFILE,
     build_embedding_text,
     corpus_embedding_fingerprint,
+    embedding_text_hash,
 )
 
 load_dotenv()
@@ -82,35 +83,53 @@ def build_embedding_inputs(documents: list[dict]) -> list[str]:
 
 # Carrega o backup de embeddings já processados para evitar retrabalho em caso de falhas
 def load_backup(documents: list[dict]):
-    processed_data = []
+    # O backup é indexado pelo TEXTO DE EMBEDDING, não por posição nem por
+    # fingerprint.
+    #
+    # Antes, `load_backup` assumia que o backup era o prefixo do corpus atual, na
+    # mesma ordem, e conferia `documents[index]` contra `processed_data[index]`.
+    # Isso quebra sempre que o corpus é reprocessado: remover um documento ou
+    # mudar o recorte desloca tudo a partir do primeiro trecho alterado, e o
+    # script aborta com "fingerprint não confere" mesmo tendo em mãos milhares de
+    # vetores reaproveitáveis.
+    #
+    # Por que NÃO dá para casar por `corpus_embedding_fingerprint`: ele hasheia o
+    # **id** junto com o texto (`src/embedding_text.py:61-75`). Como os ids
+    # deixaram de ser posicionais e passaram a vir do conteúdo, todo fingerprint
+    # mudou — inclusive o dos trechos cujo texto é idêntico. Medido: casando por
+    # fingerprint, 0 de 4.897 seriam reaproveitados.
+    #
+    # A chave certa é o texto que de fato produziu o vetor: `build_embedding_text`,
+    # com o prefixo `[título · emissor · seção]` incluído. Se o prefixo mudou, o
+    # vetor não serve — e é justo recalcular.
+    por_texto = {}
 
     if BACKUP_FILE.exists():
         with open(BACKUP_FILE, "r", encoding="utf-8") as file:
             for line in file:
-                processed_data.append(json.loads(line))
+                if not line.strip():
+                    continue
+                item = json.loads(line)
+                if item.get("embedding_text_profile") != EMBEDDING_TEXT_PROFILE:
+                    # Falha alta, de propósito: um backup de outro perfil não é
+                    # reaproveitável, e seguir em silêncio significaria recalcular
+                    # o acervo inteiro com a API sem ninguém perceber a conta.
+                    raise ValueError(
+                        "Backup incompatível: perfil de embedding ausente ou diferente "
+                        f"de {EMBEDDING_TEXT_PROFILE!r}."
+                    )
+                doc_backup = item.get("document") or {}
+                chave = build_embedding_text(doc_backup)
+                if chave:
+                    por_texto[chave] = item
 
-        if len(processed_data) > len(documents):
-            raise ValueError(
-                "Backup contextual possui mais registros que o corpus atual."
-            )
-
-        for index, item in enumerate(processed_data):
-            expected_fingerprint = corpus_embedding_fingerprint(
-                [documents[index]]
-            )
-            if item.get("embedding_text_profile") != EMBEDDING_TEXT_PROFILE:
-                raise ValueError(
-                    "Backup incompatível: perfil de embedding ausente ou diferente "
-                    f"de {EMBEDDING_TEXT_PROFILE!r}."
-                )
-            if item.get("embedding_text_fingerprint") != expected_fingerprint:
-                raise ValueError(
-                    "Backup incompatível: fingerprint do chunk contextual não confere."
-                )
-
+        aproveitaveis = sum(
+            1 for doc in documents if build_embedding_text(doc) in por_texto
+        )
         print(
-            f"Retomando backup {EMBEDDING_TEXT_PROFILE}: "
-            f"{len(processed_data)} embeddings já salvos."
+            f"Backup {EMBEDDING_TEXT_PROFILE}: {len(por_texto)} vetores em disco, "
+            f"{aproveitaveis} reaproveitáveis para os {len(documents)} trechos atuais "
+            f"({len(documents) - aproveitaveis} a calcular)."
         )
     else:
         print(
@@ -118,20 +137,43 @@ def load_backup(documents: list[dict]):
             "Iniciando do zero."
         )
 
-    return processed_data
+    return por_texto
 
 # Gera embeddings para os documentos usando a API Gemini e salva em backup
-def generate_embeddings(documents, processed_data):
-    documents_to_process = documents[len(processed_data):]
+def generate_embeddings(documents, por_texto):
+    """Devolve um registro por documento, NA ORDEM DO CORPUS.
+
+    Reaproveita do backup todo trecho cujo texto contextual não mudou e calcula
+    só o resto. A saída segue `documents`, então o upload para o Qdrant fica
+    alinhado com o corpus mesmo que o backup esteja em outra ordem.
+    """
+    processed_data = []
+    documents_to_process = []
+    for doc in documents:
+        achado = por_texto.get(build_embedding_text(doc))
+        if achado is not None:
+            # O vetor é reaproveitado, mas o documento vem do corpus atual e o
+            # fingerprint é recalculado: ele carrega o id, que mudou.
+            processed_data.append({
+                **achado,
+                "document": doc,
+                "embedding_text_fingerprint": corpus_embedding_fingerprint([doc]),
+            })
+        else:
+            processed_data.append(None)
+            documents_to_process.append(doc)
 
     if not documents_to_process:
-        print("Todos os embeddings já foram gerados.")
+        print("Todos os embeddings já estavam no backup.")
         return processed_data
+
+    print(f"A calcular: {len(documents_to_process)} de {len(documents)} trechos.")
 
     print("Inicializando cliente Gemini...")
     client = genai.Client(api_key=GOOGLE_GENAI_API_KEY)
 
     BACKUP_FILE.parent.mkdir(parents=True, exist_ok=True)
+    novos = {}
 
     with open(BACKUP_FILE, "a", encoding="utf-8") as backup:
         for i in tqdm(
@@ -159,10 +201,13 @@ def generate_embeddings(documents, processed_data):
                         "embedding_text_fingerprint": (
                             corpus_embedding_fingerprint([doc])
                         ),
+                        # hash SÓ do texto: é por ele que se reaproveita vetor
+                        # depois de uma troca de id. Ver embedding_text_hash.
+                        "embedding_text_hash": embedding_text_hash(doc),
                     }
 
                     backup.write(json.dumps(record, ensure_ascii=False) + "\n")
-                    processed_data.append(record)
+                    novos[doc["id"]] = record
 
                 time.sleep(SLEEP_BETWEEN_BATCHES)
 
@@ -171,6 +216,16 @@ def generate_embeddings(documents, processed_data):
                 print(f"Detalhe: {error}")
                 raise
 
+    # encaixa os recém-calculados nos buracos, preservando a ordem do corpus
+    for i, doc in enumerate(documents):
+        if processed_data[i] is None:
+            processed_data[i] = novos[doc["id"]]
+
+    faltando = [i for i, r in enumerate(processed_data) if r is None]
+    if faltando:
+        raise RuntimeError(
+            f"{len(faltando)} trechos ficaram sem vetor — não enviar ao Qdrant."
+        )
     return processed_data
 
 # Constrói o payload para cada ponto a ser inserido no Qdrant com os metadados
@@ -258,8 +313,8 @@ def build_vectorstore():
     documents = load_documents()
     print(f"{len(documents)} chunks encontrados.")
 
-    processed_data = load_backup(documents)
-    processed_data = generate_embeddings(documents, processed_data)
+    por_texto = load_backup(documents)
+    processed_data = generate_embeddings(documents, por_texto)
 
     upload_to_qdrant(processed_data)
 

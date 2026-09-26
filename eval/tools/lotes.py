@@ -156,6 +156,84 @@ def sys_prompt() -> str:
     sys.exit(f"constante SYS não encontrada em {GERADOR}")
 
 
+def unidades_neutras(corpus: dict[str, dict], alvo: int = 2600,
+                     semente: int = 0) -> dict[str, dict]:
+    """Monta as passagens mostradas ao gerador, SEM coincidir com nenhuma das
+    estratégias de recorte que o projeto compara.
+
+    POR QUE ISTO EXISTE. A pergunta nasce com o tamanho da passagem que a gerou.
+    Se a passagem for um trecho de 1.200 caracteres, o gabarito favorece o recorte
+    de 1.200. Se for a página, favorece o recorte por página. Em qualquer caso o
+    benchmark deixa de servir para comparar estratégias de recorte — que é uma das
+    perguntas do projeto.
+
+    A REGRA: a unidade de geração não pode coincidir com NENHUMA estratégia sob
+    teste.
+
+        C1 Page              → não pode ser a página
+        C4 Recursive 1000/200→ não pode ser janela de tamanho fixo alinhada a grade
+        C5 Semantic          → não pode ser fronteira temática
+        C6 Legal Structure   → não pode ser artigo/seção
+
+    O que sobra e não é nenhuma delas: uma **janela de deslocamento aleatório
+    dentro do documento, ajustada para começar e terminar em fronteira de frase**.
+    O deslocamento aleatório garante que ela não se alinhe a começo de página, a
+    grade fixa nem a início de artigo; a fronteira de frase existe só para o texto
+    não começar no meio de uma palavra, e frase não é estratégia sob teste.
+
+    A ÂNCORA NÃO É A PASSAGEM. O que fica anotado é a **citação literal** que o
+    gerador devolve em `evidencia`, validada contra o texto na integração. Citação
+    é fato, e fato sobrevive a qualquer recorte — a menos que o recorte a parta ao
+    meio, que é exatamente o defeito a medir. É o desenho de *supporting facts* do
+    HotpotQA.
+    """
+    rng = random.Random(semente)
+    por_doc: dict[str, list[str]] = defaultdict(list)
+    for cid, r in corpus.items():
+        por_doc[r["metadata"].get("document_id")].append(cid)
+
+    unidades = {}
+    for doc, cids in sorted(por_doc.items()):
+        # reconstrói o documento na ordem, com a sobreposição do recorte atual
+        # removida na junção — a passagem não deve herdar artefato de recorte.
+        cids = sorted(cids, key=lambda c: (corpus[c]["metadata"].get("page") or 0, c))
+        inteiro = "\n".join(corpus[c]["text"] for c in cids)
+        if len(inteiro) < alvo // 2:
+            continue
+
+        # fronteiras de frase; a janela encaixa entre duas delas
+        cortes = [0] + [m.end() for m in re.finditer(r"[.!?]\s", inteiro)] + [len(inteiro)]
+        if len(cortes) < 3:
+            continue
+
+        # deslocamento aleatório: nem grade fixa, nem início de página
+        passo = max(1, alvo // 2)
+        inicio = rng.randrange(0, max(1, min(passo, len(inteiro) // 2)))
+        n = 0
+        while inicio < len(inteiro) - alvo // 3:
+            fim_alvo = inicio + alvo
+            ini_frase = min(cortes, key=lambda x: abs(x - inicio))
+            fim_frase = min(cortes, key=lambda x: abs(x - fim_alvo))
+            if fim_frase <= ini_frase:
+                break
+            texto = inteiro[ini_frase:fim_frase].strip()
+            if len(texto) >= alvo // 2:
+                n += 1
+                titulo = corpus[cids[0]]["metadata"].get("title") or doc
+                unidades[f"{doc}::j{n}"] = {
+                    "document_id": doc,
+                    "rotulo": f"{titulo} — passagem {n}",
+                    # os chunk_id são conveniência: dizem de onde a passagem veio
+                    # no recorte ATUAL. Não são a definição da evidência.
+                    "chunks": [c for c in cids
+                               if corpus[c]["text"][:60] and
+                               normalizar(corpus[c]["text"][:60]) in normalizar(texto)],
+                    "texto": texto,
+                }
+            inicio = fim_frase if fim_frase > inicio else inicio + alvo
+    return unidades
+
+
 def rotulo(rec: dict) -> str:
     md = rec["metadata"]
     titulo = (md.get("title") or md.get("document_id") or "").strip()
@@ -193,42 +271,48 @@ def cmd_sortear(args) -> None:
     print(f"  {len(ja_ancorados)} trechos já ancorados foram excluídos; "
           f"sobram {len(elegiveis)} com ≥ {args.min_chars} caracteres")
 
+    # Unidades independentes de recorte — ver `unidades_neutras`.
+    unid = unidades_neutras(elegiveis, semente=args.semente)
+    print(f"  {len(unid)} unidades neutras (página ou janela) montadas a partir dos trechos elegíveis")
+
     itens: list[dict] = []
     if args.tipo == "factual":
-        if len(elegiveis) < args.n:
-            sys.exit(f"só há {len(elegiveis)} trechos elegíveis para {args.n} pedidos")
-        for i, cid in enumerate(random.sample(sorted(elegiveis), args.n), 1):
-            itens.append({"n": i, "chunks": [cid]})
+        if len(unid) < args.n:
+            sys.exit(f"só há {len(unid)} unidades para {args.n} pedidos")
+        for i, u in enumerate(random.sample(sorted(unid), args.n), 1):
+            itens.append({"n": i, "unidades": [u], "chunks": unid[u]["chunks"]})
 
     elif args.tipo == "multi_hop":
         por_doc = defaultdict(list)
-        for cid, r in elegiveis.items():
-            por_doc[r["metadata"].get("document_id")].append(cid)
-        candidatos = [d for d, cs in por_doc.items() if len(cs) >= 2]
+        for u, d in unid.items():
+            por_doc[d["document_id"]].append(u)
+        candidatos = [d for d, us in por_doc.items() if len(us) >= 2]
         if not candidatos:
-            sys.exit("nenhum documento com dois trechos elegíveis")
+            sys.exit("nenhum documento com duas unidades")
         for i in range(1, args.n + 1):
             doc = random.choice(candidatos)
-            a, b = random.sample(sorted(por_doc[doc]), 2)
-            itens.append({"n": i, "chunks": [a, b]})
+            ua, ub = random.sample(sorted(por_doc[doc]), 2)
+            itens.append({"n": i, "unidades": [ua, ub],
+                          "chunks": unid[ua]["chunks"] + unid[ub]["chunks"]})
 
     elif args.tipo == "comparative":
         por_doc = defaultdict(list)
-        for cid, r in elegiveis.items():
-            por_doc[r["metadata"].get("document_id")].append(cid)
+        for u, d in unid.items():
+            por_doc[d["document_id"]].append(u)
         if len(por_doc) < 2:
             sys.exit("são necessários pelo menos dois documentos")
         for i in range(1, args.n + 1):
             da, db = random.sample(sorted(por_doc), 2)
-            itens.append({"n": i, "chunks": [random.choice(sorted(por_doc[da])),
-                                             random.choice(sorted(por_doc[db]))]})
+            ua, ub = random.choice(sorted(por_doc[da])), random.choice(sorted(por_doc[db]))
+            itens.append({"n": i, "unidades": [ua, ub],
+                          "chunks": unid[ua]["chunks"] + unid[ub]["chunks"]})
 
     else:  # unanswerable — não sai de trecho nenhum
-        itens = [{"n": i, "chunks": []} for i in range(1, args.n + 1)]
+        itens = [{"n": i, "unidades": [], "chunks": []} for i in range(1, args.n + 1)]
 
     numero = proximo_numero(args.tipo)
     nome = f"lote_{numero:02d}_{args.tipo}"
-    md = _montar_md(nome, args.tipo, itens, corpus, args.semente)
+    md = _montar_md(nome, args.tipo, itens, corpus, args.semente, unid)
 
     (LOTES / f"{nome}.md").write_text(md, encoding="utf-8")
     (LOTES / f"{nome}.ids.json").write_text(json.dumps({
@@ -245,19 +329,19 @@ def cmd_sortear(args) -> None:
     print(f"E rode: python eval/tools/lotes.py integrar --lote {nome} --conferir")
 
 
-def _montar_md(nome, tipo, itens, corpus, semente) -> str:
+def _montar_md(nome, tipo, itens, corpus, semente, unid=None) -> str:
     p = [f"<!-- {nome} · semente {semente} · gerado por eval/tools/lotes.py -->",
          "", sys_prompt(), "", "---", ""]
 
     if tipo == "factual":
-        p += [f"Abaixo estão {len(itens)} trechos. Para CADA UM, gere **uma** pergunta cuja "
-              "resposta esteja contida e completa naquele trecho.", ""]
+        p += [f"Abaixo estão {len(itens)} passagens. Para CADA UMA, gere **uma** pergunta cuja "
+              "resposta esteja contida e completa naquela passagem.", ""]
     elif tipo == "multi_hop":
-        p += [f"Abaixo estão {len(itens)} pares de trechos **do mesmo documento**. Para CADA PAR, "
+        p += [f"Abaixo estão {len(itens)} pares de passagens **do mesmo documento**. Para CADA PAR, "
               "gere **uma** pergunta cuja resposta exija combinar os dois — não respondível por "
               "apenas um. Em `evidencia`, cite literalmente de CADA trecho.", ""]
     elif tipo == "comparative":
-        p += [f"Abaixo estão {len(itens)} pares de trechos de **documentos diferentes**. Para CADA "
+        p += [f"Abaixo estão {len(itens)} pares de passagens de **documentos diferentes**. Para CADA "
               "PAR, gere **uma** pergunta que relacione ou compare o que os dois dizem sobre um "
               "ponto em comum. A pergunta deve nomear os dois documentos ou regimes. Em "
               "`evidencia`, cite literalmente de CADA documento.", ""]
@@ -291,13 +375,13 @@ def _montar_md(nome, tipo, itens, corpus, semente) -> str:
         return "\n".join(p) + "\n"
 
     for it in itens:
-        cs = [corpus[c] for c in it["chunks"]]
-        if len(cs) == 1:
-            p += [f"## Trecho {it['n']} — {rotulo(cs[0])}", "", cs[0]["text"].strip(), ""]
-        else:
+        us = [unid[u] for u in it.get("unidades", [])]
+        if len(us) == 1:
+            p += [f"## Passagem {it['n']} — {us[0]['rotulo']}", "", us[0]["texto"].strip(), ""]
+        elif len(us) == 2:
             p += [f"## Par {it['n']}", "",
-                  f"### A — {rotulo(cs[0])}", "", cs[0]["text"].strip(), "",
-                  f"### B — {rotulo(cs[1])}", "", cs[1]["text"].strip(), ""]
+                  f"### A — {us[0]['rotulo']}", "", us[0]["texto"].strip(), "",
+                  f"### B — {us[1]['rotulo']}", "", us[1]["texto"].strip(), ""]
     return "\n".join(p) + "\n"
 
 

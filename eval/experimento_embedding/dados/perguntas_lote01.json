@@ -1,0 +1,147 @@
+[
+ {
+  "n": 1,
+  "question": "Quando a Comissão Europeia reconhece que um país fora da UE oferece proteção adequada, ainda é preciso pedir autorização para enviar dados pessoais para lá? E essa decisão pode ser desfeita depois?",
+  "answer": "Não é preciso autorização adicional: nesses casos as transferências de dados pessoais para aquele país ou organização internacional podem ocorrer sem necessidade de obter qualquer autorização adicional. A decisão pode ser revogada — a Comissão pode decidir revogá-la, após dar aviso e uma exposição completa das razões ao país terceiro ou organização internacional.",
+  "evidencia": [
+   "transfers of personal data to that third country or international organisation may take place without the need to obtain any further authoris",
+   "The Commission may also decide, having given notice and a full statement setting out the reasons to the third country or international organisation, to revoke such a decision."
+  ],
+  "n_evidencias": 2,
+  "difficulty": "medium",
+  "persona": "desenvolvedor",
+  "documento": "gdpr_regulation_EU_2016",
+  "forma": "articulado_EN",
+  "janela": 3000,
+  "passagem_texto": "(92) There are circumstances under which it may be reasonable and economical for the subject of a data protection impact assessment to be broader than a single project, for example where public authorities or bodies intend to establish a common application or processing platform or where several controllers plan to introduce a common application or processing environment across an industry sector or segment or for a widely used horizontal activity. (93) In the context of the adoption of the Member State law on which the performance of the tasks of the public authority or public body is based and which regulates the specific processing operation or set of operations in question, Member States may deem it necessary to carry out such assessment prior to the processing activities.\nStates may conclude international agreements which involve the transfer of personal data to third countries or in­ ternational organisations, as far as such agreements do not affect this Regulation or any other provisions of Union law and include an appropriate level of protection for the fundamental rights of the data subjects. (103) The Commission may decide with effect for the entire Union that a third country, a territory or specified sector within a third country, or an international organisation, offers an adequate level of data protection, thus providing legal certainty and uniformity throughout the Union as regards the third country or international organisation which is considered to provide such level of protection. In such cases, transfers of personal data to that third country or international organisation may take place without the need to obtain any further authoris­ ation. The Commission may also decide, having given notice and a full statement setting out the reasons to the third country or international organisation, to revoke such a decision.\nextending such a code, associations and other bodies representing categories of controllers or processors should consult relevant stakeholders, including data subjects where feasible, and have regard to submissions received and views expressed in response to such consultations. (100) In order to enhance transparency and compliance with this Regulation, the establishment of certification mechanisms and data protection seals and marks should be encouraged, allowing data subjects to quickly assess the level of data protection of relevant products and services. (101) Flows of personal data to and from countries outside the Union and international organisations are necessary for the expansion of international trade and international cooperation. The increase in such flows has raised new challenges and concerns with regard to the protection of personal data. However, when personal data are transferred from the Union to controllers, processors or other recipients in third countries or to international organisations, the level of protection of natural persons ensured in the Union by this Regulation should not be undermined, including in cases of onward transfers of personal data from the third country or international organisation to controllers, processors in the same or another third country or international organisation. In any event, transfers to third countries and international organisations may only be carried out in full compliance with this Regulation."
+ },
+ {
+  "n": 2,
+  "question": "Riscos de segurança em sistemas de inteligência artificial devem ser tratados em que momento do ciclo do sistema?",
+  "answer": "Ao longo de todo o ciclo de vida dos sistemas de IA. Tanto os danos indesejados (riscos de segurança física) quanto as vulnerabilidades a ataque (riscos de segurança da informação) devem ser evitados, tratados, prevenidos e eliminados durante todo esse ciclo, para garantir a segurança humana, ambiental e dos ecossistemas.",
+  "evidencia": [
+   "should be avoided and should be addressed, prevented and eliminated throughout the lifecycle of AI systems to ensure human, environmental and ecosystem safety and security"
+  ],
+  "n_evidencias": 1,
+  "difficulty": "easy",
+  "persona": "desenvolvedor",
+  "documento": "ethical_impact_assessment_UNESCO_2023",
+  "forma": "prosa_EN",
+  "janela": 600,
+  "passagem_texto": "This is a very relevant concern given the rise of large language models, as it includes situations of direct attacks where someone inserting a prompt into ChatGPT or Bing Chat to try to make it behave in a different way, and indirect attacks that rely on data being\n5. Safety and Security The Recommendation states that “unwanted harms (safety risks), as well as vulnerabilities to attack (security risks) should be avoided and should be addressed, prevented and eliminated throughout the lifecycle of AI systems to ensure human, environmental and ecosystem safety and security. Safe and secure AI will be enabled by the development of sustainable, privacy-protective data access frameworks that foster better training and validation of AI models utilizing quality data”. 5.1. Why is this important? While having access to more data is generally perceived as an opportunity to enhance security and accuracy, it means that attackers can also learn more rapidly and use AI to constantly improve their attacks, combining speed with context (Gregory, 2021)."
+ },
+ {
+  "n": 3,
+  "question": "O médico pode informar a uma seguradora as circunstâncias da morte de um paciente que estava sob seus cuidados? E ele responde por não orientar seus auxiliares sobre sigilo?",
+  "answer": "Não pode prestar essas informações além das que constam na declaração de óbito, salvo por consentimento expresso do representante legal do paciente. E sim, é vedado ao médico deixar de orientar seus auxiliares e alunos a respeitar o sigilo profissional e zelar para que ele seja mantido por eles.",
+  "evidencia": [
+   "Prestar informações a empresas seguradoras sobre as circunstâncias da morte do paciente sob seus cuidados, além das contidas na declaração de óbito, salvo por expresso consentimento do seu representante legal.",
+   "Deixar de orientar seus auxiliares e alunos a respeitar o sigilo profissional e zelar para que seja por eles mantido."
+  ],
+  "n_evidencias": 2,
+  "difficulty": "medium",
+  "persona": "saude",
+  "documento": "codigo_etica_medica_CFM_2019",
+  "forma": "articulado_PT",
+  "janela": 3000,
+  "passagem_texto": "Estabelecer vínculo de qualquer natureza com empresas que anunciam ou comercializam planos de financiamento ou consórcios para procedimentos médicos. (Modificado pela Resolução CFM nº 2.226/2019)3. 3Redação anterior: Art.72 Estabelecer vículo de qualquer natureza com empresas que anunciam ou comercializam planos de financiamento, cartões de descontos ou consórcios para procedimentos médicos.\nis, exibir pacientes ou imagens que os tornem reconhecíveis em anúncios profissionais ou na divulgação de assuntos médicos em meios de comunicação em geral, mesmo com autorização do paciente. Art. 76. Revelar informações confidenciais obtidas quando do exame médico de trabalhadores, inclusive por exigência dos dirigentes de empresas ou de instituições, salvo se o silêncio puser em risco a saúde dos empregados ou da comunidade. Art. 77. Prestar informações a empresas seguradoras sobre as circunstâncias da morte do paciente sob seus cuidados, além das contidas na declaração de óbito, salvo por expresso consentimento do seu representante legal.\nCapítulo IX SIGILO PROFISSIONAL É vedado ao médico: Art. 73. Revelar fato de que tenha conhecimento em virtude do exercício de sua profissão, salvo por motivo justo, dever legal ou consentimento, por escrito, do paciente. Parágrafo único. Permanece essa proibição: a) mesmo que o fato seja de conhecimento público ou o paciente tenha falecido; b) quando de seu depoimento como testemunha (nessa hipótese, o médico comparecerá perante a autoridade e declarará seu impedimento); c) na investigação de suspeita de crime, o médico estará impedido de revelar segredo que possa expor o paciente a processo penal. Art. 74. Revelar sigilo profissional relacionado a paciente criança ou adolescente, desde que estes tenham capacidade de discernimento, inclusive a seus pais ou representantes legais, salvo quando a não revelação possa acarretar dano ao paciente. Art. 75. Fazer referência a casos clínicos identificáveis, exibir pacientes ou imagens que os tornem reconhecíveis em anúncios profissionais ou na divulgação de assuntos médicos em meios de comunicação em geral, mesmo com autorização do paciente. Art. 76.\nArt. 78. Deixar de orientar seus auxiliares e alunos a respeitar o sigilo profissional e zelar para que seja por eles mantido. Art. 79. Deixar de guardar o sigilo profissional na cobrança de honorários por meio judicial ou extrajudicial.\nCapítulo X DOCUMENTOS MÉDICOS É vedado ao médico: Art. 80. Expedir documento médico sem ter praticado ato profissional que o justifique, que seja tendencioso ou que não corresponda à verdade. Art. 81. Atestar como forma de obter vantagem. Art. 82. Usar formulários institucionais para atestar, prescrever e solicitar exames ou procedimentos fora da instituição a que pertençam tais formulários. Art. 83. Atestar óbito quando não o tenha verificado pessoalmente, ou quando não tenha prestado assistência ao paciente, salvo, no último caso, se o fizer como plantonista, médico substituto ou em caso de necropsia e verificação médico-legal. Art. 84. Deixar de atestar óbito de paciente ao qual vinha prestando assistência, exceto quando houver indícios de morte violenta."
+ },
+ {
+  "n": 4,
+  "question": "Em que tipo de levantamento se baseia o estudo da OCDE sobre governança de dados na justiça?",
+  "answer": "Em pesquisa documental (desk research) e em entrevistas em profundidade com representantes nacionais e ministérios setoriais de países selecionados, além de representantes do setor privado e do terceiro setor.",
+  "evidencia": [
+   "This paper is based on desk research and in- depth interviews with national representatives and line ministries in selected countries and with private and third sectors."
+  ],
+  "n_evidencias": 1,
+  "difficulty": "easy",
+  "persona": "pesquisador",
+  "documento": "justice_data_governance_OECD_2024",
+  "forma": "prosa_EN",
+  "janela": 600,
+  "passagem_texto": "It can help policymakers better understand the scope, nature and impact of justice problems, design and deliver people-centred justice services, and measure what works. This working paper explores the role of data in delivering people-centred justice, as well as the values, objectives and practices necessary for data governance to harness its full potential. This paper is based on desk research and in- depth interviews with national representatives and line ministries in selected countries and with private and third sectors. It builds on the OECD Recommendation on Access to Justice and People-Centred Justice Systems, the OECD Framework and Good Practice Principles for People-Centred Justice, the OECD Digital Government Policy Framework, and the OECD Data Governance Framework."
+ },
+ {
+  "n": 5,
+  "question": "Quantas propostas de mudança foram recebidas na revisão do Código de Ética Médica, e onde elas foram validadas?",
+  "answer": "Foram 1.431 propostas enviadas por associações médicas, sociedades de especialidades, entidades de ensino médico e outras organizações. Todas foram analisadas pela Comissão Nacional de Revisão do Código de Ética Médica do CFM e validadas em três encontros regionais específicos sobre o tema.",
+  "evidencia": [
+   "resultaram de 1.431 propostas enviadas por associações médicas, sociedades de especialidades, entidades de ensino médico, dentre outras organizações",
+   "validadas em três encontros regionais específicos para tratar do tema."
+  ],
+  "n_evidencias": 2,
+  "difficulty": "medium",
+  "persona": "pesquisador",
+  "documento": "codigo_etica_medica_CFM_2019",
+  "forma": "articulado_PT",
+  "janela": 3000,
+  "passagem_texto": "Do conjunto aprovado, há alguns trechos que merecem destaque, como o artigo que estabelece no Código de Ética os limites para o uso de redes sociais pelos médicos no exercício da profissão. Outro ponto relevante se refere às normas que definem a responsabilidade do médico assistente, ou seu substituto, ao elaborar e entregar o sumário de alta. No que se refere aos direitos dos médicos, o novo CEM prevê a isonomia de tratamento aos profissionais com deficiência e reforça a necessidade de criação de comissões de ética nos locais de trabalho. O Código também assegura ao profissional o direito de recusa do exercício da medicina em qualquer instituição (pública ou\n(CRMs). Todas as sugestões foram criteriosamente analisadas pela Comissão Nacional de Revisão do Código de Ética Médica do CFM e validadas em três encontros regionais específicos para tratar do tema. Além das etapas regionais, o CFM também realizou, entre 2017 e 2018, três Conferências Nacionais de Ética Médica (Conem) para debater e deliberar sobre a exclusão, alteração e adição de textos ao Código de Ética Médica vigente. No III Conem, em agosto de 2018, em Brasília (DF), os participantes deliberaram, em votação eletrônica, a proposta final da nova Resolução, que foi submetida em setembro ao Plenário do CFM. A conclusão desse processo deve ser creditada àqueles que encaminharam sugestões e a centenas de conselheiros (federais e regionais), lideranças, especialistas, técnicos e colaboradores que dedicaram tempo e expertise. Graças ao empenho desse grupo o País passa a contar com um Código de Ética Médica que busca promover e preservar o prestígio\nprivada) sem condições de trabalho dignas, colocando em risco a saúde dos pacientes. Entre as proibições, ficam vedadas ao médico a prescrição e a comercialização de medicamentos, órteses, próteses ou implantes (de qualquer natureza) cuja compra decorra de influência direta, em virtude de sua atividade profissional. A regra reforça o compromisso ético da categoria com o bemestar e a saúde dos pacientes, coibindo interações com fim de lucro, incompatíveis com os princípios da boa medicina. As mudanças, que aperfeiçoam o escopo normativo já existente, resultaram de 1.431 propostas enviadas por associações médicas, sociedades de especialidades, entidades de ensino médico, dentre outras organizações. Também participaram do processo médicos regularmente inscritos nos Conselhos Regionais de Medicina (CRMs). Todas as sugestões foram criteriosamente analisadas pela Comissão Nacional de Revisão do Código de Ética Médica do CFM e validadas em três encontros regionais específicos para tratar do tema.\ne a união da categoria, garantindo à sociedade padrões de prática e valores, bem como deveres e virtudes imprescindíveis à convivência humana. Assim, com a entrega do novo CEM ao Brasil, os Conselhos de Medicina continuam sua trajetória defendendo princípios e aperfeiçoando práticas. Carlos Vital Tavares Corrêa Lima Coordenador da Comissão Nacional de Revisão do CEM Presidente do CFM\normas do Código de Ética Médica devem submet"
+ },
+ {
+  "n": 6,
+  "question": "É possível dispensar a supervisão humana em um sistema de IA de alto risco? Em que condição, e o que passa a ser exigido no lugar?",
+  "answer": "Sim. A supervisão humana não será exigida quando sua implementação for comprovadamente impossível ou implicar esforço desproporcional. Nessas hipóteses, o agente do sistema de IA de alto risco deve implementar medidas alternativas eficazes.",
+  "evidencia": [
+   "A supervisão humana não será exigida caso sua implementação seja comprovadamente impossível ou implique esforço desproporcional, hipóteses em que o agente do sistema de IA de alto risco implementará medidas alternativas eficazes."
+  ],
+  "n_evidencias": 1,
+  "difficulty": "medium",
+  "persona": "desenvolvedor",
+  "documento": "projeto_lei_2338_BR_2023",
+  "forma": "articulado_PT",
+  "janela": 600,
+  "passagem_texto": "sam, nos termos de regulamento, compreender, interpretar, decidir e intervir nos sistemas de IA, bem como priorizar o gerenciamento de riscos e impactos irreversíveis. Parágrafo único. A supervisão humana não será exigida caso sua implementação seja comprovadamente impossível ou implique esforço desproporcional, hipóteses em que o agente do sistema de IA de alto risco implementará medidas alternativas eficazes. Art. 9º Os agentes de IA de alto risco informarão, de forma suficiente, objetiva, clara e acessível, os procedimentos necessários para o exercício dos direitos descritos neste Capítulo. Art."
+ },
+ {
+  "n": 7,
+  "question": null,
+  "motivo": "A passagem é a lista de minicurrículos dos conselheiros do CFM. Não há conteúdo normativo — nenhuma pergunta de conformidade se sustenta nela."
+ },
+ {
+  "n": 8,
+  "question": "Um sistema de inteligência artificial pode assumir a responsabilidade final por uma decisão, no lugar de uma pessoa?",
+  "answer": "Não. Os sistemas de IA nunca podem substituir a responsabilidade e a prestação de contas humanas em última instância, e os Estados-membros devem assegurar que seja sempre possível atribuir responsabilidade ética e jurídica por qualquer etapa do ciclo de vida do sistema.",
+  "evidencia": [
+   "It emphasizes that AI systems can never replace ultimate human responsibility and accountability."
+  ],
+  "n_evidencias": 1,
+  "difficulty": "easy",
+  "persona": "saude",
+  "documento": "ethical_impact_assessment_UNESCO_2023",
+  "forma": "prosa_EN",
+  "janela": 600,
+  "passagem_texto": "Thus, it is also important that oversight mechanisms are accompanied by other procedural measures, including those stipulated in other sections of this EIA.\n\n9.2. Procedural Assessment:\n9. Human Oversight and Determination\n\nThe Recommendation states that Member States should ensure that it is always possible to attribute ethical and legal responsibility for any stage of the lifecycle of AI systems. It emphasizes that AI systems can never replace ultimate human responsibility and accountability. Human oversight refers not only to individual human oversight, but also to inclusive public oversight, as appropriate.\n\n9.1. Why is this important?\n\nHuman oversight is crucial to supporting and respecting human autonomy (European Commission High-Level Expert Group on Artificial Intelligence, 2019)."
+ },
+ {
+  "n": 9,
+  "question": "Que informações o operador que trata dados por conta de um controlador precisa manter registradas, e esse registro pode ser mantido apenas em papel?",
+  "answer": "Precisa registrar o nome e os contatos do operador e de cada controlador por conta de quem atua, do representante e do encarregado de proteção de dados; as categorias de tratamento realizadas para cada controlador; quando aplicável, as transferências para país terceiro ou organização internacional com identificação do destino e documentação das garantias adequadas; e, quando possível, uma descrição geral das medidas técnicas e organizativas de segurança. O registro não precisa ser em papel: deve ser feito por escrito, inclusive em formato eletrônico.",
+  "evidencia": [
+   "the name and contact details of the processor or processors and of each controller on behalf of which the processor is acting",
+   "The records referred to in paragraphs 1 and 2 shall be in writing, including in electronic form."
+  ],
+  "n_evidencias": 2,
+  "difficulty": "hard",
+  "persona": "desenvolvedor",
+  "documento": "gdpr_regulation_EU_2016",
+  "forma": "articulado_EN",
+  "janela": 3000,
+  "passagem_texto": "Article 29 Processing under the authority of the controller or processor The processor and any person acting under the authority of the controller or of the processor, who has access to personal data, shall not process those data except on instructions from the controller, unless required to do so by Union or Member State law. Article 30 Records of processing activities 1.\n4.5.2016 EN Official Journal of the European Union L 119/51 (d) the categories of recipients to whom the personal data have been or will be disclosed including recipients in third countries or international organisations; (e) where applicable, transfers of personal data to a third country or an international organisation, including the identifi­ cation of that third country or international organisation and, in the case of transfers referred to in the second subparagraph of Article 49(1), the documentation of suitable safeguards; (f) where possible, the envisaged time limits for erasure of the different categories of data; (g) where possible, a general description of the technical and organisational security measures referred to in Article 32(1). 2. Each processor and, where applicable, the processor's representative shall maintain a record of all categories of processing activities carried out on behalf of a controller, containing: (a) the name and contact details of the processor or processors and of each controller on behalf of which the processor is acting, and, where applicable, of the controller's or the processor's representative, and the data protection officer; (b) the categories of processing carried out on behalf of each controller; (c) where applicable, transfers of personal data to a third country or an international organisation, including the identifi­ cation of that third country or international organisation and, in the case of transfers referred to in the second subparagraph of Article 49(1), the documentation of suitable safeguards; (d) where possible, a general description of the technical and organisational security measures referred to in Article 32(1). 3. The records referred to in paragraphs 1 and 2 shall be in writing, including in electronic form. 4. The controller or the processor and, where applicable, the controller's or the processor's representative, shall make the record available to the supervisory authority on request. 5. The obligations referred to in paragraphs 1 and 2 shall not apply to an enterprise or an organisation employing fewer than 250 persons unless the processing it carries out is likely to result in a risk to the rights and freedoms of data subjects, the processing is not occasional, or the processing includes special categories of data as referred to in Article 9(1) or personal data relating to criminal convictions and offences referred to in Article 10. Article 31 Cooperation with the supervisory authority The controller and the processor and, where applicable, their representatives, shall cooperate, on request, with the supervisory authority in the performance of its tasks. Section 2 Security of personal data Article 32 Security of processing 1. Taking into account the state of the art, the costs of implementation and the nature, scope, context and purposes of processing as we"
+ },
+ {
+  "n": 10,
+  "question": "Se a mesma base de dados é publicada duas vezes sob regimes diferentes de anonimização, o que acontece com a garantia de privacidade quando alguém junta as duas publicações?",
+  "answer": "A perda de privacidade se acumula. Se os conjuntos são liberados com perda de privacidade ε = 1 e ε = 1,5, a agência que os publica pode calcular que a perda total de privacidade sofrida pelos indivíduos não será maior que ε = 2,5.",
+  "evidencia": [
+   "if the same dataset is made available through two different de-identifcation regimes, what will happen to the privacy guarantees if the two downstream datasets are recombined?",
+   "the releasing agency can compute that the total privacy loss that might be suffered by individuals in the dataset is no greater than"
+  ],
+  "n_evidencias": 2,
+  "difficulty": "hard",
+  "persona": "pesquisador",
+  "documento": "de_identifying_government_datasets_NIST_2023",
+  "forma": "prosa_EN",
+  "janela": 600,
+  "passagem_texto": "For example, if the same dataset is made available through two different de-identifcation regimes, what will happen to the privacy guarantees if the two downstream datasets are recombined? One of the primary advantages of differential privacy is that its operators are composable: if two 35This is a different approach than characterizing an individual’s heartbeat pattern so that it can be used as a biometric. In this case, it is a specifc sequence of heartbeats that is recognized.\n4.3.10. Challenges Posed by Linked Data Data can be linked in many ways. Pseudonyms allow data records from the same individual to be linked together over time. Family identifers, such as distinctive family names or some kinds of genetic information, may allow data from parents to be linked with their children. Device identifers allow data to be linked to physical devices and potentially link together all data coming from the same device. Data can also be linked to geographical locations. Data linkage increases the risk of re-identifcation by providing more attributes that can be used to distinguish the true identity of a data record from others in the population. For example, survey responses that are linked together by household are more readily re-identifed than survey responses that are not linked. Heart rate measurements may not be considered identifying, but, given a long sequence of tests, each individual in a dataset would have a unique constellation of heart rate measurements, and the dataset could be susceptible to being linked with another dataset that contains the same values.35 Geographical location data can – when linked over time – create individual behavioral time-location patterns that can be used to classify and single out an individual within unlabeled data, even with a small number of recorded locations per individual [107, 106]. Dependencies between records may result in record linkages even when there is no explicit linkage identifer. For example, it may be that an organization has new employees take a profciency test within seven days of being hired. This information would allow links to be drawn between an employee dataset that accurately reported an employee’s start date and a training dataset that accurately reported the date that the test was administered, even if the sponsoring organization did not intend for the two datasets to be linkable. 4.3.11. Challenges Posed by Composition In computer science, the term composition refers to combining multiple functions to create more complicated ones. One of the defning characteristics of complex systems is that they have unpredictable behavior, even when they are composed of very simple components. A challenge of composition is to develop approaches for limiting or eliminating such unpredictable behavior. Typically, this is done by proactively limiting the primitives that can be composed. De-identifcation is such a primitive that statisticians and data scientists must carefully control to ensure that the results of de-identifcation efforts can be composed. Without such controls, the results of composition can become unpredictable. Specifcally, it is important to understand whether the techniques used for de-identifying will retain their privacy guarantees when they are subject to composition. For example, if the same dataset is made available through two different de-identifcation regimes, what will happen to the privacy guarantees if the two downstream datasets are recombined?\ndatasets are released with a privacy loss of ε = 1 and ε = 1.5, then the releasing agency can compute that the total privacy loss that might be suffered by individuals in the dataset is no greater than ε = 2.5."
+ }
+]

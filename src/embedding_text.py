@@ -75,6 +75,26 @@ def corpus_embedding_fingerprint(records: Iterable[dict]) -> str:
     return digest.hexdigest()
 
 
+def embedding_text_hash(record: dict) -> str:
+    """Hash do TEXTO que produz o vetor — sem o id. Serve para reaproveitar vetores.
+
+    Diferente de `corpus_embedding_fingerprint`, que hasheia id **e** texto porque
+    responde a outra pergunta: *"este cache .npz vale para este corpus?"*. O cache
+    é indexado por id, então um id novo invalida o cache mesmo com texto idêntico —
+    e é certo que invalide.
+
+    Reaproveitar vetor é a pergunta oposta: *"o texto que gerou este vetor mudou?"*.
+    Se não mudou, o vetor serve, esteja o trecho em que posição estiver e com que
+    id for. Usar o fingerprint aqui descarta tudo a cada troca de id — medido em
+    17/set: 0 de 4.897 vetores reaproveitados contra 4.661 casando por texto.
+    """
+    digest = hashlib.sha256()
+    digest.update(EMBEDDING_TEXT_PROFILE.encode("utf-8"))
+    digest.update(b"\0")
+    digest.update(build_embedding_text(record).encode("utf-8"))
+    return digest.hexdigest()
+
+
 def bge_cache_filename(model_key: str, fingerprint: str) -> str:
     """Nome versionado para evitar colisão com caches de texto bruto."""
     safe_model_key = re.sub(r"[^a-zA-Z0-9_.-]+", "_", model_key).strip("_")

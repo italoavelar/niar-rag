@@ -1,0 +1,591 @@
+{
+ "q0001": {
+  "tipo": "factual",
+  "pergunta": "No acompanhamento de doenças crônicas por teleconsulta, é obrigatório algum atendimento presencial?",
+  "nucleos": [
+   "do de modo virtual, em primeira consulta, desde que atenda as condicoes fisicas e tecnicas dispostas nesta resolucao, obedecendo as boas praticas medicas, deven"
+  ]
+ },
+ "q0002": {
+  "tipo": "factual",
+  "pergunta": "No atendimento por telemedicina, o que precisa ser garantido quanto ao consentimento do paciente sobre o compartilhamento de suas informações?",
+  "nucleos": [
+   "rquivamento de dados deverao ter sede estabelecida em territorio brasileiro e estarem inscritas no conselho regional de medicina do estado onde estao sediadas, ",
+   "a transmissao das suas imagens e dados por meio de (termo de concordancia e autorizacao) consentimento, livre e esclarecido, enviado por meios eletronicos ou de"
+  ]
+ },
+ "q0003": {
+  "tipo": "factual",
+  "pergunta": "Na telemedicina, o compartilhamento das informações do paciente com outro profissional exige o quê?",
+  "nucleos": [
+   " podem ser transmitidas a outro profissional com previa permissao do paciente, mediante seu consentimento livre e esclarecido e com protocolos de seguranca capa"
+  ]
+ },
+ "q0004": {
+  "tipo": "factual",
+  "pergunta": "Preciso do consentimento do titular para tratar dados pessoais que ele próprio tornou manifestamente públicos?",
+  "nucleos": [
+   "ut deste artigo que necessitar comunicar ou compartilhar dados pessoais com outros controladores devera obter consentimento especifico do titular para esse fim,"
+  ]
+ },
+ "q0005": {
+  "tipo": "factual",
+  "pergunta": "Quais direitos tem uma pessoa afetada por um sistema de IA, segundo o PL 2338/2023, independentemente do grau de risco do sistema?",
+  "nucleos": [
+   "cessivel, gratuita e de facil compreensao, inclusive sobre carater automatizado da interacao, exceto nos casos em que se trate de sistemas de ia dedicados unica",
+   "serem exercidos na forma e nas condicoes descritas neste capitulo: i – direito a informacao quanto as suas interacoes com sistemas de ia, de forma acessivel, gr"
+  ]
+ },
+ "q0006": {
+  "tipo": "factual",
+  "pergunta": "No PL 2338/2023, qual autoridade coordenaria o Sistema Nacional de Regulação e Governança de Inteligência Artificial (SIA)?",
+  "nucleos": [
+   "s: i – valorizar e reforcar as competencias regulatoria, sancionatoria e normativa das autoridades setoriais em harmonia com as competencias correlatas gerais d"
+  ]
+ },
+ "q0007": {
+  "tipo": "factual",
+  "pergunta": "O PL 2338/2023 prevê tratamento diferenciado para startups e pequenas empresas?",
+  "nucleos": [
+   "no brasil: i – estabelecimento de mecanismos de governanca multiparticipativa, multissetorial transparente, colaborativa e democratica, com a participacao do go"
+  ]
+ },
+ "q0008": {
+  "tipo": "factual",
+  "pergunta": "Um médico que atua como auditor pode receber remuneração vinculada ao sucesso da causa ou à glosa?",
+  "nucleos": [
+   "quando na funcao de auditor ou de perito, procedimentos propedeuticos ou terapeuticos instituidos, salvo, no ultimo caso, em situacoes de urgencia, emergencia o"
+  ]
+ },
+ "q0009": {
+  "tipo": "factual",
+  "pergunta": "Como o Código de Ética Médica trata a responsabilidade do médico por seus atos profissionais?",
+  "nucleos": [
+   "us ditames de consciencia e as previsoes legais, o medico aceitara as escolhas de seus pacientes relativas aos procedimentos diagnosticos e terapeuticos por ele"
+  ]
+ },
+ "q0010": {
+  "tipo": "factual",
+  "pergunta": "A partir de quando passou a vigorar o novo Código de Ética Médica (Resolução CFM nº 2.217/2018)?",
+  "nucleos": [
+   ", a revisao do cem foi feita sob o prisma de zelo pelos principios deontologicos da medicina, sendo um dos mais importantes o absoluto respeito ao ser humano, c"
+  ]
+ },
+ "q0011": {
+  "tipo": "factual",
+  "pergunta": "As cláusulas mandatórias para transferência internacional de dados aprovadas pela ANPD podem ser alteradas pelas partes?",
+  "nucleos": [
+   "em garantias minimas e condicoes validas para a realizacao de transferencia internacional de dados e visam garantir a adocao das salvaguardas adequadas para o c"
+  ]
+ },
+ "q0012": {
+  "tipo": "factual",
+  "pergunta": "Um sistema de IA transparente é necessariamente preciso, seguro e justo?",
+  "nucleos": [
+   "evere, such as when life and liberty are at stake, ai developers and deployers should consider proportionally and proactively adjusting their transparency and a"
+  ]
+ },
+ "q0013": {
+  "tipo": "factual",
+  "pergunta": "O que o NIST AI RMF reconhece sobre os riscos das tecnologias de IA?",
+  "nucleos": [
+   " as an engineered or machine-based system that can, for a given set of objectives, generate outputs such as predictions, recommenda- tions, or decisions influen"
+  ]
+ },
+ "q0014": {
+  "tipo": "factual",
+  "pergunta": "Há usos de IA que a Recomendação da UNESCO sobre ética da IA proíbe?",
+  "nucleos": [
+   "eral uses of ai: “in scenarios where decisions are understood to have an impact that is irreversible or difficult to reverse or may involve life and death decis"
+  ]
+ },
+ "q0015": {
+  "tipo": "factual",
+  "pergunta": "Como a ferramenta de avaliação de impacto ético da UNESCO classifica a gravidade de um impacto negativo?",
+  "nucleos": [
+   "degradation of human dignity, autonomy, physical, psychological, or moral integrity, or the integrity of communal life, democratic society, or just legal order "
+  ]
+ },
+ "q0016": {
+  "tipo": "factual",
+  "pergunta": "O direito à portabilidade de dados do GDPR se aplica quando o tratamento se baseia em obrigação legal do controlador?",
+  "nucleos": [
+   "ntroller without hindrance from the controller to which the personal data have been provided, where: (a) the processing is based on consent pursuant to point (a",
+   "data is necessary for compliance with a legal obligation to which the controller is subject or for the performance of a task carried out in the public interest "
+  ]
+ },
+ "q0017": {
+  "tipo": "factual",
+  "pergunta": "Que capacidade de segurança o GDPR exige diante de um incidente físico ou técnico?",
+  "nucleos": [
+   "in particular of the risks that are presented by processing, in particular from accidental or unlawful destruction, loss, alteration, unauthorised disclosure of"
+  ]
+ },
+ "q0018": {
+  "tipo": "factual",
+  "pergunta": "A Estratégia Brasileira de Inteligência Artificial menciona alguma ação relacionada ao viés algorítmico?",
+  "nucleos": [
+   "atorias ao desenvolvimento de ia no brasil e identificar aspectos da legislacao brasileira que possam requerer atualizacao, de modo a promover maior seguranca j"
+  ]
+ },
+ "q0019": {
+  "tipo": "factual",
+  "pergunta": "O que a OMS entende por 'responsividade' (responsiveness) em inteligência artificial para a saúde?",
+  "nucleos": [
+   "signers, developers and users continuously, systematically and transparently examine an ai technology to determine whether it is responding adequately, appropri"
+  ]
+ },
+ "q0020": {
+  "tipo": "factual",
+  "pergunta": "Que exemplos de controle a FDA sugere contra ataques de envenenamento de dados (data poisoning) em dispositivos habilitados por IA?",
+  "nucleos": [
+   "nsors 1455 should be cognizant of potential trade-offs between privacy and factors such as 1456 model accuracy, utility, and efficiency, and provide information"
+  ]
+ },
+ "q0021": {
+  "tipo": "factual",
+  "pergunta": "Que informações sobre a população de pacientes a FDA sugere descrever para um dispositivo habilitado por IA?",
+  "nucleos": [
+   "city-related data, please see fda guidances titled “evaluation and reporting of age-, race-, and ethnicity-specific data in medical device clinical studies,” an",
+   " data is representative of the intended use population41 and 910 indications for use, including: 911 o a description of the relevant population characteristics,"
+  ]
+ },
+ "q0022": {
+  "tipo": "factual",
+  "pergunta": "Quais são responsabilidades do Comitê de Ética em Pesquisa (CEP) segundo a Lei nº 14.874/2024?",
+  "nucleos": [
+   "r o cep promovera e apoiara a capacitacao dos integrantes de seu comite, com enfase nos aspectos eticos e metodologicos que se relacionarem com os direitos dos ",
+   "mento de informacoes adicionais aos participantes da pesquisa, quando julgar serem indispensaveis para a protecao dos direitos, da seguranca e do bem-estar dos "
+  ]
+ },
+ "q0023": {
+  "tipo": "factual",
+  "pergunta": "Qual é um dos objetivos do Espaço Europeu de Dados de Saúde (EEDS)?",
+  "nucleos": [
+   "e e da prestacao de cuidados que possam beneficiar a sociedade, designadamente a investigacao, a inovacao, a elaboracao de politicas, a preparacao e resposta a ",
+   " ordinario (3), considerando o seguinte: (1) o presente regulamento tem por objetivo criar o espaco europeu de dados de saude («eeds»), a fim de melhorar o aces"
+  ]
+ },
+ "q0024": {
+  "tipo": "factual",
+  "pergunta": "No NIST AI RMF, o que a subcategoria MAP 1.6 recomenda sobre os requisitos do sistema?",
+  "nucleos": [
+   "4: the business value or context of business use has been clearly defined or – in the case of assessing existing ai systems – re-evaluated"
+  ]
+ },
+ "q0025": {
+  "tipo": "factual",
+  "pergunta": "Segundo o PL 2338/2023, os agentes de IA de alto risco têm algum dever quanto às medidas de governança?",
+  "nucleos": [
+   "ativa privada, com a sociedade civil e com profissionais de pesquisa e desenvolvimento, devera, na forma de regulamentacao, promover capacidades para identifica"
+  ]
+ },
+ "q0051": {
+  "tipo": "multi_hop",
+  "pergunta": "Uma pessoa afetada por um sistema de IA de alto risco: que direitos ela tem e a que medidas de governança esse sistema está sujeito, segundo o PL 2338/2023?",
+  "nucleos": [
+   "cessivel, gratuita e de facil compreensao, inclusive sobre carater automatizado da interacao, exceto nos casos em que se trate de sistemas de ia dedicados unica",
+   "serem exercidos na forma e nas condicoes descritas neste capitulo: i – direito a informacao quanto as suas interacoes com sistemas de ia, de forma acessivel, gr",
+   "ativa privada, com a sociedade civil e com profissionais de pesquisa e desenvolvimento, devera, na forma de regulamentacao, promover capacidades para identifica"
+  ]
+ },
+ "q0052": {
+  "tipo": "multi_hop",
+  "pergunta": "Na telemedicina, o que a Resolução CFM 2.314/2022 exige quanto ao consentimento para compartilhar informações e quanto ao acompanhamento presencial de doenças crônicas?",
+  "nucleos": [
+   "rquivamento de dados deverao ter sede estabelecida em territorio brasileiro e estarem inscritas no conselho regional de medicina do estado onde estao sediadas, ",
+   "do de modo virtual, em primeira consulta, desde que atenda as condicoes fisicas e tecnicas dispostas nesta resolucao, obedecendo as boas praticas medicas, deven"
+  ]
+ },
+ "q0053": {
+  "tipo": "multi_hop",
+  "pergunta": "Que deveres o Código de Ética Médica impõe ao médico quanto à responsabilidade por seus atos e quanto à atuação como auditor?",
+  "nucleos": [
+   "us ditames de consciencia e as previsoes legais, o medico aceitara as escolhas de seus pacientes relativas aos procedimentos diagnosticos e terapeuticos por ele",
+   "edimentos propedeuticos ou terapeuticos instituidos, salvo, no ultimo caso, em situacoes de urgencia, emergencia ou iminente perigo de morte do paciente, comuni",
+   "quando na funcao de auditor ou de perito, procedimentos propedeuticos ou terapeuticos instituidos, salvo, no ultimo caso, em situacoes de urgencia, emergencia o"
+  ]
+ },
+ "q0054": {
+  "tipo": "multi_hop",
+  "pergunta": "Por que medir riscos de IA é desafiador e por que esses riscos diferem dos de software tradicional, segundo o NIST?",
+  "nucleos": [
+   "ork best if they recognize that contexts matter, that harms may affect varied groups or sub-groups differently, and that communities or other sub-groups who may",
+   " differ from traditional software risks as with traditional software, risks from ai-based technology can be bigger than an en- terprise, span organizations, and"
+  ]
+ },
+ "q0055": {
+  "tipo": "multi_hop",
+  "pergunta": "Segundo a UNESCO, que usos de IA são proibidos e que mecanismos de responsabilização os sistemas de IA devem ter?",
+  "nucleos": [
+   "eral uses of ai: “in scenarios where decisions are understood to have an impact that is irreversible or difficult to reverse or may involve life and death decis",
+   "ansparent and explainable ai systems which are accountable and have in place mechanisms to attribute responsibility are imperative to the respect, protection an"
+  ]
+ },
+ "q0056": {
+  "tipo": "multi_hop",
+  "pergunta": "No GDPR, quando se aplica o direito à portabilidade e que medidas de segurança o controlador deve garantir para os dados?",
+  "nucleos": [
+   "data is necessary for compliance with a legal obligation to which the controller is subject or for the performance of a task carried out in the public interest ",
+   "in particular of the risks that are presented by processing, in particular from accidental or unlawful destruction, loss, alteration, unauthorised disclosure of"
+  ]
+ },
+ "q0057": {
+  "tipo": "multi_hop",
+  "pergunta": "A Estratégia Brasileira de IA trata tanto do viés algorítmico quanto do impacto no trabalho — o que propõe em cada frente?",
+  "nucleos": [
+   "atorias ao desenvolvimento de ia no brasil e identificar aspectos da legislacao brasileira que possam requerer atualizacao, de modo a promover maior seguranca j",
+   " a aprenderem novas habilidades e, em seguida, repensar o funcionamento do mercado de trabalho para permitir que empregadores e funcionarios se movam de maneira"
+  ]
+ },
+ "q0058": {
+  "tipo": "multi_hop",
+  "pergunta": "Para um dispositivo habilitado por IA, que informações sobre os pacientes descrever e que controles de cibersegurança considerar contra envenenamento de dados, segundo a FDA?",
+  "nucleos": [
+   "city-related data, please see fda guidances titled “evaluation and reporting of age-, race-, and ethnicity-specific data in medical device clinical studies,” an",
+   " data is representative of the intended use population41 and 910 indications for use, including: 911 o a description of the relevant population characteristics,",
+   "nsors 1455 should be cognizant of potential trade-offs between privacy and factors such as 1456 model accuracy, utility, and efficiency, and provide information"
+  ]
+ },
+ "q0059": {
+  "tipo": "multi_hop",
+  "pergunta": "Na pesquisa clínica, quais são as responsabilidades do Comitê de Ética em Pesquisa (CEP) e as do pesquisador, segundo a Lei nº 14.874/2024?",
+  "nucleos": [
+   "r o cep promovera e apoiara a capacitacao dos integrantes de seu comite, com enfase nos aspectos eticos e metodologicos que se relacionarem com os direitos dos ",
+   "mento de informacoes adicionais aos participantes da pesquisa, quando julgar serem indispensaveis para a protecao dos direitos, da seguranca e do bem-estar dos ",
+   "e de monitoramento de dados para avaliar periodicamente o andamento da pesquisa, os dados de seguranca e os pontos criticos de eficacia e recomendar ao patrocin",
+   ", o acesso direto aos registros e documentos da pesquisa para o monitor, o auditor, os demais representantes do patrocinador, o cep, a instancia nacional de eti"
+  ]
+ },
+ "q0060": {
+  "tipo": "multi_hop",
+  "pergunta": "Na transferência internacional de dados, o que a Resolução ANPD nº 19/2024 estabelece sobre as cláusulas mandatórias e sobre a responsabilização por danos ao titular?",
+  "nucleos": [
+   "em garantias minimas e condicoes validas para a realizacao de transferencia internacional de dados e visam garantir a adocao das salvaguardas adequadas para o c",
+   "sferencias posteriores dos dados pessoais objeto da transferencia internacional de dados regida por estas clausulas se expressamente autorizado, conforme as hip",
+   " o onus da prova a favor do titular quando, a seu juizo, for verossimil a alegacao, houver hipossuficiencia para fins de producao de prova ou quando a producao "
+  ]
+ },
+ "q0061": {
+  "tipo": "multi_hop",
+  "pergunta": "Que sistema nacional o PL 2338/2023 autoriza para a governança da IA e que tratamento diferenciado prevê para startups?",
+  "nucleos": [
+   "s: i – valorizar e reforcar as competencias regulatoria, sancionatoria e normativa das autoridades setoriais em harmonia com as competencias correlatas gerais d",
+   "no brasil: i – estabelecimento de mecanismos de governanca multiparticipativa, multissetorial transparente, colaborativa e democratica, com a participacao do go"
+  ]
+ },
+ "q0062": {
+  "tipo": "multi_hop",
+  "pergunta": "Segundo a OMS, que risco surge quando grandes empresas de tecnologia controlam dados e algoritmos de saúde, e como as parcerias público-privadas (PPPs) se inserem nesse cenário?",
+  "nucleos": [
+   ", it will be increasingly likely that those companies will govern decisions that should be taken by individuals, societies and governments, because of their con"
+  ]
+ },
+ "q0063": {
+  "tipo": "multi_hop",
+  "pergunta": "Por que a Resolução CFM 2.314/2022 considera o atendimento presencial a referência e o que exige para compartilhar informações do paciente na telemedicina?",
+  "nucleos": [
+   " desenvolvimento de normas eticas e diretrizes de pratica da telemedicina, protegendo a relacao medico-paciente, a confidencialidade e a qualidade dos atendimen",
+   " podem ser transmitidas a outro profissional com previa permissao do paciente, mediante seu consentimento livre e esclarecido e com protocolos de seguranca capa"
+  ]
+ },
+ "q0064": {
+  "tipo": "multi_hop",
+  "pergunta": "Segundo o NIST AI RMF, qual a relação entre transparência e responsabilização (accountability) e como a função MAP trata os requisitos do sistema?",
+  "nucleos": [
+   "evere, such as when life and liberty are at stake, ai developers and deployers should consider proportionally and proactively adjusting their transparency and a",
+   "4: the business value or context of business use has been clearly defined or – in the case of assessing existing ai systems – re-evaluated"
+  ]
+ },
+ "q0065": {
+  "tipo": "multi_hop",
+  "pergunta": "A Recomendação da UNESCO proíbe certos usos de IA e classifica a gravidade dos impactos — o que proíbe e quais são os níveis de gravidade?",
+  "nucleos": [
+   "eral uses of ai: “in scenarios where decisions are understood to have an impact that is irreversible or difficult to reverse or may involve life and death decis",
+   "degradation of human dignity, autonomy, physical, psychological, or moral integrity, or the integrity of communal life, democratic society, or just legal order "
+  ]
+ },
+ "q0066": {
+  "tipo": "multi_hop",
+  "pergunta": "Na pesquisa clínica, o que é a instância nacional de ética em pesquisa e quais são as responsabilidades do CEP, segundo a Lei nº 14.874/2024?",
+  "nucleos": [
+   " campo da ciencia e tecnologia, de carater normativo, consultivo, deliberativo e educativo, competente para proceder a regulacao, a fiscalizacao e ao controle e",
+   "r o cep promovera e apoiara a capacitacao dos integrantes de seu comite, com enfase nos aspectos eticos e metodologicos que se relacionarem com os direitos dos ",
+   "mento de informacoes adicionais aos participantes da pesquisa, quando julgar serem indispensaveis para a protecao dos direitos, da seguranca e do bem-estar dos "
+  ]
+ },
+ "q0067": {
+  "tipo": "multi_hop",
+  "pergunta": "Que responsabilidades cabem ao pesquisador e o que a Lei nº 14.874/2024 veda quanto ao material biológico armazenado em biobanco?",
+  "nucleos": [
+   "e de monitoramento de dados para avaliar periodicamente o andamento da pesquisa, os dados de seguranca e os pontos criticos de eficacia e recomendar ao patrocin",
+   ", o acesso direto aos registros e documentos da pesquisa para o monitor, o auditor, os demais representantes do patrocinador, o cep, a instancia nacional de eti",
+   "adas nao sao passiveis de protecao de direitos relativos a propriedade intelectual, vedada expressamente a sua compra, venda ou qualquer outro tipo de comercial"
+  ]
+ },
+ "q0068": {
+  "tipo": "multi_hop",
+  "pergunta": "Segundo o NIST, os sistemas de IA só trazem benefícios, e é fácil medir seus riscos?",
+  "nucleos": [
+   " as an engineered or machine-based system that can, for a given set of objectives, generate outputs such as predictions, recommenda- tions, or decisions influen",
+   "ork best if they recognize that contexts matter, that harms may affect varied groups or sub-groups differently, and that communities or other sub-groups who may"
+  ]
+ },
+ "q0069": {
+  "tipo": "multi_hop",
+  "pergunta": "No GDPR, que características as sanções administrativas devem ter e que medidas de segurança dos dados são exigidas?",
+  "nucleos": [
+   "e penalties or where necessary in other cases, for example in cases of serious infringements of this regulation, member states should implement a system which p",
+   "in particular of the risks that are presented by processing, in particular from accidental or unlawful destruction, loss, alteration, unauthorised disclosure of"
+  ]
+ },
+ "q0070": {
+  "tipo": "multi_hop",
+  "pergunta": "A Estratégia Brasileira de IA aborda tanto o viés algorítmico quanto o uso de IA na segurança pública — o que diz sobre cada um?",
+  "nucleos": [
+   "atorias ao desenvolvimento de ia no brasil e identificar aspectos da legislacao brasileira que possam requerer atualizacao, de modo a promover maior seguranca j",
+   "ganhando cada vez mais espaco, com algumas solucoes demonstrando capacidade de deteccao de sons de tiros, de batidas de carros ou de tumultos, com envio automat"
+  ]
+ },
+ "q0071": {
+  "tipo": "multi_hop",
+  "pergunta": "Para um dispositivo habilitado por IA, que obrigações de sistema de qualidade e que descrição da população de pacientes a FDA espera?",
+  "nucleos": [
+   "that does not conform to specified 346 requirements,” including, under some circumstances, user requirements, and to implement 347 corrective and preventative a",
+   "city-related data, please see fda guidances titled “evaluation and reporting of age-, race-, and ethnicity-specific data in medical device clinical studies,” an",
+   " data is representative of the intended use population41 and 910 indications for use, including: 911 o a description of the relevant population characteristics,"
+  ]
+ },
+ "q0072": {
+  "tipo": "multi_hop",
+  "pergunta": "A Resolução ANPD nº 19/2024: em que situações admite dados provenientes do exterior e que regra vale para as cláusulas mandatórias de transferência?",
+  "nucleos": [
+   " nacional, exclusivamente ao pais ou organismo internacional de proveniencia, desde que: a) o pais ou organismo internacional de proveniencia proporcione grau d",
+   "em garantias minimas e condicoes validas para a realizacao de transferencia internacional de dados e visam garantir a adocao das salvaguardas adequadas para o c"
+  ]
+ },
+ "q0073": {
+  "tipo": "multi_hop",
+  "pergunta": "Segundo a OMS, o que exige a 'responsividade' de uma IA para saúde e que risco de poder existe quando poucas empresas controlam os dados de saúde?",
+  "nucleos": [
+   "signers, developers and users continuously, systematically and transparently examine an ai technology to determine whether it is responding adequately, appropri",
+   ", it will be increasingly likely that those companies will govern decisions that should be taken by individuals, societies and governments, because of their con"
+  ]
+ },
+ "q0074": {
+  "tipo": "multi_hop",
+  "pergunta": "No PL 2338/2023, além dos direitos das pessoas afetadas pela IA, que estrutura pública é criada para regular e governar a IA?",
+  "nucleos": [
+   "cessivel, gratuita e de facil compreensao, inclusive sobre carater automatizado da interacao, exceto nos casos em que se trate de sistemas de ia dedicados unica",
+   "serem exercidos na forma e nas condicoes descritas neste capitulo: i – direito a informacao quanto as suas interacoes com sistemas de ia, de forma acessivel, gr",
+   "s: i – valorizar e reforcar as competencias regulatoria, sancionatoria e normativa das autoridades setoriais em harmonia com as competencias correlatas gerais d"
+  ]
+ },
+ "q0075": {
+  "tipo": "multi_hop",
+  "pergunta": "A UNESCO exige mecanismos de responsabilização para a IA e classifica a gravidade dos impactos — o que exige e como classifica?",
+  "nucleos": [
+   "ansparent and explainable ai systems which are accountable and have in place mechanisms to attribute responsibility are imperative to the respect, protection an",
+   "degradation of human dignity, autonomy, physical, psychological, or moral integrity, or the integrity of communal life, democratic society, or just legal order "
+  ]
+ },
+ "q0076": {
+  "tipo": "comparative",
+  "pergunta": "Como o NIST AI RMF e a Recomendação da UNESCO tratam transparência e responsabilização (accountability) em IA?",
+  "nucleos": [
+   "evere, such as when life and liberty are at stake, ai developers and deployers should consider proportionally and proactively adjusting their transparency and a",
+   "ansparent and explainable ai systems which are accountable and have in place mechanisms to attribute responsibility are imperative to the respect, protection an"
+  ]
+ },
+ "q0077": {
+  "tipo": "comparative",
+  "pergunta": "Como o PL 2338/2023 e o GDPR abordam os direitos das pessoas sobre seus dados pessoais?",
+  "nucleos": [
+   "cessivel, gratuita e de facil compreensao, inclusive sobre carater automatizado da interacao, exceto nos casos em que se trate de sistemas de ia dedicados unica",
+   "data is necessary for compliance with a legal obligation to which the controller is subject or for the performance of a task carried out in the public interest "
+  ]
+ },
+ "q0078": {
+  "tipo": "comparative",
+  "pergunta": "Como a Resolução CFM de telemedicina e a LGPD tratam a necessidade de consentimento para o uso de informações pessoais?",
+  "nucleos": [
+   "rquivamento de dados deverao ter sede estabelecida em territorio brasileiro e estarem inscritas no conselho regional de medicina do estado onde estao sediadas, ",
+   "ut deste artigo que necessitar comunicar ou compartilhar dados pessoais com outros controladores devera obter consentimento especifico do titular para esse fim,"
+  ]
+ },
+ "q0079": {
+  "tipo": "comparative",
+  "pergunta": "Como a Recomendação da UNESCO e a Estratégia Brasileira de IA tratam usos sensíveis como vigilância e reconhecimento facial?",
+  "nucleos": [
+   "eral uses of ai: “in scenarios where decisions are understood to have an impact that is irreversible or difficult to reverse or may involve life and death decis",
+   "atorias ao desenvolvimento de ia no brasil e identificar aspectos da legislacao brasileira que possam requerer atualizacao, de modo a promover maior seguranca j"
+  ]
+ },
+ "q0080": {
+  "tipo": "comparative",
+  "pergunta": "Como o NIST AI RMF e o PL 2338/2023 lidam com a ideia de risco em sistemas de IA?",
+  "nucleos": [
+   " differ from traditional software risks as with traditional software, risks from ai-based technology can be bigger than an en- terprise, span organizations, and",
+   "ativa privada, com a sociedade civil e com profissionais de pesquisa e desenvolvimento, devera, na forma de regulamentacao, promover capacidades para identifica"
+  ]
+ },
+ "q0081": {
+  "tipo": "comparative",
+  "pergunta": "Como o PL 2338/2023 e o NIST AI RMF estruturam a governança de sistemas de IA?",
+  "nucleos": [
+   "place the structures, systems, processes, and teams described in the govern function, organizations should benefit from a purpose-driven culture focused on risk"
+  ]
+ },
+ "q0082": {
+  "tipo": "comparative",
+  "pergunta": "Como a Resolução ANPD 19/2024 e o GDPR tratam a responsabilização e as sanções em proteção de dados?",
+  "nucleos": [
+   "dividual case due regard shall be given to the following: (a) the nature, gravity and duration of the infringement taking into account the nature scope or purpo",
+   "nde, solidariamente, pelos danos causados pelo tratamento quando descumprir as presentes clausulas ou quando nao tiver seguido as instrucoes licitas do controla"
+  ]
+ },
+ "q0083": {
+  "tipo": "comparative",
+  "pergunta": "Como a FDA e o GDPR tratam a segurança dos dados em sistemas que processam dados sensíveis?",
+  "nucleos": [
+   "nsors 1455 should be cognizant of potential trade-offs between privacy and factors such as 1456 model accuracy, utility, and efficiency, and provide information",
+   "in particular of the risks that are presented by processing, in particular from accidental or unlawful destruction, loss, alteration, unauthorised disclosure of"
+  ]
+ },
+ "q0084": {
+  "tipo": "comparative",
+  "pergunta": "Que princípios a OMS e a UNESCO defendem para uma IA confiável?",
+  "nucleos": [
+   "ansparent and explainable ai systems which are accountable and have in place mechanisms to attribute responsibility are imperative to the respect, protection an",
+   ", whether designers and programmers, providers, and patients, as well as ministries of health and ministries of information technology, must work together to in"
+  ]
+ },
+ "q0085": {
+  "tipo": "comparative",
+  "pergunta": "Como o Código de Ética Médica e a Lei nº 14.874/2024 asseguram a isenção de quem fiscaliza a atividade médica e a pesquisa?",
+  "nucleos": [
+   "edimentos propedeuticos ou terapeuticos instituidos, salvo, no ultimo caso, em situacoes de urgencia, emergencia ou iminente perigo de morte do paciente, comuni",
+   "quando na funcao de auditor ou de perito, procedimentos propedeuticos ou terapeuticos instituidos, salvo, no ultimo caso, em situacoes de urgencia, emergencia o"
+  ]
+ },
+ "q0086": {
+  "tipo": "comparative",
+  "pergunta": "Como a Resolução ANPD 19/2024 e o Código de Ética Médica atribuem responsabilidade por danos?",
+  "nucleos": [
+   "sferencias posteriores dos dados pessoais objeto da transferencia internacional de dados regida por estas clausulas se expressamente autorizado, conforme as hip",
+   " o onus da prova a favor do titular quando, a seu juizo, for verossimil a alegacao, houver hipossuficiencia para fins de producao de prova ou quando a producao ",
+   "us ditames de consciencia e as previsoes legais, o medico aceitara as escolhas de seus pacientes relativas aos procedimentos diagnosticos e terapeuticos por ele"
+  ]
+ },
+ "q0087": {
+  "tipo": "comparative",
+  "pergunta": "Como a Estratégia Brasileira de IA e o PL 2338/2023 tratam o risco de viés e discriminação em sistemas de IA?",
+  "nucleos": [
+   "atorias ao desenvolvimento de ia no brasil e identificar aspectos da legislacao brasileira que possam requerer atualizacao, de modo a promover maior seguranca j",
+   "cessivel, gratuita e de facil compreensao, inclusive sobre carater automatizado da interacao, exceto nos casos em que se trate de sistemas de ia dedicados unica"
+  ]
+ },
+ "q0088": {
+  "tipo": "comparative",
+  "pergunta": "Como a UNESCO e o NIST veem a avaliação de impacto de sistemas de IA?",
+  "nucleos": [
+   "ansparent and explainable ai systems which are accountable and have in place mechanisms to attribute responsibility are imperative to the respect, protection an",
+   "ork best if they recognize that contexts matter, that harms may affect varied groups or sub-groups differently, and that communities or other sub-groups who may"
+  ]
+ },
+ "q0089": {
+  "tipo": "comparative",
+  "pergunta": "Como o PL 2338/2023 e a Estratégia Brasileira de IA tratam as startups de inteligência artificial no Brasil?",
+  "nucleos": [
+   "no brasil: i – estabelecimento de mecanismos de governanca multiparticipativa, multissetorial transparente, colaborativa e democratica, com a participacao do go",
+   " responde pela maior parte do investimento da america latina, cerca de us$ 2,49 bilhoes em 2019, e vem progressivamente atraindo a atencao de grandes fundos int"
+  ]
+ },
+ "q0090": {
+  "tipo": "comparative",
+  "pergunta": "Como o Espaço Europeu de Dados de Saúde e a LGPD abordam o uso de dados pessoais e de saúde?",
+  "nucleos": [
+   "e e da prestacao de cuidados que possam beneficiar a sociedade, designadamente a investigacao, a inovacao, a elaboracao de politicas, a preparacao e resposta a ",
+   "ut deste artigo que necessitar comunicar ou compartilhar dados pessoais com outros controladores devera obter consentimento especifico do titular para esse fim,"
+  ]
+ },
+ "q0091": {
+  "tipo": "comparative",
+  "pergunta": "Como a OMS e o PL 2338/2023 tratam a questão de quem deve governar a inteligência artificial?",
+  "nucleos": [
+   ", it will be increasingly likely that those companies will govern decisions that should be taken by individuals, societies and governments, because of their con",
+   "s: i – valorizar e reforcar as competencias regulatoria, sancionatoria e normativa das autoridades setoriais em harmonia com as competencias correlatas gerais d"
+  ]
+ },
+ "q0092": {
+  "tipo": "comparative",
+  "pergunta": "Como a FDA (dispositivos com IA) e a Resolução CFM de telemedicina tratam a qualidade e a segurança do cuidado?",
+  "nucleos": [
+   "that does not conform to specified 346 requirements,” including, under some circumstances, user requirements, and to implement 347 corrective and preventative a",
+   " desenvolvimento de normas eticas e diretrizes de pratica da telemedicina, protegendo a relacao medico-paciente, a confidencialidade e a qualidade dos atendimen"
+  ]
+ },
+ "q0093": {
+  "tipo": "comparative",
+  "pergunta": "Como a OMS e o PL 2338/2023 protegem contra viés e discriminação por sistemas de IA?",
+  "nucleos": [
+   "cessivel, gratuita e de facil compreensao, inclusive sobre carater automatizado da interacao, exceto nos casos em que se trate de sistemas de ia dedicados unica"
+  ]
+ },
+ "q0094": {
+  "tipo": "comparative",
+  "pergunta": "Como a Recomendação da UNESCO e o Código de Ética Médica tratam a autonomia da decisão humana em situações críticas?",
+  "nucleos": [
+   "eral uses of ai: “in scenarios where decisions are understood to have an impact that is irreversible or difficult to reverse or may involve life and death decis",
+   "us ditames de consciencia e as previsoes legais, o medico aceitara as escolhas de seus pacientes relativas aos procedimentos diagnosticos e terapeuticos por ele"
+  ]
+ },
+ "q0095": {
+  "tipo": "comparative",
+  "pergunta": "Como o PL 2338/2023 e a FDA tratam a governança de sistemas de IA de maior risco em setores regulados?",
+  "nucleos": [
+   "ativa privada, com a sociedade civil e com profissionais de pesquisa e desenvolvimento, devera, na forma de regulamentacao, promover capacidades para identifica",
+   "that does not conform to specified 346 requirements,” including, under some circumstances, user requirements, and to implement 347 corrective and preventative a"
+  ]
+ },
+ "q0096": {
+  "tipo": "comparative",
+  "pergunta": "Como o NIST e a UNESCO propõem avaliar a gravidade ou a magnitude de impactos negativos da IA?",
+  "nucleos": [
+   "ork best if they recognize that contexts matter, that harms may affect varied groups or sub-groups differently, and that communities or other sub-groups who may",
+   "degradation of human dignity, autonomy, physical, psychological, or moral integrity, or the integrity of communal life, democratic society, or just legal order "
+  ]
+ },
+ "q0097": {
+  "tipo": "comparative",
+  "pergunta": "Como o GDPR e a Resolução ANPD 19/2024 asseguram salvaguardas para os dados pessoais?",
+  "nucleos": [
+   "in particular of the risks that are presented by processing, in particular from accidental or unlawful destruction, loss, alteration, unauthorised disclosure of",
+   "em garantias minimas e condicoes validas para a realizacao de transferencia internacional de dados e visam garantir a adocao das salvaguardas adequadas para o c"
+  ]
+ },
+ "q0098": {
+  "tipo": "comparative",
+  "pergunta": "Como o PL 2338/2023 e o NIST AI RMF tratam o dever de informar ou notificar as pessoas sobre sistemas de IA?",
+  "nucleos": [
+   "cessivel, gratuita e de facil compreensao, inclusive sobre carater automatizado da interacao, exceto nos casos em que se trate de sistemas de ia dedicados unica",
+   "serem exercidos na forma e nas condicoes descritas neste capitulo: i – direito a informacao quanto as suas interacoes com sistemas de ia, de forma acessivel, gr",
+   "evere, such as when life and liberty are at stake, ai developers and deployers should consider proportionally and proactively adjusting their transparency and a"
+  ]
+ },
+ "q0099": {
+  "tipo": "comparative",
+  "pergunta": "Como o Espaço Europeu de Dados de Saúde e a OMS veem o uso secundário e o compartilhamento de dados de saúde?",
+  "nucleos": [
+   "e e da prestacao de cuidados que possam beneficiar a sociedade, designadamente a investigacao, a inovacao, a elaboracao de politicas, a preparacao e resposta a "
+  ]
+ },
+ "q0100": {
+  "tipo": "comparative",
+  "pergunta": "Que diretrizes o PL 2338/2023 e a Estratégia Brasileira de IA estabelecem para a atuação do poder público em IA?",
+  "nucleos": [
+   "no brasil: i – estabelecimento de mecanismos de governanca multiparticipativa, multissetorial transparente, colaborativa e democratica, com a participacao do go",
+   "atorias ao desenvolvimento de ia no brasil e identificar aspectos da legislacao brasileira que possam requerer atualizacao, de modo a promover maior seguranca j"
+  ]
+ }
+}

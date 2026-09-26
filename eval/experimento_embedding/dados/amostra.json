@@ -1,0 +1,26 @@
+{
+ "semente": 42,
+ "cotas": {
+  "articulado_PT": 5,
+  "prosa_EN": 5,
+  "articulado_EN": 2,
+  "prosa_PT": 3
+ },
+ "documentos": {
+  "codigo_etica_medica_CFM_2019": "articulado_PT",
+  "lei_8080_BR_90": "articulado_PT",
+  "projeto_lei_2338_BR_2023": "articulado_PT",
+  "resolucao_19_ANPD_2024": "articulado_PT",
+  "european_health_data_space_EU_2025": "articulado_PT",
+  "multimodal_models_guidance_WHO_2024": "prosa_EN",
+  "de_identifying_government_datasets_NIST_2023": "prosa_EN",
+  "ai_ml_discussion_paper_FDA_2021": "prosa_EN",
+  "ethical_impact_assessment_UNESCO_2023": "prosa_EN",
+  "justice_data_governance_OECD_2024": "prosa_EN",
+  "gdpr_regulation_EU_2016": "articulado_EN",
+  "ai_framework_convention_council_europe_2024": "articulado_EN",
+  "resolucao_1627_CFM_2001": "prosa_PT",
+  "estrategia_brasileira_ia_MCTI_2021": "prosa_PT",
+  "decreto_44045_BR_1958": "prosa_PT"
+ }
+}
