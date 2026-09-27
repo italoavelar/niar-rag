@@ -126,12 +126,27 @@ def retrieve_information(query: str) -> str:
         embedding = get_embedding(query)
         client = get_qdrant_client()
 
-        # Busca no Qdrant
+        # Busca no Qdrant.
+        #
+        # SEM `score_threshold`. O 0,60 que ficava aqui era palpite: nenhum
+        # experimento o produziu, e a avaliação nunca o aplicou — ela busca o
+        # top-k sem piso. Ou seja, o número media uma coisa e a produção servia
+        # outra, e todo resultado de avaliação estava medindo um sistema
+        # diferente do que o usuário usava.
+        #
+        # Além de não medido, ele erra para o lado caro. Similaridade de cosseno
+        # entre pergunta e norma não tem escala absoluta: depende do modelo, do
+        # idioma e do tamanho do trecho. Um piso fixo descarta em silêncio o
+        # trecho de score 0,59 que era a resposta, e o usuário recebe "nenhum
+        # documento relevante" sem saber que havia.
+        #
+        # Se um piso voltar algum dia, tem de sair de medição sobre o gabarito:
+        # a curva de quanto se perde de evidência contra quanto se corta de
+        # ruído, por modelo.
         results = client.query_points(
             collection_name=COLLECTION_NAME,
             query=embedding,
             limit=5,
-            score_threshold=0.60 # exige pelo menos 60% de similaridade 
         )
         
         if not results.points:

@@ -7,7 +7,11 @@ Executa o caminho de GERAÇÃO do RAG de forma controlada para avaliação:
 Diferenças propositais vs. produção (para isolar variáveis):
   • injeta o contexto recuperado diretamente (sem tool-calling) → fixa o gerador
     e permite atribuir diferenças a RECUPERAÇÃO + ICL;
-  • sem o corte score_threshold=0.60 (já tratado no retriever);
+  • (histórico) a produção tinha um `score_threshold=0.60` que a avaliação nunca
+    aplicou — divergência que fazia a avaliação medir um sistema diferente do
+    que o usuário usava. O piso foi removido da produção em 26/09/2026
+    (agent/utils/tools.py), então as duas pontas voltaram a coincidir e esta já
+    não é uma diferença;
   • toggle de ICL (few-shot) controlado por parâmetro.
 
 Mantém o MESMO system prompt de produção (agent/utils/prompt.py) para fidelidade.
