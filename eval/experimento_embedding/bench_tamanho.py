@@ -315,7 +315,14 @@ def cmd_recortar(args) -> None:
               f"{PC_PAIS_MAX} pais (~{PC_PAIS_MAX*PC_PAI} chars de contexto)")
 
     for tamanho in args.tamanhos:
-        sobreposicao = round(tamanho * 0.20)
+        # A sobreposição era 20% do tamanho, fixa. Isso é herança, não medida —
+        # o `CHUNK_OVERLAP = 200` da produção veio junto com o 1.200 e nunca foi
+        # testado. Como parâmetro, ela agora aceita valor explícito, e o nome do
+        # arquivo carrega a sobreposição para as condições não se sobrescreverem:
+        # T1200 (20%, o padrão histórico) fica como está; T1200s0, T1200s120 e
+        # T1200s400 são as variantes.
+        sobreposicao = (args.sobreposicao if args.sobreposicao is not None
+                        else round(tamanho * 0.20))
         trechos = []
         for doc, pgs in sorted(paginas.items()):
             inteiro = "\n".join(p["text"] for p in sorted(pgs, key=lambda x: x["page"]))
@@ -325,9 +332,11 @@ def cmd_recortar(args) -> None:
                     "text": pedaco,
                     "metadata": {**pgs[0]["metadata"], "document_id": doc,
                                  "page": None, "forma": amostra[doc],
-                                 "recorte": f"T{tamanho}"},
+                                 "recorte": f"T{tamanho}",
+                                 "sobreposicao": sobreposicao},
                 })
-        nome = f"T{tamanho}"
+        padrao = round(tamanho * 0.20)
+        nome = f"T{tamanho}" if sobreposicao == padrao else f"T{tamanho}s{sobreposicao}"
         caminho = DESTINO / f"{nome}.jsonl"
         with caminho.open("w", encoding="utf-8") as f:
             for t in trechos:
@@ -353,6 +362,10 @@ def main() -> None:
 
     b = sub.add_parser("recortar", help="gera um corpus por tamanho")
     b.add_argument("--tamanhos", type=int, nargs="+", default=list(TAMANHOS))
+    b.add_argument("--sobreposicao", type=int, default=None,
+                   help="sobreposição em caracteres; o padrão é 20% do tamanho. "
+                        "Valor explícito gera T<tamanho>s<sobreposicao>.jsonl, "
+                        "para a variante não sobrescrever a condição original.")
     b.add_argument("--sem-parent-child", dest="parent_child", action="store_false",
                    help="não gera a condição parent-child")
     b.set_defaults(func=cmd_recortar)

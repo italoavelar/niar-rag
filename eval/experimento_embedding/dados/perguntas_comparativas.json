@@ -1,0 +1,1152 @@
+[
+ {
+  "n": "c001",
+  "question": "Quais são as penas disciplinares do exercício médico e o que a lei exige quanto à gradação delas?",
+  "answer": "A Lei nº 3.268/1957 e o Decreto nº 44.045/1958 listam as mesmas cinco penas — advertência confidencial, censura confidencial, censura pública, suspensão até 30 dias e cassação do exercício profissional. A lei acrescenta que a cassação é ad referendum do Conselho Federal e que, salvo gravidade manifesta que exija a pena mais grave de imediato, a imposição obedece à gradação do artigo.",
+  "evidencia": [
+   "cassação do exercício profissional, ad referendum do Conselho Federal. § 1º Salvo os casos de gravidade manifesta que exijam aplicação imediata da penalidade mais grave a",
+   "a) advertência confidencial, em aviso reservado; b) censura confidencial, em aviso reservado; c) censura pública, em publicação oficial; d) suspensão do exercício profissional"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "lei_3268_BR_1957",
+   "decreto_44045_BR_1958"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Disposições sobre Conselhos de Medicina | Regulamento sobre Conselho Federal e Conselhos regionais de Medicina",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c002",
+  "question": "Como se compõem os Conselhos Regionais de Medicina e que restrição eleitoral recai sobre os médicos militares?",
+  "answer": "A Lei nº 3.268/1957 escalona a composição pelo número de inscritos, chegando a 21 conselheiros quando esse número é excedido, eleitos em escrutínio secreto com exceção de um escolhido pela Associação Médica. A Lei nº 6.681/1979 veda aos médicos, cirurgiões-dentistas e farmacêuticos militares participar das eleições nos Conselhos em que estiverem inscritos, seja como candidatos, seja como eleitores.",
+  "evidencia": [
+   "participarem de eleições nos Conselhos em que estiverem inscritos, quer como candidatos, quer como eleitores. Art . 5º Os médicos, cirurgiões-dentistas e farmacêuticos militares",
+   "de 21 (vinte e um), quando excedido êsse número. Art. 13. Os membros dos Conselhos Regionais de Medicina, com exceção de um que será escolhido pela Associação Médica, sediada"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "lei_6681_BR_1979",
+   "lei_3268_BR_1957"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Disposições sobre inscrições de profissionais militares em Conselhos Regionais de Medicina, Odontologia e Farmácia | Disposições sobre Conselhos de Medicina",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c003",
+  "question": "Qual CRM é competente para apurar falta ética e o que acontece quando o médico é militar?",
+  "answer": "Pelo Código de Processo Ético-Profissional, a competência para instaurar sindicância e, se for o caso, o PEP é do CRM onde o fato punível ocorreu, ainda que o médico não tenha inscrição naquela circunscrição ou já tenha se transferido. A Lei nº 6.681/1979 abre exceção: no exercício de atividades técnico-profissionais decorrentes da condição militar, esses profissionais não se sujeitam à ação disciplinar dos Conselhos Regionais, e sim à da Força Singular.",
+  "evidencia": [
+   "não estão sujeitos à ação disciplinar dos Conselhos Regionais nos quais estiverem inscritos, e sim, à da Força Singular a que pertencerem, à qual cabe promover e calcular",
+   "A competência para instaurar sindicância, apreciar seu relatório e, se for o caso, instaurar PEP e sua instrução é do CRM onde o fato punível ocorreu, ainda que o médico não"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "lei_6681_BR_1979",
+   "resolucao_2306_CFM_2022"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Disposições sobre inscrições de profissionais militares em Conselhos Regionais de Medicina, Odontologia e Farmácia | Código de Processo Ético-Profissional",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c004",
+  "question": "Quem designa instrutor e relator no processo ético-profissional e em que prazo se alega suspeição?",
+  "answer": "A Resolução CFM nº 2.424/2025 alterou o CPEP para permitir que a Presidência dos Conselhos delegue às respectivas Corregedorias a competência de designar sindicante, instrutor e relator, além de lavrar portarias. O CPEP estabelece que a suspeição seja alegada no prazo de 15 dias contados do conhecimento do fato, em petição específica.",
+  "evidencia": [
+   "poderá delegar às respectivas Corregedorias a competência para designar sindicante, instrutor e relator, assim como lavrar portarias e assinaturas dos documentos pertinentes",
+   "A suspeição poderá ser alegada, no prazo de 15 (quinze) dias, a contar do conhecimento do fato em petição específica, na qual indicará, com clareza, o fundament"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "resolucao_2424_CFM_2025",
+   "resolucao_2306_CFM_2022"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "medium",
+  "theme": "Código de Processo Ético-Profissional | Código de Processo Ético-Profissional",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c005",
+  "question": "O que o Código de Ética Médica veda quanto ao sigilo e a quem cabe comunicar denúncias éticas nos estabelecimentos de saúde?",
+  "answer": "O Código de Ética Médica veda ao médico revelar fato de que tenha conhecimento em virtude do exercício da profissão, salvo por motivo justo, dever legal ou consentimento escrito do paciente. Pelo CPEP, a comissão de ética médica do estabelecimento de saúde deve encaminhar ao CRM as denúncias de natureza ética de que tiver ciência; não havendo comissão, cabe ao diretor clínico ou técnico fazer a comunicação.",
+  "evidencia": [
+   "Revelar fato de que tenha conhecimento em virtude do exercício de sua profissão, salvo por motivo justo, dever legal ou consentimento, por escrito, do paciente. Parágrafo",
+   "A comissão de ética médica dos estabelecimentos de saúde deverá encaminhar ao CRM as denúncias de natureza ética que tiver ciência, nos termos da resolução específica. Parágrafo"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "codigo_etica_medica_CFM_2019",
+   "resolucao_2306_CFM_2022"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Código de Ética Médica | Código de Processo Ético-Profissional",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c006",
+  "question": "Quem fixa a anuidade dos Conselhos de Medicina e qual a consequência de pagá-la fora do prazo?",
+  "answer": "A Lei nº 3.268/1957 atribui ao Conselho Federal fixar e alterar o valor da anuidade única cobrada aos inscritos nos Conselhos Regionais. O Decreto nº 44.045/1958 determina que o pagamento fora do prazo seja efetuado com acréscimo de 20% da importância fixada.",
+  "evidencia": [
+   "fixar e alterar o valor da anuidade única, cobrada aos inscritos nos Conselhos Regionais de Medicina; e (Incluído pela Lei nº 11.000, de 2004) l) normatizar a concessão de",
+   "acréscimo de 20% (vinte por cento) da importância fixada. Art . 8º Os profissionais inscritos na forma da Lei nº 3.268, de 30 de setembro de 1957 pagarão no ato do pedido"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "lei_3268_BR_1957",
+   "decreto_44045_BR_1958"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "medium",
+  "theme": "Disposições sobre Conselhos de Medicina | Regulamento sobre Conselho Federal e Conselhos regionais de Medicina",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c007",
+  "question": "Como o CFM define prontuário médico e por quanto tempo a lei exige que ele seja guardado?",
+  "answer": "A Resolução CFM nº 1.638/2002 define prontuário médico como documento único constituído de um conjunto de informações, sinais e imagens registradas, de caráter legal, sigiloso e científico, que possibilita a comunicação entre a equipe e a continuidade da assistência. A Lei nº 13.787/2018 permite eliminar os prontuários, em papel ou digitalizados, depois de 20 anos contados do último registro, admitindo prazos diferenciados em regulamento.",
+  "evidencia": [
+   "documento único constituído de um conjunto de informações, sinais e imagens registradas, geradas a partir de fatos, acontecimentos e situações sobre a saúde do paciente e",
+   "20 (vinte) anos a partir do último registro, os prontuários em suporte de papel e os digitalizados poderão ser eliminados. § 1º Prazos diferenciados para a guarda de prontuário"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "resolucao_1638_CFM_2002",
+   "lei_13787_BR_2018"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Prontuário médico e comissão de revisão de prontuários | Disposições sobre digitalização e sistemas informatizados para a guarda e manuseio de prontuário de pacientes",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c008",
+  "question": "Que papel a certificação cumpre nos sistemas de registro eletrônico em saúde e na avaliação de soluções de IA?",
+  "answer": "A Resolução CFM nº 1.821/2007 aprovou o Manual de Certificação para Sistemas de Registro Eletrônico em Saúde, disponibilizado pelo CFM e pela SBIS. No caso da inteligência artificial, a proposta de certificação da SBIS oferece um selo que ajuda empresas e instituições a demonstrar conformidade com boas práticas, promovendo harmonização regulatória.",
+  "evidencia": [
+   "Manual de Certificação para Sistemas de Registro Eletrônico em Saúde, versão 3.0 e/ou outra versão aprovada pelo Conselho Federal de Medicina, anexo e também disponível nos",
+   "selo que ajude empresas e instituições a demonstrarem conformidade com as boas práticas para desenvolvimento de soluções de IA para a saúde, promovendo harmonização regulatória"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "resolucao_1821_CFM_2007",
+   "certificacao_SBIS_"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Digitalização e uso de sistemas informatizados para guarda e manuseio de prontuários | Certificação de qualidade de aplicações baseadas em IA",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c009",
+  "question": "Que estrutura o Brasil e a União Europeia criaram para a troca de dados de saúde entre sistemas?",
+  "answer": "No Brasil, a Rede Nacional de Dados em Saúde é a plataforma oficial de interoperabilidade do Ministério da Saúde, para conectar sistemas de saúde em todo o país. Na União Europeia, cada Estado-Membro designa um ponto de contacto nacional para utilização secundária, que funciona como portal organizacional e técnico responsável por disponibilizar dados de saúde eletrónicos nesse contexto.",
+  "evidencia": [
+   "plataforma oficial de interoperabilidade do Ministério da Saúde, para conectar sistemas de saúde em todo o Brasil. A RNDS estabelece a infraestrutura nacional para o compartilhamento",
+   "Cada Estado-Membro designa um ponto de contacto nacional para utilização secundária. Esse ponto de contacto nacional para utilização secundária deve ser um portal organizacional"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "rnds_MS_",
+   "european_health_data_space_EU_2025"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Informações sobre a Rede Nacional de Dados em Saúde (RNDS) | Espaço Europeu de Dados de Saúde",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c010",
+  "question": "Por onde tramita um protocolo de pesquisa com seres humanos e como a lei define o pesquisador responsável?",
+  "answer": "O regulamento do CEP-UFMG determina que o protocolo tramite pela Plataforma Brasil, base nacional e unificada de registros de pesquisas envolvendo seres humanos para todo o sistema CEP/CONEP. A Lei nº 14.874/2024 define o pesquisador ou investigador como a pessoa responsável pela condução da pesquisa na instituição ou centro de pesquisa e corresponsável pela integridade e pelo bem-estar dos participantes.",
+  "evidencia": [
+   "Plataforma Brasil que é uma base nacional e unificada de registros de pesquisas envolvendo seres humanos para todo o sistema CEP/CONEP. 2 o Este Regulamento aplica-se a toda",
+   "pessoa responsável pela condução da pesquisa em instituição ou em centro de pesquisa e corresponsável pela integridade e bem-estar dos participantes da pesquisa; XXXVII -"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "regulamento_interno_CEP_2024",
+   "lei_14874_BR_2024"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Regulamento sobre o CEP-UFMG | Disposições sobre pesquisa com seres humanos e sobre o Sistema Nacional de Ética em Pesquisa com Seres Humanos",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c011",
+  "question": "O que acontece com os protocolos de pesquisa sem resposta e o que fica sob guarda dos comitês depois do prazo?",
+  "answer": "O regulamento do CEP-UFMG determina que o processo seja retirado do sistema no prazo de um ano em caso de não resposta à pendência. A Resolução UFMG nº 01/2022 estabelece que, após o período mínimo previsto, apenas as cartas de aprovação dos projetos de pesquisa permaneçam sob guarda dos Comitês.",
+  "evidencia": [
+   "cartas de aprovação dos projetos de pesquisa permanecerão sob guarda dos Comitês",
+   "retirado do sistema no prazo de um ano em caso de não resposta. Art. 34. Recebidos os relatórios parciais ou finais, o coordenador e/ou membro do Colegiado será responsável"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "resolucao_UFMG_01_2022",
+   "regulamento_interno_CEP_2024"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Regulamentação do Comitê de Ética em Pesquisa da UFMG | Regulamento sobre o CEP-UFMG",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c012",
+  "question": "Que compromissos formais cercam o uso de dados e de material biológico em pesquisa?",
+  "answer": "O termo de ciência sobre utilização de dados condiciona a cessão ao cumprimento da Resolução 466/12 e suas complementares, comprometendo o pesquisador a usar os dados exclusivamente para fins científicos, mantendo sigilo e garantindo a não utilização em prejuízo das pessoas ou comunidades. A Lei nº 14.874/2024 exige, para a transferência de material biológico humano, a celebração de Termo de Transferência de Material Biológico e a comprovação de aprovação ética e regulatória.",
+  "evidencia": [
+   "exclusivamente para os fins científicos, mantendo o sigilo e garantindo a não utilização das informações em prejuízo das pessoas e/ou das comunidades. Antes de iniciar a coleta",
+   "Termo de Transferência de Material Biológico (TTMB) e a apresentação de comprovante de aprovação de projeto de pesquisa pelas instâncias éticas e regulatórias pertinentes"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "tcud_CEP_2015",
+   "lei_14874_BR_2024"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Termo de ciência sobre a utilização de dados no contexto de pesquisas | Disposições sobre pesquisa com seres humanos e sobre o Sistema Nacional de Ética em Pesquisa com Seres Humanos",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c013",
+  "question": "Que consequência há em não fazer a avaliação de impacto quando ela é exigida, e quando se consulta a autoridade de controlo?",
+  "answer": "O guia da ICO alerta que, sob o RGPD do Reino Unido, deixar de realizar a DPIA quando exigida expõe a organização a medidas de execução, incluindo multa de até 8,7 milhões de libras ou 2% do faturamento global anual, o que for maior. O RGPD prevê ainda que a autoridade de controlo seja consultada durante a preparação de medida legislativa ou regulamentar que preveja tratamento de dados pessoais.",
+  "evidencia": [
+   "fine of up to £8.7 million, or 2% global annual turnover if higher. By considering the risks related to your intended processing before you begin, you also support compliance",
+   "A consultation of the supervisory authority should also take place in the course of the preparation of a legislative or regulatory measure which provides for the processing"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "dpia_ICO_",
+   "gdpr_regulation_EU_2016"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Definição de Data Protection Impact Assessment (DPIA) | Proteção de dados pessoais",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c014",
+  "question": "Em que momento a avaliação de impacto deve ser feita e quando precisa ser atualizada?",
+  "answer": "A ICO exige que a DPIA seja feita num momento em que ainda haja oportunidade real de influenciar os planos — avaliação depois da decisão tomada não cumpre a função. O PL 2338/2023 trata do outro extremo do ciclo: cabe à autoridade competente definir parâmetros de periodicidade de atualização das avaliações de impacto algorítmico, que devem ocorrer ao menos quando houver alterações significativas nos sistemas.",
+  "evidencia": [
+   "at a point when there is a realistic opportunity to influence those plans. Recital 84 of the UK GDPR is clear that: “the outcome of the assessment should be taken into account",
+   "periodicidade de atualização das avaliações de impacto algorítmico, considerando o ciclo de vida dos sistemas de IA de alto risco. § 7º Os agentes de IA que, posteriormente"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "dpia_ICO_",
+   "projeto_lei_2338_BR_2023"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Definição de Data Protection Impact Assessment (DPIA) | Regulação do desenvolvimento, fomento e uso ético e responsável da inteligência artificial",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c015",
+  "question": "Quem é agente de tratamento de pequeno porte e como a LGPD define anonimização?",
+  "answer": "A Resolução CD/ANPD nº 2 define agentes de tratamento de pequeno porte a partir de categorias como microempresas, aplicando-lhes regime próprio de cumprimento da LGPD. A LGPD define anonimização como a utilização de meios técnicos razoáveis e disponíveis no momento do tratamento, por meio dos quais um dado perde a possibilidade de associação a um indivíduo.",
+  "evidencia": [
+   "agentes de tratamento de pequeno porte: microempresas, empresas de pequeno porte, startups , pessoas jurídicas de direito privado, inclusive sem fins lucrativos, nos termos",
+   "anonimização: utilização de meios técnicos razoáveis e disponíveis no momento do tratamento, por meio dos quais um dado perde a possibilidade de associação, direta ou indireta"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "resolucao_2_ANPD_2024",
+   "lgpd_BR_2018"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Regulamento sobre LGPD para agentes de tratamento de pequeno porte | Legislação sobre proteção de dados pessoais",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c016",
+  "question": "Que obrigações de registro a ANPD impõe ao agente de pequeno porte e a quem recebe dados no exterior?",
+  "answer": "Para o agente de tratamento de pequeno porte, a ANPD admite forma simplificada de cumprir a obrigação de elaborar e manter o registro das operações de tratamento. Já na transferência internacional, o Importador deve manter registro das Solicitações de Acesso com data, solicitante, finalidade, tipo de dados, número de solicitações recebidas e medidas legais adotadas.",
+  "evidencia": [
+   "podem cumprir a obrigação de elaboração e manutenção de registro das operações de tratamento de dados pessoais, constante do art. 37 da LGPD, de forma simplificada. Parágrafo",
+   "o Importador deve manter registro de Solicitações de Acesso, incluindo data, solicitante, finalidade da solicitação, tipo de dados solicitados, número de solicitações recebidas"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "resolucao_2_ANPD_2024",
+   "resolucao_19_ANPD_2024"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Regulamento sobre LGPD para agentes de tratamento de pequeno porte | Regulamento sobre transferência internacional de dados e sobre cláusulas-padrão contratuais",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c017",
+  "question": "Como se distinguem algoritmo travado e aprendizado contínuo num dispositivo médico?",
+  "answer": "O IMDRF define aprendizado contínuo como o treinamento que leva à mudança do dispositivo a cada exposição a dados, de forma permanente durante a fase de operação. O FDA define no outro extremo o algoritmo travado: aquele que devolve o mesmo resultado cada vez que a mesma entrada lhe é aplicada e não muda com o uso.",
+  "evidencia": [
+   "Training that leads to change of an MLMD with each exposure to data that takes place on an ongoing basis during the operation phase of the MLMD life cycle. (Modified from",
+   "We define a “locked” algorithm as an algorithm that provides the same result each time the same input is applied to it and does not change with use. Examples of locked algorithms"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "imdrf_ml_medical_devices_terms_2022",
+   "ai_ml_discussion_paper_FDA_2021"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Termos e definições de dispositivos médicos habilitados por aprendizado de máquina | Proposta de estrutura regulatória para modificações de software como dispositivo médico baseado em IA/ML",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c018",
+  "question": "Como o IMDRF categoriza o risco de um software como dispositivo médico e o que isso implica para a revisão independente?",
+  "answer": "No quadro do IMDRF, o SaMD que informa decisão em situação ou condição crítica é Categoria IV, considerada de impacto muito alto — a faixa superior da escala de risco. Na avaliação clínica, e sujeito às leis de cada jurisdição, a revisão independente da evidência clínica de certos SaMD de baixo risco pode ser menos importante, podendo o fabricante autodeclarar a adequação da evidência.",
+  "evidencia": [
+   "critical situation or condition is a Category IV and is considered to be of very high impact. Criteria for Category III – i. SaMD that provides information to treat or diagnose",
+   "independent review of clinical evidence of certain low-risk SaMD may be less important and the manufacturer may ‘self-declare’ the appropriateness of the evidence. Again,"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "imdrf_samd_risk_framework_2014",
+   "imdrf_samd_clinical_evaluation_2017"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Estrutura para categorização de risco de software como dispositivo médico | Avaliação clínica de software como dispositivo médico",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c019",
+  "question": "O que se espera que um dispositivo com aprendizado de máquina revele sobre seus dados, e como isso se compara ao que a OMS observa nos modelos de fundação?",
+  "answer": "O FDA orienta que se informem as lacunas conhecidas na caracterização dos dados, incluindo populações de pacientes mal representadas nos conjuntos de treinamento ou clínicos, que por isso ficam sob risco de viés. A OMS constata o oposto no mercado de modelos de fundação: nenhum grande desenvolvedor chega perto de oferecer transparência adequada, o que revela falta fundamental de transparência na indústria.",
+  "evidencia": [
+   "known gaps in the data characterization. o such as identifying any patient populations that are not well represented in training or clinical datasets and, therefore, may be",
+   "no major foundation model developer is close to providing adequate transparency, revealing a fundamental lack of transparency in the AI industry” (107). The voluntary agreement"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "transparency_ml_devices_FDA_2024",
+   "multimodal_models_guidance_WHO_2024"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Transparência para dispositivos médicos habilitados por aprendizado de máquina | Ética e governança de grandes modelos multimodais aplicados à saúde",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c020",
+  "question": "O que caracteriza um plano predeterminado de controle de mudanças e o que um protocolo de alteração de algoritmo descreve?",
+  "answer": "O primeiro princípio orientador do PCCP é ser focado e delimitado: o plano descreve mudanças específicas que o fabricante pretende implementar, limitadas a modificações dentro do uso pretendido do dispositivo original. O ACP, na proposta do FDA, é a descrição do conjunto de métodos específicos que o fabricante tem para alcançar e controlar adequadamente os riscos dos tipos de modificação previstos no SPS.",
+  "evidencia": [
+   "Focused and Bounded: A PCCP describes specific changes that a manufacturer intends to implement. Such changes are limited to modifications within the intended use or intended",
+   "An ACP is a description of the set of specific methods that a manufacturer has in place to achieve and appropriately control the risks of the anticipated types of modifications"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "predetermined_change_control_FDA_2023",
+   "ai_ml_discussion_paper_FDA_2021"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Planos predeterminados de controle de mudanças para dispositivos médicos habilitados por aprendizado de máquina | Proposta de estrutura regulatória para modificações de software como dispositivo médico baseado em IA/ML",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c021",
+  "question": "Que abordagem de projeto o FDA associa à transparência de dispositivos com aprendizado de máquina?",
+  "answer": "Os princípios orientadores de transparência apontam o desenho centrado no humano — processo iterativo que trata a experiência completa do usuário e envolve as partes relevantes ao longo do desenvolvimento. A guidance de 2025 materializa isso num apêndice de considerações de projeto para transparência, que orienta o entendimento das indicações de uso do dispositivo e do cartão de modelo.",
+  "evidencia": [
+   "human-centered design”. This is an iterative process that addresses the whole user experience and involves relevant parties throughout design and development. This approach",
+   "Appendix B (Transparency Design Considerations) outlines a potential approach to understanding a device’s indications for use and a model card, which may aid in the development"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "transparency_ml_devices_FDA_2024",
+   "ai_device_software_guidance_FDA_2025"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Transparência para dispositivos médicos habilitados por aprendizado de máquina | Recomendações sobre submissões de marketing para dispositivos que incluem funções habilitadas por IA",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c022",
+  "question": "O que precede a classificação de um produto como dispositivo médico com aprendizado de máquina, e que exigência recai sobre os dados de treinamento?",
+  "answer": "O IMDRF é explícito quanto à ordem: um produto precisa primeiro atender à definição de dispositivo médico antes de poder ser um dispositivo habilitado por aprendizado de máquina. Quanto aos dados, as boas práticas exigem que os conjuntos de treinamento e de teste sejam selecionados e mantidos adequadamente independentes, tratando todas as fontes potenciais de dependência.",
+  "evidencia": [
+   "A product must first meet the definition of a medical device before it can be an MLMD. Note 2 : Most jurisdictions include \"accessories to medical devices\" in the definition",
+   "Training datasets are independent of test sets: Training and test datasets3 are selected and maintained to be appropriately independent of one another. All potential sources"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "imdrf_ml_medical_devices_terms_2022",
+   "imdrf_good_ml_practice_2025"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Termos e definições de dispositivos médicos habilitados por aprendizado de máquina | Boas práticas de aprendizado de máquina para desenvolvimento de dispositivos médicos",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c023",
+  "question": "Quem estabeleceu os princípios de boas práticas de aprendizado de máquina e o que eles esperam do dispositivo depois de implantado?",
+  "answer": "Os 10 princípios orientadores de boas práticas foram identificados conjuntamente pelo FDA, pela Health Canada e pela MHRA do Reino Unido. Entre as expectativas regulatórias alinhadas a essas práticas está o monitoramento de desempenho dos modelos implantados e a gestão dos riscos de retreinamento.",
+  "evidencia": [
+   "Health Canada, and the United Kingdom’s Medicines and Healthcare products Regulatory Agency (MHRA) have jointly identified 10 guiding principles that can inform the development",
+   "monitored for performance and re-training risks are managed. Advancements in digital health technologies include artificial intelligence/machine learningenabled medical devices"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "good_ml_practice_guiding_principles_FDA_2021",
+   "predetermined_change_control_FDA_2023"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "medium",
+  "theme": "Boas práticas de aprendizado de máquina para desenvolvimento de dispositivos médicos | Planos predeterminados de controle de mudanças para dispositivos médicos habilitados por aprendizado de máquina",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c024",
+  "question": "Como se mede o risco a que o titular fica exposto no tratamento e na divulgação de dados?",
+  "answer": "O guia da ICO remete ao Considerando 75, que liga risco a dano potencial às pessoas: o risco aos direitos e liberdades das pessoas singulares, de probabilidade e gravidade variáveis, pode resultar de tratamento que cause dano físico, material ou imaterial. O NIST trabalha com uma medida específica para divulgação de dados: a probabilidade de reidentificação, isto é, a probabilidade de a identidade de um indivíduo ser corretamente inferida por um terceiro externo.",
+  "evidencia": [
+   "The risk to the rights and freedoms of natural persons, of varying likelihood and severity, may result from data processing which could lead to physical, material or non-material",
+   "re-identifcation probability The probability that an individual’s identity will be correctly inferred by an outside party using information contained in a de-identifed dataset"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "dpia_ICO_",
+   "de_identifying_government_datasets_NIST_2023"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Definição de Data Protection Impact Assessment (DPIA) | De-identificação de conjuntos de dados pessoais",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c025",
+  "question": "Qual o fundamento constitucional do direito à saúde e como a lei do SUS traduz isso em critério de prioridade?",
+  "answer": "A Constituição estabelece que a saúde é direito de todos e dever do Estado, garantido mediante políticas sociais e econômicas que reduzam o risco de doença e assegurem acesso universal e igualitário às ações e serviços. A Lei nº 8.080/1990 desce ao critério operacional: a epidemiologia é o instrumento para estabelecer prioridades, alocar recursos e orientar programaticamente.",
+  "evidencia": [
+   "A saúde é direito de todos e dever do Estado, garantido mediante políticas sociais e econômicas que visem à redução do risco de doença e de outros agravos e ao acesso universal",
+   "utilização da epidemiologia para o estabelecimento de prioridades, a alocação de recursos e a orientação programática; VIII - participação da comunidade; IX - descentralização"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "cf_BR_1988",
+   "lei_8080_BR_90"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Constituição Federal do Brasil | Saúde e serviços correspondentes",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c026",
+  "question": "Onde a proteção da vida privada tem assento constitucional e que técnica a LGPD oferece para afastar o dado do indivíduo?",
+  "answer": "A Constituição declara invioláveis a intimidade, a vida privada, a honra e a imagem das pessoas, assegurando indenização pelo dano material ou moral decorrente da violação. A LGPD opera no plano técnico: define anonimização como o uso de meios técnicos razoáveis e disponíveis no momento do tratamento pelos quais o dado perde a possibilidade de associação ao indivíduo.",
+  "evidencia": [
+   "são invioláveis a intimidade, a vida privada, a honra e a imagem das pessoas, assegurado o direito a indenização pelo dano material ou moral decorrente de sua violação; XI",
+   "anonimização: utilização de meios técnicos razoáveis e disponíveis no momento do tratamento, por meio dos quais um dado perde a possibilidade de associação, direta ou indireta"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "cf_BR_1988",
+   "lgpd_BR_2018"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Constituição Federal do Brasil | Legislação sobre proteção de dados pessoais",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c027",
+  "question": "Que consequência penal e que consequência ética decorrem de revelar segredo obtido no exercício da profissão?",
+  "answer": "O Código Penal tipifica a violação de segredo profissional: revelar alguém, sem justa causa, segredo de que tem ciência em razão de função, ministério, ofício ou profissão, cuja revelação possa produzir dano a outrem, com pena de detenção. O Código de Ética Médica veda a mesma conduta no plano deontológico, ressalvando motivo justo, dever legal ou consentimento escrito do paciente.",
+  "evidencia": [
+   "Revelar alguém, sem justa causa, segredo, de que tem ciência em razão de função, ministério, ofício ou profissão, e cuja revelação possa produzir dano a outrem: Pena - detenção",
+   "Revelar fato de que tenha conhecimento em virtude do exercício de sua profissão, salvo por motivo justo, dever legal ou consentimento, por escrito, do paciente. Parágrafo"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "cp_BR_1940",
+   "codigo_etica_medica_CFM_2019"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Legislação sobre Direito Penal | Código de Ética Médica",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c028",
+  "question": "Que direito de acesso a registros o consumidor tem no Brasil e o que o RGPD acrescenta sobre decisão automatizada?",
+  "answer": "O Código de Defesa do Consumidor garante acesso às informações existentes em cadastros, fichas, registros e dados pessoais e de consumo arquivados sobre o consumidor, bem como às respectivas fontes. O RGPD vai além do acesso ao registro: exige informar a existência de decisão automatizada, incluindo definição de perfis, com informação significativa sobre a lógica envolvida e as consequências previstas.",
+  "evidencia": [
+   "terá acesso às informações existentes em cadastros, fichas, registros e dados pessoais e de consumo arquivados sobre ele, bem como sobre as suas respectivas fontes. § 1° Os",
+   "the existence of automated decision-making, including profiling, referred to in Article 22(1) and (4) and, at least in those cases, meaningful information about the logic"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "cdc_BR_1990",
+   "gdpr_regulation_EU_2016"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Legislação sobre Direito do Consumidor | Proteção de dados pessoais",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c029",
+  "question": "Como o ECA define o direito ao respeito da criança e o que o Código de Ética Médica diz sobre o sigilo dela?",
+  "answer": "O ECA define o direito ao respeito como a inviolabilidade da integridade física, psíquica e moral da criança e do adolescente, abrangendo a preservação da imagem, da identidade, da autonomia, dos valores e dos espaços pessoais. O Código de Ética Médica veda revelar sigilo profissional de paciente criança ou adolescente com capacidade de discernimento, inclusive aos pais ou representantes legais, salvo quando a não revelação puder causar dano ao paciente.",
+  "evidencia": [
+   "O direito ao respeito consiste na inviolabilidade da integridade física, psíquica e moral da criança e do adolescente, abrangendo a preservação da imagem, da identidade, da",
+   "Revelar sigilo profissional relacionado a paciente criança ou adolescente, desde que estes tenham capacidade de discernimento, inclusive a seus pais ou representantes legais"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "eca_BR_1990",
+   "codigo_etica_medica_CFM_2019"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Legislação sobre crianças e adolescentes | Código de Ética Médica",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c030",
+  "question": "Que posição a telemedicina e a inteligência artificial ocupam em relação ao ato médico presencial e à decisão do médico?",
+  "answer": "A Resolução CFM nº 2.314/2022 estabelece que a consulta presencial é o padrão ouro de referência, sendo a telemedicina ato complementar. A Resolução CFM nº 2.454/2026 aplica a mesma lógica de subordinação à IA: os sistemas servem de apoio ao médico, mas não substituem a autoridade e a decisão final humana sobre o cuidado.",
+  "evidencia": [
+   "consulta presencial é o padrão ouro de referência para as consultas médicas, sendo a telemedicina ato complementar. § 2º Nos atendimentos de doenças crônicas ou doenças que",
+   "não substituem a autoridade e a decisão final humana sobre o cuidado. CAPÍTULO IV DA CLASSIFICAÇÃO E CATEGORIZAÇÃO DOS RISCOS Art. 12. As instituições médicas, públicas ou"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "resolucao_2314_CFM_2022",
+   "resolucao_2454_CFM_2026"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Telemedicina | Uso ético de inteligência artificial na medicina",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c031",
+  "question": "Quem responde pelo ato praticado com auxílio de IA na medicina e em que hipótese a supervisão humana pode ser dispensada?",
+  "answer": "A Resolução CFM nº 2.454/2026 é categórica: no campo da responsabilidade ético-profissional, o médico permanece integralmente responsável pelos atos praticados mediante uso de modelos, sistemas e aplicações de IA, e o uso da tecnologia não o exime do Código de Ética Médica. O PL 2338/2023 admite exceção no plano regulatório geral: a supervisão humana pode ser dispensada quando comprovadamente impossível ou de esforço desproporcional, com outras obrigações recaindo sobre o agente.",
+  "evidencia": [
+   "permanece integralmente responsável pelos atos médicos por ele praticados mediante a utilização de modelos, sistemas e aplicações de IA. § 1° A utilização da IA não exime",
+   "A supervisão humana não será exigida caso sua implementação seja comprovadamente impossível ou implique esforço desproporcional, hipóteses em que o agente do sistema de IA"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "resolucao_2454_CFM_2026",
+   "projeto_lei_2338_BR_2023"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Uso ético de inteligência artificial na medicina | Regulação do desenvolvimento, fomento e uso ético e responsável da inteligência artificial",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c032",
+  "question": "Que limites o CFM impõe à divulgação da atividade médica e à exposição de casos clínicos?",
+  "answer": "A Resolução CFM nº 2.336/2023 veda ao médico divulgar, quando não for especialista, que trata de sistemas orgânicos, órgãos ou doenças específicas, por induzir confusão com a divulgação de especialidades. O Código de Ética Médica proíbe, no capítulo do sigilo, fazer referência a casos clínicos identificáveis ou exibir pacientes e imagens que os tornem reconhecíveis.",
+  "evidencia": [
+   "divulgar, quando não especialista, que trata de sistemas orgânicos, órgãos ou doenças específicas, por induzir à confusão com a divulgação de especialidades; II– atribuir",
+   "Fazer referência a casos clínicos identificáveis, exibir pacientes ou imagens que os tornem reconhecíveis em anúncios profissionais ou na divulgação de assuntos médicos em"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "resolucao_2336_CFM_2023",
+   "codigo_etica_medica_CFM_2019"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Publicidade e propaganda médicas | Código de Ética Médica",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c033",
+  "question": "Que avaliação de risco se exige de uma instituição médica que usa IA e o que o NIST diz sobre avaliação de impacto?",
+  "answer": "A Resolução CFM nº 2.454/2026 obriga instituições médicas, públicas ou privadas, que desenvolvam ou usem IA a realizar avaliação preliminar para definir o grau de risco do sistema. O NIST observa que abordagens de avaliação de impacto ajudam os atores de IA a entender impactos ou danos potenciais dentro de contextos específicos.",
+  "evidencia": [
+   "avaliação preliminar com a finalidade de definir seu grau de risco. Parágrafo único. A avaliação preliminar basear-se-á na categorização e nos critérios previstos neste capítulo",
+   "AI system impact assessment approaches can help AI actors understand potential impacts or harms within specific contexts. Availability of reliable metrics: The current lack"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "resolucao_2454_CFM_2026",
+   "ai_risk_management_framework_NIST_2023"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Uso ético de inteligência artificial na medicina | Gerenciamento de riscos de inteligência artificial",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c034",
+  "question": "O que a OMS entende por autonomia humana em saúde e como o CFM operacionaliza a transparência no uso de IA?",
+  "answer": "Para a OMS, autonomia no contexto da IA em saúde significa que os humanos devem permanecer em pleno controle dos sistemas de saúde e das decisões médicas. A Resolução CFM nº 2.454/2026 dá forma concreta a um dos requisitos disso: a transparência será promovida por indicadores científicos comprobatórios de acurácia, eficácia e segurança e por relatórios acessíveis em linguagem simples.",
+  "evidencia": [
+   "humans should remain in full control of health-care systems and medical decisions. AI systems should be designed demonstrably and systematically to conform to the principles",
+   "A transparência no uso de IA será promovida por indicadores científicos comprobatórios da acurácia, eficácia e segurança, e relatórios acessíveis que informem o uso desses"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "ethics_governance_ai_health_WHO_2021",
+   "resolucao_2454_CFM_2026"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Ética e governança de IA aplicada à saúde | Uso ético de inteligência artificial na medicina",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c035",
+  "question": "Que áreas a OMS elege como temas regulatórios da IA em saúde e o que a convenção do Conselho da Europa exige de cada Parte?",
+  "answer": "A OMS organiza as considerações regulatórias em áreas gerais: documentação e transparência, gestão de risco e abordagem de ciclo de vida, uso pretendido e validação analítica e clínica, qualidade dos dados, privacidade e proteção, e engajamento e colaboração. A convenção do Conselho da Europa fixa uma obrigação institucional: cada Parte deve estabelecer ou designar um ou mais mecanismos efetivos de supervisão do cumprimento.",
+  "evidencia": [
+   "documentation and transparency, risk management and AI systems development lifecycle approach, intended use and analytical and clinical validation, AI related data quality",
+   "Each Party shall establish or designate one or more effective mechanisms to oversee compliance with the obligations in this Convention. 2 Each Party shall ensure that such"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "regulatory_considerations_ai_health_WHO_2024",
+   "ai_framework_convention_council_europe_2024"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Considerações regulatórias sobre IA aplicada à saúde | Convenção sobre inteligência artificial, direitos humanos, democracia e Estado de Direito",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c036",
+  "question": "Como a OCDE define sistema de inteligência artificial e que subcategoria a proposta brasileira destaca à parte?",
+  "answer": "A OCDE define sistema de IA como sistema baseado em máquina que, para objetivos explícitos ou implícitos, infere a partir da entrada que recebe como gerar saídas — previsões, conteúdo, recomendações ou decisões — capazes de influenciar ambientes físicos ou virtuais. O PL 2338/2023 destaca, dentro do universo assim definido, os sistemas de armas autônomas: os que, uma vez ativados, podem selecionar e atacar alvos sem intervenção humana adicional.",
+  "evidencia": [
+   "An AI system is a machine-based system that, for explicit or implicit objectives, infers, from the input it receives, how to generate outputs such as predictions, content",
+   "sistemas que, uma vez ativados, podem selecionar e atacar alvos sem intervenção humana adicional; PL XXVIII – interface de programação de aplicação (API): conjunto de protocolos"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "ai_principles_OECD_",
+   "projeto_lei_2338_BR_2023"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Princípios de IA | Regulação do desenvolvimento, fomento e uso ético e responsável da inteligência artificial",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c037",
+  "question": "Que objetivo o Plano Brasileiro de IA declara e como ele se relaciona com o da Estratégia Brasileira de IA?",
+  "answer": "O Plano Brasileiro de Inteligência Artificial declara como objetivo garantir que a IA melhore a vida do povo brasileiro, promovendo inclusão social e oferecendo soluções tangíveis em áreas prioritárias como saúde e educação. A Estratégia Brasileira de IA, anterior, formula o objetivo em termos de potencializar o desenvolvimento e a utilização da tecnologia para promover o avanço científico e resolver problemas concretos do País.",
+  "evidencia": [
+   "inclusão social e oferecendo soluções tangíveis em áreas prioritárias como saúde e educação. Sabemos que, como toda inovação disruptiva, a IA traz tanto oportunidades quanto",
+   "deve ter por objetivo potencializar o desenvolvimento e a utilização da tecnologia com vistas a promover o avanço científico e solucionar problemas concretos do País, identificando"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "plano_brasileiro_ia_BR_2025",
+   "estrategia_brasileira_ia_MCTI_2021"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "medium",
+  "theme": "Plano nacional de inteligência artificial | Estratégia para desenvolvimento e utilização da IA",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c038",
+  "question": "A que tipo de pesquisa se aplica o modelo de relatório do CEP e o que acontece quando ele é recebido?",
+  "answer": "O modelo de relatório de pesquisa do CEP aplica-se a pesquisas nas áreas das ciências sociais e humanidades; para estudo clínico, o modelo sugerido é o da Conep. Recebidos os relatórios parciais ou finais, o regulamento do CEP-UFMG atribui ao coordenador ou a membro do colegiado a responsabilidade pela apreciação.",
+  "evidencia": [
+   "Esse formulário se aplica para pesquisas nas áreas das ciências sociais e humanidades. Se a pesquisa envolva estudo clínico, o modelo de relatório final sugerido pela Conep",
+   "Recebidos os relatórios parciais ou finais, o coordenador e/ou membro do Colegiado será responsável pela apreciação, 1 o O relatório parcial ou final poderá ser emitido como"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "relatorio_pesquisa_CEP_",
+   "regulamento_interno_CEP_2024"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "medium",
+  "theme": "Modelo de relatório de pesquisa no âmbito do CEP | Regulamento sobre o CEP-UFMG",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c039",
+  "question": "Por que sistemas de IA treinados com dados históricos são vulneráveis a viés, segundo o FDA e o NIST?",
+  "answer": "O plano de ação do FDA aponta a origem no dado: como os sistemas de IA/ML são desenvolvidos e treinados a partir de conjuntos de dados históricos, ficam vulneráveis a viés. O NIST acrescenta a origem humana: as decisões de projeto, desenvolvimento, implantação, avaliação e uso refletem vieses sistêmicos e cognitivos dos atores envolvidos.",
+  "evidencia": [
+   "they are vulnerable to bias – and prone to mirroring biases present in the data. Health care delivery is known to vary by factors such as race, ethnicity, and socio-economic",
+   "Decisions that go into the design, development, deployment, evaluation, and use of AI systems reflect systemic and human cognitive biases. AI actors bring their cognitive"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "aiml_samd_action_plan_FDA_2021",
+   "ai_risk_management_framework_NIST_2023"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Plano de ação para software como dispositivo médico baseado em IA/ML | Gerenciamento de riscos de inteligência artificial",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c040",
+  "question": "Que sistema de saúde digital a OMS propõe construir e que realização concreta o Brasil tem nessa direção?",
+  "answer": "A estratégia global da OMS propõe contribuir para a construção de um sistema de saúde digital conectado internacionalmente, considerando os riscos potenciais, e apoiar os países em seus programas nacionais. No Brasil, a Rede Nacional de Dados em Saúde materializa essa camada nacional: é a plataforma oficial de interoperabilidade do Ministério da Saúde para conectar sistemas de saúde em todo o país.",
+  "evidencia": [
+   "internationally connected digital health system with consideration of potential risks. It aims to encourage international collaboration and to support countries in their national",
+   "plataforma oficial de interoperabilidade do Ministério da Saúde, para conectar sistemas de saúde em todo o Brasil. A RNDS estabelece a infraestrutura nacional para o compartilhamento"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "global_digital_health_strategy_WHO_2020_2027",
+   "rnds_MS_"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Estratégia global de saúde digital | Informações sobre a Rede Nacional de Dados em Saúde (RNDS)",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c041",
+  "question": "Que lugar a literacia digital ocupa na estratégia da OMS e na estratégia brasileira de IA?",
+  "answer": "A OMS põe a literacia digital num objetivo estratégico próprio, ao lado da igualdade de gênero, do empoderamento das mulheres e de abordagens inclusivas de adoção de tecnologias, colocando as pessoas no centro. A Estratégia Brasileira de IA converge: afirma ser fundamental que cada cidadão domine habilidades digitais básicas e tenha competências-chave aplicáveis a diversas atividades profissionais.",
+  "evidencia": [
+   "digital health literacy, gender equality and women’s empowerment and inclusive approaches to adoption and management of digital health technologies. The strategic objective",
+   "É fundamental que cada cidadão domine habilidades digitais básicas e que tenha competências-chave para aplicar em diversas atividades profissionais. Ainda se inclui neste"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "global_digital_health_strategy_WHO_2020_2027",
+   "estrategia_brasileira_ia_MCTI_2021"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Estratégia global de saúde digital | Estratégia para desenvolvimento e utilização da IA",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c042",
+  "question": "Que função a LGPD cria para intermediar controlador e titular, e que alívio a ANPD dá ao agente de pequeno porte?",
+  "answer": "A LGPD define o encarregado como a pessoa indicada pelo controlador para atuar como canal de comunicação entre o controlador, os titulares dos dados e a autoridade nacional. Para o agente de tratamento de pequeno porte, a ANPD admite forma simplificada de cumprir a obrigação de elaborar e manter o registro das operações de tratamento.",
+  "evidencia": [
+   "encarregado: pessoa indicada pelo controlador para atuar como canal de comunicação entre o controlador, os titulares dos dados e a Autoridade Nacional de Proteção de Dados",
+   "podem cumprir a obrigação de elaboração e manutenção de registro das operações de tratamento de dados pessoais, constante do art. 37 da LGPD, de forma simplificada. Parágrafo"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "lgpd_BR_2018",
+   "resolucao_2_ANPD_2024"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Legislação sobre proteção de dados pessoais | Regulamento sobre LGPD para agentes de tratamento de pequeno porte",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c043",
+  "question": "Como a lei brasileira define biobanco e que princípio o NIST aplica à coleta de identificadores?",
+  "answer": "A Lei nº 14.874/2024 define biobanco como coleção organizada, sem fins comerciais, de material biológico humano e informações associadas, coletados e armazenados para fins de pesquisa, sob responsabilidade e gerenciamento de instituição. O NIST formula o princípio correspondente no plano do dado: se identificadores específicos não são necessários para manutenção, síntese e uso, eles não devem ser coletados.",
+  "evidencia": [
+   "biobanco: coleção organizada, sem fins comerciais, de material biológico humano e de informações associadas, coletados e armazenados para fins de pesquisa, conforme regulamento",
+   "if specifc identifers are not needed for maintenance, synthesis, and usage, then those identifers should not be collected. If fully identifed data are needed within the organization"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "lei_14874_BR_2024",
+   "de_identifying_government_datasets_NIST_2023"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Disposições sobre pesquisa com seres humanos e sobre o Sistema Nacional de Ética em Pesquisa com Seres Humanos | De-identificação de conjuntos de dados pessoais",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c044",
+  "question": "Como se distribui a responsabilidade por defeito de produto no direito do consumidor e por ato médico apoiado em IA?",
+  "answer": "O Código de Defesa do Consumidor adota responsabilidade independente de culpa pela reparação dos danos causados por defeitos decorrentes de projeto, fabricação, construção e montagem. A Resolução CFM nº 2.454/2026 mantém a responsabilidade no profissional: o médico permanece integralmente responsável pelos atos praticados mediante uso de modelos, sistemas e aplicações de IA.",
+  "evidencia": [
+   "respondem, independentemente da existência de culpa, pela reparação dos danos causados aos consumidores por defeitos decorrentes de projeto, fabricação, construção, montagem",
+   "permanece integralmente responsável pelos atos médicos por ele praticados mediante a utilização de modelos, sistemas e aplicações de IA. § 1° A utilização da IA não exime"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "cdc_BR_1990",
+   "resolucao_2454_CFM_2026"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Legislação sobre Direito do Consumidor | Uso ético de inteligência artificial na medicina",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c045",
+  "question": "Que dever geral o ECA impõe quanto à dignidade da criança e que risco a OMS associa aos modelos multimodais?",
+  "answer": "O ECA estabelece que é dever de todos velar pela dignidade da criança e do adolescente, pondo-os a salvo de qualquer tratamento desumano, violento, aterrorizante, vexatório ou constrangedor. A OMS alerta que os modelos multimodais podem ampliar a violência de gênero facilitada por tecnologia, incluindo cyberbullying, discurso de ódio e uso não consentido de imagens e vídeos, com implicações sérias para adolescentes e mulheres.",
+  "evidencia": [
+   "É dever de todos velar pela dignidade da criança e do adolescente, pondo-os a salvo de qualquer tratamento desumano, violento, aterrorizante, vexatório ou constrangedor. Art",
+   "technology-facilitated gender-based violence, including cyber-bullying, hate speech and non-consensual use of images and videos, such as “deep fakes”. The latter risk is not"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "eca_BR_1990",
+   "multimodal_models_guidance_WHO_2024"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Legislação sobre crianças e adolescentes | Ética e governança de grandes modelos multimodais aplicados à saúde",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c046",
+  "question": "Que dever de sigilo recai sobre quem exerce função pública de supervisão de dados e sobre o profissional em geral?",
+  "answer": "O RGPD impõe aos membros e ao pessoal de cada autoridade de controlo dever de sigilo profissional durante e após o mandato, quanto a qualquer informação confidencial conhecida no exercício das funções. O Código Penal brasileiro dá à violação equivalente natureza criminal: revelar, sem justa causa, segredo de que se tem ciência em razão de função, ministério, ofício ou profissão, quando a revelação possa produzir dano.",
+  "evidencia": [
+   "Revelar alguém, sem justa causa, segredo, de que tem ciência em razão de função, ministério, ofício ou profissão, e cuja revelação possa produzir dano a outrem: Pena - detenção",
+   "subject to a duty of professional secrecy both during and after their term of office, with regard to any confidential information which has come to their knowledge in the"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "cp_BR_1940",
+   "gdpr_regulation_EU_2016"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Legislação sobre Direito Penal | Proteção de dados pessoais",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c047",
+  "question": "Que pressuposto a responsabilidade civil do profissional exige e em que ela difere da responsabilidade por defeito de produto?",
+  "answer": "A Resolução CFM nº 1.627/2001 condiciona a responsabilidade civil do profissional a dano evitável e a relação causal entre esse dano e um elemento de erro profissional — imperícia, imprudência ou negligência. O Código de Defesa do Consumidor dispensa esse exame: a reparação dos danos causados por defeitos de projeto, fabricação, construção ou montagem independe da existência de culpa.",
+  "evidencia": [
+   "A responsabilidade civil é exercida sempre que há dano evitável e que se pode estabelecer uma relação causal entre este dano e um elemento de erro profissional (imperícia",
+   "respondem, independentemente da existência de culpa, pela reparação dos danos causados aos consumidores por defeitos decorrentes de projeto, fabricação, construção, montagem"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "resolucao_1627_CFM_2001",
+   "cdc_BR_1990"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Definição do ato profissional médico | Legislação sobre Direito do Consumidor",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c048",
+  "question": "Que exigência recai sobre os padrões de referência e sobre as métricas de desempenho de um software como dispositivo médico?",
+  "answer": "As boas práticas do IMDRF exigem que os padrões de referência selecionados sejam adequados ao propósito, com métodos aceitos que assegurem dados clinicamente relevantes e bem caracterizados. Na avaliação clínica, os reguladores globais esperam que as métricas de desempenho do SaMD tenham rigor científico proporcional ao risco e ao impacto do dispositivo.",
+  "evidencia": [
+   "Selected reference standards are fit-for-purpose: Accepted methods for developing fit-for-purpose reference standard3 ensure that clinically relevant and well characterized",
+   "performance metrics for a SaMD have a scientific level of rigor that is commensurate with the risk and impact of the SaMD to demonstrate assurance of safety, effectiveness"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "imdrf_good_ml_practice_2025",
+   "imdrf_samd_clinical_evaluation_2017"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Boas práticas de aprendizado de máquina para desenvolvimento de dispositivos médicos | Avaliação clínica de software como dispositivo médico",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c049",
+  "question": "Como a OCDE define justiça centrada nas pessoas e que formulação equivalente a Constituição usa para a saúde?",
+  "answer": "A OCDE define justiça centrada nas pessoas como o sistema cujo propósito e desenho visam atender igualmente às necessidades de todas as pessoas, habilitando sua participação e engajamento efetivos. A Constituição brasileira usa formulação análoga para a saúde: direito de todos e dever do Estado, com acesso universal e igualitário às ações e serviços.",
+  "evidencia": [
+   "A justice system that has as its purpose and design the goal of equally meeting the needs of all people by enabling their effective participation and engagement in the process",
+   "A saúde é direito de todos e dever do Estado, garantido mediante políticas sociais e econômicas que visem à redução do risco de doença e de outros agravos e ao acesso universal"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "justice_data_governance_OECD_2024",
+   "cf_BR_1988"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "hard",
+  "theme": "Governança de dados de justiça | Constituição Federal do Brasil",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ },
+ {
+  "n": "c050",
+  "question": "Que noção de reparação a UNESCO aplica a impactos de IA e que instrumento processual o CFM oferece contra julgador parcial?",
+  "answer": "A UNESCO define remediabilidade como a capacidade de reparação ou restauração — se e com que facilidade pessoas ou objetos impactados podem voltar a situação equivalente à anterior ao impacto. No processo ético-profissional, a correção se dá por instrumento próprio: a suspeição pode ser alegada em 15 dias contados do conhecimento do fato, em petição específica.",
+  "evidencia": [
+   "Remediability here refers to the capacity for reparability and/or restoration: whether and the ease with which impacted persons and/or objects can be restored to a situation",
+   "A suspeição poderá ser alegada, no prazo de 15 (quinze) dias, a contar do conhecimento do fato em petição específica, na qual indicará, com clareza, o fundament"
+  ],
+  "n_evidencias": 2,
+  "documento": null,
+  "documentos": [
+   "ethical_impact_assessment_UNESCO_2023",
+   "resolucao_2306_CFM_2022"
+  ],
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "comparative",
+  "difficulty": "medium",
+  "theme": "Avaliação de benefícios e riscos de sistemas de IA | Código de Processo Ético-Profissional",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas"
+ }
+]

@@ -1,0 +1,1802 @@
+[
+ {
+  "n": "u079",
+  "question": "O FDA passará a exigir submissão para toda modificação de modelo adaptativo?",
+  "motivo": "futuro",
+  "score_max": 0.786711,
+  "trechos": [
+   {
+    "score": 0.7867,
+    "documento": "ai_ml_discussion_paper_FDA_2021",
+    "texto": "re similar to what was originally presented in the SPS and ACP protocols; however, adaptions were necessary given the new and different clinical tasks, requiring, for example, new reference standards. The changes reflect a change in the healthcare situation and condition as well as the significance "
+   },
+   {
+    "score": 0.7748,
+    "documento": "ai_ml_discussion_paper_FDA_2021",
+    "texto": "In the software modifications guidance, depending on the type of change, if the modification is beyond the intended use for which the SaMD was previously authorized, manufacturers are expected to submit a new premarket submission.24 For this proposed approach, we anticipate that there may be cases w"
+   }
+  ]
+ },
+ {
+  "n": "u071",
+  "question": "Quando o Projeto de Lei 2338/2023 será aprovado pelo Congresso Nacional?",
+  "motivo": "futuro",
+  "score_max": 0.78430283,
+  "trechos": [
+   {
+    "score": 0.7843,
+    "documento": "projeto_lei_2338_BR_2023",
+    "texto": "Congresso Nacional quanto à necessidade de aprimoramento das normas estabelecidas nesta Lei. Art. 80. Esta Lei entra em vigor após decorridos 730 (setecentos e trinta) dias de sua publicação oficial. § 1º Entram em vigor após 180 (cento e oitenta) dias da publicação desta Lei: I – o art. 13; II – as"
+   },
+   {
+    "score": 0.7707,
+    "documento": "projeto_lei_2338_BR_2023",
+    "texto": "III – as regras previstas na Seção IV do Capítulo X, salvo o art. 62, que possui vigência imediata. PL § 2º Entram em vigor na data de publicação desta Lei: I – as disposições do Capítulo IX, com exceção do art. 50; II – as seguintes Seções do Capítulo X: a) Seção III; e b) Seção V. Senado Federal, "
+   }
+  ]
+ },
+ {
+  "n": "u068",
+  "question": "Qual parecerista do CEP-UFMG ficou responsável por analisar o meu protocolo?",
+  "motivo": "caso_individual",
+  "score_max": 0.7821095,
+  "trechos": [
+   {
+    "score": 0.7821,
+    "documento": "regulamento_interno_CEP_2024",
+    "texto": "reunião plenária em cuja pauta o protocolo de pesquisa estiver incluído, o coordenador determinará a leitura dos pareceres ou relatórios, colocando em discussão e votação as suas conclusões. Art. 31. Ao CEP-UFMG compete avaliação ética de todos os protocolos de pesquisa da UFMG que envolvam seres hu"
+   },
+   {
+    "score": 0.768,
+    "documento": "regulamento_interno_CEP_2024",
+    "texto": "a. Em caso contrário, o pesquisador deverá, em sua carta resposta, justificar o atraso à resposta da pendência. O processo será retirado do sistema no prazo de um ano em caso de não resposta. Art. 34. Recebidos os relatórios parciais ou finais, o coordenador e/ou membro do Colegiado será responsável"
+   }
+  ]
+ },
+ {
+  "n": "u094",
+  "question": "Como agendo uma reunião com o Conselho do Espaço Europeu de Dados de Saúde?",
+  "motivo": "operacional",
+  "score_max": 0.7782133,
+  "trechos": [
+   {
+    "score": 0.7782,
+    "documento": "european_health_data_space_EU_2025",
+    "texto": "Saúde (Conselho do EEDS) 1. É criado o Conselho do Espaço Europeu de Dados de Saúde (Conselho do EEDS) para facilitar a cooperação e o intercâmbio de informações entre os Estados-Membros e a Comissão. O Conselho do EEDS é composto por dois representantes por Estado-Membro, nomeadamente um representa"
+   },
+   {
+    "score": 0.7643,
+    "documento": "european_health_data_space_EU_2025",
+    "texto": "4. O Conselho do EEDS pode convidar para as suas reuniões autoridades nacionais, peritos e observadores, bem como as instituições, órgãos e organismos da União, infraestruturas de investigação e outras infraestruturas similares. 5. O Conselho do EEDS pode cooperar com peritos externos, se for caso d"
+   }
+  ]
+ },
+ {
+  "n": "u038",
+  "question": "Quantas resoluções sobre inteligência artificial o Conselho Federal de Medicina publicou desde 2020?",
+  "motivo": "estatistica",
+  "score_max": 0.7781428,
+  "trechos": [
+   {
+    "score": 0.7781,
+    "documento": "resolucao_2454_CFM_2026",
+    "texto": "Art. 20. A realização de pesquisas, estudos ou projetos-piloto envolvendo IA na medicina deve ser alinhada aos princípios éticos da pesquisa e do cuidado. Art. 21. As disposições desta resolução aplicam-se também aos modelos, sistemas e aplicações de IA em desenvolvimento ou em uso nas instituições "
+   },
+   {
+    "score": 0.7658,
+    "documento": "resolucao_2454_CFM_2026",
+    "texto": "RESOLUÇÃO CFM N° 2.454, DE 11 DE FEVEREIRO DE 2026\n\nPublicado em: 27/02/2026 | Edição: 39 | Seção: 1 | Página: 158\n\nPublicado em: 05/03/2026 | Edição: 43 | Seção: 1 | Página: 91 - Retificação\n\nNormatiza o uso da inteligência artificial na medicina.\n\nO CONSELHO FEDERAL DE MEDICINA, no uso das atribui"
+   }
+  ]
+ },
+ {
+  "n": "u037",
+  "question": "Qual o tempo médio de análise de um protocolo de pesquisa pelo Comitê de Ética da UFMG?",
+  "motivo": "estatistica",
+  "score_max": 0.7766181,
+  "trechos": [
+   {
+    "score": 0.7766,
+    "documento": "regulamento_interno_CEP_2024",
+    "texto": "e subsequente ao seu recebimento. SEÇÃO IX DA APROVAÇÃO DO PROJETO Art. 36. Uma vez aprovado o projeto, o CEP-UFMG passa a ser corresponsável no que se refere aos aspectos éticos da pesquisa. Art. 37. O projeto de pesquisa deverá ser iniciado no prazo de até um ano após a data de aprovação pelo CEP-"
+   },
+   {
+    "score": 0.7733,
+    "documento": "regulamento_interno_CEP_2024",
+    "texto": "elo protocolo. Art. 32. A decisão sobre cada protocolo de pesquisa resulta em um dos seguintes enquadramentos. – aprovado – quando o projeto de pesquisa preencher as condições de eticidade requeridas; – pendente – quando a decisão é pela necessidade de correção, hipótese em que serão solicitadas alt"
+   }
+  ]
+ },
+ {
+  "n": "u050",
+  "question": "Qual o valor de mercado do setor de inteligência artificial aplicada à saúde no Brasil?",
+  "motivo": "comercial",
+  "score_max": 0.7708444,
+  "trechos": [
+   {
+    "score": 0.7708,
+    "documento": "estrategia_brasileira_ia_MCTI_2021",
+    "texto": "ESTRATÉGIA BRASILEIRA DE INTELIGÊNCIA ARTIFICIAL 11 Comparação do tamanho de mercado e receita global para IA entre 2015 e 2025 (em bilhões de USD) Fonte: https://www.statista.com/statistics/941835/artificial-intelligence-market-size-revenue-comparisons/ No Brasil, alguns programas do Ministério da "
+   },
+   {
+    "score": 0.7481,
+    "documento": "estrategia_brasileira_ia_MCTI_2021",
+    "texto": "bilhões até 2021. Segundo a consultoria, 15,3% das médias e grandes empresas no país já contam com a tecnologia entre as principais iniciativas e esse percentual deve dobrar nos próximos quatro anos. As áreas com maior potencial de crescimento estão ligadas ao atendimento a clientes, à análise e inv"
+   }
+  ]
+ },
+ {
+  "n": "u076",
+  "question": "Que mudanças o CFM prepara para a próxima revisão do Código de Ética Médica?",
+  "motivo": "futuro",
+  "score_max": 0.76794773,
+  "trechos": [
+   {
+    "score": 0.7679,
+    "documento": "codigo_etica_medica_CFM_2019",
+    "texto": "4. Por questões de pragmatismo, buscou-se ao máximo não alterar a numeração dos artigos do Código de Ética Médica de 2009, com o desiderato de facilitar o manuseio do novo Código para os operadores que já estavam habituados com o Código anterior. 5. Dentro dos artigos que tratam dos direitos dos méd"
+   },
+   {
+    "score": 0.7619,
+    "documento": "codigo_etica_medica_CFM_2019",
+    "texto": "is, no projeto do novo Código alguns dispositivos do CEM/2009 tiveram a redação atualizada e melhorada, com o objetivo de otimizar uma interpretação deontológica das questões hodiernas da medicina. 8. Como inovação, restou inserido no novo Código de Ética Médica dispositivo que trata da utilização d"
+   }
+  ]
+ },
+ {
+  "n": "u089",
+  "question": "Que credenciais técnicas um hospital privado precisa para integrar o seu sistema à RNDS?",
+  "motivo": "operacional",
+  "score_max": 0.7631676,
+  "trechos": [
+   {
+    "score": 0.7632,
+    "documento": "rnds_MS_",
+    "texto": "xame laboratorial de Covid-19 em um sistema privado, com os resultados integrados na RNDS, possibilitando acesso por profissionais de diferentes locais e por ele mesmo pelo aplicativo Meu SUS Digital. Essa jornada mostra como a RNDS conecta os sistemas, para que o histórico de saúde do cidadão acomp"
+   },
+   {
+    "score": 0.7529,
+    "documento": "rnds_MS_",
+    "texto": "consultar seus próprios dados de saúde pelo aplicativo Meu SUS Digital, acessando informações sobre atendimentos, vacinas, medicamentos e outros registros de saúde, de forma segura e individualizada. Com a integração de instituições públicas e privadas, a RNDS centraliza e organiza as informações de"
+   }
+  ]
+ },
+ {
+  "n": "u009",
+  "question": "Que prazo a Lei de Acesso à Informação dá para a resposta a um pedido de dados de saúde?",
+  "motivo": "norma_ausente",
+  "score_max": 0.76089346,
+  "trechos": [
+   {
+    "score": 0.7609,
+    "documento": "european_health_data_space_EU_2025",
+    "texto": "rgãos e organismos da União com mandato legal no domínio da saúde pública se o tratamento dos dados de saúde eletrónicos for efetuado para os fins previstos no artigo 53.o, n.o 1, alíneas a), b) e c). Quando se aplica esse procedimento acelerado, os organismos responsáveis pelo acesso aos dados de s"
+   },
+   {
+    "score": 0.7595,
+    "documento": "european_health_data_space_EU_2025",
+    "texto": "idade de completar esse pedido. Se o requerente de dados de saúde não completar o pedido de acesso aos dados de saúde no prazo de quatro semanas, a autorização de tratamento de dados não será emitida. O organismo responsável pelo acesso aos dados de saúde pode prorrogar o prazo de resposta a um pedi"
+   }
+  ]
+ },
+ {
+  "n": "u075",
+  "question": "O prazo de aplicação do Espaço Europeu de Dados de Saúde será prorrogado?",
+  "motivo": "futuro",
+  "score_max": 0.76015604,
+  "trechos": [
+   {
+    "score": 0.7602,
+    "documento": "european_health_data_space_EU_2025",
+    "texto": "amento Europeu e do Conselho, de 11 de fevereiro de 2025, relativo ao Espaço Europeu de Dados de Saúde e que altera a Diretiva 2011/24/UE e o Regulamento (UE) 2024/2847 (JO L, 2025/327, 5.3.2025, ELI: http://data.europa.eu/eli/reg/2025/327/oj).». CAPÍTULO IX APLICAÇÃO DIFERIDA E DISPOSIÇÕES TRANSITÓ"
+   },
+   {
+    "score": 0.7447,
+    "documento": "european_health_data_space_EU_2025",
+    "texto": "que não são colocados no mercado. (113) A AEDP e o CEPD foram consultados nos termos do artigo 42.o, n.os 1 e 2 do Regulamento (UE) 2018/1725, e emitiram o seu parecer conjunto em 12 de julho de 2022. (114) O presente regulamento não afeta a aplicação das regras em matéria de concorrência, em partic"
+   }
+  ]
+ },
+ {
+  "n": "u059",
+  "question": "Serei responsabilizado se o algoritmo do meu hospital errar durante o meu plantão?",
+  "motivo": "caso_individual",
+  "score_max": 0.757872,
+  "trechos": [
+   {
+    "score": 0.7579,
+    "documento": "ethics_governance_ai_health_WHO_2021",
+    "texto": "Furthermore, if physicians were made accountable for harm caused by an AI technology, technology companies and developers could avoid accountability, and human users of the technology would become the scapegoats of all faults arising from its use, with no control over the decisions made by the AI te"
+   },
+   {
+    "score": 0.7474,
+    "documento": "ethics_governance_ai_health_WHO_2021",
+    "texto": "8.1 Liability for use of artificial intelligence in clinical care Use of AI to support or augment clinical decision-making raises several questions. Should doctors be held at fault if they follow the suggestion of an AI technology that results in a medical error or if they ignore a suggestion that w"
+   }
+  ]
+ },
+ {
+  "n": "u019",
+  "question": "Que critérios a Health Canada usa para aprovar dispositivos médicos com aprendizado contínuo?",
+  "motivo": "norma_ausente",
+  "score_max": 0.7557867,
+  "trechos": [
+   {
+    "score": 0.7558,
+    "documento": "ai_ml_discussion_paper_FDA_2021",
+    "texto": "uld be required for changes that affect safety or effectiveness, such as new indications for use, new clinical effects, or significant technology modifications that affect performance characteristics. To address the critical question of when a continuously learning AI/ML SaMD may require a premarket"
+   },
+   {
+    "score": 0.752,
+    "documento": "predetermined_change_control_FDA_2023",
+    "texto": "oyed models are monitored for performance and re-training risks are managed. Advancements in digital health technologies include artificial intelligence/machine learningenabled medical devices (MLMD). Regulatory expectations that are aligned with best practices for development and change management,"
+   }
+  ]
+ },
+ {
+  "n": "u070",
+  "question": "O sistema de IA que a minha instituição comprou está em conformidade com a legislação?",
+  "motivo": "caso_individual",
+  "score_max": 0.75105095,
+  "trechos": [
+   {
+    "score": 0.7511,
+    "documento": "regulatory_considerations_ai_health_WHO_2024",
+    "texto": "ugh it is not prescriptive, given the wide range of available reporting and investigation avenues from common-sense clinical auditing (i.e. human inspection) to technical solutions based on inference. Although not specific to AI, there is a thickening web of country-, nationand jurisdictional-specif"
+   },
+   {
+    "score": 0.7464,
+    "documento": "estrategia_brasileira_ia_MCTI_2021",
+    "texto": "ção (por exemplo, rastreabilidade, auditabilidade e comunicação transparente sobre as capacidades do sistema) podem ser necessárias para que o sistema, como um todo, respeite os direitos fundamentais. Outro aspecto importante de tal discussão diz respeito à ideia de que os indivíduos devem ter ciênc"
+   }
+  ]
+ },
+ {
+  "n": "u074",
+  "question": "A ANPD vai emitir decisão de adequação para os Estados Unidos?",
+  "motivo": "futuro",
+  "score_max": 0.7508591,
+  "trechos": [
+   {
+    "score": 0.7509,
+    "documento": "resolucao_19_ANPD_2024",
+    "texto": "II - será instruído pela área técnica competente, nos termos do Regimento Interno da ANPD, que se manifestará sobre o mérito da decisão, indicando, se for o caso, as condicionantes a serem observadas; e III - após a manifestação da Procuradoria Federal Especializada, será objeto de deliberação final"
+   },
+   {
+    "score": 0.7453,
+    "documento": "resolucao_19_ANPD_2024",
+    "texto": "decisão sobre o fluxo internacional de dados, as relações diplomáticas, o comércio internacional e a cooperação internacional do Brasil com outros países e organismos internacionais. Parágrafo único. A ANPD priorizará a avaliação do nível de proteção de dados de países estrangeiros ou organismos int"
+   }
+  ]
+ },
+ {
+  "n": "u056",
+  "question": "Quanto custa treinar um modelo de linguagem próprio para uma instituição de saúde?",
+  "motivo": "comercial",
+  "score_max": 0.74993324,
+  "trechos": [
+   {
+    "score": 0.7499,
+    "documento": "multimodal_models_guidance_WHO_2024",
+    "texto": "3 Risks to health systems and society and ethical concerns about use of LMMs 21 Accessibility and affordability Several factors can undermine equitable access to LMMs that could provide benefits to providers and patients. One is the digital divide, which limits use of digital tools to certain countr"
+   },
+   {
+    "score": 0.7391,
+    "documento": "multimodal_models_guidance_WHO_2024",
+    "texto": "d also help to avoid exclusive control of an LMM by a developer and \"level the playing field\" between the largest companies and developers that do not have access to such infrastructure and resources. Governments, subject to independent oversight, could construct infrastructure that is then used by "
+   }
+  ]
+ },
+ {
+  "n": "u010",
+  "question": "O que a Resolução CNS nº 466/2012 exige do termo de consentimento livre e esclarecido?",
+  "motivo": "norma_ausente",
+  "score_max": 0.74968624,
+  "trechos": [
+   {
+    "score": 0.7497,
+    "documento": "regulamento_interno_CEP_2024",
+    "texto": "; – Termo de Assentimento Livre e Esclarecido – TALE, o qual deverá atender em seu texto as diretrizes da Resolução 466/12 do CNS/MS-CONEP e outras relacionadas com a pesquisa proposta, especialmente: a) linguagem acessível para os menores ou para os legalmente incapazes, por meio do qual, os partic"
+   },
+   {
+    "score": 0.7484,
+    "documento": "regulamento_interno_CEP_2024",
+    "texto": "delas resultantes, com a concordância documentada da instituição; – orçamento financeiro detalhado da pesquisa: recursos, fontes e destinação, bem como a forma e o valor da remuneração do pesquisador; – explicitação de acordo preexistente quanto à propriedade das informações geradas, demonstrando a "
+   }
+  ]
+ },
+ {
+  "n": "u080",
+  "question": "Qual será o próximo tema de regulamentação da ANPD sobre inteligência artificial?",
+  "motivo": "futuro",
+  "score_max": 0.7495506,
+  "trechos": [
+   {
+    "score": 0.7496,
+    "documento": "estrategia_brasileira_ia_MCTI_2021",
+    "texto": "ão humana. Um dos pontos de discussão mais importantes, nesse sentido, é o de avaliar quais tipos de decisão podem ser delegadas a uma máquina e quais exigiriam, necessariamente, a intervenção humana. A LGPD endereça tal questão dispondo sobre o direito de indivíduos solicitarem a revisão das decisõ"
+   },
+   {
+    "score": 0.7304,
+    "documento": "estrategia_brasileira_ia_MCTI_2021",
+    "texto": "ESTRATÉGIA BRASILEIRA DE INTELIGÊNCIA ARTIFICIAL 50 nacional e internacional.76 Enquanto uma lei específica sobre o tema não existe, aplica-se a LGPD ainda que de forma limitada: o art. 4º, §1º estabelece que o devido processo legal, os princípios gerais de proteção de dados pessoais e os direitos d"
+   }
+  ]
+ },
+ {
+  "n": "u012",
+  "question": "Quais controles do NIST SP 800-53 se aplicam a sistemas de IA usados em saúde?",
+  "motivo": "norma_ausente",
+  "score_max": 0.7439073,
+  "trechos": [
+   {
+    "score": 0.7439,
+    "documento": "ai_risk_management_framework_NIST_2023",
+    "texto": "ances” (Source: ISO/IEC TS 5723:2022). Robustness is a goal for appropriate system functionality in a broad set of conditions and circumstances, including uses of AI systems not initially anticipated. Robustness requires not only that the system perform exactly as it does under expected uses, but al"
+   },
+   {
+    "score": 0.7398,
+    "documento": "ai_risk_management_framework_NIST_2023",
+    "texto": "Employing safety considerations during the lifecycle and starting as early as possible with planning and design can prevent failures or conditions that can render a system dangerous. Other practical approaches for AI safety often relate to rigorous simulation and in-domain testing, real-time monitor"
+   }
+  ]
+ },
+ {
+  "n": "u099",
+  "question": "Que sistema devo usar para registrar uma avaliação de impacto algorítmico junto à autoridade?",
+  "motivo": "operacional",
+  "score_max": 0.7432095,
+  "trechos": [
+   {
+    "score": 0.7432,
+    "documento": "projeto_lei_2338_BR_2023",
+    "texto": "º O agente de IA poderá requerer junto aos demais agentes da cadeia, respeitados os segredos industriais e comerciais, as informações necessárias para a realização da avaliação de impacto algorítmico. § 3º A avaliação deverá ser realizada em momento prévio e de acordo com o contexto específico da in"
+   },
+   {
+    "score": 0.7399,
+    "documento": "estrategia_brasileira_ia_MCTI_2021",
+    "texto": "da elaboração de relatórios de impacto, podem estruturar a maneira como as organizações avaliam questões de justiça, direitos humanos ou outras considerações na implantação de novas tecnologias de IA. Podem, também, ajudar as organizações a incorporarem valores corporativos em seus processos (por ex"
+   }
+  ]
+ },
+ {
+  "n": "u018",
+  "question": "O que a Lei nº 9.610 diz sobre o uso de obras protegidas no treinamento de modelos de IA?",
+  "motivo": "norma_ausente",
+  "score_max": 0.74177563,
+  "trechos": [
+   {
+    "score": 0.7418,
+    "documento": "projeto_lei_2338_BR_2023",
+    "texto": "deste artigo à mineração de dados, por entidades públicas ou privadas, no contexto de sistemas de IA para combate a ilícitos civis e criminais, que atentem contra direitos de autor e conexos. Art. 64. O titular de direitos de autor e conexos poderá proibir a utilização dos conteúdos de sua titularid"
+   },
+   {
+    "score": 0.7328,
+    "documento": "projeto_lei_2338_BR_2023",
+    "texto": "ociar coletivamente, nos termos do Título VI da Lei nº 9.610, de 19 de fevereiro de 1998 (Lei dos Direitos Autorais), ou diretamente a utilização dos conteúdos dos quais são titulares, podendo fazê-lo de forma gratuita ou onerosa; II – que o cálculo da remuneração a que se refere o caput considere o"
+   }
+  ]
+ },
+ {
+  "n": "u072",
+  "question": "Qual será a multa prevista na lei brasileira de inteligência artificial depois de sancionada?",
+  "motivo": "futuro",
+  "score_max": 0.74162346,
+  "trechos": [
+   {
+    "score": 0.7416,
+    "documento": "projeto_lei_2338_BR_2023",
+    "texto": "- 26 interesse para a aplicação da Lei nº 12.529, de 30 de novembro de 2011 (Lei de Defesa da Concorrência). PL § 4º No exercício das suas atribuições e sempre no limite do que for pertinente e necessário à apuração de indícios concretos de infrações à ordem econômica, o Cade poderá ordenar aos dese"
+   },
+   {
+    "score": 0.7331,
+    "documento": "projeto_lei_2338_BR_2023",
+    "texto": "- 27 § 2º Antes ou durante o processo administrativo de que trata o § 1º deste artigo, poderá a autoridade competente adotar medidas preventivas, incluída multa cominatória, observado o limite total a que se refere o inciso II do caput, quando houver indício ou fundado receio de que o agente de IA: "
+   }
+  ]
+ },
+ {
+  "n": "u047",
+  "question": "Que fornecedores de inteligência artificial médica atuam no mercado brasileiro?",
+  "motivo": "comercial",
+  "score_max": 0.74154127,
+  "trechos": [
+   {
+    "score": 0.7415,
+    "documento": "estrategia_brasileira_ia_MCTI_2021",
+    "texto": "ESTRATÉGIA BRASILEIRA DE INTELIGÊNCIA ARTIFICIAL 11 Comparação do tamanho de mercado e receita global para IA entre 2015 e 2025 (em bilhões de USD) Fonte: https://www.statista.com/statistics/941835/artificial-intelligence-market-size-revenue-comparisons/ No Brasil, alguns programas do Ministério da "
+   },
+   {
+    "score": 0.7324,
+    "documento": "plano_brasileiro_ia_BR_2025",
+    "texto": "tria, Comércio Modelo de linguagem em português lider na BERTimbau NeuralMind e Serviços HuggingFace Combate a fraude Indústria, Comércio Stefanini IA para detecção de fraudes em tempo real financeira e Serviços Indústria, Comércio IA para eficiência e segurança na indústria IA na indústria do aço S"
+   }
+  ]
+ },
+ {
+  "n": "u073",
+  "question": "O Conselho Federal de Medicina vai proibir o uso de IA generativa na elaboração de laudos?",
+  "motivo": "futuro",
+  "score_max": 0.7410075,
+  "trechos": [
+   {
+    "score": 0.741,
+    "documento": "resolucao_2454_CFM_2026",
+    "texto": "destinado a gerar ou modificar significativamente conteúdo de variados tipos – incluindo texto, imagens, áudio, vídeo ou código de software – a partir de prompts (entradas) dados pelo usuário, utilizando modelos de aprendizagem treinados em grandes volumes de dados. Exemplos incluem modelos de lingu"
+   },
+   {
+    "score": 0.7254,
+    "documento": "resolucao_2454_CFM_2026",
+    "texto": "Art. 20. A realização de pesquisas, estudos ou projetos-piloto envolvendo IA na medicina deve ser alinhada aos princípios éticos da pesquisa e do cuidado. Art. 21. As disposições desta resolução aplicam-se também aos modelos, sistemas e aplicações de IA em desenvolvimento ou em uso nas instituições "
+   }
+  ]
+ },
+ {
+  "n": "u086",
+  "question": "O Conselho Federal de Medicina já cassou algum registro por uso indevido de inteligência artificial?",
+  "motivo": "jurisprudencia",
+  "score_max": 0.7408557,
+  "trechos": [
+   {
+    "score": 0.7409,
+    "documento": "resolucao_2454_CFM_2026",
+    "texto": "Art. 8° O descumprimento dos deveres previstos nesta resolução sujeita o médico às sanções éticas cabíveis, sem prejuízo das responsabilidades civil e penal aplicáveis.\n\nParágrafo único. A adoção e uso de modelos, sistemas e aplicações de Inteligência Artificial na medicina devem sempre se orientar "
+   },
+   {
+    "score": 0.7373,
+    "documento": "resolucao_2454_CFM_2026",
+    "texto": "Art. 4° Constituem deveres do médico na utilização de sistemas de Inteligência Artificial na medicina:\n\nI – empregar a IA exclusivamente como ferramenta de apoio, mantendo-se como responsável final pelas decisões clínicas, diagnósticas, terapêuticas e prognósticas;\n\nII – exercer julgamento crítico s"
+   }
+  ]
+ },
+ {
+  "n": "u064",
+  "question": "A minha instituição pode me obrigar a usar um sistema de IA em que eu não confio?",
+  "motivo": "caso_individual",
+  "score_max": 0.7405763,
+  "trechos": [
+   {
+    "score": 0.7406,
+    "documento": "projeto_lei_2338_BR_2023",
+    "texto": "- 10 eletricidade, quando houver risco relevante à integridade física das pessoas e à interrupção de serviços essenciais, de forma ilícita ou abusiva, e desde que sejam determinantes para o resultado ou decisão, funcionamento ou acesso a serviço essencial; II – sistemas de IA utilizados como fator d"
+   },
+   {
+    "score": 0.7303,
+    "documento": "plano_brasileiro_ia_BR_2025",
+    "texto": "em prática, quem é legalmente responsável por decisões equivocadas? Quando essas decisões envolvem custos de oportunidade ou aspectos éticos, como a máquina deve pesá-los em seus processos decisórios? Essas questões normativas extrapolam o escopo tecnológico e adentram campos da filosofia, sociologi"
+   }
+  ]
+ },
+ {
+  "n": "u044",
+  "question": "Quantos leitos com monitoramento assistido por IA existem na rede pública brasileira?",
+  "motivo": "estatistica",
+  "score_max": 0.73978305,
+  "trechos": [
+   {
+    "score": 0.7398,
+    "documento": "plano_brasileiro_ia_BR_2025",
+    "texto": "No Brasil, mais de 30% dos órgãos federais e estaduais já fazem uso de ao menos uma tecnologia de IA. O uso predominante de ferramentas de IA no setor público inclui mineração de texto, predição e análise de dados, e automação de processos (Cetic.br, 2023b). Como exemplo, tem-se a Plataforma Intelig"
+   },
+   {
+    "score": 0.7304,
+    "documento": "plano_brasileiro_ia_BR_2025",
+    "texto": "rões e tendências que orientem decisões estratégicas. No contexto brasileiro, o setor público já começou a dar passos importantes na adoção de IA, embora ainda haja um vasto potencial a ser explorado. Conforme resultados Pesquisa sobre o uso das tecnologias de informação e comunicação no setor públi"
+   }
+  ]
+ },
+ {
+  "n": "u043",
+  "question": "Quantas transferências internacionais de dados a ANPD autorizou em 2025?",
+  "motivo": "estatistica",
+  "score_max": 0.7387961,
+  "trechos": [
+   {
+    "score": 0.7388,
+    "documento": "resolucao_19_ANPD_2024",
+    "texto": "Resolução CD/ANPD nº 19, de 23 de agosto de 2024 Aprova o Regulamento de Transferência Internacional de Dados e o conteúdo das cláusulas-padrão contratuais. Publicado em 26/04/2024 08:49 Modificado em 18/08/2025 14:33 Compartilhe : RESOLUÇÃO CD/ANPD Nº 19, DE 23 DE AGOSTO DE 2024 Aprova o Regulament"
+   },
+   {
+    "score": 0.7363,
+    "documento": "resolucao_19_ANPD_2024",
+    "texto": "o de Transferência Internacional de Dados e o conteúdo das cláusulas-padrão contratuais, nos termos do art. 33, incisos I e II, alíneas 'a', 'b' e 'c', art. 34, art. 35, caput e §§ 1º, 2º e 5º, e art. 36 da Lei nº 13.709, de 14 de agosto de 2018. Art. Parágrafo único. Os agentes de tratamento que ut"
+   }
+  ]
+ },
+ {
+  "n": "u017",
+  "question": "O que o Código Civil brasileiro estabelece sobre responsabilidade objetiva por produto defeituoso?",
+  "motivo": "norma_ausente",
+  "score_max": 0.738675,
+  "trechos": [
+   {
+    "score": 0.7387,
+    "documento": "cdc_BR_1990",
+    "texto": "trangeiro, e o importador respondem, independentemente da existência de culpa, pela reparação dos danos causados aos consumidores por defeitos decorrentes de projeto, fabricação, construção, montagem, fórmulas, manipulação, apresentação ou acondicionamento de seus produtos, bem como por informações "
+   },
+   {
+    "score": 0.7248,
+    "documento": "cdc_BR_1990",
+    "texto": "ra haja colocado o produto no mercado, o defeito inexiste; III - a culpa exclusiva do consumidor ou de terceiro. Art. 13. O comerciante é igualmente responsável, nos termos do artigo anterior, quando: I - o fabricante, o construtor, o produtor ou o importador não puderem ser identificados; II - o pr"
+   }
+  ]
+ },
+ {
+  "n": "u030",
+  "question": "Quantas denúncias de publicidade médica irregular o CFM julgou no último ano?",
+  "motivo": "estatistica",
+  "score_max": 0.73527837,
+  "trechos": [
+   {
+    "score": 0.7353,
+    "documento": "codigo_etica_medica_CFM_2019",
+    "texto": "Capítulo XIII PUBLICIDADE MÉDICA É vedado ao médico: Art. 111. Permitir que sua participação na divulgação de assuntos médicos, em qualquer meio de comunicação de massa, deixe de ter caráter exclusivamente de esclarecimento e educação da sociedade. Art. 112. Divulgar informação sobre assunto médico "
+   },
+   {
+    "score": 0.7353,
+    "documento": "resolucao_2336_CFM_2023",
+    "texto": "RESOLUÇÃO CFM Nº 2.336/2023 Publicado em: 13/09/2023 | Edição: 175 | Seção: 1 | Página: 312 Dispõe sobre publicidade e propaganda médicas. O CONSELHO FEDERAL DE MEDICINA (CFM), no uso das atribuições conferidas pela Lei nº 3.268, de 30 de setembro de 1957, regulamentada pelo Decreto nº 44.045, de 19"
+   }
+  ]
+ },
+ {
+  "n": "u022",
+  "question": "O que a legislação chinesa exige de algoritmos de recomendação aplicados à saúde?",
+  "motivo": "norma_ausente",
+  "score_max": 0.73452896,
+  "trechos": [
+   {
+    "score": 0.7345,
+    "documento": "multimodal_models_guidance_WHO_2024",
+    "texto": "iders use clear labelling and assess the quality of data labelling; and (iii) developers take “effective measures” to meet the goals of authenticity, accuracy, objectivity and diversity of data (131). The requirements are not expected to be applied strictly to companies, which will be required only "
+   },
+   {
+    "score": 0.7239,
+    "documento": "multimodal_models_guidance_WHO_2024",
+    "texto": "r scrutiny for potential use of data obtained without informed consent. The pursuit of ever-larger LMMs, requiring increasingly larger data sets, may lead developers to ignore legal requirements (83). This would also violate the WHO guiding principle of protecting human autonomy. Thus, the WHO exper"
+   }
+  ]
+ },
+ {
+  "n": "u023",
+  "question": "Quais obrigações a Lei nº 14.133 impõe à contratação pública de soluções de inteligência artificial?",
+  "motivo": "norma_ausente",
+  "score_max": 0.7343334,
+  "trechos": [
+   {
+    "score": 0.7343,
+    "documento": "projeto_lei_2338_BR_2023",
+    "texto": "so de ferramentas ou processos de registro da operação do sistema, de modo a permitir a avaliação de sua acurácia e robustez; c) realização de testes para avaliação de níveis apropriados de segurança; d) adoção de medidas técnicas para viabilizar a aplicabilidade dos resultados dos sistemas de IA e "
+   },
+   {
+    "score": 0.7243,
+    "documento": "projeto_lei_2338_BR_2023",
+    "texto": "nha contribuído para os resultados apresentados pelos sistemas de IA; e) medidas para mitigar e prevenir vieses discriminatórios, quando o risco à discriminação decorrer da aplicação do sistema de IA; f) disponibilização de informações adequadas que permitam, respeitado o sigilo industrial e comerci"
+   }
+  ]
+ },
+ {
+  "n": "u060",
+  "question": "Meu comitê de ética negou o meu protocolo de pesquisa; o que devo fazer no meu caso?",
+  "motivo": "caso_individual",
+  "score_max": 0.73369014,
+  "trechos": [
+   {
+    "score": 0.7337,
+    "documento": "regulamento_interno_CEP_2024",
+    "texto": "vação. Nas decisões de não aprovação cabe recurso ao próprio CEP e/ou à CONEP, no prazo de 30 (trinta) dias, sempre que algum fato novo for apresentado para fundamentar a necessidade de uma reanálise; – arquivado – quando o pesquisador descumprir o prazo para enviar as respostas às pendências aponta"
+   },
+   {
+    "score": 0.7325,
+    "documento": "regulamento_interno_CEP_2024",
+    "texto": "elo protocolo. Art. 32. A decisão sobre cada protocolo de pesquisa resulta em um dos seguintes enquadramentos. – aprovado – quando o projeto de pesquisa preencher as condições de eticidade requeridas; – pendente – quando a decisão é pela necessidade de correção, hipótese em que serão solicitadas alt"
+   }
+  ]
+ },
+ {
+  "n": "u003",
+  "question": "O HIPAA permite usar dados de pacientes para treinar modelos de IA sem autorização individual?",
+  "motivo": "norma_ausente",
+  "score_max": 0.7336133,
+  "trechos": [
+   {
+    "score": 0.7336,
+    "documento": "multimodal_models_guidance_WHO_2024",
+    "texto": "36 Ethics and governance of artificial intelligence for health. Guidance on large multi-modal models As use of data for health care will probably require strict adherence to laws for informed consent, developers who train LMMs intended for use in health care and medicine might have to rely on smalle"
+   },
+   {
+    "score": 0.7234,
+    "documento": "multimodal_models_guidance_WHO_2024",
+    "texto": "r scrutiny for potential use of data obtained without informed consent. The pursuit of ever-larger LMMs, requiring increasingly larger data sets, may lead developers to ignore legal requirements (83). This would also violate the WHO guiding principle of protecting human autonomy. Thus, the WHO exper"
+   }
+  ]
+ },
+ {
+  "n": "u069",
+  "question": "Devo notificar a ANPD sobre o incidente que aconteceu ontem na minha clínica?",
+  "motivo": "caso_individual",
+  "score_max": 0.7334424,
+  "trechos": [
+   {
+    "score": 0.7334,
+    "documento": "resolucao_19_ANPD_2024",
+    "texto": "Parte Designada; ou b) encaminhar a solicitação para a Parte Designada o quanto antes, a fim de viabilizar a resposta no prazo previsto no item 15.3. (Alterado com a RETIFICAÇÃO DE 18/08/2025) . 15.5. As Partes deverão informar, imediatamente, aos Agentes de Tratamento com os quais tenham realizado "
+   },
+   {
+    "score": 0.7287,
+    "documento": "resolucao_2_ANPD_2024",
+    "texto": "segurança que possa acarretar risco ou dano relevante aos titulares, nos termos do Regulamento de Comunicação de Incidente de Segurança , aprovado pela Resolução CD/ANPD nº 15, de 24 de abril de 2024; (Redação dada pela RESOLUÇÃO CD/ANPD Nº 15, DE 24 DE ABRIL DE 2024 ) III - no fornecimento de decla"
+   }
+  ]
+ },
+ {
+  "n": "u036",
+  "question": "Quantos países já ratificaram a convenção-quadro do Conselho da Europa sobre inteligência artificial?",
+  "motivo": "estatistica",
+  "score_max": 0.7333696,
+  "trechos": [
+   {
+    "score": 0.7334,
+    "documento": "ai_framework_convention_council_europe_2024",
+    "texto": "force on the first day of the month following the expiration of a period of three months after the date on which five signatories, including at least three member States of the Council of Europe, have expressed their consent to be bound by this Convention in accordance with paragraph 2. 4 In respect"
+   },
+   {
+    "score": 0.7209,
+    "documento": "ai_framework_convention_council_europe_2024",
+    "texto": "n taken by the majority provided for in Article 20.d of the Statute of the Council of Europe, and by unanimous vote of the representatives of the Parties entitled to sit on the Committee of Ministers. 2 In respect of any acceding State, this Convention shall enter into force on the first day of the "
+   }
+  ]
+ },
+ {
+  "n": "u077",
+  "question": "O Brasil vai ratificar a convenção-quadro do Conselho da Europa sobre inteligência artificial?",
+  "motivo": "futuro",
+  "score_max": 0.7323611,
+  "trechos": [
+   {
+    "score": 0.7324,
+    "documento": "ai_framework_convention_council_europe_2024",
+    "texto": "Council of Europe Treaty Series - No. 225\n\nCouncil of Europe Framework Convention on Artificial Intelligence and Human Rights, Democracy and the Rule of Law\n\nVilnius, 5.IX.2024\n\nPreamble\n\nThe member States of the Council of Europe and the other signatories hereto,\n\nConsidering that the aim of the Co"
+   },
+   {
+    "score": 0.723,
+    "documento": "estrategia_brasileira_ia_MCTI_2021",
+    "texto": "ESTRATÉGIA BRASILEIRA DE INTELIGÊNCIA ARTIFICIAL 27 3. ASPECTOS INTERNACIONAIS A corrida global por liderança em IA evidencia que o desenvolvimento e a crescente adoção de IA geram impactos que transcendem as fronteiras nacionais, seja no campo econômico, seja no campo de PD&I. Diferentes organismos"
+   }
+  ]
+ },
+ {
+  "n": "u087",
+  "question": "Há decisão judicial brasileira sobre discriminação algorítmica em plano de saúde?",
+  "motivo": "jurisprudencia",
+  "score_max": 0.73145795,
+  "trechos": [
+   {
+    "score": 0.7315,
+    "documento": "ethics_governance_ai_health_WHO_2021",
+    "texto": "Box 6. Discrimination and racial bias in AI technology\n\nIn a study published in Science in October 2019 (191), researchers found significant racial bias in an\n\nalgorithm used widely in the US health-care system to guide health decisions. The algorithm is based\n\non cost (rather than illness) as a pro"
+   },
+   {
+    "score": 0.7086,
+    "documento": "ethics_governance_ai_health_WHO_2021",
+    "texto": "Box 3. Dinerstein vs Google\n\nGoogle announced a strategic partnership with the University of Chicago and the University of\n\nChicago Medicine in the USA in May 2017 (130). The aim of the partnership was to develop novel\n\nmachine-learning tools to predict medical events such as unexpected hospital adm"
+   }
+  ]
+ },
+ {
+  "n": "u063",
+  "question": "Posso usar uma ferramenta de IA generativa para escrever o laudo do meu paciente de hoje?",
+  "motivo": "caso_individual",
+  "score_max": 0.73110837,
+  "trechos": [
+   {
+    "score": 0.7311,
+    "documento": "resolucao_2454_CFM_2026",
+    "texto": "destinado a gerar ou modificar significativamente conteúdo de variados tipos – incluindo texto, imagens, áudio, vídeo ou código de software – a partir de prompts (entradas) dados pelo usuário, utilizando modelos de aprendizagem treinados em grandes volumes de dados. Exemplos incluem modelos de lingu"
+   },
+   {
+    "score": 0.7247,
+    "documento": "multimodal_models_guidance_WHO_2024",
+    "texto": "d to include pre-emptive writing of automated prescriptions and appointments, billing codes, scheduling of tests, pre-authorization by insurance companies, procedure notes and discharge summaries (5). As more sophisticated LMMs are developed, they could be used for even more complex clerical note-ta"
+   }
+  ]
+ },
+ {
+  "n": "u078",
+  "question": "Quando a Rede Nacional de Dados em Saúde cobrirá todos os municípios brasileiros?",
+  "motivo": "futuro",
+  "score_max": 0.72906953,
+  "trechos": [
+   {
+    "score": 0.7291,
+    "documento": "rnds_MS_",
+    "texto": "Info Rede Nacional de Dados em Saúde A Rede Nacional de Dados em Saúde (RNDS) é a plataforma oficial de interoperabilidade do Ministério da Saúde, para conectar sistemas de saúde em todo o Brasil. A RNDS estabelece a infraestrutura nacional para o compartilhamento padronizado de dados de saúde.. A R"
+   },
+   {
+    "score": 0.708,
+    "documento": "rnds_MS_",
+    "texto": "xame laboratorial de Covid-19 em um sistema privado, com os resultados integrados na RNDS, possibilitando acesso por profissionais de diferentes locais e por ele mesmo pelo aplicativo Meu SUS Digital. Essa jornada mostra como a RNDS conecta os sistemas, para que o histórico de saúde do cidadão acomp"
+   }
+  ]
+ },
+ {
+  "n": "u011",
+  "question": "O que a Resolução CNS nº 510/2016 exige de pesquisas em ciências humanas e sociais?",
+  "motivo": "norma_ausente",
+  "score_max": 0.7282074,
+  "trechos": [
+   {
+    "score": 0.7282,
+    "documento": "regulamento_interno_CEP_2024",
+    "texto": "reunião plenária em cuja pauta o protocolo de pesquisa estiver incluído, o coordenador determinará a leitura dos pareceres ou relatórios, colocando em discussão e votação as suas conclusões. Art. 31. Ao CEP-UFMG compete avaliação ética de todos os protocolos de pesquisa da UFMG que envolvam seres hu"
+   },
+   {
+    "score": 0.7023,
+    "documento": "lei_14874_BR_2024",
+    "texto": "PESQUISA COM SERES HUMANOS Seção I Da Análise Ética Art. 5º É instituído o Sistema Nacional de Ética em Pesquisa com Seres Humanos, a ser regulamentado por ato do Poder Executivo, que se segmenta em: I - instância nacional de ética em pesquisa; II - instância de análise ética em pesquisa, representa"
+   }
+  ]
+ },
+ {
+  "n": "u025",
+  "question": "O que a Lei nº 12.842 define como ato privativo do médico?",
+  "motivo": "norma_ausente",
+  "score_max": 0.7275257,
+  "trechos": [
+   {
+    "score": 0.7275,
+    "documento": "resolucao_1627_CFM_2001",
+    "texto": "tratar ou reabilitar os enfermos. Um ato médico pode ter como objeto um indivíduo ou uma coletividade. E pode usar qualquer meio aceito pela comunidade científica como adequado para aquele propósito. O exercício dos atos médicos é função privativa de quem é formado em Medicina em estabelecimento edu"
+   },
+   {
+    "score": 0.7199,
+    "documento": "resolucao_1627_CFM_2001",
+    "texto": "Modalidades de atos médicos\n\nOs atos tipicamente médicos, mas compartilhados com agentes de outras profissões, são:\n\n1. Realização de atos profiláticos de enfermidade ou procedimentos higiênicos que possam ser ou vir a ser fomentadores de bem-estar individual ou coletivo; 2. Realização de procedimen"
+   }
+  ]
+ },
+ {
+  "n": "u057",
+  "question": "Qual o valor da anuidade cobrada hoje pelos Conselhos Regionais de Medicina?",
+  "motivo": "comercial",
+  "score_max": 0.72723526,
+  "trechos": [
+   {
+    "score": 0.7272,
+    "documento": "decreto_44045_BR_1958",
+    "texto": "ional de Medicina de origem. (Incluído pelo Decreto nº 10.911, de 2021) (Vigência) § 3º Na hipótese do § 2º, o profissional ficará isento do recolhimento no Conselho Regional na localidade de destino. (Incluído pelo Decreto nº 10.911, de 2021) (Vigência) § 4º O disposto no § 2º deverá constar de mod"
+   },
+   {
+    "score": 0.7236,
+    "documento": "decreto_44045_BR_1958",
+    "texto": "nº 10.911, de 2021 (Vigência) XI - atualizar o valor da anuidade única cobrada aos inscritos nos Conselhos Regionais de Medicina, nos termos do disposto no § 1º do art. 6º da Lei nº 12.514, de 2011 ; (Incluído pelo Decreto nº 10.911, de 2021 (Vigência) XII - normatizar a concessão de diárias, de jet"
+   }
+  ]
+ },
+ {
+  "n": "u024",
+  "question": "Que regras o Japão adota para responsabilidade civil por danos causados por IA médica?",
+  "motivo": "norma_ausente",
+  "score_max": 0.72700316,
+  "trechos": [
+   {
+    "score": 0.727,
+    "documento": "ethics_governance_ai_health_WHO_2021",
+    "texto": "Lawmakers and regulators should ensure that rules and frameworks for safety are applicable to the use of AI technologies for health care and that they are proactively integrated into the design and deployment of AI-guided technologies. Updated liability rules for the use of AI in clinical care and m"
+   },
+   {
+    "score": 0.7206,
+    "documento": "multimodal_models_guidance_WHO_2024",
+    "texto": "more entities did not comply with an obligation relevant to the harm and that a causal link with AI performance is likely, the court can presume that non-compliance was the cause of the damage (162). The onus is thus placed on the liable party to rebut the presumption, for example by indicating anot"
+   }
+  ]
+ },
+ {
+  "n": "u028",
+  "question": "Quantos dispositivos médicos com inteligência artificial já foram aprovados pela Anvisa?",
+  "motivo": "estatistica",
+  "score_max": 0.72617537,
+  "trechos": [
+   {
+    "score": 0.7262,
+    "documento": "aiml_samd_action_plan_FDA_2021",
+    "texto": "Moreover, since the discussion paper’s publication, there has been a strong interest in utilizing a Predetermined Change Control Plan for AI/ML-based medical products as it was described in the paper. On February 7, 2020, FDA announced its marketing authorization, through the De Novo pathway, of the"
+   },
+   {
+    "score": 0.7188,
+    "documento": "ethics_governance_ai_health_WHO_2021",
+    "texto": "ANNEX\n\nare identified and addressed (or avoided entirely) and an approved AI device can be re-tested and monitored to measure its performance and any changes that may occur once it has been approved.\n\nRegulatory agencies can support testing, transparent communication of outcomes and monitoring of’ t"
+   }
+  ]
+ },
+ {
+  "n": "u096",
+  "question": "Onde encontro um modelo de contrato de fornecimento de IA recomendado pelo CFM?",
+  "motivo": "operacional",
+  "score_max": 0.7260577,
+  "trechos": [
+   {
+    "score": 0.7261,
+    "documento": "resolucao_2454_CFM_2026",
+    "texto": "ANEXO I\n\nI. Modelos de Inteligência Artificial (IA): componente computacional de um sistema de inteligência\n\nartificial, constituído por arquiteturas algorítmicas, parâmetros (incluídos pesos e demais variáveis treinadas) e procedimentos de inferência, concebido a partir de modelos matemáticos, méto"
+   },
+   {
+    "score": 0.7225,
+    "documento": "resolucao_2454_CFM_2026",
+    "texto": "IA interoperáveis, que possam ser integradas a diferentes sistemas de informação em saúde e eventualmente compartilhadas com outras instituições, evitando a duplicação de esforços e aumentando a eficiência coletiva. Deve-se buscar o uso de padrões abertos de integração (como APIs abertas e protocolo"
+   }
+  ]
+ },
+ {
+  "n": "u093",
+  "question": "Qual o endereço da sede do Conselho Federal de Medicina?",
+  "motivo": "operacional",
+  "score_max": 0.725778,
+  "trechos": [
+   {
+    "score": 0.7258,
+    "documento": "lei_3268_BR_1957",
+    "texto": "bros aos Conselhos Regionais e sôbre penalidades impostas aos mesmos pelos referidos Conselhos. j) fixar e alterar o valor da anuidade única, cobrada aos inscritos nos Conselhos Regionais de Medicina; e (Incluído pela Lei nº 11.000, de 2004) l) normatizar a concessão de diárias, jetons e auxílio de "
+   },
+   {
+    "score": 0.721,
+    "documento": "lei_3268_BR_1957",
+    "texto": "a profissão e dos que a exerçam legalmente. Art. 3º Haverá na Capital da República um Conselho Federal, com jurisdição em todo o Território Nacional, ao qual ficam subordinados os Conselhos Regionais; e, em cada capital de Estado e Território e no Distrito Federal, um Conselho Regional, denominado s"
+   }
+  ]
+ },
+ {
+  "n": "u051",
+  "question": "Que planos de saúde já cobrem exames analisados por inteligência artificial?",
+  "motivo": "comercial",
+  "score_max": 0.725355,
+  "trechos": [
+   {
+    "score": 0.7254,
+    "documento": "plano_brasileiro_ia_BR_2025",
+    "texto": "» Meta: sistema testado em ambiente de uso em três ações piloto. » Impactos esperados: apoio no atendimento médico oftalmológico no processo de análise e investigação da retina; e agilidade e precisão nas consultas oftalmológicas. » Indicadores: Resultado: número de exames realizados. Impacto: taxa "
+   },
+   {
+    "score": 0.7156,
+    "documento": "plano_brasileiro_ia_BR_2025",
+    "texto": "esafios: prever a demanda por exames de imagem e consultas para se antecipar a picos de demanda e garantir atendimento em casos urgentes; implementar chatbots para o agendamento de consultas e exames; e garantir agilidade e precisão na análise de exames de imagem. » Metas: implementação de algoritmo"
+   }
+  ]
+ },
+ {
+  "n": "u058",
+  "question": "Um paciente processou minha clínica por erro de um algoritmo; qual a chance de eu perder a ação?",
+  "motivo": "caso_individual",
+  "score_max": 0.72506225,
+  "trechos": [
+   {
+    "score": 0.7251,
+    "documento": "multimodal_models_guidance_WHO_2024",
+    "texto": "7 Liability for LMMs 59 patient will be compensated if the error affects them (1), although this depends on whether the patient knew that an LMM was used. While such continuing liability might discourage the use of increasingly sophisticated LMMs, it might also temper a willingness to take unnecessa"
+   },
+   {
+    "score": 0.7141,
+    "documento": "ethics_governance_ai_health_WHO_2021",
+    "texto": "8.1 Liability for use of artificial intelligence in clinical care Use of AI to support or augment clinical decision-making raises several questions. Should doctors be held at fault if they follow the suggestion of an AI technology that results in a medical error or if they ignore a suggestion that w"
+   }
+  ]
+ },
+ {
+  "n": "u045",
+  "question": "Qual o número de médicos inscritos hoje nos Conselhos Regionais de Medicina?",
+  "motivo": "estatistica",
+  "score_max": 0.72376794,
+  "trechos": [
+   {
+    "score": 0.7238,
+    "documento": "decreto_44045_BR_1958",
+    "texto": "m virtude dos diplomas que lhes foram conferidos pelas Faculdades de Medicina oficiais ou reconhecidas do país só poderão desempenhá-lo efetivamente depois de inscreverem-se nos Conselhos Regionais de Medicina que jurisdicionarem a área de sua atividade profissional. Parágrafo único. A obrigatorieda"
+   },
+   {
+    "score": 0.7155,
+    "documento": "lei_3268_BR_1957",
+    "texto": "edicina, da profissão e dos que a exerçam; i) publicar relatórios anuais de seus trabalhos e a relação dos profissionais registrados; j) exercer os atos de jurisdição que por lei lhes sejam cometidos; k) representar ao Conselho Federal de Medicina Aérea sôbre providências necessárias para a regulari"
+   }
+  ]
+ },
+ {
+  "n": "u029",
+  "question": "Qual a acurácia média dos sistemas de triagem por IA usados no SUS?",
+  "motivo": "estatistica",
+  "score_max": 0.7224509,
+  "trechos": [
+   {
+    "score": 0.7225,
+    "documento": "ethics_governance_ai_health_WHO_2021",
+    "texto": "Nevertheless, few such systems have been evaluated in prospective clinical trials. A recent comparison of deep-learning algorithms with health-care professionals in detection of diseases by medical imaging showed that AI is equivalent to human medical judgement in specific domains and applications i"
+   },
+   {
+    "score": 0.715,
+    "documento": "regulatory_considerations_ai_health_WHO_2024",
+    "texto": "In order to understand the performance of an AI system, evaluation against an accepted standard should be made. The most appropriate standard for comparison may differ by intended use but commonly-used standards are human performance in a similar task or other models (e.g. derived from logistic regr"
+   }
+  ]
+ },
+ {
+  "n": "u098",
+  "question": "Como faço para consultar o andamento de um processo ético-profissional pelo site do CFM?",
+  "motivo": "operacional",
+  "score_max": 0.7219292,
+  "trechos": [
+   {
+    "score": 0.7219,
+    "documento": "resolucao_2306_CFM_2022",
+    "texto": "I – conciliação, quando pertinente;\n\nII – termo de ajustamento de conduta (TAC), quando pertinente;\n\nIII – arquivamento: se indicar a inexistência de indícios de materialidade e/ou autoria de infração ao Código de Ética Médica;\n\nIV – instauração de PEP: se indicar a existência de indícios de materia"
+   },
+   {
+    "score": 0.7189,
+    "documento": "resolucao_2306_CFM_2022",
+    "texto": "Art. 6º As partes podem praticar, pessoalmente, todos os atos processuais necessários à sua defesa; sendo facultado fazer-se representar por advogado. Todavia, a ausência de advogado não anula os atos praticados.\n\nArt. 7º O processo e julgamento das infrações às disposições previstas no Código de Ét"
+   }
+  ]
+ },
+ {
+  "n": "u041",
+  "question": "Quantos algoritmos de IA em saúde tiveram o registro cancelado por desempenho inadequado?",
+  "motivo": "estatistica",
+  "score_max": 0.7217953,
+  "trechos": [
+   {
+    "score": 0.7218,
+    "documento": "ethics_governance_ai_health_WHO_2021",
+    "texto": "Nevertheless, few such systems have been evaluated in prospective clinical trials. A recent comparison of deep-learning algorithms with health-care professionals in detection of diseases by medical imaging showed that AI is equivalent to human medical judgement in specific domains and applications i"
+   },
+   {
+    "score": 0.7197,
+    "documento": "ethics_governance_ai_health_WHO_2021",
+    "texto": "ANNEX\n\nare identified and addressed (or avoided entirely) and an approved AI device can be re-tested and monitored to measure its performance and any changes that may occur once it has been approved.\n\nRegulatory agencies can support testing, transparent communication of outcomes and monitoring of’ t"
+   }
+  ]
+ },
+ {
+  "n": "u008",
+  "question": "Como o Marco Civil da Internet trata a responsabilidade do provedor por conteúdo gerado por IA?",
+  "motivo": "norma_ausente",
+  "score_max": 0.72061783,
+  "trechos": [
+   {
+    "score": 0.7206,
+    "documento": "multimodal_models_guidance_WHO_2024",
+    "texto": "ly, governments could hold providers or developers responsible for inaccurate, false or toxic content from an LMM after its release that neither the provider nor the developer took steps to correct or avoid. The Chinese Government’s regulation on generative AI, for example, stipulates that it must n"
+   },
+   {
+    "score": 0.7125,
+    "documento": "projeto_lei_2338_BR_2023",
+    "texto": "IA permanece sujeita às regras de responsabilidade previstas na Lei nº 10.406, de 10 de janeiro de 2002 (Código Civil), e na legislação especial, sem prejuízo da aplicação das demais normas desta Lei. Parágrafo único. A definição, em concreto, do regime de responsabilidade civil aplicável aos danos "
+   }
+  ]
+ },
+ {
+  "n": "u035",
+  "question": "Qual a taxa de recusa de pedidos de acesso a dados no Espaço Europeu de Dados de Saúde?",
+  "motivo": "estatistica",
+  "score_max": 0.7201623,
+  "trechos": [
+   {
+    "score": 0.7202,
+    "documento": "european_health_data_space_EU_2025",
+    "texto": "recusadas, as categorias das finalidades do acesso e as categorias de dados de saúde eletrónicos acedidos, bem como um resumo dos resultados das utilizações dos dados de saúde eletrónicos, se for caso disso; b) Informações sobre o cumprimento dos compromissos regulamentares e contratuais pelos utili"
+   },
+   {
+    "score": 0.7189,
+    "documento": "european_health_data_space_EU_2025",
+    "texto": "em matéria de proteção de dados; f) Uma descrição das atividades do organismo responsável pelo acesso aos dados de saúde relacionadas com a participação e consulta das partes interessadas pertinentes; g) Receitas provenientes de autorizações de tratamento de dados e de pedidos de dados de saúde; h) "
+   }
+  ]
+ },
+ {
+  "n": "u082",
+  "question": "Existe súmula do Supremo Tribunal Federal sobre uso de dados de saúde em pesquisa?",
+  "motivo": "jurisprudencia",
+  "score_max": 0.7200088,
+  "trechos": [
+   {
+    "score": 0.72,
+    "documento": "lgpd_BR_2018",
+    "texto": "exclusivamente dentro do órgão e estritamente para a finalidade de realização de estudos e pesquisas e mantidos em ambiente controlado e seguro, conforme práticas de segurança previstas em regulamento específico e que incluam, sempre que possível, a anonimização ou pseudonimização dos dados, bem com"
+   },
+   {
+    "score": 0.7137,
+    "documento": "lgpd_BR_2018",
+    "texto": "ara os fins desta Lei, salvo quando o processo de anonimização ao qual foram submetidos for revertido, utilizando exclusivamente meios próprios, ou quando, com esforços razoáveis, puder ser revertido. § 1º A determinação do que seja razoável deve levar em consideração fatores objetivos, tais como cu"
+   }
+  ]
+ },
+ {
+  "n": "u085",
+  "question": "Que precedentes europeus existem sobre decisão automatizada aplicada a pacientes?",
+  "motivo": "jurisprudencia",
+  "score_max": 0.719681,
+  "trechos": [
+   {
+    "score": 0.7197,
+    "documento": "estrategia_brasileira_ia_MCTI_2021",
+    "texto": "ão humana. Um dos pontos de discussão mais importantes, nesse sentido, é o de avaliar quais tipos de decisão podem ser delegadas a uma máquina e quais exigiriam, necessariamente, a intervenção humana. A LGPD endereça tal questão dispondo sobre o direito de indivíduos solicitarem a revisão das decisõ"
+   },
+   {
+    "score": 0.7172,
+    "documento": "ethics_governance_ai_health_WHO_2021",
+    "texto": "In 2018, the Council of Europe’s Committee of Ministers issued draft recommendations to Member States on the impact of algorithmic systems on human rights (66). The Council of Europe is further examining the feasibility and potential elements of a legal framework for the development, design and appl"
+   }
+  ]
+ },
+ {
+  "n": "u002",
+  "question": "O AI Act europeu classifica sistemas de IA para triagem hospitalar como de alto risco?",
+  "motivo": "norma_ausente",
+  "score_max": 0.7194751,
+  "trechos": [
+   {
+    "score": 0.7195,
+    "documento": "regulatory_considerations_ai_health_WHO_2024",
+    "texto": "Table 2. AI systems risk classification (21) Significance of information provided by the AI system to the healthState of healthcare decision care situation or condition Drive clinical Inform clinical Treat or diagnose management management Critical IV III II Serious III II I Non-serious II I I Furth"
+   },
+   {
+    "score": 0.7166,
+    "documento": "resolucao_2454_CFM_2026",
+    "texto": "porém mitigável via supervisão humana ativa e controles de segurança. Enquadram-se aqui sistemas que apoiam decisões clínicas ou operacionais importantes, mas não as executam de forma autônoma, de modo que erros do algoritmo possam ser detectados e corrigidos pelo profissional antes de causarem dano"
+   }
+  ]
+ },
+ {
+  "n": "u083",
+  "question": "Como os tribunais brasileiros têm decidido sobre validade do consentimento em telemedicina?",
+  "motivo": "jurisprudencia",
+  "score_max": 0.7184329,
+  "trechos": [
+   {
+    "score": 0.7184,
+    "documento": "resolucao_2314_CFM_2022",
+    "texto": "Parágrafo único. Em todo atendimento por telemedicina deve ser assegurado consentimento explícito, no qual o paciente ou seu representante legal deve estar consciente de que suas informações pessoais podem ser compartilhadas e sobre o seu direito de negar permissão para isso, salvo em situação de em"
+   },
+   {
+    "score": 0.7168,
+    "documento": "resolucao_2314_CFM_2022",
+    "texto": "Art. 15. O paciente ou seu representante legal deverá autorizar o atendimento por telemedicina e a transmissão das suas imagens e dados por meio de (termo de concordância e autorização) consentimento, livre e esclarecido, enviado por meios eletrônicos ou de gravação de leitura do texto com a concord"
+   }
+  ]
+ },
+ {
+  "n": "u026",
+  "question": "Quantos processos por erro médico envolvendo inteligência artificial tramitaram no Brasil em 2025?",
+  "motivo": "estatistica",
+  "score_max": 0.71817863,
+  "trechos": [
+   {
+    "score": 0.7182,
+    "documento": "estrategia_brasileira_ia_MCTI_2021",
+    "texto": "ões burocráticas e operacionais. Indústrias com grandes linhas de montagem, por exemplo, podem utilizar a Inteligência Artificial para diminuir o número de erros nos processos de montagem de produtos. Isso acontece, por exemplo, na indústria automobilística: robôs são utilizados de maneira extensiva"
+   },
+   {
+    "score": 0.7165,
+    "documento": "ethics_governance_ai_health_WHO_2021",
+    "texto": "8.1 Liability for use of artificial intelligence in clinical care Use of AI to support or augment clinical decision-making raises several questions. Should doctors be held at fault if they follow the suggestion of an AI technology that results in a medical error or if they ignore a suggestion that w"
+   }
+  ]
+ },
+ {
+  "n": "u090",
+  "question": "Qual o telefone da ANPD para notificação de incidente de segurança?",
+  "motivo": "operacional",
+  "score_max": 0.7172737,
+  "trechos": [
+   {
+    "score": 0.7173,
+    "documento": "resolucao_19_ANPD_2024",
+    "texto": "Parte Designada; ou b) encaminhar a solicitação para a Parte Designada o quanto antes, a fim de viabilizar a resposta no prazo previsto no item 15.3. (Alterado com a RETIFICAÇÃO DE 18/08/2025) . 15.5. As Partes deverão informar, imediatamente, aos Agentes de Tratamento com os quais tenham realizado "
+   },
+   {
+    "score": 0.7054,
+    "documento": "resolucao_2_ANPD_2024",
+    "texto": "segurança que possa acarretar risco ou dano relevante aos titulares, nos termos do Regulamento de Comunicação de Incidente de Segurança , aprovado pela Resolução CD/ANPD nº 15, de 24 de abril de 2024; (Redação dada pela RESOLUÇÃO CD/ANPD Nº 15, DE 24 DE ABRIL DE 2024 ) III - no fornecimento de decla"
+   }
+  ]
+ },
+ {
+  "n": "u092",
+  "question": "Como emito a segunda via da carteira profissional do Conselho Regional de Medicina?",
+  "motivo": "operacional",
+  "score_max": 0.71488065,
+  "trechos": [
+   {
+    "score": 0.7149,
+    "documento": "lei_3268_BR_1957",
+    "texto": "Regional de um Estado passar a exercer, de modo permanente, atividade em outra região, assim se entendendo o exercício da profissão por mais de 90 (noventa) dias, na nova jurisdição, ficará obrigado a requerer inscrição secundária no quadro respectivo, ou para êle se transferir, sujeito, em ambos os"
+   },
+   {
+    "score": 0.714,
+    "documento": "decreto_44045_BR_1958",
+    "texto": "1957 , cuja obtenção pelos interessados exige o pagamento prévio dêsse documento e o pagamento prévio da primeira anuidade, nos têrmos do art. 7º, §§ 1º e 2º, do presente regulamento. Parágrafo único. Para todos os Conselhos Regionais de Medicina serão uniformes as normas de processar os pedidos de "
+   }
+  ]
+ },
+ {
+  "n": "u015",
+  "question": "Que direitos a CCPA da Califórnia dá ao consumidor diante de decisões automatizadas?",
+  "motivo": "norma_ausente",
+  "score_max": 0.7140399,
+  "trechos": [
+   {
+    "score": 0.714,
+    "documento": "estrategia_brasileira_ia_MCTI_2021",
+    "texto": "ão humana. Um dos pontos de discussão mais importantes, nesse sentido, é o de avaliar quais tipos de decisão podem ser delegadas a uma máquina e quais exigiriam, necessariamente, a intervenção humana. A LGPD endereça tal questão dispondo sobre o direito de indivíduos solicitarem a revisão das decisõ"
+   },
+   {
+    "score": 0.6863,
+    "documento": "lgpd_BR_2018",
+    "texto": "cluídas as decisões destinadas a definir o seu perfil pessoal, profissional, de consumo e de crédito ou os aspectos de sua personalidade. (Redação dada pela Medida Provisória nº 869, de 2018) Art. 20. O titular dos dados tem direito a solicitar a revisão de decisões tomadas unicamente com base em tr"
+   }
+  ]
+ },
+ {
+  "n": "u014",
+  "question": "Que requisitos o padrão DICOM define para a anonimização de imagens médicas?",
+  "motivo": "norma_ausente",
+  "score_max": 0.71357846,
+  "trechos": [
+   {
+    "score": 0.7136,
+    "documento": "de_identifying_government_datasets_NIST_2023",
+    "texto": "tadata regarding input datasets, the de-identifcation methods used, and the resulting decrease in data accuracy. Output fles can also be explicitly marked to indicate that they have been de-identifed. For example, de-identifcation profles that are part of the Digital Imaging and Communications in Me"
+   },
+   {
+    "score": 0.6766,
+    "documento": "de_identifying_government_datasets_NIST_2023",
+    "texto": "High-dimensional data [10] can be used to single out data records and, thus, consti- tute a unique pattern that could be identifying if the values exist in a secondary source to link against.32\n\n3. Determine the direct identifers in the dataset. An expert determines the elements in the dataset that "
+   }
+  ]
+ },
+ {
+  "n": "u007",
+  "question": "Que exigências a Anvisa faz para registrar um software como dispositivo médico no Brasil?",
+  "motivo": "norma_ausente",
+  "score_max": 0.7128851,
+  "trechos": [
+   {
+    "score": 0.7129,
+    "documento": "imdrf_samd_clinical_evaluation_2017",
+    "texto": "2.0 Background The IMDRF has acknowledged that software is an increasingly critical area of healthcare product development and has developed a series of documents concerning the definition, the categorization, and the application of quality systems principles of SaMD. In 2013, IMDRF’s SaMD Working G"
+   },
+   {
+    "score": 0.7127,
+    "documento": "imdrf_samd_risk_framework_2014",
+    "texto": "1.0 Introduction Software is playing an increasingly important and critical role in healthcare with many clinical and administrative purposes. Software used in healthcare operates in a complex socio-technical environment—consisting of software, hardware, networks, and people—and frequently forms par"
+   }
+  ]
+ },
+ {
+  "n": "u032",
+  "question": "Quantos comitês de ética em pesquisa estão registrados no Brasil atualmente?",
+  "motivo": "estatistica",
+  "score_max": 0.7120775,
+  "trechos": [
+   {
+    "score": 0.7121,
+    "documento": "regulamento_interno_CEP_2024",
+    "texto": "cada pesquisa. A Plataforma Brasil é o sistema oficial de pesquisas para análise e monitoramento do Sistema CEP/CONEP (Norma Operacional N o 01/13). Art. 23. Requisitos para submissão de um protocolo: o protocolo, para ser submetido à revisão ética, deverá ter seu pesquisador responsável cadastrado "
+   },
+   {
+    "score": 0.7017,
+    "documento": "regulamento_interno_CEP_2024",
+    "texto": "ltivo e educativo, fomentando a reflexão ética sobre a pesquisa científica. 5º Aplicam-se à atuação do CEP/UFMG as resoluções, as normas e procedimentos específicos de cada campo do conhecimento. Art. 2 o É vedada a realização de pesquisa envolvendo seres humanos no âmbito da UFMG sem a prévia aprec"
+   }
+  ]
+ },
+ {
+  "n": "u054",
+  "question": "Que empresas oferecem serviços de anonimização de dados de saúde no Brasil?",
+  "motivo": "comercial",
+  "score_max": 0.71094763,
+  "trechos": [
+   {
+    "score": 0.7109,
+    "documento": "european_health_data_space_EU_2025",
+    "texto": "e o organismo responsável pelo acesso aos dados de saúde deverá avaliar se essa justificação é válida. Os dados de saúde eletrónicos pessoais só deverão ser disponibilizados em formato pseudonimizado. Tendo em conta os fins específicos do tratamento, os dados de saúde eletrónicos pessoais deverão se"
+   },
+   {
+    "score": 0.7102,
+    "documento": "lgpd_BR_2018",
+    "texto": "acêutica e de assistência à saúde, desde que observado o § 5º deste artigo, incluídos os serviços auxiliares de diagnose e terapia, em benefício dos interesses dos titulares de dados, e para permitir: (Redação dada pela Lei nº 13.853, de 2019) Vigência I - a portabilidade de dados quando solicitada "
+   }
+  ]
+ },
+ {
+  "n": "u006",
+  "question": "Quais requisitos a ISO/IEC 27001 estabelece para o tratamento de dados de saúde?",
+  "motivo": "norma_ausente",
+  "score_max": 0.71042407,
+  "trechos": [
+   {
+    "score": 0.7104,
+    "documento": "european_health_data_space_EU_2025",
+    "texto": "ambiente de tratamento seguro deverá reduzir os riscos para a privacidade relacionados com essas atividades de tratamento e impedir que os dados de saúde eletrónicos sejam transmitidos diretamente aos utilizadores dos dados de saúde. O organismo responsável pelo acesso aos dados de saúde ou o detent"
+   },
+   {
+    "score": 0.7104,
+    "documento": "european_health_data_space_EU_2025",
+    "texto": "e tratamento de dados e dos pedidos de dados de saúde, envolve riscos maiores de acesso não autorizado a esses dados pessoais, assim como a possibilidade de ocorrência de incidentes de cibersegurança. Os dados de saúde eletrónicos pessoais são particularmente sensíveis, uma vez que contêm amiúde de "
+   }
+  ]
+ },
+ {
+  "n": "u095",
+  "question": "Como configuro a anonimização de dados no software da minha instituição?",
+  "motivo": "operacional",
+  "score_max": 0.7094475,
+  "trechos": [
+   {
+    "score": 0.7094,
+    "documento": "de_identifying_government_datasets_NIST_2023",
+    "texto": "identifers but generally cannot identify or modify quasi-identifers in a manner consistent with a privacy policy or risk analysis. Data masking tools were developed to allow software developers and testers access to datasets that contain realistic test data while providing minimal privacy protection"
+   },
+   {
+    "score": 0.7086,
+    "documento": "de_identifying_government_datasets_NIST_2023",
+    "texto": "identifcation. • Carefully consider the software used to implement de-identifcation to ensure that the algorithms used have been validated and that the software correctly implements those algorithms. • Consider the effciency, scalability, and repeatability properties of software tools, and evaluate "
+   }
+  ]
+ },
+ {
+  "n": "u081",
+  "question": "Que entendimento o Superior Tribunal de Justiça firmou sobre responsabilidade por erro de IA médica?",
+  "motivo": "jurisprudencia",
+  "score_max": 0.7091328,
+  "trechos": [
+   {
+    "score": 0.7091,
+    "documento": "ethics_governance_ai_health_WHO_2021",
+    "texto": "8.1 Liability for use of artificial intelligence in clinical care Use of AI to support or augment clinical decision-making raises several questions. Should doctors be held at fault if they follow the suggestion of an AI technology that results in a medical error or if they ignore a suggestion that w"
+   },
+   {
+    "score": 0.7038,
+    "documento": "resolucao_2454_CFM_2026",
+    "texto": "apoiadas por IA devem observar procedimentos justos e transparentes. Os profissionais e pacientes terão sempre oportunidade de questionar, revisar ou buscar segunda opinião em face de recomendações geradas por IA garantindo um processo decisório robusto e confiável. Em hipótese alguma uma decisão au"
+   }
+  ]
+ },
+ {
+  "n": "u067",
+  "question": "O laudo que a IA gerou no meu caso está correto?",
+  "motivo": "caso_individual",
+  "score_max": 0.70751905,
+  "trechos": [
+   {
+    "score": 0.7075,
+    "documento": "resolucao_2454_CFM_2026",
+    "texto": "ANEXO II\n\nI. Soluções de baixo risco: aplicações de IA cujo potencial de causar consequências negativas à saúde,\n\naos direitos fundamentais ou à segurança de pacientes e profissionais é mínimo ou inexistente. Caracterizam-se por não exercer influência decisória direta em diagnósticos ou tratamentos "
+   },
+   {
+    "score": 0.7072,
+    "documento": "resolucao_2454_CFM_2026",
+    "texto": "apoiadas por IA devem observar procedimentos justos e transparentes. Os profissionais e pacientes terão sempre oportunidade de questionar, revisar ou buscar segunda opinião em face de recomendações geradas por IA garantindo um processo decisório robusto e confiável. Em hipótese alguma uma decisão au"
+   }
+  ]
+ },
+ {
+  "n": "u065",
+  "question": "O meu artigo usou dados de pacientes sem termo de consentimento; posso publicá-lo assim mesmo?",
+  "motivo": "caso_individual",
+  "score_max": 0.7068999,
+  "trechos": [
+   {
+    "score": 0.7069,
+    "documento": "european_health_data_space_EU_2025",
+    "texto": "obretudo nos casos em que o resultado seja publicado numa revista científica ou noutra publicação científica. Os resultados ou produtos da utilização secundária devem conter unicamente dados anónimos. Os utilizadores de dados de saúde devem informar os organismos responsáveis pelo acesso aos dados d"
+   },
+   {
+    "score": 0.6967,
+    "documento": "regulamento_interno_CEP_2024",
+    "texto": "deverá estar expresso nos Termos de Consentimento e Assentimento (TCLE e TALE), especificando que haverá imagens que envolvam os participantes da pesquisa, bem como sua divulgação no meio científico. – Termo de Compromisso de Utilização de Dados (TCUD), se houver, no protocolo, coleta de dados insti"
+   }
+  ]
+ },
+ {
+  "n": "u020",
+  "question": "Como o regulador do Reino Unido trata software médico adaptativo depois da saída da União Europeia?",
+  "motivo": "norma_ausente",
+  "score_max": 0.70673853,
+  "trechos": [
+   {
+    "score": 0.7067,
+    "documento": "ai_ml_discussion_paper_FDA_2021",
+    "texto": "power of these AI/ML-based SaMD lies within the ability to continuously learn, where the adaptation or change to the algorithm is realized after the SaMD is distributed for use and has “learned” from real-world experience. Following distribution, these types of continuously learning and adaptive AI/"
+   },
+   {
+    "score": 0.7067,
+    "documento": "ai_ml_discussion_paper_FDA_2021",
+    "texto": "back (training) and improve its performance (adaptation) makes these technologies uniquely situated among software as a medical device (SaMD)1 and a rapidly expanding area of research and development. Our vision is that with appropriately tailored regulatory oversight, AI/ML-based SaMD will deliver "
+   }
+  ]
+ },
+ {
+  "n": "u004",
+  "question": "Que obrigações a norma ISO/IEC 42001 impõe a um sistema de gestão de inteligência artificial?",
+  "motivo": "norma_ausente",
+  "score_max": 0.70622826,
+  "trechos": [
+   {
+    "score": 0.7062,
+    "documento": "projeto_lei_2338_BR_2023",
+    "texto": "so de ferramentas ou processos de registro da operação do sistema, de modo a permitir a avaliação de sua acurácia e robustez; c) realização de testes para avaliação de níveis apropriados de segurança; d) adoção de medidas técnicas para viabilizar a aplicabilidade dos resultados dos sistemas de IA e "
+   },
+   {
+    "score": 0.6988,
+    "documento": "projeto_lei_2338_BR_2023",
+    "texto": "nha contribuído para os resultados apresentados pelos sistemas de IA; e) medidas para mitigar e prevenir vieses discriminatórios, quando o risco à discriminação decorrer da aplicação do sistema de IA; f) disponibilização de informações adequadas que permitam, respeitado o sigilo industrial e comerci"
+   }
+  ]
+ },
+ {
+  "n": "u066",
+  "question": "Quanto tempo vai demorar o processo ético-profissional que abriram contra mim?",
+  "motivo": "caso_individual",
+  "score_max": 0.7051326,
+  "trechos": [
+   {
+    "score": 0.7051,
+    "documento": "decreto_44045_BR_1958",
+    "texto": "ética profissional terão, além do relator, um revisor, também designado pelo Presidente e os pareceres de ambos, sem transitarem em momento algum, pela Secretaria, só serão dados a conhecer na sessão Plenária de julgamento. (Revogado pelo Decreto nº 10.911, de 2021) Vigência Parágrafo único. Quando "
+   },
+   {
+    "score": 0.7034,
+    "documento": "decreto_44045_BR_1958",
+    "texto": "10. Os processos relativos às infrações dos princípios da ética profissional deverão revestir a forma de \"autos judiciais\", sendo exarados em ordem cronológica os seus pareceres e despachos. Art . 11. As queixas ou denúncias apresentadas aos Conselhos regionais de Medicina, decalcadas em infração ét"
+   }
+  ]
+ },
+ {
+  "n": "u046",
+  "question": "Qual o preço de licenciamento de um sistema de inteligência artificial para laudos radiológicos?",
+  "motivo": "comercial",
+  "score_max": 0.7044761,
+  "trechos": [
+   {
+    "score": 0.7045,
+    "documento": "multimodal_models_guidance_WHO_2024",
+    "texto": "3 Risks to health systems and society and ethical concerns about use of LMMs 21 Accessibility and affordability Several factors can undermine equitable access to LMMs that could provide benefits to providers and patients. One is the digital divide, which limits use of digital tools to certain countr"
+   },
+   {
+    "score": 0.6801,
+    "documento": "multimodal_models_guidance_WHO_2024",
+    "texto": "3 Risks to health systems and society and ethical concerns about use of LMMs 25 As the cost of training, deploying and maintaining LMMs continues to rise, there is a risk of “industrial capture” by a few companies of what is potentially a building block of many products and services (including in he"
+   }
+  ]
+ },
+ {
+  "n": "u034",
+  "question": "Quantos incidentes de vazamento de dados de saúde foram notificados à ANPD?",
+  "motivo": "estatistica",
+  "score_max": 0.7041743,
+  "trechos": [
+   {
+    "score": 0.7042,
+    "documento": "resolucao_19_ANPD_2024",
+    "texto": "Parte Designada; ou b) encaminhar a solicitação para a Parte Designada o quanto antes, a fim de viabilizar a resposta no prazo previsto no item 15.3. (Alterado com a RETIFICAÇÃO DE 18/08/2025) . 15.5. As Partes deverão informar, imediatamente, aos Agentes de Tratamento com os quais tenham realizado "
+   },
+   {
+    "score": 0.6952,
+    "documento": "resolucao_19_ANPD_2024",
+    "texto": "o disposto na Legislação Nacional. 16.2. O Importador deve manter o registro de incidentes de segurança nos termos da Legislação Nacional. CLÁUSULA 17. Responsabilidade e ressarcimento de danos 17.1. A Parte que, em razão do exercício da atividade de tratamento de Dados Pessoais, causar dano patrimo"
+   }
+  ]
+ },
+ {
+  "n": "u039",
+  "question": "Quantos profissionais de saúde foram punidos por violação de sigilo em prontuário eletrônico?",
+  "motivo": "estatistica",
+  "score_max": 0.7033249,
+  "trechos": [
+   {
+    "score": 0.7033,
+    "documento": "codigo_etica_medica_CFM_2019",
+    "texto": "verá solicitar que seja observado o sigilo profissional. Art. 90. Deixar de fornecer cópia do prontuário médico de seu paciente quando de sua requisição pelos Conselhos Regionais de Medicina. Art. 91. Deixar de atestar atos executados no exercício profissional, quando solicitado pelo paciente ou por"
+   },
+   {
+    "score": 0.6878,
+    "documento": "codigo_etica_medica_CFM_2019",
+    "texto": "Art. 78. Deixar de orientar seus auxiliares e alunos a respeitar o sigilo profissional e zelar para que seja por eles mantido. Art. 79. Deixar de guardar o sigilo profissional na cobrança de honorários por meio judicial ou extrajudicial."
+   }
+  ]
+ },
+ {
+  "n": "u061",
+  "question": "Devo aceitar o contrato de fornecimento de IA que o meu hospital me apresentou?",
+  "motivo": "caso_individual",
+  "score_max": 0.7016288,
+  "trechos": [
+   {
+    "score": 0.7016,
+    "documento": "resolucao_2454_CFM_2026",
+    "texto": "IA interoperáveis, que possam ser integradas a diferentes sistemas de informação em saúde e eventualmente compartilhadas com outras instituições, evitando a duplicação de esforços e aumentando a eficiência coletiva. Deve-se buscar o uso de padrões abertos de integração (como APIs abertas e protocolo"
+   },
+   {
+    "score": 0.7004,
+    "documento": "resolucao_2454_CFM_2026",
+    "texto": "de suas atividades, podendo enquadrar-se em diferentes perfis conforme sua função e área de atuação dentro da instituição;\n\nVIII. Usuário externo: a pessoa externa à instituição de saúde que interaja diretamente com o sistema\n\nde IA incluindo pacientes, familiares ou responsáveis legais, alunos de m"
+   }
+  ]
+ },
+ {
+  "n": "u033",
+  "question": "Qual o volume mensal de dados de saúde trocados pela Rede Nacional de Dados em Saúde?",
+  "motivo": "estatistica",
+  "score_max": 0.7012084,
+  "trechos": [
+   {
+    "score": 0.7012,
+    "documento": "rnds_MS_",
+    "texto": "Info Rede Nacional de Dados em Saúde A Rede Nacional de Dados em Saúde (RNDS) é a plataforma oficial de interoperabilidade do Ministério da Saúde, para conectar sistemas de saúde em todo o Brasil. A RNDS estabelece a infraestrutura nacional para o compartilhamento padronizado de dados de saúde.. A R"
+   },
+   {
+    "score": 0.6914,
+    "documento": "rnds_MS_",
+    "texto": "xame laboratorial de Covid-19 em um sistema privado, com os resultados integrados na RNDS, possibilitando acesso por profissionais de diferentes locais e por ele mesmo pelo aplicativo Meu SUS Digital. Essa jornada mostra como a RNDS conecta os sistemas, para que o histórico de saúde do cidadão acomp"
+   }
+  ]
+ },
+ {
+  "n": "u088",
+  "question": "Como o CADE analisou a concentração no mercado de inteligência artificial em saúde?",
+  "motivo": "jurisprudencia",
+  "score_max": 0.7001797,
+  "trechos": [
+   {
+    "score": 0.7002,
+    "documento": "ethics_governance_ai_health_WHO_2021",
+    "texto": "An additional concern is the growing power that some companies may exert over the development, deployment and use of AI for health (including drug development) and the extent to which corporations exert power and influence over individuals and governments and over both AI technology and the health-c"
+   },
+   {
+    "score": 0.6963,
+    "documento": "ethics_governance_ai_health_WHO_2021",
+    "texto": "6. ETHICAL CHALLENGES TO USE OF ARTIFICIAL INTELLIGENCE FOR HEALTH CARE\n\ndecision-making in the hands of a few individuals and companies, which can act as gatekeepers of certain products and services (221) and reduce competition, which could eventually translate into higher prices for goods and serv"
+   }
+  ]
+ },
+ {
+  "n": "u031",
+  "question": "Qual o percentual de médicos brasileiros que já usou IA generativa na prática clínica?",
+  "motivo": "estatistica",
+  "score_max": 0.6993476,
+  "trechos": [
+   {
+    "score": 0.6993,
+    "documento": "plano_brasileiro_ia_BR_2025",
+    "texto": "GOOGLE FOR STARTUPS. Startups & inteligência artificial generativa. Destravando o seu potencial no Brasil. Disponível em: https://services.google.com/fh/files/events/relatorio_startups_genai.pdf\n\nLAMB, C.L. Ética em IA e IA ética: prolegômenos e estudo de casos significativos. Revista USP, n. 141, p"
+   },
+   {
+    "score": 0.6926,
+    "documento": "resolucao_2454_CFM_2026",
+    "texto": "destinado a gerar ou modificar significativamente conteúdo de variados tipos – incluindo texto, imagens, áudio, vídeo ou código de software – a partir de prompts (entradas) dados pelo usuário, utilizando modelos de aprendizagem treinados em grandes volumes de dados. Exemplos incluem modelos de lingu"
+   }
+  ]
+ },
+ {
+  "n": "u100",
+  "question": "Como solicito a exclusão dos meus dados de saúde da base do meu plano?",
+  "motivo": "operacional",
+  "score_max": 0.6978631,
+  "trechos": [
+   {
+    "score": 0.6979,
+    "documento": "european_health_data_space_EU_2025",
+    "texto": "s de saúde disporem de conjuntos de dados exaustivos e representativos com a necessidade de autonomia das pessoas singulares em relação aos dados de saúde eletrónicos pessoais que lhes pertençam e que sejam considerados particularmente sensíveis, as pessoas singulares deverão ter poder para tomar a "
+   },
+   {
+    "score": 0.6962,
+    "documento": "european_health_data_space_EU_2025",
+    "texto": "aso os dados de saúde eletrónicos pessoais que lhes digam respeito possam ser identificados num conjunto de dados, os dados de saúde eletrónicos que digam respeito a essas pessoas singulares não podem ser disponibilizados nem tratados de outra forma, em conformidade com as autorizações de tratamento"
+   }
+  ]
+ },
+ {
+  "n": "u097",
+  "question": "Qual o e-mail do encarregado de proteção de dados do meu hospital?",
+  "motivo": "operacional",
+  "score_max": 0.697821,
+  "trechos": [
+   {
+    "score": 0.6978,
+    "documento": "gdpr_regulation_EU_2016",
+    "texto": "L 119/56 EN Official Journal of the European Union 4.5.2016 2. The controller and processor shall support the data protection officer in performing the tasks referred to in Article 39 by providing resources necessary to carry out those tasks and access to personal data and processing operations, and"
+   },
+   {
+    "score": 0.6974,
+    "documento": "gdpr_regulation_EU_2016",
+    "texto": "he controller or the processor shall publish the contact details of the data protection officer and communicate them to the supervisory authority. Article 38 Position of the data protection officer 1. The controller and the processor shall ensure that the data protection officer is involved, properl"
+   }
+  ]
+ },
+ {
+  "n": "u021",
+  "question": "Como a diretiva NIS2 da União Europeia trata incidentes de segurança em serviços de saúde?",
+  "motivo": "norma_ausente",
+  "score_max": 0.69634795,
+  "trechos": [
+   {
+    "score": 0.6963,
+    "documento": "european_health_data_space_EU_2025",
+    "texto": "tiva (UE) 2022/2555, imediatamente após o fabricante ter determinado uma relação causal entre o sistema de RSE e o incidente grave ou a probabilidade razoável dessa relação e, em qualquer caso, o mais tardar três dias após o fabricante ter conhecimento do incidente grave que envolveu o sistema de RS"
+   },
+   {
+    "score": 0.6945,
+    "documento": "european_health_data_space_EU_2025",
+    "texto": "entem um risco, incluindo riscos relacionados com a interoperabilidade, a segurança e a proteção dos doentes, de qualquer medida corretiva e de qualquer recolha ou retirada desses sistemas de RSE. 10. No caso de incidentes que ponham em risco a segurança dos doentes ou da informação, as autoridades "
+   }
+  ]
+ },
+ {
+  "n": "u027",
+  "question": "Qual é a taxa de adoção de prontuário eletrônico nos hospitais públicos brasileiros?",
+  "motivo": "estatistica",
+  "score_max": 0.69607496,
+  "trechos": [
+   {
+    "score": 0.6961,
+    "documento": "resolucao_1821_CFM_2007",
+    "texto": "mentos próprios, que fazem parte dos prontuários dos pacientes. Além disso, os avanços da tecnologia da informação e de telecomunicações oferecem novos métodos de armazenamento e transmissão de dados. O disposto no Manual de Certificação para Sistemas de Registro Eletrônico em Saúde, elaborado, conf"
+   },
+   {
+    "score": 0.6832,
+    "documento": "resolucao_1821_CFM_2007",
+    "texto": ": RESOLUÇÃO CFM Nº 1.821/2007\n \n (Publicada no D.O.U. de 23 nov. 2007, Seção I, pg.252)\n \n Modificada pela Resolução CFM nº. 2.218/2018\n \n *Ver também Lei nº 13.787/2018\n \n Aprova as normas técnicas concernentes à digitalização e\n\n uso dos sistemas informatizados para a guarda e\n\n manuseio dos docum"
+   }
+  ]
+ },
+ {
+  "n": "u052",
+  "question": "Qual a remuneração média de um encarregado de proteção de dados em instituição de saúde?",
+  "motivo": "comercial",
+  "score_max": 0.692461,
+  "trechos": [
+   {
+    "score": 0.6925,
+    "documento": "european_health_data_space_EU_2025",
+    "texto": "dores de dados. Os organismos responsáveis pelo acesso aos dados de saúde deverão poder cobrir os custos das suas operações através de taxas fixadas de forma proporcionada, justificada e transparente. Tal poderá implicar taxas mais elevadas para alguns utilizadores de dados de saúde, se a gestão dos"
+   },
+   {
+    "score": 0.6886,
+    "documento": "gdpr_regulation_EU_2016",
+    "texto": "L 119/56 EN Official Journal of the European Union 4.5.2016 2. The controller and processor shall support the data protection officer in performing the tasks referred to in Article 39 by providing resources necessary to carry out those tasks and access to personal data and processing operations, and"
+   }
+  ]
+ },
+ {
+  "n": "u042",
+  "question": "Qual a proporção de estudos clínicos com IA que relataram resultados negativos?",
+  "motivo": "estatistica",
+  "score_max": 0.6922177,
+  "trechos": [
+   {
+    "score": 0.6922,
+    "documento": "ai_device_software_guidance_FDA_2025",
+    "texto": "Primary Endpoints The co-primary endpoints regarding this study were to have the lower limits of their 95% two2132 sided confidence intervals be: • Sensitivity: 75% or higher • PPV: 50% or higher Study Results The model achieved a sensitivity of 84%, a specificity of 83%, a PPV of 55%, and a negativ"
+   },
+   {
+    "score": 0.69,
+    "documento": "regulatory_considerations_ai_health_WHO_2024",
+    "texto": "a clinically meaningful primary endpoint (morbidity, mortality) but, in certain situations, event rate or time lag between the trial and the endpoint may result in a more feasible surrogate endpoint. Reporting guidelines backed by the widely accepted EQUATOR network are now available for protocols a"
+   }
+  ]
+ },
+ {
+  "n": "u005",
+  "question": "O que a ISO 13485 exige da documentação de projeto de um dispositivo médico?",
+  "motivo": "norma_ausente",
+  "score_max": 0.69066083,
+  "trechos": [
+   {
+    "score": 0.6907,
+    "documento": "ai_device_software_guidance_FDA_2025",
+    "texto": "Documentation When considering the recommendations in Sections V through XIII of this guidance, it may be helpful to consider if the documentation and information that should be included in a marketing submission, under “What sponsors should include in a submission,” could exist in the Quality Syste"
+   },
+   {
+    "score": 0.6845,
+    "documento": "ai_device_software_guidance_FDA_2025",
+    "texto": "lude 307 information about what has already been done to develop and validate the device, as well as what 308 a sponsor plans to do in the future to ensure a device’s ongoing safety and effectiveness. Some 15 See International Medical Device Regulators Forum Technical Document N67 titled “Machine Le"
+   }
+  ]
+ },
+ {
+  "n": "u001",
+  "question": "Qual é a multa máxima prevista pelo AI Act da União Europeia para práticas de IA proibidas?",
+  "motivo": "norma_ausente",
+  "score_max": 0.6896317,
+  "trechos": [
+   {
+    "score": 0.6896,
+    "documento": "european_health_data_space_EU_2025",
+    "texto": "s do presente regulamento, no âmbito da mesma autorização de tratamento de dados de saúde ou do mesmo pedido de dados de saúde ou de autorizações ou pedidos ligados entre si, o montante total da coima não pode exceder o montante previsto para a infração mais grave. 4. Em conformidade com o n.o 2 do "
+   },
+   {
+    "score": 0.6812,
+    "documento": "european_health_data_space_EU_2025",
+    "texto": "ento, deverão ser impostas sanções, incluindo coimas, por violação do presente regulamento, para além, ou em substituição, das medidas adequadas que venham a ser impostas pelos organismos responsáveis pelo acesso aos dados de saúde, nos termos do presente regulamento. A imposição de sanções, incluin"
+   }
+  ]
+ },
+ {
+  "n": "u055",
+  "question": "Qual o retorno financeiro esperado da adoção de inteligência artificial num pronto-socorro?",
+  "motivo": "comercial",
+  "score_max": 0.68866533,
+  "trechos": [
+   {
+    "score": 0.6887,
+    "documento": "estrategia_brasileira_ia_MCTI_2021",
+    "texto": "ões burocráticas e operacionais. Indústrias com grandes linhas de montagem, por exemplo, podem utilizar a Inteligência Artificial para diminuir o número de erros nos processos de montagem de produtos. Isso acontece, por exemplo, na indústria automobilística: robôs são utilizados de maneira extensiva"
+   },
+   {
+    "score": 0.6695,
+    "documento": "ethics_governance_ai_health_WHO_2021",
+    "texto": "Use of AI for resource allocation and prioritization AI is being considered for use to assist in decision-making about prioritization or allocation of scarce resources. Prognostic scoring systems have long been available in critical care units. One of the best-known, Sequential Organ Failure Assessm"
+   }
+  ]
+ },
+ {
+  "n": "u062",
+  "question": "O meu CRM abriu sindicância contra mim por uso de inteligência artificial; o que vai acontecer?",
+  "motivo": "caso_individual",
+  "score_max": 0.6871157,
+  "trechos": [
+   {
+    "score": 0.6871,
+    "documento": "resolucao_2454_CFM_2026",
+    "texto": "Art. 8° O descumprimento dos deveres previstos nesta resolução sujeita o médico às sanções éticas cabíveis, sem prejuízo das responsabilidades civil e penal aplicáveis.\n\nParágrafo único. A adoção e uso de modelos, sistemas e aplicações de Inteligência Artificial na medicina devem sempre se orientar "
+   },
+   {
+    "score": 0.6846,
+    "documento": "projeto_lei_2338_BR_2023",
+    "texto": "- 27 § 2º Antes ou durante o processo administrativo de que trata o § 1º deste artigo, poderá a autoridade competente adotar medidas preventivas, incluída multa cominatória, observado o limite total a que se refere o inciso II do caput, quando houver indício ou fundado receio de que o agente de IA: "
+   }
+  ]
+ },
+ {
+  "n": "u053",
+  "question": "Quanto uma instituição gasta por ano com o armazenamento de prontuários digitalizados?",
+  "motivo": "comercial",
+  "score_max": 0.6861127,
+  "trechos": [
+   {
+    "score": 0.6861,
+    "documento": "resolucao_1821_CFM_2007",
+    "texto": "Art. 2º Autorizar a digitalização dos prontuários dos pacientes, desde que o modo de armazenamento dos documentos digitalizados obedeça a norma específica de digitalização contida nos parágrafos abaixo e, após análise obrigatória da Comissão de Revisão de Prontuários, as normas da Comissão Permanent"
+   },
+   {
+    "score": 0.681,
+    "documento": "resolucao_1821_CFM_2007",
+    "texto": "nselho Nacional de Educação, dispõe sobre o arquivamento eletrônico em CDs ou outros meios, dos documentos escolares das instituições de ensino (Ministério da Educação) que em seu art. 1º. dispõe que: “O arquivamento de documentos escolares, das instituições de ensino, observará as seguintes modalid"
+   }
+  ]
+ },
+ {
+  "n": "u016",
+  "question": "Como a CLT trata o monitoramento de trabalhadores por sistemas algorítmicos?",
+  "motivo": "norma_ausente",
+  "score_max": 0.6842704,
+  "trechos": [
+   {
+    "score": 0.6843,
+    "documento": "projeto_lei_2338_BR_2023",
+    "texto": "ão e à revisão humanas de decisão por sistemas de IA que gerem efeitos jurídicos relevantes ou que impactem significativamente os interesses do afetado, a ser promovida pelo agente público competente; III – publicização em veículos de fácil acesso, preferencialmente em seus sítios eletrônicos, das a"
+   },
+   {
+    "score": 0.6811,
+    "documento": "estrategia_brasileira_ia_MCTI_2021",
+    "texto": "ão humana. Um dos pontos de discussão mais importantes, nesse sentido, é o de avaliar quais tipos de decisão podem ser delegadas a uma máquina e quais exigiriam, necessariamente, a intervenção humana. A LGPD endereça tal questão dispondo sobre o direito de indivíduos solicitarem a revisão das decisõ"
+   }
+  ]
+ },
+ {
+  "n": "u040",
+  "question": "Qual o percentual de hospitais brasileiros com certificação da SBIS?",
+  "motivo": "estatistica",
+  "score_max": 0.6783688,
+  "trechos": [
+   {
+    "score": 0.6784,
+    "documento": "certificacao_SBIS_",
+    "texto": "Introdução O Processo de Certificação de Aplicações de Inteligência Artificial em Saúde visa, por meio de uma lista abrangente de requisitos, avaliar e atestar aspectos de qualidade de aplicações que utilizam funcionalidades baseadas em Inteligência Artificial (IA) com potencial impacto clínico, ass"
+   },
+   {
+    "score": 0.6633,
+    "documento": "certificacao_SBIS_",
+    "texto": "ia e ética Oferecer um selo que ajude empresas e instituições a demonstrarem conformidade com as boas práticas para desenvolvimento de soluções de IA para a saúde, promovendo harmonização regulatória. • Estimular a inovação responsável Criar um ambiente em que fornecedores possam inovar com IA saben"
+   }
+  ]
+ },
+ {
+  "n": "u049",
+  "question": "Quanto custa obter a certificação da SBIS para um sistema de prontuário eletrônico?",
+  "motivo": "comercial",
+  "score_max": 0.6763073,
+  "trechos": [
+   {
+    "score": 0.6763,
+    "documento": "certificacao_SBIS_",
+    "texto": "Introdução O Processo de Certificação de Aplicações de Inteligência Artificial em Saúde visa, por meio de uma lista abrangente de requisitos, avaliar e atestar aspectos de qualidade de aplicações que utilizam funcionalidades baseadas em Inteligência Artificial (IA) com potencial impacto clínico, ass"
+   },
+   {
+    "score": 0.6662,
+    "documento": "resolucao_1821_CFM_2007",
+    "texto": "mentos próprios, que fazem parte dos prontuários dos pacientes. Além disso, os avanços da tecnologia da informação e de telecomunicações oferecem novos métodos de armazenamento e transmissão de dados. O disposto no Manual de Certificação para Sistemas de Registro Eletrônico em Saúde, elaborado, conf"
+   }
+  ]
+ },
+ {
+  "n": "u013",
+  "question": "Como o padrão HL7 FHIR representa uma prescrição eletrônica?",
+  "motivo": "norma_ausente",
+  "score_max": 0.67226666,
+  "trechos": [
+   {
+    "score": 0.6723,
+    "documento": "european_health_data_space_EU_2025",
+    "texto": "as receitas e dispensas eletrónicas, os estudos de imagiologia médica e os relatórios de imagiologia conexos, os resultados de exames médicos e os relatórios de alta, sujeitos a períodos de transição. Quando os dados de saúde eletrónicos pessoais são disponibilizados a um prestador de cuidados de sa"
+   },
+   {
+    "score": 0.6509,
+    "documento": "european_health_data_space_EU_2025",
+    "texto": "ação de cuidados. 11. Estado funcional. 12. Medicamentos atuais e medicamentos anteriores pertinentes. 13. Observações sobre o historial social relacionadas com a saúde. 14. Historial de gravidez. 15. Dados facultados pelo doente. 16. Resultados das observações relativas ao estado de saúde. 17. Plan"
+   }
+  ]
+ },
+ {
+  "n": "u048",
+  "question": "Qual o custo de uma auditoria de conformidade com a LGPD em um hospital de médio porte?",
+  "motivo": "comercial",
+  "score_max": 0.66192424,
+  "trechos": [
+   {
+    "score": 0.6619,
+    "documento": "european_health_data_space_EU_2025",
+    "texto": "associada aos seus custos não deverá cobrir os custos da recolha inicial dos dados. Sempre que seja necessária uma aprovação ética para a emissão de uma autorização de tratamento de dados, a avaliação relativa à aprovação ética deverá basear-se nos seus próprios méritos. (70) Os organismos responsáv"
+   },
+   {
+    "score": 0.656,
+    "documento": "gdpr_regulation_EU_2016",
+    "texto": "e scale. The processing of personal data should not be considered to be on a large scale if the processing concerns personal data from patients or clients by an individual physician, other health care professional or lawyer. In such cases, a data protection impact assessment should not be mandatory."
+   }
+  ]
+ },
+ {
+  "n": "u084",
+  "question": "Qual a jurisprudência do Tribunal Superior do Trabalho sobre monitoramento algorítmico de trabalhadores?",
+  "motivo": "jurisprudencia",
+  "score_max": 0.64884853,
+  "trechos": [
+   {
+    "score": 0.6488,
+    "documento": "estrategia_brasileira_ia_MCTI_2021",
+    "texto": "ão humana. Um dos pontos de discussão mais importantes, nesse sentido, é o de avaliar quais tipos de decisão podem ser delegadas a uma máquina e quais exigiriam, necessariamente, a intervenção humana. A LGPD endereça tal questão dispondo sobre o direito de indivíduos solicitarem a revisão das decisõ"
+   },
+   {
+    "score": 0.6415,
+    "documento": "estrategia_brasileira_ia_MCTI_2021",
+    "texto": "utilizadas no contexto de segurança pública devem respeitar os direitos de privacidade e de proteção de dados pessoais, em conformidade com os direitos constitucionais à intimidade, à privacidade e à proteção à imagem do titular. Assim, cabe mencionar que o uso dessas tecnologias no contexto da segu"
+   }
+  ]
+ },
+ {
+  "n": "u091",
+  "question": "Como recupero a minha senha de acesso à Plataforma Brasil?",
+  "motivo": "operacional",
+  "score_max": 0.6385108,
+  "trechos": [
+   {
+    "score": 0.6385,
+    "documento": "regulamento_interno_CEP_2024",
+    "texto": "cada pesquisa. A Plataforma Brasil é o sistema oficial de pesquisas para análise e monitoramento do Sistema CEP/CONEP (Norma Operacional N o 01/13). Art. 23. Requisitos para submissão de um protocolo: o protocolo, para ser submetido à revisão ética, deverá ter seu pesquisador responsável cadastrado "
+   },
+   {
+    "score": 0.63,
+    "documento": "resolucao_UFMG_01_2022",
+    "texto": "Art. 10. As pesquisas serão acompanhadas em seus diferentes estágios,\n\ndesde sua submissão até a aprovação final por um dos CEPs-UFMG e, quando necessário, pela CONEP, por meio da Plataforma Brasil, que é a base nacional e unificada de registros de pesquisas envolvendo seres humanos para todo o sist"
+   }
+  ]
+ }
+]

@@ -29,6 +29,7 @@ from embedding_text import (
     build_embedding_text,
     bge_cache_filename,
     corpus_embedding_fingerprint,
+    embedding_text_hash,
 )
 
 corpus = []
@@ -101,6 +102,7 @@ with open(nome_qwen, "w", encoding="utf-8") as saida:
             "embedding_text_profile": EMBEDDING_TEXT_PROFILE,
             # fingerprint POR CHUNK, como o script local espera
             "embedding_text_fingerprint": corpus_embedding_fingerprint([registro]),
+            "embedding_text_hash": embedding_text_hash(registro),
             "document": registro,
             "vector": [float(x) for x in vetor],
         }, ensure_ascii=False) + "\n")

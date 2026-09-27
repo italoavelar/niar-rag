@@ -66,7 +66,11 @@ from embedding_text import (EMBEDDING_TEXT_PROFILE, build_embedding_text,  # noq
 
 # PC1200 e a variante que separa a ESTRATEGIA parent-child da UNIDADE DE SAIDA:
 # filho 400 / pai 1200, onde os pais sao exatamente os trechos do T1200.
-CONDICOES = ("T3500", "T1200", "T400", "PC", "PC1200")
+# T1200s0/s120/s400 variam a SOBREPOSIÇÃO com o tamanho fixo em 1200. O caso de
+# 240 (20%) é o próprio T1200 — a configuração de produção, que veio junto com o
+# 1.200 e nunca foi medida.
+CONDICOES = ("T3500", "T1200", "T400", "PC", "PC1200",
+             "T1200s0", "T1200s120", "T1200s400")
 MODELO = "gemini-embedding-001"
 DIM = 3072
 TITULO = "Base de Conhecimento NIAR Saúde"   # igual ao de produção

@@ -1,0 +1,650 @@
+[
+ {
+  "n": "f001",
+  "question": "Em que hipótese a Constituição admite quebra do sigilo das comunicações telefônicas?",
+  "answer": "O sigilo da correspondência e das comunicações telegráficas, de dados e telefônicas é inviolável, salvo, no último caso, por ordem judicial, nas hipóteses e na forma que a lei estabelecer para fins de investigação criminal ou instrução processual penal.",
+  "evidencia": [
+   "é inviolável o sigilo da correspondência e das comunicações telegráficas, de dados e das comunicações telefônicas, salvo, no último caso, por ordem judicial, nas hipóteses"
+  ],
+  "n_evidencias": 1,
+  "documento": "cf_BR_1988",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "easy",
+  "theme": "Constituição Federal do Brasil",
+  "source_lang": "pt",
+  "origem": "factuais_geradas"
+ },
+ {
+  "n": "f002",
+  "question": "A iniciativa privada pode atuar na assistência à saúde e em que condições participa do SUS?",
+  "answer": "A assistência à saúde é livre à iniciativa privada. As instituições privadas podem participar de forma complementar do Sistema Único de Saúde, segundo as diretrizes deste, mediante contrato de direito público ou convênio, com preferência para entidades filantrópicas e sem fins lucrativos.",
+  "evidencia": [
+   "A assistência à saúde é livre à iniciativa privada. § 1º - As instituições privadas poderão participar de forma complementar do sistema único de saúde, segundo diretrizes"
+  ],
+  "n_evidencias": 1,
+  "documento": "cf_BR_1988",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "medium",
+  "theme": "Constituição Federal do Brasil",
+  "source_lang": "pt",
+  "origem": "factuais_geradas"
+ },
+ {
+  "n": "f003",
+  "question": "Que natureza a Constituição atribui às ações e serviços de saúde?",
+  "answer": "São de relevância pública as ações e serviços de saúde, cabendo ao poder público dispor, nos termos da lei, sobre sua regulamentação, fiscalização e controle.",
+  "evidencia": [
+   "São de relevância pública as ações e serviços de saúde, cabendo ao Poder Público dispor, nos termos da lei, sobre sua regulamentação, fiscalização e controle, devendo sua"
+  ],
+  "n_evidencias": 1,
+  "documento": "cf_BR_1988",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "easy",
+  "theme": "Constituição Federal do Brasil",
+  "source_lang": "pt",
+  "origem": "factuais_geradas"
+ },
+ {
+  "n": "f004",
+  "question": "Como se calculam os proventos do servidor aposentado por invalidez permanente?",
+  "answer": "Os proventos são proporcionais ao tempo de contribuição, exceto se a invalidez decorrer de acidente em serviço, moléstia profissional ou doença grave, contagiosa ou incurável especificada em lei.",
+  "evidencia": [
+   "por invalidez permanente, sendo os proventos proporcionais ao tempo de contribuição, exceto se decorrente de acidente em serviço, moléstia profissional ou doença grave, contagiosa"
+  ],
+  "n_evidencias": 1,
+  "documento": "cf_BR_1988",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "medium",
+  "theme": "Constituição Federal do Brasil",
+  "source_lang": "pt",
+  "origem": "factuais_geradas"
+ },
+ {
+  "n": "f005",
+  "question": "Que atendimento de saúde o ECA assegura à criança e ao adolescente?",
+  "answer": "É assegurado atendimento integral à saúde da criança e do adolescente por intermédio do Sistema Único de Saúde, garantido o acesso universal e igualitário às ações e serviços para promoção, proteção e recuperação da saúde.",
+  "evidencia": [
+   "É assegurado atendimento integral à saúde da criança e do adolescente, por intermédio do Sistema Único de Saúde, garantido o acesso universal e igualitário às ações e serviços"
+  ],
+  "n_evidencias": 1,
+  "documento": "eca_BR_1990",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "easy",
+  "theme": "Legislação sobre crianças e adolescentes",
+  "source_lang": "pt",
+  "origem": "factuais_geradas"
+ },
+ {
+  "n": "f006",
+  "question": "Que direitos de liberdade o ECA reconhece à criança e ao adolescente?",
+  "answer": "Entre os aspectos do direito à liberdade, o ECA inclui buscar refúgio, auxílio e orientação.",
+  "evidencia": [
+   "buscar refúgio, auxílio e orientação. Art. 17. O direito ao respeito consiste na inviolabilidade da integridade física, psíquica e moral da criança e do adolescente, abrangendo"
+  ],
+  "n_evidencias": 1,
+  "documento": "eca_BR_1990",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "medium",
+  "theme": "Legislação sobre crianças e adolescentes",
+  "source_lang": "pt",
+  "origem": "factuais_geradas"
+ },
+ {
+  "n": "f007",
+  "question": "Qual a pena para quem revela, sem justa causa, segredo obtido em razão da profissão?",
+  "answer": "Revelar, sem justa causa, segredo de que se tem ciência em razão de função, ministério, ofício ou profissão, quando a revelação possa produzir dano a outrem, é punido com detenção de três meses a um ano, ou multa.",
+  "evidencia": [
+   "Violação do segredo profissional Art. 154 - Revelar alguém, sem justa causa, segredo, de que tem ciência em razão de função, ministério, ofício ou profissão, e cuja revelação"
+  ],
+  "n_evidencias": 1,
+  "documento": "cp_BR_1940",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "easy",
+  "theme": "Legislação sobre Direito Penal",
+  "source_lang": "pt",
+  "origem": "factuais_geradas"
+ },
+ {
+  "n": "f008",
+  "question": "Qual a pena quando do induzimento ou instigação ao suicídio resulta lesão corporal grave?",
+  "answer": "Quando da instigação, induzimento ou auxílio ao suicídio, ou da tentativa, resulta lesão corporal de natureza grave ou gravíssima, a pena é de reclusão de 1 a 3 anos.",
+  "evidencia": [
+   "resulta lesão corporal de natureza grave ou gravíssima, nos termos dos §§ 1º e 2º do art. 129 deste Código: (Incluído pela Lei nº 13.968, de 2019) Pena - reclusão, de 1 (um"
+  ],
+  "n_evidencias": 1,
+  "documento": "cp_BR_1940",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "medium",
+  "theme": "Legislação sobre Direito Penal",
+  "source_lang": "pt",
+  "origem": "factuais_geradas"
+ },
+ {
+  "n": "f009",
+  "question": "Em quanto tempo o arquivista deve comunicar a correção de dado incorreto do consumidor?",
+  "answer": "Feita a correção, o arquivista tem cinco dias úteis para comunicar a alteração aos eventuais destinatários das informações incorretas.",
+  "evidencia": [
+   "no prazo de cinco dias úteis, comunicar a alteração aos eventuais destinatários das informações incorretas. § 4° Os bancos de dados e cadastros relativos a consumidores, os"
+  ],
+  "n_evidencias": 1,
+  "documento": "cdc_BR_1990",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "easy",
+  "theme": "Legislação sobre Direito do Consumidor",
+  "source_lang": "pt",
+  "origem": "factuais_geradas"
+ },
+ {
+  "n": "f010",
+  "question": "Que natureza jurídica o CDC atribui aos bancos de dados de consumidores?",
+  "answer": "Os bancos de dados e cadastros relativos a consumidores, os serviços de proteção ao crédito e congêneres são considerados entidades de caráter público.",
+  "evidencia": [
+   "são considerados entidades de caráter público. § 5° Consumada a prescrição relativa à cobrança de débitos do consumidor, não serão fornecidas, pelos respectivos Sistemas de"
+  ],
+  "n_evidencias": 1,
+  "documento": "cdc_BR_1990",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "easy",
+  "theme": "Legislação sobre Direito do Consumidor",
+  "source_lang": "pt",
+  "origem": "factuais_geradas"
+ },
+ {
+  "n": "f011",
+  "question": "Qual o primeiro princípio que a lei do SUS enumera para os serviços de saúde?",
+  "answer": "Além das diretrizes constitucionais, os serviços obedecem aos princípios enumerados na lei, começando pela universalidade de acesso aos serviços de saúde em todos os níveis de assistência.",
+  "evidencia": [
+   "obedecendo ainda aos seguintes princípios: I - universalidade de acesso aos serviços de saúde em todos os níveis de assistência; II - integralidade de assistência, entendida"
+  ],
+  "n_evidencias": 1,
+  "documento": "lei_8080_BR_90",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "medium",
+  "theme": "Saúde e serviços correspondentes",
+  "source_lang": "pt",
+  "origem": "factuais_geradas"
+ },
+ {
+  "n": "f012",
+  "question": "Que atividades a lei inclui no campo de atuação do SUS além da assistência?",
+  "answer": "O campo de atuação do SUS abrange, além da assistência, a execução de ações de vigilância sanitária, vigilância epidemiológica, saúde do trabalhador e assistência terapêutica integral, inclusive farmacêutica.",
+  "evidencia": [
+   "Estão incluídas ainda no campo de atuação do Sistema Único de Saúde (SUS): I - a execução de ações: a) de vigilância sanitária; b) de vigilância epidemiológica; c) de saúde"
+  ],
+  "n_evidencias": 1,
+  "documento": "lei_8080_BR_90",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "medium",
+  "theme": "Saúde e serviços correspondentes",
+  "source_lang": "pt",
+  "origem": "factuais_geradas"
+ },
+ {
+  "n": "f013",
+  "question": "O que o NIST espera que exista depois que uma estratégia de desidentificação é adotada?",
+  "answer": "Espera-se monitoramento contínuo, para assegurar a eficácia permanente da estratégia de desidentificação.",
+  "evidencia": [
+   "Ongoing monitoring is in place to ensure the continued effectiveness of the de- identifcation strategy"
+  ],
+  "n_evidencias": 1,
+  "documento": "de_identifying_government_datasets_NIST_2023",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "medium",
+  "theme": "De-identificação de conjuntos de dados pessoais",
+  "source_lang": "en",
+  "origem": "factuais_geradas"
+ },
+ {
+  "n": "f014",
+  "question": "O que é um orçamento de perda de privacidade?",
+  "answer": "É um limite superior para a perda de privacidade cumulativa total dos indivíduos.",
+  "evidencia": [
+   "privacy loss budget An upper bound on the cumulative total privacy loss for individuals. privacy risk The likelihood that individuals will experience problems resulting from"
+  ],
+  "n_evidencias": 1,
+  "documento": "de_identifying_government_datasets_NIST_2023",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "easy",
+  "theme": "De-identificação de conjuntos de dados pessoais",
+  "source_lang": "en",
+  "origem": "factuais_geradas"
+ },
+ {
+  "n": "f015",
+  "question": "Quanto o Plano Brasileiro de Inteligência Artificial prevê investir e até quando?",
+  "answer": "O PBIA prevê investimentos de R$ 23 bilhões até 2028, provenientes de fontes como crédito, recursos públicos e contrapartida de investimento privado, direcionados a infraestrutura tecnológica, capacitação de profissionais e fomento à pesquisa e inovação.",
+  "evidencia": [
+   "investimentos de R$ 23 bilhões até 2028. Estes recursos, provenientes de diversas fontes como crédito, recursos públicos e contrapartida de investimento privado, serão direcionados"
+  ],
+  "n_evidencias": 1,
+  "documento": "plano_brasileiro_ia_BR_2025",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "easy",
+  "theme": "Plano nacional de inteligência artificial",
+  "source_lang": "pt",
+  "origem": "factuais_geradas"
+ },
+ {
+  "n": "f016",
+  "question": "Qual o objetivo declarado do Plano Brasileiro de Inteligência Artificial?",
+  "answer": "Garantir que a inteligência artificial melhore a vida do povo brasileiro, promovendo inclusão social e oferecendo soluções tangíveis em áreas prioritárias como saúde e educação.",
+  "evidencia": [
+   "inclusão social e oferecendo soluções tangíveis em áreas prioritárias como saúde e educação. Sabemos que, como toda inovação disruptiva, a IA traz tanto oportunidades quanto"
+  ],
+  "n_evidencias": 1,
+  "documento": "plano_brasileiro_ia_BR_2025",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "easy",
+  "theme": "Plano nacional de inteligência artificial",
+  "source_lang": "pt",
+  "origem": "factuais_geradas"
+ },
+ {
+  "n": "f017",
+  "question": "Que conceito o Plano Brasileiro de IA associa ao seu propósito estratégico?",
+  "answer": "O plano se apresenta como instrumento de soberania digital, e não apenas como plano tecnológico.",
+  "evidencia": [
+   "soberania digital. O PBIA não é apenas um plano tecnológico. Nosso objetivo é garantir que a inteligência artificial melhore a vida do povo brasileiro, promovendo inclusão"
+  ],
+  "n_evidencias": 1,
+  "documento": "plano_brasileiro_ia_BR_2025",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "medium",
+  "theme": "Plano nacional de inteligência artificial",
+  "source_lang": "pt",
+  "origem": "factuais_geradas"
+ },
+ {
+  "n": "f018",
+  "question": "Quantas considerações regulatórias a OMS recomenda que as partes interessadas levem em conta na IA em saúde?",
+  "answer": "A publicação recomenda que as partes interessadas considerem 18 considerações regulatórias ao desenvolver quadros e boas práticas para o uso de IA na assistência à saúde.",
+  "evidencia": [
+   "18 regulatory considerations as they continue to develop frameworks and best practices for the use of AI in health care. This document is intended to be a listing of key regulatory"
+  ],
+  "n_evidencias": 1,
+  "documento": "regulatory_considerations_ai_health_WHO_2024",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "easy",
+  "theme": "Considerações regulatórias sobre IA aplicada à saúde",
+  "source_lang": "en",
+  "origem": "factuais_geradas"
+ },
+ {
+  "n": "f019",
+  "question": "Que áreas temáticas gerais a OMS cobre nas considerações regulatórias sobre IA em saúde?",
+  "answer": "As áreas são documentação e transparência, gestão de risco e abordagem de ciclo de vida de desenvolvimento, uso pretendido e validação analítica e clínica, qualidade dos dados relacionados à IA, privacidade e proteção, e engajamento e colaboração.",
+  "evidencia": [
+   "documentation and transparency, risk management and AI systems development lifecycle approach, intended use and analytical and clinical validation, AI related data quality"
+  ],
+  "n_evidencias": 1,
+  "documento": "regulatory_considerations_ai_health_WHO_2024",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "medium",
+  "theme": "Considerações regulatórias sobre IA aplicada à saúde",
+  "source_lang": "en",
+  "origem": "factuais_geradas"
+ },
+ {
+  "n": "f020",
+  "question": "Que natureza a própria OMS atribui ao documento de considerações regulatórias?",
+  "answer": "O documento se apresenta como uma listagem de considerações regulatórias chave e como recurso a ser considerado, não como norma vinculante.",
+  "evidencia": [
+   "listing of key regulatory considerations and as a resource that can be considered by all relevant stakeholders in medical devices ecosystems, including developers who are"
+  ],
+  "n_evidencias": 1,
+  "documento": "regulatory_considerations_ai_health_WHO_2024",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "medium",
+  "theme": "Considerações regulatórias sobre IA aplicada à saúde",
+  "source_lang": "en",
+  "origem": "factuais_geradas"
+ },
+ {
+  "n": "f021",
+  "question": "Que tema as resoluções regionais citadas pela estratégia global de saúde digital pediram aos Estados-Membros que desenvolvessem?",
+  "answer": "As resoluções sobre padronização e interoperabilidade em saúde eletrônica urgiram os Estados-Membros a considerar o desenvolvimento de políticas e mecanismos legislativos ligados a uma estratégia nacional global de saúde eletrônica.",
+  "evidencia": [
+   "eHealth standardization and interoperability, which urged(2013) and WPR/RC69/8 Member States “to consider developing … policies and legislative(2018). mechanisms linked"
+  ],
+  "n_evidencias": 1,
+  "documento": "global_digital_health_strategy_WHO_2020_2027",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "medium",
+  "theme": "Estratégia global de saúde digital",
+  "source_lang": "en",
+  "origem": "factuais_geradas"
+ },
+ {
+  "n": "f022",
+  "question": "Que tecnologias a estratégia global de saúde digital lista como comprovadamente úteis ao contínuo de cuidado?",
+  "answer": "Entre elas, monitoramento remoto, inteligência artificial, análise de big data, blockchain, dispositivos vestíveis inteligentes, plataformas e ferramentas que permitem troca e armazenamento de dados e captura remota de dados, criando um contínuo de cuidado.",
+  "evidencia": [
+   "smart wearables, platforms, tools enabling data exchange and storage and tools enabling remote data capture and the exchange of data and sharing of relevant information across"
+  ],
+  "n_evidencias": 1,
+  "documento": "global_digital_health_strategy_WHO_2020_2027",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "medium",
+  "theme": "Estratégia global de saúde digital",
+  "source_lang": "en",
+  "origem": "factuais_geradas"
+ },
+ {
+  "n": "f023",
+  "question": "Que exigência a OMS faz aos desenvolvedores quanto ao escopo das tarefas de um modelo multimodal?",
+  "answer": "Os desenvolvedores devem garantir que os modelos sejam desenhados para executar tarefas bem definidas, com a acurácia e a confiabilidade necessárias para melhorar a capacidade dos sistemas de saúde e promover os interesses dos pacientes, sendo capazes de prever e entender resultados secundários potenciais.",
+  "evidencia": [
+   "designed to perform well-defined tasks with the accuracy and reliability necessary to improve the capacity of health systems and advance patient interests. Designers and other"
+  ],
+  "n_evidencias": 1,
+  "documento": "multimodal_models_guidance_WHO_2024",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "medium",
+  "theme": "Ética e governança de grandes modelos multimodais aplicados à saúde",
+  "source_lang": "en",
+  "origem": "factuais_geradas"
+ },
+ {
+  "n": "f024",
+  "question": "Que técnicas a OMS menciona para antecipar falhas no desenvolvimento de modelos multimodais?",
+  "answer": "São mencionados os premortems e o red teaming como técnicas para atender à exigência de prever e compreender resultados secundários potenciais.",
+  "evidencia": [
+   "premortems” and “red teaming”. • Procedures used by developers to “design for values” should be informed and updated by consensus, best practices (e.g. technologies and techniques"
+  ],
+  "n_evidencias": 1,
+  "documento": "multimodal_models_guidance_WHO_2024",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "medium",
+  "theme": "Ética e governança de grandes modelos multimodais aplicados à saúde",
+  "source_lang": "en",
+  "origem": "factuais_geradas"
+ },
+ {
+  "n": "f025",
+  "question": "Que papel a OMS atribui ao público no desenvolvimento da IA para saúde?",
+  "answer": "O público deve ser envolvido no desenvolvimento da IA para saúde, para compreender as formas de compartilhamento e uso de dados, opinar sobre que formas de IA são social e culturalmente aceitáveis e expressar suas preocupações e expectativas; a literacia em IA da população deve ser melhorada para que possa determinar quais tecnologias são aceitáveis.",
+  "evidencia": [
+   "The public should be engaged in the development of AI for health in order to understand forms of data sharing and use, to comment on the forms of AI that are socially and"
+  ],
+  "n_evidencias": 1,
+  "documento": "ethics_governance_ai_health_WHO_2021",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "medium",
+  "theme": "Ética e governança de IA aplicada à saúde",
+  "source_lang": "en",
+  "origem": "factuais_geradas"
+ },
+ {
+  "n": "f026",
+  "question": "Por que a transferência de decisões a máquinas ameaça a autonomia humana, segundo a OMS?",
+  "answer": "Porque os humanos podem não compreender como a tecnologia de IA chega a uma decisão, nem conseguir negociar com ela para alcançar uma decisão compartilhada.",
+  "evidencia": [
+   "neither understand how an AI technology arrives at a decision, nor be able to negotiate with a technology to reach a shared decision. In the context of AI for health, autonomy"
+  ],
+  "n_evidencias": 1,
+  "documento": "ethics_governance_ai_health_WHO_2021",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "medium",
+  "theme": "Ética e governança de IA aplicada à saúde",
+  "source_lang": "en",
+  "origem": "factuais_geradas"
+ },
+ {
+  "n": "f027",
+  "question": "Que desfechos pode ter uma sindicância no processo ético-profissional?",
+  "answer": "A sindicância pode resultar em termo de ajustamento de conduta quando pertinente, arquivamento quando não houver indícios de materialidade e autoria de infração ao Código de Ética Médica, ou instauração de processo ético-profissional quando esses indícios existirem.",
+  "evidencia": [
+   "termo de ajustamento de conduta (TAC), quando pertinente; III – arquivamento: se indicar a inexistência de indícios de materialidade e/ou autoria de infração ao Código de"
+  ],
+  "n_evidencias": 1,
+  "documento": "resolucao_2306_CFM_2022",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "medium",
+  "theme": "Código de Processo Ético-Profissional",
+  "source_lang": "pt",
+  "origem": "factuais_geradas"
+ },
+ {
+  "n": "f028",
+  "question": "Quanto tempo o denunciante tem para recorrer do arquivamento de uma sindicância?",
+  "answer": "Quinze dias corridos, contados da juntada aos autos do comprovante de ciência da intimação, em recurso dirigido ao presidente do CRM, que o remeterá ao CFM. O médico é intimado para, querendo, apresentar contrarrazões no mesmo prazo.",
+  "evidencia": [
+   "no prazo de 15 (quinze) dias corridos, contados da juntada aos autos do comprovante da ciência da respectiva intimação, poderá apresentar recurso dirigido ao presidente do"
+  ],
+  "n_evidencias": 1,
+  "documento": "resolucao_2306_CFM_2022",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "medium",
+  "theme": "Código de Processo Ético-Profissional",
+  "source_lang": "pt",
+  "origem": "factuais_geradas"
+ },
+ {
+  "n": "f029",
+  "question": "Como o CFM define o ato profissional de médico?",
+  "answer": "É todo procedimento técnico-profissional praticado por médico legalmente habilitado, dirigido à promoção da saúde e prevenção de enfermidades, à prevenção da evolução das enfermidades e às demais finalidades enumeradas na resolução.",
+  "evidencia": [
+   "todo procedimento técnico- profissional praticado por médico legalmente habilitado e dirigido para: I. a promoção da saúde e prevenção da ocorrência de enfermidades ou profilaxia"
+  ],
+  "n_evidencias": 1,
+  "documento": "resolucao_1627_CFM_2001",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "easy",
+  "theme": "Definição do ato profissional médico",
+  "source_lang": "pt",
+  "origem": "factuais_geradas"
+ },
+ {
+  "n": "f030",
+  "question": "Como a resolução do CFM define responsabilidade profissional?",
+  "answer": "É a faculdade pela qual uma pessoa ou organização responde pelas suas decisões, sem referência à vontade de outrem, noção que implica as de capacidade e de liberdade.",
+  "evidencia": [
+   "A responsabilidade é a faculdade pela qual uma pessoa ou organização responde pelas suas decisões, sem referência à vontade de outrem. A noção de responsabilidade implica"
+  ],
+  "n_evidencias": 1,
+  "documento": "resolucao_1627_CFM_2001",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "medium",
+  "theme": "Definição do ato profissional médico",
+  "source_lang": "pt",
+  "origem": "factuais_geradas"
+ },
+ {
+  "n": "f031",
+  "question": "Que atividades a resolução do CFM sobre inteligência artificial na medicina disciplina?",
+  "answer": "Estabelece normas para a pesquisa, o desenvolvimento, a governança, a auditoria, o monitoramento, a capacitação e o uso responsável de soluções que adotem modelos, sistemas e aplicações de IA na área da medicina.",
+  "evidencia": [
+   "Esta resolução estabelece normas para a pesquisa, o desenvolvimento, a governança, a auditoria, o monitoramento, a capacitação e o uso responsável de soluções que adotem modelos"
+  ],
+  "n_evidencias": 1,
+  "documento": "resolucao_2454_CFM_2026",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "easy",
+  "theme": "Uso ético de inteligência artificial na medicina",
+  "source_lang": "pt",
+  "origem": "factuais_geradas"
+ },
+ {
+  "n": "f032",
+  "question": "Que forma de desenvolvimento de IA as instituições médicas devem priorizar?",
+  "answer": "Devem priorizar o desenvolvimento cooperativo de modelos, sistemas e aplicações de IA, promovendo a interoperabilidade e a disseminação de tecnologias, códigos, bases de dados e boas práticas com outros órgãos e entidades.",
+  "evidencia": [
+   "deverão priorizar o desenvolvimento cooperativo de modelos, sistemas e aplicações de IA promovendo a interoperabilidade e a disseminação de tecnologias, códigos, bases de"
+  ],
+  "n_evidencias": 1,
+  "documento": "resolucao_2454_CFM_2026",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "medium",
+  "theme": "Uso ético de inteligência artificial na medicina",
+  "source_lang": "pt",
+  "origem": "factuais_geradas"
+ },
+ {
+  "n": "f033",
+  "question": "O que a resolução de publicidade médica proíbe quanto à atribuição de capacidade a métodos e equipamentos?",
+  "answer": "É vedado atribuir capacidade privilegiada, mesmo que o médico seja o único a fazê-la; a resolução veda ainda oferecer serviços por meio de consórcio e similares.",
+  "evidencia": [
+   "atribuir capacidade privilegiada, mesmo que seja o único a fazê-la; X– oferecer serviços por meio de consórcio e similares; XI– oferecer consultoria a pacientes e familiares"
+  ],
+  "n_evidencias": 1,
+  "documento": "resolucao_2336_CFM_2023",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "medium",
+  "theme": "Publicidade e propaganda médicas",
+  "source_lang": "pt",
+  "origem": "factuais_geradas"
+ },
+ {
+  "n": "f034",
+  "question": "Como o IMDRF define software como dispositivo médico?",
+  "answer": "Software como dispositivo médico é o software destinado a ser usado para um ou mais propósitos médicos e que cumpre esses propósitos sem ser parte de um dispositivo médico de hardware.",
+  "evidencia": [
+   "SaMD is defined as software intended to be used for one or more medical purposes that perform these purposes without being part of a hardware medical device”. Examples of"
+  ],
+  "n_evidencias": 1,
+  "documento": "imdrf_samd_risk_framework_2014",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "easy",
+  "theme": "Estrutura para categorização de risco de software como dispositivo médico",
+  "source_lang": "en",
+  "origem": "factuais_geradas"
+ },
+ {
+  "n": "f035",
+  "question": "Em que se baseiam as categorias de software como dispositivo médico na avaliação clínica do IMDRF?",
+  "answer": "Baseiam-se nos níveis de impacto sobre o paciente ou a saúde pública, conforme a informação precisa fornecida pelo software seja importante para tratar ou diagnosticar, conduzir o manejo clínico ou informar o manejo clínico.",
+  "evidencia": [
+   "SaMD categories are based on the levels of impact on the patient or public health where accurate information provided by the SaMD is important to treat or diagnose, drive"
+  ],
+  "n_evidencias": 1,
+  "documento": "imdrf_samd_clinical_evaluation_2017",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "medium",
+  "theme": "Avaliação clínica de software como dispositivo médico",
+  "source_lang": "en",
+  "origem": "factuais_geradas"
+ },
+ {
+  "n": "f036",
+  "question": "Que posição o comitê de ética assume depois de aprovar um projeto de pesquisa?",
+  "answer": "Uma vez aprovado o projeto, o CEP-UFMG passa a ser corresponsável no que se refere aos aspectos éticos da pesquisa.",
+  "evidencia": [
+   "Uma vez aprovado o projeto, o CEP-UFMG passa a ser corresponsável no que se refere aos aspectos éticos da pesquisa. Art. 37. O projeto de pesquisa deverá ser iniciado no prazo"
+  ],
+  "n_evidencias": 1,
+  "documento": "regulamento_interno_CEP_2024",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "factual",
+  "difficulty": "easy",
+  "theme": "Regulamento sobre o CEP-UFMG",
+  "source_lang": "pt",
+  "origem": "factuais_geradas"
+ }
+]

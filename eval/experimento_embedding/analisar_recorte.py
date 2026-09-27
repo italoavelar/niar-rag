@@ -57,7 +57,8 @@ for _f in (sys.stdout, sys.stderr):
 # cabe. No PC1200 os pais sao exatamente os trechos do T1200, entao a unica
 # diferenca entre as duas condicoes e POR ONDE SE BUSCA: pelo filho de 400 ou
 # pelo proprio trecho de 1200. E a comparacao que isola a estrategia.
-CONDICOES = ("T400", "T1200", "T3500", "PC", "PC1200")
+CONDICOES = ("T400", "T1200", "T3500", "PC", "PC1200",
+             "T1200s0", "T1200s120", "T1200s400")
 KS = (1, 3, 5, 10)
 
 # ORÇAMENTO EM CARACTERES, e por que ele é a comparação que vale.
@@ -351,7 +352,10 @@ def main() -> None:
                 continue
             print(f"\n  {modelo.upper()} @ {orc} chars")
             pares = [("T1200", "T400"), ("T3500", "T1200"), ("PC", "T1200"),
-                     ("PC", "T3500"), ("PC1200", "T1200"), ("PC1200", "PC")]
+                     ("PC", "T3500"), ("PC1200", "T1200"), ("PC1200", "PC"),
+                     # sobreposição, com o tamanho fixo em 1200: T1200 é o 240
+                     ("T1200", "T1200s0"), ("T1200", "T1200s120"),
+                     ("T1200s400", "T1200")]
             for x, y in pares:
                 if x not in rs or y not in rs:
                     continue

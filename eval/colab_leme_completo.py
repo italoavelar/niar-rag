@@ -57,7 +57,8 @@ from sentence_transformers import SentenceTransformer
 
 sys.path.insert(0, "/content")
 from embedding_text import (EMBEDDING_TEXT_PROFILE, build_embedding_text,
-                            bge_cache_filename, corpus_embedding_fingerprint)
+                            bge_cache_filename, corpus_embedding_fingerprint,
+                            embedding_text_hash)
 
 corpus = []
 with open("documents.jsonl", encoding="utf-8") as fh:
@@ -180,6 +181,7 @@ if REFAZER_DOCS_QWEN:
                 "embedding_dimension": DIM,
                 "embedding_text_profile": EMBEDDING_TEXT_PROFILE,
                 "embedding_text_fingerprint": corpus_embedding_fingerprint([reg]),
+                "embedding_text_hash": embedding_text_hash(reg),
                 "document": reg,
                 "vector": [float(x) for x in vetor],
             }, ensure_ascii=False) + "\n")
