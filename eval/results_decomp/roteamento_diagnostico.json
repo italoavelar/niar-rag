@@ -1,0 +1,247 @@
+{
+  "q0076|ai_risk_management_framework_NIST_2023": {
+    "n_chunks": 122,
+    "pos_global": 3,
+    "pos_no_doc": 2
+  },
+  "q0076|ethical_impact_assessment_UNESCO_2023": {
+    "n_chunks": 121,
+    "pos_global": 5,
+    "pos_no_doc": 1
+  },
+  "q0077|gdpr_regulation_EU_2016": {
+    "n_chunks": 400,
+    "pos_global": 85,
+    "pos_no_doc": 9
+  },
+  "q0077|projeto_lei_2338_BR_2023": {
+    "n_chunks": 105,
+    "pos_global": 4,
+    "pos_no_doc": 2
+  },
+  "q0078|lgpd_BR_2018": {
+    "n_chunks": 115,
+    "pos_global": 14,
+    "pos_no_doc": 1
+  },
+  "q0078|resolucao_2314_CFM_2022": {
+    "n_chunks": 36,
+    "pos_global": 3,
+    "pos_no_doc": 2
+  },
+  "q0079|estrategia_brasileira_ia_MCTI_2021": {
+    "n_chunks": 148,
+    "pos_global": 4,
+    "pos_no_doc": 4
+  },
+  "q0079|ethical_impact_assessment_UNESCO_2023": {
+    "n_chunks": 121,
+    "pos_global": 22,
+    "pos_no_doc": 2
+  },
+  "q0080|ai_risk_management_framework_NIST_2023": {
+    "n_chunks": 122,
+    "pos_global": 77,
+    "pos_no_doc": 22
+  },
+  "q0080|projeto_lei_2338_BR_2023": {
+    "n_chunks": 105,
+    "pos_global": 160,
+    "pos_no_doc": 37
+  },
+  "q0081|ai_risk_management_framework_NIST_2023": {
+    "n_chunks": 122,
+    "pos_global": 59,
+    "pos_no_doc": 1
+  },
+  "q0081|projeto_lei_2338_BR_2023": {
+    "n_chunks": 105,
+    "pos_global": 26,
+    "pos_no_doc": 17
+  },
+  "q0082|gdpr_regulation_EU_2016": {
+    "n_chunks": 400,
+    "pos_global": 930,
+    "pos_no_doc": 244
+  },
+  "q0082|resolucao_19_ANPD_2024": {
+    "n_chunks": 69,
+    "pos_global": 8,
+    "pos_no_doc": 2
+  },
+  "q0083|ai_device_software_guidance_FDA_2025": {
+    "n_chunks": 218,
+    "pos_global": 354,
+    "pos_no_doc": 1
+  },
+  "q0083|gdpr_regulation_EU_2016": {
+    "n_chunks": 400,
+    "pos_global": 426,
+    "pos_no_doc": 26
+  },
+  "q0084|ethical_impact_assessment_UNESCO_2023": {
+    "n_chunks": 121,
+    "pos_global": 98,
+    "pos_no_doc": 6
+  },
+  "q0084|ethics_governance_ai_health_WHO_2021": {
+    "n_chunks": 442,
+    "pos_global": 3,
+    "pos_no_doc": 1
+  },
+  "q0085|codigo_etica_medica_CFM_2019": {
+    "n_chunks": 92,
+    "pos_global": 105,
+    "pos_no_doc": 12
+  },
+  "q0085|lei_14874_BR_2024": {
+    "n_chunks": 68,
+    "pos_global": 1,
+    "pos_no_doc": 1
+  },
+  "q0086|codigo_etica_medica_CFM_2019": {
+    "n_chunks": 92,
+    "pos_global": 17,
+    "pos_no_doc": 2
+  },
+  "q0086|resolucao_19_ANPD_2024": {
+    "n_chunks": 69,
+    "pos_global": 1,
+    "pos_no_doc": 1
+  },
+  "q0087|estrategia_brasileira_ia_MCTI_2021": {
+    "n_chunks": 148,
+    "pos_global": 97,
+    "pos_no_doc": 4
+  },
+  "q0087|projeto_lei_2338_BR_2023": {
+    "n_chunks": 105,
+    "pos_global": 14,
+    "pos_no_doc": 7
+  },
+  "q0088|ai_risk_management_framework_NIST_2023": {
+    "n_chunks": 122,
+    "pos_global": 10,
+    "pos_no_doc": 1
+  },
+  "q0088|ethical_impact_assessment_UNESCO_2023": {
+    "n_chunks": 121,
+    "pos_global": 186,
+    "pos_no_doc": 71
+  },
+  "q0089|estrategia_brasileira_ia_MCTI_2021": {
+    "n_chunks": 148,
+    "pos_global": 7,
+    "pos_no_doc": 2
+  },
+  "q0089|projeto_lei_2338_BR_2023": {
+    "n_chunks": 105,
+    "pos_global": 6,
+    "pos_no_doc": 2
+  },
+  "q0090|european_health_data_space_EU_2025": {
+    "n_chunks": 499,
+    "pos_global": 48,
+    "pos_no_doc": 25
+  },
+  "q0090|lgpd_BR_2018": {
+    "n_chunks": 115,
+    "pos_global": 259,
+    "pos_no_doc": 28
+  },
+  "q0091|ethics_governance_ai_health_WHO_2021": {
+    "n_chunks": 442,
+    "pos_global": 45,
+    "pos_no_doc": 12
+  },
+  "q0091|projeto_lei_2338_BR_2023": {
+    "n_chunks": 105,
+    "pos_global": 2,
+    "pos_no_doc": 1
+  },
+  "q0092|ai_device_software_guidance_FDA_2025": {
+    "n_chunks": 218,
+    "pos_global": 255,
+    "pos_no_doc": 15
+  },
+  "q0092|resolucao_2314_CFM_2022": {
+    "n_chunks": 36,
+    "pos_global": 4,
+    "pos_no_doc": 2
+  },
+  "q0093|projeto_lei_2338_BR_2023": {
+    "n_chunks": 105,
+    "pos_global": 1,
+    "pos_no_doc": 1
+  },
+  "q0094|codigo_etica_medica_CFM_2019": {
+    "n_chunks": 92,
+    "pos_global": 20,
+    "pos_no_doc": 1
+  },
+  "q0094|ethical_impact_assessment_UNESCO_2023": {
+    "n_chunks": 121,
+    "pos_global": 80,
+    "pos_no_doc": 8
+  },
+  "q0095|ai_device_software_guidance_FDA_2025": {
+    "n_chunks": 218,
+    "pos_global": 329,
+    "pos_no_doc": 40
+  },
+  "q0095|projeto_lei_2338_BR_2023": {
+    "n_chunks": 105,
+    "pos_global": 96,
+    "pos_no_doc": 40
+  },
+  "q0096|ai_risk_management_framework_NIST_2023": {
+    "n_chunks": 122,
+    "pos_global": 10,
+    "pos_no_doc": 1
+  },
+  "q0096|ethical_impact_assessment_UNESCO_2023": {
+    "n_chunks": 121,
+    "pos_global": 23,
+    "pos_no_doc": 15
+  },
+  "q0097|gdpr_regulation_EU_2016": {
+    "n_chunks": 400,
+    "pos_global": 345,
+    "pos_no_doc": 67
+  },
+  "q0097|resolucao_19_ANPD_2024": {
+    "n_chunks": 69,
+    "pos_global": 23,
+    "pos_no_doc": 6
+  },
+  "q0098|ai_risk_management_framework_NIST_2023": {
+    "n_chunks": 122,
+    "pos_global": 56,
+    "pos_no_doc": 1
+  },
+  "q0098|projeto_lei_2338_BR_2023": {
+    "n_chunks": 105,
+    "pos_global": 3,
+    "pos_no_doc": 2
+  },
+  "q0099|ethics_governance_ai_health_WHO_2021": {
+    "n_chunks": 442,
+    "pos_global": 455,
+    "pos_no_doc": 45
+  },
+  "q0099|european_health_data_space_EU_2025": {
+    "n_chunks": 499,
+    "pos_global": 131,
+    "pos_no_doc": 100
+  },
+  "q0100|estrategia_brasileira_ia_MCTI_2021": {
+    "n_chunks": 148,
+    "pos_global": 151,
+    "pos_no_doc": 22
+  },
+  "q0100|projeto_lei_2338_BR_2023": {
+    "n_chunks": 105,
+    "pos_global": 2,
+    "pos_no_doc": 2
+  }
+}

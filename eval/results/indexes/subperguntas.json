@@ -1,0 +1,402 @@
+{
+ "Uma pessoa afetada por um sistema de IA de alto risco: que direitos ela tem e a que medidas de governança esse sistema está sujeito, segundo o PL 2338/2023?": {
+  "sub1": "Quais direitos uma pessoa afetada por um sistema de IA de alto risco tem, segundo o PL 2338/2023?",
+  "sub2": "A que medidas de governança um sistema de IA de alto risco está sujeito, segundo o PL 2338/2023?"
+ },
+ "Na telemedicina, o que a Resolução CFM 2.314/2022 exige quanto ao consentimento para compartilhar informações e quanto ao acompanhamento presencial de doenças crônicas?": {
+  "sub1": "O que a Resolução CFM 2.314/2022 exige quanto ao consentimento para compartilhar informações na telemedicina?",
+  "sub2": "O que a Resolução CFM 2.314/2022 exige quanto ao acompanhamento presencial de doenças crônicas na telemedicina?"
+ },
+ "Que deveres o Código de Ética Médica impõe ao médico quanto à responsabilidade por seus atos e quanto à atuação como auditor?": {
+  "sub1": "Que deveres o Código de Ética Médica impõe ao médico quanto à responsabilidade por seus atos?",
+  "sub2": "Que deveres o Código de Ética Médica impõe ao médico quanto à atuação como auditor?"
+ },
+ "Por que medir riscos de IA é desafiador e por que esses riscos diferem dos de software tradicional, segundo o NIST?": {
+  "sub1": "Por que medir riscos de IA é desafiador, segundo o NIST?",
+  "sub2": "Por que os riscos de IA diferem dos de software tradicional, segundo o NIST?"
+ },
+ "Segundo a UNESCO, que usos de IA são proibidos e que mecanismos de responsabilização os sistemas de IA devem ter?": {
+  "sub1": "Segundo a UNESCO, que usos de IA são proibidos?",
+  "sub2": "Segundo a UNESCO, que mecanismos de responsabilização os sistemas de IA devem ter?"
+ },
+ "No GDPR, quando se aplica o direito à portabilidade e que medidas de segurança o controlador deve garantir para os dados?": {
+  "sub1": "No GDPR, quando se aplica o direito à portabilidade?",
+  "sub2": "No GDPR, que medidas de segurança o controlador deve garantir para os dados?"
+ },
+ "A Estratégia Brasileira de IA trata tanto do viés algorítmico quanto do impacto no trabalho — o que propõe em cada frente?": {
+  "sub1": "O que a Estratégia Brasileira de IA propõe em relação ao viés algorítmico?",
+  "sub2": "O que a Estratégia Brasileira de IA propõe em relação ao impacto no trabalho?"
+ },
+ "Para um dispositivo habilitado por IA, que informações sobre os pacientes descrever e que controles de cibersegurança considerar contra envenenamento de dados, segundo a FDA?": {
+  "sub1": "Que informações sobre os pacientes um dispositivo habilitado por IA deve descrever, segundo a FDA?",
+  "sub2": "Que controles de cibersegurança devem ser considerados contra envenenamento de dados para dispositivos habilitados por IA, segundo a FDA?"
+ },
+ "Na pesquisa clínica, quais são as responsabilidades do Comitê de Ética em Pesquisa (CEP) e as do pesquisador, segundo a Lei nº 14.874/2024?": {
+  "sub1": "Quais são as responsabilidades do Comitê de Ética em Pesquisa (CEP) na pesquisa clínica, segundo a Lei nº 14.874/2024?",
+  "sub2": "Quais são as responsabilidades do pesquisador na pesquisa clínica, segundo a Lei nº 14.874/2024?"
+ },
+ "Na transferência internacional de dados, o que a Resolução ANPD nº 19/2024 estabelece sobre as cláusulas mandatórias e sobre a responsabilização por danos ao titular?": {
+  "sub1": "O que a Resolução ANPD nº 19/2024 estabelece sobre as cláusulas mandatórias na transferência internacional de dados?",
+  "sub2": "O que a Resolução ANPD nº 19/2024 estabelece sobre a responsabilização por danos ao titular na transferência internacional de dados?"
+ },
+ "Que sistema nacional o PL 2338/2023 autoriza para a governança da IA e que tratamento diferenciado prevê para startups?": {
+  "sub1": "Que sistema nacional o PL 2338/2023 autoriza para a governança da IA?",
+  "sub2": "Que tratamento diferenciado o PL 2338/2023 prevê para startups?"
+ },
+ "Segundo a OMS, que risco surge quando grandes empresas de tecnologia controlam dados e algoritmos de saúde, e como as parcerias público-privadas (PPPs) se inserem nesse cenário?": {
+  "sub1": "Segundo a OMS, que risco surge quando grandes empresas de tecnologia controlam dados e algoritmos de saúde?",
+  "sub2": "Como as parcerias público-privadas (PPPs) se inserem no cenário de controle de dados e algoritmos de saúde por grandes empresas de tecnologia, segundo a OMS?"
+ },
+ "Por que a Resolução CFM 2.314/2022 considera o atendimento presencial a referência e o que exige para compartilhar informações do paciente na telemedicina?": {
+  "sub1": "Por que a Resolução CFM 2.314/2022 considera o atendimento presencial a referência?",
+  "sub2": "O que a Resolução CFM 2.314/2022 exige para compartilhar informações do paciente na telemedicina?"
+ },
+ "Segundo o NIST AI RMF, qual a relação entre transparência e responsabilização (accountability) e como a função MAP trata os requisitos do sistema?": {
+  "sub1": "Segundo o NIST AI RMF, qual a relação entre transparência e responsabilização (accountability)?",
+  "sub2": "Segundo o NIST AI RMF, como a função MAP trata os requisitos do sistema?"
+ },
+ "A Recomendação da UNESCO proíbe certos usos de IA e classifica a gravidade dos impactos — o que proíbe e quais são os níveis de gravidade?": {
+  "sub1": "Quais usos de IA a Recomendação da UNESCO proíbe?",
+  "sub2": "Quais são os níveis de gravidade dos impactos classificados pela Recomendação da UNESCO?"
+ },
+ "Na pesquisa clínica, o que é a instância nacional de ética em pesquisa e quais são as responsabilidades do CEP, segundo a Lei nº 14.874/2024?": {
+  "sub1": "O que é a instância nacional de ética em pesquisa, segundo a Lei nº 14.874/2024?",
+  "sub2": "Quais são as responsabilidades do CEP, segundo a Lei nº 14.874/2024?"
+ },
+ "Que responsabilidades cabem ao pesquisador e o que a Lei nº 14.874/2024 veda quanto ao material biológico armazenado em biobanco?": {
+  "sub1": "Que responsabilidades cabem ao pesquisador?",
+  "sub2": "O que a Lei nº 14.874/2024 veda quanto ao material biológico armazenado em biobanco?"
+ },
+ "Segundo o NIST, os sistemas de IA só trazem benefícios, e é fácil medir seus riscos?": {
+  "sub1": "Segundo o NIST, os sistemas de IA só trazem benefícios?",
+  "sub2": "Segundo o NIST, é fácil medir os riscos dos sistemas de IA?"
+ },
+ "No GDPR, que características as sanções administrativas devem ter e que medidas de segurança dos dados são exigidas?": {
+  "sub1": "No GDPR, que características as sanções administrativas devem ter?",
+  "sub2": "No GDPR, que medidas de segurança dos dados são exigidas?"
+ },
+ "A Estratégia Brasileira de IA aborda tanto o viés algorítmico quanto o uso de IA na segurança pública — o que diz sobre cada um?": {
+  "sub1": "O que a Estratégia Brasileira de IA diz sobre o viés algorítmico?",
+  "sub2": "O que a Estratégia Brasileira de IA diz sobre o uso de IA na segurança pública?"
+ },
+ "Para um dispositivo habilitado por IA, que obrigações de sistema de qualidade e que descrição da população de pacientes a FDA espera?": {
+  "sub1": "Quais obrigações de sistema de qualidade a FDA espera para um dispositivo habilitado por IA?",
+  "sub2": "Qual descrição da população de pacientes a FDA espera para um dispositivo habilitado por IA?"
+ },
+ "A Resolução ANPD nº 19/2024: em que situações admite dados provenientes do exterior e que regra vale para as cláusulas mandatórias de transferência?": {
+  "sub1": "Em que situações a Resolução ANPD nº 19/2024 admite dados provenientes do exterior?",
+  "sub2": "Qual regra vale para as cláusulas mandatórias de transferência na Resolução ANPD nº 19/2024?"
+ },
+ "Segundo a OMS, o que exige a 'responsividade' de uma IA para saúde e que risco de poder existe quando poucas empresas controlam os dados de saúde?": {
+  "sub1": "Segundo a OMS, o que exige a 'responsividade' de uma IA para saúde?",
+  "sub2": "Segundo a OMS, que risco de poder existe quando poucas empresas controlam os dados de saúde?"
+ },
+ "No PL 2338/2023, além dos direitos das pessoas afetadas pela IA, que estrutura pública é criada para regular e governar a IA?": {
+  "sub1": "No PL 2338/2023, quais são os direitos das pessoas afetadas pela IA?",
+  "sub2": "No PL 2338/2023, qual estrutura pública é criada para regular e governar a IA?"
+ },
+ "A UNESCO exige mecanismos de responsabilização para a IA e classifica a gravidade dos impactos — o que exige e como classifica?": {
+  "sub1": "Quais mecanismos de responsabilização a UNESCO exige para a IA?",
+  "sub2": "Como a UNESCO classifica a gravidade dos impactos da IA?"
+ },
+ "Como o NIST AI RMF e a Recomendação da UNESCO tratam transparência e responsabilização (accountability) em IA?": {
+  "sub1": "Como o NIST AI RMF trata transparência e responsabilização (accountability) em IA?",
+  "sub2": "Como a Recomendação da UNESCO trata transparência e responsabilização (accountability) em IA?"
+ },
+ "Como o PL 2338/2023 e o GDPR abordam os direitos das pessoas sobre seus dados pessoais?": {
+  "sub1": "Como o PL 2338/2023 aborda os direitos das pessoas sobre seus dados pessoais?",
+  "sub2": "Como o GDPR aborda os direitos das pessoas sobre seus dados pessoais?"
+ },
+ "Como a Resolução CFM de telemedicina e a LGPD tratam a necessidade de consentimento para o uso de informações pessoais?": {
+  "sub1": "Como a Resolução CFM de telemedicina trata a necessidade de consentimento para o uso de informações pessoais?",
+  "sub2": "Como a LGPD trata a necessidade de consentimento para o uso de informações pessoais?"
+ },
+ "Como a Recomendação da UNESCO e a Estratégia Brasileira de IA tratam usos sensíveis como vigilância e reconhecimento facial?": {
+  "sub1": "Como a Recomendação da UNESCO trata usos sensíveis como vigilância e reconhecimento facial?",
+  "sub2": "Como a Estratégia Brasileira de IA trata usos sensíveis como vigilância e reconhecimento facial?"
+ },
+ "Como o NIST AI RMF e o PL 2338/2023 lidam com a ideia de risco em sistemas de IA?": {
+  "sub1": "Como o NIST AI RMF lida com a ideia de risco em sistemas de IA?",
+  "sub2": "Como o PL 2338/2023 lida com a ideia de risco em sistemas de IA?"
+ },
+ "Como o PL 2338/2023 e o NIST AI RMF estruturam a governança de sistemas de IA?": {
+  "sub1": "Como o PL 2338/2023 estrutura a governança de sistemas de IA?",
+  "sub2": "Como o NIST AI RMF estrutura a governança de sistemas de IA?"
+ },
+ "Como a Resolução ANPD 19/2024 e o GDPR tratam a responsabilização e as sanções em proteção de dados?": {
+  "sub1": "Como a Resolução ANPD 19/2024 trata a responsabilização e as sanções em proteção de dados?",
+  "sub2": "Como o GDPR trata a responsabilização e as sanções em proteção de dados?"
+ },
+ "Como a FDA e o GDPR tratam a segurança dos dados em sistemas que processam dados sensíveis?": {
+  "sub1": "Como a FDA trata a segurança dos dados em sistemas que processam dados sensíveis?",
+  "sub2": "Como o GDPR trata a segurança dos dados em sistemas que processam dados sensíveis?"
+ },
+ "Que princípios a OMS e a UNESCO defendem para uma IA confiável?": {
+  "sub1": "Que princípios a OMS defende para uma IA confiável?",
+  "sub2": "Que princípios a UNESCO defende para uma IA confiável?"
+ },
+ "Como o Código de Ética Médica e a Lei nº 14.874/2024 asseguram a isenção de quem fiscaliza a atividade médica e a pesquisa?": {
+  "sub1": "Como o Código de Ética Médica assegura a isenção de quem fiscaliza a atividade médica e a pesquisa?",
+  "sub2": "Como a Lei nº 14.874/2024 assegura a isenção de quem fiscaliza a atividade médica e a pesquisa?"
+ },
+ "Como a Resolução ANPD 19/2024 e o Código de Ética Médica atribuem responsabilidade por danos?": {
+  "sub1": "Como a Resolução ANPD 19/2024 atribui responsabilidade por danos?",
+  "sub2": "Como o Código de Ética Médica atribui responsabilidade por danos?"
+ },
+ "Como a Estratégia Brasileira de IA e o PL 2338/2023 tratam o risco de viés e discriminação em sistemas de IA?": {
+  "sub1": "Como a Estratégia Brasileira de IA trata o risco de viés e discriminação em sistemas de IA?",
+  "sub2": "Como o PL 2338/2023 trata o risco de viés e discriminação em sistemas de IA?"
+ },
+ "Como a UNESCO e o NIST veem a avaliação de impacto de sistemas de IA?": {
+  "sub1": "Como a UNESCO vê a avaliação de impacto de sistemas de IA?",
+  "sub2": "Como o NIST vê a avaliação de impacto de sistemas de IA?"
+ },
+ "Como o PL 2338/2023 e a Estratégia Brasileira de IA tratam as startups de inteligência artificial no Brasil?": {
+  "sub1": "Como o PL 2338/2023 trata as startups de inteligência artificial no Brasil?",
+  "sub2": "Como a Estratégia Brasileira de IA trata as startups de inteligência artificial no Brasil?"
+ },
+ "Como o Espaço Europeu de Dados de Saúde e a LGPD abordam o uso de dados pessoais e de saúde?": {
+  "sub1": "Como o Espaço Europeu de Dados de Saúde aborda o uso de dados pessoais e de saúde?",
+  "sub2": "Como a LGPD aborda o uso de dados pessoais e de saúde?"
+ },
+ "Como a OMS e o PL 2338/2023 tratam a questão de quem deve governar a inteligência artificial?": {
+  "sub1": "Como a OMS trata a questão de quem deve governar a inteligência artificial?",
+  "sub2": "Como o PL 2338/2023 trata a questão de quem deve governar a inteligência artificial?"
+ },
+ "Como a FDA (dispositivos com IA) e a Resolução CFM de telemedicina tratam a qualidade e a segurança do cuidado?": {
+  "sub1": "Como a FDA (dispositivos com IA) trata a qualidade e a segurança do cuidado?",
+  "sub2": "Como a Resolução CFM de telemedicina trata a qualidade e a segurança do cuidado?"
+ },
+ "Como a OMS e o PL 2338/2023 protegem contra viés e discriminação por sistemas de IA?": {
+  "sub1": "Como a OMS protege contra viés e discriminação por sistemas de IA?",
+  "sub2": "Como o PL 2338/2023 protege contra viés e discriminação por sistemas de IA?"
+ },
+ "Como a Recomendação da UNESCO e o Código de Ética Médica tratam a autonomia da decisão humana em situações críticas?": {
+  "sub1": "Como a Recomendação da UNESCO trata a autonomia da decisão humana em situações críticas?",
+  "sub2": "Como o Código de Ética Médica trata a autonomia da decisão humana em situações críticas?"
+ },
+ "Como o PL 2338/2023 e a FDA tratam a governança de sistemas de IA de maior risco em setores regulados?": {
+  "sub1": "Como o PL 2338/2023 trata a governança de sistemas de IA de maior risco em setores regulados?",
+  "sub2": "Como a FDA trata a governança de sistemas de IA de maior risco em setores regulados?"
+ },
+ "Como o NIST e a UNESCO propõem avaliar a gravidade ou a magnitude de impactos negativos da IA?": {
+  "sub1": "Como o NIST propõe avaliar a gravidade ou a magnitude de impactos negativos da IA?",
+  "sub2": "Como a UNESCO propõe avaliar a gravidade ou a magnitude de impactos negativos da IA?"
+ },
+ "Como o GDPR e a Resolução ANPD 19/2024 asseguram salvaguardas para os dados pessoais?": {
+  "sub1": "Como o GDPR assegura salvaguardas para os dados pessoais?",
+  "sub2": "Como a Resolução ANPD 19/2024 assegura salvaguardas para os dados pessoais?"
+ },
+ "Como o PL 2338/2023 e o NIST AI RMF tratam o dever de informar ou notificar as pessoas sobre sistemas de IA?": {
+  "sub1": "Como o PL 2338/2023 trata o dever de informar ou notificar as pessoas sobre sistemas de IA?",
+  "sub2": "Como o NIST AI RMF trata o dever de informar ou notificar as pessoas sobre sistemas de IA?"
+ },
+ "Como o Espaço Europeu de Dados de Saúde e a OMS veem o uso secundário e o compartilhamento de dados de saúde?": {
+  "sub1": "Como o Espaço Europeu de Dados de Saúde vê o uso secundário e o compartilhamento de dados de saúde?",
+  "sub2": "Como a OMS vê o uso secundário e o compartilhamento de dados de saúde?"
+ },
+ "Que diretrizes o PL 2338/2023 e a Estratégia Brasileira de IA estabelecem para a atuação do poder público em IA?": {
+  "sub1": "Que diretrizes o PL 2338/2023 estabelece para a atuação do poder público em IA?",
+  "sub2": "Que diretrizes a Estratégia Brasileira de IA estabelece para a atuação do poder público em IA?"
+ },
+ "Quais são as penas disciplinares do exercício médico e o que a lei exige quanto à gradação delas?": {
+  "sub1": "Quais são as penas disciplinares do exercício médico segundo o Código de Ética Médica?",
+  "sub2": "O que a lei exige quanto à gradação das penas disciplinares no exercício médico?"
+ },
+ "Como se compõem os Conselhos Regionais de Medicina e que restrição eleitoral recai sobre os médicos militares?": {
+  "sub1": "Como os Conselhos Regionais de Medicina são compostos segundo a normativa vigente?",
+  "sub2": "Qual restrição eleitoral recai sobre os médicos militares de acordo com a legislação aplicável?"
+ },
+ "Qual CRM é competente para apurar falta ética e o que acontece quando o médico é militar?": {
+  "sub1": "Como o Conselho Regional de Medicina (CRM) trata da apuração de falta ética?",
+  "sub2": "Como o Código de Ética Médica trata da apuração de falta ética quando o médico é militar?"
+ },
+ "Quem designa instrutor e relator no processo ético-profissional e em que prazo se alega suspeição?": {
+  "sub1": "Como a norma que regula o processo ético‑profissional designa o instrutor e o relator?",
+  "sub2": "Como a mesma norma estabelece o prazo para alegar suspeição no processo ético‑profissional?"
+ },
+ "O que o Código de Ética Médica veda quanto ao sigilo e a quem cabe comunicar denúncias éticas nos estabelecimentos de saúde?": {
+  "sub1": "O que o Código de Ética Médica veda quanto ao sigilo?",
+  "sub2": "A quem cabe comunicar denúncias éticas nos estabelecimentos de saúde segundo o Código de Ética Médica?"
+ },
+ "Quem fixa a anuidade dos Conselhos de Medicina e qual a consequência de pagá-la fora do prazo?": {
+  "sub1": "Como a Resolução do Conselho Federal de Medicina fixa a anuidade dos Conselhos de Medicina?",
+  "sub2": "Qual a consequência prevista na Resolução do Conselho Regional de Medicina para o pagamento da anuidade fora do prazo?"
+ },
+ "Como o CFM define prontuário médico e por quanto tempo a lei exige que ele seja guardado?": {
+  "sub1": "Como o CFM define prontuário médico?",
+  "sub2": "Quanto tempo a lei exige que o prontuário médico seja guardado?"
+ },
+ "Que papel a certificação cumpre nos sistemas de registro eletrônico em saúde e na avaliação de soluções de IA?": {
+  "sub1": "Como a norma de certificação de sistemas de registro eletrônico em saúde define o papel da certificação nesses sistemas?",
+  "sub2": "Como a norma de avaliação de soluções de IA define o papel da certificação na avaliação dessas soluções?"
+ },
+ "Que estrutura o Brasil e a União Europeia criaram para a troca de dados de saúde entre sistemas?": {
+  "sub1": "Que estrutura o Brasil criou para a troca de dados de saúde entre sistemas?",
+  "sub2": "Que estrutura a União Europeia criou para a troca de dados de saúde entre sistemas?"
+ },
+ "Por onde tramita um protocolo de pesquisa com seres humanos e como a lei define o pesquisador responsável?": {
+  "sub1": "Por onde tramita um protocolo de pesquisa com seres humanos segundo a Resolução CNS 466/12?",
+  "sub2": "Como a Lei nº 13.979/2020 define o pesquisador responsável em pesquisas com seres humanos?"
+ },
+ "O que acontece com os protocolos de pesquisa sem resposta e o que fica sob guarda dos comitês depois do prazo?": {
+  "sub1": "O que a Norma X trata sobre protocolos de pesquisa sem resposta e sua guarda pelos comitês após o prazo?",
+  "sub2": "O que a Norma Y trata sobre protocolos de pesquisa sem resposta e sua guarda pelos comitês após o prazo?"
+ },
+ "Que compromissos formais cercam o uso de dados e de material biológico em pesquisa?": {
+  "sub1": "Quais compromissos formais o Regulamento Geral de Proteção de Dados (GDPR) estabelece para o uso de dados em pesquisa?",
+  "sub2": "Quais compromissos formais a Diretriz de Biossegurança estabelece para o uso de material biológico em pesquisa?"
+ },
+ "Que consequência há em não fazer a avaliação de impacto quando ela é exigida, e quando se consulta a autoridade de controlo?": {
+  "sub1": "Qual é a consequência de não fazer a avaliação de impacto quando ela é exigida pela norma?",
+  "sub2": "Qual é a consequência de não fazer a avaliação de impacto quando se consulta a autoridade de controlo?"
+ },
+ "Em que momento a avaliação de impacto deve ser feita e quando precisa ser atualizada?": {
+  "sub1": "Em que momento a Norma A determina que a avaliação de impacto deve ser feita e quando ela precisa ser atualizada?",
+  "sub2": "Em que momento a Norma B determina que a avaliação de impacto deve ser feita e quando ela precisa ser atualizada?"
+ },
+ "Quem é agente de tratamento de pequeno porte e como a LGPD define anonimização?": {
+  "sub1": "Como a LGPD define quem é agente de tratamento de pequeno porte?",
+  "sub2": "Como a LGPD define anonimização?"
+ },
+ "Que obrigações de registro a ANPD impõe ao agente de pequeno porte e a quem recebe dados no exterior?": {
+  "sub1": "Quais obrigações de registro a ANPD impõe ao agente de tratamento de pequeno porte?",
+  "sub2": "Quais obrigações de registro a ANPD impõe ao destinatário de dados localizado no exterior?"
+ },
+ "Como se distinguem algoritmo travado e aprendizado contínuo num dispositivo médico?": {
+  "sub1": "Como a norma FDA trata a distinção entre algoritmo travado e aprendizado contínuo em dispositivos médicos?",
+  "sub2": "Como a norma IEC 62304 trata a distinção entre algoritmo travado e aprendizado contínuo em dispositivos médicos?"
+ },
+ "Como o IMDRF categoriza o risco de um software como dispositivo médico e o que isso implica para a revisão independente?": {
+  "sub1": "Como o IMDRF categoriza o risco de um software como dispositivo médico?",
+  "sub2": "O que o IMDRF implica para a revisão independente de um software classificado como dispositivo médico?"
+ },
+ "O que se espera que um dispositivo com aprendizado de máquina revele sobre seus dados, e como isso se compara ao que a OMS observa nos modelos de fundação?": {
+  "sub1": "Como a norma de dispositivos com aprendizado de máquina trata da revelação de dados que o dispositivo utiliza?",
+  "sub2": "Como a OMS observa a revelação de dados nos modelos de fundação?"
+ },
+ "O que caracteriza um plano predeterminado de controle de mudanças e o que um protocolo de alteração de algoritmo descreve?": {
+  "sub1": "O que a norma de controle de mudanças define como plano predeterminado de controle de mudanças?",
+  "sub2": "O que a norma de alteração de algoritmo descreve em seu protocolo de alteração de algoritmo?"
+ },
+ "Que abordagem de projeto o FDA associa à transparência de dispositivos com aprendizado de máquina?": {
+  "sub1": "Como o FDA associa a transparência à abordagem de projeto de dispositivos com aprendizado de máquina?",
+  "sub2": "Como a EMA associa a transparência à abordagem de projeto de dispositivos com aprendizado de máquina?"
+ },
+ "O que precede a classificação de um produto como dispositivo médico com aprendizado de máquina, e que exigência recai sobre os dados de treinamento?": {
+  "sub1": "O que o regulamento da União Europeia (MDR) diz que precede a classificação de um produto como dispositivo médico com aprendizado de máquina?",
+  "sub2": "Que exigência o regulamento da FDA (Estados Unidos) impõe sobre os dados de treinamento para dispositivos médicos com aprendizado de máquina?"
+ },
+ "Quem estabeleceu os princípios de boas práticas de aprendizado de máquina e o que eles esperam do dispositivo depois de implantado?": {
+  "sub1": "Quem estabeleceu os princípios de boas práticas de aprendizado de máquina na norma ISO/IEC 20546 e o que essa norma espera do dispositivo depois de implantado?",
+  "sub2": "Quem estabeleceu os princípios de boas práticas de aprendizado de máquina nas Diretrizes de IA Responsável da Microsoft e o que essas diretrizes esperam do dispositivo depois de implantado?"
+ },
+ "Como se mede o risco a que o titular fica exposto no tratamento e na divulgação de dados?": {
+  "sub1": "Como a LGPD mede o risco a que o titular fica exposto no tratamento e na divulgação de dados?",
+  "sub2": "Como o GDPR mede o risco a que o titular fica exposto no tratamento e na divulgação de dados?"
+ },
+ "Qual o fundamento constitucional do direito à saúde e como a lei do SUS traduz isso em critério de prioridade?": {
+  "sub1": "Qual o fundamento constitucional do direito à saúde segundo a Constituição Federal?",
+  "sub2": "Como a Lei do SUS (Lei nº 8.080/1990) traduz esse fundamento em critério de prioridade?"
+ },
+ "Onde a proteção da vida privada tem assento constitucional e que técnica a LGPD oferece para afastar o dado do indivíduo?": {
+  "sub1": "Onde a Constituição Federal garante a proteção da vida privada?",
+  "sub2": "Que técnica a LGPD oferece para afastar o dado do indivíduo?"
+ },
+ "Que consequência penal e que consequência ética decorrem de revelar segredo obtido no exercício da profissão?": {
+  "sub1": "Qual a consequência penal prevista no Código Penal por revelar segredo obtido no exercício da profissão?",
+  "sub2": "Qual a consequência ética prevista no Código de Ética Profissional por revelar segredo obtido no exercício da profissão?"
+ },
+ "Que direito de acesso a registros o consumidor tem no Brasil e o que o RGPD acrescenta sobre decisão automatizada?": {
+  "sub1": "Que direito de acesso a registros o consumidor tem no Brasil segundo a legislação brasileira?",
+  "sub2": "O que o RGPD acrescenta sobre decisão automatizada em relação ao direito de acesso a registros?"
+ },
+ "Como o ECA define o direito ao respeito da criança e o que o Código de Ética Médica diz sobre o sigilo dela?": {
+  "sub1": "Como o ECA define o direito ao respeito da criança?",
+  "sub2": "Como o Código de Ética Médica trata o sigilo da criança?"
+ },
+ "Que posição a telemedicina e a inteligência artificial ocupam em relação ao ato médico presencial e à decisão do médico?": {
+  "sub1": "Como o Código de Ética Médica trata da posição da telemedicina e da inteligência artificial em relação ao ato médico presencial e à decisão do médico?",
+  "sub2": "Como a Lei de Telemedicina trata da posição da telemedicina e da inteligência artificial em relação ao ato médico presencial e à decisão do médico?"
+ },
+ "Quem responde pelo ato praticado com auxílio de IA na medicina e em que hipótese a supervisão humana pode ser dispensada?": {
+  "sub1": "Como a Lei Geral de Proteção de Dados (LGPD) trata da responsabilidade pelo ato praticado com auxílio de IA na medicina e em que hipótese a supervisão humana pode ser dispensada?",
+  "sub2": "Como o Código de Ética Médica trata da responsabilidade pelo ato praticado com auxílio de IA na medicina e em que hipótese a supervisão humana pode ser dispensada?"
+ },
+ "Que limites o CFM impõe à divulgação da atividade médica e à exposição de casos clínicos?": {
+  "sub1": "Quais limites o CFM impõe à divulgação da atividade médica e à exposição de casos clínicos?",
+  "sub2": "Quais limites a Ética Médica (Código de Ética) impõe à divulgação da atividade médica e à exposição de casos clínicos?"
+ },
+ "Que avaliação de risco se exige de uma instituição médica que usa IA e o que o NIST diz sobre avaliação de impacto?": {
+  "sub1": "Que avaliação de risco exige a norma brasileira para instituições médicas que utilizam IA?",
+  "sub2": "O que o NIST diz sobre avaliação de impacto em sistemas de IA?"
+ },
+ "O que a OMS entende por autonomia humana em saúde e como o CFM operacionaliza a transparência no uso de IA?": {
+  "sub1": "O que a OMS entende por autonomia humana em saúde?",
+  "sub2": "Como o CFM operacionaliza a transparência no uso de IA?"
+ },
+ "Que áreas a OMS elege como temas regulatórios da IA em saúde e o que a convenção do Conselho da Europa exige de cada Parte?": {
+  "sub1": "Quais áreas a OMS elege como temas regulatórios da IA em saúde?",
+  "sub2": "O que a Convenção do Conselho da Europa exige de cada Parte em relação à IA em saúde?"
+ },
+ "Como a OCDE define sistema de inteligência artificial e que subcategoria a proposta brasileira destaca à parte?": {
+  "sub1": "Como a OCDE define sistema de inteligência artificial?",
+  "sub2": "Como a proposta brasileira destaca uma subcategoria de sistema de inteligência artificial à parte?"
+ },
+ "Que objetivo o Plano Brasileiro de IA declara e como ele se relaciona com o da Estratégia Brasileira de IA?": {
+  "sub1": "Qual objetivo o Plano Brasileiro de IA declara?",
+  "sub2": "Qual objetivo a Estratégia Brasileira de IA declara e como ele se relaciona com o do Plano Brasileiro de IA?"
+ },
+ "A que tipo de pesquisa se aplica o modelo de relatório do CEP e o que acontece quando ele é recebido?": {
+  "sub1": "Como o modelo de relatório do CEP define o tipo de pesquisa a que se aplica?",
+  "sub2": "O que acontece, segundo a norma ISO 19011, quando o modelo de relatório do CEP é recebido?"
+ },
+ "Por que sistemas de IA treinados com dados históricos são vulneráveis a viés, segundo o FDA e o NIST?": {
+  "sub1": "Por que o FDA afirma que sistemas de IA treinados com dados históricos são vulneráveis a viés?",
+  "sub2": "Por que o NIST afirma que sistemas de IA treinados com dados históricos são vulneráveis a viés?"
+ },
+ "Que sistema de saúde digital a OMS propõe construir e que realização concreta o Brasil tem nessa direção?": {
+  "sub1": "Que sistema de saúde digital a OMS propõe construir?",
+  "sub2": "Que realização concreta o Brasil tem na direção do sistema de saúde digital proposto pela OMS?"
+ },
+ "Que lugar a literacia digital ocupa na estratégia da OMS e na estratégia brasileira de IA?": {
+  "sub1": "Que lugar a literacia digital ocupa na estratégia da OMS?",
+  "sub2": "Que lugar a literacia digital ocupa na estratégia brasileira de IA?"
+ },
+ "Que função a LGPD cria para intermediar controlador e titular, e que alívio a ANPD dá ao agente de pequeno porte?": {
+  "sub1": "Que função a LGPD cria para intermediar controlador e titular?",
+  "sub2": "Que alívio a ANPD dá ao agente de pequeno porte?"
+ },
+ "Como a lei brasileira define biobanco e que princípio o NIST aplica à coleta de identificadores?": {
+  "sub1": "Como a lei brasileira define biobanco?",
+  "sub2": "Qual princípio o NIST aplica à coleta de identificadores?"
+ },
+ "Como se distribui a responsabilidade por defeito de produto no direito do consumidor e por ato médico apoiado em IA?": {
+  "sub1": "Como o direito do consumidor distribui a responsabilidade por defeito de produto?",
+  "sub2": "Como o direito médico trata a responsabilidade por ato médico apoiado em IA?"
+ },
+ "Que dever geral o ECA impõe quanto à dignidade da criança e que risco a OMS associa aos modelos multimodais?": {
+  "sub1": "Que dever geral o ECA impõe quanto à dignidade da criança?",
+  "sub2": "Que risco a OMS associa aos modelos multimodais?"
+ },
+ "Que dever de sigilo recai sobre quem exerce função pública de supervisão de dados e sobre o profissional em geral?": {
+  "sub1": "Que dever de sigilo recai sobre quem exerce função pública de supervisão de dados segundo a Lei Geral de Proteção de Dados (LGPD)?",
+  "sub2": "Que dever de sigilo recai sobre o profissional em geral segundo o Código de Ética Profissional aplicável?"
+ },
+ "Que pressuposto a responsabilidade civil do profissional exige e em que ela difere da responsabilidade por defeito de produto?": {
+  "sub1": "Qual pressuposto a responsabilidade civil do profissional exige segundo o Código Civil brasileiro e como ele se caracteriza?",
+  "sub2": "Qual pressuposto a responsabilidade civil por defeito de produto exige segundo o Código de Defesa do Consumidor e como ele se diferencia da responsabilidade do profissional?"
+ },
+ "Que exigência recai sobre os padrões de referência e sobre as métricas de desempenho de um software como dispositivo médico?": {
+  "sub1": "Como o regulamento da ANVISA trata das exigências sobre os padrões de referência de um software como dispositivo médico?",
+  "sub2": "Como a norma ISO 13485 trata das exigências sobre as métricas de desempenho de um software como dispositivo médico?"
+ },
+ "Como a OCDE define justiça centrada nas pessoas e que formulação equivalente a Constituição usa para a saúde?": {
+  "sub1": "Como a OCDE define justiça centrada nas pessoas?",
+  "sub2": "Qual formulação equivalente à Constituição usa para a saúde?"
+ },
+ "Que noção de reparação a UNESCO aplica a impactos de IA e que instrumento processual o CFM oferece contra julgador parcial?": {
+  "sub1": "Que noção de reparação a UNESCO aplica a impactos de IA?",
+  "sub2": "Que instrumento processual o CFM oferece contra julgador parcial?"
+ }
+}
