@@ -133,8 +133,40 @@ def finalize(cfg, rewrite_csv=True):
                for p in sorted(rdir.glob("*.json"))}
     if not systems:
         print("! nenhum ranking em", rdir, "— rode os cenários antes."); return
+
+    # DESCARTA RANKING MORTO ANTES DE COMBINAR.
+    #
+    # Esta função varre a pasta inteira com glob("*.json"), então todo ranking
+    # já gravado ali entra no metrics.json que a etapa 03 e os exportadores
+    # consomem — inclusive os de rodadas antigas. Em 30/09/2026 havia três
+    # nesse estado (A_bm25_mt, B_bge_m3_colbert, B_bge_m3_hybrid, todos de
+    # 31/08): JSON válido, todas as perguntas no lugar, e ZERO por cento dos
+    # ids de trecho ainda existindo no corpus, porque os ids passaram a ser
+    # endereçados por conteúdo em 12/09 e o corpus foi limpo em 22/09.
+    #
+    # Um ranking assim não falha: ele marca 0,000 em todas as métricas e entra
+    # na tabela parecendo um sistema ruim. É o defeito mais caro possível numa
+    # comparação, porque não se distingue de resultado.
+    corpus = load_corpus(resolve(cfg["paths"]["corpus"]))
+    LIMITE_IDS_VIVOS = 0.95
+    mortos = {}
+    for s, rk in list(systems.items()):
+        ids = {c for ordem in rk.values() for c in ordem[:20]}
+        vivos = (sum(1 for c in ids if c in corpus) / len(ids)) if ids else 0.0
+        if vivos < LIMITE_IDS_VIVOS:
+            mortos[s] = vivos
+            del systems[s]
+    if mortos:
+        print(f"! {len(mortos)} ranking(s) DESCARTADO(S) — ids não existem mais "
+              f"no corpus de {len(corpus)} trechos:")
+        for s, v in sorted(mortos.items()):
+            print(f"    {s:26s} {v:.0%} dos ids vivos")
+        print("  Rode esses cenários de novo, ou apague o arquivo. Eles marcariam")
+        print("  0,000 em tudo e entrariam na tabela como se fossem resultado.")
+    if not systems:
+        print("! nenhum ranking válido em", rdir); return
+
     if rewrite_csv:
-        corpus = load_corpus(resolve(cfg["paths"]["corpus"]))
         for s, rk in systems.items():
             save_scenario(cfg, s, rk, qrels, meta, corpus)
     table, per_query_primary = {}, {}
