@@ -41,7 +41,7 @@ SAIDA = DADOS / "acervo.json"
 
 PARTES = ("perguntas_piloto.json", "perguntas.json",
           "perguntas_comparativas.json", "perguntas_irrespondiveis.json",
-          "perguntas_factuais.json")
+          "perguntas_factuais.json", "perguntas_multihop.json")
 
 # Alvo do artigo de dezembro: 75 por tipo. O do KDD era 125, mas a geração pausa
 # em 75 porque documentos novos devem entrar para fevereiro — e pergunta escrita
@@ -76,6 +76,39 @@ def main() -> None:
             vistas.add(chave)
             acervo.append(r)
         print(f"  {nome:32s} {len(parte):4d}")
+
+    # COERÊNCIA ESTRUTURAL DO TIPO, para TODAS as famílias. O `tipar_perguntas.py`
+    # só toca nas 91 do experimento de recorte; o piloto trouxe o tipo atribuído
+    # e nunca foi conferido contra a própria estrutura. Duas regras que
+    # o projeto já declara em outros lugares e que aqui passam a valer sempre:
+    #
+    #   uma citação  → `factual`, porque um trecho responde. Rotular de multi_hop
+    #                  cria pergunta que não pode exigir dois trechos e ainda assim
+    #                  é contada no denominador do tipo.
+    #   comparativa  → precisa citar DOIS documentos. Se cita um, a resposta afirma
+    #                  algo sobre a outra norma sem lastro — foi o defeito de
+    #                  q0081, q0085, q0093 e q0099, achado só em 29/09/2026.
+    #
+    # A segunda regra só AVISA: consertá-la exige escolher a citação que falta, o
+    # que é decisão editorial e não pode acontecer numa fusão automática.
+    retipadas, sem_dois_documentos = [], []
+    for r in acervo:
+        ev = [e for e in (r.get("evidencia") or []) if e]
+        if len(ev) == 1 and r["question_type"] in ("multi_hop", "comparative"):
+            retipadas.append((r["n"], r["question_type"], r.get("origem")))
+            r["question_type"] = "factual"
+        elif r["question_type"] == "comparative":
+            docs = set(r.get("documentos") or ([r["documento"]] if r.get("documento") else []))
+            if len(docs) < 2:
+                sem_dois_documentos.append((r["n"], r.get("origem")))
+    if retipadas:
+        print(f"\n  retipadas para factual (uma citação só): {len(retipadas)}")
+        for n, t, o in retipadas:
+            print(f"     {n} era {t} ({o})")
+    if sem_dois_documentos:
+        print(f"\n  ⚠ comparativas com menos de dois documentos: {len(sem_dois_documentos)}")
+        for n, o in sem_dois_documentos:
+            print(f"     {n} ({o}) — a resposta afirma algo sem citação")
 
     tipos = Counter(r["question_type"] for r in acervo)
     print(f"\nacervo: {len(acervo)} perguntas")

@@ -85,6 +85,25 @@ for _f in (sys.stdout, sys.stderr):
 LONGE = 1200
 
 
+def dispersao_em_trechos(evidencia, trechos_norm) -> int | None:
+    """Quantos trechos do corpus separam a primeira citação da última.
+
+    0 = todas no mesmo trecho · 1 = trechos vizinhos · None = alguma não achada.
+    Usa o índice do trecho, não o deslocamento em caracteres, porque o que a
+    recuperação entrega é trecho.
+    """
+    posicoes = []
+    for e in evidencia or []:
+        alvo = normalizar(e)
+        achados = [i for i, t in enumerate(trechos_norm) if alvo in t]
+        if not achados:
+            return None
+        posicoes.append(min(achados))
+    if not posicoes:
+        return None
+    return max(posicoes) - min(posicoes)
+
+
 def normalizar(t: str) -> str:
     t = (t or "").replace("­", "")
     t = unicodedata.normalize("NFKD", t.lower())
@@ -109,9 +128,13 @@ def main() -> None:
 
     perguntas = json.loads(PERGUNTAS.read_text(encoding="utf-8"))
     temas: dict[str, str] = {}
+    trechos_norm: list[str] = []
     for linha in CORPUS.open(encoding="utf-8"):
+        if not linha.strip():
+            continue
         r = json.loads(linha)
         temas.setdefault(r["metadata"]["document_id"], r["metadata"].get("theme"))
+        trechos_norm.append(normalizar(r["text"]))
 
     sem_tema, sem_separacao, estouradas = [], [], []
     for r in perguntas:
@@ -132,7 +155,27 @@ def main() -> None:
             sem_separacao.append(r["n"])
         r["separacao_citacoes"] = d
 
-        if r["n_evidencias"] <= 1:
+        # DISPERSÃO EM TRECHOS DO CORPUS, não na passagem. Duas citações só
+        # exigem duas buscas se caírem em trechos DIFERENTES do recorte em
+        # produção. Se as duas estão no mesmo trecho, UM trecho responde — e
+        # isso é a definição de `factual` neste projeto, não de multi-hop.
+        #
+        # A regra antiga ("2 citações → multi_hop") rotulou como multi-hop 42
+        # perguntas cujas citações estão no mesmo trecho. O efeito é medível
+        # : em 27/09/2026 o Gemini acertou Junta@5 em 0,968 delas, contra
+        # 0,167 nas de citações realmente distantes. Metade do tipo `multi_hop`
+        # não estava testando recuperação de evidência dispersa; estava medindo
+        # se o recuperador acha um trecho.
+        #
+        # A causa é construtiva e estava à vista no campo `janela`: estas 91
+        # nasceram de UMA passagem de ~1.200 caracteres, o mesmo tamanho do
+        # trecho de produção — então as duas citações saíam da mesma janela por
+        # definição. Medir na passagem não pegava isso (a passagem É a janela);
+        # medir no corpus pega.
+        r["dispersao_trechos"] = dispersao_em_trechos(r["evidencia"], trechos_norm)
+        uma_peca_so = r["n_evidencias"] <= 1 or r["dispersao_trechos"] == 0
+
+        if uma_peca_so:
             r["question_type"] = "factual"
             r["difficulty"] = "easy"
         else:

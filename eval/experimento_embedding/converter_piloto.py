@@ -188,6 +188,11 @@ def main() -> None:
             "n": g["qid"], "question": g["question"],
             "answer": g["reference_answer"], "evidencia": ev, "n_evidencias": len(ev),
             "documento": docs[0] if len(set(docs)) == 1 else None,
+            # Quando a pergunta cruza documentos, `documento` fica nulo e a
+            # procedência sobraria só dentro do texto das citações. Guardar a
+            # lista aqui é o que permite conferir se a busca trouxe OS DOIS
+            # lados — mesma forma que `gerar_comparativas.py` usa.
+            "documentos": sorted(set(docs)) if len(set(docs)) > 1 else None,
             "forma": None, "janela": 1200, "passagem_texto": None,
             "question_type": tipo, "difficulty": g.get("difficulty"),
             "theme": g.get("theme"), "source_lang": g.get("source_lang"),

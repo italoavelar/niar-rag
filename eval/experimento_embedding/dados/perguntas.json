@@ -8,7 +8,7 @@
    "The Commission may also decide, having given notice and a full statement setting out the reasons to the third country or international organisation, to revoke such a decision."
   ],
   "n_evidencias": 2,
-  "difficulty": "hard",
+  "difficulty": "easy",
   "persona": "desenvolvedor",
   "documento": "gdpr_regulation_EU_2016",
   "forma": "articulado_EN",
@@ -17,8 +17,9 @@
   "source_lang": "en",
   "theme": "Proteção de dados pessoais",
   "separacao_citacoes": 324,
-  "question_type": "multi_hop",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 2,
@@ -38,7 +39,8 @@
   "theme": "Avaliação de benefícios e riscos de sistemas de IA",
   "separacao_citacoes": null,
   "question_type": "factual",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 3,
@@ -59,7 +61,8 @@
   "theme": "Código de Ética Médica",
   "separacao_citacoes": 1446,
   "question_type": "multi_hop",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 1
  },
  {
   "n": 4,
@@ -79,7 +82,8 @@
   "theme": "Governança de dados de justiça",
   "separacao_citacoes": 169,
   "question_type": "factual",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 5,
@@ -90,7 +94,7 @@
    "validadas em três encontros regionais específicos para tratar do tema."
   ],
   "n_evidencias": 2,
-  "difficulty": "hard",
+  "difficulty": "easy",
   "persona": "pesquisador",
   "documento": "codigo_etica_medica_CFM_2019",
   "forma": "articulado_PT",
@@ -99,8 +103,9 @@
   "source_lang": "pt",
   "theme": "Código de Ética Médica",
   "separacao_citacoes": 1537,
-  "question_type": "multi_hop",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 6,
@@ -120,7 +125,8 @@
   "theme": "Regulação do desenvolvimento, fomento e uso ético e responsável da inteligência artificial",
   "separacao_citacoes": 229,
   "question_type": "factual",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 8,
@@ -140,7 +146,8 @@
   "theme": "Avaliação de benefícios e riscos de sistemas de IA",
   "separacao_citacoes": 97,
   "question_type": "factual",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 9,
@@ -161,7 +168,8 @@
   "theme": "Proteção de dados pessoais",
   "separacao_citacoes": 851,
   "question_type": "multi_hop",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 1
  },
  {
   "n": 10,
@@ -182,7 +190,8 @@
   "theme": "De-identificação de conjuntos de dados pessoais",
   "separacao_citacoes": null,
   "question_type": "multi_hop",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 2
  },
  {
   "n": 11,
@@ -203,7 +212,8 @@
   "theme": "De-identificação de conjuntos de dados pessoais",
   "separacao_citacoes": 516,
   "question_type": "multi_hop",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 1
  },
  {
   "n": 12,
@@ -214,7 +224,7 @@
    "Desenvolver diretrizes para a elaboração de Relatórios de Impacto de Proteção de Dados (RIPD)."
   ],
   "n_evidencias": 2,
-  "difficulty": "hard",
+  "difficulty": "easy",
   "persona": "pesquisador",
   "documento": "estrategia_brasileira_ia_MCTI_2021",
   "forma": "prosa_PT",
@@ -223,8 +233,9 @@
   "source_lang": "pt",
   "theme": "Estratégia para desenvolvimento e utilização da IA",
   "separacao_citacoes": 630,
-  "question_type": "multi_hop",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 13,
@@ -245,7 +256,8 @@
   "theme": "Espaço Europeu de Dados de Saúde",
   "separacao_citacoes": 911,
   "question_type": "multi_hop",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 1
  },
  {
   "n": 14,
@@ -256,7 +268,7 @@
    "Incorporar a IA e a análise de dados nos processos de formulação de políticas públicas."
   ],
   "n_evidencias": 2,
-  "difficulty": "hard",
+  "difficulty": "easy",
   "persona": "desenvolvedor",
   "documento": "estrategia_brasileira_ia_MCTI_2021",
   "forma": "prosa_PT",
@@ -265,8 +277,9 @@
   "source_lang": "pt",
   "theme": "Estratégia para desenvolvimento e utilização da IA",
   "separacao_citacoes": 192,
-  "question_type": "multi_hop",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 15,
@@ -286,7 +299,8 @@
   "theme": "Proposta de estrutura regulatória para modificações de software como dispositivo médico baseado em IA/ML",
   "separacao_citacoes": 208,
   "question_type": "factual",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 19,
@@ -297,7 +311,7 @@
    "O conselheiro suplente eleito somente entrará em exercício na hipótese de impedimento do conselheiro efetivo, por mais de trinta dias, ou na hipótese de vacância, para concluírem o mandato em curso."
   ],
   "n_evidencias": 2,
-  "difficulty": "medium",
+  "difficulty": "easy",
   "persona": "saude",
   "documento": "decreto_44045_BR_1958",
   "forma": "prosa_PT",
@@ -306,8 +320,9 @@
   "source_lang": "pt",
   "theme": "Regulamento sobre Conselho Federal e Conselhos regionais de Medicina",
   "separacao_citacoes": null,
-  "question_type": "multi_hop",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 20,
@@ -327,7 +342,8 @@
   "theme": "Avaliação de benefícios e riscos de sistemas de IA",
   "separacao_citacoes": 119,
   "question_type": "factual",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 21,
@@ -345,9 +361,10 @@
   "source_lang": "en",
   "theme": "De-identificação de conjuntos de dados pessoais",
   "separacao_citacoes": null,
-  "question_type": "multi_hop",
-  "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 22,
@@ -365,9 +382,10 @@
   "source_lang": "en",
   "theme": "Proposta de estrutura regulatória para modificações de software como dispositivo médico baseado em IA/ML",
   "separacao_citacoes": 774,
-  "question_type": "multi_hop",
-  "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 23,
@@ -385,9 +403,10 @@
   "source_lang": "en",
   "theme": "Convenção sobre inteligência artificial, direitos humanos, democracia e Estado de Direito",
   "separacao_citacoes": 397,
-  "question_type": "multi_hop",
-  "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 27,
@@ -407,7 +426,8 @@
   "separacao_citacoes": 1058,
   "question_type": "multi_hop",
   "difficulty": "hard",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 5
  },
  {
   "n": 28,
@@ -427,7 +447,8 @@
   "separacao_citacoes": 1077,
   "question_type": "multi_hop",
   "difficulty": "hard",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 1
  },
  {
   "n": 29,
@@ -447,7 +468,8 @@
   "separacao_citacoes": 1716,
   "question_type": "multi_hop",
   "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 16
  },
  {
   "n": 30,
@@ -465,9 +487,10 @@
   "source_lang": "pt",
   "theme": "Espaço Europeu de Dados de Saúde",
   "separacao_citacoes": null,
-  "question_type": "multi_hop",
-  "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 31,
@@ -485,9 +508,10 @@
   "source_lang": "en",
   "theme": "Proposta de estrutura regulatória para modificações de software como dispositivo médico baseado em IA/ML",
   "separacao_citacoes": 385,
-  "question_type": "multi_hop",
-  "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 32,
@@ -507,7 +531,8 @@
   "separacao_citacoes": null,
   "question_type": "multi_hop",
   "difficulty": "hard",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 4
  },
  {
   "n": 33,
@@ -525,9 +550,10 @@
   "source_lang": "pt",
   "theme": "Regulação do desenvolvimento, fomento e uso ético e responsável da inteligência artificial",
   "separacao_citacoes": 171,
-  "question_type": "multi_hop",
-  "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 34,
@@ -545,9 +571,10 @@
   "source_lang": "en",
   "theme": "Proposta de estrutura regulatória para modificações de software como dispositivo médico baseado em IA/ML",
   "separacao_citacoes": 854,
-  "question_type": "multi_hop",
-  "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 35,
@@ -565,9 +592,10 @@
   "source_lang": "en",
   "theme": "De-identificação de conjuntos de dados pessoais",
   "separacao_citacoes": null,
-  "question_type": "multi_hop",
-  "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 36,
@@ -587,7 +615,8 @@
   "separacao_citacoes": 791,
   "question_type": "multi_hop",
   "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 1
  },
  {
   "n": 37,
@@ -605,9 +634,10 @@
   "source_lang": "pt",
   "theme": "Definição do ato profissional médico",
   "separacao_citacoes": 656,
-  "question_type": "multi_hop",
-  "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 38,
@@ -625,9 +655,10 @@
   "source_lang": "pt",
   "theme": "Regulação do desenvolvimento, fomento e uso ético e responsável da inteligência artificial",
   "separacao_citacoes": 348,
-  "question_type": "multi_hop",
-  "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 39,
@@ -647,7 +678,8 @@
   "separacao_citacoes": 846,
   "question_type": "multi_hop",
   "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 3
  },
  {
   "n": 40,
@@ -665,9 +697,10 @@
   "source_lang": "pt",
   "theme": "Espaço Europeu de Dados de Saúde",
   "separacao_citacoes": 640,
-  "question_type": "multi_hop",
-  "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 41,
@@ -687,7 +720,8 @@
   "separacao_citacoes": null,
   "question_type": "multi_hop",
   "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 2
  },
  {
   "n": 42,
@@ -707,7 +741,8 @@
   "separacao_citacoes": 1757,
   "question_type": "multi_hop",
   "difficulty": "hard",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 8
  },
  {
   "n": 43,
@@ -727,7 +762,8 @@
   "separacao_citacoes": 1428,
   "question_type": "multi_hop",
   "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 4
  },
  {
   "n": 44,
@@ -747,7 +783,8 @@
   "separacao_citacoes": 1086,
   "question_type": "multi_hop",
   "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 23
  },
  {
   "n": 45,
@@ -766,7 +803,8 @@
   "separacao_citacoes": 254,
   "question_type": "factual",
   "difficulty": "easy",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 46,
@@ -784,9 +822,10 @@
   "source_lang": "pt",
   "theme": "Regulação do desenvolvimento, fomento e uso ético e responsável da inteligência artificial",
   "separacao_citacoes": 647,
-  "question_type": "multi_hop",
-  "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 47,
@@ -806,7 +845,8 @@
   "separacao_citacoes": 1022,
   "question_type": "multi_hop",
   "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 1
  },
  {
   "n": 24,
@@ -824,9 +864,10 @@
   "source_lang": "pt",
   "theme": "Regulamento sobre Conselho Federal e Conselhos regionais de Medicina",
   "separacao_citacoes": 479,
-  "question_type": "multi_hop",
-  "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 48,
@@ -845,7 +886,8 @@
   "separacao_citacoes": 275,
   "question_type": "factual",
   "difficulty": "easy",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 49,
@@ -865,7 +907,8 @@
   "separacao_citacoes": 3116,
   "question_type": "multi_hop",
   "difficulty": "hard",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 5
  },
  {
   "n": 50,
@@ -883,9 +926,10 @@
   "source_lang": "pt",
   "theme": "Regulamento sobre transferência internacional de dados e sobre cláusulas-padrão contratuais",
   "separacao_citacoes": 475,
-  "question_type": "multi_hop",
-  "difficulty": "hard",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 51,
@@ -903,9 +947,10 @@
   "source_lang": "pt",
   "theme": "Saúde e serviços correspondentes",
   "separacao_citacoes": null,
-  "question_type": "multi_hop",
-  "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 52,
@@ -924,7 +969,8 @@
   "separacao_citacoes": 149,
   "question_type": "factual",
   "difficulty": "easy",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 53,
@@ -943,7 +989,8 @@
   "separacao_citacoes": null,
   "question_type": "factual",
   "difficulty": "easy",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 54,
@@ -961,9 +1008,10 @@
   "source_lang": "en",
   "theme": "Governança de dados de justiça",
   "separacao_citacoes": 371,
-  "question_type": "multi_hop",
-  "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 55,
@@ -983,7 +1031,8 @@
   "separacao_citacoes": 1178,
   "question_type": "multi_hop",
   "difficulty": "hard",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 1
  },
  {
   "n": 56,
@@ -1003,7 +1052,8 @@
   "separacao_citacoes": 510,
   "question_type": "multi_hop",
   "difficulty": "hard",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 1
  },
  {
   "n": 57,
@@ -1021,9 +1071,10 @@
   "source_lang": "en",
   "theme": "Governança de dados de justiça",
   "separacao_citacoes": 349,
-  "question_type": "multi_hop",
-  "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 59,
@@ -1041,9 +1092,10 @@
   "source_lang": "pt",
   "theme": "Regulamento sobre transferência internacional de dados e sobre cláusulas-padrão contratuais",
   "separacao_citacoes": 464,
-  "question_type": "multi_hop",
-  "difficulty": "hard",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 60,
@@ -1062,7 +1114,8 @@
   "separacao_citacoes": 278,
   "question_type": "factual",
   "difficulty": "easy",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 61,
@@ -1080,9 +1133,10 @@
   "source_lang": "en",
   "theme": "De-identificação de conjuntos de dados pessoais",
   "separacao_citacoes": null,
-  "question_type": "multi_hop",
-  "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 62,
@@ -1100,9 +1154,10 @@
   "source_lang": "pt",
   "theme": "Regulamento sobre Conselho Federal e Conselhos regionais de Medicina",
   "separacao_citacoes": 945,
-  "question_type": "multi_hop",
-  "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 63,
@@ -1122,7 +1177,8 @@
   "separacao_citacoes": 509,
   "question_type": "multi_hop",
   "difficulty": "hard",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 1
  },
  {
   "n": 64,
@@ -1142,7 +1198,8 @@
   "separacao_citacoes": 1744,
   "question_type": "multi_hop",
   "difficulty": "hard",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 1
  },
  {
   "n": 65,
@@ -1160,9 +1217,10 @@
   "source_lang": "pt",
   "theme": "Definição do ato profissional médico",
   "separacao_citacoes": 377,
-  "question_type": "multi_hop",
-  "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 67,
@@ -1180,9 +1238,10 @@
   "source_lang": "en",
   "theme": "Avaliação de benefícios e riscos de sistemas de IA",
   "separacao_citacoes": null,
-  "question_type": "multi_hop",
-  "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 68,
@@ -1202,7 +1261,8 @@
   "separacao_citacoes": 193,
   "question_type": "multi_hop",
   "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 1
  },
  {
   "n": 69,
@@ -1221,7 +1281,8 @@
   "separacao_citacoes": 276,
   "question_type": "factual",
   "difficulty": "easy",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 70,
@@ -1241,7 +1302,8 @@
   "separacao_citacoes": 1053,
   "question_type": "multi_hop",
   "difficulty": "hard",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 10
  },
  {
   "n": 71,
@@ -1259,9 +1321,10 @@
   "source_lang": "pt",
   "theme": "Código de Ética Médica",
   "separacao_citacoes": 402,
-  "question_type": "multi_hop",
-  "difficulty": "hard",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 72,
@@ -1279,9 +1342,10 @@
   "source_lang": "pt",
   "theme": "Estratégia para desenvolvimento e utilização da IA",
   "separacao_citacoes": 461,
-  "question_type": "multi_hop",
-  "difficulty": "hard",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 73,
@@ -1299,9 +1363,10 @@
   "source_lang": "en",
   "theme": "Ética e governança de grandes modelos multimodais aplicados à saúde",
   "separacao_citacoes": 2429,
-  "question_type": "multi_hop",
-  "difficulty": "hard",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 74,
@@ -1321,7 +1386,8 @@
   "separacao_citacoes": 1447,
   "question_type": "multi_hop",
   "difficulty": "hard",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 1
  },
  {
   "n": 75,
@@ -1339,9 +1405,10 @@
   "source_lang": "en",
   "theme": "Ética e governança de grandes modelos multimodais aplicados à saúde",
   "separacao_citacoes": 1379,
-  "question_type": "multi_hop",
-  "difficulty": "hard",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 76,
@@ -1361,7 +1428,8 @@
   "separacao_citacoes": 885,
   "question_type": "multi_hop",
   "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 1
  },
  {
   "n": 77,
@@ -1379,9 +1447,10 @@
   "source_lang": "pt",
   "theme": "Regulação do desenvolvimento, fomento e uso ético e responsável da inteligência artificial",
   "separacao_citacoes": null,
-  "question_type": "multi_hop",
-  "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 78,
@@ -1399,9 +1468,10 @@
   "source_lang": "pt",
   "theme": "Regulação do desenvolvimento, fomento e uso ético e responsável da inteligência artificial",
   "separacao_citacoes": 414,
-  "question_type": "multi_hop",
-  "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 79,
@@ -1420,7 +1490,8 @@
   "separacao_citacoes": 204,
   "question_type": "factual",
   "difficulty": "easy",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 80,
@@ -1440,7 +1511,8 @@
   "separacao_citacoes": 2317,
   "question_type": "multi_hop",
   "difficulty": "hard",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 9
  },
  {
   "n": 81,
@@ -1458,9 +1530,10 @@
   "source_lang": "pt",
   "theme": "Saúde e serviços correspondentes",
   "separacao_citacoes": 426,
-  "question_type": "multi_hop",
-  "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 82,
@@ -1480,7 +1553,8 @@
   "separacao_citacoes": 514,
   "question_type": "multi_hop",
   "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 3
  },
  {
   "n": 83,
@@ -1500,7 +1574,8 @@
   "separacao_citacoes": 635,
   "question_type": "multi_hop",
   "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 1
  },
  {
   "n": 84,
@@ -1520,7 +1595,8 @@
   "separacao_citacoes": null,
   "question_type": "multi_hop",
   "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 1
  },
  {
   "n": 85,
@@ -1540,7 +1616,8 @@
   "separacao_citacoes": 3640,
   "question_type": "multi_hop",
   "difficulty": "hard",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 5
  },
  {
   "n": 86,
@@ -1558,9 +1635,10 @@
   "source_lang": "en",
   "theme": "Convenção sobre inteligência artificial, direitos humanos, democracia e Estado de Direito",
   "separacao_citacoes": null,
-  "question_type": "multi_hop",
-  "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 88,
@@ -1578,9 +1656,10 @@
   "source_lang": "pt",
   "theme": "Saúde e serviços correspondentes",
   "separacao_citacoes": 203,
-  "question_type": "multi_hop",
-  "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 89,
@@ -1598,9 +1677,10 @@
   "source_lang": "pt",
   "theme": "Definição do ato profissional médico",
   "separacao_citacoes": 462,
-  "question_type": "multi_hop",
-  "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 90,
@@ -1620,7 +1700,8 @@
   "separacao_citacoes": 1294,
   "question_type": "multi_hop",
   "difficulty": "hard",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 3
  },
  {
   "n": 91,
@@ -1640,7 +1721,8 @@
   "separacao_citacoes": 1065,
   "question_type": "multi_hop",
   "difficulty": "hard",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 1
  },
  {
   "n": 92,
@@ -1660,7 +1742,8 @@
   "separacao_citacoes": 1245,
   "question_type": "multi_hop",
   "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 13
  },
  {
   "n": 93,
@@ -1680,7 +1763,8 @@
   "separacao_citacoes": 677,
   "question_type": "multi_hop",
   "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 2
  },
  {
   "n": 94,
@@ -1698,9 +1782,10 @@
   "source_lang": "pt",
   "theme": "Definição do ato profissional médico",
   "separacao_citacoes": null,
-  "question_type": "multi_hop",
-  "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 95,
@@ -1718,9 +1803,10 @@
   "source_lang": "pt",
   "theme": "Definição do ato profissional médico",
   "separacao_citacoes": 641,
-  "question_type": "multi_hop",
-  "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 96,
@@ -1738,9 +1824,10 @@
   "source_lang": "pt",
   "theme": "Espaço Europeu de Dados de Saúde",
   "separacao_citacoes": 880,
-  "question_type": "multi_hop",
-  "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 97,
@@ -1760,7 +1847,8 @@
   "separacao_citacoes": 1465,
   "question_type": "multi_hop",
   "difficulty": "hard",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 2
  },
  {
   "n": 98,
@@ -1778,9 +1866,10 @@
   "source_lang": "pt",
   "theme": "Regulamento sobre Conselho Federal e Conselhos regionais de Medicina",
   "separacao_citacoes": null,
-  "question_type": "multi_hop",
-  "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 99,
@@ -1798,9 +1887,10 @@
   "source_lang": "pt",
   "theme": "Saúde e serviços correspondentes",
   "separacao_citacoes": 556,
-  "question_type": "multi_hop",
-  "difficulty": "medium",
-  "origem": "experimento_recorte"
+  "question_type": "factual",
+  "difficulty": "easy",
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  },
  {
   "n": 100,
@@ -1819,6 +1909,7 @@
   "separacao_citacoes": null,
   "question_type": "factual",
   "difficulty": "easy",
-  "origem": "experimento_recorte"
+  "origem": "experimento_recorte",
+  "dispersao_trechos": 0
  }
 ]
