@@ -74,8 +74,16 @@ class LLMClient:
         # pensando e devolvem a resposta truncada — ou nem a devolvem. No Groq,
         # reasoning_effort="none" desliga o <think> no qwen/qwen3-32b.
         self.reasoning_effort = reasoning_effort
+        # TIMEOUT OBRIGATÓRIO. Sem ele o SDK espera indefinidamente, e uma
+        # chamada pendurada trava o processo inteiro sem erro nem log — foi o que
+        # aconteceu em 27/09/2026 com a tradução de consulta do BM25: uma hora
+        # parada em 40 segundos de CPU, sem nenhuma mensagem. Falhar em 60s e
+        # deixar o `with_retry` tentar de novo é sempre melhor que pendurar.
+        # `max_retries=0` porque quem repete é o `with_retry`; deixar as duas
+        # camadas ligadas multiplicaria a espera no pior caso.
         self._client = OpenAI(base_url=base_url,
-                              api_key=get_env(key_name, required=True))
+                              api_key=get_env(key_name, required=True),
+                              timeout=60.0, max_retries=0)
 
     def chat(self, user: str, system: Optional[str] = None,
              json_mode: bool = False, temperature: Optional[float] = None) -> str:

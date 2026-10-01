@@ -10,9 +10,18 @@ paths:
   corpus:        "../data/processed/documents.jsonl"
   manifest:      "../corpus_manifest.csv"
   # Artefatos da avaliação
-  golden_qa:     "data/golden_qa.jsonl"          # gold set ancorado (gerado + curado)
+  # Vista exportada do acervo por eval/experimento_embedding/exportar_gabarito.py:
+  # 300 perguntas do subconjunto de dezembro, 75 de cada tipo, com `qrels` DERIVADO
+  # das citações literais contra o corpus em uso. Não editar à mão — regerar.
+  # O antigo "data/golden_qa.jsonl" (100 do piloto, qrels anotado em id) continua
+  # em disco porque converter_piloto.py o lê como fonte; não é mais o gabarito.
+  # ACERVO INTEIRO (392), não o subconjunto de 300. Rodar os braços sobre
+  # tudo custa 92 consultas a mais e torna a recuperação imune à composição
+  # do subconjunto — que já mudou uma vez, quando a correção de tipo por
+  # dispersão remexeu o multi_hop. O subconjunto vira filtro na análise.
+  golden_qa:     "data/golden_acervo.jsonl"
   golden_review: "data/golden_qa_review.xlsx"    # planilha p/ curadoria humana
-  queries_csv:   "data/queries.csv"              # derivado p/ engine de retrieval
+  queries_csv:   "data/queries_acervo.csv"       # derivado p/ engine de retrieval
   qrels_csv:     "data/qrels.csv"                # derivado (QueryId, ChunkId, Relevance)
   results_dir:   "results"
 
@@ -76,13 +85,23 @@ retrieval:
     # léxico é injustamente zerado no estrato EN). Roda 2 versões no 02:
     #   A_bm25    (sem tradução) e A_bm25_mt (com) → ablation de graça.
     # A fusão (C) usa a versão traduzida quando translate_query=true.
-    translate_query: true
+    # DESLIGADO para o artigo de dezembro (decisão de 27/09/2026). A ablação
+    # CLIR já foi publicada no artigo anterior, e produção não usa BM25. Consequência a
+    # respeitar no texto: o artigo NÃO pode afirmar "o denso supera o léxico",
+    # só "supera a linha de base léxica implantada". Sem tradução o BM25 fica
+    # com Junta@5 de 0,014 no estrato EN, e o revisor diria, com razão, que ele
+    # perdeu por não falar inglês.
+    #
+    # Custo operacional de religar: são 217 traduções por chamada de LLM, e o
+    # `translate_queries` chama o Groq SEM timeout — travou uma hora em 27/09.
+    # Antes de voltar a true, pôr timeout no LLMClient.chat.
+    translate_query: false
     translator:
       provider: "groq"
       model: "llama-3.3-70b-versatile"
     # BM25 que alimenta a GERAÇÃO no Cenário A (etapa 03). Padrão: a versão
     # traduzida — é a mais forte e a MESMA que a fusão (C) usa, então o cenário A
-    # representa o melhor BM25 possível, e não um espantalho. Use "A_bm25" para
+    # representa o melhor BM25 possível. Use "A_bm25" para
     # gerar a partir do léxico cru. Cai para A_bm25 se a traduzida não existir.
     bm25_for_gen: "A_bm25_mt"
 
@@ -120,7 +139,10 @@ embedders:
     normalize: true
     # Avaliação contra a MESMA coleção do Qdrant de produção, se disponível:
     use_qdrant: true
-    qdrant_collection: "LEME_gemini"
+    # Nome REAL da coleção no cluster (conferido em 27/09/2026: única coleção,
+    # 6.134 pontos, 3072 dim). Estava "LEME_gemini" com maiúsculas e o Qdrant
+    # diferencia caixa — a busca falharia.
+    qdrant_collection: "leme_gemini"
     batch_size: 20
     sleep_between_batches: 8     # respeita rate limit da API Gemini
 
@@ -184,9 +206,15 @@ judges:
   scale: 5                         # notas 1..5
   temperature: 0
   models:
-    - name: "llama"
+    # llama-3.3-70b-versatile FOI DESCONTINUADO no Groq — 404 em 29/09/2026,
+    # conferido listando /models: a conta só tem gpt-oss (120b e 20b) e
+    # qwen3.8-27b como modelos de chat. Trocado pelo qwen, que é o outro chat
+    # aberto disponível. Consequência para a Fase 2: se o juiz mudar depois que
+    # um lote for julgado, a concordância entre juízes não pode ser calculada —
+    # lote julgado por modelos diferentes não é comparável.
+    - name: "qwen"
       provider: "groq"
-      model: "llama-3.3-70b-versatile"
+      model: "qwen/qwen3.8-27b"
     - name: "gptoss"
       provider: "groq"             # ou "cerebras"
       model: "openai/gpt-oss-120b"

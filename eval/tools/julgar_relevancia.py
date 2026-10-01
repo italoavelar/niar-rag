@@ -66,7 +66,13 @@ for _fluxo in (sys.stdout, sys.stderr):
         pass
 
 CORPUS = PROJECT_ROOT / "data/processed/documents.jsonl"
-GOLDEN = EVAL / "data/golden_qa.jsonl"
+# O gabarito vem do `config.yaml` (paths.golden_qa), não de um caminho fixo: ele
+# mudou de "as 100 do piloto" para a vista exportada do acervo, e um caminho
+# fixo aqui faria o pool ser montado sobre um gabarito diferente do que os
+# cenários recuperaram — julgamento de perguntas que ninguém buscou.
+def _golden() -> Path:
+    from lib.common import load_config, resolve
+    return resolve(load_config()["paths"]["golden_qa"])
 RANKINGS = EVAL / "results/retrieval/rankings"
 POOL = EVAL / "results/pool_fase2.csv"
 SAIDA_DIR = EVAL / "results"
@@ -104,7 +110,7 @@ def carregar_corpus() -> dict[str, dict]:
 
 
 def carregar_gabarito() -> list[dict]:
-    return [json.loads(l) for l in GOLDEN.open(encoding="utf-8") if l.strip()]
+    return [json.loads(l) for l in _golden().open(encoding="utf-8") if l.strip()]
 
 
 # ── pool ─────────────────────────────────────────────────────────────────────

@@ -127,11 +127,21 @@ def main() -> None:
             if k % 50 == 0:
                 print(f"     {k}/{len(calcular)}  [{time.time()-t0:5.1f}s]")
 
+    # PERFIL E MODELO SÃO OBRIGATÓRIOS. O `DenseRetriever` chama
+    # `validate_embedding_cache_metadata`, que rejeita cache sem
+    # `embedding_text_profile` — sem estas duas chaves o .npz fica correto e
+    # ilegível ao mesmo tempo, e o cenário denso cai com "perfil ausente" depois
+    # de uma hora de CPU já gasta. Faltavam aqui desde sempre; só apareceu
+    # quando um cenário tentou carregar a saída deste script.
+    from src.embedding_text import EMBEDDING_TEXT_PROFILE
+    modelo_id = getattr(emb, "model_id", getattr(emb, "model", emb.name))
     np.savez_compressed(
         destino,
         matrix=matriz,
         ids=np.array([r["id"] for r in corpus], dtype=object),
         embedding_text_fingerprint=np.array(fp_novo),
+        embedding_text_profile=np.array(EMBEDDING_TEXT_PROFILE),
+        embedding_model=np.array(modelo_id),
     )
     print(f"\n✓ {destino.name}  ({matriz.shape[0]} vetores, dim {matriz.shape[1]})")
 
