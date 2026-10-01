@@ -1,0 +1,322 @@
+[
+ {
+  "n": "m001",
+  "question": "Que direito de portabilidade a LGPD assegura ao titular e o que o controlador precisa informar ao comunicar um incidente de segurança?",
+  "answer": "A LGPD assegura ao titular a portabilidade dos seus dados a outro fornecedor de serviço ou produto, mediante requisição expressa e de acordo com a regulamentação da autoridade nacional, observados os segredos comercial e industrial. Na comunicação de incidente de segurança, entre os elementos exigidos está a indicação das medidas que foram ou que serão adotadas para reverter ou mitigar os efeitos do prejuízo.",
+  "evidencia": [
+   "bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade com o disposto nesta Lei; V - portabilidade dos dados a outro fornecedor de serviço ou produto, mediante requisição expressa e observados os segredos comercial e industrial, de acordo com a regulamentação do órgão controlador; V - portabilidade dos dados a outro fornecedor de serviço ou produto, mediante requisição expressa, de acordo com a regulamentação da autoridade nacional, observados os segredos comercial e industrial; (Redação dada pela Lei nº 13.853, de 2019) Vigência VI - eliminação dos dados pessoais tratados com o consentimento do titular, exceto nas hipóteses previstas no",
+   "relacionados ao incidente; V - os motivos da demora, no caso de a comunicação não ter sido imediata; e VI - as medidas que foram ou que serão adotadas para reverter ou mitigar os efeitos do prejuízo. § 2º A autoridade nacional verificará a gravidade do incidente e poderá, caso necessário para a salvaguarda dos direitos dos titulares, determinar ao controlador a adoção de providências, tais como: I - ampla divulgação do fato em meios de comunicação; e II - medidas para reverter ou mitigar os efeitos do incidente. § 3º No juízo de gravidade do incidente, será avaliada eventual comprovação de que foram adotadas medidas técnicas adequadas que tornem os dados pessoais"
+  ],
+  "n_evidencias": 2,
+  "documento": "lgpd_BR_2018",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "multi_hop",
+  "difficulty": "hard",
+  "theme": "Legislação sobre proteção de dados pessoais",
+  "source_lang": "pt",
+  "dispersao_trechos": 28,
+  "origem": "multihop_dispersas"
+ },
+ {
+  "n": "m002",
+  "question": "Como a LGPD enuncia o princípio da finalidade e qual é o papel interpretativo atribuído à ANPD?",
+  "answer": "O princípio da finalidade exige que o tratamento se realize para propósitos legítimos, específicos, explícitos e informados ao titular. Quanto à ANPD, a Lei determina que ela articule sua atuação com outros órgãos e entidades com competências sancionatórias e normativas sobre proteção de dados, e que seja o órgão central de interpretação da Lei e do estabelecimento de normas e diretrizes para a sua implementação.",
+  "evidencia": [
+   "de 2026) Art. 6º As atividades de tratamento de dados pessoais deverão observar a boa-fé e os seguintes princípios: I - finalidade: realização do tratamento para propósitos legítimos, específicos, explícitos e informados ao titular, sem possibilidade de tratamento posterior de forma incompatível com essas finalidades; II - adequação: compatibilidade do tratamento com as finalidades informadas ao titular, de acordo com o contexto do tratamento; III - necessidade: limitação do tratamento ao mínimo necessário para a realização de suas finalidades, com abrangência dos dados pertinentes, proporcionais e não excessivos em relação às finalidades do tratamento de dados; IV - livre",
+   "com outros órgãos e entidades com competências sancionatórias e normativas afetas ao tema de proteção de dados pessoais e será o órgão central de interpretação desta Lei e do estabelecimento de normas e diretrizes para a sua implementação. (Incluído pela Lei nº 13.853, de 2019) Art. 55-L. Constituem receitas da ANPD: (Incluído pela Lei nº 13.853, de 2019) I - as dotações, consignadas no orçamento geral da União, os créditos especiais, os créditos adicionais, as transferências e os repasses que lhe forem conferidos; (Incluído pela Lei nº 13.853, de 2019) II - as doações, os legados, as subvenções e outros recursos que lhe forem destinados; (Incluído pela Lei nº 13.853, de 2019"
+  ],
+  "n_evidencias": 2,
+  "documento": "lgpd_BR_2018",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "multi_hop",
+  "difficulty": "hard",
+  "theme": "Legislação sobre proteção de dados pessoais",
+  "source_lang": "pt",
+  "dispersao_trechos": 87,
+  "origem": "multihop_dispersas"
+ },
+ {
+  "n": "m003",
+  "question": "Que restrição recai sobre os membros do Conselho Diretor da ANPD depois do cargo e qual é o mandato dos membros do Conselho Nacional de Proteção de Dados Pessoais e da Privacidade?",
+  "answer": "Aos membros do Conselho Diretor da ANPD, após o exercício do cargo, aplica-se o disposto no art. 6º da Lei nº 12.813/2013, e a infração a esse dever caracteriza ato de improbidade administrativa. Já os membros do Conselho Nacional de Proteção de Dados Pessoais e da Privacidade têm mandato de dois anos, permitida uma recondução.",
+  "evidencia": [
+   "Art. 55-F. Aplica-se aos membros do Conselho Diretor, após o exercício do cargo, o disposto no art. 6º da Lei nº 12.813, de 16 de maio de 2013 . (Incluído pela Lei nº 13.853, de 2019) Parágrafo único. A infração ao disposto no caput deste artigo caracteriza ato de improbidade administrativa. (Incluído pela Lei nº 13.853, de 2019) Art. 55-G. Ato do Presidente da República disporá sobre a estrutura regimental da ANPD. (Incluído pela Lei nº 13.853, de 2019) § 1º Até a data de entrada em vigor de sua estrutura regimental, a ANPD receberá o apoio técnico e administrativo",
+   "2019) II - não poderão ser membros do Comitê Gestor da Internet no Brasil; (Incluído pela Lei nº 13.853, de 2019) III - terão mandato de 2 (dois) anos, permitida 1 (uma) recondução. (Incluído pela Lei nº 13.853, de 2019) § 4º A participação no Conselho Nacional de Proteção de Dados Pessoais e da Privacidade será considerada prestação de serviço público relevante, não remunerada. (Incluído pela Lei nº 13.853, de 2019) Art. 58-B. Compete ao Conselho Nacional de Proteção de Dados Pessoais e da Privacidade: (Incluído pela Lei nº 13.853, de 2019) I - propor diretrizes estratégicas e fornecer subsídios para a elaboração da Política Nacional de Proteção de Dados Pessoais e da Privacidade"
+  ],
+  "n_evidencias": 2,
+  "documento": "lgpd_BR_2018",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "multi_hop",
+  "difficulty": "medium",
+  "theme": "Legislação sobre proteção de dados pessoais",
+  "source_lang": "pt",
+  "dispersao_trechos": 17,
+  "origem": "multihop_dispersas"
+ },
+ {
+  "n": "m004",
+  "question": "Que objetivo do SUS a Lei nº 8.080 enuncia primeiro e que objetivo a política de recursos humanos da saúde deve cumprir?",
+  "answer": "Entre os objetivos do SUS, a Lei nº 8.080 enuncia a identificação e divulgação dos fatores condicionantes e determinantes da saúde. Já a política de recursos humanos na área da saúde, formalizada e executada articuladamente pelas diferentes esferas de governo, tem entre seus objetivos a organização de um sistema de formação de recursos humanos em todos os níveis de ensino, inclusive de pós-graduação, além da elaboração de programas de permanente aperfeiçoamento de pessoal.",
+  "evidencia": [
+   "em caráter complementar. CAPÍTULO I Dos Objetivos e Atribuições Art. 5º São objetivos do Sistema Único de Saúde SUS: I - a identificação e divulgação dos fatores condicionantes e determinantes da saúde; II - a formulação de política de saúde destinada a promover, nos campos econômico e social, a observância do disposto no § 1º do art. 2º desta lei; III - a assistência às pessoas por intermédio de ações de promoção, proteção e recuperação da saúde, com a realização integrada das ações assistenciais e das atividades preventivas. Art. 6º Estão incluídas ainda no campo de atuação do Sistema Único de Saúde (SUS): I - a execução de ações: a) de vigilância sanitária; b) de vigilância",
+   "formalizada e executada, articuladamente, pelas diferentes esferas de governo, em cumprimento dos seguintes objetivos: I - organização de um sistema de formação de recursos humanos em todos os níveis de ensino, inclusive de pós-graduação, além da elaboração de programas de permanente aperfeiçoamento de pessoal; II - (Vetado) III - (Vetado) IV - valorização da dedicação exclusiva aos serviços do Sistema Único de Saúde (SUS). Parágrafo único. Os serviços públicos que integram o Sistema Único de Saúde (SUS) constituem campo de prática para ensino e pesquisa, mediante normas específicas, elaboradas conjuntamente com o sistema educacional. Art. 28. Os cargos e funções de chefia, direção"
+  ],
+  "n_evidencias": 2,
+  "documento": "lei_8080_BR_90",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "multi_hop",
+  "difficulty": "hard",
+  "theme": "Saúde e serviços correspondentes",
+  "source_lang": "pt",
+  "dispersao_trechos": 57,
+  "origem": "multihop_dispersas"
+ },
+ {
+  "n": "m005",
+  "question": "O que a Lei nº 8.080 passou a exigir dos protocolos clínicos do câncer e que cuidado com dados ela impõe ao sistema de regulação assistencial?",
+  "answer": "Os protocolos clínicos e as diretrizes terapêuticas do câncer devem incluir a utilização de imunoterapia quando esta se mostrar superior ou mais segura que as opções tradicionais, na forma do regulamento. Quanto ao sistema de regulação assistencial, a lei trata da interoperabilidade para recebimento dos dados dos entes federativos, garantidos o atendimento aos princípios e parâmetros da Lei nº 13.709/2018 quando aplicáveis.",
+  "evidencia": [
+   "do agravo à saúde de que trata o protocolo. (Redação dada pela Lei nº 15.379, de 2026) § 2º Os protocolos clínicos e as diretrizes terapêuticas do câncer incluirão a utilização de imunoterapia quando se mostrar superior ou mais segura que as opções tradicionais, na forma do regulamento. (Incluído pela Lei nº 15.379, de 2026) Art. 19-P. Na falta de protocolo clínico ou de diretriz terapêutica, a dispensação será realizada: (Incluído pela Lei nº 12.401, de 2011) I - com base nas relações de medicamentos instituídas pelo gestor federal do SUS, observadas as competências estabelecidas nesta Lei, e a responsabilidade pelo fornecimento será pactuada na Comissão Intergestores Tripartite",
+   "tar o sistema de que trata o caput , especialmente quanto à interoperabilidade para recebimento dos dados dos entes federativos, permitida a gestão compartilhada pela União e pelos entes subnacionais, garantidos o atendimento aos princípios e os parâmetros estabelecidos pela Lei nº 13.709, de 14 de agosto de 2018 , quando aplicáveis. (Incluído pela Medida Provisória nº 1.301, de 2025) (Regulamento) § 2º As secretarias estaduais, distrital e municipais de saúde deverão garantir o registro das informações da regulação assistencial em seu âmbito de gestão e enviar, obrigatoriamente, os dados ao"
+  ],
+  "n_evidencias": 2,
+  "documento": "lei_8080_BR_90",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "multi_hop",
+  "difficulty": "hard",
+  "theme": "Saúde e serviços correspondentes",
+  "source_lang": "pt",
+  "dispersao_trechos": 31,
+  "origem": "multihop_dispersas"
+ },
+ {
+  "n": "m006",
+  "question": "A quem o CDC atribui o ônus da prova sobre a publicidade e que juízo é competente para a execução da sentença?",
+  "answer": "O ônus da prova da veracidade e correção da informação ou comunicação publicitária cabe a quem as patrocina. Para a execução, é competente o juízo da liquidação da sentença ou da ação condenatória, no caso de execução individual, e o da ação condenatória quando a execução for coletiva.",
+  "evidencia": [
+   "ndo deixar de informar sobre dado essencial do produto ou serviço. § 4° (Vetado) . Art. 38. O ônus da prova da veracidade e correção da informação ou comunicação publicitária cabe a quem as patrocina. SEÇÃO IV Das Práticas Abusivas Art. 39. É vedado ao fornecedor de produtos ou serviços, dentre outras práticas abusivas: (Redação dada pela Lei nº 8.884, de 11.6.1994) I - condicionar o fornecimento de produto ou de serviço ao fornecimento de outro produto ou serviço, bem como, sem justa causa, a limites quantitativos; II - recusar atendimento às demandas dos consumidores, na exata medida de suas disponibilidades de estoque, e, ainda, de conformidade",
+   "lgado. § 2° É competente para a execução o juízo: I - da liquidação da sentença ou da ação condenatória, no caso de execução individual; II - da ação condenatória, quando coletiva a execução. Art. 99. Em caso de concurso de créditos decorrentes de condenação prevista na Lei n.° 7.347, de 24 de julho de 1985 e de indenizações pelos prejuízos individuais resultantes do mesmo evento danoso, estas terão preferência no pagamento. Parágrafo único. Para efeito do disposto neste artigo, a destinação da importância recolhida ao fundo criado pela Lei n°7.347 de 24 de julho de"
+  ],
+  "n_evidencias": 2,
+  "documento": "cdc_BR_1990",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "multi_hop",
+  "difficulty": "hard",
+  "theme": "Legislação sobre Direito do Consumidor",
+  "source_lang": "pt",
+  "dispersao_trechos": 44,
+  "origem": "multihop_dispersas"
+ },
+ {
+  "n": "m007",
+  "question": "Que instrumento o CDC lista primeiro para executar a Política Nacional das Relações de Consumo e a que recurso o Departamento Nacional de Defesa do Consumidor pode recorrer?",
+  "answer": "Entre os instrumentos da Política Nacional das Relações de Consumo, o CDC lista a manutenção de assistência jurídica, integral e gratuita para o consumidor carente. Para alcançar seus objetivos, o Departamento Nacional de Defesa do Consumidor pode solicitar o concurso de órgãos e entidades de notória especialização técnico-científica.",
+  "evidencia": [
+   "execução da Política Nacional das Relações de Consumo, contará o poder público com os seguintes instrumentos, entre outros: I - manutenção de assistência jurídica, integral e gratuita para o consumidor carente; II - instituição de Promotorias de Justiça de Defesa do Consumidor, no âmbito do Ministério Público; III - criação de delegacias de polícia especializadas no atendimento de consumidores vítimas de infrações penais de consumo; IV - criação de Juizados Especiais de Pequenas Causas e Varas Especializadas para a solução de litígios de consumo; V - concessão de estímulos à criação e desenvolvimento das Associações de Defesa do Consumidor. VI - instituição de mecanismos de prevenção",
+   "suas finalidades. Parágrafo único. Para a consecução de seus objetivos, o Departamento Nacional de Defesa do Consumidor poderá solicitar o concurso de órgãos e entidades de notória especialização técnico-científica. TÍTULO V Da Convenção Coletiva de Consumo Art. 107. As entidades civis de consumidores e as associações de fornecedores ou sindicatos de categoria econômica podem regular, por convenção escrita, relações de consumo que tenham por objeto estabelecer condições relativas ao preço, à qualidade, à quantidade, à garantia e características de produtos e serviços, bem como à reclamação e composição do conflito de consumo. § 1° A convenção tornar-se-á obrigatória a partir"
+  ],
+  "n_evidencias": 2,
+  "documento": "cdc_BR_1990",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "multi_hop",
+  "difficulty": "hard",
+  "theme": "Legislação sobre Direito do Consumidor",
+  "source_lang": "pt",
+  "dispersao_trechos": 79,
+  "origem": "multihop_dispersas"
+ },
+ {
+  "n": "m008",
+  "question": "Sob que regime de sigilo tramitam a sindicância e o processo ético-profissional e em que hipótese há suspeição do conselheiro?",
+  "answer": "A sindicância e o processo ético-profissional nos CRMs e no CFM são regidos pelo CPEP e tramitam em sigilo processual, podendo correr em formato eletrônico nos termos de resolução específica. Há suspeição do conselheiro, entre outras hipóteses, quando ele for amigo íntimo ou inimigo de qualquer das partes ou de seus advogados.",
+  "evidencia": [
+   "Medicina (CRMs) e no Conselho Federal de Medicina (CFM) serão regidos por este Código de Processo Ético-Profissional (CPEP) e tramitarão em sigilo processual. § 1º A sindicância e o processo ético-profissional poderão tramitar em formato eletrônico, nos termos de Resolução específica do CFM",
+   "praticar quaisquer outros atos. Seção II Da Suspeição Art. 107. Há suspeição do Conselheiro, na sindicância e no PEP: I − quando for amigo íntimo ou inimigo de qualquer das partes ou de seus advogados; II − quando qualquer das partes for sua credora ou devedora, de seu cônjuge ou companheiro ou de parentes destes, em linha reta até o terceiro grau; III – quando interessado no julgamento do PEP em favor de qualquer das partes. Parágrafo Único. Será ilegítima a alegação de suspeição quando: I − houver sido provocada por quem a alega; II − a parte que a alega houver praticado ato que signifique manifesta aceitação do arguido"
+  ],
+  "n_evidencias": 2,
+  "documento": "resolucao_2306_CFM_2022",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "multi_hop",
+  "difficulty": "hard",
+  "theme": "Código de Processo Ético-Profissional",
+  "source_lang": "pt",
+  "dispersao_trechos": 89,
+  "origem": "multihop_dispersas"
+ },
+ {
+  "n": "m009",
+  "question": "O que acontece com o recurso assim que é recebido no CFM e o que se exige da testemunha ao depor?",
+  "answer": "Recebido e autuado o recurso no CFM, a Corregedoria o remete à Coordenação Jurídica para exame de admissibilidade e, havendo preliminar processual arguida, emissão de Nota Técnica em cinco dias úteis. A testemunha, por sua vez, faz a promessa de dizer a verdade do que souber e for perguntado, devendo declarar seus dados e suas relações com as partes, e as testemunhas são inquiridas separadamente.",
+  "evidencia": [
+   "Art. 32. Recebido e autuado o recurso no CFM, a Corregedoria o remeterá à Coordenação Jurídica para exame de admissibilidade e, caso seja arguida alguma preliminar processual, emissão de Nota Técnica no prazo de 05 (cinco) dias úteis. Parágrafo único. Após a manifestação da Coordenação Jurídica, o recurso será distribuído a um relator para elaborar seu relatório e voto, devendo ser pautado para julgamento na sessão plenária subsequente",
+   "Art. 72. A testemunha fará a promessa de dizer a verdade do que souber e for perguntado, devendo declarar seu nome, idade, estado civil e residência; sua profissão, lugar onde exerce sua atividade; se é parente, e em que grau, de alguma das partes, ou quais suas relações com qualquer delas; e relatar o que souber, explicando sempre as razões de sua ciência ou as circunstâncias pelas quais seja possível avaliar sua credibilidade. Parágrafo único. As testemunhas serão inquiridas separadamente, de modo que umas não saibam nem ouçam os depoimentos das outras, devendo"
+  ],
+  "n_evidencias": 2,
+  "documento": "resolucao_2306_CFM_2022",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "multi_hop",
+  "difficulty": "hard",
+  "theme": "Código de Processo Ético-Profissional",
+  "source_lang": "pt",
+  "dispersao_trechos": 29,
+  "origem": "multihop_dispersas"
+ },
+ {
+  "n": "m010",
+  "question": "Como o ECA define castigo físico e o que a remissão não implica quanto à responsabilidade do adolescente?",
+  "answer": "O ECA define castigo físico como ação de natureza disciplinar ou punitiva aplicada com o uso da força física sobre a criança ou o adolescente e que resulte em sofrimento ou lesão. A remissão, por sua vez, não implica necessariamente o reconhecimento ou a comprovação da responsabilidade, nem prevalece para efeito de antecedentes, podendo incluir a aplicação de medidas previstas em lei, exceto semiliberdade e internação.",
+  "evidencia": [
+   "Lei nº 13.010, de 2014) Parágrafo único. Para os fins desta Lei, considera-se: (Incluído pela Lei nº 13.010, de 2014) I - castigo físico: ação de natureza disciplinar ou punitiva aplicada com o uso da força física sobre a criança ou o adolescente que resulte em: (Incluído pela Lei nº 13.010, de 2014) a) sofrimento físico; ou (Incluído pela Lei nº 13.010, de 2014) b) lesão; (Incluído pela Lei nº 13.010, de 2014) II - tratamento cruel ou degradante: conduta ou forma cruel de tratamento em relação à criança ou ao adolescente que: (Incluído pela Lei nº 13.010, de 2014) a) humilhe; ou (Incluído pela Lei nº 13.010, de 2014) b) ameace gravemente; ou (Incluído pela Lei nº 13.010, de",
+   "procedimento, a concessão da remissão pela autoridade judiciária importará na suspensão ou extinção do processo. Art. 127. A remissão não implica necessariamente o reconhecimento ou comprovação da responsabilidade, nem prevalece para efeito de antecedentes, podendo incluir eventualmente a aplicação de qualquer das medidas previstas em lei, exceto a colocação em regime de semi-liberdade e a internação. Art. 128. A medida aplicada por força da remissão poderá ser revista judicialmente, a qualquer tempo, mediante pedido expresso do adolescente ou de seu representante legal, ou do Ministério Público. Título IV Das Medidas Pertinentes aos Pais ou Responsável Art. 129. São medidas"
+  ],
+  "n_evidencias": 2,
+  "documento": "eca_BR_1990",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "multi_hop",
+  "difficulty": "hard",
+  "theme": "Legislação sobre crianças e adolescentes",
+  "source_lang": "pt",
+  "dispersao_trechos": 130,
+  "origem": "multihop_dispersas"
+ },
+ {
+  "n": "m011",
+  "question": "Que natureza o ECA atribui ao ensino obrigatório e que conduta omissiva da autoridade ele pune quanto aos cadastros de adoção?",
+  "answer": "O ECA afirma que o acesso ao ensino obrigatório e gratuito é direito público subjetivo, e que o não oferecimento ou a oferta irregular pelo poder público importa responsabilidade da autoridade competente. Em matéria de adoção, incorre nas mesmas penas a autoridade que deixa de efetuar o cadastramento de crianças e adolescentes em condições de serem adotados, de pessoas ou casais habilitados à adoção e de quem está em regime de acolhimento institucional ou familiar.",
+  "evidencia": [
+   "o ensino obrigatório e gratuito é direito público subjetivo. § 2º O não oferecimento do ensino obrigatório pelo poder público ou sua oferta irregular importa responsabilidade da autoridade competente. § 3º Compete ao poder público recensear os educandos no ensino fundamental, fazer-lhes a chamada e zelar, junto aos pais ou responsável, pela freqüência à escola. Art. 55. Os pais ou responsável têm a obrigação de matricular seus filhos ou pupilos na rede regular de ensino. Art. 56. Os dirigentes de estabelecimentos de ensino fundamental comunicarão ao Conselho",
+   "três mil reais). (Incluído pela Lei nº 12.010, de 2009) Vigência Parágrafo único. Incorre nas mesmas penas a autoridade que deixa de efetuar o cadastramento de crianças e de adolescentes em condições de serem adotadas, de pessoas ou casais habilitados à adoção e de crianças e adolescentes em regime de acolhimento institucional ou familiar. (Incluído pela Lei nº 12.010, de 2009) Vigência Art. 258-B. Deixar o médico, enfermeiro ou dirigente de estabelecimento de atenção à saúde de gestante de efetuar imediato encaminhamento à autoridade judiciária de caso de que tenha conhecimento de mãe ou gestante interessada em entregar seu filho para adoção: (Incluído pela Lei nº 12.010, de"
+  ],
+  "n_evidencias": 2,
+  "documento": "eca_BR_1990",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "multi_hop",
+  "difficulty": "hard",
+  "theme": "Legislação sobre crianças e adolescentes",
+  "source_lang": "pt",
+  "dispersao_trechos": 197,
+  "origem": "multihop_dispersas"
+ },
+ {
+  "n": "m012",
+  "question": "Como o Plano Brasileiro de IA define IA responsável e que colegiado federal assessora a Presidência na transformação digital?",
+  "answer": "O plano define IA responsável como o conjunto de processos, métodos e técnicas para projetar, desenvolver, usar e implantar sistemas de IA que sejam éticos, confiáveis e benéficos para a sociedade, visando soluções justas, confiáveis e transparentes. O Comitê Interministerial para a Transformação Digital (CIT Digital) foi instituído pelo Decreto nº 12.308/2024 como órgão colegiado consultivo para assessorar o presidente da República em políticas de transformação digital.",
+  "evidencia": [
+   "mais ampla, esses e outros princípios têm sido agrupados no que se denomina IA responsável, que pode ser definido como o conjunto de processos, métodos e técnicas para projetar, desenvolver, usar e implantar sistemas de IA que sejam éticos, confiáveis ​e benéficos para a sociedade. Ela visa a criar soluções de IA que sejam justas, confiáveis ​e transparentes, respeitando os valores humanos. Alguns princípios típicos de IA responsável são: Justiça: garantir que os sistemas de IA não tratem as pessoas de forma injusta, especialmente • grupos sub-representados; Transparência: garantir que os sistemas de IA sejam transparentes e explicáveis, ou seja, os • resultados por eles gerados",
+   "três categorias de risco às aplicações de IA. 10 O Comitê Interministerial para a Transformação Digital (CIT Digital) foi instituído por meio do Decreto n.° 12.308/2024, como órgão colegiado de natureza consultiva, com a finalidade de assessorar o presidente da República na elaboração, na implementação e no acompanhamento de políticas públicas destinadas à transformação digital. IA para o bem de todos 4"
+  ],
+  "n_evidencias": 2,
+  "documento": "plano_brasileiro_ia_BR_2025",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "multi_hop",
+  "difficulty": "hard",
+  "theme": "Plano nacional de inteligência artificial",
+  "source_lang": "pt",
+  "dispersao_trechos": 59,
+  "origem": "multihop_dispersas"
+ },
+ {
+  "n": "m013",
+  "question": "O que a OMS espera que seja documentado nos processos de validação e que tipo de articulação entre partes ela aponta como capaz de melhorar a segurança do sistema de IA?",
+  "answer": "A OMS espera que os processos de validação e de benchmarking sejam cuidadosamente documentados, incluindo as decisões de seleção de conjuntos de dados, padrões de referência, parâmetros e métricas que justifiquem tais processos. Além disso, aponta que o engajamento e a colaboração entre desenvolvedores, fabricantes, profissionais de saúde, pacientes, defensores de pacientes, formuladores de políticas e órgãos reguladores podem melhorar a segurança e a qualidade de um sistema de IA.",
+  "evidencia": [
+   "and managed. Validation processes and benchmarking should be carefully documented – including the decisions for selecting specific datasets, reference standards, parameters and metrics to justify such processes. For example, careful consideration should be given to documenting how and why specific data or datasets are selected to train, externally validate and retrain the model (e.g. post-deployment retraining). 5.1.2 Pre-specification and documenting the medical purpose, clinical context and development The intended medical purpose/function of the AI systems should be",
+   "5.6 Engagement and collaboration Where applicable and appropriate, engagement and collaboration between developers, manufacturers, health-care practitioners, patients, patient advocates, policy-makers, regulatory bodies and other stakeholders can improve the safety and quality of an AI system. Many regulatory bodies have adopted engagement and collaborative approaches in this area, and this section discusses the approaches of five of them: the United Kingdom of Great Britain and Northern Ireland’s MHRA, the South African Health Products Regulatory Authority (SAHPRA), the European Commission, Singapore’s HSA, and the U.S"
+  ],
+  "n_evidencias": 2,
+  "documento": "regulatory_considerations_ai_health_WHO_2024",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "multi_hop",
+  "difficulty": "hard",
+  "theme": "Considerações regulatórias sobre IA aplicada à saúde",
+  "source_lang": "en",
+  "dispersao_trechos": 79,
+  "origem": "multihop_dispersas"
+ },
+ {
+  "n": "m014",
+  "question": "Que resguardo de informação a visão da estratégia global de saúde digital exige e o que o objetivo estratégico centrado nas pessoas busca promover?",
+  "answer": "A visão da estratégia global de saúde digital pressupõe um sistema que respeite a privacidade e a segurança das informações de saúde do paciente, buscando ainda ampliar pesquisa, desenvolvimento, inovação e colaboração entre setores. O objetivo estratégico voltado a sistemas de saúde centrados nas pessoas promove letramento em saúde digital, igualdade de gênero e empoderamento das mulheres, além de abordagens inclusivas de adoção e gestão das tecnologias.",
+  "evidencia": [
+   "r pandemic, in a system that respects the privacy and security of patient health information. The vision further seeks to enhance research and development, innovation and collaboration across sectors. It recognizes that digital health can radically change health outcomes if it is supported by sufficient investment in governance, institutional and workforce capacity to enable the changes in digital systems and data use training, planning, and management that are required as health systems and services are increasingly digitized. With this essential investment in people and processes,",
+   "OBJECTIVES 4 Advocate digital health people-centred health systems that are enabled by This strategic objective advances digital health literacy, gender equality and women’s empowerment and inclusive approaches to adoption and management of digital health technologies. The strategic objective places people at the centre of digital health SO4 through the adoption and use of digital health technologies in scaling up and strengthening health service delivery. The individual is an essential component in the delivery of trust-based, people-centred care. This focus covers not only patients, families and communities Human-centred health systems but also the health workers who need"
+  ],
+  "n_evidencias": 2,
+  "documento": "global_digital_health_strategy_WHO_2020_2027",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "multi_hop",
+  "difficulty": "hard",
+  "theme": "Estratégia global de saúde digital",
+  "source_lang": "en",
+  "dispersao_trechos": 30,
+  "origem": "multihop_dispersas"
+ },
+ {
+  "n": "m015",
+  "question": "Que risco a OCDE ilustra ao tratar de dados de despejo em sistemas de gestão processual e que risco ela aponta nos processos de desenvolvimento de padrões?",
+  "answer": "A OCDE ilustra que, nos Estados Unidos, proprietários vêm triando inquilinos com registros de despejo disponíveis nos sistemas de gestão processual dos tribunais, e que deixar de auditar ou curar a informação antes de abri-la pode afetar desproporcionalmente pessoas de baixa renda. Quanto aos padrões, aponta que os processos de desenvolvimento podem não ser inclusivos nem apoiar a participação de todos os grupos, produzindo padrões que não atendem às necessidades de todos os usuários do sistema de justiça.",
+  "evidencia": [
+   "Box 1. Courts’ case management systems and misuse of eviction data In the US, landlords are increasingly screening tenants using online eviction records available through courts’ case management systems. While access to certain justice data, including eviction cases, can help optimise processes (e.g. screening applications and profiling), failing to audit or curate information before making it openly available can disproportionately affect individuals from low-income groups, perpetuating inequality. Some studies have revealed the potential of screening tools based on information in court records to unfairly exclude individuals from",
+   "patterns for collecting demographic information). While standards have many benefits, they also come with risks. For example: • Standards development processes may not be inclusive and support participation from all groups. This can lead to standards that do not support the needs of all actual and potential users of the justice system; • Standards development processes can move too slowly to adapt to evolving technological possibilities, and human and societal needs; • Standards documentation can be costly or be published under restrictive licenses, presenting unfair limitations on how it can be used; • Mandatory standards may be difficult to adopt and impose compliance costs that"
+  ],
+  "n_evidencias": 2,
+  "documento": "justice_data_governance_OECD_2024",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "multi_hop",
+  "difficulty": "hard",
+  "theme": "Governança de dados de justiça",
+  "source_lang": "en",
+  "dispersao_trechos": 132,
+  "origem": "multihop_dispersas"
+ },
+ {
+  "n": "m016",
+  "question": "Que direito a OMS afirma que as leis de proteção de dados vêm reconhecendo cada vez mais, e que ressalva ela faz ao argumento de que a transparência deve prevalecer sobre a acurácia?",
+  "answer": "A OMS registra que as leis de proteção de dados protegem os direitos dos indivíduos e estabelecem obrigações para controladores e operadores, e que vêm reconhecendo cada vez mais o direito de não estar sujeito a decisões guiadas unicamente por processos automatizados — mais de 100 países já editaram leis desse tipo, entre elas o GDPR da União Europeia. Quanto à transparência, o documento observa que já se argumentou que, havendo um trade-off entre transparência e acurácia, a transparência deveria prevalecer, mas ressalva que essa exigência pode não ser possível nem mesmo desejável no contexto médico: embora muitas vezes se possa explicar por que um tratamento é a melhor opção para uma condição, não é sempre possível explicar como ele funciona ou qual seu mecanismo de ação, porque intervenções médicas às vezes são usadas antes de seu modo de ação ser compreendido.",
+  "evidencia": [
+   "data processing that both protect the rights of individuals and establish obligations for data controllers and processors. Data protection laws also increasingly recognize that people have the right not to be subject to decisions guided solely by automated processes. Over 100 countries have enacted data protection laws. One well-known set of data protection laws is the General Data Protection Regulation (GDPR) of the European Union (EU); in the USA, the Health Insurance Portability and Accountability Act, enacted in 1996, applies to privacy and to the security of health data",
+   "legislation in other countries experiencing proliferation of AI for health care and other fields (116). It has been argued that, if a trade-off is to be made between transparency and accuracy, transparency should predominate. This requirement may, however, not be possible or even desirable in the medical context. While it is often possible to explain why a specific treatment is the best option for a specific condition, it is not always possible to explain how that treatment works or its mechanism of action, because medical interventions are sometimes used before their mode of action is understood"
+  ],
+  "n_evidencias": 2,
+  "documento": "ethics_governance_ai_health_WHO_2021",
+  "forma": null,
+  "janela": null,
+  "passagem_texto": null,
+  "question_type": "multi_hop",
+  "difficulty": "hard",
+  "theme": "Ética e governança de IA aplicada à saúde",
+  "source_lang": "en",
+  "dispersao_trechos": 311,
+  "origem": "multihop_dispersas"
+ }
+]

@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Recorta do acervo o subconjunto balanceado de 75 por tipo, sem enviesar.
 
-O PROBLEMA. O acervo tem 377 perguntas: 75 factuais, 75 comparativas, 102
-multi-hop e 125 irrespondíveis. O artigo de dezembro usa 75 de cada, então é
-preciso descartar 27 multi-hop e 50 irrespondíveis. Como se escolhe define o
-resultado, e as duas escolhas óbvias estão erradas:
+O PROBLEMA. Em 30/09/2026 o acervo tem 393 perguntas: 118 factuais, 75
+multi-hop, 75 comparativas e 125 irrespondíveis. O artigo de dezembro usa 75 de
+cada, então é preciso descartar 43 factuais e 50 irrespondíveis. Como se escolhe
+define o resultado, e as duas escolhas óbvias estão erradas:
 
     "as primeiras 75"   pega o arquivo na ordem em que foi montado. As primeiras
                         multi-hop são todas do piloto, e as primeiras
@@ -20,14 +20,19 @@ que importam para ler o resultado, e cada estrato entrega uma fatia proporcional
 ao seu tamanho no acervo. Assim o subconjunto de 75 tem a mesma composição do
 conjunto de onde saiu, e nenhum estrato desaparece.
 
-    factual / comparative   já estão em 75: entram inteiras, sem sorteio.
-    multi_hop               estrato = origem × idioma. A origem importa porque
-                            mistura piloto e experimento de recorte, e resultado
-                            que difira por origem é sinal de quem escreveu, não
-                            do tipo.
-    unanswerable            estrato = motivo de ausência. São sete, de 8 a 25
-                            perguntas cada; é o eixo pelo qual o resultado de
-                            recusa se lê, e perder um deles cega uma falha.
+    multi_hop / comparative  já estão em 75: entram inteiras, sem sorteio.
+    factual                  passou a ser SORTEADA em 30/09, quando a correção
+                             de tipo e a retipagem de q0062 levaram o estrato a
+                             118. Estrato = origem × idioma, pelo mesmo motivo do
+                             multi_hop abaixo.
+    unanswerable             estrato = motivo de ausência. São oito, de 8 a 25
+                             perguntas cada; é o eixo pelo qual o resultado de
+                             recusa se lê, e perder um deles cega uma falha.
+
+A ESTRATIFICAÇÃO É CEGA AO RESULTADO, e isso é o ponto. Os estratos são
+propriedades do dado — quem escreveu, em que língua —, nunca a nota de nenhum
+braço. Sortear 75 de 118 olhando o acerto seria escolher a conclusão; é por isso
+que a regra está escrita aqui e semeada, e não decidida depois de ver a tabela.
 
 O sorteio é semeado. Rodar de novo dá o mesmo subconjunto — o artigo precisa
 poder ser refeito.
