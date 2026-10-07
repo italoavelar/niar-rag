@@ -173,7 +173,15 @@ embedders:
     query_prompt_name: "query"    # uso oficial (src/build_qwen_vectorstore.py:149)
     batch_size: 16
     device: "auto"
+    # dtype NAO vai aqui de proposito. Os pesos publicados sao bfloat16, que em
+    # CPU sem AMX e emulado (5,6x mais lento, medido em 30/09/2026), mas em GPU
+    # bf16 e nativo e MAIS rapido. Fixar float32 no config penalizaria quem
+    # rodasse em GPU. Quem decide e `lib/embedders.py`, pelo DEVICE: float32 em
+    # cpu, o padrao do modelo em cuda. Use `torch_dtype` aqui so para sobrepor
+    # essa escolha num caso especifico.
+    max_seq_length: 768          # nada e truncado: o maximo do corpus e 657 tokens
     # true = nao carrega o modelo; le dense_qwen3_0_6b_queries.npz do Colab.
+    # false = embute o corpus localmente (~7,7 h em CPU) e guarda em cache .npz.
     offline: false
 
   # Nota: o jua-4B-mixed (ufca-llms, PT-BR jurídico) foi CONSIDERADO e ABANDONADO —
