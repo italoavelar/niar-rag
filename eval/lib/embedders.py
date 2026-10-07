@@ -114,10 +114,43 @@ class SentenceTransformerEmbedder(BaseEmbedder):
             device = "cuda" if torch.cuda.is_available() else "cpu"
         self.device = device
 
+        # EM CPU, FORCE float32 — e isto não é ajuste fino, é 5,6x.
+        #
+        # O Qwen3-Embedding-0.6B publica os pesos em bfloat16. Medido em
+        # 30/09/2026 nesta máquina (i7-1260P, Alder Lake, SEM AMX): 25,3 s por
+        # trecho em bfloat16 contra 4,5 s em float32 — 43 h contra 7,7 h para os
+        # 6.134 trechos do corpus. A causa é que bf16 só tem aritmética nativa em
+        # CPU com AMX (Sapphire Rapids em diante); sem isso cada operação é
+        # emulada.
+        #
+        # O erro de diagnóstico que isto custou fica registrado: o suspeito
+        # obvio era o max_seq_length do Qwen, que vem 32768 contra os ~300 tokens
+        # dos nossos trechos. Medido, não era: 32768 dá 405 s e 1024 dá 398 s
+        # para o mesmo lote, porque o sentence-transformers preenche até o maior
+        # do LOTE, não até o máximo do modelo. Era o dtype.
+        #
+        # Em GPU não se mexe: lá bf16 é nativo e mais rápido. E float32 é também
+        # o que o `eval/colab_f3_rerank.py` já usava explicitamente para o BGE,
+        # então forçar aqui deixa o resultado local e o do Colab comparáveis.
+        kwargs = {}
+        dtype = ecfg.get("torch_dtype")
+        if dtype:
+            kwargs["model_kwargs"] = {"torch_dtype": getattr(torch, dtype)}
+        elif device == "cpu":
+            kwargs["model_kwargs"] = {"torch_dtype": torch.float32}
+
         print(f"[{name}] Carregando '{self.model_id}' em {device} "
               f"(pode baixar ~vários GB na 1ª vez)...")
         self._model = SentenceTransformer(self.model_id, device=device,
-                                          trust_remote_code=True)
+                                          trust_remote_code=True, **kwargs)
+
+        # Teto de comprimento, quando declarado. Não muda o custo (ver acima),
+        # mas trava o que é truncado: a 768 tokens nada se perde — medido com o
+        # tokenizador de cada modelo, o Qwen tem máximo 657 e o BGE-m3 890, com
+        # 2 e 6 trechos acima de 768 respectivamente.
+        if ecfg.get("max_seq_length"):
+            self._model.max_seq_length = int(ecfg["max_seq_length"])
+            print(f"[{name}] max_seq_length = {self._model.max_seq_length}")
         self.dim = self._model.get_sentence_embedding_dimension()
         print(f"[{name}] dim = {self.dim}")
 

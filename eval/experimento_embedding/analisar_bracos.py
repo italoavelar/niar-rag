@@ -72,18 +72,21 @@ for _f in (sys.stdout, sys.stderr):
         pass
 
 # Ordem de apresentação; só entram os que têm ranking em disco.
-BRACOS = ["A_bm25", "A_bm25_mt", "B_dense_bge_m3", "B_dense_gemini",
+BRACOS = ["A_bm25", "B_dense_bge_m3", "B_dense_qwen3_0_6b", "B_dense_gemini",
           "B_bge_m3_rerank", "B_gemini_rerank", "C_fusion"]
 
 ROTULO = {
     "A_bm25": "BM25",
-    "A_bm25_mt": "BM25+trad",
     "B_dense_bge_m3": "BGE-m3",
+    "B_dense_qwen3_0_6b": "Qwen3-0.6B",
     "B_dense_gemini": "Gemini",
     "B_bge_m3_rerank": "BGE+rerank",
     "B_gemini_rerank": "Gemini+rerank",
     "C_fusion": "Fusão RRF",
 }
+# A_bm25_mt saiu da lista em 30/09: o arquivo era de 31/08, anterior à migração
+# de ids, e tinha 0% dos ids vivos no corpus. Foi removido do repositório, e a
+# validação de ids abaixo pega qualquer outro que apodreça do mesmo jeito.
 
 
 # ── métricas ────────────────────────────────────────────────────────────────

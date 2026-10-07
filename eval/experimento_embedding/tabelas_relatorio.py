@@ -5,11 +5,12 @@ Existe porque o relatório cita número. Cada
 tabela do relatório sai daqui, com a população impressa ao lado, para que se
 possa conferir linha por linha.
 
-Os três braços que ficaram: BGE-m3, Gemini e BGE-m3+reranker. BM25 e fusão RRF
+Os quatro braços que ficaram: Qwen3-0.6B, BGE-m3, Gemini e BGE-m3+reranker.
+BM25 e fusão RRF
 saíram da comparação por decisão de 30/09/2026 — são resultado do artigo do
 WebMedia e não são candidatos a produção aqui.
 
-A POPULAÇÃO É ÚNICA: as 267 perguntas respondíveis que os TRÊS braços
+A POPULAÇÃO É ÚNICA: as 225 perguntas respondíveis que os QUATRO braços
 ranquearam. Métrica comparada entre braços em populações diferentes é a forma
 mais silenciosa de errar uma comparação.
 
@@ -37,6 +38,7 @@ R = RAIZ / "eval/results/retrieval/rankings"
 CORPUS = RAIZ / "data/processed/documents.jsonl"
 
 BRACOS = {
+    "Qwen3-0.6B": "B_dense_qwen3_0_6b",
     "BGE-m3": "B_dense_bge_m3",
     "Gemini": "B_dense_gemini",
     "BGE+reranker": "B_bge_m3_rerank",
@@ -109,7 +111,7 @@ def main() -> None:
                        for g in gold[q]["qrels_grupos"]))
 
     # ── tabela 1: os três braços ────────────────────────────────────────────
-    print("── TABELA 1 · os três braços ──\n")
+    print("── TABELA 1 · os quatro braços ──\n")
     cab = (f"{'braço':16s}{'SR@5':>9s}{'Compl@5':>9s}{'frouxo@5':>10s}"
            f"{'SR@10':>9s}{'SR@100':>9s}")
     print(cab)

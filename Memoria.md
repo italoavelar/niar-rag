@@ -21,6 +21,37 @@ Ler antes de trabalhar: `CLAUDE.md` (números auditados) e `CADERNO.md` (correç
 
 ## 0. Contexto: o que já aconteceu
 
+### Estado congelado do corpus — o que os números de dezembro medem
+
+Toda métrica do artigo de dezembro foi calculada sobre **este** corpus. Registrado
+aqui porque sem ele nenhum resultado é reproduzível, e porque as versões antigas
+aparecem mais abaixo neste arquivo e é fácil confundir.
+
+    documentos     54
+    trechos        6.134
+    recorte        1.200 caracteres, sobreposição 200
+    perfil         context-v1
+    fingerprint    c656b175b4ece7169658106dc672628670e1a25ced76b6ed48924aa7c248b8b0
+    curto          c656b175b4ece716
+    congelado      22/09/2026
+
+O fingerprint **não é só anotação**: os caches de embedding são nomeados por ele
+(`dense_bge_m3_context-v1_c656b175b4ece716.npz`), então mudar o corpus muda o nome
+do arquivo e o cache velho deixa de casar. É o que impede medir com vetor de um
+corpus e servir outro. Recalcular:
+`corpus_embedding_fingerprint` em `src/embedding_text.py`.
+
+Fingerprints anteriores, para quem encontrar número antigo neste arquivo:
+`da69227b35c04c4d` (4.897 trechos, 13/set) e `7cfc068dde147394` (5.160 trechos).
+
+Em **06/10** os rankings `B_bge_m3_colbert.json` e `B_bge_m3_hybrid.json` foram
+removidos de `eval/results/retrieval/rankings/`: eram de 31/08, tinham **0% dos
+ids vivos** neste corpus e pontuavam 0,000 parecendo resultado. Estão no histórico
+do git se alguém precisar. Os braços vivos estão todos em 100% de ids válidos, e
+`analisar_bracos.py` e `_common.finalize()` passaram a recusar qualquer ranking
+abaixo de 95%.
+
+
 - **O artigo do WFA/WebMedia 2026 foi submetido em 14/08/2026.** Está fechado. Se for aceito,
   os números da Tabela 1 mudam no camera-ready (lista de trocas está no chat do WFA).
 - **Tudo neste arquivo é trabalho futuro**, para artigos novos. A restrição "não quebrar o
@@ -938,7 +969,99 @@ coisa). Portanto a medição de 16/set é a **primeira** avaliação disso nas r
 que decidem. Script: `scratchpad/exp_multiplex.py`; caches reusados, zero chamada
 de LLM.
 
-### 9.6 O que fazer a seguir
+### 9.6 Recuperação por cobertura de evidências ✅ primeiro sinal positivo (16/set/2026)
+
+**Decomposição de NECESSIDADE DE EVIDÊNCIA, não de pergunta** — a distinção determina o
+desenho. Decompor a *pergunta* leva a fundir e repontuar contra a pergunta inteira, o que
+desfaz a decomposição (foi o que matou o `decompose_eval.py`). Decompor a *necessidade* só
+afirma "o recuperador precisa achar A e B": cada uma é buscada nos próprios termos e o
+resultado é a **união**, sem repontuação.
+
+Comparado em **tamanho de contexto igual** (controle obrigatório — união de 10+10 não se
+compara a top-5):
+
+| contexto | consulta única | união das 2 necessidades |
+|---|---|---|
+| ~5–6 trechos | top-5 → 4/50 | top-3 cada (5,8) → **7/50** |
+| ~10 | top-10 → 8/50 | top-5 cada (9,4) → **9/50** |
+| ~15 | top-16 → 13/50 | top-8 cada (14,7) → **15/50** |
+| ~19 | top-20 → 14/50 (20 trechos) | top-10 cada → **19/50** (18,2 trechos) |
+
+`multi_hop` 9/25 → 12/25; `comparative` 5/25 → 7/25. Latência 322 → 327 ms (necessidades em cache).
+
+**Não significativo:** McNemar exato entre união(10+10) e única(top-20) — 7 discordantes a
+favor, 2 contra, **p = 0,18**. Seriam precisos 15 discordantes na mesma proporção (p = 0,035),
+o que pede ~83 perguntas multi-evidência. O benchmark de 500 terá **250** → p ≈ 0,0002.
+
+**Ressalvas:** (a) o detector é oráculo — usa `question_type` do gabarito, então o número é
+teto; (b) o MRR da comparativa piora (0,279 → 0,184), porque a união intercala as necessidades
+e os trechos certos entram no conjunto mas não no topo; (c) formular as necessidades exige um
+decompositor — hoje um LLM. O script não gasta API só porque o cache de 09/set existe.
+
+Script: `eval/tools/recuperacao_por_cobertura.py`.
+
+### 9.7 O teto de k e a âncora inalcançável (16/set/2026)
+
+**Subir o orçamento não resolve.** Joint Recall com consulta única (BGE denso):
+
+| k | multi_hop | comparative |
+|---|---|---|
+| 5 (produção) | 2/25 | 2/25 |
+| 10 | 4/25 | 4/25 |
+| 20 | 9/25 | 5/25 |
+| 50 | 17/25 | 8/25 |
+| 100 | 18/25 | 13/25 |
+
+A comparativa só chega a 13/25 em k=100. **Dobrar de 5 para 10 compra 2 perguntas.**
+
+**O bloqueio é a âncora mais difícil.** Pior âncora por pergunta, na consulta única: além do
+top-100 em **7/25** multi-hop e **12/25** comparativas (posições até 1.272). Como Joint Recall é
+conjunção, a âncora mais fraca governa — o que explica de uma vez por que reranking sobre top-100
+não move a comparativa, por que o orçamento satura e por que cota e PRF falharam.
+
+**A decomposição não resgata esses casos:** das 19 perguntas com âncora além do top-100, a busca
+por necessidade traz a âncora ao top-10 em **1**; nas comparativas, **0 de 12**.
+
+São **dois problemas distintos**: (a) 31/50 com as duas âncoras ao alcance — a decomposição ajuda;
+(b) 19/50 com uma âncora fora de alcance — nada do que foi testado ajuda.
+
+**Suspeita sobre (b): parte é anotação ruim.** q0077 pergunta sobre direitos sobre dados e tem
+âncora sobre *sistemas de armas autônomas*; q0099 pergunta sobre uso secundário de dados e duas
+âncoras são sobre *parcerias público-privadas*. O sinal quantitativo é modesto (similaridade da
+âncora com a resposta-referência: mediana 0,698 nas alcançadas vs 0,659 nas distantes; 40% das
+distantes abaixo do limiar), então **isto é hipótese a julgar na Fase 2, não conclusão**.
+
+Scripts: `scratchpad/teto_k.py`, `ancora_distante.py`, `ancora_fraca.py` (sessão de 16/set) —
+a versionar se a linha for retomada.
+
+### 9.8 VEREDITO: a régua, não o método (16/set/2026)
+
+Para cada âncora de grau 2 fora do top-k, o top-k contém um trecho do **mesmo documento exigido**
+que sustenta a resposta-referência igual ou melhor?
+
+| | top-5 | top-10 |
+|---|---|---|
+| âncoras de grau 2 que ficaram de fora | 78 | 68 |
+| **já havia equivalente no top-k** | **38 (49%)** | **39 (57%)** |
+| falha real | 40 (51%) | 29 (43%) |
+
+**Metade dos "erros" são acertos não julgados.** Explica o platô de 2–6/25 de todos os métodos, o
+teto de 6/25 do roteador-oráculo, a inércia do reranking e a insignificância de todo ganho medido.
+
+Limitação: "sustenta" foi medido por similaridade BGE com a resposta-referência — mesmo modelo
+avaliado, risco de circularidade. Indicativo, não veredito. O veredito é a Fase 2.
+
+**DECISÃO: nenhum experimento novo de recuperação antes do julgamento do pool.** Os feitos estão
+registrados (§9.1–9.7) com script; reavaliam-se em uma tarde quando a régua funcionar.
+
+Script: `scratchpad/decisivo.py` (16/set).
+
+⚠️ **Defeito separado:** `build_gold_manual.py` auto-adiciona grau 1 aos vizinhos de página **só nas
+factuais**. Factual tem mediana de 5 âncoras (1 de grau 2); multi-hop e comparativa, 2 e 2. Métrica
+conjuntiva precisa de `min_grade=2`. Nas multi/comparativas a diferença é pequena; **na factual é
+enorme**.
+
+### 9.9 O que fazer a seguir
 
 1. **Testar HyDE com hipótese gerada** — é a única direção com sinal. Medir se o ganho do oráculo
    (§9.1) sobrevive a uma hipótese real. Aplicar a mesma expansão aos dois braços (BGE e Gemini)
