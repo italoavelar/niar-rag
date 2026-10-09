@@ -1,0 +1,3119 @@
+[
+ {
+  "n": 1,
+  "qid": "20",
+  "question": "Além da avaliação de impacto ético, a UNESCO oferece alguma ferramenta voltada a governos? Para que ela serve?",
+  "evidencia": [
+   "The RAM helps governments assess how robust and agile their laws, policies and institutions are in addressing AI risks."
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "en",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 2,
+  "qid": "4",
+  "question": "Em que tipo de levantamento se baseia o estudo da OCDE sobre governança de dados na justiça?",
+  "evidencia": [
+   "This paper is based on desk research and in- depth interviews with national representatives and line ministries in selected countries and with private and third sectors."
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "en",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 3,
+  "qid": "22",
+  "question": "O que faz o software que analisa radiografias de tórax após colocação de sonda de alimentação, e que modificações o fabricante propôs para ele?",
+  "evidencia": [
+   "A SaMD analyzes chest x-rays taken of hospitalized inpatients after they had undergone placement of a feeding tube, in order to evaluate the tube placement, detect incorrectly placed tube, and triage radiologists review of those films among the queue of similar images.",
+   "Allow the algorithm to notify nursing staff to check on the patient, in parallel with its triaging of the film in the radiologist's queue, based on achieving a pre-specified performance threshold."
+  ],
+  "n_evidencias": 2,
+  "question_type": "factual",
+  "source_lang": "en",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 4,
+  "qid": "21",
+  "question": "Quem compõe um Disclosure Review Board e o que ele avalia antes de liberar um conjunto de dados?",
+  "evidencia": [
+   "a formal Disclosure Review Board (DRB) that consists of legal and technical privacy experts, stakeholders within the organization, and representatives of the organization’s leadership",
+   "The DRB evaluates applications for data release that describe the confdential data, the techniques that will be used to minimize the risk of disclosure, the resulting protected data, and how the effectiveness of those techniques will be evaluated."
+  ],
+  "n_evidencias": 2,
+  "question_type": "factual",
+  "source_lang": "en",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 5,
+  "qid": "8",
+  "question": "Um sistema de inteligência artificial pode assumir a responsabilidade final por uma decisão, no lugar de uma pessoa?",
+  "evidencia": [
+   "It emphasizes that AI systems can never replace ultimate human responsibility and accountability."
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "en",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 6,
+  "qid": "75",
+  "question": "Que instrumentos a OMS recomenda aos governos para orientar e auditar modelos de fundação usados em saúde?",
+  "evidencia": [
+   "Governments should introduce audits of the initial stages of development of foundation models.",
+   "Governments and international agencies such as WHO should issue “target product profiles” to delineate preferences and characteristics of LMMs intended for use in health care and medicine"
+  ],
+  "n_evidencias": 2,
+  "question_type": "factual",
+  "source_lang": "en",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 7,
+  "qid": "15",
+  "question": "Que tipo de alteração em um software médico com IA pode ser feita sob um protocolo de mudança já aprovado, sem nova submissão?",
+  "evidencia": [
+   "Changes that involve improvements in performance, or changes in input, without affecting the intended use of the SaMD, may be accomplished with an appropriate level of pre-specification and an appropriate ACP"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "en",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 8,
+  "qid": "31",
+  "question": "Quais são os dois fatores que o quadro do IMDRF usa para descrever o uso pretendido de um software como dispositivo médico?",
+  "evidencia": [
+   "Significance of information provided by the SaMD to the healthcare decision, which identifies the intended use of the information provided by the SaMD",
+   "State of healthcare situation or condition, which identifies the intended user, disease or condition, and the population for the SaMD"
+  ],
+  "n_evidencias": 2,
+  "question_type": "factual",
+  "source_lang": "en",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 9,
+  "qid": "100",
+  "question": "A Conferência das Partes pode restringir a participação de um signatário que deixou de ser membro do Conselho da Europa?",
+  "evidencia": [
+   "The Conference of the Parties may decide to restrict the participation in its work of a Party that has ceased to be a member of the Council of Europe under Article 8 of the Statute of the Council of Europe (ETS No. 1) for a serious violation of Article 3 of the Statute."
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "en",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 10,
+  "qid": "1",
+  "question": "Quando a Comissão Europeia reconhece que um país fora da UE oferece proteção adequada, ainda é preciso pedir autorização para enviar dados pessoais para lá? E essa decisão pode ser desfeita depois?",
+  "evidencia": [
+   "transfers of personal data to that third country or international organisation may take place without the need to obtain any further authoris",
+   "The Commission may also decide, having given notice and a full statement setting out the reasons to the third country or international organisation, to revoke such a decision."
+  ],
+  "n_evidencias": 2,
+  "question_type": "factual",
+  "source_lang": "en",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 11,
+  "qid": "73",
+  "question": "Que obrigações a OMS atribui aos desenvolvedores quanto aos trabalhadores de dados e a quem deve participar do desenho dos modelos?",
+  "evidencia": [
+   "Developers should pay data workers a living wage and provide them with mental health services and other forms of counselling.",
+   "Developers should ensure that LMMs are designed not only by scientists and engineers."
+  ],
+  "n_evidencias": 2,
+  "question_type": "factual",
+  "source_lang": "en",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 12,
+  "qid": "69",
+  "question": "Como a convenção-quadro do Conselho da Europa define sistema de inteligência artificial?",
+  "evidencia": [
+   "“artificial intelligence system” means a machine-based system that, for explicit or implicit objectives, infers, from the input it receives, how to generate outputs such as predictions, content, recommendations or decisions that may influence physical or virtual environments."
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "en",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 13,
+  "qid": "34",
+  "question": "Que tipo de alteração de software exige submissão pré-mercado ao FDA e o que se exige, em vez disso, de um dispositivo aprovado por PMA?",
+  "evidencia": [
+   "A change that introduces a new risk or modifies an existing risk that could result in significant harm",
+   "For a PMA-approved SaMD, a supplemental application would be required for changes that affect safety or effectiveness, such as new indications for use, new clinical effects, or significant technology modifications that affect performance characteristics."
+  ],
+  "n_evidencias": 2,
+  "question_type": "factual",
+  "source_lang": "en",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 14,
+  "qid": "57",
+  "question": "O que a OCDE entende por justiça centrada nas pessoas e por plataforma no contexto de dados da justiça?",
+  "evidencia": [
+   "A justice system that has as its purpose and design the goal of equally meeting the needs of all people by enabling their effective participation and engagement in the process",
+   "The term platform is used in the generic sense to refer to any shared API, shared component, trust and identity system, or register"
+  ],
+  "n_evidencias": 2,
+  "question_type": "factual",
+  "source_lang": "en",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 15,
+  "qid": "53",
+  "question": "Como adaptar as perguntas de uma avaliação de impacto ético quando o sistema de IA já está em operação?",
+  "evidencia": [
+   "teams should rephrase questions to be in the past tense, assessing how well they have adhered to their original stakeholder engagement plan or detailing the steps they are taking to fulfil the plan"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "en",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 16,
+  "qid": "81",
+  "question": "O que a Lei do SUS entende por saúde do trabalhador e que assistência ela abrange?",
+  "evidencia": [
+   "um conjunto de atividades que se destina, através das ações de vigilância epidemiológica e vigilância sanitária, à promoção e proteção da saúde dos trabalhadores",
+   "I - assistência ao trabalhador vítima de acidentes de trabalho ou portador de doença profissional e do trabalho"
+  ],
+  "n_evidencias": 2,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 17,
+  "qid": "98",
+  "question": "Quais são as penas disciplinares aplicáveis a quem infringe a ética profissional médica e cabe recurso?",
+  "evidencia": [
+   "a) advertência confidencial, em aviso reservado; b) censura confidencial, em aviso reservado; c) censura pública, em publicação oficial; d) suspensão do exercício profissional, até 30 (trinta) dias; e e) cassação do exercício profissional.",
+   "caberá sempre recurso de apelação para O Conselho Federal de Medicina respeitados os prazos e efeitos preestabelecidos nos seus parágrafos"
+  ],
+  "n_evidencias": 2,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 18,
+  "qid": "14",
+  "question": "A estratégia brasileira estabeleceu alguma meta numérica de uso de IA em serviços públicos federais? E o que previu quanto ao uso de IA na formulação de políticas?",
+  "evidencia": [
+   "implementar recursos de Inteligência Artificial em, no mínimo, 12 serviços públicos federais até 2022",
+   "Incorporar a IA e a análise de dados nos processos de formulação de políticas públicas."
+  ],
+  "n_evidencias": 2,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 19,
+  "qid": "95",
+  "question": "A expressão erro médico é exclusiva da medicina, e em benefício de quem os atos profissionais devem ser exercidos?",
+  "evidencia": [
+   "Não é restrito aos médicos, ainda que estes sejam muito mais cobrados por sua prática.",
+   "Deve-se repetir, sempre, que por definição os atos profissionais devem ser exercidos prioritariamente em benefício do cliente."
+  ],
+  "n_evidencias": 2,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 20,
+  "qid": "51",
+  "question": "Quem co-financia a pesquisa científica em saúde e onde ficam depositados os recursos do SUS?",
+  "evidencia": [
+   "As atividades de pesquisa e desenvolvimento científico e tecnológico em saúde serão co-financiadas pelo Sistema Único de Saúde (SUS), pelas universidades e pelo orçamento fiscal",
+   "Os recursos financeiros do Sistema Único de Saúde (SUS) serão depositados em conta especial, em cada esfera de sua atuação, e movimentados sob fiscalização dos respectivos Conselhos de Saúde."
+  ],
+  "n_evidencias": 2,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 21,
+  "qid": "24",
+  "question": "Onde as partes podem consultar o processo ético no Conselho Regional de Medicina e o que lhes é vedado fazer com ele?",
+  "evidencia": [
+   "Somente na Secretária do Conselho de Medicina poderão as partes ou seus procuradores ter \"vista\" do processo, podendo, nesta oportunidade, tomar as notas que julgarem necessárias à defesa.",
+   "É expressamente vedada a retirada de processos pelas partes ou seus procuradores, sob qualquer pretexto, da Secretaria do Conselho Regional sendo igualmente vedado lançar notas nos autos ou sublinhá-los de qualquer forma."
+  ],
+  "n_evidencias": 2,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 22,
+  "qid": "50",
+  "question": "O que a ANPD define como transferência posterior de dados e a que fiscalização a transferência internacional se submete?",
+  "evidencia": [
+   "Transferência Posterior: transferência Internacional de Dados, originada de um Importador, e destinada a um terceiro, incluindo um Subcontratado, desde que não configure Solicitação de Acesso.",
+   "A Transferência Internacional de Dados objeto das presentes Cláusulas submete-se à Legislação Nacional e à fiscalização da ANPD, incluindo o poder de aplicar medidas preventivas e sanções administrativas a ambas as Partes"
+  ],
+  "n_evidencias": 2,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 23,
+  "qid": "33",
+  "question": "A que limites está sujeita a associação entre agentes de IA para fins de autorregulação?",
+  "evidencia": [
+   "deverá observar os preceitos da Lei nº 12.529, de 30 de novembro de 2011",
+   "vedada qualquer atuação que possa restringir a livre concorrência"
+  ],
+  "n_evidencias": 2,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 24,
+  "qid": "12",
+  "question": "A estratégia brasileira de IA prevê criar algum órgão de acompanhamento do tema? E prevê orientação sobre relatórios de impacto de proteção de dados?",
+  "evidencia": [
+   "Criar um observatório de Inteligência Artificial no Brasil, que possa se conectar a outros observatórios internacionais.",
+   "Desenvolver diretrizes para a elaboração de Relatórios de Impacto de Proteção de Dados (RIPD)."
+  ],
+  "n_evidencias": 2,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 25,
+  "qid": "30",
+  "question": "Que direito tem o paciente cujos prestadores de cuidados estão em Estados-Membros diferentes, e o que se exige de quem recebe os dados?",
+  "evidencia": [
+   "As pessoas singulares têm direito, sempre que os prestadores de cuidados de saúde estejam localizados em diferentes Estados-Membros, de requerer a transmissão dos seus dados de saúde eletrónicos pessoais no formato europeu de intercâmbio de registos de saúde eletrónicos",
+   "O prestador de cuidados de saúde que recebe os dados deve aceitá-los e ser capaz de os ler."
+  ],
+  "n_evidencias": 2,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 26,
+  "qid": "52",
+  "question": "Qual o acréscimo por pagar a anuidade do Conselho de Medicina fora do prazo?",
+  "evidencia": [
+   "O pagamento de anuidades fora do prazo prescrito no parágrafo antecedente será efetuado com acréscimo de 20% (vinte por cento) da importância fixada."
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 27,
+  "qid": "89",
+  "question": "O que distingue alteridade, tolerância e solidariedade entre as qualidades esperadas do profissional?",
+  "evidencia": [
+   "A alteridade é a maior ou menor facilidade com que alguém se relaciona respeitosamente com os demais, sobretudo com quem é diferente de si em características corporais ou culturais.",
+   "A solidariedade é a virtude cívica e civilizada pela qual as pessoas se obrigam a socorrer quem estiver em risco ou, de qualquer maneira, necessitar de ajuda."
+  ],
+  "n_evidencias": 2,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 28,
+  "qid": "65",
+  "question": "Que duas características distinguem a atividade profissional do médico das demais profissões análogas?",
+  "evidencia": [
+   "a) a vulnerabilidade particular do paciente frente ao médico (mais do que nas outras profissões), e",
+   "A Medicina é uma profissão de empenho e não de resultados."
+  ],
+  "n_evidencias": 2,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 29,
+  "qid": "62",
+  "question": "Que matérias o regulamento eleitoral dos Conselhos de Medicina precisa disciplinar sobre candidaturas e penalidades?",
+  "evidencia": [
+   "IV - causas de inelegibilidade, inclusive funções públicas, cargos eletivos e cargos de direção em empresas que acarretam inelegibilidade",
+   "XIII - punições das chapas que infringirem as normas eleitorais, inclusive com possibilidade de exclusão do pleito."
+  ],
+  "n_evidencias": 2,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 30,
+  "qid": "38",
+  "question": "O que cabe à autoridade competente definir sobre a atualização e a simplificação da avaliação de impacto algorítmico?",
+  "evidencia": [
+   "parâmetros gerais acerca da periodicidade de atualização das avaliações de impacto algorítmico, que devem ser realizadas ao menos quando da existência de alterações significativas nos sistemas",
+   "as hipóteses em que a avaliação de impacto algorítmico será simplificada, considerando o tipo de agentes de sistemas de IA"
+  ],
+  "n_evidencias": 2,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 31,
+  "qid": "77",
+  "question": "A proposta brasileira permite exibir obras protegidas por direito autoral usadas no treinamento de IA?",
+  "evidencia": [
+   "É vedada a exibição ou a disseminação das obras e conteúdos protegidos por direitos de autor e conexos utilizados no desenvolvimento de sistemas de IA.",
+   "Aplica-se o disposto no caput deste artigo à mineração de dados, por entidades públicas ou privadas, no contexto de sistemas de IA para combate a ilícitos civis e criminais, que atentem contra direitos de autor e conexos."
+  ],
+  "n_evidencias": 2,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 32,
+  "qid": "45",
+  "question": "Qual é o objetivo declarado da Estratégia Brasileira de Inteligência Artificial?",
+  "evidencia": [
+   "deve ter por objetivo potencializar o desenvolvimento e a utilização da tecnologia com vistas a promover o avanço científico e solucionar problemas concretos do País, identificando áreas prioritárias nas quais há maior potencial de obtenção de benefícios"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 33,
+  "qid": "6",
+  "question": "É possível dispensar a supervisão humana em um sistema de IA de alto risco? Em que condição, e o que passa a ser exigido no lugar?",
+  "evidencia": [
+   "A supervisão humana não será exigida caso sua implementação seja comprovadamente impossível ou implique esforço desproporcional, hipóteses em que o agente do sistema de IA de alto risco implementará medidas alternativas eficazes."
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 34,
+  "qid": "72",
+  "question": "Que ganho de tempo o sistema Elis trouxe ao Tribunal de Justiça de Pernambuco e quanto o Ministério Público do Rio de Janeiro investiu em IA?",
+  "evidencia": [
+   "o sistema foi desenvolvido por uma equipe do Tribunal de Justiça de Pernambuco (TJPE) para acelerar a tramitação de processos, reduzindo para 15 dias o trabalho que 11 servidores levariam mais de um ano para concluir",
+   "A instituição tem 52 profissionais dedicados à área e está desembolsando R$ 2,9 milhões em ciência de dados e IA"
+  ],
+  "n_evidencias": 2,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 35,
+  "qid": "46",
+  "question": "Como a proposta brasileira de regulação de IA define sistemas de armas autônomas e risco sistêmico?",
+  "evidencia": [
+   "sistemas que, uma vez ativados, podem selecionar e atacar alvos sem intervenção humana adicional",
+   "potenciais efeitos adversos negativos decorrentes de um sistema de IA de propósito geral e generativa com impacto significativo sobre direitos fundamentais individuais e sociais"
+  ],
+  "n_evidencias": 2,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 36,
+  "qid": "19",
+  "question": "Quantos conselheiros compõem um Conselho Regional de Medicina, e quando um suplente assume a função?",
+  "evidencia": [
+   "serão constituídos por vinte e um conselheiros efetivos e os seus suplentes",
+   "O conselheiro suplente eleito somente entrará em exercício na hipótese de impedimento do conselheiro efetivo, por mais de trinta dias, ou na hipótese de vacância, para concluírem o mandato em curso."
+  ],
+  "n_evidencias": 2,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 37,
+  "qid": "99",
+  "question": "Que atividades as comissões intersetoriais do SUS articulam e para que servem as Comissões Permanentes com as instituições de ensino?",
+  "evidencia": [
+   "I - alimentação e nutrição; II - saneamento e meio ambiente; III - vigilância sanitária e farmacoepidemiologia; IV - recursos humanos; V - ciência e tecnologia; e VI - saúde do trabalhador.",
+   "Cada uma dessas comissões terá por finalidade propor prioridades, métodos e estratégias para a formação e educação continuada dos recursos humanos do Sistema Único de Saúde (SUS), na esfera correspondente"
+  ],
+  "n_evidencias": 2,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 38,
+  "qid": "59",
+  "question": "O que o Importador precisa registrar sobre solicitações de acesso e o que as Partes devem fazer com os dados após o término do tratamento?",
+  "evidencia": [
+   "o Importador deve manter registro de Solicitações de Acesso, incluindo data, solicitante, finalidade da solicitação, tipo de dados solicitados, número de solicitações recebidas e medidas legais adotadas",
+   "As Partes deverão eliminar os Dados Pessoais objeto da Transferência Internacional de Dados regida por estas Cláusulas após o término do tratamento, no âmbito e nos limites técnicos das atividades"
+  ],
+  "n_evidencias": 2,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 39,
+  "qid": "f012",
+  "question": "Que atividades a lei inclui no campo de atuação do SUS além da assistência?",
+  "evidencia": [
+   "Estão incluídas ainda no campo de atuação do Sistema Único de Saúde (SUS): I - a execução de ações: a) de vigilância sanitária; b) de vigilância epidemiológica; c) de saúde"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "factuais_geradas",
+  "janela": 0
+ },
+ {
+  "n": 40,
+  "qid": "f006",
+  "question": "Que direitos de liberdade o ECA reconhece à criança e ao adolescente?",
+  "evidencia": [
+   "buscar refúgio, auxílio e orientação. Art. 17. O direito ao respeito consiste na inviolabilidade da integridade física, psíquica e moral da criança e do adolescente, abrangendo"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "factuais_geradas",
+  "janela": 0
+ },
+ {
+  "n": 41,
+  "qid": "f003",
+  "question": "Que natureza a Constituição atribui às ações e serviços de saúde?",
+  "evidencia": [
+   "São de relevância pública as ações e serviços de saúde, cabendo ao Poder Público dispor, nos termos da lei, sobre sua regulamentação, fiscalização e controle, devendo sua"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "factuais_geradas",
+  "janela": 0
+ },
+ {
+  "n": 42,
+  "qid": "f005",
+  "question": "Que atendimento de saúde o ECA assegura à criança e ao adolescente?",
+  "evidencia": [
+   "É assegurado atendimento integral à saúde da criança e do adolescente, por intermédio do Sistema Único de Saúde, garantido o acesso universal e igualitário às ações e serviços"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "factuais_geradas",
+  "janela": 0
+ },
+ {
+  "n": 43,
+  "qid": "f029",
+  "question": "Como o CFM define o ato profissional de médico?",
+  "evidencia": [
+   "todo procedimento técnico- profissional praticado por médico legalmente habilitado e dirigido para: I. a promoção da saúde e prevenção da ocorrência de enfermidades ou profilaxia"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "factuais_geradas",
+  "janela": 0
+ },
+ {
+  "n": 44,
+  "qid": "f002",
+  "question": "A iniciativa privada pode atuar na assistência à saúde e em que condições participa do SUS?",
+  "evidencia": [
+   "A assistência à saúde é livre à iniciativa privada. § 1º - As instituições privadas poderão participar de forma complementar do sistema único de saúde, segundo diretrizes"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "factuais_geradas",
+  "janela": 0
+ },
+ {
+  "n": 45,
+  "qid": "f017",
+  "question": "Que conceito o Plano Brasileiro de IA associa ao seu propósito estratégico?",
+  "evidencia": [
+   "soberania digital. O PBIA não é apenas um plano tecnológico. Nosso objetivo é garantir que a inteligência artificial melhore a vida do povo brasileiro, promovendo inclusão"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "factuais_geradas",
+  "janela": 0
+ },
+ {
+  "n": 46,
+  "qid": "f036",
+  "question": "Que posição o comitê de ética assume depois de aprovar um projeto de pesquisa?",
+  "evidencia": [
+   "Uma vez aprovado o projeto, o CEP-UFMG passa a ser corresponsável no que se refere aos aspectos éticos da pesquisa. Art. 37. O projeto de pesquisa deverá ser iniciado no prazo"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "factuais_geradas",
+  "janela": 0
+ },
+ {
+  "n": 47,
+  "qid": "f001",
+  "question": "Em que hipótese a Constituição admite quebra do sigilo das comunicações telefônicas?",
+  "evidencia": [
+   "é inviolável o sigilo da correspondência e das comunicações telegráficas, de dados e das comunicações telefônicas, salvo, no último caso, por ordem judicial, nas hipóteses"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "factuais_geradas",
+  "janela": 0
+ },
+ {
+  "n": 48,
+  "qid": "f011",
+  "question": "Qual o primeiro princípio que a lei do SUS enumera para os serviços de saúde?",
+  "evidencia": [
+   "obedecendo ainda aos seguintes princípios: I - universalidade de acesso aos serviços de saúde em todos os níveis de assistência; II - integralidade de assistência, entendida"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "factuais_geradas",
+  "janela": 0
+ },
+ {
+  "n": 49,
+  "qid": "f030",
+  "question": "Como a resolução do CFM define responsabilidade profissional?",
+  "evidencia": [
+   "A responsabilidade é a faculdade pela qual uma pessoa ou organização responde pelas suas decisões, sem referência à vontade de outrem. A noção de responsabilidade implica"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "factuais_geradas",
+  "janela": 0
+ },
+ {
+  "n": 50,
+  "qid": "f008",
+  "question": "Qual a pena quando do induzimento ou instigação ao suicídio resulta lesão corporal grave?",
+  "evidencia": [
+   "resulta lesão corporal de natureza grave ou gravíssima, nos termos dos §§ 1º e 2º do art. 129 deste Código: (Incluído pela Lei nº 13.968, de 2019) Pena - reclusão, de 1 (um"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "factuais_geradas",
+  "janela": 0
+ },
+ {
+  "n": 51,
+  "qid": "f010",
+  "question": "Que natureza jurídica o CDC atribui aos bancos de dados de consumidores?",
+  "evidencia": [
+   "são considerados entidades de caráter público. § 5° Consumada a prescrição relativa à cobrança de débitos do consumidor, não serão fornecidas, pelos respectivos Sistemas de"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "factuais_geradas",
+  "janela": 0
+ },
+ {
+  "n": 52,
+  "qid": "f007",
+  "question": "Qual a pena para quem revela, sem justa causa, segredo obtido em razão da profissão?",
+  "evidencia": [
+   "Violação do segredo profissional Art. 154 - Revelar alguém, sem justa causa, segredo, de que tem ciência em razão de função, ministério, ofício ou profissão, e cuja revelação"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "factuais_geradas",
+  "janela": 0
+ },
+ {
+  "n": 53,
+  "qid": "f013",
+  "question": "O que o NIST espera que exista depois que uma estratégia de desidentificação é adotada?",
+  "evidencia": [
+   "Ongoing monitoring is in place to ensure the continued effectiveness of the de- identifcation strategy"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "en",
+  "origem": "factuais_geradas",
+  "janela": 0
+ },
+ {
+  "n": 54,
+  "qid": "f024",
+  "question": "Que técnicas a OMS menciona para antecipar falhas no desenvolvimento de modelos multimodais?",
+  "evidencia": [
+   "premortems” and “red teaming”. • Procedures used by developers to “design for values” should be informed and updated by consensus, best practices (e.g. technologies and techniques"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "en",
+  "origem": "factuais_geradas",
+  "janela": 0
+ },
+ {
+  "n": 55,
+  "qid": "f022",
+  "question": "Que tecnologias a estratégia global de saúde digital lista como comprovadamente úteis ao contínuo de cuidado?",
+  "evidencia": [
+   "smart wearables, platforms, tools enabling data exchange and storage and tools enabling remote data capture and the exchange of data and sharing of relevant information across"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "en",
+  "origem": "factuais_geradas",
+  "janela": 0
+ },
+ {
+  "n": 56,
+  "qid": "f034",
+  "question": "Como o IMDRF define software como dispositivo médico?",
+  "evidencia": [
+   "SaMD is defined as software intended to be used for one or more medical purposes that perform these purposes without being part of a hardware medical device”. Examples of"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "en",
+  "origem": "factuais_geradas",
+  "janela": 0
+ },
+ {
+  "n": 57,
+  "qid": "f020",
+  "question": "Que natureza a própria OMS atribui ao documento de considerações regulatórias?",
+  "evidencia": [
+   "listing of key regulatory considerations and as a resource that can be considered by all relevant stakeholders in medical devices ecosystems, including developers who are"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "en",
+  "origem": "factuais_geradas",
+  "janela": 0
+ },
+ {
+  "n": 58,
+  "qid": "f025",
+  "question": "Que papel a OMS atribui ao público no desenvolvimento da IA para saúde?",
+  "evidencia": [
+   "The public should be engaged in the development of AI for health in order to understand forms of data sharing and use, to comment on the forms of AI that are socially and"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "en",
+  "origem": "factuais_geradas",
+  "janela": 0
+ },
+ {
+  "n": 59,
+  "qid": "f021",
+  "question": "Que tema as resoluções regionais citadas pela estratégia global de saúde digital pediram aos Estados-Membros que desenvolvessem?",
+  "evidencia": [
+   "eHealth standardization and interoperability, which urged(2013) and WPR/RC69/8 Member States “to consider developing … policies and legislative(2018). mechanisms linked"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "en",
+  "origem": "factuais_geradas",
+  "janela": 0
+ },
+ {
+  "n": 60,
+  "qid": "f026",
+  "question": "Por que a transferência de decisões a máquinas ameaça a autonomia humana, segundo a OMS?",
+  "evidencia": [
+   "neither understand how an AI technology arrives at a decision, nor be able to negotiate with a technology to reach a shared decision. In the context of AI for health, autonomy"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "en",
+  "origem": "factuais_geradas",
+  "janela": 0
+ },
+ {
+  "n": 61,
+  "qid": "q0010",
+  "question": "A partir de quando passou a vigorar o novo Código de Ética Médica (Resolução CFM nº 2.217/2018)?",
+  "evidencia": [
+   "O novo texto, em vigor a partir de 30 de abril de 2019, atualizou a versão anterior, de 2009, incorporando abordagens pertinentes às mudanças do mundo contempor"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 62,
+  "qid": "q0023",
+  "question": "Qual é um dos objetivos do Espaço Europeu de Dados de Saúde (EEDS)?",
+  "evidencia": [
+   "regime jurídico e técnico uniforme, em especial para o desenvolvimento, comercialização e utilização de sistemas de registos de saúde eletrónicos («sistemas de",
+   "de Dados de Saúde («EEDS»), a fim de melhorar o acesso e o controlo pelas pessoas singulares relativamente aos seus dados de saúde eletrónicos pessoais no conte"
+  ],
+  "n_evidencias": 2,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 63,
+  "qid": "q0004",
+  "question": "Preciso do consentimento do titular para tratar dados pessoais que ele próprio tornou manifestamente públicos?",
+  "evidencia": [
+   "exigência do consentimento previsto no caput deste artigo para os dados tornados manifestamente públicos pelo titular, resguardados os direitos do titular e os"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 64,
+  "qid": "q0001",
+  "question": "No acompanhamento de doenças crônicas por teleconsulta, é obrigatório algum atendimento presencial?",
+  "evidencia": [
+   "s de doenças crônicas ou doenças que requeiram acompanhamento por longo tempo deve ser realizada consulta presencial, com o médico assistente do paciente, em in"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 65,
+  "qid": "q0006",
+  "question": "No PL 2338/2023, qual autoridade coordenaria o Sistema Nacional de Regulação e Governança de Inteligência Artificial (SIA)?",
+  "evidencia": [
+   "§ 1º Integram o SIA: I – a Autoridade Nacional de Proteção de Dados (ANPD), autoridade competente que coordenará o SIA"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 66,
+  "qid": "q0003",
+  "question": "Na telemedicina, o compartilhamento das informações do paciente com outro profissional exige o quê?",
+  "evidencia": [
+   "issional com prévia permissão do paciente, mediante seu consentimento livre e esclarecido e com protocolos de segurança capazes de garantir a confidencialidade"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 67,
+  "qid": "q0002",
+  "question": "No atendimento por telemedicina, o que precisa ser garantido quanto ao consentimento do paciente sobre o compartilhamento de suas informações?",
+  "evidencia": [
+   "e legal deve estar consciente de que suas informações pessoais podem ser compartilhadas e sobre o seu direito de negar permissão para isso, salvo em situação de",
+   "O paciente ou seu representante legal deverá autorizar o atendimento por telemedicina e a transmissão das suas imagens e dados por meio de (termo de concordânci"
+  ],
+  "n_evidencias": 2,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 68,
+  "qid": "q0018",
+  "question": "A Estratégia Brasileira de Inteligência Artificial menciona alguma ação relacionada ao viés algorítmico?",
+  "evidencia": [
+   "❖ Estimular ações de transparência e de divulgação responsável quanto ao uso de sistemas de IA, e promover a observância, por tais sistemas, de direitos humanos"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 69,
+  "qid": "q0007",
+  "question": "O PL 2338/2023 prevê tratamento diferenciado para startups e pequenas empresas?",
+  "evidencia": [
+   "As autoridades setoriais deverão definir critérios diferenciados para sistemas de IA ofertados por microempresas, empresas de pequeno porte e startups que promo"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "pt",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 70,
+  "qid": "q0012",
+  "question": "Um sistema de IA transparente é necessariamente preciso, seguro e justo?",
+  "evidencia": [
+   "When consequences are severe, such as when life and liberty are at stake, AI developers and deployers should consider proportionally and proactively adjusting t"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "en",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 71,
+  "qid": "q0016",
+  "question": "O direito à portabilidade de dados do GDPR se aplica quando o tratamento se baseia em obrigação legal do controlador?",
+  "evidencia": [
+   "d, commonly used and machine-readable format and have the right to transmit those data to another controller without hindrance from the controller to which the",
+   "It should therefore not apply where the processing of the personal data is necessary for compliance with a legal obligation to which the controller is subject o"
+  ],
+  "n_evidencias": 2,
+  "question_type": "factual",
+  "source_lang": "en",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 72,
+  "qid": "q0017",
+  "question": "Que capacidade de segurança o GDPR exige diante de um incidente físico ou técnico?",
+  "evidencia": [
+   "In assessing the appropriate level of security account shall be taken in particular of the risks that are presented by processing, in particular from accidental"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "en",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 73,
+  "qid": "q0015",
+  "question": "Como a ferramenta de avaliação de impacto ético da UNESCO classifica a gravidade de um impacto negativo?",
+  "evidencia": [
+   "of the affected parties, in ways that lead to the significant and enduring degradation of human dignity, autonomy, physical, psychological, or moral integrity,"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "en",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 74,
+  "qid": "q0019",
+  "question": "O que a OMS entende por 'responsividade' (responsiveness) em inteligência artificial para a saúde?",
+  "evidencia": [
+   "6 Promote artificial intelligence that is responsive and sustainable Responsiveness requires that designers, developers and users continuously, systematically a"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "en",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 75,
+  "qid": "q0013",
+  "question": "O que o NIST AI RMF reconhece sobre os riscos das tecnologias de IA?",
+  "evidencia": [
+   "Executive Summary\n\nArtificial intelligence (AI) technologies have significant potential to transform society and people’s lives – from commerce and health to tr"
+  ],
+  "n_evidencias": 1,
+  "question_type": "factual",
+  "source_lang": "en",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 76,
+  "qid": "10",
+  "question": "Se a mesma base de dados é publicada duas vezes sob regimes diferentes de anonimização, o que acontece com a garantia de privacidade quando alguém junta as duas publicações?",
+  "evidencia": [
+   "if the same dataset is made available through two different de-identifcation regimes, what will happen to the privacy guarantees if the two downstream datasets are recombined?",
+   "the releasing agency can compute that the total privacy loss that might be suffered by individuals in the dataset is no greater than"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "en",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 77,
+  "qid": "11",
+  "question": "Ao planejar uma coleta de dados que depois será publicada de forma anonimizada, o que a agência deve fazer com identificadores que não serão usados? E basta anonimizar uma vez?",
+  "evidencia": [
+   "Ongoing monitoring is in place to ensure the continued effectiveness of the de- identifcation strategy.",
+   "if specifc identifers are not needed for maintenance, synthesis, and usage, then those identifers should not be collected."
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "en",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 78,
+  "qid": "13",
+  "question": "Quando alguém obtém acesso a dados de saúde eletrónicos para uso secundário, que informações precisam ser tornadas públicas sobre esse acesso — inclusive sobre o que saiu do projeto?",
+  "evidencia": [
+   "O fundamento jurídico ao abrigo do qual o acesso aos dados de saúde eletrónicos é concedido ao utilizador de dados de saúde",
+   "Os resultados dos projetos para os quais foram utilizados os dados de saúde eletrónicos."
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 79,
+  "qid": "27",
+  "question": "O que a ANPD considera organismo internacional e em quanto tempo quem já usa cláusulas contratuais precisa adotar as cláusulas-padrão?",
+  "evidencia": [
+   "organização regida pelo direito internacional público, incluindo seus órgãos subordinados ou qualquer outro órgão criado mediante acordo firmado entre dois ou mais países",
+   "deverão incorporar as cláusulas-padrão contratuais aprovadas pela ANPD aos seus respectivos instrumentos contratuais, no prazo de até 12 (doze) meses, contados da data de publicação desta Resolução"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 80,
+  "qid": "28",
+  "question": "Que viés foi documentado no COMPAS e que exigências recaem sobre bancos de dados de segurança pública integrados a sistemas de IA?",
+  "evidencia": [
+   "em 2016, o software COMPAS, utilizado em tribunais nos EUA para determinar o índice de reincidência criminal e concessão de fianças, foi duramente criticado ao se revelar que ele era tendencioso contra pessoas negras: estas tinham 45% mais chances de serem identificados como indivíduos de alto risco do que pessoas brancas",
+   "a criação e o uso de bancos de dados de segurança pública integrados a sistemas de IA devem observar o devido processo legal, os princípios gerais de proteção de dados pessoas e os direitos dos titulares de dados, conforme o art. 4º, §1º, da LGPD"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 81,
+  "qid": "29",
+  "question": "Em que situações a União pode executar ações de vigilância epidemiológica e o que o sindicato pode requerer diante de risco iminente no ambiente de trabalho?",
+  "evidencia": [
+   "A União poderá executar ações de vigilância epidemiológica e sanitária em circunstâncias especiais, como na ocorrência de agravos inusitados à saúde, que possam escapar do controle da direção estadual do Sistema Único de Saúde (SUS) ou que representem risco de disseminação nacional.",
+   "a garantia ao sindicato dos trabalhadores de requerer ao órgão competente a interdição de máquina, de setor de serviço ou de todo ambiente de trabalho, quando houver exposição a risco iminente para a vida ou saúde dos trabalhadores"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 82,
+  "qid": "3",
+  "question": "O médico pode informar a uma seguradora as circunstâncias da morte de um paciente que estava sob seus cuidados? E ele responde por não orientar seus auxiliares sobre sigilo?",
+  "evidencia": [
+   "Prestar informações a empresas seguradoras sobre as circunstâncias da morte do paciente sob seus cuidados, além das contidas na declaração de óbito, salvo por expresso consentimento do seu representante legal.",
+   "Deixar de orientar seus auxiliares e alunos a respeitar o sigilo profissional e zelar para que seja por eles mantido."
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 83,
+  "qid": "32",
+  "question": "Quando os dados pessoais não foram obtidos do próprio titular, o que o controlador precisa informar sobre decisão automatizada e em que prazo deve prestar as informações?",
+  "evidencia": [
+   "the existence of automated decision-making, including profiling, referred to in Article 22(1) and (4) and, at least in those cases, meaningful information about the logic involved, as well as the significance and the envisaged consequences of such processing for the data subject",
+   "within a reasonable period after obtaining the personal data, but at the latest within one month, having regard to the specific circumstances in which the personal data are processed"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "en",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 84,
+  "qid": "36",
+  "question": "Que obrigações de transparência recaem sobre os membros do Fórum das Partes Interessadas e sobre o Conselho do EEDS?",
+  "evidencia": [
+   "Os membros do Fórum das Partes Interessadas fazem uma declaração anual de interesses, que deve ser disponibilizada ao público e atualizada quando se justifique.",
+   "O Conselho do EEDS deve publicar as datas das suas reuniões e as atas das suas deliberações, bem como publicar, de dois em dois anos, um relatório das suas atividades."
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 85,
+  "qid": "39",
+  "question": "Que documento de formação acompanha o pedido de inscrição no Conselho Regional de Medicina, e esse pedido pode ser feito por procurador?",
+  "evidencia": [
+   "original ou fotocópia autenticada do diploma de conclusão de curso, expedido por instituição de ensino superior, registrado no Ministério da Educação",
+   "O pedido de inscrição a que se refere o artigo anterior, poderá ser feito por procurador quando o médico a inscrever-se não possa deslocar-se de seu local de trabalho."
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 86,
+  "qid": "41",
+  "question": "O que faz o aplicativo móvel de lesões de pele e estender seu uso a mais dois modelos de smartphone exige nova revisão do FDA?",
+  "evidencia": [
+   "An AI/ML MMA uses images taken by a smartphone camera to provide detailed information to a dermatologist on the physical characteristics of a skin lesion in order for the dermatologist to label the skin lesion as benign or malignant.",
+   "The algorithm modification may be made without additional FDA review."
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "en",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 87,
+  "qid": "42",
+  "question": "Qual o limite de abrangência de uma transferência internacional de dados e em quanto tempo o controlador deve entregar ao titular as cláusulas utilizadas?",
+  "evidencia": [
+   "A transferência internacional de dados deverá se limitar ao mínimo necessário para o alcance de suas finalidades, com abrangência dos dados pertinentes, proporcionais e não excessivos em relação às finalidades do tratamento de dados.",
+   "O prazo para atendimento da solicitação é de 15 (quinze) dias, ressalvada a hipótese de prazo distinto estabelecido em regulamentação específica da ANPD."
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 88,
+  "qid": "43",
+  "question": "Quem responde pela falta da ficha de informações de um sistema de registo de saúde eletrónico, e que certificação se exige de módulos que sejam dispositivo médico ou IA de risco elevado?",
+  "evidencia": [
+   "Se um sistema de RSE não for acompanhado da referida ficha de informações, o fabricante do sistema de RSE em causa, o seu mandatário e todos os outros operadores económicos pertinentes são obrigados a acrescentar ao sistema de RSE essa ficha de informações e essas instruções de utilização.",
+   "O software ou os módulos de software enquadrados na definição de dispositivo médico, dispositivo médico para diagnóstico in vitro ou sistema de inteligência artificial (IA) considerado de risco elevado («sistema de IA de risco elevado») deverão ser certificados em conformidade com os Regulamentos (UE) 2017/745, (UE) 2017/746 e (UE) 2024/1689, consoante o caso."
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 89,
+  "qid": "44",
+  "question": "Que papel a epidemiologia cumpre entre os princípios do SUS e qual a relação do SUS com o Subsistema de Atenção à Saúde Indígena?",
+  "evidencia": [
+   "utilização da epidemiologia para o estabelecimento de prioridades, a alocação de recursos e a orientação programática",
+   "O SUS servirá de retaguarda e referência ao Subsistema de Atenção à Saúde Indígena, devendo, para isso, ocorrer adaptações na estrutura e organização do SUS nas regiões onde residem as populações indígenas"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 90,
+  "qid": "47",
+  "question": "Quando se configura a responsabilidade civil do profissional e em que relações se avalia sua responsabilidade social?",
+  "evidencia": [
+   "A responsabilidade civil é exercida sempre que há dano evitável e que se pode estabelecer uma relação causal entre este dano e um elemento de erro profissional (imperícia, imprudência ou negligência).",
+   "A responsabilidade social dos profissionais deve ser avaliada por sua conduta em três tipos de relação: com os clientes, com os colegas e com a sociedade."
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 91,
+  "qid": "49",
+  "question": "Por quanto tempo vale uma certificação de proteção de dados e o que se exige de um organismo para ser acreditado a monitorizar um código de conduta?",
+  "evidencia": [
+   "ertification shall be issued to a controller or processor for a maximum period of three years and may be renewed, under the same conditions, provided that the relevant requirements continue to be met.",
+   "demonstrated its independence and expertise in relation to the subject-matter of the code to the satisfaction of the competent supervisory authority"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "en",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 92,
+  "qid": "55",
+  "question": "Uma autoridade de controlo pode supervisionar tribunais, e a que dever de sigilo os seus membros estão sujeitos?",
+  "evidencia": [
+   "Supervisory authorities shall not be competent to supervise processing operations of courts acting in their judicial capacity.",
+   "The member or members and the staff of each supervisory authority shall, in accordance with Union or Member State law, be subject to a duty of professional secrecy both during and after their term of office"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "en",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 93,
+  "qid": "56",
+  "question": "Que riscos de dependência e de segurança cibernética a OMS aponta no uso de modelos multimodais em sistemas de saúde?",
+  "evidencia": [
+   "Dependence on LMMs could make health systems vulnerable if LMMs are systems on ill-suited not maintained or (in lowand middle-income countries) are updated only LMMs for use in high-income countries.",
+   "Malicious attacks or hacking could undermine safety and trust in the use of LMMs in health care."
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "en",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 94,
+  "qid": "63",
+  "question": "Quantos especialistas em IA o Brasil tinha e qual a proporção de mulheres entre eles?",
+  "evidencia": [
+   "área de IA, no Brasil, é de 4.429 especialistas.",
+   "baixa presença feminina em profissões ligadas a IA, correspondente a apenas 14% de mulheres entre os profissionais de IA no Brasil"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 95,
+  "qid": "64",
+  "question": "Que preocupação a OMS levanta sobre exigir avaliação regulatória de todos os modelos de fundação, independentemente do tamanho?",
+  "evidencia": [
+   "it could “freeze in place” the dominance of the largest companies, as the standards may be such that only those companies can feasibly comply with them or that the standards best suit their business model and aims",
+   "There is concern that, if a government selects a risk-based approach, it will be considered sufficient or be used as a substitute for a human rights-based approach"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "en",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 96,
+  "qid": "68",
+  "question": "Como o NIST define perda de privacidade e orçamento de perda de privacidade?",
+  "evidencia": [
+   "A measure of the extent to which a data release may reveal information that is specifc to an individual.",
+   "An upper bound on the cumulative total privacy loss for individuals."
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "en",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 97,
+  "qid": "70",
+  "question": "Como é proferida e publicada a decisão de adequação da ANPD, e o que cabe ao controlador verificar antes de transferir dados ao exterior?",
+  "evidencia": [
+   "A decisão de adequação será proferida por Resolução do Conselho Diretor e publicada na página da ANPD na Internet.",
+   "I - caracteriza transferência internacional de dados; II - submete-se à legislação nacional de proteção de dados pessoais; e III - está amparada em hipótese legal e em mecanismo de transferência internacional válidos."
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 98,
+  "qid": "74",
+  "question": "Em que casos a conservação de dados pessoais continua lícita apesar do direito ao esquecimento, e que métodos podem restringir o tratamento?",
+  "evidencia": [
+   "the further retention of the personal data should be lawful where it is necessary, for exercising the right of freedom of expression and information, for compliance with a legal obligation, for the performance of a task carried out in the public interest",
+   "Methods by which to restrict the processing of personal data could include, inter alia, temporarily moving the selected data to another processing system, making the selected personal data unavailable to users, or temporarily removing published data from a website."
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "en",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 99,
+  "qid": "76",
+  "question": "O que é um Algorithm Change Protocol e o que um protocolo de retreinamento deve descrever?",
+  "evidencia": [
+   "An ACP is a description of the set of specific methods that a manufacturer has in place to achieve and appropriately control the risks of the anticipated types of modifications delineated in the SPS.",
+   "These protocols may include a retraining strategy that describes the objective of the retraining; the algorithm components that may be modified as a result of the learning process"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "en",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 100,
+  "qid": "80",
+  "question": "O que a ANPD considera entidade responsável numa norma corporativa global e que garantia institucional pesa na avaliação do nível de proteção?",
+  "evidencia": [
+   "entidade responsável: sociedade empresária, com sede no Brasil, que responde por qualquer violação de norma corporativa global, ainda que decorrente de ato praticado por um membro do grupo ou conglomerado de empresas com sede em outro país",
+   "a existência e o efetivo funcionamento de um órgão regulador independente, com competência para assegurar o cumprimento das normas de proteção de dados e garantir os direitos dos titulares"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 101,
+  "qid": "82",
+  "question": "O que órgãos com padrões de desidentificação já estabelecidos devem documentar ao avaliar novas abordagens?",
+  "evidencia": [
+   "they should document their rationale for adopting legacy versus new approaches, evaluate how successful their approaches have been over time, and address inconsistencies between data releases",
+   "t to eliminate risk but to identify risks that can be reduced while still meeting the objectives of the data release, and then deciding whether the residual risk is justifed by the data release goals."
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "en",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 102,
+  "qid": "83",
+  "question": "Para que as Partes da convenção sobre IA se consultam periodicamente, e que grupos recebem atenção especial quanto a necessidades específicas?",
+  "evidencia": [
+   "a facilitating the effective application and implementation of this Convention, including the identification of any problems and the effects of any reservation made in pursuance of Article 34, paragraph 1, or any declaration made under this Convention",
+   "Each Party shall, in accordance with its domestic law and applicable international obligations, take due account of any specific needs and vulnerabilities in relation to respect for the rights of persons with disabilities and of children."
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "en",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 103,
+  "qid": "84",
+  "question": "Quando produz efeito a denúncia da convenção sobre IA e a retirada de uma declaração territorial?",
+  "evidencia": [
+   "Such denunciation shall become effective on the first day of the month following the expiration of a period of three months after the date of receipt of the notification by the Secretary General.",
+   "The withdrawal shall become effective on the first day of the month following the expiration of a period of three months after the date of receipt of such notification by the Secretary General."
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "en",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 104,
+  "qid": "85",
+  "question": "Que quantidade de mortes adicionais por mudança climática a OMS projeta, e o que um índice de transparência encontrou sobre desenvolvedores de modelos de fundação?",
+  "evidencia": [
+   "Between 2030 and 2050, climate change is expected to cause approximately 250 000 additional deaths per year due to malnutrition, malaria, diarrhoea and heat stress.",
+   "no major foundation model developer is close to providing adequate transparency, revealing a fundamental lack of transparency in the AI industry"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "en",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 105,
+  "qid": "9",
+  "question": "Que informações o operador que trata dados por conta de um controlador precisa manter registradas, e esse registro pode ser mantido apenas em papel?",
+  "evidencia": [
+   "the name and contact details of the processor or processors and of each controller on behalf of which the processor is acting",
+   "The records referred to in paragraphs 1 and 2 shall be in writing, including in electronic form."
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "en",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 106,
+  "qid": "90",
+  "question": "O tratamento de dados de pacientes por um médico isolado conta como larga escala para fins de avaliação de impacto?",
+  "evidencia": [
+   "The processing of personal data should not be considered to be on a large scale if the processing concerns personal data from patients or clients by an individual physician, other health care professional or lawyer. In such cases, a data protection impact assessment should not be mandatory.",
+   "A consultation of the supervisory authority should also take place in the course of the preparation of a legislative or regulatory measure which provides for the processing of personal data"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "en",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 107,
+  "qid": "91",
+  "question": "Que riscos sociais e ambientais a OMS associa à concentração do desenvolvimento de modelos multimodais em poucas empresas?",
+  "evidencia": [
+   "They include the likelihood that LMMs will reinforce the power and authority of a small group of technology companies (and their executives) that are at the forefront of commercializing LMMs.",
+   "Few companies and governments have the human and financial resources, expertise, data and computing power to develop increasingly sophisticated LMMs"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "en",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 108,
+  "qid": "92",
+  "question": "Que competências os Conselhos Regionais de Medicina têm sobre inscrição e fiscalização, e o que o médico precisa comunicar sobre seu consultório?",
+  "evidencia": [
+   "I - deliberar sobre a inscrição e o cancelamento dos profissionais no quadro do Conselho",
+   "Fica o médico obrigado a comunicar ao Conselho Regional de Medicina em que estiver inscrito a instalação do seu consultório ou local de trabalho profissional, assim como qualquer transferência de sede, ainda quando na mesma jurisdição."
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 109,
+  "qid": "93",
+  "question": "O que é um algoritmo travado na definição do FDA e por que os algoritmos adaptativos são diferentes?",
+  "evidencia": [
+   "We define a “locked” algorithm as an algorithm that provides the same result each time the same input is applied to it and does not change with use.",
+   "However, not all AI/ML-based SaMD are locked; some algorithms can adapt over time."
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "en",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 110,
+  "qid": "97",
+  "question": "Quantos trabalhadores formais brasileiros correm risco de automação e que efeito sobre salários é projetado?",
+  "evidencia": [
+   "35 milhões de trabalhadores formais correm risco de perder seus empregos para a automação até 2050",
+   "haverá um aumento salarial de 7% e 14,72%, respectivamente"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "experimento_recorte",
+  "janela": 0
+ },
+ {
+  "n": 111,
+  "qid": "m001",
+  "question": "Que direito de portabilidade a LGPD assegura ao titular e o que o controlador precisa informar ao comunicar um incidente de segurança?",
+  "evidencia": [
+   "bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade com o disposto nesta Lei; V - portabilidade dos dados a outro fornecedor de serviço ou produto, mediante requisição expressa e observados os segredos comercial e industrial, de acordo com a regulamentação do órgão controlador; V - portabilidade dos dados a outro fornecedor de serviço ou produto, mediante requisição expressa, de acordo com a regulamentação da autoridade nacional, observados os segredos comercial e industrial; (Redação dada pela Lei nº 13.853, de 2019) Vigência VI - eliminação dos dados pessoais tratados com o consentimento do titular, exceto nas hipóteses previstas no",
+   "relacionados ao incidente; V - os motivos da demora, no caso de a comunicação não ter sido imediata; e VI - as medidas que foram ou que serão adotadas para reverter ou mitigar os efeitos do prejuízo. § 2º A autoridade nacional verificará a gravidade do incidente e poderá, caso necessário para a salvaguarda dos direitos dos titulares, determinar ao controlador a adoção de providências, tais como: I - ampla divulgação do fato em meios de comunicação; e II - medidas para reverter ou mitigar os efeitos do incidente. § 3º No juízo de gravidade do incidente, será avaliada eventual comprovação de que foram adotadas medidas técnicas adequadas que tornem os dados pessoais"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "multihop_dispersas",
+  "janela": 0
+ },
+ {
+  "n": 112,
+  "qid": "m002",
+  "question": "Como a LGPD enuncia o princípio da finalidade e qual é o papel interpretativo atribuído à ANPD?",
+  "evidencia": [
+   "de 2026) Art. 6º As atividades de tratamento de dados pessoais deverão observar a boa-fé e os seguintes princípios: I - finalidade: realização do tratamento para propósitos legítimos, específicos, explícitos e informados ao titular, sem possibilidade de tratamento posterior de forma incompatível com essas finalidades; II - adequação: compatibilidade do tratamento com as finalidades informadas ao titular, de acordo com o contexto do tratamento; III - necessidade: limitação do tratamento ao mínimo necessário para a realização de suas finalidades, com abrangência dos dados pertinentes, proporcionais e não excessivos em relação às finalidades do tratamento de dados; IV - livre",
+   "com outros órgãos e entidades com competências sancionatórias e normativas afetas ao tema de proteção de dados pessoais e será o órgão central de interpretação desta Lei e do estabelecimento de normas e diretrizes para a sua implementação. (Incluído pela Lei nº 13.853, de 2019) Art. 55-L. Constituem receitas da ANPD: (Incluído pela Lei nº 13.853, de 2019) I - as dotações, consignadas no orçamento geral da União, os créditos especiais, os créditos adicionais, as transferências e os repasses que lhe forem conferidos; (Incluído pela Lei nº 13.853, de 2019) II - as doações, os legados, as subvenções e outros recursos que lhe forem destinados; (Incluído pela Lei nº 13.853, de 2019"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "multihop_dispersas",
+  "janela": 0
+ },
+ {
+  "n": 113,
+  "qid": "m003",
+  "question": "Que restrição recai sobre os membros do Conselho Diretor da ANPD depois do cargo e qual é o mandato dos membros do Conselho Nacional de Proteção de Dados Pessoais e da Privacidade?",
+  "evidencia": [
+   "Art. 55-F. Aplica-se aos membros do Conselho Diretor, após o exercício do cargo, o disposto no art. 6º da Lei nº 12.813, de 16 de maio de 2013 . (Incluído pela Lei nº 13.853, de 2019) Parágrafo único. A infração ao disposto no caput deste artigo caracteriza ato de improbidade administrativa. (Incluído pela Lei nº 13.853, de 2019) Art. 55-G. Ato do Presidente da República disporá sobre a estrutura regimental da ANPD. (Incluído pela Lei nº 13.853, de 2019) § 1º Até a data de entrada em vigor de sua estrutura regimental, a ANPD receberá o apoio técnico e administrativo",
+   "2019) II - não poderão ser membros do Comitê Gestor da Internet no Brasil; (Incluído pela Lei nº 13.853, de 2019) III - terão mandato de 2 (dois) anos, permitida 1 (uma) recondução. (Incluído pela Lei nº 13.853, de 2019) § 4º A participação no Conselho Nacional de Proteção de Dados Pessoais e da Privacidade será considerada prestação de serviço público relevante, não remunerada. (Incluído pela Lei nº 13.853, de 2019) Art. 58-B. Compete ao Conselho Nacional de Proteção de Dados Pessoais e da Privacidade: (Incluído pela Lei nº 13.853, de 2019) I - propor diretrizes estratégicas e fornecer subsídios para a elaboração da Política Nacional de Proteção de Dados Pessoais e da Privacidade"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "multihop_dispersas",
+  "janela": 0
+ },
+ {
+  "n": 114,
+  "qid": "m004",
+  "question": "Que objetivo do SUS a Lei nº 8.080 enuncia primeiro e que objetivo a política de recursos humanos da saúde deve cumprir?",
+  "evidencia": [
+   "em caráter complementar. CAPÍTULO I Dos Objetivos e Atribuições Art. 5º São objetivos do Sistema Único de Saúde SUS: I - a identificação e divulgação dos fatores condicionantes e determinantes da saúde; II - a formulação de política de saúde destinada a promover, nos campos econômico e social, a observância do disposto no § 1º do art. 2º desta lei; III - a assistência às pessoas por intermédio de ações de promoção, proteção e recuperação da saúde, com a realização integrada das ações assistenciais e das atividades preventivas. Art. 6º Estão incluídas ainda no campo de atuação do Sistema Único de Saúde (SUS): I - a execução de ações: a) de vigilância sanitária; b) de vigilância",
+   "formalizada e executada, articuladamente, pelas diferentes esferas de governo, em cumprimento dos seguintes objetivos: I - organização de um sistema de formação de recursos humanos em todos os níveis de ensino, inclusive de pós-graduação, além da elaboração de programas de permanente aperfeiçoamento de pessoal; II - (Vetado) III - (Vetado) IV - valorização da dedicação exclusiva aos serviços do Sistema Único de Saúde (SUS). Parágrafo único. Os serviços públicos que integram o Sistema Único de Saúde (SUS) constituem campo de prática para ensino e pesquisa, mediante normas específicas, elaboradas conjuntamente com o sistema educacional. Art. 28. Os cargos e funções de chefia, direção"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "multihop_dispersas",
+  "janela": 0
+ },
+ {
+  "n": 115,
+  "qid": "m005",
+  "question": "O que a Lei nº 8.080 passou a exigir dos protocolos clínicos do câncer e que cuidado com dados ela impõe ao sistema de regulação assistencial?",
+  "evidencia": [
+   "do agravo à saúde de que trata o protocolo. (Redação dada pela Lei nº 15.379, de 2026) § 2º Os protocolos clínicos e as diretrizes terapêuticas do câncer incluirão a utilização de imunoterapia quando se mostrar superior ou mais segura que as opções tradicionais, na forma do regulamento. (Incluído pela Lei nº 15.379, de 2026) Art. 19-P. Na falta de protocolo clínico ou de diretriz terapêutica, a dispensação será realizada: (Incluído pela Lei nº 12.401, de 2011) I - com base nas relações de medicamentos instituídas pelo gestor federal do SUS, observadas as competências estabelecidas nesta Lei, e a responsabilidade pelo fornecimento será pactuada na Comissão Intergestores Tripartite",
+   "tar o sistema de que trata o caput , especialmente quanto à interoperabilidade para recebimento dos dados dos entes federativos, permitida a gestão compartilhada pela União e pelos entes subnacionais, garantidos o atendimento aos princípios e os parâmetros estabelecidos pela Lei nº 13.709, de 14 de agosto de 2018 , quando aplicáveis. (Incluído pela Medida Provisória nº 1.301, de 2025) (Regulamento) § 2º As secretarias estaduais, distrital e municipais de saúde deverão garantir o registro das informações da regulação assistencial em seu âmbito de gestão e enviar, obrigatoriamente, os dados ao"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "multihop_dispersas",
+  "janela": 0
+ },
+ {
+  "n": 116,
+  "qid": "m006",
+  "question": "A quem o CDC atribui o ônus da prova sobre a publicidade e que juízo é competente para a execução da sentença?",
+  "evidencia": [
+   "ndo deixar de informar sobre dado essencial do produto ou serviço. § 4° (Vetado) . Art. 38. O ônus da prova da veracidade e correção da informação ou comunicação publicitária cabe a quem as patrocina. SEÇÃO IV Das Práticas Abusivas Art. 39. É vedado ao fornecedor de produtos ou serviços, dentre outras práticas abusivas: (Redação dada pela Lei nº 8.884, de 11.6.1994) I - condicionar o fornecimento de produto ou de serviço ao fornecimento de outro produto ou serviço, bem como, sem justa causa, a limites quantitativos; II - recusar atendimento às demandas dos consumidores, na exata medida de suas disponibilidades de estoque, e, ainda, de conformidade",
+   "lgado. § 2° É competente para a execução o juízo: I - da liquidação da sentença ou da ação condenatória, no caso de execução individual; II - da ação condenatória, quando coletiva a execução. Art. 99. Em caso de concurso de créditos decorrentes de condenação prevista na Lei n.° 7.347, de 24 de julho de 1985 e de indenizações pelos prejuízos individuais resultantes do mesmo evento danoso, estas terão preferência no pagamento. Parágrafo único. Para efeito do disposto neste artigo, a destinação da importância recolhida ao fundo criado pela Lei n°7.347 de 24 de julho de"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "multihop_dispersas",
+  "janela": 0
+ },
+ {
+  "n": 117,
+  "qid": "m007",
+  "question": "Que instrumento o CDC lista primeiro para executar a Política Nacional das Relações de Consumo e a que recurso o Departamento Nacional de Defesa do Consumidor pode recorrer?",
+  "evidencia": [
+   "execução da Política Nacional das Relações de Consumo, contará o poder público com os seguintes instrumentos, entre outros: I - manutenção de assistência jurídica, integral e gratuita para o consumidor carente; II - instituição de Promotorias de Justiça de Defesa do Consumidor, no âmbito do Ministério Público; III - criação de delegacias de polícia especializadas no atendimento de consumidores vítimas de infrações penais de consumo; IV - criação de Juizados Especiais de Pequenas Causas e Varas Especializadas para a solução de litígios de consumo; V - concessão de estímulos à criação e desenvolvimento das Associações de Defesa do Consumidor. VI - instituição de mecanismos de prevenção",
+   "suas finalidades. Parágrafo único. Para a consecução de seus objetivos, o Departamento Nacional de Defesa do Consumidor poderá solicitar o concurso de órgãos e entidades de notória especialização técnico-científica. TÍTULO V Da Convenção Coletiva de Consumo Art. 107. As entidades civis de consumidores e as associações de fornecedores ou sindicatos de categoria econômica podem regular, por convenção escrita, relações de consumo que tenham por objeto estabelecer condições relativas ao preço, à qualidade, à quantidade, à garantia e características de produtos e serviços, bem como à reclamação e composição do conflito de consumo. § 1° A convenção tornar-se-á obrigatória a partir"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "multihop_dispersas",
+  "janela": 0
+ },
+ {
+  "n": 118,
+  "qid": "m008",
+  "question": "Sob que regime de sigilo tramitam a sindicância e o processo ético-profissional e em que hipótese há suspeição do conselheiro?",
+  "evidencia": [
+   "Medicina (CRMs) e no Conselho Federal de Medicina (CFM) serão regidos por este Código de Processo Ético-Profissional (CPEP) e tramitarão em sigilo processual. § 1º A sindicância e o processo ético-profissional poderão tramitar em formato eletrônico, nos termos de Resolução específica do CFM",
+   "praticar quaisquer outros atos. Seção II Da Suspeição Art. 107. Há suspeição do Conselheiro, na sindicância e no PEP: I − quando for amigo íntimo ou inimigo de qualquer das partes ou de seus advogados; II − quando qualquer das partes for sua credora ou devedora, de seu cônjuge ou companheiro ou de parentes destes, em linha reta até o terceiro grau; III – quando interessado no julgamento do PEP em favor de qualquer das partes. Parágrafo Único. Será ilegítima a alegação de suspeição quando: I − houver sido provocada por quem a alega; II − a parte que a alega houver praticado ato que signifique manifesta aceitação do arguido"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "multihop_dispersas",
+  "janela": 0
+ },
+ {
+  "n": 119,
+  "qid": "m009",
+  "question": "O que acontece com o recurso assim que é recebido no CFM e o que se exige da testemunha ao depor?",
+  "evidencia": [
+   "Art. 32. Recebido e autuado o recurso no CFM, a Corregedoria o remeterá à Coordenação Jurídica para exame de admissibilidade e, caso seja arguida alguma preliminar processual, emissão de Nota Técnica no prazo de 05 (cinco) dias úteis. Parágrafo único. Após a manifestação da Coordenação Jurídica, o recurso será distribuído a um relator para elaborar seu relatório e voto, devendo ser pautado para julgamento na sessão plenária subsequente",
+   "Art. 72. A testemunha fará a promessa de dizer a verdade do que souber e for perguntado, devendo declarar seu nome, idade, estado civil e residência; sua profissão, lugar onde exerce sua atividade; se é parente, e em que grau, de alguma das partes, ou quais suas relações com qualquer delas; e relatar o que souber, explicando sempre as razões de sua ciência ou as circunstâncias pelas quais seja possível avaliar sua credibilidade. Parágrafo único. As testemunhas serão inquiridas separadamente, de modo que umas não saibam nem ouçam os depoimentos das outras, devendo"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "multihop_dispersas",
+  "janela": 0
+ },
+ {
+  "n": 120,
+  "qid": "m010",
+  "question": "Como o ECA define castigo físico e o que a remissão não implica quanto à responsabilidade do adolescente?",
+  "evidencia": [
+   "Lei nº 13.010, de 2014) Parágrafo único. Para os fins desta Lei, considera-se: (Incluído pela Lei nº 13.010, de 2014) I - castigo físico: ação de natureza disciplinar ou punitiva aplicada com o uso da força física sobre a criança ou o adolescente que resulte em: (Incluído pela Lei nº 13.010, de 2014) a) sofrimento físico; ou (Incluído pela Lei nº 13.010, de 2014) b) lesão; (Incluído pela Lei nº 13.010, de 2014) II - tratamento cruel ou degradante: conduta ou forma cruel de tratamento em relação à criança ou ao adolescente que: (Incluído pela Lei nº 13.010, de 2014) a) humilhe; ou (Incluído pela Lei nº 13.010, de 2014) b) ameace gravemente; ou (Incluído pela Lei nº 13.010, de",
+   "procedimento, a concessão da remissão pela autoridade judiciária importará na suspensão ou extinção do processo. Art. 127. A remissão não implica necessariamente o reconhecimento ou comprovação da responsabilidade, nem prevalece para efeito de antecedentes, podendo incluir eventualmente a aplicação de qualquer das medidas previstas em lei, exceto a colocação em regime de semi-liberdade e a internação. Art. 128. A medida aplicada por força da remissão poderá ser revista judicialmente, a qualquer tempo, mediante pedido expresso do adolescente ou de seu representante legal, ou do Ministério Público. Título IV Das Medidas Pertinentes aos Pais ou Responsável Art. 129. São medidas"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "multihop_dispersas",
+  "janela": 0
+ },
+ {
+  "n": 121,
+  "qid": "m011",
+  "question": "Que natureza o ECA atribui ao ensino obrigatório e que conduta omissiva da autoridade ele pune quanto aos cadastros de adoção?",
+  "evidencia": [
+   "o ensino obrigatório e gratuito é direito público subjetivo. § 2º O não oferecimento do ensino obrigatório pelo poder público ou sua oferta irregular importa responsabilidade da autoridade competente. § 3º Compete ao poder público recensear os educandos no ensino fundamental, fazer-lhes a chamada e zelar, junto aos pais ou responsável, pela freqüência à escola. Art. 55. Os pais ou responsável têm a obrigação de matricular seus filhos ou pupilos na rede regular de ensino. Art. 56. Os dirigentes de estabelecimentos de ensino fundamental comunicarão ao Conselho",
+   "três mil reais). (Incluído pela Lei nº 12.010, de 2009) Vigência Parágrafo único. Incorre nas mesmas penas a autoridade que deixa de efetuar o cadastramento de crianças e de adolescentes em condições de serem adotadas, de pessoas ou casais habilitados à adoção e de crianças e adolescentes em regime de acolhimento institucional ou familiar. (Incluído pela Lei nº 12.010, de 2009) Vigência Art. 258-B. Deixar o médico, enfermeiro ou dirigente de estabelecimento de atenção à saúde de gestante de efetuar imediato encaminhamento à autoridade judiciária de caso de que tenha conhecimento de mãe ou gestante interessada em entregar seu filho para adoção: (Incluído pela Lei nº 12.010, de"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "multihop_dispersas",
+  "janela": 0
+ },
+ {
+  "n": 122,
+  "qid": "m012",
+  "question": "Como o Plano Brasileiro de IA define IA responsável e que colegiado federal assessora a Presidência na transformação digital?",
+  "evidencia": [
+   "mais ampla, esses e outros princípios têm sido agrupados no que se denomina IA responsável, que pode ser definido como o conjunto de processos, métodos e técnicas para projetar, desenvolver, usar e implantar sistemas de IA que sejam éticos, confiáveis ​e benéficos para a sociedade. Ela visa a criar soluções de IA que sejam justas, confiáveis ​e transparentes, respeitando os valores humanos. Alguns princípios típicos de IA responsável são: Justiça: garantir que os sistemas de IA não tratem as pessoas de forma injusta, especialmente • grupos sub-representados; Transparência: garantir que os sistemas de IA sejam transparentes e explicáveis, ou seja, os • resultados por eles gerados",
+   "três categorias de risco às aplicações de IA. 10 O Comitê Interministerial para a Transformação Digital (CIT Digital) foi instituído por meio do Decreto n.° 12.308/2024, como órgão colegiado de natureza consultiva, com a finalidade de assessorar o presidente da República na elaboração, na implementação e no acompanhamento de políticas públicas destinadas à transformação digital. IA para o bem de todos 4"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "multihop_dispersas",
+  "janela": 0
+ },
+ {
+  "n": 123,
+  "qid": "m013",
+  "question": "O que a OMS espera que seja documentado nos processos de validação e que tipo de articulação entre partes ela aponta como capaz de melhorar a segurança do sistema de IA?",
+  "evidencia": [
+   "and managed. Validation processes and benchmarking should be carefully documented – including the decisions for selecting specific datasets, reference standards, parameters and metrics to justify such processes. For example, careful consideration should be given to documenting how and why specific data or datasets are selected to train, externally validate and retrain the model (e.g. post-deployment retraining). 5.1.2 Pre-specification and documenting the medical purpose, clinical context and development The intended medical purpose/function of the AI systems should be",
+   "5.6 Engagement and collaboration Where applicable and appropriate, engagement and collaboration between developers, manufacturers, health-care practitioners, patients, patient advocates, policy-makers, regulatory bodies and other stakeholders can improve the safety and quality of an AI system. Many regulatory bodies have adopted engagement and collaborative approaches in this area, and this section discusses the approaches of five of them: the United Kingdom of Great Britain and Northern Ireland’s MHRA, the South African Health Products Regulatory Authority (SAHPRA), the European Commission, Singapore’s HSA, and the U.S"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "en",
+  "origem": "multihop_dispersas",
+  "janela": 0
+ },
+ {
+  "n": 124,
+  "qid": "m014",
+  "question": "Que resguardo de informação a visão da estratégia global de saúde digital exige e o que o objetivo estratégico centrado nas pessoas busca promover?",
+  "evidencia": [
+   "r pandemic, in a system that respects the privacy and security of patient health information. The vision further seeks to enhance research and development, innovation and collaboration across sectors. It recognizes that digital health can radically change health outcomes if it is supported by sufficient investment in governance, institutional and workforce capacity to enable the changes in digital systems and data use training, planning, and management that are required as health systems and services are increasingly digitized. With this essential investment in people and processes,",
+   "OBJECTIVES 4 Advocate digital health people-centred health systems that are enabled by This strategic objective advances digital health literacy, gender equality and women’s empowerment and inclusive approaches to adoption and management of digital health technologies. The strategic objective places people at the centre of digital health SO4 through the adoption and use of digital health technologies in scaling up and strengthening health service delivery. The individual is an essential component in the delivery of trust-based, people-centred care. This focus covers not only patients, families and communities Human-centred health systems but also the health workers who need"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "en",
+  "origem": "multihop_dispersas",
+  "janela": 0
+ },
+ {
+  "n": 125,
+  "qid": "m015",
+  "question": "Que risco a OCDE ilustra ao tratar de dados de despejo em sistemas de gestão processual e que risco ela aponta nos processos de desenvolvimento de padrões?",
+  "evidencia": [
+   "Box 1. Courts’ case management systems and misuse of eviction data In the US, landlords are increasingly screening tenants using online eviction records available through courts’ case management systems. While access to certain justice data, including eviction cases, can help optimise processes (e.g. screening applications and profiling), failing to audit or curate information before making it openly available can disproportionately affect individuals from low-income groups, perpetuating inequality. Some studies have revealed the potential of screening tools based on information in court records to unfairly exclude individuals from",
+   "patterns for collecting demographic information). While standards have many benefits, they also come with risks. For example: • Standards development processes may not be inclusive and support participation from all groups. This can lead to standards that do not support the needs of all actual and potential users of the justice system; • Standards development processes can move too slowly to adapt to evolving technological possibilities, and human and societal needs; • Standards documentation can be costly or be published under restrictive licenses, presenting unfair limitations on how it can be used; • Mandatory standards may be difficult to adopt and impose compliance costs that"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "en",
+  "origem": "multihop_dispersas",
+  "janela": 0
+ },
+ {
+  "n": 126,
+  "qid": "m016",
+  "question": "Que direito a OMS afirma que as leis de proteção de dados vêm reconhecendo cada vez mais, e que ressalva ela faz ao argumento de que a transparência deve prevalecer sobre a acurácia?",
+  "evidencia": [
+   "data processing that both protect the rights of individuals and establish obligations for data controllers and processors. Data protection laws also increasingly recognize that people have the right not to be subject to decisions guided solely by automated processes. Over 100 countries have enacted data protection laws. One well-known set of data protection laws is the General Data Protection Regulation (GDPR) of the European Union (EU); in the USA, the Health Insurance Portability and Accountability Act, enacted in 1996, applies to privacy and to the security of health data",
+   "legislation in other countries experiencing proliferation of AI for health care and other fields (116). It has been argued that, if a trade-off is to be made between transparency and accuracy, transparency should predominate. This requirement may, however, not be possible or even desirable in the medical context. While it is often possible to explain why a specific treatment is the best option for a specific condition, it is not always possible to explain how that treatment works or its mechanism of action, because medical interventions are sometimes used before their mode of action is understood"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "en",
+  "origem": "multihop_dispersas",
+  "janela": 0
+ },
+ {
+  "n": 127,
+  "qid": "q0051",
+  "question": "Uma pessoa afetada por um sistema de IA de alto risco: que direitos ela tem e a que medidas de governança esse sistema está sujeito, segundo o PL 2338/2023?",
+  "evidencia": [
+   "III – direito à não discriminação ilícita ou abusiva e à correção de vieses discriminatórios ilegais ou abusivos, sejam eles diretos ou indiretos",
+   "risco, tem os seguintes direitos, a serem exercidos na forma e nas condições descritas neste Capítulo: I – direito à informação quanto às suas interações com s",
+   "antir que seus sistemas estão de acordo com as medidas de governança definidas em todo o Capítulo IV desta Lei, assim como em outras legislações pertinentes, em"
+  ],
+  "n_evidencias": 3,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 128,
+  "qid": "q0052",
+  "question": "Na telemedicina, o que a Resolução CFM 2.314/2022 exige quanto ao consentimento para compartilhar informações e quanto ao acompanhamento presencial de doenças crônicas?",
+  "evidencia": [
+   ", no qual o paciente ou seu representante legal deve estar consciente de que suas informações pessoais podem ser compartilhadas e sobre o seu direito de negar p",
+   "s de doenças crônicas ou doenças que requeiram acompanhamento por longo tempo deve ser realizada consulta presencial, com o médico assistente do paciente, em in"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 129,
+  "qid": "q0053",
+  "question": "Que deveres o Código de Ética Médica impõe ao médico quanto à responsabilidade por seus atos e quanto à atuação como auditor?",
+  "evidencia": [
+   "aráter pessoal e nunca presumido, pelos seus atos profissionais, resultantes de relação particular de confiança e executados com diligência, competência e prudê",
+   "Deixar de atuar com absoluta isenção quando designado para servir como perito ou como auditor, bem como ultrapassar os limites de suas atribuições e de sua comp",
+   "Receber remuneração ou gratificação por valores vinculados à glosa ou ao sucesso da causa, quando na função de perito ou de auditor"
+  ],
+  "n_evidencias": 3,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 130,
+  "qid": "q0054",
+  "question": "Por que medir riscos de IA é desafiador e por que esses riscos diferem dos de software tradicional, segundo o NIST?",
+  "evidencia": [
+   "Approaches for measuring impacts on a population work best if they recognize that contexts matter, that harms may affect varied groups or sub-groups differently",
+   "AI systems also bring a set of risks that are not comprehensively addressed by current risk frameworks and approaches"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "en",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 131,
+  "qid": "q0055",
+  "question": "Segundo a UNESCO, que usos de IA são proibidos e que mecanismos de responsabilização os sistemas de IA devem ter?",
+  "evidencia": [
+   "“In scenarios where decisions are understood to have an impact that is irreversible or difficult to reverse or may involve life and death decisions, final human",
+   "Accountability and Responsibility The Recommendation highlights that transparent and explainable AI systems which are accountable and have in place mechanisms t"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "en",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 132,
+  "qid": "q0056",
+  "question": "No GDPR, quando se aplica o direito à portabilidade e que medidas de segurança o controlador deve garantir para os dados?",
+  "evidencia": [
+   "It should therefore not apply where the processing of the personal data is necessary for compliance with a legal obligation to which the controller is subject o",
+   "In assessing the appropriate level of security account shall be taken in particular of the risks that are presented by processing, in particular from accidental"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "en",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 133,
+  "qid": "q0057",
+  "question": "A Estratégia Brasileira de IA trata tanto do viés algorítmico quanto do impacto no trabalho — o que propõe em cada frente?",
+  "evidencia": [
+   "❖ Desenvolver técnicas para identificar e tratar o risco de viés algorítmico",
+   "Diante deste cenário, pode-se ressaltar que novos empregos, assim como muitos empregos existentes, exigirão novas habilidades"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 134,
+  "qid": "q0058",
+  "question": "Para um dispositivo habilitado por IA, que informações sobre os pacientes descrever e que controles de cibersegurança considerar contra envenenamento de dados, segundo a FDA?",
+  "evidencia": [
+   "” 43 For more information regarding age-, race-, and ethnicity-related data, please see FDA guidances titled “Evaluation and Reporting of Age-, Race-, and Ethni",
+   "Representativeness • An explanation of how the data is representative of the intended use population41 and indications for use, including: o A description of th",
+   "o Applying adversarial training, which is a method used to improve the robustness and security of models"
+  ],
+  "n_evidencias": 3,
+  "question_type": "multi_hop",
+  "source_lang": "en",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 135,
+  "qid": "q0059",
+  "question": "Na pesquisa clínica, quais são as responsabilidades do Comitê de Ética em Pesquisa (CEP) e as do pesquisador, segundo a Lei nº 14.874/2024?",
+  "evidencia": [
+   "São responsabilidades do CEP: I - assegurar os direitos, a segurança e o bem-estar dos participantes da pesquisa, especialmente dos participantes em situação de",
+   "III - conduzir a análise da pesquisa a ele submetida e o monitoramento de sua execução, observada a periodicidade mínima definida em regulamento, conforme a tip",
+   "São responsabilidades do pesquisador: I - ter e comprovar a qualificação e a experiência necessárias para assumir a responsabilidade pela adequada condução da p",
+   "III - submeter a documentação da pesquisa, inclusive eventuais emendas, à aprovação do CEP"
+  ],
+  "n_evidencias": 4,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 136,
+  "qid": "q0060",
+  "question": "Na transferência internacional de dados, o que a Resolução ANPD nº 19/2024 estabelece sobre as cláusulas mandatórias e sobre a responsabilização por danos ao titular?",
+  "evidencia": [
+   "Mandatórias (OBS: Esta Seção contém Cláusulas que devem ser adotadas integralmente e sem qualquer alteração em seu texto a fim de assegurar a validade da trans",
+   "A Parte que reparar o dano ao titular tem direito de regresso contra os demais responsáveis, na medida de sua participação no evento danoso",
+   "ação Nacional, o juiz poderá inverter o ônus da prova a favor do Titular quando, a seu juízo, for verossímil a alegação, houver hipossuficiência para fins de pr"
+  ],
+  "n_evidencias": 3,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 137,
+  "qid": "q0061",
+  "question": "Que sistema nacional o PL 2338/2023 autoriza para a governança da IA e que tratamento diferenciado prevê para startups?",
+  "evidencia": [
+   "O Poder Executivo é autorizado a estabelecer o Sistema Nacional de Regulação e Governança de Inteligência Artificial (SIA)",
+   "As autoridades setoriais deverão definir critérios diferenciados para sistemas de IA ofertados por microempresas, empresas de pequeno porte e startups que promo"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 138,
+  "qid": "q0063",
+  "question": "Por que a Resolução CFM 2.314/2022 considera o atendimento presencial a referência e o que exige para compartilhar informações do paciente na telemedicina?",
+  "evidencia": [
+   "ção médico-paciente, a confidencialidade e a qualidade dos atendimentos médicos e considera o atendimento presencial como padrão ouro de referência para o exerc",
+   "o só podem ser transmitidas a outro profissional com prévia permissão do paciente, mediante seu consentimento livre e esclarecido e com protocolos de segurança"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 139,
+  "qid": "q0064",
+  "question": "Segundo o NIST AI RMF, qual a relação entre transparência e responsabilização (accountability) e como a função MAP trata os requisitos do sistema?",
+  "evidencia": [
+   "When consequences are severe, such as when life and liberty are at stake, AI developers and deployers should consider proportionally and proactively adjusting t",
+   "4: The business value or context of business use has been clearly defined or – in the case of assessing existing AI systems – re-evaluated"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "en",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 140,
+  "qid": "q0065",
+  "question": "A Recomendação da UNESCO proíbe certos usos de IA e classifica a gravidade dos impactos — o que proíbe e quais são os níveis de gravidade?",
+  "evidencia": [
+   "“In scenarios where decisions are understood to have an impact that is irreversible or difficult to reverse or may involve life and death decisions, final human",
+   "GRAVITY LEVEL: Critical DESCRIPTION: Critical harms and negative impacts are accrued to all or some of the affected parties, in ways that lead to the significan"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "en",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 141,
+  "qid": "q0066",
+  "question": "Na pesquisa clínica, o que é a instância nacional de ética em pesquisa e quais são as responsabilidades do CEP, segundo a Lei nº 14.874/2024?",
+  "evidencia": [
+   "XXVI - instância nacional de ética em pesquisa: colegiado interdisciplinar e independente, integrante do Ministério da Saúde, sob a coordenação da área técnica",
+   "São responsabilidades do CEP: I - assegurar os direitos, a segurança e o bem-estar dos participantes da pesquisa, especialmente dos participantes em situação de",
+   "necimento de informações adicionais aos participantes da pesquisa, quando julgar serem indispensáveis para a proteção dos direitos, da segurança e do bem-estar"
+  ],
+  "n_evidencias": 3,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 142,
+  "qid": "q0067",
+  "question": "Que responsabilidades cabem ao pesquisador e o que a Lei nº 14.874/2024 veda quanto ao material biológico armazenado em biobanco?",
+  "evidencia": [
+   "II - obedecer às normas de boas práticas clínicas e científicas e às exigências regulatórias",
+   "II - obedecer às normas de boas práticas clínicas e científicas e às exigências regulatórias",
+   "passíveis de proteção de direitos relativos à propriedade intelectual, vedada expressamente a sua compra, venda ou qualquer outro tipo de comercialização, por p"
+  ],
+  "n_evidencias": 3,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 143,
+  "qid": "q0068",
+  "question": "Segundo o NIST, os sistemas de IA só trazem benefícios, e é fácil medir seus riscos?",
+  "evidencia": [
+   "Executive Summary\n\nArtificial intelligence (AI) technologies have significant potential to transform society and people’s lives – from commerce and health to tr",
+   "Approaches for measuring impacts on a population work best if they recognize that contexts matter, that harms may affect varied groups or sub-groups differently"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "en",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 144,
+  "qid": "q0069",
+  "question": "No GDPR, que características as sanções administrativas devem ter e que medidas de segurança dos dados são exigidas?",
+  "evidencia": [
+   "(152) Where this Regulation does not harmonise administrative penalties or where necessary in other cases, for example in cases of serious infringements of this",
+   "In assessing the appropriate level of security account shall be taken in particular of the risks that are presented by processing, in particular from accidental"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "en",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 145,
+  "qid": "q0070",
+  "question": "A Estratégia Brasileira de IA aborda tanto o viés algorítmico quanto o uso de IA na segurança pública — o que diz sobre cada um?",
+  "evidencia": [
+   "❖ Estimular ações de transparência e de divulgação responsável quanto ao uso de sistemas de IA, e promover a observância, por tais sistemas, de direitos humanos",
+   "Com tecnologias analíticas, as autoridades podem, por exemplo, descobrir em tempo real ocorrências e avaliar quais apresentam maior necessidade de urgência, dia"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 146,
+  "qid": "q0071",
+  "question": "Para um dispositivo habilitado por IA, que obrigações de sistema de qualidade e que descrição da população de pacientes a FDA espera?",
+  "evidencia": [
+   "Similarly, as part of the control of nonconforming product, manufacturers must establish and maintain procedures to “control product that does not conform to sp",
+   "” 43 For more information regarding age-, race-, and ethnicity-related data, please see FDA guidances titled “Evaluation and Reporting of Age-, Race-, and Ethni",
+   "Representativeness • An explanation of how the data is representative of the intended use population41 and indications for use, including: o A description of th"
+  ],
+  "n_evidencias": 3,
+  "question_type": "multi_hop",
+  "source_lang": "en",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 147,
+  "qid": "q0072",
+  "question": "A Resolução ANPD nº 19/2024: em que situações admite dados provenientes do exterior e que regra vale para as cláusulas mandatórias de transferência?",
+  "evidencia": [
+   "iência, desde que: a) o país ou organismo internacional de proveniência proporcione grau de proteção de dados pessoais adequado, reconhecido por decisão da ANPD",
+   "Mandatórias (OBS: Esta Seção contém Cláusulas que devem ser adotadas integralmente e sem qualquer alteração em seu texto a fim de assegurar a validade da trans"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 148,
+  "qid": "q0073",
+  "question": "Segundo a OMS, o que exige a 'responsividade' de uma IA para saúde e que risco de poder existe quando poucas empresas controlam os dados de saúde?",
+  "evidencia": [
+   "6 Promote artificial intelligence that is responsive and sustainable Responsiveness requires that designers, developers and users continuously, systematically a",
+   "When most data, health analytics and algorithms are managed by large technology companies, it will be increasingly likely that those companies will govern decis"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "en",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 149,
+  "qid": "q0074",
+  "question": "No PL 2338/2023, além dos direitos das pessoas afetadas pela IA, que estrutura pública é criada para regular e governar a IA?",
+  "evidencia": [
+   "II – direito à privacidade e à proteção de dados pessoais, em especial os direitos dos titulares de dados nos termos da Lei nº 13",
+   "mente do seu grau de risco, tem os seguintes direitos, a serem exercidos na forma e nas condições descritas neste Capítulo: I – direito à informação quanto às s",
+   "O Poder Executivo é autorizado a estabelecer o Sistema Nacional de Regulação e Governança de Inteligência Artificial (SIA)"
+  ],
+  "n_evidencias": 3,
+  "question_type": "multi_hop",
+  "source_lang": "pt",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 150,
+  "qid": "q0075",
+  "question": "A UNESCO exige mecanismos de responsabilização para a IA e classifica a gravidade dos impactos — o que exige e como classifica?",
+  "evidencia": [
+   "Accountability and Responsibility The Recommendation highlights that transparent and explainable AI systems which are accountable and have in place mechanisms t",
+   "GRAVITY LEVEL: Critical DESCRIPTION: Critical harms and negative impacts are accrued to all or some of the affected parties, in ways that lead to the significan"
+  ],
+  "n_evidencias": 2,
+  "question_type": "multi_hop",
+  "source_lang": "en",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 151,
+  "qid": "c001",
+  "question": "Quais são as penas disciplinares do exercício médico e o que a lei exige quanto à gradação delas?",
+  "evidencia": [
+   "cassação do exercício profissional, ad referendum do Conselho Federal. § 1º Salvo os casos de gravidade manifesta que exijam aplicação imediata da penalidade mais grave a",
+   "a) advertência confidencial, em aviso reservado; b) censura confidencial, em aviso reservado; c) censura pública, em publicação oficial; d) suspensão do exercício profissional"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 152,
+  "qid": "c002",
+  "question": "Como se compõem os Conselhos Regionais de Medicina e que restrição eleitoral recai sobre os médicos militares?",
+  "evidencia": [
+   "participarem de eleições nos Conselhos em que estiverem inscritos, quer como candidatos, quer como eleitores. Art . 5º Os médicos, cirurgiões-dentistas e farmacêuticos militares",
+   "de 21 (vinte e um), quando excedido êsse número. Art. 13. Os membros dos Conselhos Regionais de Medicina, com exceção de um que será escolhido pela Associação Médica, sediada"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 153,
+  "qid": "c003",
+  "question": "Qual CRM é competente para apurar falta ética e o que acontece quando o médico é militar?",
+  "evidencia": [
+   "não estão sujeitos à ação disciplinar dos Conselhos Regionais nos quais estiverem inscritos, e sim, à da Força Singular a que pertencerem, à qual cabe promover e calcular",
+   "A competência para instaurar sindicância, apreciar seu relatório e, se for o caso, instaurar PEP e sua instrução é do CRM onde o fato punível ocorreu, ainda que o médico não"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 154,
+  "qid": "c004",
+  "question": "Quem designa instrutor e relator no processo ético-profissional e em que prazo se alega suspeição?",
+  "evidencia": [
+   "poderá delegar às respectivas Corregedorias a competência para designar sindicante, instrutor e relator, assim como lavrar portarias e assinaturas dos documentos pertinentes",
+   "A suspeição poderá ser alegada, no prazo de 15 (quinze) dias, a contar do conhecimento do fato em petição específica, na qual indicará, com clareza, o fundament"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 155,
+  "qid": "c005",
+  "question": "O que o Código de Ética Médica veda quanto ao sigilo e a quem cabe comunicar denúncias éticas nos estabelecimentos de saúde?",
+  "evidencia": [
+   "Revelar fato de que tenha conhecimento em virtude do exercício de sua profissão, salvo por motivo justo, dever legal ou consentimento, por escrito, do paciente. Parágrafo",
+   "A comissão de ética médica dos estabelecimentos de saúde deverá encaminhar ao CRM as denúncias de natureza ética que tiver ciência, nos termos da resolução específica. Parágrafo"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 156,
+  "qid": "c006",
+  "question": "Quem fixa a anuidade dos Conselhos de Medicina e qual a consequência de pagá-la fora do prazo?",
+  "evidencia": [
+   "fixar e alterar o valor da anuidade única, cobrada aos inscritos nos Conselhos Regionais de Medicina; e (Incluído pela Lei nº 11.000, de 2004) l) normatizar a concessão de",
+   "acréscimo de 20% (vinte por cento) da importância fixada. Art . 8º Os profissionais inscritos na forma da Lei nº 3.268, de 30 de setembro de 1957 pagarão no ato do pedido"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 157,
+  "qid": "c007",
+  "question": "Como o CFM define prontuário médico e por quanto tempo a lei exige que ele seja guardado?",
+  "evidencia": [
+   "documento único constituído de um conjunto de informações, sinais e imagens registradas, geradas a partir de fatos, acontecimentos e situações sobre a saúde do paciente e",
+   "20 (vinte) anos a partir do último registro, os prontuários em suporte de papel e os digitalizados poderão ser eliminados. § 1º Prazos diferenciados para a guarda de prontuário"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 158,
+  "qid": "c008",
+  "question": "Que papel a certificação cumpre nos sistemas de registro eletrônico em saúde e na avaliação de soluções de IA?",
+  "evidencia": [
+   "Manual de Certificação para Sistemas de Registro Eletrônico em Saúde, versão 3.0 e/ou outra versão aprovada pelo Conselho Federal de Medicina, anexo e também disponível nos",
+   "selo que ajude empresas e instituições a demonstrarem conformidade com as boas práticas para desenvolvimento de soluções de IA para a saúde, promovendo harmonização regulatória"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 159,
+  "qid": "c009",
+  "question": "Que estrutura o Brasil e a União Europeia criaram para a troca de dados de saúde entre sistemas?",
+  "evidencia": [
+   "plataforma oficial de interoperabilidade do Ministério da Saúde, para conectar sistemas de saúde em todo o Brasil. A RNDS estabelece a infraestrutura nacional para o compartilhamento",
+   "Cada Estado-Membro designa um ponto de contacto nacional para utilização secundária. Esse ponto de contacto nacional para utilização secundária deve ser um portal organizacional"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 160,
+  "qid": "c010",
+  "question": "Por onde tramita um protocolo de pesquisa com seres humanos e como a lei define o pesquisador responsável?",
+  "evidencia": [
+   "Plataforma Brasil que é uma base nacional e unificada de registros de pesquisas envolvendo seres humanos para todo o sistema CEP/CONEP. 2 o Este Regulamento aplica-se a toda",
+   "pessoa responsável pela condução da pesquisa em instituição ou em centro de pesquisa e corresponsável pela integridade e bem-estar dos participantes da pesquisa; XXXVII -"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 161,
+  "qid": "c011",
+  "question": "O que acontece com os protocolos de pesquisa sem resposta e o que fica sob guarda dos comitês depois do prazo?",
+  "evidencia": [
+   "cartas de aprovação dos projetos de pesquisa permanecerão sob guarda dos Comitês",
+   "retirado do sistema no prazo de um ano em caso de não resposta. Art. 34. Recebidos os relatórios parciais ou finais, o coordenador e/ou membro do Colegiado será responsável"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 162,
+  "qid": "c012",
+  "question": "Que compromissos formais cercam o uso de dados e de material biológico em pesquisa?",
+  "evidencia": [
+   "exclusivamente para os fins científicos, mantendo o sigilo e garantindo a não utilização das informações em prejuízo das pessoas e/ou das comunidades. Antes de iniciar a coleta",
+   "Termo de Transferência de Material Biológico (TTMB) e a apresentação de comprovante de aprovação de projeto de pesquisa pelas instâncias éticas e regulatórias pertinentes"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 163,
+  "qid": "c013",
+  "question": "Que consequência há em não fazer a avaliação de impacto quando ela é exigida, e quando se consulta a autoridade de controlo?",
+  "evidencia": [
+   "fine of up to £8.7 million, or 2% global annual turnover if higher. By considering the risks related to your intended processing before you begin, you also support compliance",
+   "A consultation of the supervisory authority should also take place in the course of the preparation of a legislative or regulatory measure which provides for the processing"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 164,
+  "qid": "c014",
+  "question": "Em que momento a avaliação de impacto deve ser feita e quando precisa ser atualizada?",
+  "evidencia": [
+   "at a point when there is a realistic opportunity to influence those plans. Recital 84 of the UK GDPR is clear that: “the outcome of the assessment should be taken into account",
+   "periodicidade de atualização das avaliações de impacto algorítmico, considerando o ciclo de vida dos sistemas de IA de alto risco. § 7º Os agentes de IA que, posteriormente"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 165,
+  "qid": "c015",
+  "question": "Quem é agente de tratamento de pequeno porte e como a LGPD define anonimização?",
+  "evidencia": [
+   "agentes de tratamento de pequeno porte: microempresas, empresas de pequeno porte, startups , pessoas jurídicas de direito privado, inclusive sem fins lucrativos, nos termos",
+   "anonimização: utilização de meios técnicos razoáveis e disponíveis no momento do tratamento, por meio dos quais um dado perde a possibilidade de associação, direta ou indireta"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 166,
+  "qid": "c016",
+  "question": "Que obrigações de registro a ANPD impõe ao agente de pequeno porte e a quem recebe dados no exterior?",
+  "evidencia": [
+   "podem cumprir a obrigação de elaboração e manutenção de registro das operações de tratamento de dados pessoais, constante do art. 37 da LGPD, de forma simplificada. Parágrafo",
+   "o Importador deve manter registro de Solicitações de Acesso, incluindo data, solicitante, finalidade da solicitação, tipo de dados solicitados, número de solicitações recebidas"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 167,
+  "qid": "c017",
+  "question": "Como se distinguem algoritmo travado e aprendizado contínuo num dispositivo médico?",
+  "evidencia": [
+   "Training that leads to change of an MLMD with each exposure to data that takes place on an ongoing basis during the operation phase of the MLMD life cycle. (Modified from",
+   "We define a “locked” algorithm as an algorithm that provides the same result each time the same input is applied to it and does not change with use. Examples of locked algorithms"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 168,
+  "qid": "c018",
+  "question": "Como o IMDRF categoriza o risco de um software como dispositivo médico e o que isso implica para a revisão independente?",
+  "evidencia": [
+   "critical situation or condition is a Category IV and is considered to be of very high impact. Criteria for Category III – i. SaMD that provides information to treat or diagnose",
+   "independent review of clinical evidence of certain low-risk SaMD may be less important and the manufacturer may ‘self-declare’ the appropriateness of the evidence. Again,"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 169,
+  "qid": "c019",
+  "question": "O que se espera que um dispositivo com aprendizado de máquina revele sobre seus dados, e como isso se compara ao que a OMS observa nos modelos de fundação?",
+  "evidencia": [
+   "known gaps in the data characterization. o such as identifying any patient populations that are not well represented in training or clinical datasets and, therefore, may be",
+   "no major foundation model developer is close to providing adequate transparency, revealing a fundamental lack of transparency in the AI industry” (107). The voluntary agreement"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 170,
+  "qid": "c020",
+  "question": "O que caracteriza um plano predeterminado de controle de mudanças e o que um protocolo de alteração de algoritmo descreve?",
+  "evidencia": [
+   "Focused and Bounded: A PCCP describes specific changes that a manufacturer intends to implement. Such changes are limited to modifications within the intended use or intended",
+   "An ACP is a description of the set of specific methods that a manufacturer has in place to achieve and appropriately control the risks of the anticipated types of modifications"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 171,
+  "qid": "c021",
+  "question": "Que abordagem de projeto o FDA associa à transparência de dispositivos com aprendizado de máquina?",
+  "evidencia": [
+   "human-centered design”. This is an iterative process that addresses the whole user experience and involves relevant parties throughout design and development. This approach",
+   "Appendix B (Transparency Design Considerations) outlines a potential approach to understanding a device’s indications for use and a model card, which may aid in the development"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 172,
+  "qid": "c022",
+  "question": "O que precede a classificação de um produto como dispositivo médico com aprendizado de máquina, e que exigência recai sobre os dados de treinamento?",
+  "evidencia": [
+   "A product must first meet the definition of a medical device before it can be an MLMD. Note 2 : Most jurisdictions include \"accessories to medical devices\" in the definition",
+   "Training datasets are independent of test sets: Training and test datasets3 are selected and maintained to be appropriately independent of one another. All potential sources"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 173,
+  "qid": "c023",
+  "question": "Quem estabeleceu os princípios de boas práticas de aprendizado de máquina e o que eles esperam do dispositivo depois de implantado?",
+  "evidencia": [
+   "Health Canada, and the United Kingdom’s Medicines and Healthcare products Regulatory Agency (MHRA) have jointly identified 10 guiding principles that can inform the development",
+   "monitored for performance and re-training risks are managed. Advancements in digital health technologies include artificial intelligence/machine learningenabled medical devices"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 174,
+  "qid": "c024",
+  "question": "Como se mede o risco a que o titular fica exposto no tratamento e na divulgação de dados?",
+  "evidencia": [
+   "The risk to the rights and freedoms of natural persons, of varying likelihood and severity, may result from data processing which could lead to physical, material or non-material",
+   "re-identifcation probability The probability that an individual’s identity will be correctly inferred by an outside party using information contained in a de-identifed dataset"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 175,
+  "qid": "c025",
+  "question": "Qual o fundamento constitucional do direito à saúde e como a lei do SUS traduz isso em critério de prioridade?",
+  "evidencia": [
+   "A saúde é direito de todos e dever do Estado, garantido mediante políticas sociais e econômicas que visem à redução do risco de doença e de outros agravos e ao acesso universal",
+   "utilização da epidemiologia para o estabelecimento de prioridades, a alocação de recursos e a orientação programática; VIII - participação da comunidade; IX - descentralização"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 176,
+  "qid": "c026",
+  "question": "Onde a proteção da vida privada tem assento constitucional e que técnica a LGPD oferece para afastar o dado do indivíduo?",
+  "evidencia": [
+   "são invioláveis a intimidade, a vida privada, a honra e a imagem das pessoas, assegurado o direito a indenização pelo dano material ou moral decorrente de sua violação; XI",
+   "anonimização: utilização de meios técnicos razoáveis e disponíveis no momento do tratamento, por meio dos quais um dado perde a possibilidade de associação, direta ou indireta"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 177,
+  "qid": "c027",
+  "question": "Que consequência penal e que consequência ética decorrem de revelar segredo obtido no exercício da profissão?",
+  "evidencia": [
+   "Revelar alguém, sem justa causa, segredo, de que tem ciência em razão de função, ministério, ofício ou profissão, e cuja revelação possa produzir dano a outrem: Pena - detenção",
+   "Revelar fato de que tenha conhecimento em virtude do exercício de sua profissão, salvo por motivo justo, dever legal ou consentimento, por escrito, do paciente. Parágrafo"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 178,
+  "qid": "c028",
+  "question": "Que direito de acesso a registros o consumidor tem no Brasil e o que o RGPD acrescenta sobre decisão automatizada?",
+  "evidencia": [
+   "terá acesso às informações existentes em cadastros, fichas, registros e dados pessoais e de consumo arquivados sobre ele, bem como sobre as suas respectivas fontes. § 1° Os",
+   "the existence of automated decision-making, including profiling, referred to in Article 22(1) and (4) and, at least in those cases, meaningful information about the logic"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 179,
+  "qid": "c029",
+  "question": "Como o ECA define o direito ao respeito da criança e o que o Código de Ética Médica diz sobre o sigilo dela?",
+  "evidencia": [
+   "O direito ao respeito consiste na inviolabilidade da integridade física, psíquica e moral da criança e do adolescente, abrangendo a preservação da imagem, da identidade, da",
+   "Revelar sigilo profissional relacionado a paciente criança ou adolescente, desde que estes tenham capacidade de discernimento, inclusive a seus pais ou representantes legais"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 180,
+  "qid": "c030",
+  "question": "Que posição a telemedicina e a inteligência artificial ocupam em relação ao ato médico presencial e à decisão do médico?",
+  "evidencia": [
+   "consulta presencial é o padrão ouro de referência para as consultas médicas, sendo a telemedicina ato complementar. § 2º Nos atendimentos de doenças crônicas ou doenças que",
+   "não substituem a autoridade e a decisão final humana sobre o cuidado. CAPÍTULO IV DA CLASSIFICAÇÃO E CATEGORIZAÇÃO DOS RISCOS Art. 12. As instituições médicas, públicas ou"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 181,
+  "qid": "c031",
+  "question": "Quem responde pelo ato praticado com auxílio de IA na medicina e em que hipótese a supervisão humana pode ser dispensada?",
+  "evidencia": [
+   "permanece integralmente responsável pelos atos médicos por ele praticados mediante a utilização de modelos, sistemas e aplicações de IA. § 1° A utilização da IA não exime",
+   "A supervisão humana não será exigida caso sua implementação seja comprovadamente impossível ou implique esforço desproporcional, hipóteses em que o agente do sistema de IA"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 182,
+  "qid": "c032",
+  "question": "Que limites o CFM impõe à divulgação da atividade médica e à exposição de casos clínicos?",
+  "evidencia": [
+   "divulgar, quando não especialista, que trata de sistemas orgânicos, órgãos ou doenças específicas, por induzir à confusão com a divulgação de especialidades; II– atribuir",
+   "Fazer referência a casos clínicos identificáveis, exibir pacientes ou imagens que os tornem reconhecíveis em anúncios profissionais ou na divulgação de assuntos médicos em"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 183,
+  "qid": "c033",
+  "question": "Que avaliação de risco se exige de uma instituição médica que usa IA e o que o NIST diz sobre avaliação de impacto?",
+  "evidencia": [
+   "avaliação preliminar com a finalidade de definir seu grau de risco. Parágrafo único. A avaliação preliminar basear-se-á na categorização e nos critérios previstos neste capítulo",
+   "AI system impact assessment approaches can help AI actors understand potential impacts or harms within specific contexts. Availability of reliable metrics: The current lack"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 184,
+  "qid": "c034",
+  "question": "O que a OMS entende por autonomia humana em saúde e como o CFM operacionaliza a transparência no uso de IA?",
+  "evidencia": [
+   "humans should remain in full control of health-care systems and medical decisions. AI systems should be designed demonstrably and systematically to conform to the principles",
+   "A transparência no uso de IA será promovida por indicadores científicos comprobatórios da acurácia, eficácia e segurança, e relatórios acessíveis que informem o uso desses"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 185,
+  "qid": "c035",
+  "question": "Que áreas a OMS elege como temas regulatórios da IA em saúde e o que a convenção do Conselho da Europa exige de cada Parte?",
+  "evidencia": [
+   "documentation and transparency, risk management and AI systems development lifecycle approach, intended use and analytical and clinical validation, AI related data quality",
+   "Each Party shall establish or designate one or more effective mechanisms to oversee compliance with the obligations in this Convention. 2 Each Party shall ensure that such"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 186,
+  "qid": "c036",
+  "question": "Como a OCDE define sistema de inteligência artificial e que subcategoria a proposta brasileira destaca à parte?",
+  "evidencia": [
+   "An AI system is a machine-based system that, for explicit or implicit objectives, infers, from the input it receives, how to generate outputs such as predictions, content",
+   "sistemas que, uma vez ativados, podem selecionar e atacar alvos sem intervenção humana adicional; PL XXVIII – interface de programação de aplicação (API): conjunto de protocolos"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 187,
+  "qid": "c037",
+  "question": "Que objetivo o Plano Brasileiro de IA declara e como ele se relaciona com o da Estratégia Brasileira de IA?",
+  "evidencia": [
+   "inclusão social e oferecendo soluções tangíveis em áreas prioritárias como saúde e educação. Sabemos que, como toda inovação disruptiva, a IA traz tanto oportunidades quanto",
+   "deve ter por objetivo potencializar o desenvolvimento e a utilização da tecnologia com vistas a promover o avanço científico e solucionar problemas concretos do País, identificando"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 188,
+  "qid": "c038",
+  "question": "A que tipo de pesquisa se aplica o modelo de relatório do CEP e o que acontece quando ele é recebido?",
+  "evidencia": [
+   "Esse formulário se aplica para pesquisas nas áreas das ciências sociais e humanidades. Se a pesquisa envolva estudo clínico, o modelo de relatório final sugerido pela Conep",
+   "Recebidos os relatórios parciais ou finais, o coordenador e/ou membro do Colegiado será responsável pela apreciação, 1 o O relatório parcial ou final poderá ser emitido como"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 189,
+  "qid": "c039",
+  "question": "Por que sistemas de IA treinados com dados históricos são vulneráveis a viés, segundo o FDA e o NIST?",
+  "evidencia": [
+   "they are vulnerable to bias – and prone to mirroring biases present in the data. Health care delivery is known to vary by factors such as race, ethnicity, and socio-economic",
+   "Decisions that go into the design, development, deployment, evaluation, and use of AI systems reflect systemic and human cognitive biases. AI actors bring their cognitive"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 190,
+  "qid": "c040",
+  "question": "Que sistema de saúde digital a OMS propõe construir e que realização concreta o Brasil tem nessa direção?",
+  "evidencia": [
+   "internationally connected digital health system with consideration of potential risks. It aims to encourage international collaboration and to support countries in their national",
+   "plataforma oficial de interoperabilidade do Ministério da Saúde, para conectar sistemas de saúde em todo o Brasil. A RNDS estabelece a infraestrutura nacional para o compartilhamento"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 191,
+  "qid": "c041",
+  "question": "Que lugar a literacia digital ocupa na estratégia da OMS e na estratégia brasileira de IA?",
+  "evidencia": [
+   "digital health literacy, gender equality and women’s empowerment and inclusive approaches to adoption and management of digital health technologies. The strategic objective",
+   "É fundamental que cada cidadão domine habilidades digitais básicas e que tenha competências-chave para aplicar em diversas atividades profissionais. Ainda se inclui neste"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 192,
+  "qid": "c042",
+  "question": "Que função a LGPD cria para intermediar controlador e titular, e que alívio a ANPD dá ao agente de pequeno porte?",
+  "evidencia": [
+   "encarregado: pessoa indicada pelo controlador para atuar como canal de comunicação entre o controlador, os titulares dos dados e a Autoridade Nacional de Proteção de Dados",
+   "podem cumprir a obrigação de elaboração e manutenção de registro das operações de tratamento de dados pessoais, constante do art. 37 da LGPD, de forma simplificada. Parágrafo"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 193,
+  "qid": "c043",
+  "question": "Como a lei brasileira define biobanco e que princípio o NIST aplica à coleta de identificadores?",
+  "evidencia": [
+   "biobanco: coleção organizada, sem fins comerciais, de material biológico humano e de informações associadas, coletados e armazenados para fins de pesquisa, conforme regulamento",
+   "if specifc identifers are not needed for maintenance, synthesis, and usage, then those identifers should not be collected. If fully identifed data are needed within the organization"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 194,
+  "qid": "c044",
+  "question": "Como se distribui a responsabilidade por defeito de produto no direito do consumidor e por ato médico apoiado em IA?",
+  "evidencia": [
+   "respondem, independentemente da existência de culpa, pela reparação dos danos causados aos consumidores por defeitos decorrentes de projeto, fabricação, construção, montagem",
+   "permanece integralmente responsável pelos atos médicos por ele praticados mediante a utilização de modelos, sistemas e aplicações de IA. § 1° A utilização da IA não exime"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 195,
+  "qid": "c045",
+  "question": "Que dever geral o ECA impõe quanto à dignidade da criança e que risco a OMS associa aos modelos multimodais?",
+  "evidencia": [
+   "É dever de todos velar pela dignidade da criança e do adolescente, pondo-os a salvo de qualquer tratamento desumano, violento, aterrorizante, vexatório ou constrangedor. Art",
+   "technology-facilitated gender-based violence, including cyber-bullying, hate speech and non-consensual use of images and videos, such as “deep fakes”. The latter risk is not"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 196,
+  "qid": "c046",
+  "question": "Que dever de sigilo recai sobre quem exerce função pública de supervisão de dados e sobre o profissional em geral?",
+  "evidencia": [
+   "Revelar alguém, sem justa causa, segredo, de que tem ciência em razão de função, ministério, ofício ou profissão, e cuja revelação possa produzir dano a outrem: Pena - detenção",
+   "subject to a duty of professional secrecy both during and after their term of office, with regard to any confidential information which has come to their knowledge in the"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 197,
+  "qid": "c047",
+  "question": "Que pressuposto a responsabilidade civil do profissional exige e em que ela difere da responsabilidade por defeito de produto?",
+  "evidencia": [
+   "A responsabilidade civil é exercida sempre que há dano evitável e que se pode estabelecer uma relação causal entre este dano e um elemento de erro profissional (imperícia",
+   "respondem, independentemente da existência de culpa, pela reparação dos danos causados aos consumidores por defeitos decorrentes de projeto, fabricação, construção, montagem"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 198,
+  "qid": "c048",
+  "question": "Que exigência recai sobre os padrões de referência e sobre as métricas de desempenho de um software como dispositivo médico?",
+  "evidencia": [
+   "Selected reference standards are fit-for-purpose: Accepted methods for developing fit-for-purpose reference standard3 ensure that clinically relevant and well characterized",
+   "performance metrics for a SaMD have a scientific level of rigor that is commensurate with the risk and impact of the SaMD to demonstrate assurance of safety, effectiveness"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 199,
+  "qid": "c049",
+  "question": "Como a OCDE define justiça centrada nas pessoas e que formulação equivalente a Constituição usa para a saúde?",
+  "evidencia": [
+   "A justice system that has as its purpose and design the goal of equally meeting the needs of all people by enabling their effective participation and engagement in the process",
+   "A saúde é direito de todos e dever do Estado, garantido mediante políticas sociais e econômicas que visem à redução do risco de doença e de outros agravos e ao acesso universal"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 200,
+  "qid": "c050",
+  "question": "Que noção de reparação a UNESCO aplica a impactos de IA e que instrumento processual o CFM oferece contra julgador parcial?",
+  "evidencia": [
+   "Remediability here refers to the capacity for reparability and/or restoration: whether and the ease with which impacted persons and/or objects can be restored to a situation",
+   "A suspeição poderá ser alegada, no prazo de 15 (quinze) dias, a contar do conhecimento do fato em petição específica, na qual indicará, com clareza, o fundament"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "comparativas_cruzadas",
+  "janela": 0
+ },
+ {
+  "n": 201,
+  "qid": "q0076",
+  "question": "Como o NIST AI RMF e a Recomendação da UNESCO tratam transparência e responsabilização (accountability) em IA?",
+  "evidencia": [
+   "is notified when a potential or actual adverse outcome caused by an AI system is detected. A transparent system is not necessarily an accurate, privacy-enhanced, secure, or fair system. However, it is difficult to determine whether an opaque system possesses such characteristics, and to do so over time as complex systems evolve. The role of AI actors should be considered when seeking accountability for the outcomes of AI systems. The relationship between risk and accountability associated with AI and technological",
+   "10. Transparency and Explainability; Accountability and Responsibility The Recommendation highlights that transparent and explainable AI systems which are accountable and have in place mechanisms to attribute responsibility are imperative to the respect, protection and promotion of human rights, fundamental freedoms and ethical principles. This includes the development of appropriate oversight, impact assessment, audit and due diligence mechanisms, including"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "en",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 202,
+  "qid": "q0077",
+  "question": "Como o PL 2338/2023 e o GDPR abordam os direitos das pessoas sobre seus dados pessoais?",
+  "evidencia": [
+   "II – direito à privacidade e à proteção de dados pessoais, em especial os direitos dos titulares de dados nos termos da Lei nº 13",
+   "It should therefore not apply where the processing of the personal data is necessary for compliance with a legal obligation to which the controller is subject o"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 203,
+  "qid": "q0078",
+  "question": "Como a Resolução CFM de telemedicina e a LGPD tratam a necessidade de consentimento para o uso de informações pessoais?",
+  "evidencia": [
+   "Parágrafo único. Em todo atendimento por telemedicina deve ser assegurado consentimento explícito, no qual o paciente ou seu representante legal deve estar consciente de que suas informações pessoais podem ser compartilhadas e sobre o seu direito de negar permissão para isso, salvo em situação de emergência médica. Art. 16 A prestação de serviço de telemedicina, como um método assistencial médico, em qualquer modalidade, deverá seguir os padrões normativos e éticos usuais",
+   "considerar a finalidade, a boa-fé e o interesse público que justificaram sua disponibilização. § 4º É dispensada a exigência do consentimento previsto no caput deste artigo para os dados tornados manifestamente públicos pelo titular, resguardados os direitos do titular e os princípios previstos nesta Lei. § 5º O controlador que obteve o consentimento referido no inciso I do caput deste artigo que necessitar comunicar ou compartilhar dados pessoais com outros controladores deverá obter consentimento específico do titular"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "pt",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 204,
+  "qid": "q0079",
+  "question": "Como a Recomendação da UNESCO e a Estratégia Brasileira de IA tratam usos sensíveis como vigilância e reconhecimento facial?",
+  "evidencia": [
+   "In particular, AI systems should not be used for social scoring or mass surveillance purposes",
+   "(por exemplo, estabelecer que soluções de tecnologia de reconhecimento facial adquiridas por órgãos públicos possuam um percentual de falso positivo abaixo de"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 205,
+  "qid": "q0080",
+  "question": "Como o NIST AI RMF e o PL 2338/2023 lidam com a ideia de risco em sistemas de IA?",
+  "evidencia": [
+   "Compared to traditional software, AI-specific risks that are new or increased include the following:\n\n• The data used for building an AI system may not be a tru",
+   "Os agentes de IA de alto risco devem garantir que seus sistemas estão de acordo com as medidas de governança definidas em todo o Capítulo IV desta Lei, assim co"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 206,
+  "qid": "q0081",
+  "question": "Como o PL 2338/2023 e o NIST AI RMF estruturam a governança de sistemas de IA?",
+  "evidencia": [
+   "Seção I Do Sistema Nacional de Regulação e Governança de Inteligência Artificial Art. 45. O Poder Executivo é autorizado a estabelecer o Sistema Nacional de Regulação e Governança de Inteligência Artificial (SIA). § 1º Integram o SIA: I – a Autoridade Nacional de Proteção de Dados (ANPD), autoridade competente que coordenará o SIA; II – as autoridades setoriais; III – o Conselho Permanente de Cooperação Regulatória de Inteligência Artificial (Cria), observado e limitado ao disposto na Seção IV deste Capítulo",
+   "ams. After putting in place the structures, systems, processes, and teams described in the GOVERN function, organizations should benefit from a purpose-driven culture focused on risk understanding and management. It is incumbent on Framework users to continue to execute the GOVERN function as knowledge, cultures, and needs or expectations from AI actors evolve over time. Practices related to governing AI risks are described"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 207,
+  "qid": "q0082",
+  "question": "Como a Resolução ANPD 19/2024 e o GDPR tratam a responsabilização e as sanções em proteção de dados?",
+  "evidencia": [
+   "Transferência Posterior ou subcontratado pelas Partes. 17.7. Nos termos da Legislação Nacional, o juiz poderá inverter o ônus da prova a favor do Titular quando, a seu juízo, for verossímil a alegação, houver hipossuficiência para fins de produção de prova ou quando a produção de prova pelo Titular resultar-lhe excessivamente onerosa. 17.8",
+   "addition to, or instead of, measures referred to in points (a) to (h) and (j) of Article 58(2). When deciding whether to impose an administrative fine and deciding on the amount of the administrative fine in each individual case due regard shall be given to the following: (a) the nature, gravity and duration of the infringement taking into account the nature scope or purpose of the processing concerned as well as the number of data subjects affected and the level of damage suffered by them"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 208,
+  "qid": "q0083",
+  "question": "Como a FDA e o GDPR tratam a segurança dos dados em sistemas que processam dados sensíveis?",
+  "evidencia": [
+   "cybersecurity risks related to AI-enabled devices include: • For data poisoning attacks, consider: o Validating, authenticating, and cleansing data. o Employing anomaly detection and data integrity checks (e.g., cryptographic hashes). o Applying adversarial training, which is a method used to improve the robustness and security of models. • For cyber threats using forged data to introduce overfitting, model bias, etc., consider: o Adopting differential privacy, which is a technique to protect the privacy of individual",
+   "L 119/52 EN Official Journal of the European Union 4.5.2016 (b) the ability to ensure the ongoing confidentiality, integrity, availability and resilience of processing systems and services; (c) the ability to restore the availability and access to personal data in a timely manner in the event of a physical or technical incident; (d) a process for regularly testing, assessing and evaluating the effectiveness of technical and organisational measures for ensuring the security of the"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "en",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 209,
+  "qid": "q0084",
+  "question": "Que princípios a OMS e a UNESCO defendem para uma IA confiável?",
+  "evidencia": [
+   "existing forms of bias and discrimination. Promoting AI that is responsive and sustainable. Responsiveness requires that designers, developers and users continuously, systematically and transparently assess AI applications during actual use. They should determine whether AI responds adequately and appropriately and according to communicated, legitimate expectations and requirements. Responsiveness also requires that AI technologies be consistent with wider promotion of the sustainability of health systems, environments",
+   "10. Transparency and Explainability; Accountability and Responsibility The Recommendation highlights that transparent and explainable AI systems which are accountable and have in place mechanisms to attribute responsibility are imperative to the respect, protection and promotion of human rights, fundamental freedoms and ethical principles. This includes the development of appropriate oversight, impact assessment, audit and due diligence mechanisms, including"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "en",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 210,
+  "qid": "q0085",
+  "question": "Como o Código de Ética Médica e a Lei nº 14.874/2024 asseguram a isenção de quem fiscaliza a atividade médica e a pesquisa?",
+  "evidencia": [
+   "perigo de morte do paciente, comunicando, por escrito, o fato ao médico assistente. Art. 98. Deixar de atuar com absoluta isenção quando designado para servir como perito ou como auditor, bem como ultrapassar os limites de suas atribuições e de sua competência. Parágrafo único. O médico tem direito a justa remuneração pela realização do exame pericial",
+   "Responsabilidades do Comitê de Ética em Pesquisa Art. 12. São responsabilidades do CEP: I - assegurar os direitos, a segurança e o bem-estar dos participantes da pesquisa, especialmente dos participantes em situação de vulnerabilidade; II - considerar a qualificação do pesquisador para a pesquisa proposta, de acordo com seu currículo acadêmico e profissional e os documentos solicitados pelo colegiado"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "pt",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 211,
+  "qid": "q0086",
+  "question": "Como a Resolução ANPD 19/2024 e o Código de Ética Médica atribuem responsabilidade por danos?",
+  "evidencia": [
+   "Transferência Posterior ou subcontratado pelas Partes. 17.7. Nos termos da Legislação Nacional, o juiz poderá inverter o ônus da prova a favor do Titular quando, a seu juízo, for verossímil a alegação, houver hipossuficiência para fins de produção de prova ou quando a produção de prova pelo Titular resultar-lhe excessivamente onerosa. 17.8",
+   "ser exercidas coletivamente em juízo, observado o disposto na legislação pertinente. 17.9. A Parte que reparar o dano ao titular tem direito de regresso contra os demais responsáveis, na medida de sua participação no evento danoso. CLÁUSULA 18. Salvaguardas para Transferência Posterior 18.1. O Importador somente poderá realizar Transferências Posteriores dos Dados Pessoais objeto da Transferência Internacional de Dados regida por estas Cláusulas se expressamente autorizado, conforme as hipóteses e condições",
+   "XIX - O médico se responsabilizará, em caráter pessoal e nunca presumido, pelos seus atos profissionais, resultantes de relação particular de confiança e executados com diligência, competência e prudência. XX - A natureza personalíssima da atuação profissional do médico não caracteriza relação de consumo. XXI - No processo de tomada de decisões profissionais, de acordo com seus ditames de consciência e as previsões legais,"
+  ],
+  "n_evidencias": 3,
+  "question_type": "comparative",
+  "source_lang": "pt",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 212,
+  "qid": "q0087",
+  "question": "Como a Estratégia Brasileira de IA e o PL 2338/2023 tratam o risco de viés e discriminação em sistemas de IA?",
+  "evidencia": [
+   "❖ Desenvolver técnicas para identificar e tratar o risco de viés algorítmico",
+   "III – direito à não discriminação ilícita ou abusiva e à correção de vieses discriminatórios ilegais ou abusivos, sejam eles diretos ou indiretos"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "pt",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 213,
+  "qid": "q0088",
+  "question": "Como a UNESCO e o NIST veem a avaliação de impacto de sistemas de IA?",
+  "evidencia": [
+   "Accountability and Responsibility The Recommendation highlights that transparent and explainable AI systems which are accountable and have in place mechanisms t",
+   "Approaches for measuring impacts on a population work best if they recognize that contexts matter, that harms may affect varied groups or sub-groups differently"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "en",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 214,
+  "qid": "q0089",
+  "question": "Como o PL 2338/2023 e a Estratégia Brasileira de IA tratam as startups de inteligência artificial no Brasil?",
+  "evidencia": [
+   "As autoridades setoriais deverão definir critérios diferenciados para sistemas de IA ofertados por microempresas, empresas de pequeno porte e startups que promo",
+   "Entre os principais desafios enfrentados pelas startups brasileiras estão a escassez de mão de obra qualificada, a alta carga tributária e a burocracia"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "pt",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 215,
+  "qid": "q0090",
+  "question": "Como o Espaço Europeu de Dados de Saúde e a LGPD abordam o uso de dados pessoais e de saúde?",
+  "evidencia": [
+   "regime jurídico e técnico uniforme, em especial para o desenvolvimento, comercialização e utilização de sistemas de registos de saúde eletrónicos («sistemas de",
+   "§ 4º É dispensada a exigência do consentimento previsto no caput deste artigo para os dados tornados manifestamente públicos pelo titular, resguardados os direi"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "pt",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 216,
+  "qid": "q0091",
+  "question": "Como a OMS e o PL 2338/2023 tratam a questão de quem deve governar a inteligência artificial?",
+  "evidencia": [
+   "When most data, health analytics and algorithms are managed by large technology companies, it will be increasingly likely that those companies will govern decis",
+   "O Poder Executivo é autorizado a estabelecer o Sistema Nacional de Regulação e Governança de Inteligência Artificial (SIA)"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 217,
+  "qid": "q0092",
+  "question": "Como a FDA (dispositivos com IA) e a Resolução CFM de telemedicina tratam a qualidade e a segurança do cuidado?",
+  "evidencia": [
+   "(21 CFR 820.20), design validation (21 CFR 820.30(g)), design changes (21 CFR 820.30(i)), nonconforming product (21 CFR 820.90), and corrective and preventive action (21 CFR 820.100). Further, manufacturers must monitor device performance and report to FDA information about deaths, serious injuries, and malfunctions in accordance with 21 CFR Parts 803 and 806. 56 When the final rule amending the device QSR, 21 CFR Part 820, takes effect on February 2, 2026, the term “risk analysis” will be replaced with “risk",
+   "protegendo a relação médico-paciente, a confidencialidade e a qualidade dos atendimentos médicos e considera o atendimento presencial como padrão ouro de referência para o exercício da medicina. O uso de tecnologias em medicina, como a telemedicina, vem para propor novas soluções em saúde, com introdução de logística que facilita o acesso, transfere conhecimentos e experiências entre serviços médicos de portes distintos, proporcionando racionalidade no uso dos recursos e permitindo cuidados integrados em uma rede assistencial"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 218,
+  "qid": "q0093",
+  "question": "Como a OMS e o PL 2338/2023 protegem contra viés e discriminação por sistemas de IA?",
+  "evidencia": [
+   "agosto de 2018 (Lei Geral de Proteção de Dados Pessoais), e da legislação pertinente; III – direito à não discriminação ilícita ou abusiva e à correção de vieses discriminatórios ilegais ou abusivos, sejam eles diretos ou indiretos. § 1º A informação referida no inciso I do caput deste artigo será fornecida com o uso de ícones ou símbolos uniformizados facilmente reconhecíveis, sem prejuízo de outros formatos. § 2º Os sistemas de IA que se destinem a grupos vulneráveis deverão, em todas as etapas de seu ciclo",
+   "groups of people when they mirror or exacerbate existing forms of bias and discrimination. Special provision should be made to protect the rights and welfare of vulnerable persons, with mechanisms for redress if such bias and discrimination emerges or is alleged"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 219,
+  "qid": "q0094",
+  "question": "Como a Recomendação da UNESCO e o Código de Ética Médica tratam a autonomia da decisão humana em situações críticas?",
+  "evidencia": [
+   "Questions 2.3. Do No Harm The Recommendation prohibits several uses of AI: “In scenarios where decisions are understood to have an impact that is irreversible or difficult to reverse or may involve life and death decisions, final human determination should apply. In particular, AI systems should not be used for social scoring or mass surveillance purposes.” 2.3.1. Is the system intended to be used for social scoring? Could the system be adapted for social scoring by other actors? If so, have measures been put in",
+   "de decisões profissionais, de acordo com seus ditames de consciência e as previsões legais, o médico aceitará as escolhas de seus pacientes relativas aos procedimentos diagnósticos e terapêuticos por eles expressos, desde que adequadas ao caso e cientificamente reconhecidas. XXII - Nas situações clínicas irreversíveis e terminais, o médico evitará a realização de procedimentos diagnósticos e terapêuticos desnecessários e propiciará aos pacientes sob sua atenção todos os cuidados paliativos apropriados. XXIII"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 220,
+  "qid": "q0095",
+  "question": "Como o PL 2338/2023 e a FDA tratam a governança de sistemas de IA de maior risco em setores regulados?",
+  "evidencia": [
+   "IA e estabelecer a autenticidade e a proveniência do conteúdo digital produzido. Art. 21. Os agentes de IA de alto risco devem garantir que seus sistemas estão de acordo com as medidas de governança definidas em todo o Capítulo IV desta Lei, assim como em outras legislações pertinentes, em especial do seu respectivo setor. Seção III Das Medidas de Governança Aplicadas pelo Poder Públic",
+   "(21 CFR 820.20), design validation (21 CFR 820.30(g)), design changes (21 CFR 820.30(i)), nonconforming product (21 CFR 820.90), and corrective and preventive action (21 CFR 820.100). Further, manufacturers must monitor device performance and report to FDA information about deaths, serious injuries, and malfunctions in accordance with 21 CFR Parts 803 and 806. 56 When the final rule amending the device QSR, 21 CFR Part 820, takes effect on February 2, 2026, the term “risk analysis” will be replaced with “risk"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 221,
+  "qid": "q0096",
+  "question": "Como o NIST e a UNESCO propõem avaliar a gravidade ou a magnitude de impactos negativos da IA?",
+  "evidencia": [
+   "understand potential impacts or harms within specific contexts. Availability of reliable metrics: The current lack of consensus on robust and verifiable measurement methods for risk and trustworthiness, and applicability to different AI use cases, is an AI risk measurement challenge. Potential pitfalls when seeking to measure negative risk or harms include the reality that development of metrics is often an institu- tional endeavor and may inadvertently reflect factors unrelated to the underlying impact. In addition",
+   "freedom and of the right to liberty and security; harm to the biosphere and/or infrastructure. GRAVITY LEVEL: Critical DESCRIPTION: Critical harms and negative impacts are accrued to all or some of the affected parties, in ways that lead to the significant and enduring degradation of human dignity, autonomy, physical, psychological, or moral integrity, or the integrity of communal life, democratic society, or just legal order GRAVITY LEVEL: Serious DESCRIPTION: Serious harms and negative impacts are accrued to"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "en",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 222,
+  "qid": "q0097",
+  "question": "Como o GDPR e a Resolução ANPD 19/2024 asseguram salvaguardas para os dados pessoais?",
+  "evidencia": [
+   "L 119/52 EN Official Journal of the European Union 4.5.2016 (b) the ability to ensure the ongoing confidentiality, integrity, availability and resilience of processing systems and services; (c) the ability to restore the availability and access to personal data in a timely manner in the event of a physical or technical incident; (d) a process for regularly testing, assessing and evaluating the effectiveness of technical and organisational measures for ensuring the security of the",
+   "Legislação Nacional. Seção II - Cláusulas Mandatórias (OBS: Esta Seção contém Cláusulas que devem ser adotadas integralmente e sem qualquer alteração em seu texto a fim de assegurar a validade da transferência internacional de dados). CLÁUSULA 5. Finalidade 5.1. Estas Cláusulas se apresentam como mecanismo viabilizador do fluxo internacional seguro de dados pessoais, estabelecem garantias mínimas e condições válidas para a realização de Transferência Internacional de Dados e visam garantir a adoção das salvaguardas"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 223,
+  "qid": "q0098",
+  "question": "Como o PL 2338/2023 e o NIST AI RMF tratam o dever de informar ou notificar as pessoas sobre sistemas de IA?",
+  "evidencia": [
+   "seguintes direitos, a serem exercidos na forma e nas condições descritas neste Capítulo: I – direito à informação quanto às suas interações com sistemas de IA, de forma acessível, gratuita e de fácil compreensão, inclusive sobre caráter automatizado da interação, exceto nos casos em que se trat",
+   "ple, how a human operator or user is notified when a potential or actual adverse outcome caused by an AI system is detected. A transparent system is not necessarily an accurate, privacy-enhanced, secure, or fair system. However, it is difficult to determine whether an opaque system possesses such characteristics, and to do so over time as complex systems evolve. The role of AI actors should be considered when seeking accountability"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 224,
+  "qid": "q0099",
+  "question": "Como o Espaço Europeu de Dados de Saúde e a OMS veem o uso secundário e o compartilhamento de dados de saúde?",
+  "evidencia": [
+   "saúde ou da prestação de cuidados a nível da formação profissional ou do ensino superior; e) A investigação científica relacionada com os sectores da saúde ou da prestação de cuidados, que contribua para a saúde pública ou para a avaliação das tecnologias da saúde, ou que assegure elevados níveis de qualidade e segurança dos cuidados de saúde, dos medicamentos ou dos dispositivos médicos, com o objetivo de beneficiar os utilizadores finais, designadamente os doentes, os profissionais de saúde e os administradores",
+   "AI technologies, like many information technologies used in health care, are usually designed by companies or through public–private partnerships (PPPs), although many governments also develop and deploy these technologies. Some of the world’s largest technology companies are developing new applications and services, which they either own or invest in. Many of these companies have already accumulated large quantities of data, including health data, and exercise significant power in society"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "mixed",
+  "origem": "piloto",
+  "janela": 0
+ },
+ {
+  "n": 225,
+  "qid": "q0100",
+  "question": "Que diretrizes o PL 2338/2023 e a Estratégia Brasileira de IA estabelecem para a atuação do poder público em IA?",
+  "evidencia": [
+   "s para a atuação da União, dos Estados, do Distrito Federal e dos Municípios no desenvolvimento da IA no Brasil: I – estabelecimento de mecanismos de governança",
+   "❖ Mapear barreiras legais e regulatórias ao desenvolvimento de IA no Brasil e identificar aspectos da legislação brasileira que possam requerer atualização, de"
+  ],
+  "n_evidencias": 2,
+  "question_type": "comparative",
+  "source_lang": "pt",
+  "origem": "piloto",
+  "janela": 0
+ }
+]
