@@ -1,17 +1,19 @@
 #!/usr/bin/env python3
 """
-04_agreement.py
-═══════════════
-Concordância entre os DOIS juízes (valida a confiabilidade do LLM-as-judge ANTES
-de confiar nos scores). Por critério e no agregado:
+04_agreement.py  (versão N-juízes; funciona com 2 OU 3+ juízes)
+═══════════════════════════════════════════════════════════════
+Concordância entre juízes (valida a confiabilidade do LLM-as-judge ANTES de
+confiar nos scores). Com 3 juízes reporta:
 
-  • κ de Cohen ponderado (quadrático)  — concordância ordinal corrigida por acaso
-  • α de Krippendorff (ordinal)        — robusto a faltas/escala
-  • Spearman ρ                          — correlação de postos
-  • % de concordância exata e dentro de ±1
-Cada métrica (κ, α, ρ) acompanha IC 95% por bootstrap pareado.
+  • POR PAR (κ de Cohen ponderado, α de Krippendorff, Spearman ρ, exato, ±1),
+    para cada um dos pares — ex.: llama×glm, llama×gemma, glm×gemma;
+  • OVERALL por critério: α de Krippendorff sobre TODOS os juízes de uma vez
+    (o estimador correto para >2 avaliadores), com IC 95% bootstrap;
+  • cobertura de MAIORIA: fração de itens em que ≥2 juízes dão a MESMA nota
+    exata, e a concordância média |Δ| do trio.
 
-Também lista os casos de MAIOR divergência (|Δ|>=2) p/ adjudicação humana.
+Cada κ/α/ρ par-a-par acompanha IC 95% por bootstrap pareado. Lista os casos de
+maior divergência (amplitude do trio ≥2) para adjudicação humana.
 
 Uso:  python 04_agreement.py
 """
@@ -22,7 +24,7 @@ import csv
 import glob
 import json
 import sys
-from collections import defaultdict
+from itertools import combinations
 from pathlib import Path
 
 import numpy as np
@@ -33,6 +35,7 @@ import lib.stats as st
 
 
 def _pairs(records, j1, j2, crit):
+    """Notas pareadas (j1, j2) para um critério, só onde ambos pontuaram."""
     a, b, meta = [], [], []
     for r in records:
         s = r.get("scores", {})
@@ -43,8 +46,21 @@ def _pairs(records, j1, j2, crit):
     return np.array(a), np.array(b), meta
 
 
+def _matrix(records, judges, crit):
+    """Matriz [n_juízes × n_itens] para Krippendorff overall; itens onde TODOS
+    os juízes pontuaram (listwise). Retorna (matriz, metas)."""
+    cols, metas = [], []
+    for r in records:
+        s = r.get("scores", {})
+        vals = [(s.get(j) or {}).get(crit) for j in judges]
+        if all(isinstance(v, int) for v in vals):
+            cols.append(vals); metas.append(r)
+    if not cols:
+        return np.empty((len(judges), 0)), metas
+    return np.array(cols).T, metas          # linhas = juízes
+
+
 def _metric_fns():
-    """Funções de concordância (reutilizadas no ponto-estimativa e no bootstrap)."""
     from sklearn.metrics import cohen_kappa_score
     from scipy.stats import spearmanr
 
@@ -89,6 +105,35 @@ def _agreement(a, b, n_boot=1000):
     return out
 
 
+def _kripp_overall(matrix):
+    """α de Krippendorff ordinal sobre N juízes (matriz juízes×itens)."""
+    try:
+        import krippendorff
+        if matrix.shape[1] < 2:
+            return None
+        return float(krippendorff.alpha(reliability_data=matrix.tolist(),
+                                        level_of_measurement="ordinal"))
+    except Exception:
+        return None
+
+
+def _majority(matrix):
+    """Cobertura de maioria: fração de itens com ≥2 juízes na MESMA nota, e a
+    amplitude média do trio (max−min por item)."""
+    if matrix.shape[1] == 0:
+        return None, None
+    n_itens = matrix.shape[1]
+    tem_maioria = 0
+    amplitudes = []
+    for j in range(n_itens):
+        col = matrix[:, j]
+        vals, counts = np.unique(col, return_counts=True)
+        if counts.max() >= 2:
+            tem_maioria += 1
+        amplitudes.append(int(col.max() - col.min()))
+    return tem_maioria / n_itens, float(np.mean(amplitudes))
+
+
 def main():
     setup_io()
     ap = argparse.ArgumentParser()
@@ -96,60 +141,124 @@ def main():
     args = ap.parse_args()
     cfg = load_config(args.config)
 
-    j1, j2 = [m["name"] for m in cfg["judges"]["models"]][:2]
     criteria = cfg["judges"]["criteria"]
     gen_dir = resolve(cfg["paths"]["results_dir"]) / "generation"
-    files = sorted(glob.glob(str(gen_dir / "judged_*.jsonl")))
+    # ignora arquivos de teste (*_TESTE.jsonl) — só os julgamentos oficiais
+    files = sorted(fp for fp in glob.glob(str(gen_dir / "judged_*.jsonl"))
+                   if not Path(fp).stem.endswith("_TESTE"))
     if not files:
-        sys.exit("! nenhum judged_*.jsonl — rode 03_generation_eval.py antes.")
+        sys.exit("! nenhum judged_*.jsonl — rode a geração antes.")
 
     records = []
     for fp in files:
         for r in load_jsonl(fp):
             r["_config"] = Path(fp).stem.replace("judged_", "")
             records.append(r)
-    print(f"Juízes: {j1} vs {j2}  |  {len(records)} respostas julgadas  |  {len(files)} configs")
 
-    # ── Concordância por critério (pooled) ───────────────────────────────────
+    # Juízes vêm dos PRÓPRIOS registros (robusto a trocas de painel: Gemma→Mistral
+    # etc. não exigem mexer no config). Para não misturar painéis de rodadas
+    # diferentes que coexistam na pasta, usa-se o CONJUNTO de juízes que pontua
+    # junto no MAIOR número de registros (o painel dominante). Ordem de 1ª
+    # aparição p/ saída estável.
+    from collections import Counter
+    paineis = Counter()
+    ordem = []
+    for r in records:
+        js = tuple(j for j in r.get("scores", {})
+                   if isinstance(r["scores"].get(j), dict))
+        if js:
+            paineis[frozenset(js)] += 1
+        for j in js:
+            if j not in ordem:
+                ordem.append(j)
+    if paineis:
+        painel_dom = paineis.most_common(1)[0][0]            # frozenset dominante
+        judges = [j for j in ordem if j in painel_dom]
+    else:                                                     # fallback: config
+        judges = [m["name"] for m in cfg["judges"]["models"]]
+
+    # mantém só os registros que têm o painel dominante (descarta rodadas antigas
+    # com outro conjunto de juízes, se houver)
+    painel_set = set(judges)
+    records = [r for r in records
+               if painel_set.issubset(
+                   {j for j in r.get("scores", {})
+                    if isinstance(r["scores"].get(j), dict)})]
+
+    pares = list(combinations(judges, 2))
+    print(f"Juízes ({len(judges)}): {', '.join(judges)}  |  "
+          f"{len(pares)} par(es)  |  {len(records)} respostas  |  {len(files)} configs")
+
     nb = cfg["metrics"]["significance"].get("agreement_bootstrap", 1000)
-    rows, disagreements = [], []
-    for crit in criteria:
-        a, b, meta = _pairs(records, j1, j2, crit)
-        ag = _agreement(a, b, n_boot=nb)
-        rows.append({"criterion": crit, **ag})
-        for x, y, r in zip(a, b, meta):
-            if abs(int(x) - int(y)) >= 2:
-                disagreements.append({"config": r.get("_config"), "qid": r.get("qid"),
-                                      "criterion": crit, j1: int(x), j2: int(y),
-                                      "question": r.get("question", "")[:120]})
-
     out = ensure_dir(resolve(cfg["paths"]["results_dir"]) / "agreement")
-    cols = ["criterion", "n", "kappa_w", "kappa_w_lo", "kappa_w_hi",
+
+    # ── 1) Concordância POR PAR ──────────────────────────────────────────────
+    cols = ["par", "criterion", "n", "kappa_w", "kappa_w_lo", "kappa_w_hi",
             "krippendorff", "krippendorff_lo", "krippendorff_hi",
             "spearman", "spearman_lo", "spearman_hi", "exact", "within1"]
-    with open(out / "agreement.csv", "w", newline="", encoding="utf-8") as f:
+    linhas_par, disagreements = [], []
+    for (j1, j2) in pares:
+        for crit in criteria:
+            a, b, meta = _pairs(records, j1, j2, crit)
+            ag = _agreement(a, b, n_boot=nb)
+            linhas_par.append({"par": f"{j1}×{j2}", "criterion": crit, **ag})
+    with open(out / "agreement_pairs.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f); w.writerow(cols)
-        for r in rows:
-            w.writerow([r["criterion"]] + [_fmt(r.get(c)) for c in cols[1:]])
+        for r in linhas_par:
+            w.writerow([r["par"], r["criterion"]] + [_fmt(r.get(c)) for c in cols[2:]])
+
+    # ── 2) OVERALL (Krippendorff N-juízes) + MAIORIA, por critério ───────────
+    linhas_overall = []
+    for crit in criteria:
+        M, metas = _matrix(records, judges, crit)
+        alpha = _kripp_overall(M)
+        cov, amp = _majority(M)
+        linhas_overall.append({"criterion": crit, "n": int(M.shape[1]),
+                               "kripp_overall": alpha,
+                               "maioria_cobertura": cov, "amplitude_media": amp})
+        # divergências fortes do trio (amplitude ≥2) → adjudicação humana
+        for k in range(M.shape[1]):
+            col = M[:, k]
+            if int(col.max() - col.min()) >= 2:
+                r = metas[k]
+                disagreements.append({
+                    "config": r.get("_config"), "qid": r.get("qid"),
+                    "criterion": crit,
+                    **{j: int(col[i]) for i, j in enumerate(judges)},
+                    "question": r.get("question", "")[:120]})
+    with open(out / "agreement_overall.csv", "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        w.writerow(["criterion", "n", "kripp_overall", "maioria_cobertura", "amplitude_media"])
+        for r in linhas_overall:
+            w.writerow([r["criterion"], r["n"], _fmt(r["kripp_overall"]),
+                        _fmt(r["maioria_cobertura"]), _fmt(r["amplitude_media"])])
+
     (out / "disagreements.json").write_text(
         json.dumps(disagreements, ensure_ascii=False, indent=2), encoding="utf-8")
 
     # ── Console ───────────────────────────────────────────────────────────────
-    W = 86
-    print("\n" + "=" * W)
-    print(f"{'critério':<16}{'n':>5}{'κ_quad':>9}{'κ IC95%':>17}"
-          f"{'Kripp.α':>9}{'Spear':>8}{'exato':>8}{'±1':>7}")
-    print("-" * W)
-    for r in rows:
-        ci = ("—" if r.get("kappa_w_lo") is None
-              else f"[{r['kappa_w_lo']:.2f},{r['kappa_w_hi']:.2f}]")
-        print(f"{r['criterion']:<16}{r['n']:>5}{_fmt(r['kappa_w']):>9}{ci:>17}"
-              f"{_fmt(r['krippendorff']):>9}{_fmt(r['spearman']):>8}"
-              f"{_pct(r['exact']):>8}{_pct(r['within1']):>7}")
-    print("=" * W)
-    print(_interpret(rows))
-    print(f"\n{len(disagreements)} divergências fortes (|Δ|≥2) → {out/'disagreements.json'}")
-    print(f"✓ {out/'agreement.csv'}")
+    print("\n" + "=" * 72)
+    print("OVERALL por critério (Krippendorff α sobre os 3 juízes + maioria)")
+    print("=" * 72)
+    print(f"{'critério':<16}{'n':>5}{'Kripp.α':>10}{'maioria':>10}{'ampl.méd':>10}")
+    print("-" * 72)
+    for r in linhas_overall:
+        print(f"{r['criterion']:<16}{r['n']:>5}{_fmt(r['kripp_overall']):>10}"
+              f"{_pct(r['maioria_cobertura']):>10}{_fmt(r['amplitude_media']):>10}")
+    print("=" * 72)
+    print(_interpret_overall(linhas_overall))
+
+    print("\n" + "-" * 72)
+    print("POR PAR — κ quadrático médio (detalhe em agreement_pairs.csv)")
+    for (j1, j2) in pares:
+        ks = [r["kappa_w"] for r in linhas_par
+              if r["par"] == f"{j1}×{j2}" and isinstance(r["kappa_w"], float)]
+        media = sum(ks) / len(ks) if ks else None
+        print(f"  {j1}×{j2:<14} κ̄ = {_fmt(media)}")
+    print(f"\n{len(disagreements)} divergências fortes do trio (amplitude≥2) "
+          f"→ {out/'disagreements.json'}")
+    print(f"✓ {out/'agreement_pairs.csv'}")
+    print(f"✓ {out/'agreement_overall.csv'}")
 
 
 def _fmt(x):
@@ -160,15 +269,17 @@ def _pct(x):
     return f"{100*x:.0f}%" if isinstance(x, float) else "—"
 
 
-def _interpret(rows):
-    ks = [r["kappa_w"] for r in rows if isinstance(r["kappa_w"], float)]
+def _interpret_overall(rows):
+    ks = [r["kripp_overall"] for r in rows if isinstance(r["kripp_overall"], float)]
     if not ks:
-        return "Sem κ disponível."
+        return "Sem α disponível."
     avg = sum(ks) / len(ks)
-    lvl = ("excelente" if avg >= .8 else "boa" if avg >= .6 else
-           "moderada" if avg >= .4 else "fraca")
-    return (f"κ quadrático médio = {avg:.3f} → concordância {lvl}. "
-            f"{'Scores confiáveis.' if avg>=.6 else 'Considere 3º juiz/adjudicação ou refinar a rubrica.'}")
+    lvl = ("excelente" if avg >= .8 else "boa" if avg >= .667 else
+           "aceitável" if avg >= .6 else "fraca")
+    nota = ("Scores confiáveis." if avg >= .667
+            else "Abaixo do limiar usual (α≥0,667): refine a rubrica ou use "
+                 "voto de maioria como sinal primário.")
+    return f"α de Krippendorff médio = {avg:.3f} → concordância {lvl}. {nota}"
 
 
 if __name__ == "__main__":
