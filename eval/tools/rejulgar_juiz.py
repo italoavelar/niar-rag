@@ -82,7 +82,6 @@ def main():
     setup_io()
     cfg = load_config(args.config)
     criteria = cfg["judges"]["criteria"]
-    scale = cfg["judges"]["scale"]
     gen_dir = resolve(cfg["paths"]["results_dir"]) / "generation"
 
     cli = LLMClient(provider=args.provider, model=args.juiz_id,
@@ -129,7 +128,7 @@ def main():
             tre = trechos_por_qid.get(r["qid"], [])
             r["context_text"] = (_contexto_dos_trechos(tre)
                                  if r.get("cenario") == "rag" else "")
-            nota = judge_answer(cli, r, criteria, scale)
+            nota = judge_answer(cli, r, criteria)
             r.setdefault("scores", {})[args.nome] = nota
             r.pop("context_text", None)
             if not args.limit and args.remover and args.remover != "nenhum":

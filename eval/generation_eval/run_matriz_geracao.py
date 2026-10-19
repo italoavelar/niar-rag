@@ -94,7 +94,7 @@ def _gera(runner, cenario, pergunta, trechos, icl, n_shots):
 
 
 def _processa(gerador_nome, cenario, runner, perguntas, icl, judges, criteria,
-              scale, od, n_shots):
+              od, n_shots):
     from tqdm import tqdm
     tag = f"{gerador_nome}_{cenario}_icl{int(icl)}"
     final = od / f"judged_{tag}.jsonl"
@@ -124,12 +124,22 @@ def _processa(gerador_nome, cenario, runner, perguntas, icl, judges, criteria,
                 "question_type": r.get("tipo", ""),
                 "should_answer": bool(r.get("respondivel")),
                 "reference_answer": r.get("resposta_referencia", ""),
+                # Sem estes tres campos nao se separa falha de GERACAO de
+                # falha de RECUPERACAO. Em 104 das 225 respondiveis a
+                # evidencia completa NAO chegou ao top-5: ali o gerador
+                # certo e o que responde o que da e diz o que falta, e
+                # puni-lo em completeness/correctness seria medir a
+                # recuperacao de novo. Vao para o registro, NAO para o
+                # prompt do juiz — contar ao juiz enviesaria a nota.
+                "evidencia_completa_no_top5": r.get("evidencia_completa_no_top5"),
+                "citacoes_que_chegaram": r.get("citacoes_que_chegaram"),
+                "citacoes_exigidas_n": r.get("citacoes_exigidas_n"),
                 "cenario": cenario, "answer": ans, "icl": icl,
                 "context_chunk_ids": chunk_ids, "context_text": context,
             }
             ok = True
             if judges:
-                rec["scores"] = {name: judge_answer(cli, rec, criteria, scale)
+                rec["scores"] = {name: judge_answer(cli, rec, criteria)
                                  for name, cli in judges}
                 ok = not any("_error" in s for s in rec["scores"].values())
             rec.pop("context_text", None)
@@ -173,7 +183,6 @@ def main():
         perguntas = perguntas[:args.limit]
 
     criteria = cfg["judges"]["criteria"]
-    scale = cfg["judges"]["scale"]
     judges = None if args.no_judge else build_judges(cfg)
     n_shots = cfg["generation"]["icl"]["n_shots"]
     icl_vars = ([bool(args.icl)] if args.icl is not None
@@ -200,7 +209,7 @@ def main():
         for cenario in args.cenarios:
             for icl in icl_vars:
                 _processa(g["name"], cenario, runner, perguntas, icl, judges,
-                          criteria, scale, od, n_shots)
+                          criteria, od, n_shots)
 
     print("\n✓ matriz concluída. Próximo: python eval/04_agreement.py")
 
