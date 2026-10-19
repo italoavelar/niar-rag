@@ -169,9 +169,36 @@ def por_orcamento(ordem_linha: np.ndarray, orcamento: int, textos: list[str],
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--modelo", choices=list(MODELOS), help="só um modelo")
+    # A RÉPLICA de 05/10 usa os mesmos cálculos em outra população: 225
+    # perguntas e 54 documentos, em dados_225/ e resultados_225/. Rodar o mesmo
+    # código nas duas é o que garante que a comparação entre elas seja válida.
+    ap.add_argument("--dados", default=None,
+                    help="diretório com perguntas.json e <condição>.jsonl "
+                         "(padrão: dados/; a réplica usa dados_225/)")
+    ap.add_argument("--resultados", default=None,
+                    help="diretório com os .npz (padrão: resultados/; "
+                         "a réplica usa resultados_225/)")
+    ap.add_argument("--agrupar-por", choices=("janela", "tipo"), default="janela",
+                    help="eixo do corte de robustez. 'janela' é o tamanho da "
+                         "passagem de onde a pergunta saiu, que só existe nas 91 "
+                         "de setembro; 'tipo' é factual/multi-hop/comparativa")
     args = ap.parse_args()
 
+    global DADOS, RESULTADOS
+    if args.dados:
+        DADOS = Path(args.dados) if Path(args.dados).is_absolute() else AQUI / args.dados
+    if args.resultados:
+        RESULTADOS = (Path(args.resultados) if Path(args.resultados).is_absolute()
+                      else AQUI / args.resultados)
+    print(f"dados      : {DADOS}")
+    print(f"resultados : {RESULTADOS}")
+
     perguntas = json.loads((DADOS / "perguntas.json").read_text(encoding="utf-8"))
+    # O corte de robustez troca de eixo sem trocar de código: tudo abaixo lê
+    # `_grupo`, e só esta linha decide o que ele é.
+    chave = "janela" if args.agrupar_por == "janela" else "question_type"
+    for pg in perguntas:
+        pg["_grupo"] = pg.get(chave)
     pais_texto = {}
     for arq in ("PC_pais.json", "PC1200_pais.json"):
         caminho = DADOS / arq
@@ -181,7 +208,8 @@ def main() -> None:
     evidencias = [[normalizar(e) for e in p["evidencia"]] for p in perguntas]
 
     print(f"perguntas: {len(perguntas)} | citações: {sum(len(e) for e in evidencias)}")
-    print(f"  por janela : {dict(sorted(Counter(p['janela'] for p in perguntas).items()))}")
+    print(f"  por {args.agrupar_por}: "
+          f"{dict(sorted(Counter(str(p['_grupo']) for p in perguntas).items()))}")
     print(f"  por nº de evidências: "
           f"{dict(sorted(Counter(p['n_evidencias'] for p in perguntas).items()))}")
 
@@ -197,21 +225,51 @@ def main() -> None:
                 print(f"  {cond}: falta {arq.name}")
                 continue
             d = carregar_npz(arq)
-            M = d["matrix"]
-            if M.shape[1] != cfg["dim"]:
-                print(f"  {cond}: dimensão {M.shape[1]} ≠ {cfg['dim']} — pulando")
-                continue
-
             regs = [json.loads(l) for l in (DADOS / f"{cond}.jsonl")
                     .open(encoding="utf-8") if l.strip()]
-            if len(regs) != M.shape[0]:
-                print(f"  {cond}: {M.shape[0]} vetores para {len(regs)} trechos — pulando")
-                continue
+
+            # Dois formatos de .npz. O antigo guarda a MATRIZ de vetores e a
+            # ordem sai do produto aqui. O do `colab_recorte_225.py` guarda a
+            # ORDEM já calculada, truncada — porque a matriz de 70 mil trechos
+            # custaria 290 MB de download e a análise não usa nada dela além
+            # da ordem.
+            if "ordem" in d:
+                ordem = d["ordem"]
+                n_trechos = int(d["n_trechos"]) if "n_trechos" in d else len(regs)
+                if n_trechos != len(regs):
+                    print(f"  {cond}: ordem de {n_trechos} trechos para "
+                          f"{len(regs)} no jsonl — pulando")
+                    continue
+                if "ids" in d and [str(x) for x in d["ids"]] != [r["id"] for r in regs]:
+                    print(f"  {cond}: os ids do .npz não batem com os do jsonl "
+                          f"— pulando (recorte refeito depois de embutir?)")
+                    continue
+                if ordem.shape[0] != len(perguntas):
+                    print(f"  {cond}: ordem para {ordem.shape[0]} perguntas, "
+                          f"mas são {len(perguntas)} — pulando")
+                    continue
+            else:
+                M = d["matrix"]
+                if M.shape[1] != cfg["dim"]:
+                    print(f"  {cond}: dimensão {M.shape[1]} ≠ {cfg['dim']} — pulando")
+                    continue
+                if len(regs) != M.shape[0]:
+                    print(f"  {cond}: {M.shape[0]} vetores para {len(regs)} "
+                          f"trechos — pulando")
+                    continue
+                n_trechos = M.shape[0]
+                ordem = np.argsort(-(Q @ M.T), axis=1)
 
             textos = [normalizar(r["text"]) for r in regs]
             pai_de = ([r["metadata"]["pai_id"] for r in regs]
                       if cond.startswith("PC") else None)
-            ordem = np.argsort(-(Q @ M.T), axis=1)
+            # O texto do pai vem de `<cond>_pais.json` quando existe, mas o
+            # próprio .jsonl carrega `metadata.pai_texto` — então um diretório
+            # de dados novo (a réplica) não precisa do arquivo separado.
+            if pai_de:
+                for r, p_id in zip(regs, pai_de):
+                    if p_id not in pais_texto:
+                        pais_texto[p_id] = normalizar(r["metadata"]["pai_texto"])
 
             for k in KS:
                 junta = recall = 0
@@ -223,7 +281,7 @@ def main() -> None:
                     completo = int(achou == len(evs))
                     junta += completo
                     recall += int(achou > 0)
-                    por_janela.setdefault(perguntas[i]["janela"], []).append(completo)
+                    por_janela.setdefault(perguntas[i]["_grupo"], []).append(completo)
                 linhas.append({
                     "modelo": modelo, "condicao": cond, "k": k,
                     "junta": junta / len(perguntas),
@@ -256,7 +314,7 @@ def main() -> None:
                     acertos.append(completo)
                     junta += completo
                     recall += int(achou > 0)
-                    por_janela.setdefault(perguntas[i]["janela"], []).append(completo)
+                    por_janela.setdefault(perguntas[i]["_grupo"], []).append(completo)
                 linhas.append({
                     "modelo": modelo, "condicao": cond, "orcamento": orc,
                     "junta": junta / len(perguntas),
@@ -264,22 +322,24 @@ def main() -> None:
                     "unidades": float(np.mean(unidades)),
                     "chars_gastos": float(np.mean(gastos)),
                     "teto": teto,
-                    # por pergunta, para o teste pareado: as mesmas 40 perguntas
+                    # por pergunta, para o teste pareado: as mesmas perguntas
                     # passam por todas as condições, então comparar proporções
                     # independentes jogaria fora a informação do pareamento.
                     "acertos": acertos,
                     "por_janela": {j: sum(v) / len(v) for j, v in sorted(por_janela.items())},
                 })
 
-            print(f"\n  {cond}  ({M.shape[0]} vetores"
+            print(f"\n  {cond}  ({n_trechos} vetores"
                   f"{f', {len(set(pai_de))} pais' if pai_de else ''})")
-            print(f"    {'k':>3s} {'Junta@k':>9s} {'Recall@k':>9s}   "
-                  f"{'j600':>6s} {'j1400':>6s} {'j3000':>6s}")
+            grupos_vistos = [g for g in dict.fromkeys(p["_grupo"] for p in perguntas)]
+            print(f"    {'k':>3s} {'Junta@k':>9s} {'Recall@k':>9s}   " +
+                  "".join(f"{str(g)[:10]:>11s}" for g in sorted(map(str, grupos_vistos))))
             for r in [x for x in linhas
                       if x["modelo"] == modelo and x["condicao"] == cond and "k" in x]:
                 pj = r["por_janela"]
                 print(f"    {r['k']:3d} {r['junta']:8.0%} {r['recall']:9.0%}   "
-                      + " ".join(f"{pj.get(j, float('nan')):6.0%}" for j in (600, 1400, 3000)))
+                      + "".join(f"{pj.get(g, float('nan')):10.0%} "
+                                for g in sorted(grupos_vistos, key=str)))
             print(f"    {'orç.':>6s} {'Junta':>7s} {'Recall':>7s} {'unid.':>7s}")
             for r in [x for x in linhas
                       if x["modelo"] == modelo and x["condicao"] == cond and "orcamento" in x]:
@@ -310,6 +370,36 @@ def main() -> None:
                     else f"{'—':>11s}" for o in ORCAMENTOS))
     print("\n  (entre parênteses: quantas unidades cabem no orçamento, em média)")
 
+    # ── a vitória depende da janela de onde a pergunta saiu? ────────────────
+    # A pergunta nasceu de uma passagem de 600, 1400 ou 3000 caracteres. Se um
+    # recorte ganhasse só nas perguntas de janela parecida com ele, a escolha
+    # seria artefato da construção do acervo, não resultado. Este corte é o que
+    # decide isso — e só vale no ORÇAMENTO, porque em k fixo o recorte grande
+    # ganha de graça.
+    print(f"\n{'='*78}\nA vitória depende do {args.agrupar_por.upper()}?"
+          f"\n{'='*78}")
+    janelas = sorted({j for r in linhas if "orcamento" in r
+                      for j in r["por_janela"]})
+    n_por_janela = Counter(p["_grupo"] for p in perguntas)
+    for modelo in sorted({r["modelo"] for r in linhas}):
+        for orc in ORCAMENTOS:
+            print(f"\n{modelo.upper():8s} @ {orc} ch " +
+                  "".join(f"{f'{j} (n={n_por_janela[j]})':>20s}"
+                          for j in janelas))
+            for cond in CONDICOES:
+                r = next((x for x in linhas if x.get("orcamento") == orc
+                          and x["modelo"] == modelo and x["condicao"] == cond), None)
+                if r:
+                    print(f"  {cond:9s} " + "".join(
+                        f"{r['por_janela'].get(j, float('nan')):19.0%} "
+                        for j in janelas))
+    if args.agrupar_por == "janela":
+        print("\n  Se a coluna do 1.200 não for a melhor justamente na janela 1400,")
+        print("  a escolha não é artefato de as perguntas terem nascido perto dele.")
+    else:
+        print("\n  Aqui o corte é por TIPO: se o 1.200 só ganhar na factual, a")
+        print("  escolha não vale para a comparativa, que é onde o sistema falha.")
+
     # ── o orçamento foi mesmo igual? ────────────────────────────────────────
     print(f"\n{'='*78}\nQuanto texto cada condição GASTOU de verdade\n{'='*78}")
     print("A última unidade entra inteira mesmo estourando o teto — cortá-la ao meio\n"
@@ -324,10 +414,12 @@ def main() -> None:
                   + "".join(f"{rs[o]['chars_gastos']:11.0f} " for o in ORCAMENTOS))
 
     # ── significância pareada (McNemar exato) ───────────────────────────────
-    print(f"\n{'='*78}\nAs diferenças resistem a n=40?  (McNemar pareado, exato)\n{'='*78}")
-    print("Uma pergunta vale 2,5 pontos percentuais. Diferença de 5 pontos são DUAS\n"
-          "perguntas — pode ser sorte. O teste é pareado porque são as MESMAS 40\n"
-          "perguntas em todas as condições.\n")
+    n_perg = len(perguntas)
+    print(f"\n{'='*78}\nAs diferenças resistem a n={n_perg}?  (McNemar pareado, exato)"
+          f"\n{'='*78}")
+    print(f"Uma pergunta vale {100/n_perg:.1f} ponto percentual, então 5 pontos de\n"
+          f"diferença são {round(5*n_perg/100)} perguntas e podem ser sorte. O teste é\n"
+          f"pareado porque são as MESMAS {n_perg} perguntas em todas as condições.\n")
     from math import comb
 
     def mcnemar(a: list[int], b: list[int]) -> tuple[int, int, float]:

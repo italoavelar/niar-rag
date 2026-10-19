@@ -66,3 +66,29 @@ eval/experimento_embedding/dados/T*.jsonl
 eval/experimento_embedding/dados/PC*.jsonl
 eval/experimento_embedding/dados/PC*_pais.json
 eval/experimento_embedding/dados/corpus_limpo.jsonl
+
+# Condicoes recortadas da REPLICA de 06/10 (dados_225/): 201 MB, quase todo no
+# PC.jsonl, porque cada um dos 33.231 filhos carrega o texto do pai repetido no
+# metadado. Regenera em minutos de CPU com bench_tamanho.py recortar --amostra
+# dados/amostra_completa.json --destino dados_225. O que FICA versionado e
+# resultados_225/: as ordens que voltaram da GPU e o recorte_resultados.json com
+# o acerto por pergunta, que custou Colab e nao se regenera de graca.
+eval/experimento_embedding/dados_225/T*.jsonl
+eval/experimento_embedding/dados_225/PC*.jsonl
+eval/experimento_embedding/dados_225/PC*_pais.json
+eval/experimento_embedding/dados_225/recorte225_pacote.json.gz
+
+# Pacotes de ENTRADA do reranking no Colab: ~16 MB de pares (pergunta, trecho)
+# remontados em segundos por preparar_rerank_*.py a partir do corpus e dos
+# rankings, ambos versionados. O que FICA e rerank_scores_*.json: a saida da
+# GPU, que custou horas e nao se regenera de graca.
+eval/results/indexes/rerank_entrada*.json
+eval/results/indexes/pools_*.json
+
+# Varredura de pool do reranker (base/rr20/rr50/rr100): 15 MB derivados de
+# rerank_scores_bge_reranker_v2_m3.json + B_dense_bge_m3.json. A tabela que
+# interessa esta no RELATORIO_RECUPERACAO.md e sai de tabelas_relatorio.py.
+eval/results_dezembro_rerank/
+
+# PDF compilado; a fonte versionada e benchmark_leme_500.md.
+benchmark_leme_500.pdf

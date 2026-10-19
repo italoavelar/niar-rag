@@ -261,9 +261,23 @@ def reconstruir(trechos: list[dict], janela: int = 400) -> str:
 def cmd_recortar(args) -> None:
     from chunk_id import chunk_id_por_conteudo
 
-    if not AMOSTRA.exists():
-        sys.exit("amostra não definida — rode `bench_tamanho.py amostra` antes.")
-    amostra = json.loads(AMOSTRA.read_text(encoding="utf-8"))["documentos"]
+    # `--amostra` e `--destino` existem para a RÉPLICA de 05/10: as condições
+    # originais cobrem os 15 documentos de `dados/amostra.json`, e a réplica nas
+    # 225 perguntas precisa dos 54 de `dados/amostra_completa.json` num diretório
+    # separado — sobrescrever as originais invalidaria os .npz já embutidos.
+    amostra_path = Path(args.amostra) if args.amostra else AMOSTRA
+    if not amostra_path.is_absolute():
+        amostra_path = AQUI / amostra_path
+    destino = Path(args.destino) if args.destino else DESTINO
+    if not destino.is_absolute():
+        destino = AQUI / destino
+
+    if not amostra_path.exists():
+        sys.exit(f"amostra não encontrada: {amostra_path} — rode "
+                 "`bench_tamanho.py amostra` antes, ou passe --amostra.")
+    amostra = json.loads(amostra_path.read_text(encoding="utf-8"))["documentos"]
+    print(f"amostra : {amostra_path.name} ({len(amostra)} documentos)")
+    print(f"destino : {destino}")
 
     por_doc = carregar_corpus()
     paginas: dict[str, list[dict]] = {}
@@ -277,7 +291,7 @@ def cmd_recortar(args) -> None:
                          "metadata": por_doc[doc][0]["metadata"]}]
     print(f"documentos reconstruídos: {len(paginas)} de {len(amostra)}\n")
 
-    DESTINO.mkdir(parents=True, exist_ok=True)
+    destino.mkdir(parents=True, exist_ok=True)
 
     # ── parent-child ─────────────────────────────────────────────────────────
     # O arquivo guarda os FILHOS (é o que vai para o índice), cada um carregando
@@ -303,7 +317,7 @@ def cmd_recortar(args) -> None:
                     })
         # PC.jsonl continua sendo o pai de 3500, para nao invalidar o que ja foi
         # embutido. Variantes ganham sufixo proprio.
-        caminho = DESTINO / ("PC.jsonl" if PC_PAI == 3500 else f"PC{PC_PAI}.jsonl")
+        caminho = destino / ("PC.jsonl" if PC_PAI == 3500 else f"PC{PC_PAI}.jsonl")
         with caminho.open("w", encoding="utf-8") as f:
             for t in filhos:
                 f.write(json.dumps(t, ensure_ascii=False) + "\n")
@@ -337,7 +351,7 @@ def cmd_recortar(args) -> None:
                 })
         padrao = round(tamanho * 0.20)
         nome = f"T{tamanho}" if sobreposicao == padrao else f"T{tamanho}s{sobreposicao}"
-        caminho = DESTINO / f"{nome}.jsonl"
+        caminho = destino / f"{nome}.jsonl"
         with caminho.open("w", encoding="utf-8") as f:
             for t in trechos:
                 f.write(json.dumps(t, ensure_ascii=False) + "\n")
@@ -345,7 +359,7 @@ def cmd_recortar(args) -> None:
         print(f"  {nome:6s} sobrep. {sobreposicao:4d} | {len(trechos):5d} trechos | "
               f"mediana {st.median(tam):6.0f} | min {min(tam):5d} | max {max(tam):5d}")
 
-    print(f"\n✓ {DESTINO}")
+    print(f"\n✓ {destino}")
     print("\nPróximo: embutir cada um (Colab, se houver GPU) e avaliar com")
     print("  python eval/tools/bench_chunking.py avaliar --nome T800 "
           "--corpus data/processed/chunking/T800.jsonl")
@@ -363,11 +377,18 @@ def main() -> None:
     b = sub.add_parser("recortar", help="gera um corpus por tamanho")
     b.add_argument("--tamanhos", type=int, nargs="+", default=list(TAMANHOS))
     b.add_argument("--sobreposicao", type=int, default=None,
-                   help="sobreposição em caracteres; o padrão é 20% do tamanho. "
+                   help="sobreposição em caracteres; o padrão é 20%% do tamanho. "
                         "Valor explícito gera T<tamanho>s<sobreposicao>.jsonl, "
                         "para a variante não sobrescrever a condição original.")
     b.add_argument("--sem-parent-child", dest="parent_child", action="store_false",
                    help="não gera a condição parent-child")
+    b.add_argument("--amostra", default=None,
+                   help="json com os documentos a recortar. Padrão: "
+                        "dados/amostra.json, os 15 do experimento original. "
+                        "Para a réplica: dados/amostra_completa.json, os 54")
+    b.add_argument("--destino", default=None,
+                   help="diretório de saída. Padrão: dados/. A réplica usa "
+                        "dados_225/ para não sobrescrever as condições originais")
     b.set_defaults(func=cmd_recortar)
 
     args = ap.parse_args()
