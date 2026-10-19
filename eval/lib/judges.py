@@ -44,6 +44,12 @@ CONTEXT_CHAR_LIMIT = 12000
 # "bin"  → 0 ou 1
 # "tern" → 1, 2 ou 3
 # criterios condicionais (só com referência): correctness, completeness
+# Versão da RUBRICA, gravada em cada bloco de notas. A Etapa 04 agrupa por
+# ela e se recusa a misturar escalas: um judged_*.jsonl da rubrica 1-5 e um da
+# mista nao sao comparaveis, e sem marcador a mistura e silenciosa — os dois
+# tem os mesmos nomes de juiz e o mesmo formato de arquivo.
+RUBRICA = "mista-v2"            # bin 0/1 + tern 1-3, CoT antes da nota
+
 BINARY = {"citation", "refusal", "hallucination"}
 TERNARY = {"faithfulness", "answer_relevance", "completeness", "correctness"}
 CONDICIONAIS = {"correctness", "completeness"}   # "na" quando não há referência
@@ -85,9 +91,6 @@ _ANCHORS = (
     "factualmente errada. [Se não houver resposta-referência, use \"na\".]\n"
 )
 
-JUDGE_SYS = JUDGE_SYS  # (mantém nome usado abaixo)
-
-
 def build_judges(cfg: dict) -> List[Tuple[str, LLMClient]]:
     jcfg = cfg["judges"]
     # Juízes de raciocínio (GLM) precisam de teto alto p/ raciocinar E escrever o
@@ -110,8 +113,7 @@ def _escala_txt(c: str) -> str:
     return "?"
 
 
-def _prompt(record: dict, criteria: List[str], scale: int = None) -> str:
-    tem_ref = bool((record.get("reference_answer") or "").strip())
+def _prompt(record: dict, criteria: List[str]) -> str:
     if record.get("should_answer"):
         answerability = ("Esta pergunta TEM resposta no contexto (o sistema "
                          "DEVERIA responder).")
@@ -154,39 +156,51 @@ def _parse_score(c: str, v, record: dict):
         x = int(round(float(v)))
     except (TypeError, ValueError):
         return None
+    # FORA DE ESCALA E REJEITADO, nao saturado. Saturar era perigoso: os juizes
+    # desta rubrica sao os MESMOS modelos que rodaram a rubrica 1-5, e um juiz
+    # que respondesse "3" por habito num critetio binario viraria 1 = perfeito.
+    # Isso inflaria justamente hallucination, citation e refusal. Devolver None
+    # tira o item da conta — perder o item e honesto, contar errado nao e.
     if c in BINARY:
-        return 1 if x >= 1 else 0            # tolera 0/1 (e satura acima)
+        return x if x in (0, 1) else None
     if c in TERNARY:
-        return max(1, min(3, x))
+        return x if x in (1, 2, 3) else None
     return None
 
 
-def judge_answer(client: LLMClient, record: dict, criteria: List[str],
-                 scale: int = None) -> dict:
+def judge_answer(client: LLMClient, record: dict,
+                 criteria: List[str]) -> dict:
     try:
         data = client.chat_json(_prompt(record, criteria), system=JUDGE_SYS)
     except Exception as e:
-        return {"_error": str(e), **{c: None for c in criteria}}
-    out, just = {}, {}
+        return {"_error": str(e), "_rubrica": RUBRICA,
+                **{c: None for c in criteria}}
+    out, just, fora = {}, {}, {}
     for c in criteria:
         v = data.get(c) if isinstance(data, dict) else None
+        bruto = v.get("score") if isinstance(v, dict) else v
         if isinstance(v, dict):
-            out[c] = _parse_score(c, v.get("score"), record)
             just[c] = v.get("reasoning", v.get("justification", ""))
-        else:
-            out[c] = _parse_score(c, v, record)
+        out[c] = _parse_score(c, bruto, record)
+        # guarda o valor cru quando ele foi rejeitado, para o descarte nao ser
+        # invisivel: a Etapa 04 conta estes casos e os reporta.
+        if out[c] is None and bruto is not None:
+            fora[c] = bruto
     out["_justifications"] = just
+    out["_rubrica"] = RUBRICA
+    if fora:
+        out["_fora_escala"] = fora
     return out
 
 
 def run_judging(answers: List[dict], judges: List[Tuple[str, LLMClient]],
-                criteria: List[str], scale: int = None) -> List[dict]:
-    """Anota cada resposta com os scores de cada juiz: record['scores'][judge][crit]."""
+                criteria: List[str]) -> List[dict]:
+    """Anota cada resposta com os scores de cada juiz: record['scores'][judge][crit].
+
+    Devolve CÓPIAS. Mutar `answers` no lugar faria uma segunda passada de
+    julgamento herdar as notas da primeira sem aviso."""
     out = []
     for rec in tqdm(answers, desc="[juízes]", leave=False):
-        scores = {}
-        for nome, cli in judges:
-            scores[nome] = judge_answer(cli, rec, criteria)
-        rec["scores"] = scores
-        out.append(rec)
+        scores = {nome: judge_answer(cli, rec, criteria) for nome, cli in judges}
+        out.append({**rec, "scores": scores})
     return out

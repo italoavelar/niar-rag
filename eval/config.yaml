@@ -211,7 +211,13 @@ generation:
 # Juízes (Etapa 03/04) — LLM-as-a-judge, 2 modelos independentes
 # ----------------------------------------------------------------------------
 judges:
-  scale: 5                         # notas 1..5
+  # ESCALA MISTA, definida em lib/judges.py (RUBRICA = "mista-v2"), nao aqui:
+  #   binarios  0/1  -> citation, refusal, hallucination   (1 = bom)
+  #   ternarios 1-3   -> faithfulness, answer_relevance, completeness, correctness
+  # Nao ha chave `scale`. Ela existia para a rubrica 1..5 e foi removida junto
+  # com ela: ficar no config sem ser lida fazia o arquivo documentar uma escala
+  # que o codigo nao usa mais. Valor fora da escala do critetio e REJEITADO
+  # (score None) e nao saturado, para nota da rubrica velha nao virar acerto.
   temperature: 0
   models:
     # llama-3.3-70b-versatile FOI DESCONTINUADO no Groq — 404 em 29/09/2026,
@@ -220,23 +226,31 @@ judges:
     # aberto disponível. Consequência para a Fase 2: se o juiz mudar depois que
     # um lote for julgado, a concordância entre juízes não pode ser calculada —
     # lote julgado por modelos diferentes não é comparável.
+    # O 04_agreement descobre os juizes dos PROPRIOS registros, entao trocar o
+    # painel aqui nao exige mexer na analise — mas lote julgado por painel
+    # diferente nao e comparavel, e a Etapa 04 agora separa por painel E por
+    # rubrica, reportando o que descartou. Com 3+ juizes ela passa a reportar
+    # alpha de Krippendorff sobre todos de uma vez, que e o estimador correto.
     - name: "qwen"
       provider: "groq"
       model: "qwen/qwen3.8-27b"
     - name: "gptoss"
       provider: "groq"             # ou "cerebras"
       model: "openai/gpt-oss-120b"
-  # Critérios avaliados (cada um 1..5, com justificativa)
+  # Critérios avaliados. A escala de cada um está em lib/judges.py.
   criteria:
-    - faithfulness    # groundedness: resposta sustentada pelo contexto recuperado
-    - hallucination   # severidade de fatos/leis/números inventados (5 = nenhuma)
-    - answer_relevance
-    - correctness     # vs resposta-referência do gold set
-    - completeness
-    - citation        # seção "Fontes utilizadas" correta
-    - refusal         # recusou corretamente quando inanswerable?
-  # respostas com nota de alucinação <= este limiar contam como "alucinou" (taxa)
-  hallucination_threshold: 2
+    - faithfulness      # 1-3  sustentação no contexto recuperado
+    - hallucination     # 0/1  1 = NAO inventou lei/artigo/numero ausente
+    - answer_relevance  # 1-3  responde ao que foi perguntado
+    - correctness       # 1-3  ou "na"  vs resposta-referência do gold set
+    - completeness      # 1-3  ou "na"  cobertura do essencial
+    - citation          # 0/1  seção "Fontes utilizadas" correta
+    - refusal           # 0/1  (não) recusou conforme a respondibilidade
+  # `hallucination_threshold` SAIU. Era "nota <= 2 conta como alucinou", o que
+  # fazia sentido em 1..5. Com hallucination binario, 0 e 1 sao ambos <= 2, e a
+  # taxa sairia 100% para tudo. Na escala nova a regra e direta e nao precisa de
+  # parametro: alucinou == score 0. Nenhum codigo lia esta chave; ela ficaria
+  # como armadilha para quem fosse implementar a taxa.
 
 # ----------------------------------------------------------------------------
 # Métricas

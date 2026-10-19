@@ -3,17 +3,24 @@
 04_agreement.py  (versão N-juízes; funciona com 2 OU 3+ juízes)
 ═══════════════════════════════════════════════════════════════
 Concordância entre juízes (valida a confiabilidade do LLM-as-judge ANTES de
-confiar nos scores). Com 3 juízes reporta:
+confiar nos scores). Com N juízes reporta:
 
   • POR PAR (κ de Cohen ponderado, α de Krippendorff, Spearman ρ, exato, ±1),
     para cada um dos pares — ex.: llama×glm, llama×gemma, glm×gemma;
   • OVERALL por critério: α de Krippendorff sobre TODOS os juízes de uma vez
     (o estimador correto para >2 avaliadores), com IC 95% bootstrap;
   • cobertura de MAIORIA: fração de itens em que ≥2 juízes dão a MESMA nota
-    exata, e a concordância média |Δ| do trio.
+    exata, SEMPRE ao lado da cobertura esperada por ACASO — ela não é
+    corrigida por acaso e, sozinha, é lida como se fosse concordância:
+    com 3 juízes e critério binário o acaso é 100%.
 
 Cada κ/α/ρ par-a-par acompanha IC 95% por bootstrap pareado. Lista os casos de
-maior divergência (amplitude do trio ≥2) para adjudicação humana.
+maior divergência (amplitude ≥2 no painel) para adjudicação humana.
+
+SEPARA POR RUBRICA: julgamento da escala 1..5 e da escala mista não são
+comparáveis. O campo `_rubrica` de cada bloco de notas decide qual lote
+entra, e o que for descartado — por rubrica ou por painel — é CONTADO
+na saída, em vez de sumir em silêncio.
 
 Uso:  python 04_agreement.py
 """
@@ -24,6 +31,7 @@ import csv
 import glob
 import json
 import sys
+from collections import Counter
 from itertools import combinations
 from pathlib import Path
 
@@ -117,11 +125,28 @@ def _kripp_overall(matrix):
         return None
 
 
+def _maioria_por_acaso(n_juizes: int, n_niveis: int) -> float:
+    """Fração de itens com maioria (≥2 iguais) se os juízes sorteassem a nota.
+
+    Existe porque a cobertura de maioria NÃO é corrigida por acaso e, sem esta
+    linha de base, é lida como se fosse concordância. Dois casos reais aqui:
+    com 3 juízes e escala binária a maioria é **100% por construção** — casa dos
+    pombos, 3 notas em 2 valores sempre repetem —, e com 3 juízes e escala
+    ternária o acaso já dá 78%."""
+    from itertools import product
+    if n_juizes < 2 or n_niveis < 1:
+        return float("nan")
+    casos = list(product(range(n_niveis), repeat=n_juizes))
+    com = sum(1 for c in casos
+              if max(c.count(v) for v in set(c)) >= 2)
+    return com / len(casos)
+
+
 def _majority(matrix):
-    """Cobertura de maioria: fração de itens com ≥2 juízes na MESMA nota, e a
-    amplitude média do trio (max−min por item)."""
+    """Cobertura de maioria: fração de itens com ≥2 juízes na MESMA nota, a
+    amplitude média (max−min por item) e a cobertura ESPERADA POR ACASO."""
     if matrix.shape[1] == 0:
-        return None, None
+        return None, None, None
     n_itens = matrix.shape[1]
     tem_maioria = 0
     amplitudes = []
@@ -131,7 +156,9 @@ def _majority(matrix):
         if counts.max() >= 2:
             tem_maioria += 1
         amplitudes.append(int(col.max() - col.min()))
-    return tem_maioria / n_itens, float(np.mean(amplitudes))
+    niveis = len(np.unique(matrix))
+    acaso = _maioria_por_acaso(matrix.shape[0], max(niveis, 2))
+    return tem_maioria / n_itens, float(np.mean(amplitudes)), acaso
 
 
 def main():
@@ -154,13 +181,39 @@ def main():
         for r in load_jsonl(fp):
             r["_config"] = Path(fp).stem.replace("judged_", "")
             records.append(r)
+    n_lidos = len(records)
+
+    # ── RUBRICA: nunca misturar escalas ─────────────────────────────────────
+    # Os judged_*.jsonl da rubrica 1..5 e os da escala mista tem o MESMO formato
+    # e podem ter os MESMOS nomes de juiz, entao pooling silencioso era possivel:
+    # kappa sobre notas 1..5 somadas a notas 0/1 nao mede nada. Cada bloco de
+    # notas agora carrega `_rubrica` (lib/judges.py). Registro sem o campo e da
+    # rubrica antiga, por eliminacao.
+    def _rubrica_do(r):
+        rs = {(s or {}).get("_rubrica", "1-5 (sem marcador)")
+              for s in (r.get("scores") or {}).values() if isinstance(s, dict)}
+        return rs.pop() if len(rs) == 1 else "MISTA NO MESMO REGISTRO"
+
+    por_rubrica = Counter(_rubrica_do(r) for r in records)
+    if len(por_rubrica) > 1:
+        print("! Ha mais de uma RUBRICA na pasta de resultados:")
+        for nome, n in por_rubrica.most_common():
+            print(f"    {n:5d} registros  rubrica {nome}")
+        alvo = por_rubrica.most_common(1)[0][0]
+        print(f"  Usando so a dominante ({alvo}) e DESCARTANDO o resto.")
+        print("  Para nao perder dado, arquive os julgamentos antigos:")
+        print("    mkdir -p eval/results/generation/arquivo-rubrica-antiga")
+        print("    mv eval/results/generation/judged_*.jsonl "
+              "eval/results/generation/arquivo-rubrica-antiga/   # os antigos")
+        records = [r for r in records if _rubrica_do(r) == alvo]
+    elif por_rubrica:
+        print(f"Rubrica: {por_rubrica.most_common(1)[0][0]}")
 
     # Juízes vêm dos PRÓPRIOS registros (robusto a trocas de painel: Gemma→Mistral
     # etc. não exigem mexer no config). Para não misturar painéis de rodadas
     # diferentes que coexistam na pasta, usa-se o CONJUNTO de juízes que pontua
     # junto no MAIOR número de registros (o painel dominante). Ordem de 1ª
     # aparição p/ saída estável.
-    from collections import Counter
     paineis = Counter()
     ordem = []
     for r in records:
@@ -180,14 +233,37 @@ def main():
     # mantém só os registros que têm o painel dominante (descarta rodadas antigas
     # com outro conjunto de juízes, se houver)
     painel_set = set(judges)
+    antes = len(records)
     records = [r for r in records
                if painel_set.issubset(
                    {j for j in r.get("scores", {})
                     if isinstance(r["scores"].get(j), dict)})]
+    # O descarte TEM de aparecer. A versao anterior filtrava e so imprimia o
+    # total depois, entao perder metade dos registros era invisivel.
+    if antes != len(records):
+        print(f"! {antes - len(records)} de {antes} registros descartados por nao "
+              f"terem o painel {', '.join(judges)}")
+    if n_lidos != len(records):
+        print(f"  (lidos {n_lidos}, em analise {len(records)})")
 
     pares = list(combinations(judges, 2))
     print(f"Juízes ({len(judges)}): {', '.join(judges)}  |  "
           f"{len(pares)} par(es)  |  {len(records)} respostas  |  {len(files)} configs")
+
+    # Notas que o juiz emitiu fora da escala do critetio foram rejeitadas na
+    # coleta (lib/judges.py) e nao entram em kappa/alpha. Contar aqui para o
+    # descarte nao ser invisivel: muitas rejeicoes significam juiz ignorando a
+    # rubrica, o que e problema de prompt, nao de concordancia.
+    fora = Counter()
+    for r in records:
+        for j, s in (r.get("scores") or {}).items():
+            if isinstance(s, dict):
+                for c in (s.get("_fora_escala") or {}):
+                    fora[(j, c)] += 1
+    if fora:
+        print(f"! {sum(fora.values())} notas fora da escala, rejeitadas na coleta:")
+        for (j, c), n in fora.most_common(8):
+            print(f"    {n:4d}  {j} / {c}")
 
     nb = cfg["metrics"]["significance"].get("agreement_bootstrap", 1000)
     out = ensure_dir(resolve(cfg["paths"]["results_dir"]) / "agreement")
@@ -212,11 +288,12 @@ def main():
     for crit in criteria:
         M, metas = _matrix(records, judges, crit)
         alpha = _kripp_overall(M)
-        cov, amp = _majority(M)
+        cov, amp, acaso = _majority(M)
         linhas_overall.append({"criterion": crit, "n": int(M.shape[1]),
                                "kripp_overall": alpha,
-                               "maioria_cobertura": cov, "amplitude_media": amp})
-        # divergências fortes do trio (amplitude ≥2) → adjudicação humana
+                               "maioria_cobertura": cov,
+                               "maioria_acaso": acaso, "amplitude_media": amp})
+        # divergências fortes no painel (amplitude ≥2) → adjudicação humana
         for k in range(M.shape[1]):
             col = M[:, k]
             if int(col.max() - col.min()) >= 2:
@@ -228,23 +305,31 @@ def main():
                     "question": r.get("question", "")[:120]})
     with open(out / "agreement_overall.csv", "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
-        w.writerow(["criterion", "n", "kripp_overall", "maioria_cobertura", "amplitude_media"])
+        w.writerow(["criterion", "n", "kripp_overall", "maioria_cobertura",
+                    "maioria_acaso", "amplitude_media"])
         for r in linhas_overall:
             w.writerow([r["criterion"], r["n"], _fmt(r["kripp_overall"]),
-                        _fmt(r["maioria_cobertura"]), _fmt(r["amplitude_media"])])
+                        _fmt(r["maioria_cobertura"]), _fmt(r["maioria_acaso"]),
+                        _fmt(r["amplitude_media"])])
 
     (out / "disagreements.json").write_text(
         json.dumps(disagreements, ensure_ascii=False, indent=2), encoding="utf-8")
 
     # ── Console ───────────────────────────────────────────────────────────────
     print("\n" + "=" * 72)
-    print("OVERALL por critério (Krippendorff α sobre os 3 juízes + maioria)")
+    print(f"OVERALL por critério (Krippendorff α sobre os {len(judges)} "
+          f"juízes + maioria)")
     print("=" * 72)
-    print(f"{'critério':<16}{'n':>5}{'Kripp.α':>10}{'maioria':>10}{'ampl.méd':>10}")
+    print(f"{'critério':<16}{'n':>5}{'Kripp.α':>10}{'maioria':>10}"
+          f"{'(acaso)':>10}{'ampl.méd':>10}")
     print("-" * 72)
     for r in linhas_overall:
         print(f"{r['criterion']:<16}{r['n']:>5}{_fmt(r['kripp_overall']):>10}"
-              f"{_pct(r['maioria_cobertura']):>10}{_fmt(r['amplitude_media']):>10}")
+              f"{_pct(r['maioria_cobertura']):>10}{_pct(r['maioria_acaso']):>10}"
+              f"{_fmt(r['amplitude_media']):>10}")
+    print("\n  'maioria' nao e corrigida por acaso — compare SEMPRE com a coluna")
+    print("  (acaso). Em criterio binario com 3 juizes o acaso e 100%: tres notas")
+    print("  em dois valores sempre repetem, entao a coluna nao informa nada ali.")
     print("=" * 72)
     print(_interpret_overall(linhas_overall))
 
@@ -255,7 +340,7 @@ def main():
               if r["par"] == f"{j1}×{j2}" and isinstance(r["kappa_w"], float)]
         media = sum(ks) / len(ks) if ks else None
         print(f"  {j1}×{j2:<14} κ̄ = {_fmt(media)}")
-    print(f"\n{len(disagreements)} divergências fortes do trio (amplitude≥2) "
+    print(f"\n{len(disagreements)} divergências fortes no painel (amplitude≥2) "
           f"→ {out/'disagreements.json'}")
     print(f"✓ {out/'agreement_pairs.csv'}")
     print(f"✓ {out/'agreement_overall.csv'}")
