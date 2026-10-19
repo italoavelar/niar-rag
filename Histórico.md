@@ -15,32 +15,95 @@
 > Os números aqui vêm do `Memoria.md`, que por sua vez cita arquivo e linha. **Para citar em artigo
 > ou slide, vá à fonte** — este documento é para entender, não para copiar número.
 
-## Como ler os números de multi-hop e comparativa
+## Como tudo é medido — leia antes de qualquer número
 
-Estes dois tipos precisam de **mais de um trecho** para serem respondidos, então um número só não
-diz nada. Sempre que aparecerem aqui, aparecem nas duas formas:
+Sem isto, dois números deste documento podem parecer contraditórios sendo os dois corretos.
+
+### Os dois graus dos qrels, e por que a diferença é enorme
+
+| Grau | O que é | Quem decidiu |
+|---|---|---|
+| **2** | o trecho **de onde a pergunta nasceu** — o gerador leu ele para escrever a pergunta | o gerador, e a revisão humana |
+| **1** | vizinho **posicional**: todos os trechos das páginas ±1 do trecho-fonte | **ninguém** — é auto-adicionado por `neighbors_same_doc(window=1)` |
+
+O grau 1 não é julgamento de relevância, é heurística de paginação. E ele é adicionado **só nas
+factuais**:
+
+| tipo | âncoras por pergunta (grau≥1) | só grau 2 | total de grau 1 |
+|---|---|---|---|
+| `factual` | **5** | **1** | 100 |
+| `multi_hop` | 2 | 2 | 5 |
+| `comparative` | 2 | 2 | 10 |
+
+**Toda métrica conjuntiva usa `min_grade=2`.** O `complete_evidence_at_k`
+(`eval/lib/metrics.py:142`) já faz isso por padrão; script que leia `g['qrels']` direto pega os dois
+graus e fica errado. Tamanho do estrago:
+
+| tipo | Joint Recall@5 exigindo grau≥1 | exigindo grau 2 |
+|---|---|---|
+| `factual` | 4/25 | **17/25** |
+| `multi_hop` | 2/25 | 2/25 |
+| `comparative` | 2/25 | 2/25 |
+
+**11 das 25 factuais exigem mais de 5 âncoras de grau≥1** — uma delas exige 11. Num top-5 elas são
+impossíveis por construção, e o "4/25" media defeito de anotação, não recuperação. Multi-hop e
+comparativa são imunes porque quase não têm grau 1.
+
+> ⚠️ **Números de factual em relatórios anteriores a 16/09 precisam ser reconferidos** — se foram
+> calculados sobre todos os graus, estão subestimados.
+
+### As duas formas de contar, para multi-hop e comparativa
 
 | Forma | O que conta | Para que serve |
 |---|---|---|
-| **≥1** | perguntas que trazem **pelo menos um** dos trechos necessários | mede se a busca *chegou perto* |
-| **as duas** | perguntas que trazem **todos** os trechos necessários | mede se a pergunta **foi respondida** |
+| **≥1** | perguntas que trazem **pelo menos um** trecho-fonte | mede se a busca *chegou perto* |
+| **Joint Recall@k** | perguntas que trazem **todos** os trechos-fonte | mede se a pergunta **foi respondida** |
 
-**A que decide é a segunda.** Metade da evidência não responde a pergunta: se o multi-hop precisa do
-Art. 5 e do Art. 12 e a busca traz só o Art. 5, a resposta sai incompleta ou errada.
+A segunda é a que decide. Metade da evidência não responde a pergunta. Foi confundir as duas que
+produziu o *"multi-hop resolvida em 84%"* — era o "≥1"; pela régua que decide eram 3 de 25.
 
-Foi confundir as duas que produziu o erro descrito em 1.3 — *"multi-hop resolvida em 84%"* era o
-"≥1"; pela régua que decide era 3 de 25.
+**"Joint Recall@k" é o nome da literatura** para o que o código chama de `complete_evidence_at_k`.
+Adotamos o nome, não uma métrica nova — é o termo que um revisor do KDD reconhece. Vantagem extra:
+como só verifica se as âncoras **conhecidas** estão no conjunto, é robusta ao julgamento incompleto
+dos qrels, ao contrário do nDCG.
+
+### O denominador
+
+Quando um número aparece como `x/50`, são **as 50 perguntas multi-evidência** (25 multi-hop + 25
+comparativas). Quando aparece como `x/25`, é um tipo só. As factuais nunca entram nas tabelas de
+multi-evidência.
+
+### O tamanho do contexto
+
+Comparação entre estratégias só vale **no mesmo tamanho de contexto**. Uma união de top-5 + top-5
+entrega até 10 trechos; compará-la com o top-5 de uma consulta única é trapaça. Por isso todas as
+tabelas de comparação trazem a coluna "trechos".
 
 ---
 
 ## Onde estávamos
 
 O artigo do WFA foi submetido em **14/08/2026** e está fechado. A partir daí a restrição "não quebrar
-o artigo" caducou, e o trabalho passou a ser preparar o próximo: um benchmark publicável, mirando o
-**KDD 2027, trilha Datasets & Benchmarks**.
+o artigo" caducou.
 
 A tese da dissertação é uma só: **o embedding aberto (BGE-m3) pode substituir o proprietário
 (gemini-embedding-001) que está em produção.** Tudo abaixo existe para responder isso com honestidade.
+
+### ⚠️ São DOIS artigos, com prazos e escopos diferentes — não confundir
+
+| | **JBCS** | **KDD 2027** |
+|---|---|---|
+| prazo | **dezembro/2026** | ciclo 2, **fevereiro/2027** |
+| trilha | artigo de pesquisa | **Datasets & Benchmarks** |
+| o que é | a pesquisa: o que medimos, o que descobrimos sobre medir recuperação de evidência distribuída | **o artefato**: o benchmark de 500 perguntas com julgamento de pool, publicado para outros usarem |
+| depende de | o que já está medido | Fases 0, 1 e 2 concluídas |
+
+O `benchmark_leme_500.md` é o plano do **artefato do KDD**. O JBCS de dezembro é outro texto, e o que
+o sustenta está principalmente nas Partes 1 a 4 deste documento — que já estão medidas.
+
+**Consequência prática de prazo:** o KDD tem fevereiro, o JBCS tem dezembro. Experimento novo de
+arquitetura ou de chunking não cabe em dezembro e não precisa caber — ele pertence ao segundo artigo,
+medido contra a régua que o primeiro constrói.
 
 ---
 
@@ -124,6 +187,17 @@ Mudar o recorte muda ids. A anotação morreria junto — só que o gabarito gua
 | **perdidas** | **0** |
 
 **Nenhuma reanotação humana.** Duas fusões legítimas ficaram para conferência à mão (`q0012`, `q0015`).
+
+> ⚠️ **Defeito separado, achado no caminho: o grau 1 das factuais.** O
+> `build_gold_manual.py` auto-adiciona grau 1 a todos os trechos das páginas vizinhas
+> (`neighbors_same_doc`, janela 1) — **só nas factuais**. Resultado: a factual tem **mediana de 5
+> âncoras, sendo 1 de grau 2**; multi-hop e comparativa têm 2 e 2. Esses vizinhos nunca foram
+> julgados por ninguém: são heurística de paginação, não relevância.
+>
+> Toda métrica conjuntiva precisa usar `min_grade=2` — o `complete_evidence_at_k`
+> (`eval/lib/metrics.py:142`) já faz isso por padrão. Nas multi-hop e comparativas a diferença é
+> pequena (5 e 10 âncoras de grau 1 no total); **na factual ela é enorme** e qualquer número
+> conjuntivo de factual calculado sobre todos os graus está errado.
 
 ---
 
@@ -301,6 +375,234 @@ resposta sobe o acerto em cerca de 55% relativo. No factual quase não muda — 
 
 Isso converge com 2.3 (multiplexar a consulta) — as duas evidências apontam para o mesmo lugar.
 
+### 4.1 O primeiro sinal positivo: recuperação por cobertura de evidências (16/09)
+
+**A ideia, e a mudança conceitual que a torna precisa.** Não é "decompor a pergunta" — é **decompor
+as necessidades de evidência**. A diferença decide o desenho:
+
+| | O que assume | O que faz com os resultados |
+|---|---|---|
+| decomposição de **pergunta** | as partes são sub-perguntas a responder | funde por RRF e **repontua contra a pergunta inteira** |
+| decomposição de **necessidade de evidência** | "para responder isto, o recuperador precisa achar A **e** B" | busca cada necessidade nos próprios termos e **une**, sem repontuar |
+
+Repontuar contra a pergunta inteira é coerente se você acha que está decompondo a *pergunta* — mas é
+justamente o que **desfaz** a decomposição: a competição volta a ser global e volta a ser vencida
+pelo lado dominante. Foi isso que matou o `decompose_eval.py`.
+
+**O resultado, comparado em tamanho de contexto igual** (o controle que decide — uma união de 10+10
+não pode ser comparada com um top-5):
+
+| contexto | consulta única | união das 2 necessidades |
+|---|---|---|
+| ~5–6 trechos | top-5 → **4/50** | top-3 cada (5,8) → **7/50** |
+| ~10 trechos | top-10 → **8/50** | top-5 cada (9,4) → **9/50** |
+| ~15 trechos | top-16 → **13/50** | top-8 cada (14,7) → **15/50** |
+| ~19 trechos | top-20 → **14/50** (20 trechos) | top-10 cada → **19/50** (18,2 trechos) |
+
+A união ganha nas quatro faixas, e na melhor delas entrega **mais cobertura com menos contexto**.
+Por tipo, no melhor ponto: `multi_hop` 9/25 → **12/25**, `comparative` 5/25 → **7/25**. Latência
+praticamente idêntica (322 → 327 ms) — as necessidades estão em cache e o produto de matriz domina.
+
+**Mas ainda não dá para provar.** Teste pareado de McNemar entre união(10+10) e única(top-20):
+7 discordantes a favor contra 2, **p = 0,18**. Com n=50 não há poder estatístico.
+
+Quanto faltaria: **15 discordantes** na mesma proporção dariam p = 0,035 — o que pede ~83 perguntas
+multi-evidência. **O benchmark de 500 terá 250**, e nele esse efeito sairia em p ≈ 0,0002.
+
+> **É o melhor argumento que apareceu para priorizar o benchmark.** O experimento não falhou; a
+> amostra atual é que não consegue decidir.
+
+⚠️ **Leia o 4.2 antes de agir sobre isto.** O ganho acima está concentrado nas perguntas cujas duas
+âncoras já estavam ao alcance. Num teto realista de 10 trechos (5 por necessidade) a decomposição
+acrescenta **uma** pergunta — de 8/50 para 9/50. Ela só se destaca quando o contexto cresce além de
+15 trechos, e mesmo lá p = 0,18.
+
+**Duas ressalvas.**
+
+- **O detector é oráculo.** Usamos o rótulo `question_type` do gabarito para escolher quais perguntas
+  decompor. O número acima é o **teto** do que um detector real entregaria.
+- **O MRR da comparativa piora** (0,279 → 0,184). Os trechos certos entram no conjunto, mas não no
+  topo, porque a união intercala as duas necessidades. Para Joint Recall não importa; para a resposta
+  final, se o gerador for sensível à ordem, pode importar.
+
+Script: `eval/tools/recuperacao_por_cobertura.py`.
+
+---
+
+### 4.2 Onde o problema realmente está — e por que quase nada funciona (16/09)
+
+**Primeiro, como ler os números desta parte.** O denominador é sempre **as 50 perguntas
+multi-evidência** (25 multi-hop + 25 comparativas). As factuais não entram: elas precisam de um
+trecho só e já vão bem. "Trechos" é o tamanho do contexto entregue ao gerador.
+
+**Subir o orçamento NÃO resolve.** Joint Recall com consulta única, conforme se abre o k:
+
+| k | `multi_hop` | `comparative` |
+|---|---|---|
+| **5 — produção** | 2/25 | 2/25 |
+| 10 | 4/25 | 4/25 |
+| 20 | 9/25 | 5/25 |
+| 50 | 17/25 | 8/25 |
+| 100 | 18/25 | **13/25** |
+
+Para a comparativa chegar a 13/25 é preciso **k=100** — contexto impossível para geração. Dobrar de
+5 para 10 compra **duas perguntas**.
+
+> Eu havia escrito que "o orçamento é o lever principal". **Estava errado**, e a Karol apontou. O
+> orçamento compra pouco e satura.
+
+**O que realmente bloqueia: a âncora mais difícil está longe demais.** Posição da pior âncora de cada
+pergunta, na consulta única:
+
+| | além do top-20 | além do top-100 |
+|---|---|---|
+| `multi_hop` | 16/25 | **7/25** |
+| `comparative` | 20/25 | **12/25** |
+
+Nas comparativas as piores âncoras estão em 151, 157, 180, 247, 258, 324, 337, 344, 422, 574, 922 e
+**1.272**. Como Joint Recall é conjunção, **a âncora mais fraca governa o resultado**: ter uma em
+primeiro lugar não vale nada se a outra está em 1.272.
+
+Isso explica de uma vez por que reranking sobre top-100 não move a comparativa (não há o que
+promover), por que o orçamento satura, e por que a cota e o PRF falharam.
+
+**E a decomposição também não resolve esses casos.** Das 19 perguntas com âncora além do top-100, a
+busca por necessidade traz a âncora para o top-10 em **1**. Nas comparativas, **zero de 12**.
+
+> **São dois problemas diferentes, e estávamos tratando como um:**
+>
+> | | quantas | o que resolve |
+> |---|---|---|
+> | as duas âncoras ao alcance, mas a consulta única só pega uma | 31/50 | **decomposição por necessidade** (4.1) |
+> | uma âncora fora de alcance (pos. 100–1272) | **19/50** | nada do que foi testado |
+
+**Parte do segundo grupo é anotação ruim, não falha de busca.** Lendo os casos: a `q0077` pergunta
+sobre *direitos das pessoas sobre seus dados* e tem uma âncora sobre **sistemas de armas autônomas**;
+a `q0099` pergunta sobre *uso secundário de dados* e duas das três âncoras são sobre **parcerias
+público-privadas**. Medindo o suporte da âncora à resposta-referência por similaridade, a tendência
+existe mas é modesta (mediana 0,698 nas alcançadas vs 0,659 nas distantes; 40% das distantes abaixo
+do limiar).
+
+**Conclusão:** não dá para afirmar que as 19 sejam erro de anotação, mas dá para afirmar que
+**algumas são, e que decidir isso exige julgamento humano sobre o pool** — que é exatamente a Fase 2.
+Otimizar recuperação contra um gabarito onde parte das âncoras não responde a pergunta é otimizar
+contra ruído.
+
+---
+
+### 4.3 O que estávamos medindo errado — e por que isso NÃO é contribuição
+
+Depois de refutar cota, PRF, multiplexação, teto e roteamento, e de ver todo método parar em 2–6/25,
+a pergunta deixou de ser *"que método falta?"* e passou a ser **"a busca está falhando, ou a medida
+está?"**.
+
+**O teste.** Para cada âncora de grau 2 fora do top-k: o top-k contém um trecho **do mesmo documento
+exigido** que sustenta a resposta-referência tão bem quanto a âncora?
+
+| | top-5 | top-10 |
+|---|---|---|
+| âncoras de grau 2 que ficaram de fora | 78 | 68 |
+| **o top-k já trazia evidência equivalente** | **38 (49%)** | **39 (57%)** |
+| falha real de recuperação | 40 (51%) | 29 (43%) |
+
+Cerca de **metade dos "erros" são acertos não julgados**. Isso explica o platô de 2–6/25 de todo
+método, o teto de 6/25 do roteador-oráculo e a inércia do reranking: a régua tinha teto.
+
+> **Limitação:** "sustenta a resposta" foi medido por similaridade do BGE-m3 com a
+> resposta-referência — o mesmo modelo avaliado, com risco de circularidade. Indicativo, não
+> veredito. O veredito é julgamento humano/LLM sobre o pool, que é a Fase 2.
+
+#### ⚠️ Isto é higiene de método, não descoberta — e o artigo precisa tratar assim
+
+Os quatro problemas que corrigimos **já eram conhecidos da área**. Corrigi-los era necessário; vendê-los
+como achado não sobreviveria a um revisor:
+
+| o que corrigimos | por que não é novidade |
+|---|---|
+| "≥1 trecho" superestima multi-hop | avaliação conjuntiva de evidência é padrão desde o **HotpotQA (2018)**, que reporta *Joint EM/F1* sobre *supporting facts* exatamente por isso; 2WikiMultihopQA e MuSiQue seguem a mesma linha |
+| grau 1 contaminando a métrica | defeito da **nossa** anotação (`neighbors_same_doc`), não fenômeno |
+| 49% de erros não julgados | **incompletude de pool** é assunto clássico de RI; é a razão de a metodologia TREC exigir declarar a profundidade do pool |
+| seis métodos indistinguíveis | consequência dos anteriores |
+
+**Nós estávamos medindo errado; a área não.** No artigo, isso entra em **Método** — *"seguimos a
+prática estabelecida para avaliação de evidência conjuntiva (HotpotQA; pooling TREC)"* — em uma
+página, com citação. Nunca em Contribuições.
+
+*(Referências citadas de memória: confirmar nos artigos antes de submeter.)*
+
+#### O que sobra, e é real
+
+- **O artefato.** Não há benchmark de RAG sobre normas de saúde e governança de IA em **português**,
+  bilíngue PT/EN, com evidência anotada e pool julgado. Trilha de *Datasets & Benchmarks* não exige
+  novidade metodológica — exige artefato útil, documentado e reusável. É o **KDD**.
+- **Achados de domínio**, medidos aqui: trechos da mesma norma têm coesão de **0,758** contra 0,495
+  entre normas, e isso monopoliza o top-5 (§3.3); a âncora mais fraca das comparativas cai entre as
+  posições 100 e 1.272 (§4.2); 44% do acervo tem página faltando (Parte 5).
+- **A comparação BGE × Gemini** neste domínio — a tese, e o **JBCS**.
+- **Os resultados negativos**, com mecanismo: seis estratégias refutadas e o porquê de cada uma.
+
+#### A decisão que fica
+
+**Nenhum experimento novo de recuperação antes de o pool ser julgado.** Não porque os métodos sejam
+ruins — porque **não há como distinguir um bom de um ruim** com metade dos erros sendo falsos erros.
+Os já feitos estão registrados com script e se reavaliam em uma tarde quando a régua funcionar.
+
+---
+
+## Parte 4.5 — O que o LEME É (17/09)
+
+Até aqui o documento mede **o que o LEME recupera**. Esta seção olha **o que ele é** — foi a primeira
+vez que alguém leu a arquitetura em vez do resultado, e apareceram duas coisas.
+
+### O LEME é agentic na arquitetura e tradicional no comportamento
+
+O grafo em `agent/agent.py` tem ciclo:
+
+```
+chat_node → (o LLM pediu tool?) → tools_chat → chat_node → ...
+                                → END
+```
+
+O LLM **pode** decidir se busca, **escreve a própria query** (logo, pode reformular) e **pode buscar
+de novo** depois de ver o resultado. Recuperação é ferramenta, não passo fixo: isso é agentic RAG por
+definição.
+
+Não existe: planejamento, decomposição, reflexão/verificação, múltiplos agentes, classificação por
+complexidade, reranking.
+
+### A contradição: a iteração existe e está desligada por instrução
+
+O `CHAT_SYSTEM_PROMPT` (`agent/utils/prompt.py`) **nunca menciona a ferramenta**. Não diz quando
+buscar, nem que se pode buscar de novo. E diz o contrário:
+
+> *"Se a informação não estiver disponível ou for insuficiente, informe claramente: 'Não encontrei
+> informações suficientes nas fontes recuperadas para responder com segurança.'"*
+
+**Quando a recuperação falha, o prompt manda desistir — não manda buscar outra vez.** A capacidade de
+iterar existe no grafo e está desligada por instrução.
+
+É um **CRAG invertido**: em vez de verificar a suficiência e reagir, verifica e capitula.
+
+É a mudança mais barata do projeto inteiro — uma frase no prompt liga a iteração que o código já
+sustenta — e é testável com o benchmark.
+
+### O `score_threshold` que a avaliação nunca simulou
+
+```python
+limit=5,
+score_threshold=0.60      # agent/utils/tools.py:134
+```
+
+A produção descarta qualquer trecho abaixo de 0,60 de similaridade. **A avaliação roda sem esse
+corte** — então estamos medindo um sistema diferente do que está no ar.
+
+Medido no BGE (a produção usa Gemini, então os valores absolutos diferem — o formato do risco é que
+importa): **33% dos trechos-fonte de grau 2 ficam abaixo de 0,60**, e **4 das 75 perguntas voltariam
+com zero trechos**.
+
+Um corte duro em cosseno descarta evidência em silêncio. Antes de mexer nele, a avaliação precisa
+passar a simulá-lo — senão não se sabe o que ele custa.
+
 ---
 
 ## Parte 5 — O estado do acervo hoje
@@ -370,13 +672,17 @@ no documento certo e sem anotação, um trecho que casa com a resposta melhor qu
 
 **Recuperação:**
 
-1. **HyDE com hipótese gerada** — é a única direção com sinal (Parte 4). Falta medir se o ganho do
-   oráculo sobrevive a uma hipótese real. Aplicar a mesma expansão aos dois braços, para não
-   contaminar a comparação da tese.
-2. **Subir o top-k de produção de 5 para 8** (2.2) — leva multi-hop de 3/25 para 7/25. Medir junto o
+1. **Confirmar a recuperação por cobertura no benchmark de 500** (4.1) — o efeito existe e é
+   consistente, mas p = 0,18 com n=50. Não aplicar em produção antes disso.
+2. **Detector de pergunta multi-evidência** — hoje o experimento usa o rótulo do gabarito. Sem um
+   detector real, o método não sai do papel. Vale tentar um sintático antes de um LLM.
+3. **HyDE com hipótese gerada** — ainda com sinal (Parte 4), mas agora **em segundo plano**: ataca a
+   lacuna de vocabulário, enquanto a cobertura ataca a estrutura da pergunta. As duas precisam de LLM
+   em produção, e a cobertura já tem resultado medido.
+4. **Subir o top-k de produção de 5 para 8** (2.2) — leva multi-hop de 3/25 para 7/25. Medir junto o
    efeito de mais contexto sobre a qualidade da resposta gerada.
-3. **Reranker mais forte (F3)** — o gargalo voltou a ser reordenação, não recuperação.
-4. **Fine-tuning do BGE (E3)** — o gatilho está acionado (o gap passa a margem por 5×), mas o F3 vem
+5. **Reranker mais forte (F3)** — o gargalo voltou a ser reordenação, não recuperação.
+6. **Fine-tuning do BGE (E3)** — o gatilho está acionado (o gap passa a margem por 5×), mas o F3 vem
    antes por ser mais barato. Regra: **o gold set não pode ser dado de treino** — gerar pares
    sintéticos e manter as 75 como teste cego.
 
