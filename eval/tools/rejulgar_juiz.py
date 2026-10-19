@@ -64,15 +64,22 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--config")
     ap.add_argument("--juiz-id", required=True, help="id do modelo no OpenRouter")
-    ap.add_argument("--nome", default="mistral", help="nome do juiz no registro")
+    # --nome e --remover eram "mistral" e "gemma" por padrao: fossilizavam um
+    # painel que ja mudou duas vezes. Errar o --nome rotula o juiz errado no
+    # dado, e o --remover apagava um juiz sem ninguem pedir. Agora o nome e
+    # obrigatorio e remover exige dizer quem.
+    ap.add_argument("--nome", required=True,
+                    help="nome do juiz no registro (ex.: glm, mistral)")
     ap.add_argument("--provider", default="openrouter")
-    ap.add_argument("--remover", default="gemma", help="juiz a descartar (ou 'nenhum')")
+    ap.add_argument("--remover", default="nenhum",
+                    help="juiz a DESCARTAR dos registros; o padrao e 'nenhum', "
+                         "isto e, so acrescenta")
     ap.add_argument("--limit", type=int,
-                    help="TESTE descartável: grava em *_TESTE.jsonl, mantém gemma")
+                    help="TESTE descartável: grava em *_TESTE.jsonl e NÃO aplica o --remover")
     ap.add_argument("--limit-real", type=int,
                     help="TESTE reaproveitável: julga os N primeiros NO arquivo real "
-                         "(com .bak, remove gemma). O comando completo depois "
-                         "continua de onde parou via checkpoint.")
+                         "(com .bak, aplica o --remover). O comando completo "
+                         "depois continua de onde parou via checkpoint.")
     ap.add_argument("--max-tokens", type=int, default=3072)
     args = ap.parse_args()
     if args.limit and args.limit_real:
@@ -101,7 +108,7 @@ def main():
     for fp in arquivos:
         regs_all = [json.loads(l) for l in open(fp, encoding="utf-8") if l.strip()]
         if args.limit:
-            # teste descartável: só os N primeiros, grava em cópia, mantém gemma
+            # teste descartável: só os N primeiros, grava em cópia, sem remover
             regs = regs_all[:args.limit]
             destino = fp.with_name(fp.stem + "_TESTE.jsonl")   # NÃO sobrescreve
         else:
