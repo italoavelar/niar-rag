@@ -263,9 +263,19 @@ def main():
     # context_text e removido antes de salvar.
     SEM_CTX = {"faithfulness", "hallucination"}
     neutralizados = 0
+    # Um registro sem contexto num cenario que DEVERIA ter e outra coisa: nao e
+    # criterio indefinido, e falha de recuperacao, e seria escondida aqui — o
+    # criterio sairia da conta como "nao se aplica" em vez de aparecer como
+    # resposta sem material. No dado de hoje nao acontece (as 300 perguntas do
+    # export tem 5 trechos cada), mas um limiar de score na recuperacao, como o
+    # 0,60 que existiu em producao, faria aparecer.
+    sem_ctx_inesperado = Counter()
     for r in records:
         if r.get("context_chunk_ids"):
             continue
+        cen = r.get("cenario")
+        if cen is not None and cen != "norag":
+            sem_ctx_inesperado[cen] += 1
         for s in (r.get("scores") or {}).values():
             if not isinstance(s, dict):
                 continue
@@ -277,6 +287,10 @@ def main():
         print(f"! {neutralizados} notas de {', '.join(sorted(SEM_CTX))} marcadas "
               f"como 'na': sao de registros SEM contexto, onde o criterio nao e "
               f"definido")
+    for cen, n in sem_ctx_inesperado.most_common():
+        print(f"! {n} registros do cenario '{cen}' vieram SEM contexto. Isso nao e "
+              f"criterio indefinido, e FALHA DE RECUPERACAO: a resposta foi gerada "
+              f"sem material. Investigue antes de ler a concordancia desses.")
 
     pares = list(combinations(judges, 2))
     print(f"Juízes ({len(judges)}): {', '.join(judges)}  |  "
