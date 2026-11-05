@@ -165,7 +165,8 @@ def _escala_txt(c: str, na=()) -> str:
     deixou 301 julgamentos sem nota e em 236 deles a justificativa alegava que
     "nao ha resposta-referencia" -- alegacao FALSA, a referencia estava no
     prompt e os outros tres juizes a leram e pontuaram. O llama deixou 210, e
-    em 206 o motivo era outro: "o sistema se recusou a responder", tratado como
+    em 183 o motivo era outro: a resposta do sistema "nao fornece informacoes"
+    a comparar -- 42 dessas dizendo que ele se recusou --, tratado como
     nao-avaliavel quando a rubrica manda 1 (factualmente errada). Oferecer a
     saida em todo lugar convidou a usa-la. Agora o esquema de saida so admite
     "na" onde a rubrica admite, e so os numeros onde ela exige numero."""
@@ -204,14 +205,21 @@ def _prompt(record: dict, criteria: List[str]) -> str:
                          "que está presente e basta.")
     elif record.get("should_answer") and cen == "norag":
         # SEM CONTEXTO E COM RESPOSTA, NO BRACO `norag`. A frase antiga
-        # dizia "TEM resposta no contexto" enquanto o bloco vinha VAZIO — contradicao
-        # direta, e os juizes se dividiram ao resolve-la: mistral e llama
-        # responderam "na" em correctness ("nao consigo avaliar"), gemini e glm
-        # ignoraram a frase e compararam com a referencia. Nenhum dos dois
-        # estava errado; o enunciado nao tinha resposta unica. Medido em 05/11:
-        # 514 registros a refazer, 809 notas no nivel do criterio
-        # (correctness 396 norag + 118 rag; completeness 238 + 57), e o n do
-        # alpha de correctness caindo de 300 para 91 no qwen3_27b_norag.
+        # dizia "TEM resposta no contexto" enquanto o bloco vinha VAZIO —
+        # contradicao direta, e esta linha a desfaz. Mas a contradicao NAO
+        # explica os abandonos: lidas as 514 justificativas de correctness sem
+        # nota (05/11), o mistral alega em 236 de 301 que falta a
+        # resposta-referencia -- FALSO, ela estava no prompt e os outros tres a
+        # pontuaram -- e o llama, em 183 de 210, trata a resposta vazia do
+        # sistema como nao-avaliavel, quando a rubrica manda 1. Sao dois modos
+        # de falha e nenhum depende do braco; o que os convidava era o esquema
+        # de saida oferecer "na" em toda chamada, consertado em _escala_txt.
+        # Tamanho do estrago: 809 notas de criterio em 317 registros
+        # (correctness 396 norag + 118 rag; completeness 238 + 57), 514
+        # chamadas para refazer. O n do alpha NAO cai -- 224 dos 225
+        # respondiveis do qwen3_27b_norag ainda tem dois juizes ou mais --, mas
+        # os quatro juizes sobram em so 91 deles, contra 181 no braco rag do
+        # mesmo gerador. A perda e de profundidade do painel, nao de n.
         answerability = ("Esta pergunta TEM resposta no acervo, mas ESTE caso e "
                          "do braço `norag`, SEM recuperação: o sistema respondeu de "
                          "memória, sem contexto, de propósito. Não há contexto "
