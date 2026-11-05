@@ -30,6 +30,19 @@ from lib.common import load_config, resolve, setup_io          # noqa: E402
 from lib.llm_clients import LLMClient                          # noqa: E402
 from lib.judges import judge_answer                            # noqa: E402
 
+
+def _nao_aplicaveis_no_registro(r: dict) -> set:
+    """Criterios que a rubrica marca "na" neste registro, usando so o que
+    SOBREVIVE no judged_*.jsonl: o context_text e removido antes de salvar,
+    entao a presenca de contexto e lida do context_chunk_ids."""
+    from lib.judges import CONDICIONAIS, SEM_CONTEXTO
+    fora = set()
+    if not (r.get("reference_answer") or "").strip():
+        fora |= CONDICIONAIS
+    if not r.get("context_chunk_ids"):
+        fora |= SEM_CONTEXTO
+    return fora
+
 GERACAO_DIR = "experimento_embedding/geracao"
 RESP = "top5_respondiveis.jsonl"
 IRR  = "top5_irrespondiveis.jsonl"
@@ -80,6 +93,15 @@ def main():
                     help="TESTE reaproveitável: julga os N primeiros NO arquivo real "
                          "(com .bak, aplica o --remover). O comando completo "
                          "depois continua de onde parou via checkpoint.")
+    ap.add_argument("--completar", nargs="+", metavar="CRITERIO",
+                    help="COMPLETA criterios faltantes de um juiz que JA esta "
+                         "nos registros, em vez de acrescentar juiz novo. "
+                         "Processa so os registros em que a nota do juiz para "
+                         "algum destes criterios nao e inteiro valido (ex.: "
+                         "ficou 'na' ou foi rejeitada), e sobrescreve SO esses "
+                         "criterios, preservando os demais. O prompt enviado e "
+                         "o completo, com os sete criterios, para a condicao "
+                         "ser a mesma da coleta original.")
     ap.add_argument("--max-tokens", type=int, default=3072)
     args = ap.parse_args()
     if args.limit and args.limit_real:
@@ -98,7 +120,9 @@ def main():
 
     arquivos = sorted(gen_dir.glob("judged_*.jsonl"))
     arquivos = [a for a in arquivos if not a.name.endswith("_TESTE.jsonl")]
-    print(f"Juiz novo: {args.nome} ({args.juiz_id})")
+    print(f"Juiz: {args.nome} ({args.juiz_id})"
+          + (f"  [COMPLETANDO {', '.join(args.completar)}]"
+             if args.completar else "  [juiz NOVO]"))
     print(f"Arquivos: {len(arquivos)} | remove: {args.remover}"
           + ("  [MODO TESTE: grava em *_TESTE.jsonl, não toca nos originais]"
              if args.limit else ""))
@@ -128,7 +152,22 @@ def main():
             # regravado intacto e o comando completo o pega depois (checkpoint).
             if n_real is not None and julgados >= n_real:
                 break
-            if args.nome in r.get("scores", {}):
+            if args.completar:
+                atual = (r.get("scores") or {}).get(args.nome)
+                if not isinstance(atual, dict):
+                    continue                  # juiz nao esta neste registro
+                # "na" LEGITIMO nao e falta: nas irrespondiveis nao existe
+                # resposta-referencia, e nos registros sem contexto nao existe
+                # contexto, entao a rubrica marca "na" de proposito. Sem este
+                # filtro o modo processava as 75 irrespondiveis de cada arquivo
+                # — 300 chamadas por juiz, 1.200 no total, para reescrever "na"
+                # com "na".
+                faltando = [c for c in args.completar
+                            if not isinstance(atual.get(c), int)
+                            and c not in _nao_aplicaveis_no_registro(r)]
+                if not faltando:
+                    continue                  # checkpoint: nada a completar
+            elif args.nome in r.get("scores", {}):
                 continue                      # checkpoint: já tem o juiz novo
             julgados += 1
             # reconstrói o contexto que o juiz precisa
@@ -136,7 +175,24 @@ def main():
             r["context_text"] = (_contexto_dos_trechos(tre)
                                  if r.get("cenario") == "rag" else "")
             nota = judge_answer(cli, r, criteria)
-            r.setdefault("scores", {})[args.nome] = nota
+            if args.completar:
+                # mescla: so os criterios pedidos entram, o resto do bloco fica
+                # como estava. Reescrever o bloco inteiro trocaria notas que
+                # estavam boas por notas de uma segunda chamada, e aí o arquivo
+                # passaria a misturar duas coletas sem marcacao.
+                alvo = r["scores"][args.nome]
+                for c in faltando:
+                    if c in nota:
+                        alvo[c] = nota[c]
+                        just = (nota.get("_justifications") or {}).get(c)
+                        if just:
+                            alvo.setdefault("_justifications", {})[c] = just
+                    if (nota.get("_fora_escala") or {}).get(c) is not None:
+                        alvo.setdefault("_fora_escala", {})[c] = nota["_fora_escala"][c]
+                alvo["_completado"] = sorted(
+                    set(alvo.get("_completado", [])) | set(faltando))
+            else:
+                r.setdefault("scores", {})[args.nome] = nota
             r.pop("context_text", None)
             if not args.limit and args.remover and args.remover != "nenhum":
                 r["scores"].pop(args.remover, None)   # no teste descartável, mantém tudo
