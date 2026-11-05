@@ -193,7 +193,15 @@ def _prompt(record: dict, criteria: List[str]) -> str:
     fields = ", ".join(campos)
     ref = record.get("reference_answer", "") or "(não se aplica — pergunta sem resposta)"
     na = _nao_aplicaveis(record)
-    regra_na = ""
+    # Quando NADA e inaplicavel, diz isso de forma POSITIVA. Antes o prompt
+    # simplesmente nao falava do assunto, e o silencio nao bastou: medido em
+    # 05/11, o mistral respondeu "na" em 85 julgamentos do cenario rag e o llama
+    # em 33, onde contexto e referencia estavam os dois presentes e nao havia
+    # contradicao nenhuma a resolver. Sao 118 dos 514 a refazer. A regra estava
+    # implicita nas ancoras; agora e explicita nos dois sentidos.
+    regra_na = ("TODOS os critérios se aplicam neste caso: pontue os sete, "
+                "nenhum é \"na\". O contexto e a resposta-referência estão "
+                "ambos presentes abaixo.\n\n")
     if na:
         regra_na = ("NÃO PONTUE estes critérios neste caso, responda \"na\" neles: "
                     + ", ".join(na) + ". Falta o insumo que eles comparam "
