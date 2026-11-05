@@ -226,11 +226,29 @@ judges:
     # aberto disponível. Consequência para a Fase 2: se o juiz mudar depois que
     # um lote for julgado, a concordância entre juízes não pode ser calculada —
     # lote julgado por modelos diferentes não é comparável.
-    # O 04_agreement descobre os juizes dos PROPRIOS registros, entao trocar o
-    # painel aqui nao exige mexer na analise — mas lote julgado por painel
-    # diferente nao e comparavel, e a Etapa 04 agora separa por painel E por
-    # rubrica, reportando o que descartou. Com 3+ juizes ela passa a reportar
-    # alpha de Krippendorff sobre todos de uma vez, que e o estimador correto.
+    # ⚠️  ESTE PAINEL ESTA ERRADO E O CODIGO SE RECUSA A RODAR COM ELE.
+    #
+    # `qwen` e `gptoss` abaixo sao exatamente os dois GERADORES da matriz
+    # (generation.generators), entao usa-los como juizes faria o gptoss julgar o
+    # gptoss — vies de auto-preferencia, que e o motivo de os juizes serem de
+    # familia diferente dos geradores. O build_judges() em lib/judges.py levanta
+    # ValueError se um juiz colidir com um gerador, de proposito.
+    #
+    # O PAINEL REAL, pelos julgamentos de 23/10 em results/generation/, e de
+    # QUATRO juizes no OpenRouter: llama, glm, mistral e gemini. Os ids exatos
+    # nao estao no repositorio porque o rejulgar_juiz.py recebe o id por
+    # --juiz-id na linha de comando; so dois aparecem em docstring:
+    #     mistralai/mistral-small-3.2-24b-instruct
+    #     google/gemini-2.5-flash
+    # Faltam os ids de llama e glm. Preencher aqui com os quatro, assim:
+    #
+    #     - name: "llama"
+    #       provider: "openrouter"
+    #       model: "<id>"
+    #
+    # O 04_agreement descobre os juizes dos PROPRIOS registros, entao a ANALISE
+    # do que ja foi julgado funciona mesmo com este bloco errado — mas rodar a
+    # matriz de novo exige corrigir o painel.
     - name: "qwen"
       provider: "groq"
       model: "qwen/qwen3.8-27b"

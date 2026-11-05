@@ -35,7 +35,14 @@ from collections import Counter
 from itertools import combinations
 from pathlib import Path
 
+import warnings
+
 import numpy as np
+
+# Spearman em vetor constante e indefinido por definicao — acontece quando
+# um juiz da a MESMA nota a tudo num criterio binario, que e caso normal
+# aqui. O codigo ja trata o nan; o aviso so sujava a saida.
+warnings.filterwarnings('ignore', message='An input array is constant')
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from lib.common import load_config, load_jsonl, resolve, ensure_dir, setup_io
@@ -246,6 +253,31 @@ def main():
     if n_lidos != len(records):
         print(f"  (lidos {n_lidos}, em analise {len(records)})")
 
+    # ── criterios indefinidos sem contexto ──────────────────────────────────
+    # faithfulness e hallucination medem sustentacao NO CONTEXTO. No cenario
+    # norag o contexto e vazio por desenho, e a nota ali e arbitraria: medido em
+    # 05/11, alpha de faithfulness no norag = 0,145 contra 0,262 no rag, com
+    # distribuicao bimodal. A coleta (lib/judges.py) ja grava "na" nesses casos;
+    # isto aqui cobre o dado JA COLETADO, que tem inteiro no lugar.
+    # `context_chunk_ids` vazio e o sinal que sobrevive no arquivo — o
+    # context_text e removido antes de salvar.
+    SEM_CTX = {"faithfulness", "hallucination"}
+    neutralizados = 0
+    for r in records:
+        if r.get("context_chunk_ids"):
+            continue
+        for s in (r.get("scores") or {}).values():
+            if not isinstance(s, dict):
+                continue
+            for c in SEM_CTX:
+                if isinstance(s.get(c), int):
+                    s[c] = "na"
+                    neutralizados += 1
+    if neutralizados:
+        print(f"! {neutralizados} notas de {', '.join(sorted(SEM_CTX))} marcadas "
+              f"como 'na': sao de registros SEM contexto, onde o criterio nao e "
+              f"definido")
+
     pares = list(combinations(judges, 2))
     print(f"Juízes ({len(judges)}): {', '.join(judges)}  |  "
           f"{len(pares)} par(es)  |  {len(records)} respostas  |  {len(files)} configs")
@@ -333,13 +365,65 @@ def main():
     print("=" * 72)
     print(_interpret_overall(linhas_overall))
 
+    # ── 3) por CENARIO: o agregado infla quando os bracos diferem ───────────
+    # Com rag e norag no mesmo pool, os juizes concordam "de graca" que a
+    # resposta sem contexto e pior, e essa concordancia ENTRE bracos entra no
+    # alpha como se fosse concordancia sobre a NOTA. Medido em 05/11:
+    # faithfulness da 0,413 no agregado, 0,262 no rag e 0,145 no norag — o
+    # agregado e maior que os dois. E o mesmo artefato de agregacao do k fixo no
+    # experimento de recorte e da composicao do acervo.
+    cenarios = [c for c in dict.fromkeys(r.get("cenario") for r in records)
+                if c is not None]
+    if len(cenarios) > 1:
+        print("\n" + "=" * 72)
+        print("OVERALL POR CENÁRIO — é esta a leitura honesta")
+        print("=" * 72)
+        cab = f"{'critério':<18}{'agregado':>12}" + "".join(
+            f"{c[:10]:>14}" for c in cenarios)
+        print(cab)
+        print("-" * len(cab))
+        linhas_cen = []
+        infladas = []
+        for crit in criteria:
+            agg = next((r["kripp_overall"] for r in linhas_overall
+                        if r["criterion"] == crit), None)
+            vals = {}
+            for cen in cenarios:
+                sub = [r for r in records if r.get("cenario") == cen]
+                M, _ = _matrix(sub, judges, crit)
+                vals[cen] = _kripp_overall(M)
+            linha = f"{crit:<18}{_fmt(agg):>12}"
+            for cen in cenarios:
+                n = sum(1 for r in records if r.get("cenario") == cen)
+                linha += f"{_fmt(vals[cen]):>14}"
+            print(linha)
+            linhas_cen.append({"criterion": crit, "agregado": agg, **vals})
+            reais = [v for v in vals.values() if isinstance(v, float)]
+            if isinstance(agg, float) and reais and agg > max(reais) + 0.02:
+                infladas.append((crit, agg, max(reais)))
+        with open(out / "agreement_por_cenario.csv", "w", newline="",
+                  encoding="utf-8") as f:
+            w = csv.writer(f)
+            w.writerow(["criterion", "agregado"] + cenarios)
+            for r in linhas_cen:
+                w.writerow([r["criterion"], _fmt(r["agregado"])] +
+                           [_fmt(r.get(c)) for c in cenarios])
+        if infladas:
+            print("\n! O α AGREGADO ESTÁ INFLADO nestes critérios — ele é maior que")
+            print("  o de qualquer cenário isolado, o que significa que parte da")
+            print("  concordância vem de os braços terem qualidade diferente, não de os")
+            print("  juízes concordarem na nota. Reporte o valor POR CENÁRIO:")
+            for crit, agg, melhor in infladas:
+                print(f"    {crit:<18} agregado {agg:.3f}  >  melhor cenário {melhor:.3f}")
+        print(f"✓ {out/'agreement_por_cenario.csv'}")
+
     print("\n" + "-" * 72)
     print("POR PAR — κ quadrático médio (detalhe em agreement_pairs.csv)")
     for (j1, j2) in pares:
         ks = [r["kappa_w"] for r in linhas_par
               if r["par"] == f"{j1}×{j2}" and isinstance(r["kappa_w"], float)]
         media = sum(ks) / len(ks) if ks else None
-        print(f"  {j1}×{j2:<14} κ̄ = {_fmt(media)}")
+        print(f"  {f'{j1}×{j2}':<22} κ̄ = {_fmt(media)}")
     print(f"\n{len(disagreements)} divergências fortes no painel (amplitude≥2) "
           f"→ {out/'disagreements.json'}")
     print(f"✓ {out/'agreement_pairs.csv'}")

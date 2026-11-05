@@ -53,6 +53,16 @@ RUBRICA = "mista-v2"            # bin 0/1 + tern 1-3, CoT antes da nota
 BINARY = {"citation", "refusal", "hallucination"}
 TERNARY = {"faithfulness", "answer_relevance", "completeness", "correctness"}
 CONDICIONAIS = {"correctness", "completeness"}   # "na" quando não há referência
+# Criterios que medem SUSTENTACAO NO CONTEXTO. Sem contexto eles nao sao
+# ruins: sao indefinidos. No cenario `norag` o contexto e vazio por desenho,
+# e pedir "toda afirmacao tem suporte explicito no contexto" ali forca o
+# juiz a escolher entre punir a ausencia e avaliar contra conhecimento
+# proprio. Medido em 05/11 nos 1200 registros da Helen: alpha de
+# faithfulness no norag = 0,145, praticamente nenhuma concordancia, com
+# distribuicao bimodal — metade dos juizes fez uma coisa, metade a outra.
+# Agora sao "na" sem contexto, como correctness e completeness sao sem
+# referencia.
+SEM_CONTEXTO = {"faithfulness", "hallucination"}
 
 
 JUDGE_SYS = (
@@ -91,8 +101,33 @@ _ANCHORS = (
     "factualmente errada. [Se não houver resposta-referência, use \"na\".]\n"
 )
 
+def _modelos_dos_geradores(cfg: dict) -> set:
+    g = cfg.get("generation") or {}
+    saida = set()
+    for item in (g.get("generators") or []):
+        if isinstance(item, dict) and item.get("model"):
+            saida.add(item["model"])
+    um = g.get("generator")
+    if isinstance(um, dict) and um.get("model"):
+        saida.add(um["model"])
+    return saida
+
+
 def build_judges(cfg: dict) -> List[Tuple[str, LLMClient]]:
     jcfg = cfg["judges"]
+    # UM JUIZ NAO PODE SER UM DOS GERADORES AVALIADOS. E o vies de
+    # auto-preferencia, e o config entrou nesse estado sem ninguem notar: em
+    # 05/11 `judges.models` listava qwen e gptoss, que sao exatamente os dois
+    # geradores da matriz — gptoss julgaria gptoss. Falhar aqui e barato;
+    # descobrir depois de gastar a rodada nao e.
+    geradores = _modelos_dos_geradores(cfg)
+    colisao = [m["name"] for m in jcfg["models"] if m.get("model") in geradores]
+    if colisao:
+        raise ValueError(
+            f"Juiz e gerador sao o mesmo modelo: {', '.join(colisao)}. "
+            f"Geradores: {', '.join(sorted(geradores))}. Troque o painel de "
+            f"juizes em config.yaml (judges.models) — avaliar um gerador com "
+            f"ele mesmo mede auto-preferencia, nao qualidade.")
     # Juízes de raciocínio (GLM) precisam de teto alto p/ raciocinar E escrever o
     # JSON; padrão 3072, sobreponível por juiz.
     default_mt = int(jcfg.get("max_tokens", 3072))
@@ -103,6 +138,17 @@ def build_judges(cfg: dict) -> List[Tuple[str, LLMClient]]:
             temperature=jcfg.get("temperature", 0),
             max_tokens=int(m.get("max_tokens", default_mt)))))
     return judges
+
+
+def _nao_aplicaveis(record: dict) -> List[str]:
+    """Critérios que a rubrica marca como "na" NESTE registro, por falta do
+    insumo que eles comparam. Vai no prompt para o juiz não tentar pontuar."""
+    fora = []
+    if not (record.get("reference_answer") or "").strip():
+        fora += sorted(CONDICIONAIS)
+    if not (record.get("context_text") or "").strip():
+        fora += sorted(SEM_CONTEXTO)
+    return sorted(set(fora))
 
 
 def _escala_txt(c: str) -> str:
@@ -129,11 +175,19 @@ def _prompt(record: dict, criteria: List[str]) -> str:
             f'"{c}": {{"reasoning": "<análise breve>", "score": <{_escala_txt(c)}>}}')
     fields = ", ".join(campos)
     ref = record.get("reference_answer", "") or "(não se aplica — pergunta sem resposta)"
+    na = _nao_aplicaveis(record)
+    regra_na = ""
+    if na:
+        regra_na = ("NÃO PONTUE estes critérios neste caso, responda \"na\" neles: "
+                    + ", ".join(na) + ". Falta o insumo que eles comparam "
+                    "(resposta-referência ou contexto), então a nota seria "
+                    "arbitrária — \"na\" é a resposta certa, não uma fuga.\n\n")
     return (
         f"{_ANCHORS}\n"
         f"REGRA: raciocine em 'reasoning' ANTES de escolher 'score'. Atenha-se ao "
         f"contexto e à referência; não use conhecimento externo.\n\n"
         f"{answerability}\n\n"
+        f"{regra_na}"
         f"PERGUNTA:\n{record['question']}\n\n"
         f"RESPOSTA-REFERÊNCIA (gold):\n{ref}\n\n"
         f"CONTEXTO RECUPERADO (única base permitida):\n"
@@ -147,11 +201,20 @@ def _parse_score(c: str, v, record: dict):
     """Converte o score bruto para o tipo certo da escala do critério.
     Retorna int válido, a string 'na' (condicional sem referência) ou None (erro)."""
     tem_ref = bool((record.get("reference_answer") or "").strip())
-    # condicional sem referência → não-aplicável
+    tem_ctx = bool((record.get("context_text") or "").strip())
+    # condicional sem o insumo que ela compara → não-aplicável
     if c in CONDICIONAIS and not tem_ref:
         return "na"
-    if isinstance(v, str) and v.strip().lower() in ("na", "n/a", "não se aplica", "nao se aplica"):
+    if c in SEM_CONTEXTO and not tem_ctx:
         return "na"
+    if isinstance(v, str) and v.strip().lower() in ("na", "n/a", "não se aplica", "nao se aplica"):
+        # Chegar aqui significa que o juiz disse "na" onde a rubrica NAO admite:
+        # o insumo existe. E a mesma classe de erro que nota fora de escala, e
+        # aceitar silenciosamente custou caro — medido em 05/11, o mistral disse
+        # "na" em 252 de 450 julgamentos de correctness COM referencia presente,
+        # e o llama em 118, derrubando o n do alpha de 300 para 91. Rejeitar
+        # devolve None, o bruto vai para `_fora_escala` e a Etapa 04 conta.
+        return None
     try:
         x = int(round(float(v)))
     except (TypeError, ValueError):
