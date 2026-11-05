@@ -95,10 +95,15 @@ _ANCHORS = (
     "foi perguntado; 2 = responde em parte ou tangencia o tema; 1 = foge do tema.\n"
     "- completeness (cobertura do essencial): 3 = cobre todos os pontos essenciais "
     "da resposta-referência; 2 = cobre parte; 1 = omite o essencial. "
-    "[Se não houver resposta-referência, use \"na\".]\n"
+    "[Se este critério não se aplicar neste caso, a instrução abaixo "
+    "dirá isso explicitamente e o formato de saída só aceitará \"na\"; "
+    "não decida por conta própria.]\n"
     "- correctness (acerto factual vs. referência): 3 = concorda com a "
     "resposta-referência; 2 = parcialmente correta (mistura acerto e erro); 1 = "
-    "factualmente errada. [Se não houver resposta-referência, use \"na\".]\n"
+    "factualmente errada. "
+    "[Se este critério não se aplicar neste caso, a instrução abaixo "
+    "dirá isso explicitamente e o formato de saída só aceitará \"na\"; "
+    "não decida por conta própria.]\n"
 )
 
 def _modelos_dos_geradores(cfg: dict) -> set:
@@ -151,11 +156,25 @@ def _nao_aplicaveis(record: dict) -> List[str]:
     return sorted(set(fora))
 
 
-def _escala_txt(c: str) -> str:
+def _escala_txt(c: str, na=()) -> str:
+    """Valores que o prompt OFERECE para este criterio NESTE registro.
+
+    Antes a funcao nao recebia o registro e oferecia 1, 2, 3 ou "na" para
+    correctness/completeness em TODA chamada, inclusive com a
+    resposta-referencia presente. Medido em 05/11 nos 1200 registros: o mistral
+    deixou 301 julgamentos sem nota e em 236 deles a justificativa alegava que
+    "nao ha resposta-referencia" -- alegacao FALSA, a referencia estava no
+    prompt e os outros tres juizes a leram e pontuaram. O llama deixou 210, e
+    em 206 o motivo era outro: "o sistema se recusou a responder", tratado como
+    nao-avaliavel quando a rubrica manda 1 (factualmente errada). Oferecer a
+    saida em todo lugar convidou a usa-la. Agora o esquema de saida so admite
+    "na" onde a rubrica admite, e so os numeros onde ela exige numero."""
+    if c in na:
+        return '"na"'
     if c in BINARY:
         return "0 ou 1"
     if c in TERNARY:
-        return '1, 2, 3 ou "na"' if c in CONDICIONAIS else "1, 2 ou 3"
+        return "1, 2 ou 3"
     return "?"
 
 
@@ -216,13 +235,13 @@ def _prompt(record: dict, criteria: List[str]) -> str:
                          "correctness e completeness como \"na\".")
     # formato JSON pedido: cada critério com reasoning + score; os condicionais
     # aceitam "na" quando não há referência.
+    na = _nao_aplicaveis(record)
     campos = []
     for c in criteria:
         campos.append(
-            f'"{c}": {{"reasoning": "<análise breve>", "score": <{_escala_txt(c)}>}}')
+            f'"{c}": {{"reasoning": "<análise breve>", "score": <{_escala_txt(c, na)}>}}')
     fields = ", ".join(campos)
     ref = record.get("reference_answer", "") or "(não se aplica — pergunta sem resposta)"
-    na = _nao_aplicaveis(record)
     # Quando NADA e inaplicavel, diz isso de forma POSITIVA. Antes o prompt
     # simplesmente nao falava do assunto, e o silencio nao bastou: medido em
     # 05/11, o mistral respondeu "na" em 85 julgamentos do cenario rag e o llama
