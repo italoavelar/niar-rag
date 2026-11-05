@@ -161,23 +161,53 @@ def _escala_txt(c: str) -> str:
 
 def _prompt(record: dict, criteria: List[str]) -> str:
     tem_ctx = bool((record.get("context_text") or "").strip())
+    cen = (record.get("cenario") or "").strip().lower()
     if record.get("should_answer") and tem_ctx:
         answerability = ("Esta pergunta TEM resposta no contexto (o sistema "
                          "DEVERIA responder).")
-    elif record.get("should_answer"):
-        # SEM CONTEXTO E COM RESPOSTA. A frase antiga dizia "TEM resposta no
-        # contexto" enquanto o bloco de contexto vinha VAZIO — contradicao
+    elif record.get("should_answer") and cen == "rag":
+        # RAG QUE NAO RECUPEROU NADA. Nao ocorre no desenho de hoje: medido em
+        # 05/11, os 600 registros do braco `rag` tem todos exatamente 5 trechos
+        # (min 5, max 5), porque o top-5 nao tem limiar que possa filtrar tudo --
+        # o de 0,60 saiu do corpus. Mas se um limiar calibrado voltar, este caso
+        # aparece, e a frase do ramo seguinte seria FALSA: ela afirma que a
+        # ausencia de contexto e "de proposito". Aqui nao e. E falha de
+        # recuperacao, e as duas situacoes pedem notas DIFERENTES em refusal e
+        # citation, entao nao da para trata-las com a mesma frase.
+        answerability = ("Esta pergunta TEM resposta no acervo, mas a "
+                         "recuperação NÃO trouxe nenhum trecho: isto é "
+                         "FALHA DE RECUPERAÇÃO, não desenho do experimento. "
+                         "Não há contexto a julgar. O comportamento correto do "
+                         "sistema aqui era dizer que não encontrou base; se ele "
+                         "respondeu como se tivesse, isso conta contra ele em "
+                         "refusal e em citation. Avalie correctness e "
+                         "completeness contra a RESPOSTA-REFERÊNCIA abaixo, "
+                         "que está presente e basta.")
+    elif record.get("should_answer") and cen == "norag":
+        # SEM CONTEXTO E COM RESPOSTA, NO BRACO `norag`. A frase antiga
+        # dizia "TEM resposta no contexto" enquanto o bloco vinha VAZIO — contradicao
         # direta, e os juizes se dividiram ao resolve-la: mistral e llama
         # responderam "na" em correctness ("nao consigo avaliar"), gemini e glm
         # ignoraram a frase e compararam com a referencia. Nenhum dos dois
         # estava errado; o enunciado nao tinha resposta unica. Medido em 05/11:
-        # 805 julgamentos de correctness/completeness perdidos, o n do alpha
-        # caindo de 300 para 91.
+        # 514 registros a refazer, 809 notas no nivel do criterio
+        # (correctness 396 norag + 118 rag; completeness 238 + 57), e o n do
+        # alpha de correctness caindo de 300 para 91 no qwen3_27b_norag.
         answerability = ("Esta pergunta TEM resposta no acervo, mas ESTE caso e "
-                         "do cenário SEM recuperação: o sistema respondeu de "
+                         "do braço `norag`, SEM recuperação: o sistema respondeu de "
                          "memória, sem contexto, de propósito. Não há contexto "
                          "a julgar, e isso NÃO impede os outros critérios: "
                          "avalie correctness e completeness contra a "
+                         "RESPOSTA-REFERÊNCIA abaixo, que está presente e "
+                         "basta.")
+    elif record.get("should_answer"):
+        # SEM CONTEXTO E SEM ROTULO DE CENARIO. Os sete arquivos da rubrica 1-5
+        # nao trazem `cenario`, e afirmar um braco que nao se sabe seria mentir
+        # para o juiz. Aqui so se diz o que e verificavel: nao ha contexto.
+        answerability = ("Esta pergunta TEM resposta no acervo, mas NÃO há "
+                         "contexto neste caso. Não há contexto a julgar, e "
+                         "isso NÃO impede os outros critérios: avalie "
+                         "correctness e completeness contra a "
                          "RESPOSTA-REFERÊNCIA abaixo, que está presente e "
                          "basta.")
     else:
