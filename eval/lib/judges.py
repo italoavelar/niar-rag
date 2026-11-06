@@ -22,9 +22,26 @@ não-raciocínio. Refs: Chiang et al. (arXiv:2310.05657); Constitutional AI
 (arXiv:2212.08073). Mitigação de "pensar demais"/injetar conhecimento externo
 (PoLL, arXiv:2404.18796): instrução explícita de se ater ao contexto/referência.
 
-CRITÉRIOS CONDICIONAIS. correctness e completeness exigem resposta-referência;
-nas perguntas irrespondíveis (should_answer=False) não há referência, então são
-marcados "na" (não-aplicável) e ficam fora das médias e da concordância.
+CRITÉRIOS CONDICIONAIS (não-aplicável = "na"). Dois tipos de condição, para que
+nenhum critério seja pontuado quando lhe falta o insumo que ele mede:
+  • SEM REFERÊNCIA → correctness, completeness exigem resposta-referência;
+    nas perguntas irrespondíveis (should_answer=False) não há referência, logo "na".
+  • SEM CONTEXTO → faithfulness, hallucination medem sustentação NO CONTEXTO; no
+    cenário sem-RAG (sem context_chunk_ids) não há contexto, logo "na". (Marcado
+    pela Etapa 04 na leitura, por ausência de contexto no registro.)
+  • RESPOSTA É RECUSA → answer_relevance mede o quanto a resposta responde ao
+    perguntado; uma RECUSA não responde nem foge do tema — é indefinida, logo "na".
+    Detectado pela forma da RESPOSTA DO SISTEMA (frase-âncora de recusa), não pelo
+    tipo da pergunta: uma alucinação numa pergunta irrespondível TEM conteúdo e
+    recebe answer_relevance normal.
+Itens "na" ficam fora das médias e da concordância.
+
+NOTA SOBRE O CENÁRIO SEM-RAG. Em perguntas respondíveis sob sem-RAG, o bloco de
+contexto chega vazio DE PROPÓSITO (o modelo responde por conhecimento
+paramétrico). O prompt NÃO afirma mais "esta pergunta tem resposta no contexto"
+nesse caso — afirmá-lo com contexto vazio contradizia o juiz e o fazia abandonar
+correctness/completeness com "na" indevido. correctness/completeness dependem da
+RESPOSTA-REFERÊNCIA (que existe nos dois cenários), não do contexto recuperado.
 
 ANÁLISE. κ de Cohen super-penaliza dados ordinais; para os critérios ternários a
 Etapa 04 reporta κ ponderado JUNTO COM Spearman ρ/Kendall. Ref: discussão em
@@ -32,6 +49,7 @@ Yan (idem) e UMbrela (idem). O 04_agreement já calcula κ, α e Spearman.
 """
 from __future__ import annotations
 
+import unicodedata
 from typing import Dict, List, Tuple
 
 from tqdm import tqdm
@@ -53,6 +71,18 @@ RUBRICA = "mista-v2"            # bin 0/1 + tern 1-3, CoT antes da nota
 BINARY = {"citation", "refusal", "hallucination"}
 TERNARY = {"faithfulness", "answer_relevance", "completeness", "correctness"}
 CONDICIONAIS = {"correctness", "completeness"}   # "na" quando não há referência
+
+# answer_relevance é indefinido quando a RESPOSTA DO SISTEMA é uma recusa:
+# uma recusa não responde ao perguntado nem foge do tema. Condição por FORMA da
+# resposta (não pelo tipo da pergunta), para não "na-ar" uma alucinação que, numa
+# pergunta irrespondível, de fato tem conteúdo a ser medido.
+SEM_SENTIDO_SE_RECUSA = {"answer_relevance"}
+
+# Núcleo da frase-padrão de recusa emitida pelos geradores (qwen3 e gpt-oss usam
+# a mesma frase). Casamento ROBUSTO: normalizamos a resposta (minúsculas, sem
+# acento) e procuramos este núcleo, tolerando variações de pontuação, acento e
+# caixa. Se a grafia real divergir, ajuste SÓ esta constante.
+FRASE_RECUSA_NUCLEO = "nao tenho informacoes suficientes"
 
 
 JUDGE_SYS = (
@@ -80,9 +110,11 @@ _ANCHORS = (
     "Ternários (1, 2 ou 3):\n"
     "- faithfulness (sustentação no contexto): 3 = toda afirmação tem suporte "
     "explícito no contexto; 2 = a maior parte tem suporte, mas há afirmações sem "
-    "respaldo claro; 1 = pouco ou nada sustentado pelo contexto.\n"
+    "respaldo claro; 1 = pouco ou nada sustentado pelo contexto. "
+    "[Se NÃO houver contexto recuperado, use \"na\".]\n"
     "- answer_relevance (responde ao perguntado): 3 = responde exatamente o que "
-    "foi perguntado; 2 = responde em parte ou tangencia o tema; 1 = foge do tema.\n"
+    "foi perguntado; 2 = responde em parte ou tangencia o tema; 1 = foge do tema. "
+    "[Se a RESPOSTA DO SISTEMA for uma recusa a responder, use \"na\".]\n"
     "- completeness (cobertura do essencial): 3 = cobre todos os pontos essenciais "
     "da resposta-referência; 2 = cobre parte; 1 = omite o essencial. "
     "[Se não houver resposta-referência, use \"na\".]\n"
@@ -90,6 +122,30 @@ _ANCHORS = (
     "resposta-referência; 2 = parcialmente correta (mistura acerto e erro); 1 = "
     "factualmente errada. [Se não houver resposta-referência, use \"na\".]\n"
 )
+
+
+def _normaliza(s: str) -> str:
+    """minúsculas + sem acento, para casamento robusto de frase."""
+    s = (s or "").lower()
+    s = unicodedata.normalize("NFKD", s)
+    return "".join(ch for ch in s if not unicodedata.combining(ch))
+
+
+def _eh_recusa(answer: str) -> bool:
+    """True se a RESPOSTA DO SISTEMA é uma recusa a responder, pela frase-âncora.
+    Determinístico e independente do juiz — roda antes do julgamento, então o
+    rejulgamento/--completar reconstrói a mesma condição."""
+    return FRASE_RECUSA_NUCLEO in _normaliza(answer)
+
+
+def _tem_contexto(record: dict) -> bool:
+    """True se o registro traz contexto recuperado (cenário RAG). No sem-RAG o
+    contexto é vazio por desenho, então faithfulness/hallucination são indefinidos.
+    Usa context_chunk_ids como sinal primário (o texto pode vir truncado)."""
+    if record.get("context_chunk_ids"):
+        return True
+    return bool((record.get("context_text") or "").strip())
+
 
 def build_judges(cfg: dict) -> List[Tuple[str, LLMClient]]:
     jcfg = cfg["judges"]
@@ -105,30 +161,52 @@ def build_judges(cfg: dict) -> List[Tuple[str, LLMClient]]:
     return judges
 
 
-def _escala_txt(c: str) -> str:
+def _escala_txt(record: dict, c: str) -> str:
+    """Formato de score anunciado ao juiz. Inclui "na" quando o critério é
+    condicional E a condição de não-aplicabilidade vale para ESTE registro, para
+    o juiz saber que pode (e deve) usar "na" naquele caso."""
     if c in BINARY:
         return "0 ou 1"
     if c in TERNARY:
-        return '1, 2, 3 ou "na"' if c in CONDICIONAIS else "1, 2 ou 3"
+        aceita_na = (
+            c in CONDICIONAIS
+            or (c == "faithfulness" and not _tem_contexto(record))
+            or (c in SEM_SENTIDO_SE_RECUSA and _eh_recusa(record.get("answer", "")))
+        )
+        return '1, 2, 3 ou "na"' if aceita_na else "1, 2 ou 3"
     return "?"
 
 
 def _prompt(record: dict, criteria: List[str]) -> str:
+    # Afirmação de respondibilidade: no sem-RAG (sem contexto) NÃO afirmamos que a
+    # pergunta tem resposta no contexto — afirmá-lo com contexto vazio contradiz o
+    # juiz. correctness/completeness são avaliados contra a RESPOSTA-REFERÊNCIA.
+    tem_ctx = _tem_contexto(record)
     if record.get("should_answer"):
-        answerability = ("Esta pergunta TEM resposta no contexto (o sistema "
-                         "DEVERIA responder).")
+        if tem_ctx:
+            answerability = ("Esta pergunta TEM resposta no contexto (o sistema "
+                             "DEVERIA responder).")
+        else:
+            answerability = (
+                "Esta pergunta É respondível. NÃO há contexto recuperado neste "
+                "cenário (avaliação sem recuperação): avalie correctness e "
+                "completeness contra a RESPOSTA-REFERÊNCIA (presente abaixo), não "
+                "contra o contexto. Deixe faithfulness/hallucination como \"na\" "
+                "(não há contexto para sustentar).")
     else:
         answerability = ("Esta pergunta NÃO tem resposta no contexto (o sistema "
                          "DEVERIA recusar). Não há resposta-referência: marque "
                          "correctness e completeness como \"na\".")
     # formato JSON pedido: cada critério com reasoning + score; os condicionais
-    # aceitam "na" quando não há referência.
+    # aceitam "na" quando a condição de não-aplicabilidade vale para o registro.
     campos = []
     for c in criteria:
         campos.append(
-            f'"{c}": {{"reasoning": "<análise breve>", "score": <{_escala_txt(c)}>}}')
+            f'"{c}": {{"reasoning": "<análise breve>", "score": <{_escala_txt(record, c)}>}}')
     fields = ", ".join(campos)
     ref = record.get("reference_answer", "") or "(não se aplica — pergunta sem resposta)"
+    ctx = record.get("context_text", "")[:CONTEXT_CHAR_LIMIT]
+    ctx_bloco = ctx if ctx.strip() else "(sem contexto recuperado neste cenário)"
     return (
         f"{_ANCHORS}\n"
         f"REGRA: raciocine em 'reasoning' ANTES de escolher 'score'. Atenha-se ao "
@@ -137,7 +215,7 @@ def _prompt(record: dict, criteria: List[str]) -> str:
         f"PERGUNTA:\n{record['question']}\n\n"
         f"RESPOSTA-REFERÊNCIA (gold):\n{ref}\n\n"
         f"CONTEXTO RECUPERADO (única base permitida):\n"
-        f"{record.get('context_text','')[:CONTEXT_CHAR_LIMIT]}\n\n"
+        f"{ctx_bloco}\n\n"
         f"RESPOSTA DO SISTEMA (avaliar):\n{record.get('answer','')}\n\n"
         f"Responda SOMENTE JSON no formato:\n{{{fields}}}"
     )
@@ -145,11 +223,26 @@ def _prompt(record: dict, criteria: List[str]) -> str:
 
 def _parse_score(c: str, v, record: dict):
     """Converte o score bruto para o tipo certo da escala do critério.
-    Retorna int válido, a string 'na' (condicional sem referência) ou None (erro)."""
+    Retorna int válido, a string 'na' (condição de não-aplicabilidade) ou None (erro).
+
+    Condições de 'na' (resolvidas pelo REGISTRO, não pela nota do juiz, para que o
+    rejulgamento/--completar reconstrua a mesma decisão):
+      • correctness/completeness sem resposta-referência;
+      • faithfulness/hallucination sem contexto (cenário sem-RAG);
+      • answer_relevance quando a RESPOSTA DO SISTEMA é uma recusa.
+    """
     tem_ref = bool((record.get("reference_answer") or "").strip())
-    # condicional sem referência → não-aplicável
+    # (1) condicional sem referência → não-aplicável
     if c in CONDICIONAIS and not tem_ref:
         return "na"
+    # (2) sustentação no contexto, sem contexto → não-aplicável
+    if c in ("faithfulness", "hallucination") and not _tem_contexto(record):
+        return "na"
+    # (3) relevância de uma recusa → não-aplicável (pela forma da resposta)
+    if c in SEM_SENTIDO_SE_RECUSA and _eh_recusa(record.get("answer", "")):
+        return "na"
+    # juiz pode ter devolvido "na" textual num caso legítimo acima; aqui, se ainda
+    # devolveu "na" fora de condição, trata-se como valor válido de não-aplicável.
     if isinstance(v, str) and v.strip().lower() in ("na", "n/a", "não se aplica", "nao se aplica"):
         return "na"
     try:

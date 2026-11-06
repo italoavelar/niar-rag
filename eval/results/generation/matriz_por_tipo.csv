@@ -1,0 +1,7 @@
+gerador,question_type,correctness_media,n
+gptoss_120b,comparative,2.133,75
+gptoss_120b,factual,2.92,75
+gptoss_120b,multi_hop,2.693,75
+qwen3_27b,comparative,2.387,75
+qwen3_27b,factual,3,75
+qwen3_27b,multi_hop,2.733,75
