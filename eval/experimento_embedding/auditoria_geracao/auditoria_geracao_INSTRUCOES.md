@@ -22,38 +22,54 @@ escritas assim de propósito, e não estão marcadas. Para essas, o comportament
 certo do sistema é dizer que não encontrou base — e responder como se soubesse é
 o pior defeito possível.
 
-Por isso a planilha separa duas coisas que costumam ser confundidas: **o que a
-resposta faz** (afirma? se absteve?) e **o que ela deveria fazer** (a pergunta
-tinha resposta?). A primeira você preenche por resposta; a segunda, por
-pergunta.
+**Você não precisa descobrir quais são.** Nós já sabemos — a planilha não diz
+porque saber de antemão mudaria o seu julgamento. Basta registrar **o que a
+resposta fez**, e o valor `ABSTEVE` existe para isso. Cruzar o que ela fez com o
+que ela deveria ter feito é o nosso trabalho.
 
 ## O que preencher, por resposta
 
 | coluna | o que é |
 |---|---|
 | `o que ela afirma está certo?` | **3** tudo certo e entrega o que foi pedido · **2** mistura acerto e erro, ou entrega parte · **1** afirma coisa errada · **ABSTEVE** não afirma nada, diz que não tem informação suficiente |
-| `as fontes conferem?` | **S** as normas citadas existem e sustentam o que a resposta afirma · **PARCIAL** sustentam parte, ou falta a principal · **N** citam norma que não sustenta aquilo, ou que não existe · **SEM FONTE** |
-| `inventou? S/N` | **S** se a resposta afirma lei, artigo, número ou prazo que você sabe que não é aquilo |
+| `responde ao que foi perguntado?` | **3** responde exatamente o que foi perguntado · **2** responde em parte, ou tangencia · **1** foge do tema · **em branco** se a resposta se absteve |
+| `inventou? S/N` | **S** se a resposta afirma lei, artigo, número ou prazo que você sabe que não é aquilo, inclusive na seção `## Fontes utilizadas` |
 | `observação da resposta` | o que a nota não conta |
 
 `ABSTEVE` é **descritivo, não é nota**: não decida aí se abster-se foi certo ou
-errado. Se não tiver como julgar, **deixe em branco** e diga o motivo na
-observação.
+errado, só registre que foi o que ela fez.
+
+**Se a resposta se absteve, deixe `responde ao que foi perguntado?` em branco.**
+Uma recusa não é "1": ela não tem conteúdo para ser relevante ou irrelevante, e
+a coluna anterior já registrou que ela se absteve. Pontuar ali seria inventar um
+número.
+
+As duas primeiras colunas são independentes: uma resposta pode responder
+exatamente o que foi perguntado (**3** na segunda) e ainda assim afirmar coisa
+errada (**1** na primeira).
+
+Se não tiver como julgar, **deixe em branco** e diga o motivo na observação.
+
+A aba **`acervo (54 normas)`** traz o link de cada documento do sistema, para
+quando você quiser checar um artigo específico. É **consulta opcional, não
+tarefa** — marque `inventou?` pelo que você reconhece estar errado; se
+precisar de pesquisa para saber, deixe em branco e diga na observação.
+Atenção: a lista é o acervo inteiro — uma norma estar lá não significa que
+trate do que foi perguntado.
 
 ## O que preencher, por pergunta
 
 | coluna | o que é |
 |---|---|
-| `existe norma que responda isso?` | **SIM** existe norma, brasileira ou internacional, que responde · **NÃO** a pergunta pede algo que norma nenhuma estabelece · **NÃO SEI** você não tem como afirmar nem negar |
-| `qual responde melhor?` | **A**, **B**, **EMPATE** (servem ou falham igualmente), **NENHUMA** |
-| `por quê` | a norma certa, o número certo, a omissão, a invenção |
+| `qual você preferiria receber?` | **A**, **B**, **EMPATE** (servem ou falham igualmente), **NENHUMA** |
 
-`NÃO SEI` é resposta legítima e é melhor que chute. Essa coluna é o que permite
-interpretar o `ABSTEVE`: abster-se numa pergunta sem resposta é o certo;
-abster-se numa que tem resposta é falhar.
+Imagine que a pergunta era sua, no seu trabalho: qual das duas respostas você
+preferiria ter recebido? Uma resposta que admite não ter encontrado base pode
+ser a preferível, se a outra afirma coisa que você sabe que não é aquilo —
+receber "não encontrei" é melhor que receber um artigo inventado.
 
-E se você marcou que **não** existe norma que responda, "melhor" é a que disse
-que não encontrou base — não a que respondeu bonito.
+Se o motivo não ficar óbvio pelas notas, escreva na `observação` da resposta que
+decidiu.
 
 ## Três coisas que mudam o resultado
 

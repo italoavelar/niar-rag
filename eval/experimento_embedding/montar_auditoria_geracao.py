@@ -84,15 +84,89 @@ QUATRO DECISÕES DE DESENHO:
   O TIPO DA PERGUNTA NÃO APARECE, e isso agora é essencial, não cosmético. Se a
   planilha dissesse quais são as irrespondíveis, estaria entregando a resposta
   da própria pergunta que se quer medir — se o sistema deveria ter se abstido. É
-  por isso que a escala de cada resposta inclui o valor ABSTEVE, que é
-  descritivo e vale para os dois casos, em vez de uma nota que só faz sentido
-  sabendo se a pergunta tinha resposta. Quem decide isso é o especialista, na
-  coluna "existe norma que responda isso?", com NÃO SEI permitido.
+  por isso que a escala de cada resposta inclui o valor ABSTEVE: ele é
+  DESCRITIVO, registra o que a resposta fez, e vale nos dois casos, em vez de
+  uma nota que só faz sentido sabendo se a pergunta tinha resposta.
+
+  E NÃO SE PERGUNTA AO ESPECIALISTA SE A PERGUNTA TEM RESPOSTA. Uma versão
+  anterior tinha a coluna "existe norma que responda isso?", e ela repetia o
+  defeito que `montar_auditoria.py` evita de propósito: ninguém verifica
+  ausência sem conhecer as 54 normas inteiras, então a resposta seria "não sei"
+  ou um chute. O cruzamento não precisa dela — a respondibilidade está no
+  gabarito e vai na CHAVE (`tem_resposta_no_acervo`). ABSTEVE mais a CHAVE dão
+  as quatro combinações que interessam: irrespondível + ABSTEVE é
+  comportamento correto, irrespondível + nota é afirmar sem base, respondível +
+  ABSTEVE é falhar em responder, respondível + nota é a nota.
+
+  POR ISSO A PREFERÊNCIA NÃO PERGUNTA "qual responde melhor". Sem saber se a
+  pergunta tem resposta, "melhor" é ambíguo justamente nos pares discordantes,
+  que são os que decidem o teste. A coluna pergunta "qual você preferiria
+  receber?", que é respondível sem conhecer o acervo: um profissional prefere
+  "não encontrei base" a um artigo inventado, e prefere a resposta certa à
+  abstenção. O julgamento é o mesmo; o enunciado deixa de exigir o que o
+  especialista não tem.
 
   NADA DO MODELO NA PLANILHA DO JUIZ. Sem nome do gerador, sem nota dos juízes
   LLM, sem resposta-referência. Ver a referência faria o especialista procurar
   confirmação, e a auditoria passaria a medir concordância com o gabarito —
   exatamente o que ela existe para checar de fora. Tudo isso vai na CHAVE.
+
+O QUE O ESPECIALISTA JULGA, CONTRA OS SETE CRITÉRIOS DO PAINEL:
+
+  · `o que ela afirma está certo?` 3/2/1/ABSTEVE  -> `correctness` (mesmas
+    âncoras) e, pelo ABSTEVE, `refusal`.
+  · `responde ao que foi perguntado?` 3/2/1       -> `answer_relevance`.
+  · `inventou?` S/N                               -> `hallucination`,
+    INVERTIDO: S aqui é 0 lá.
+  · `qual você preferiria receber?`               -> o painel não faz; ele
+    nunca compara os dois braços.
+
+  `citation` FICOU DE FORA, e a decisão é de custo. Uma versão anterior tinha a
+  coluna "as fontes conferem? S/PARCIAL/N/SEM FONTE". Responder aquilo direito
+  significa abrir a norma e achar o dispositivo, 160 vezes -- não é leitura, é
+  pesquisa, e na prática sai respondida de memória ou em branco. Coluna
+  preenchida de qualquer jeito é pior que coluna nenhuma, porque produz número
+  com cara de dado. O caso perigoso continua coberto: `inventou?` pega fonte
+  fabricada por RECONHECIMENTO, que é o que um especialista faz sem pesquisar, e
+  o enunciado dela diz "inclusive na seção '## Fontes utilizadas'". O que se
+  perde de verdade é a âncora humana no `citation`, que é um dos piores alphas
+  do painel (0,575 nas respondíveis, 0,264 nas irrespondíveis) -- mas não se
+  compra isso a 160 PDFs.
+
+  Ficam de fora `completeness` e `faithfulness`. `completeness` por economia —
+  o painel já concorda bem nela (alpha 0,827 nas respondíveis) e dá para
+  inferir muito dela de `responde ao que foi perguntado?`. `faithfulness` por
+  impossibilidade: ela pergunta se cada afirmação tem suporte NO CONTEXTO, e
+  para julgar isso o especialista teria de ver os 5 trechos — mostrá-los
+  entregaria o braço na hora, porque um lado tem contexto e o outro não. É uma
+  pena, porque é o pior alpha do painel (0,224 nas respondíveis); só se fecha
+  numa planilha separada, que mostre os trechos e abra mão do cegamento.
+
+  SOBRE A COLUNA NOVA, UM ACHADO QUE PRECISA DE CONSERTO NO judges.py: a
+  rubrica não diz quanto vale `answer_relevance` numa recusa, e os juízes não
+  resolveram isso de forma estável. Medido em 06/11 nas 1.011 notas dadas a
+  respostas de recusa: 504 vezes 1 e 492 vezes 3, com 15 no meio -- e CADA JUIZ
+  se divide do mesmo jeito (gemini 125 contra 128, glm 127 contra 116). Não é
+  um juiz lendo diferente do outro, é cada um decidindo por registro. É o que
+  derruba o alpha de `answer_relevance` para 0,144 nas irrespondíveis.
+
+  Numa primeira versão eu mandei o especialista marcar 1 nesse caso, e estava
+  errado por dois motivos. Primeiro, era MINHA escolha, não a da rubrica: a
+  leitura oposta se defende igual ("o sistema respondeu adequadamente a uma
+  pergunta sem resposta"). Segundo, fixar o especialista num lado enquanto o
+  painel sorteia faria a concordância medir a minha definição contra a moeda
+  deles, o que não mede nada. A planilha agora pede EM BRANCO quando a resposta
+  se absteve -- que é a mesma regra que o projeto já aplica em
+  `correctness`/`completeness` sem referência e em
+  `faithfulness`/`hallucination` sem contexto: critério sem o insumo que ele
+  compara é indefinido, não é nota baixa.
+
+  O conserto correspondente no `judges.py` NÃO está feito, e são duas mudanças
+  acopladas: o prompt precisa dizer que `answer_relevance` é "na" quando a
+  resposta é uma recusa, e `_parse_score` precisa ACEITAR esse "na" -- hoje ele
+  devolveria None e contaria como nota fora de escala. Enquanto não for feito, o
+  numero do painel nesse critério não significa nada e a concordância com o
+  especialista fica restrita às respostas com conteúdo.
 
 UM GERADOR POR VEZ. O padrão é o `qwen3_27b`, que é o gerador de produção
 (`agent/agent.py`, `qwen/qwen3.8-27b`). `--gerador ambos` monta as 75 × 2, mas
@@ -122,6 +196,7 @@ RAIZ = AQUI.parents[1]
 PERGUNTAS_DA_RECUPERACAO = AQUI / "auditoria/auditoria_perguntas.csv"
 GABARITO = RAIZ / "eval/data/golden_dezembro.jsonl"
 RANKINGS = RAIZ / "eval/results/retrieval/rankings"
+CORPUS = RAIZ / "data/processed/documents.jsonl"
 SCORES = RAIZ / "eval/results/indexes/rerank_scores_bge_reranker_v2_m3.json"
 GERACAO = RAIZ / "eval/results/generation"
 SAIDA = AQUI / "auditoria_geracao"
@@ -178,17 +253,15 @@ CAB_XLSX = [
     ("lote", 6), ("qid", 8), ("pergunta", 40),
     ("resposta", 9), ("texto da resposta", LARGURA_RESPOSTA),
     ("JUIZ: o que ela afirma está certo?", 15),
-    ("JUIZ: as fontes conferem?", 14),
+    ("JUIZ: responde ao que foi perguntado?", 15),
     ("JUIZ: inventou? S/N", 11),
-    ("JUIZ: observação da resposta", 26),
-    ("JUIZ: existe norma que responda isso?", 15),
-    ("JUIZ: qual responde melhor?", 14),
-    ("JUIZ: por quê", 28),
+    ("JUIZ: observação da resposta", 34),
+    ("JUIZ: qual você preferiria receber?", 14),
 ]
 COL_RESPOSTA = 5
 COLS_DO_JUIZ_POR_RESPOSTA = (6, 7, 8, 9)
-COLS_DO_BLOCO = (1, 2, 3, 10, 11, 12)
-COLS_DO_JUIZ_NO_BLOCO = (10, 11, 12)
+COLS_DO_BLOCO = (1, 2, 3, 10)
+COLS_DO_JUIZ_NO_BLOCO = (10,)
 
 
 def limpar_enunciado(t: str) -> str:
@@ -238,7 +311,8 @@ def ajustar_resposta(texto: str) -> tuple[str, float, bool]:
     return f"{AVISO_CORTE}\n\n{texto}", float(ALTURA_MAXIMA), True
 
 
-def escrever_xlsx(caminho: Path, blocos: list[dict]) -> None:
+def escrever_xlsx(caminho: Path, blocos: list[dict],
+                  acervo: list[dict] | None = None) -> None:
     from openpyxl import Workbook
     from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
     from openpyxl.utils import get_column_letter
@@ -271,7 +345,7 @@ def escrever_xlsx(caminho: Path, blocos: list[dict]) -> None:
             texto, altura, cortou = ajustar_resposta(r["texto"])
             cortadas += cortou
             vals = [b["lote"], b["qid"], b["pergunta"] if linha == ini else None,
-                    r["letra"], texto, None, None, None, None, None, None, None]
+                    r["letra"], texto, None, None, None, None, None]
             for col, v in enumerate(vals, start=1):
                 c = ws.cell(row=linha, column=col, value=v)
                 c.alignment = alto
@@ -291,17 +365,16 @@ def escrever_xlsx(caminho: Path, blocos: list[dict]) -> None:
             ws.merge_cells(start_row=ini, start_column=col,
                            end_row=fim, end_column=col)
             c = ws.cell(row=ini, column=col)
-            c.alignment = centro if col in (1, 2, 10, 11) else alto
+            c.alignment = centro if col in (1, 2, 10) else alto
             if col in COLS_DO_JUIZ_NO_BLOCO:
                 c.fill = amarelo
 
     validacoes = [
         ('"3,2,1,ABSTEVE"', "F",
          "Use 3, 2, 1 ou ABSTEVE, ou deixe vazio se não puder julgar."),
-        ('"S,PARCIAL,N,SEM FONTE"', "G", "Use S, PARCIAL, N ou SEM FONTE."),
+        ('"3,2,1"', "G", "Use 3, 2 ou 1. Se a resposta se absteve, deixe em branco."),
         ('"S,N"', "H", "Use S ou N."),
-        ('"SIM,NÃO,NÃO SEI"', "J", "Use SIM, NÃO ou NÃO SEI."),
-        ('"A,B,EMPATE,NENHUMA"', "K", "Use A, B, EMPATE ou NENHUMA."),
+        ('"A,B,EMPATE,NENHUMA"', "J", "Use A, B, EMPATE ou NENHUMA."),
     ]
     for formula, col, erro in validacoes:
         dv = DataValidation(type="list", formula1=formula, allow_blank=True,
@@ -309,6 +382,36 @@ def escrever_xlsx(caminho: Path, blocos: list[dict]) -> None:
                             errorTitle="Valor inválido")
         ws.add_data_validation(dv)
         dv.add(f"{col}2:{col}{linha - 1}")
+
+    # ── aba do acervo ───────────────────────────────────────────────────────
+    # Consulta OPCIONAL, para o especialista poder checar um artigo quando
+    # quiser, sem que isso seja tarefa. Link POR LINHA nao da: o unico
+    # mapeamento confiavel e pelo
+    # `context_chunk_ids`, que existe no `rag` e e vazio no `norag` -- a coluna
+    # ficaria preenchida num lado e vazia no outro, entregando o braco. Mapear o
+    # texto livre de "## Fontes utilizadas" para documento e fuzzy, e erraria de
+    # forma sistematicamente diferente nos dois bracos. Uma lista do acervo
+    # INTEIRO, igual para todas as perguntas, nao diz nada sobre o braco.
+    if acervo:
+        ab = wb.create_sheet("acervo (54 normas)")
+        cab = [("documento", 34), ("título", 62), ("autor", 30),
+               ("ano", 7), ("link", 52)]
+        for i, (nome, larg) in enumerate(cab, start=1):
+            c = ab.cell(row=1, column=i, value=nome)
+            c.font = Font(bold=True, color="FFFFFF")
+            c.fill = PatternFill("solid", fgColor="444444")
+            c.alignment = centro
+            ab.column_dimensions[get_column_letter(i)].width = larg
+        ab.freeze_panes = "A2"
+        for n, d in enumerate(acervo, start=2):
+            for i, v in enumerate((d["document_id"], d["title"], d["author"],
+                                   d["year"], d["source_url"]), start=1):
+                c = ab.cell(row=n, column=i, value=v)
+                c.alignment = alto
+                if i == 5 and v:
+                    c.hyperlink = v
+                    c.font = Font(color="0563C1", underline="single")
+        print(f"     aba 'acervo' com {len(acervo)} documentos e link")
 
     guia = wb.create_sheet("como preencher")
     guia.column_dimensions["A"].width = 112
@@ -340,9 +443,9 @@ GUIA_XLSX = [
     ("ALGUMAS PERGUNTAS DESTA PLANILHA NÃO TÊM RESPOSTA EM NORMA NENHUMA. Elas "
      "foram escritas assim de propósito, e não estão marcadas. Para essas, o "
      "comportamento certo do sistema é dizer que não encontrou base — e "
-     "responder como se soubesse é o pior defeito possível. É por isso que "
-     "duas das colunas existem: 'ABSTEVE' na nota, e 'existe norma que "
-     "responda isso?' no bloco.", True),
+     "responder como se soubesse é o pior defeito possível. VOCÊ NÃO PRECISA "
+     "DESCOBRIR QUAIS SÃO: nós já sabemos, e é por isso que a nota tem o valor "
+     "'ABSTEVE'. Basta registrar o que a resposta fez.", True),
     ("", False),
     ("1) Para cada resposta: 'o que ela afirma está certo?'", True),
     ("3 = tudo o que ela afirma está certo, e ela entrega o que foi pedido", False),
@@ -351,39 +454,51 @@ GUIA_XLSX = [
     ("ABSTEVE = ela não afirma nada; diz que não tem informação suficiente", False),
     ("", False),
     ("ABSTEVE é descritivo, não é nota: não decida aqui se abster-se foi certo "
-     "ou errado. Quem decide isso é a coluna 'existe norma que responda isso?'.", True),
+     "ou errado, só registre que foi o que ela fez. Cruzar isso com o tipo da "
+     "pergunta é o nosso trabalho, não o seu.", True),
     ("Se você não tiver como julgar, deixe em branco e escreva o motivo em "
      "'observação'. Chute não ajuda.", False),
     ("", False),
-    ("2) 'as fontes conferem?' — olhe a seção '## Fontes utilizadas'", True),
-    ("S = as normas citadas existem e sustentam o que a resposta afirma", False),
-    ("PARCIAL = sustentam parte, ou falta a norma principal", False),
-    ("N = citam norma que não sustenta aquilo, ou que não existe", False),
-    ("SEM FONTE = a resposta não cita fonte nenhuma", False),
+    ("2) 'responde ao que foi perguntado?'", True),
+    ("3 = responde exatamente o que foi perguntado", False),
+    ("2 = responde em parte, ou tangencia o tema", False),
+    ("1 = foge do tema", False),
+    ("", False),
+    ("SE A RESPOSTA SE ABSTEVE, DEIXE ESTA COLUNA EM BRANCO. Uma recusa não é "
+     "'1': ela não tem conteúdo para ser relevante ou irrelevante, e a coluna "
+     "anterior já registrou que ela se absteve. Pontuar aqui seria inventar "
+     "um número.", True),
+    ("Esta coluna é diferente da primeira: uma resposta pode responder "
+     "exatamente o que foi perguntado (3 aqui) e ainda assim afirmar coisa "
+     "errada (1 na outra).", False),
     ("", False),
     ("3) 'inventou? S/N' — marque S se a resposta afirma lei, artigo, número "
-     "ou prazo que você sabe que não é aquilo. É a pergunta mais importante da "
-     "planilha: resposta errada com aparência de citação é o pior defeito "
-     "possível num sistema jurídico.", True),
+     "ou prazo que você sabe que não é aquilo, inclusive na seção "
+     "'## Fontes utilizadas'. É a pergunta mais importante da planilha: "
+     "resposta errada com aparência de citação é o pior defeito possível num "
+     "sistema jurídico.", True),
+    ("Marque pelo que você RECONHECE estar errado. Não precisa ir conferir "
+     "norma por norma — se precisar de pesquisa para saber, deixe em branco e "
+     "diga na observação.", False),
     ("", False),
-    ("4) Por pergunta: 'existe norma que responda isso?'", True),
-    ("SIM = existe norma (brasileira ou internacional) que responde", False),
-    ("NÃO = a pergunta pede algo que norma nenhuma estabelece", False),
-    ("NÃO SEI = você não tem como afirmar nem negar", False),
+    ("A aba 'acervo (54 normas)' tem o link de cada documento do sistema, para "
+     "quando você quiser checar um artigo específico. É consulta opcional, não "
+     "tarefa. Atenção: aquela lista é o acervo INTEIRO; uma norma estar lá não "
+     "significa que trate do que foi perguntado.", False),
     ("", False),
-    ("NÃO SEI é resposta legítima e é melhor que chute. Esta coluna é o que "
-     "permite interpretar o ABSTEVE: abster-se numa pergunta sem resposta é o "
-     "certo; abster-se numa que tem resposta é falhar.", False),
-    ("", False),
-    ("5) Por pergunta: 'qual responde melhor?'", True),
-    ("A ou B = aquela responde melhor a pergunta", False),
+    ("4) Por pergunta: 'qual você preferiria receber?'", True),
+    ("Imagine que a pergunta era sua, no seu trabalho. Qual das duas respostas "
+     "você preferiria ter recebido?", False),
+    ("A ou B = aquela você preferiria receber", False),
     ("EMPATE = as duas servem igualmente, ou falham igualmente", False),
     ("NENHUMA = nenhuma das duas serve", False),
     ("", False),
-    ("Se você marcou que NÃO existe norma que responda, 'melhor' é a que disse "
-     "que não encontrou base — não a que respondeu bonito.", True),
-    ("Diga em 'por quê' o que decidiu: a norma certa, o número certo, a "
-     "omissão, a invenção.", False),
+    ("Uma resposta que admite não ter encontrado base pode ser a preferível, "
+     "se a outra afirma coisa que você sabe que não é aquilo. Receber 'não "
+     "encontrei' é melhor que receber um artigo inventado.", True),
+    ("Se o motivo da escolha não for óbvio pelas notas, escreva na 'observação' "
+     "da resposta que decidiu: a norma certa, o número certo, a omissão, a "
+     "invenção.", False),
     ("", False),
     ("Quatro coisas que evitam mal-entendido", True),
     ("Julgue cada resposta CONTRA A PERGUNTA e contra o que a norma diz, não "
@@ -431,38 +546,54 @@ escritas assim de propósito, e não estão marcadas. Para essas, o comportament
 certo do sistema é dizer que não encontrou base — e responder como se soubesse é
 o pior defeito possível.
 
-Por isso a planilha separa duas coisas que costumam ser confundidas: **o que a
-resposta faz** (afirma? se absteve?) e **o que ela deveria fazer** (a pergunta
-tinha resposta?). A primeira você preenche por resposta; a segunda, por
-pergunta.
+**Você não precisa descobrir quais são.** Nós já sabemos — a planilha não diz
+porque saber de antemão mudaria o seu julgamento. Basta registrar **o que a
+resposta fez**, e o valor `ABSTEVE` existe para isso. Cruzar o que ela fez com o
+que ela deveria ter feito é o nosso trabalho.
 
 ## O que preencher, por resposta
 
 | coluna | o que é |
 |---|---|
 | `o que ela afirma está certo?` | **3** tudo certo e entrega o que foi pedido · **2** mistura acerto e erro, ou entrega parte · **1** afirma coisa errada · **ABSTEVE** não afirma nada, diz que não tem informação suficiente |
-| `as fontes conferem?` | **S** as normas citadas existem e sustentam o que a resposta afirma · **PARCIAL** sustentam parte, ou falta a principal · **N** citam norma que não sustenta aquilo, ou que não existe · **SEM FONTE** |
-| `inventou? S/N` | **S** se a resposta afirma lei, artigo, número ou prazo que você sabe que não é aquilo |
+| `responde ao que foi perguntado?` | **3** responde exatamente o que foi perguntado · **2** responde em parte, ou tangencia · **1** foge do tema · **em branco** se a resposta se absteve |
+| `inventou? S/N` | **S** se a resposta afirma lei, artigo, número ou prazo que você sabe que não é aquilo, inclusive na seção `## Fontes utilizadas` |
 | `observação da resposta` | o que a nota não conta |
 
 `ABSTEVE` é **descritivo, não é nota**: não decida aí se abster-se foi certo ou
-errado. Se não tiver como julgar, **deixe em branco** e diga o motivo na
-observação.
+errado, só registre que foi o que ela fez.
+
+**Se a resposta se absteve, deixe `responde ao que foi perguntado?` em branco.**
+Uma recusa não é "1": ela não tem conteúdo para ser relevante ou irrelevante, e
+a coluna anterior já registrou que ela se absteve. Pontuar ali seria inventar um
+número.
+
+As duas primeiras colunas são independentes: uma resposta pode responder
+exatamente o que foi perguntado (**3** na segunda) e ainda assim afirmar coisa
+errada (**1** na primeira).
+
+Se não tiver como julgar, **deixe em branco** e diga o motivo na observação.
+
+A aba **`acervo (54 normas)`** traz o link de cada documento do sistema, para
+quando você quiser checar um artigo específico. É **consulta opcional, não
+tarefa** — marque `inventou?` pelo que você reconhece estar errado; se
+precisar de pesquisa para saber, deixe em branco e diga na observação.
+Atenção: a lista é o acervo inteiro — uma norma estar lá não significa que
+trate do que foi perguntado.
 
 ## O que preencher, por pergunta
 
 | coluna | o que é |
 |---|---|
-| `existe norma que responda isso?` | **SIM** existe norma, brasileira ou internacional, que responde · **NÃO** a pergunta pede algo que norma nenhuma estabelece · **NÃO SEI** você não tem como afirmar nem negar |
-| `qual responde melhor?` | **A**, **B**, **EMPATE** (servem ou falham igualmente), **NENHUMA** |
-| `por quê` | a norma certa, o número certo, a omissão, a invenção |
+| `qual você preferiria receber?` | **A**, **B**, **EMPATE** (servem ou falham igualmente), **NENHUMA** |
 
-`NÃO SEI` é resposta legítima e é melhor que chute. Essa coluna é o que permite
-interpretar o `ABSTEVE`: abster-se numa pergunta sem resposta é o certo;
-abster-se numa que tem resposta é falhar.
+Imagine que a pergunta era sua, no seu trabalho: qual das duas respostas você
+preferiria ter recebido? Uma resposta que admite não ter encontrado base pode
+ser a preferível, se a outra afirma coisa que você sabe que não é aquilo —
+receber "não encontrei" é melhor que receber um artigo inventado.
 
-E se você marcou que **não** existe norma que responda, "melhor" é a que disse
-que não encontrou base — não a que respondeu bonito.
+Se o motivo não ficar óbvio pelas notas, escreva na `observação` da resposta que
+decidiu.
 
 ## Três coisas que mudam o resultado
 
@@ -499,6 +630,36 @@ Boa parte das perguntas respondíveis são as **mesmas** da auditoria da
 recuperação, de propósito: dá para cruzar as duas e ver se, quando os 5 trechos
 não bastavam, a resposta saiu errada.
 """
+
+
+def carregar_acervo() -> list[dict]:
+    """Os 54 documentos do acervo, com link, para a aba de consulta.
+
+    Um por `document_id`, na ordem do titulo. O `source_url` esta preenchido nos
+    54 (conferido em 06/11), mas se faltar em algum a celula fica vazia em vez de
+    quebrar.
+    """
+    if not CORPUS.exists():
+        print(f"! nao achei {CORPUS.relative_to(RAIZ)}; a planilha sai sem a "
+              f"aba do acervo, e o especialista perde o link para checar uma "
+              f"norma quando quiser")
+        return []
+    vistos: dict = {}
+    with CORPUS.open(encoding="utf-8") as fh:
+        for linha in fh:
+            if not linha.strip():
+                continue
+            m = (json.loads(linha).get("metadata") or {})
+            d = m.get("document_id")
+            if d and d not in vistos:
+                vistos[d] = {
+                    "document_id": d,
+                    "title": limpar_enunciado(m.get("title") or ""),
+                    "author": limpar_enunciado(m.get("author") or ""),
+                    "year": m.get("year") or "",
+                    "source_url": (m.get("source_url") or "").strip(),
+                }
+    return sorted(vistos.values(), key=lambda d: d["title"].lower())
 
 
 def carregar_judged(gerador: str, cenario: str) -> dict:
@@ -843,7 +1004,7 @@ def main() -> None:
                     limpar_enunciado(gold[qid].get("reference_answer") or ""),
                 ])
 
-            linhas_p.append([lote, qid, enunciado, "", "", ""])
+            linhas_p.append([lote, qid, enunciado, ""])
             blocos.append(bloco)
 
     # ── relatorio do que saiu ───────────────────────────────────────────────
@@ -869,17 +1030,16 @@ def main() -> None:
 
     SAIDA.mkdir(exist_ok=True)
     print()
-    escrever_xlsx(SAIDA / "AUDITORIA_GERACAO.xlsx", blocos)
+    escrever_xlsx(SAIDA / "AUDITORIA_GERACAO.xlsx", blocos, carregar_acervo())
     escrever_csv(SAIDA / "auditoria_geracao_respostas.csv", [
         "lote", "qid", "pergunta", "resposta_letra", "texto_da_resposta",
         "JUIZ_afirma_certo_3_2_1_ABSTEVE",
-        "JUIZ_fontes_conferem_S_PARCIAL_N_SEMFONTE",
+        "JUIZ_responde_ao_perguntado_3_2_1",
         "JUIZ_inventou_S_N", "JUIZ_observacao",
     ], linhas_r)
     escrever_csv(SAIDA / "auditoria_geracao_perguntas.csv", [
         "lote", "qid", "pergunta",
-        "JUIZ_existe_norma_SIM_NAO_NAOSEI",
-        "JUIZ_qual_melhor_A_B_EMPATE_NENHUMA", "JUIZ_por_que",
+        "JUIZ_qual_preferiria_A_B_EMPATE_NENHUMA",
     ], linhas_p)
     escrever_csv(SAIDA / "auditoria_geracao_CHAVE_nao_abrir_antes.csv", [
         "lote", "qid", "gerador", "resposta_letra", "cenario",
