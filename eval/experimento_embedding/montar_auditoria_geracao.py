@@ -23,9 +23,12 @@ ele evita invenção.
 
 COMO A AMOSTRA É MONTADA (75 perguntas, 3 lotes)
 
-  O total se reparte pelos quatro tipos na mesma proporção da população, que é
-  75/75/75/75 em `golden_dezembro.jsonl`: 19 factual, 19 multi_hop, 19
-  comparative, 18 unanswerable.
+  30 irrespondíveis e 50 respondíveis (17 factual, 17 multi_hop, 16
+  comparative). As irrespondíveis são SOBRE-AMOSTRADAS de propósito — a
+  população é 1/4 de cada tipo, e aqui elas são mais de 1/3 —, pelo motivo em
+  `repartir_irrespondiveis`: os pares que decidem o teste de abstenção são
+  raros e têm de entrar inteiros. O custo do outro lado é pequeno: 57 → 50
+  respondíveis alarga o IC 95% do kappa de `correctness` de 0,18 para 0,19.
 
   DENTRO DE CADA TIPO RESPONDÍVEL, metade acerta e metade erra no top-5 — o
   acerto da recuperação é o mecanismo pelo qual o RAG ajudaria, então é a
@@ -41,17 +44,25 @@ COMO A AMOSTRA É MONTADA (75 perguntas, 3 lotes)
   78 já são uma amostra estratificada pelas mesmas células, então subamostrar
   delas preserva a estratificação.
 
-  AS IRRESPONDÍVEIS SÃO ESTRATIFICADAS PELO COMPORTAMENTO DO PAR: (absteve,
-  absteve), (absteve, respondeu), (respondeu, absteve), (respondeu, respondeu),
-  na ordem rag × norag. Sortear ao acaso encheria a planilha de "os dois se
-  abstiveram", que é 55 das 75 e não tem nada para julgar. A cota vai primeiro
-  para as células informativas — as três em que alguém afirmou — e o que sobra
-  completa com a célula grande.
+  AS IRRESPONDÍVEIS LEVAM TODOS OS PARES DISCORDANTES. Num teste pareado só o
+  par discordante carrega informação: dos 75 irrespondíveis do qwen3_27b, 57
+  são pares em que os dois braços fizeram a mesma coisa e não entram no
+  p-valor. Quem decide são os 18 em que um se absteve e o outro afirmou. Eles
+  entram inteiros, nas duas direções, mais os 2 em que os DOIS afirmaram, que é
+  o caso mais grave; o resto completa com "os dois se abstiveram". Assim o
+  teste do especialista tem a mesma força que o do painel sobre as 75, numa
+  planilha de 25.
 
-  A AMOSTRA NÃO É PROPORCIONAL DENTRO DO TIPO, e a análise tem de pesar por
-  célula. É a mesma troca da auditoria de recuperação: metade acerta e metade
-  erra, quando a população é 54/46. Auditar só o que o sistema acerta mediria
-  satisfação, não qualidade.
+  Isso corrige um erro da versão anterior, que tomava as 5 contra o RAG e só 6
+  das 13 a favor: o teste do sinal caía de p=0,096 (todas) para p=0,754 (a
+  amostra). O viés não era sobre-amostrar o difícil, era sobre-amostrar UMA
+  DIREÇÃO.
+
+  A AMOSTRA NÃO É PROPORCIONAL, e a análise tem de pesar por célula para
+  qualquer TAXA (quantas vezes o sistema se abstém, quantas vezes acerta). O
+  que sai direto daqui são as COMPARAÇÕES pareadas. É a mesma troca da
+  auditoria de recuperação: metade acerta e metade erra, quando a população é
+  54/46. Auditar só o que o sistema acerta mediria satisfação, não qualidade.
 
 QUATRO DECISÕES DE DESENHO:
 
@@ -539,27 +550,42 @@ def carregar_acerto() -> dict:
     return gold, acerto
 
 
-def repartir(total: int, celulas: dict, ordem: tuple) -> dict:
-    """Reparte `total` entre as células, cota igual e o resto nas primeiras.
+def repartir_irrespondiveis(total: int, celulas: dict) -> tuple[dict, int]:
+    """Quantas de cada célula de comportamento entram, e quantas são obrigatórias.
 
-    Cota igual (total // n), limitada pelo que a célula tem; o que faltar vai
-    sendo distribuído em rodadas na ORDEM dada, uma por célula que ainda tenha
-    sobra. A ordem é o que decide a prioridade — nas irrespondíveis, as células
-    informativas vêm primeiro de propósito.
+    NUM TESTE PAREADO SÓ O PAR DISCORDANTE CARREGA INFORMAÇÃO. Dos 75
+    irrespondíveis do qwen3_27b, 57 são pares em que os dois braços fizeram a
+    mesma coisa; eles não entram no p-valor do teste do sinal. Quem decide são
+    os 18 discordantes — 13 em que o `rag` se absteve e o `norag` afirmou, e 5
+    no sentido contrário.
+
+    Por isso a regra aqui não é cota igual. É:
+
+      OBRIGATÓRIAS — entram TODAS, sempre:
+        · os dois pares discordantes, nas DUAS direções. Levar todos faz o teste
+          do especialista ter a mesma força que o do painel sobre as 75
+          inteiras, numa planilha de 25. Levar parte de uma direção e tudo da
+          outra foi o erro da versão anterior: ela tomou as 5 contra o RAG e só
+          6 das 13 a favor, e o teste caiu de p=0,096 para p=0,754.
+        · "os dois afirmaram", que é o caso mais grave do sistema inteiro e é
+          raríssimo (2 no qwen3_27b).
+
+      PREENCHIMENTO — "os dois se abstiveram" completa até o total pedido. Essas
+      não entram no p-valor, mas não são decoração: sem elas o bloco
+      irrespondível seria 100% caso de falha, e um especialista que lê vinte
+      respostas ruins seguidas recalibra sem perceber.
+
+    A amostra fica DELIBERADAMENTE desproporcional, então TAXA (quantas vezes o
+    sistema se abstém) tem de ser reponderada por célula, ou vir do painel sobre
+    as 75. O que sai direto daqui é a COMPARAÇÃO pareada.
     """
-    cota = total // len(ordem)
-    aloc = {k: min(cota, len(celulas.get(k, ()))) for k in ordem}
-    while sum(aloc.values()) < total:
-        mexeu = False
-        for k in ordem:
-            if sum(aloc.values()) >= total:
-                break
-            if aloc[k] < len(celulas.get(k, ())):
-                aloc[k] += 1
-                mexeu = True
-        if not mexeu:
-            break        # acabou o que havia; devolve menos que o pedido
-    return aloc
+    obrig = {k: len(celulas.get(k, ())) for k in ORDEM_CELULAS_IRR
+             if k != ("absteve", "absteve")}
+    n_obrig = sum(obrig.values())
+    aloc = dict(obrig)
+    aloc[("absteve", "absteve")] = max(
+        0, min(len(celulas.get(("absteve", "absteve"), ())), total - n_obrig))
+    return aloc, n_obrig
 
 
 def main() -> None:
@@ -567,10 +593,20 @@ def main() -> None:
     ap.add_argument("--gerador", default="qwen3_27b",
                     choices=[*GERADORES, "ambos"],
                     help="padrao qwen3_27b, o gerador de producao")
-    ap.add_argument("--total", type=int, default=75,
-                    help="perguntas na planilha, repartidas pelos 4 tipos "
-                         "na proporcao da populacao; padrao 75")
+    ap.add_argument("--total", type=int, default=80,
+                    help="perguntas na planilha; padrao 80")
+    ap.add_argument("--irrespondiveis", type=int, default=30,
+                    help="quantas das --total sao irrespondiveis; padrao 25. "
+                         "O piso e o numero de pares discordantes mais os 'os "
+                         "dois afirmaram', que entram sempre; o resto completa "
+                         "com 'os dois se abstiveram'. As respondiveis ficam "
+                         "com a diferenca, repartida entre os tres tipos.")
     ap.add_argument("--lotes", type=int, default=3)
+    ap.add_argument("--controles-no-ultimo-lote", type=int, default=2,
+                    help="quantas perguntas de controle (aquelas em que os "
+                         "dois bracos se abstiveram) ficam no ultimo lote; "
+                         "padrao 2. O resto vai para os lotes prioritarios, "
+                         "onde o trabalho de fato vai acontecer.")
     ap.add_argument("--todo-o-acervo", action="store_true",
                     help="sorteia as respondiveis de TODO o golden_dezembro "
                          "em vez de so das 78 da auditoria de recuperacao. "
@@ -599,13 +635,22 @@ def main() -> None:
              for g in geradores for c in ("rag", "norag")}
     primeiro = geradores[0]
 
-    # ── cotas por tipo, na proporcao da populacao (75/75/75/75) ────────────
-    por_tipo = args.total // 4
-    resto = args.total - por_tipo * 4
-    cota_tipo = {t: por_tipo for t in TIPOS_RESPONDIVEIS}
-    cota_tipo["unanswerable"] = por_tipo
-    for t in TIPOS_RESPONDIVEIS[:resto]:      # o resto vai para as respondiveis
-        cota_tipo[t] += 1
+    # ── cotas ───────────────────────────────────────────────────────────────
+    # As irrespondiveis NAO entram na proporcao da populacao (que seria 1/4).
+    # Elas sao sobre-amostradas de proposito: os pares que decidem o teste de
+    # abstencao sao raros (18 das 75 no qwen3_27b) e tem de entrar inteiros.
+    # As respondiveis ficam com a diferenca, repartida entre os tres tipos --
+    # e o custo disso e pequeno: 57 -> 50 respondiveis alarga o IC do kappa de
+    # correctness de 0,18 para 0,19.
+    cota_tipo = {"unanswerable": args.irrespondiveis}
+    sobra = args.total - args.irrespondiveis
+    por_tipo = sobra // len(TIPOS_RESPONDIVEIS)
+    resto = sobra - por_tipo * len(TIPOS_RESPONDIVEIS)
+    for i, t in enumerate(TIPOS_RESPONDIVEIS):
+        cota_tipo[t] = por_tipo + (1 if i < resto else 0)
+    if sobra <= 0:
+        sys.exit(f"ERRO: --irrespondiveis {args.irrespondiveis} nao deixa "
+                 f"espaco para respondiveis em --total {args.total}.")
 
     rnd = random.Random(SEMENTE)
 
@@ -653,12 +698,25 @@ def main() -> None:
         v.sort()
         rnd.shuffle(v)
 
-    aloc_irr = repartir(cota_tipo["unanswerable"], cel_irr, ORDEM_CELULAS_IRR)
+    aloc_irr, n_obrig = repartir_irrespondiveis(cota_tipo["unanswerable"],
+                                                cel_irr)
     print(f"\ncelulas das irrespondiveis (comportamento rag x norag, "
           f"rotulo do {primeiro}):")
     for k in ORDEM_CELULAS_IRR:
+        marca = "TODAS" if k != ("absteve", "absteve") else "preenche"
         print(f"  {k[0]:<10}{k[1]:<10} {len(cel_irr.get(k, ())):>3} disponiveis "
-              f"-> {aloc_irr[k]:<3}  {SIGNIFICADO_IRR[k]}")
+              f"-> {aloc_irr[k]:<3} [{marca:<8}] {SIGNIFICADO_IRR[k]}")
+    disc = {k: len(cel_irr.get(k, ())) for k in
+            (("absteve", "respondeu"), ("respondeu", "absteve"))}
+    n_disc = sum(disc.values())
+    print(f"  pares DISCORDANTES (os unicos que entram no teste pareado): "
+          f"{n_disc} = {disc[('absteve', 'respondeu')]} pro-rag + "
+          f"{disc[('respondeu', 'absteve')]} pro-norag, todos na planilha")
+    if n_obrig > cota_tipo["unanswerable"]:
+        print(f"  ! as obrigatorias ja sao {n_obrig}, acima das "
+              f"{cota_tipo['unanswerable']} pedidas; usando {n_obrig} e a "
+              f"planilha fica com {args.total - cota_tipo['unanswerable'] + n_obrig} "
+              f"perguntas")
     for k in ORDEM_CELULAS_IRR:
         escolhidas += [(q, ("unanswerable", f"{k[0]}/{k[1]}"))
                        for q in cel_irr.get(k, ())[:aloc_irr[k]]]
@@ -667,19 +725,50 @@ def main() -> None:
         print(f"\n! pedi {args.total} e sairam {len(escolhidas)}: alguma celula "
               f"nao tinha o bastante. A tabela acima diz qual.")
 
-    # ── lotes: rodada por celula, para cada lote ser estratificado ──────────
+    # ── lotes ───────────────────────────────────────────────────────────────
     # Cada celula e distribuida em rodada pelos lotes, e o PONTO DE PARTIDA
-    # avanca de celula em celula. Sem isso o resto de cada divisao cai sempre
-    # no lote 1: com 10 celulas de tamanho impar os lotes sairam 28/26/21, e o
-    # lote 3 -- que e o que alguem corta quando o tempo acaba -- ficava 25%
-    # menor que o lote 1 sem motivo nenhum.
+    # avanca de celula em celula. Sem isso o resto de cada divisao cai sempre no
+    # lote 1: com 10 celulas de tamanho impar os lotes sairam 28/26/21.
+    #
+    # EXCECAO: as celulas que decidem o teste de abstencao -- os pares
+    # discordantes e "os dois afirmaram" -- sao distribuidas so pelos PRIMEIROS
+    # lotes, nao por todos. O motivo e prazo: espalhados 6/6/6, parar no lote 1
+    # deixaria 6 pares e p=0,688; terminando os dois primeiros lotes o teste ja
+    # esta completo (18 pares, todos os que existem). O preco e que o ultimo
+    # lote deixa de dizer qualquer coisa sobre abstencao e fica so com as
+    # respondiveis e as irrespondiveis faceis -- e o lote "se der tempo".
+    #
+    # As CONTROLES ("os dois se abstiveram") ficam quase todas nos lotes
+    # prioritarios, pelo mesmo motivo de prazo: controle num lote que talvez
+    # nunca seja preenchido e controle desperdicado, e e nos primeiros lotes que
+    # se checa a calibracao do especialista antes de confiar no resto. Mas
+    # `--controles-no-ultimo-lote` deixa algumas no ultimo: sem nenhuma, o
+    # ultimo lote fica 100% respondivel, estruturalmente diferente dos outros, e
+    # perde a propria aferição.
+    LOTES_PRIORITARIOS = max(1, args.lotes - 1)
+    CONTROLE = f"{'absteve'}/{'absteve'}"
+    celulas_do_teste = {f"{a}/{b}" for a, b in ORDEM_CELULAS_IRR
+                        if (a, b) != ("absteve", "absteve")}
     por_celula: dict = defaultdict(list)
     for q, cel in escolhidas:
         por_celula[cel].append(q)
     lote_de: dict = {}
     for n_cel, cel in enumerate(sorted(por_celula)):
-        for i, q in enumerate(por_celula[cel]):
-            lote_de[q] = str((i + n_cel) % args.lotes + 1)
+        qs = por_celula[cel]
+        if cel[1] == CONTROLE and args.lotes > 1:
+            # as ultimas N vao para o ultimo lote; o resto se reparte nos
+            # prioritarios
+            n_fim = min(args.controles_no_ultimo_lote, len(qs))
+            for q in qs[len(qs) - n_fim:]:
+                lote_de[q] = str(args.lotes)
+            qs = qs[:len(qs) - n_fim]
+            for i, q in enumerate(qs):
+                lote_de[q] = str((i + n_cel) % LOTES_PRIORITARIOS + 1)
+            continue
+        n_lotes = (LOTES_PRIORITARIOS if cel[1] in celulas_do_teste
+                   else args.lotes)
+        for i, q in enumerate(qs):
+            lote_de[q] = str((i + n_cel) % n_lotes + 1)
 
     # ── sorteio A/B balanceado DENTRO DE CADA LOTE ──────────────────────────
     # Com shuffle independente em cada par o desequilibrio e grande: na versao
@@ -693,7 +782,21 @@ def main() -> None:
             rnd.shuffle(marcas)
             em_a.update({(gerador, q): m for q, m in zip(qs, marcas)})
 
+    # Lote 1 primeiro, mas EMBARALHADO dentro do lote. Ordenar por célula
+    # agruparia as irrespondíveis no fim de cada lote, e o especialista
+    # perceberia o bloco: nove perguntas seguidas em que nenhuma resposta
+    # convence entregam que aquelas ali são de outro tipo, que é exatamente o
+    # que a planilha não pode dizer. Embaralhar com a semente mantém a ordem
+    # reprodutível.
     ordem = sorted(escolhidas, key=lambda x: (lote_de[x[0]], x[1], x[0]))
+    por_lote: dict = defaultdict(list)
+    for item in ordem:
+        por_lote[lote_de[item[0]]].append(item)
+    ordem = []
+    for lote in sorted(por_lote):
+        bloco_do_lote = por_lote[lote]
+        rnd.shuffle(bloco_do_lote)
+        ordem += bloco_do_lote
     blocos, linhas_r, linhas_p, linhas_c = [], [], [], []
     pistas = {"rag": 0, "norag": 0}
     PISTA = re.compile(r"contexto fornecid|\bno contexto\b|\btrecho", re.I)
