@@ -29,11 +29,21 @@ perguntas, os 390 trechos e a divisão em lotes são, por construção, os mesmo
 que o primeiro especialista recebeu. O que muda de anotador para anotador é só a
 ORDEM DE EXIBIÇÃO.
 
-A ORDEM É DIFERENTE PARA CADA UM, e nenhuma igual à do especialista 1. Semente
-própria por anotador. Se os três vissem os 5 trechos na mesma ordem, um erro de
-fadiga ("a essa altura eu já estava chutando") apareceria nos três no mesmo
-lugar e passaria por concordância. A ordem verdadeira do ranking continua só na
-chave.
+A ORDEM DOS TRECHOS É PRÓPRIA DE CADA UM, A DAS PERGUNTAS NÃO. São dois sorteios
+com sementes diferentes, e a distinção é o ponto.
+
+  Os 5 TRECHOS dentro da pergunta vêm em ordem própria por anotador, nenhuma
+  igual à do especialista 1. Ali existe âncora real — a posição 1 parece ser "a
+  melhor do sistema" — e, se os três vissem na mesma ordem, um erro de fadiga
+  ("a essa altura eu já estava chutando") apareceria nos três no mesmo lugar e
+  passaria por concordância. A ordem verdadeira do ranking continua só na chave.
+
+  As PERGUNTAS vêm na MESMA ordem para todos. Protege o trabalho incompleto: se
+  os dois pararem na pergunta k, pararam nas MESMAS k, e a sobreposição
+  sobrevive inteira. Com ordens independentes a interseção esperada cai para
+  k²/30 — em k=20, 13 em vez de 20 —, e parar no meio é justamente o cenário que
+  a divisão em lotes existe para absorver. A ordem das perguntas não carrega
+  âncora nenhuma, então não há o que proteger embaralhando-a por pessoa.
 
 AS 48 RESTANTES VÃO DEPOIS, marcadas como extra. A ordem de trabalho pedida é:
 as 30 primeiro, depois a auditoria da GERAÇÃO, e só então as 48 restantes se
@@ -67,6 +77,10 @@ LOTE_OBRIGATORIO = "1"
 # Semente por anotador. A 2026 e do especialista 1 (montar_auditoria.py) e NAO
 # pode ser reusada aqui, senao a ordem dos trechos sairia igual a dele.
 SEMENTE_BASE = 2027
+# Semente da ordem das PERGUNTAS, igual para todos os anotadores -- ver o
+# comentario em montar_para(). Nao e a 2026 do especialista 1 so para a ordem
+# dele nao ser reproduzida tambem; ele ja terminou, entao aqui isso e cosmetico.
+SEMENTE_PERGUNTAS = 2029
 
 for _f in (sys.stdout, sys.stderr):
     try:
@@ -380,6 +394,21 @@ def carregar_amostra() -> dict:
 
 
 def montar_para(nome: str, semente: int, perguntas: dict) -> None:
+    # DOIS SORTEIOS, COM SEMENTES DIFERENTES, e a distincao importa.
+    #
+    # A ordem das PERGUNTAS usa SEMENTE_PERGUNTAS, igual para todos os
+    # anotadores. Protege o trabalho incompleto: se os dois pararem na pergunta
+    # k, pararam nas MESMAS k, e a sobreposicao sobrevive inteira. Com ordens
+    # independentes a intersecao esperada cai para k^2/30 -- em k=20, 13 em vez
+    # de 20, e e justamente o cenario de parar no meio que a divisao em lotes
+    # existe para absorver. A ordem das perguntas nao carrega ancora nenhuma,
+    # entao nao ha o que proteger embaralhando-a por pessoa.
+    #
+    # A ordem dos TRECHOS dentro da pergunta usa a semente do anotador. Ali
+    # existe ancora real -- a posicao 1 parece ser "a melhor do sistema" -- e,
+    # se os tres vissem na mesma ordem, um erro de fadiga apareceria nos tres no
+    # mesmo lugar e passaria por concordancia.
+    rnd_ordem = random.Random(SEMENTE_PERGUNTAS)
     rnd = random.Random(semente)
     # ordena por qid ANTES de embaralhar, para a semente ser o unico sorteio:
     # a ordem de insercao no dict depende da ordem do CSV e nao e garantia.
@@ -389,8 +418,8 @@ def montar_para(nome: str, semente: int, perguntas: dict) -> None:
     extra = sorted((p for p in perguntas.values()
                     if p["lote"] != LOTE_OBRIGATORIO),
                    key=lambda p: p["qid"])
-    rnd.shuffle(obrig)
-    rnd.shuffle(extra)
+    rnd_ordem.shuffle(obrig)
+    rnd_ordem.shuffle(extra)
 
     slug = re.sub(r"[^a-z0-9]+", "_", nome.lower()).strip("_")
     blocos, linhas_t, linhas_p, linhas_c = [], [], [], []
