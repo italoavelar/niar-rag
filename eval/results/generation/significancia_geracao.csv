@@ -1,0 +1,23 @@
+contraste,criterio,teste,n,b_ou_W,c,p,sig
+A) qwen3_27b: RAG vs sem-RAG,answer_relevance,Wilcoxon,300,592.0,,0.0,***
+A) qwen3_27b: RAG vs sem-RAG,completeness,Wilcoxon,225,706.0,,0.0,***
+A) qwen3_27b: RAG vs sem-RAG,correctness,Wilcoxon,224,461.5,,0.0,***
+A) qwen3_27b: RAG vs sem-RAG,citation,McNemar_exato,300,145,13,0.0,***
+A) qwen3_27b: RAG vs sem-RAG,refusal,McNemar_exato,300,124,7,0.0,***
+A) gptoss_120b: RAG vs sem-RAG,answer_relevance,Wilcoxon,300,1750.5,,0.0,***
+A) gptoss_120b: RAG vs sem-RAG,completeness,Wilcoxon,225,1617.5,,0.0,***
+A) gptoss_120b: RAG vs sem-RAG,correctness,Wilcoxon,225,1524.5,,0.0,***
+A) gptoss_120b: RAG vs sem-RAG,citation,McNemar_exato,300,105,20,0.0,***
+A) gptoss_120b: RAG vs sem-RAG,refusal,McNemar_exato,300,78,21,0.0,***
+B) qwen3 vs gpt-oss (rag),faithfulness,Wilcoxon,300,215.0,,0.0,***
+B) qwen3 vs gpt-oss (rag),answer_relevance,Wilcoxon,300,184.5,,0.0,***
+B) qwen3 vs gpt-oss (rag),completeness,Wilcoxon,225,318.5,,0.0003,***
+B) qwen3 vs gpt-oss (rag),correctness,Wilcoxon,225,279.5,,0.0005,***
+B) qwen3 vs gpt-oss (rag),citation,McNemar_exato,300,28,10,0.0051,**
+B) qwen3 vs gpt-oss (rag),refusal,McNemar_exato,300,25,3,0.0,***
+B) qwen3 vs gpt-oss (rag),hallucination,McNemar_exato,300,5,0,0.0625,n.s.
+B) qwen3 vs gpt-oss (norag),answer_relevance,Wilcoxon,300,963.0,,0.0,***
+B) qwen3 vs gpt-oss (norag),completeness,Wilcoxon,225,737.0,,0.0,***
+B) qwen3 vs gpt-oss (norag),correctness,Wilcoxon,224,671.5,,0.0,***
+B) qwen3 vs gpt-oss (norag),citation,McNemar_exato,300,32,61,0.0035,**
+B) qwen3 vs gpt-oss (norag),refusal,McNemar_exato,300,24,62,0.0001,***
