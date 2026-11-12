@@ -49,7 +49,6 @@ class Setup:
         self.runner = RagRunner(self.cfg["generation"]["generator"], self.corpus,
                                 self.cfg["generation"]["context_top_k"])
         self.criteria = self.cfg["judges"]["criteria"]
-        self.scale = self.cfg["judges"]["scale"]
         self.judges = None if no_judge else build_judges(self.cfg)
         self.icl_variants = [bool(x) for x in self.cfg["generation"]["icl"]["variants"]]
         self.n_shots = self.cfg["generation"]["icl"]["n_shots"]
@@ -155,7 +154,7 @@ def run_and_save(S, tag, rankings, icl, no_rag=False):
             ok = True
             if S.judges:
                 # julga ANTES de descartar context_text (o juiz precisa do contexto)
-                rec["scores"] = {name: judge_answer(cli, rec, S.criteria, S.scale)
+                rec["scores"] = {name: judge_answer(cli, rec, S.criteria)
                                  for name, cli in S.judges}
                 ok = not any("_error" in s for s in rec["scores"].values())
             rec.pop("context_text", None)      # remove o texto longo antes de salvar

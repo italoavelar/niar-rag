@@ -1,0 +1,9 @@
+gerador,cenario,tipo_pergunta,pct_comportamento_correto,n
+gptoss_120b,norag,irrespondivel,68.0,75
+gptoss_120b,norag,respondivel,67.1,225
+gptoss_120b,rag,irrespondivel,80.0,75
+gptoss_120b,rag,respondivel,88.4,225
+qwen3_27b,norag,irrespondivel,80.0,75
+qwen3_27b,norag,respondivel,46.2,225
+qwen3_27b,rag,irrespondivel,92.0,75
+qwen3_27b,rag,respondivel,94.2,225

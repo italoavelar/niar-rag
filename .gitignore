@@ -92,3 +92,8 @@ eval/results_dezembro_rerank/
 
 # PDF compilado; a fonte versionada e benchmark_leme_500.md.
 benchmark_leme_500.pdf
+
+# Rodadas de verificacao e copias de seguranca dos julgamentos.
+*_TESTE.jsonl
+*.bak
+*.jsonl.bak

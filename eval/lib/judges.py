@@ -1,18 +1,34 @@
 """
 eval/lib/judges.py
 ══════════════════
-LLM-as-a-judge com DOIS modelos independentes (≠ gerador Qwen para evitar viés
-de auto-preferência): Llama-3.3-70B e gpt-oss-120b.
+LLM-as-a-judge com N juízes independentes (≠ família dos geradores avaliados),
+rubrica de ESCALA MISTA e raciocínio-antes-da-nota (CoT).
 
-Cada juiz pontua 1..5 por critério, com justificativa, em JSON estruturado, temp 0:
-  faithfulness     — resposta sustentada APENAS pelo contexto recuperado (anti-alucinação)
-  answer_relevance — responde de fato à pergunta
-  correctness      — concorda com a resposta-referência do gold set
-  completeness     — cobre os pontos essenciais
-  citation         — seção "Fontes utilizadas" presente e correta
-  refusal          — (in)existência de recusa foi APROPRIADA à respondibilidade
+── Decisões de desenho (fundamentadas na literatura) ───────────────────────
+ESCALA MISTA (não 1–5 uniforme). A literatura mostra que LLMs não são bem
+calibrados para pontuação de alta precisão e que escalas mais grossas (binária
+ou poucos níveis) dão maior confiabilidade/concordância; critérios subjetivos
+usam 3 níveis com âncoras explícitas por nível:
+  • BINÁRIOS (0/1): citation, refusal, hallucination  — objetivos
+  • TERNÁRIOS (1–3): faithfulness, answer_relevance, completeness, correctness
+Refs: Yan (eugeneyan.com/writing/llm-evaluators) recomenda saída binária p/
+objetivos; Evidently AI (LLM-as-a-judge guide) prefere baixa granularidade e
+exige definir cada nível; Shepherd (arXiv:2308.04592) e UMbrela (arXiv:2406.06519)
+mostram deriva e baixa acurácia nos níveis intermediários de Likert.
 
-A concordância entre os dois juízes é medida na Etapa 04.
+RACIOCÍNIO ANTES DA NOTA (CoT). O juiz primeiro escreve uma análise curta e só
+então pontua. Melhora qualidade/consistência e NIVELA juízes de raciocínio e
+não-raciocínio. Refs: Chiang et al. (arXiv:2310.05657); Constitutional AI
+(arXiv:2212.08073). Mitigação de "pensar demais"/injetar conhecimento externo
+(PoLL, arXiv:2404.18796): instrução explícita de se ater ao contexto/referência.
+
+CRITÉRIOS CONDICIONAIS. correctness e completeness exigem resposta-referência;
+nas perguntas irrespondíveis (should_answer=False) não há referência, então são
+marcados "na" (não-aplicável) e ficam fora das médias e da concordância.
+
+ANÁLISE. κ de Cohen super-penaliza dados ordinais; para os critérios ternários a
+Etapa 04 reporta κ ponderado JUNTO COM Spearman ρ/Kendall. Ref: discussão em
+Yan (idem) e UMbrela (idem). O 04_agreement já calcula κ, α e Spearman.
 """
 from __future__ import annotations
 
@@ -22,95 +38,314 @@ from tqdm import tqdm
 
 from .llm_clients import LLMClient
 
-# Teto do contexto no prompt do juiz. Precisa caber o contexto INTEIRO: o
-# _format_context põe a linha "FONTE:" DEPOIS do texto de cada documento, então
-# truncar corta justamente as fontes dos últimos docs e inviabiliza o critério
-# `citation` (e enviesa faithfulness/hallucination, já que o juiz é instruído a
-# tratar o contexto como única base permitida). Com context_top_k=5 o contexto
-# real vai a ~7,1k chars; 12k dá folga. Custo irrisório: ~3-4k tokens em modelos
-# de 128k de janela.
 CONTEXT_CHAR_LIMIT = 12000
+
+# ── Tipo de escala por critério ─────────────────────────────────────────────
+# "bin"  → 0 ou 1
+# "tern" → 1, 2 ou 3
+# criterios condicionais (só com referência): correctness, completeness
+# Versão da RUBRICA, gravada em cada bloco de notas. A Etapa 04 agrupa por
+# ela e se recusa a misturar escalas: um judged_*.jsonl da rubrica 1-5 e um da
+# mista nao sao comparaveis, e sem marcador a mistura e silenciosa — os dois
+# tem os mesmos nomes de juiz e o mesmo formato de arquivo.
+RUBRICA = "mista-v2"            # bin 0/1 + tern 1-3, CoT antes da nota
+
+BINARY = {"citation", "refusal", "hallucination"}
+TERNARY = {"faithfulness", "answer_relevance", "completeness", "correctness"}
+CONDICIONAIS = {"correctness", "completeness"}   # "na" quando não há referência
+# Criterios que medem SUSTENTACAO NO CONTEXTO. Sem contexto eles nao sao
+# ruins: sao indefinidos. No cenario `norag` o contexto e vazio por desenho,
+# e pedir "toda afirmacao tem suporte explicito no contexto" ali forca o
+# juiz a escolher entre punir a ausencia e avaliar contra conhecimento
+# proprio. Medido em 05/11 nos 1200 registros da Helen: alpha de
+# faithfulness no norag = 0,145, praticamente nenhuma concordancia, com
+# distribuicao bimodal — metade dos juizes fez uma coisa, metade a outra.
+# Agora sao "na" sem contexto, como correctness e completeness sao sem
+# referencia.
+SEM_CONTEXTO = {"faithfulness", "hallucination"}
+
 
 JUDGE_SYS = (
     "Você é um avaliador rigoroso e imparcial de respostas de um sistema RAG "
-    "jurídico-médico. Avalie de forma objetiva, penalizando alucinação (afirmações "
-    "não sustentadas pelo contexto). Responda SEMPRE em JSON válido, sem texto extra."
+    "jurídico-médico. Avalie SOMENTE com base no material fornecido (contexto e "
+    "resposta-referência); NÃO use conhecimento externo nem extrapole além do "
+    "que está escrito. Primeiro raciocine brevemente, depois pontue. Responda "
+    "SEMPRE em JSON válido, sem texto fora do JSON."
 )
 
+# Âncoras com TODOS os níveis definidos (não só os extremos).
 _ANCHORS = (
-    "Escala por critério (inteiro 1..5): 1=péssimo, 2=ruim, 3=regular, 4=bom, 5=excelente.\n"
-    "- faithfulness: 5 = toda afirmação tem suporte no contexto; 1 = sem suporte/contradiz.\n"
-    "- hallucination: severidade de fatos, leis, artigos ou números INVENTADOS (ausentes do "
-    "contexto). 5 = nenhuma invenção; 1 = inventa informação factual relevante.\n"
-    "- answer_relevance: 5 = responde exatamente o perguntado; 1 = foge do tema.\n"
-    "- correctness: 5 = bate com a resposta-referência; 1 = factualmente errada.\n"
-    "- completeness: 5 = cobre tudo que importa; 1 = omite o essencial.\n"
-    "- citation: 5 = cita fontes corretas em '## Fontes utilizadas'; 1 = ausente/errada.\n"
-    "- refusal: para perguntas SEM resposta no corpus, 5 = recusou corretamente; "
-    "para perguntas COM resposta, 5 = NÃO recusou indevidamente; 1 = comportamento oposto."
+    "ESCALAS (use exatamente os valores indicados):\n"
+    "\n"
+    "Binários (0 ou 1):\n"
+    "- hallucination: 1 = NÃO inventou (toda lei/artigo/número citado existe no "
+    "contexto); 0 = inventou algum fato, lei, artigo ou número ausente do contexto.\n"
+    "- citation: 1 = a seção '## Fontes utilizadas' lista as fontes corretas que "
+    "sustentam a resposta; 0 = ausente, vazia ou cita fontes erradas/não usadas.\n"
+    "- refusal: avalie conforme o tipo da pergunta (indicado abaixo). "
+    "Se a pergunta NÃO tem resposta no contexto: 1 = recusou corretamente; 0 = "
+    "respondeu como se tivesse resposta. Se a pergunta TEM resposta no contexto: "
+    "1 = NÃO recusou (respondeu); 0 = recusou indevidamente.\n"
+    "\n"
+    "Ternários (1, 2 ou 3):\n"
+    "- faithfulness (sustentação no contexto): 3 = toda afirmação tem suporte "
+    "explícito no contexto; 2 = a maior parte tem suporte, mas há afirmações sem "
+    "respaldo claro; 1 = pouco ou nada sustentado pelo contexto.\n"
+    "- answer_relevance (responde ao perguntado): 3 = responde exatamente o que "
+    "foi perguntado; 2 = responde em parte ou tangencia o tema; 1 = foge do tema.\n"
+    "- completeness (cobertura do essencial): 3 = cobre todos os pontos essenciais "
+    "da resposta-referência; 2 = cobre parte; 1 = omite o essencial. "
+    "[Se este critério não se aplicar neste caso, a instrução abaixo "
+    "dirá isso explicitamente e o formato de saída só aceitará \"na\"; "
+    "não decida por conta própria.]\n"
+    "- correctness (acerto factual vs. referência): 3 = concorda com a "
+    "resposta-referência; 2 = parcialmente correta (mistura acerto e erro); 1 = "
+    "factualmente errada. "
+    "[Se este critério não se aplicar neste caso, a instrução abaixo "
+    "dirá isso explicitamente e o formato de saída só aceitará \"na\"; "
+    "não decida por conta própria.]\n"
 )
+
+def _modelos_dos_geradores(cfg: dict) -> set:
+    g = cfg.get("generation") or {}
+    saida = set()
+    for item in (g.get("generators") or []):
+        if isinstance(item, dict) and item.get("model"):
+            saida.add(item["model"])
+    um = g.get("generator")
+    if isinstance(um, dict) and um.get("model"):
+        saida.add(um["model"])
+    return saida
 
 
 def build_judges(cfg: dict) -> List[Tuple[str, LLMClient]]:
     jcfg = cfg["judges"]
+    # UM JUIZ NAO PODE SER UM DOS GERADORES AVALIADOS. E o vies de
+    # auto-preferencia, e o config entrou nesse estado sem ninguem notar: em
+    # 05/11 `judges.models` listava qwen e gptoss, que sao exatamente os dois
+    # geradores da matriz — gptoss julgaria gptoss. Falhar aqui e barato;
+    # descobrir depois de gastar a rodada nao e.
+    geradores = _modelos_dos_geradores(cfg)
+    colisao = [m["name"] for m in jcfg["models"] if m.get("model") in geradores]
+    if colisao:
+        raise ValueError(
+            f"Juiz e gerador sao o mesmo modelo: {', '.join(colisao)}. "
+            f"Geradores: {', '.join(sorted(geradores))}. Troque o painel de "
+            f"juizes em config.yaml (judges.models) — avaliar um gerador com "
+            f"ele mesmo mede auto-preferencia, nao qualidade.")
+    # Juízes de raciocínio (GLM) precisam de teto alto p/ raciocinar E escrever o
+    # JSON; padrão 3072, sobreponível por juiz.
+    default_mt = int(jcfg.get("max_tokens", 3072))
     judges = []
     for m in jcfg["models"]:
         judges.append((m["name"], LLMClient(
             provider=m["provider"], model=m["model"],
-            temperature=jcfg.get("temperature", 0), max_tokens=1024)))
+            temperature=jcfg.get("temperature", 0),
+            max_tokens=int(m.get("max_tokens", default_mt)))))
     return judges
 
 
-def _prompt(record: dict, criteria: List[str], scale: int) -> str:
-    answerability = ("Esta pergunta TEM resposta no corpus (deveria ser respondida)."
-                     if record.get("should_answer")
-                     else "Esta pergunta NÃO tem resposta no corpus (deveria ser recusada).")
-    crits = ", ".join(criteria)
-    fields = ", ".join(f'"{c}": {{"score": <1..{scale}>, "justification": "<curta>"}}'
-                       for c in criteria)
+def _nao_aplicaveis(record: dict) -> List[str]:
+    """Critérios que a rubrica marca como "na" NESTE registro, por falta do
+    insumo que eles comparam. Vai no prompt para o juiz não tentar pontuar."""
+    fora = []
+    if not (record.get("reference_answer") or "").strip():
+        fora += sorted(CONDICIONAIS)
+    if not (record.get("context_text") or "").strip():
+        fora += sorted(SEM_CONTEXTO)
+    return sorted(set(fora))
+
+
+def _escala_txt(c: str, na=()) -> str:
+    """Valores que o prompt OFERECE para este criterio NESTE registro.
+
+    Antes a funcao nao recebia o registro e oferecia 1, 2, 3 ou "na" para
+    correctness/completeness em TODA chamada, inclusive com a
+    resposta-referencia presente. Medido em 05/11 nos 1200 registros: o mistral
+    deixou 301 julgamentos sem nota e em 236 deles a justificativa alegava que
+    "nao ha resposta-referencia" -- alegacao FALSA, a referencia estava no
+    prompt e os outros tres juizes a leram e pontuaram. O llama deixou 210, e
+    em 183 o motivo era outro: a resposta do sistema "nao fornece informacoes"
+    a comparar -- 42 dessas dizendo que ele se recusou --, tratado como
+    nao-avaliavel quando a rubrica manda 1 (factualmente errada). Oferecer a
+    saida em todo lugar convidou a usa-la. Agora o esquema de saida so admite
+    "na" onde a rubrica admite, e so os numeros onde ela exige numero."""
+    if c in na:
+        return '"na"'
+    if c in BINARY:
+        return "0 ou 1"
+    if c in TERNARY:
+        return "1, 2 ou 3"
+    return "?"
+
+
+def _prompt(record: dict, criteria: List[str]) -> str:
+    tem_ctx = bool((record.get("context_text") or "").strip())
+    cen = (record.get("cenario") or "").strip().lower()
+    if record.get("should_answer") and tem_ctx:
+        answerability = ("Esta pergunta TEM resposta no contexto (o sistema "
+                         "DEVERIA responder).")
+    elif record.get("should_answer") and cen == "rag":
+        # RAG QUE NAO RECUPEROU NADA. Nao ocorre no desenho de hoje: medido em
+        # 05/11, os 600 registros do braco `rag` tem todos exatamente 5 trechos
+        # (min 5, max 5), porque o top-5 nao tem limiar que possa filtrar tudo --
+        # o de 0,60 saiu do corpus. Mas se um limiar calibrado voltar, este caso
+        # aparece, e a frase do ramo seguinte seria FALSA: ela afirma que a
+        # ausencia de contexto e "de proposito". Aqui nao e. E falha de
+        # recuperacao, e as duas situacoes pedem notas DIFERENTES em refusal e
+        # citation, entao nao da para trata-las com a mesma frase.
+        answerability = ("Esta pergunta TEM resposta no acervo, mas a "
+                         "recuperação NÃO trouxe nenhum trecho: isto é "
+                         "FALHA DE RECUPERAÇÃO, não desenho do experimento. "
+                         "Não há contexto a julgar. O comportamento correto do "
+                         "sistema aqui era dizer que não encontrou base; se ele "
+                         "respondeu como se tivesse, isso conta contra ele em "
+                         "refusal e em citation. Avalie correctness e "
+                         "completeness contra a RESPOSTA-REFERÊNCIA abaixo, "
+                         "que está presente e basta.")
+    elif record.get("should_answer") and cen == "norag":
+        # SEM CONTEXTO E COM RESPOSTA, NO BRACO `norag`. A frase antiga
+        # dizia "TEM resposta no contexto" enquanto o bloco vinha VAZIO —
+        # contradicao direta, e esta linha a desfaz. Mas a contradicao NAO
+        # explica os abandonos: lidas as 514 justificativas de correctness sem
+        # nota (05/11), o mistral alega em 236 de 301 que falta a
+        # resposta-referencia -- FALSO, ela estava no prompt e os outros tres a
+        # pontuaram -- e o llama, em 183 de 210, trata a resposta vazia do
+        # sistema como nao-avaliavel, quando a rubrica manda 1. Sao dois modos
+        # de falha e nenhum depende do braco; o que os convidava era o esquema
+        # de saida oferecer "na" em toda chamada, consertado em _escala_txt.
+        # Tamanho do estrago: 809 notas de criterio em 317 registros
+        # (correctness 396 norag + 118 rag; completeness 238 + 57), 514
+        # chamadas para refazer. O n do alpha NAO cai -- 224 dos 225
+        # respondiveis do qwen3_27b_norag ainda tem dois juizes ou mais --, mas
+        # os quatro juizes sobram em so 91 deles, contra 181 no braco rag do
+        # mesmo gerador. A perda e de profundidade do painel, nao de n.
+        answerability = ("Esta pergunta TEM resposta no acervo, mas ESTE caso e "
+                         "do braço `norag`, SEM recuperação: o sistema respondeu de "
+                         "memória, sem contexto, de propósito. Não há contexto "
+                         "a julgar, e isso NÃO impede os outros critérios: "
+                         "avalie correctness e completeness contra a "
+                         "RESPOSTA-REFERÊNCIA abaixo, que está presente e "
+                         "basta.")
+    elif record.get("should_answer"):
+        # SEM CONTEXTO E SEM ROTULO DE CENARIO. Os sete arquivos da rubrica 1-5
+        # nao trazem `cenario`, e afirmar um braco que nao se sabe seria mentir
+        # para o juiz. Aqui so se diz o que e verificavel: nao ha contexto.
+        answerability = ("Esta pergunta TEM resposta no acervo, mas NÃO há "
+                         "contexto neste caso. Não há contexto a julgar, e "
+                         "isso NÃO impede os outros critérios: avalie "
+                         "correctness e completeness contra a "
+                         "RESPOSTA-REFERÊNCIA abaixo, que está presente e "
+                         "basta.")
+    else:
+        answerability = ("Esta pergunta NÃO tem resposta no contexto (o sistema "
+                         "DEVERIA recusar). Não há resposta-referência: marque "
+                         "correctness e completeness como \"na\".")
+    # formato JSON pedido: cada critério com reasoning + score; os condicionais
+    # aceitam "na" quando não há referência.
+    na = _nao_aplicaveis(record)
+    campos = []
+    for c in criteria:
+        campos.append(
+            f'"{c}": {{"reasoning": "<análise breve>", "score": <{_escala_txt(c, na)}>}}')
+    fields = ", ".join(campos)
+    ref = record.get("reference_answer", "") or "(não se aplica — pergunta sem resposta)"
+    # Quando NADA e inaplicavel, diz isso de forma POSITIVA. Antes o prompt
+    # simplesmente nao falava do assunto, e o silencio nao bastou: medido em
+    # 05/11, o mistral respondeu "na" em 85 julgamentos do cenario rag e o llama
+    # em 33, onde contexto e referencia estavam os dois presentes e nao havia
+    # contradicao nenhuma a resolver. Sao 118 dos 514 a refazer. A regra estava
+    # implicita nas ancoras; agora e explicita nos dois sentidos.
+    regra_na = ("TODOS os critérios se aplicam neste caso: pontue os sete, "
+                "nenhum é \"na\". O contexto e a resposta-referência estão "
+                "ambos presentes abaixo.\n\n")
+    if na:
+        regra_na = ("NÃO PONTUE estes critérios neste caso, responda \"na\" neles: "
+                    + ", ".join(na) + ". Falta o insumo que eles comparam "
+                    "(resposta-referência ou contexto), então a nota seria "
+                    "arbitrária — \"na\" é a resposta certa, não uma fuga.\n\n")
     return (
-        f"{_ANCHORS}\n\n{answerability}\n\n"
+        f"{_ANCHORS}\n"
+        f"REGRA: raciocine em 'reasoning' ANTES de escolher 'score'. Atenha-se ao "
+        f"contexto e à referência; não use conhecimento externo.\n\n"
+        f"{answerability}\n\n"
+        f"{regra_na}"
         f"PERGUNTA:\n{record['question']}\n\n"
-        f"RESPOSTA-REFERÊNCIA (gold):\n{record.get('reference_answer','(n/a)')}\n\n"
-        f"CONTEXTO RECUPERADO (única base permitida):\n{record.get('context_text','')[:CONTEXT_CHAR_LIMIT]}\n\n"
+        f"RESPOSTA-REFERÊNCIA (gold):\n{ref}\n\n"
+        f"CONTEXTO RECUPERADO (única base permitida):\n"
+        f"{record.get('context_text','')[:CONTEXT_CHAR_LIMIT]}\n\n"
         f"RESPOSTA DO SISTEMA (avaliar):\n{record.get('answer','')}\n\n"
-        f"Avalie os critérios [{crits}]. Responda SOMENTE JSON no formato:\n"
-        f"{{{fields}}}"
+        f"Responda SOMENTE JSON no formato:\n{{{fields}}}"
     )
 
 
-def judge_answer(client: LLMClient, record: dict, criteria: List[str],
-                 scale: int = 5) -> dict:
+def _parse_score(c: str, v, record: dict):
+    """Converte o score bruto para o tipo certo da escala do critério.
+    Retorna int válido, a string 'na' (condicional sem referência) ou None (erro)."""
+    tem_ref = bool((record.get("reference_answer") or "").strip())
+    tem_ctx = bool((record.get("context_text") or "").strip())
+    # condicional sem o insumo que ela compara → não-aplicável
+    if c in CONDICIONAIS and not tem_ref:
+        return "na"
+    if c in SEM_CONTEXTO and not tem_ctx:
+        return "na"
+    if isinstance(v, str) and v.strip().lower() in ("na", "n/a", "não se aplica", "nao se aplica"):
+        # Chegar aqui significa que o juiz disse "na" onde a rubrica NAO admite:
+        # o insumo existe. E a mesma classe de erro que nota fora de escala, e
+        # aceitar silenciosamente custou caro — medido em 05/11, o mistral disse
+        # "na" em 252 de 450 julgamentos de correctness COM referencia presente,
+        # e o llama em 118, derrubando o n do alpha de 300 para 91. Rejeitar
+        # devolve None, o bruto vai para `_fora_escala` e a Etapa 04 conta.
+        return None
     try:
-        data = client.chat_json(_prompt(record, criteria, scale), system=JUDGE_SYS)
+        x = int(round(float(v)))
+    except (TypeError, ValueError):
+        return None
+    # FORA DE ESCALA E REJEITADO, nao saturado. Saturar era perigoso: os juizes
+    # desta rubrica sao os MESMOS modelos que rodaram a rubrica 1-5, e um juiz
+    # que respondesse "3" por habito num critetio binario viraria 1 = perfeito.
+    # Isso inflaria justamente hallucination, citation e refusal. Devolver None
+    # tira o item da conta — perder o item e honesto, contar errado nao e.
+    if c in BINARY:
+        return x if x in (0, 1) else None
+    if c in TERNARY:
+        return x if x in (1, 2, 3) else None
+    return None
+
+
+def judge_answer(client: LLMClient, record: dict,
+                 criteria: List[str]) -> dict:
+    try:
+        data = client.chat_json(_prompt(record, criteria), system=JUDGE_SYS)
     except Exception as e:
-        return {"_error": str(e), **{c: None for c in criteria}}
-    out, just = {}, {}
+        return {"_error": str(e), "_rubrica": RUBRICA,
+                **{c: None for c in criteria}}
+    out, just, fora = {}, {}, {}
     for c in criteria:
         v = data.get(c) if isinstance(data, dict) else None
+        bruto = v.get("score") if isinstance(v, dict) else v
         if isinstance(v, dict):
-            out[c] = _clip(v.get("score"), scale)
-            just[c] = v.get("justification", "")
-        else:
-            out[c] = _clip(v, scale)
+            just[c] = v.get("reasoning", v.get("justification", ""))
+        out[c] = _parse_score(c, bruto, record)
+        # guarda o valor cru quando ele foi rejeitado, para o descarte nao ser
+        # invisivel: a Etapa 04 conta estes casos e os reporta.
+        if out[c] is None and bruto is not None:
+            fora[c] = bruto
     out["_justifications"] = just
+    out["_rubrica"] = RUBRICA
+    if fora:
+        out["_fora_escala"] = fora
     return out
 
 
-def _clip(x, scale):
-    try:
-        return max(1, min(scale, int(round(float(x)))))
-    except (TypeError, ValueError):
-        return None
-
-
 def run_judging(answers: List[dict], judges: List[Tuple[str, LLMClient]],
-                criteria: List[str], scale: int = 5) -> List[dict]:
-    """Anota cada resposta com os scores de cada juiz: record['scores'][judge][crit]."""
+                criteria: List[str]) -> List[dict]:
+    """Anota cada resposta com os scores de cada juiz: record['scores'][judge][crit].
+
+    Devolve CÓPIAS. Mutar `answers` no lugar faria uma segunda passada de
+    julgamento herdar as notas da primeira sem aviso."""
     out = []
     for rec in tqdm(answers, desc="[juízes]", leave=False):
-        scores = {}
-        for name, client in judges:
-            scores[name] = judge_answer(client, rec, criteria, scale)
+        scores = {nome: judge_answer(cli, rec, criteria) for nome, cli in judges}
         out.append({**rec, "scores": scores})
     return out
