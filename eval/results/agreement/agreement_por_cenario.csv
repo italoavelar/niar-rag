@@ -1,0 +1,8 @@
+criterion,agregado,norag,rag
+faithfulness,0.262,—,0.262
+hallucination,0.344,—,0.344
+answer_relevance,0.765,0.826,0.596
+correctness,0.606,0.488,0.522
+completeness,0.634,0.556,0.536
+citation,0.549,0.326,0.502
+refusal,0.903,0.923,0.809

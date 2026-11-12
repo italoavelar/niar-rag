@@ -1,6 +1,0 @@
-criterion,n,kripp_overall,maioria_cobertura,maioria_acaso,amplitude_media
-answer_relevance,599,0.826,1.000,1.000,0.344
-correctness,273,0.488,1.000,1.000,0.930
-completeness,315,0.556,1.000,1.000,0.876
-citation,598,0.326,1.000,1.000,0.515
-refusal,599,0.923,1.000,1.000,0.072
