@@ -7,15 +7,20 @@ ferramenta. Tudo aqui foi verificado contra arquivo do repositório — cada nú
 > **Regra herdada, mantida:** nenhum número entra em artigo, slide ou relatório vindo deste
 > arquivo. Este arquivo diz **onde** conferir. Releia a fonte e cite `arquivo:linha`.
 
-**Repositório:** `C:\Users\karol\OneDrive\Documentos\niar-rag-prototype`
-Ler antes de trabalhar: `CLAUDE.md` (números auditados) e `CADERNO.md` (correções da Karol).
+**Repositório:** `C:\Users\karol\OneDrive\Documentos\LEME\niar-rag`
+(o caminho `niar-rag-prototype` do cabeçalho antigo não existe mais; `CLAUDE.md` e
+`CADERNO.md` também não estão no repositório — conferido em 17/11/2026.)
+
+**Interpretador:** use SEMPRE `venv/Scripts/python.exe`. Com o `python` solto, scripts que
+dependem de scipy/numpy **degradam em silêncio** — ver §11.6.
 
 > **Este arquivo é o histórico: o que foi testado, o que deu certo e o que foi refutado.**
 > O **plano de trabalho em execução** é outro documento: `benchmark_leme_500.md` — quem faz o quê,
 > em que ordem, com que comando. Se você quer saber *o que já sabemos*, é aqui. Se quer saber
 > *o que fazer agora*, é lá.
 >
-> Última atualização de conteúdo: **16/set/2026** (§9 — quatro experimentos de recuperação).
+> Última atualização de conteúdo: **17/nov/2026** (§11 — a linha do juiz LLM: rubrica
+> mista-v2, rejulgamento e a recusa).
 
 ---
 
@@ -811,6 +816,11 @@ F5 e F6 são independentes da trilha de recuperação e podem correr em paralelo
 
 ## 8. Pendências herdadas do repositório
 
+> **Pendência mais recente, do lado do juiz (17/11/2026):** o rejulgamento está em 287 de
+> 806 — sobram 519 células `"na"` com resposta-referência presente, porque a rodada usou o
+> prompt anterior à correção. Ver **§11.2**. Fecha com
+> `rejulgar_juiz.py --completar correctness completeness`.
+
 > 🔴 **ABERTA E BLOQUEANTE (13/set/2026): a produção está fora de sincronia com o corpus.**
 >
 > O corpus foi reextraído com o recorte corrigido — 5.160 → 4.897 trechos, fingerprint
@@ -1090,7 +1100,11 @@ enorme**.
 | Correção do gabarito | `eval/tools/corrige_qrels_q0015_q0016.py` |
 | Rankings (top-100 × 7 sistemas × 75 consultas) | `eval/results/retrieval/rankings.json` |
 | Notas dos juízes + contexto recuperado | `eval/results/generation/judged_*.jsonl` |
-| Concordância entre juízes | `eval/results/agreement/agreement.csv` |
+| Concordância entre juízes | `eval/results/agreement/agreement_overall.csv` e `agreement_pairs.csv` (o `agreement.csv` do cabeçalho antigo não existe mais) |
+| **α por cenário — a leitura honesta** | `eval/results/agreement/agreement_por_cenario.csv` · ver §11.4 |
+| Qualidade dos geradores (voto de maioria) | `eval/tools/matriz_qualidade.py` → `eval/results/generation/matriz_*.csv` |
+| Significância pareada da geração | `eval/tools/significancia_geracao.py` → `significancia_geracao.csv` |
+| Rejulgamento cirúrgico de um critério | `eval/tools/rejulgar_juiz.py --completar <criterios>` |
 | **Revisão do especialista (PREENCHIDA)** | `Documentos/LEME/revisao_juizes_especialista_PREENCHIDA.csv` — movida de `~/Downloads` em 27/08/2026. **As cópias em `eval/data/` são template em branco.** |
 | Curadoria do gold set | `eval/data/golden_qa_final.csv`, coluna `curadoria` |
 | Ancoragem de citações | `eval/tools/citation_grounding.py` → `eval/results/generation/citation_grounding.csv` |
@@ -1105,3 +1119,163 @@ ele re-executa os quatro cenários e chama Gemini/Qdrant.
 ```bash
 cd eval && ../.venv/Scripts/python.exe -c "import sys; sys.path.insert(0,'retrieval_eval'); from _common import load_config, setup_io, finalize; cfg=load_config('config.yaml'); setup_io(); finalize(cfg)"
 ```
+
+---
+
+## 11. A linha do juiz LLM: rubrica mista-v2, rejulgamento e a recusa (nov/2026)
+
+Tudo desta seção está na main, commit `1c1693e` — a merge de 24 commits que viviam só na branch
+`helen/nova-rubrica-e-rotacao-corrigida`. Medido em 12/11/2026 sobre os 1200 registros de
+`eval/results/generation/judged_*.jsonl` (4 arquivos × 300: qwen3_27b e gptoss_120b, cada um em
+`rag` e `norag`; juízes llama, glm, mistral e gemini).
+
+### 11.1 O esquema de saída convidava o atalho — corrigido no código
+
+Rubrica **mista-v2** em `eval/lib/judges.py`: binários 0/1 (citation, refusal, hallucination),
+ternários 1–3 (faithfulness, answer_relevance, completeness, correctness), raciocínio antes da
+nota. Dois critérios são **condicionais** — correctness e completeness só se aplicam quando há
+resposta-referência. Dois são **indefinidos sem contexto** — faithfulness e hallucination, que no
+braço sem-RAG viram "na" por desenho.
+
+O prompt antigo oferecia `1, 2, 3 ou "na"` para os condicionais em **toda** chamada, inclusive com
+a referência presente. Oferecer a saída em todo lugar convidou a usá-la: o mistral deixou 301
+julgamentos de correctness sem nota e em 236 deles alegou que "não há resposta-referência" —
+alegação **falsa**, a referência estava no prompt e os outros juízes a leram e pontuaram. O llama
+deixou 210.
+
+Corrigido em dois commits: `7194a7d` (o esquema de saída só admite "na" onde a rubrica admite) e
+`62a1f1b` (o prompt diz também, positivamente, quando TODOS os critérios se aplicam). E o
+`_parse_score` passou a **rejeitar** um "na" indevido — devolve `None`, o bruto vai para
+`_fora_escala` e a Etapa 04 conta — em vez de aceitá-lo em silêncio.
+
+**Fonte:** comentários de `_escala_txt` e `_parse_score` em `eval/lib/judges.py`.
+
+### 11.2 O rejulgamento (PR #6) está em 287 de 806 — e por que parou aí
+
+O código da correção estava pronto na branch, mas dependia das chaves de API; a Helen rodou.
+Conferido célula a célula antes da merge (`c92deb4`):
+
+- **287 células mudaram**, todas de `"na"` para 1/2/3 — mistral correctness 137 e completeness 90,
+  llama correctness 38 e completeness 21, mistral answer_relevance 1. **Nenhuma sobrescreveu
+  julgamento existente**, nenhuma foi de número para "na", e as justificativas são todas novas
+  (zero reaproveitadas): a rodada aconteceu de verdade.
+- **Sobram 519 células `"na"` com resposta-referência presente** — mistral correctness 164 e
+  completeness 163, llama correctness 172 e completeness 20. Eram 806.
+
+As 519 **foram rejulgadas e voltaram "na"**. Motivo: a branch dela saiu de `4e7c1d4`, 15 commits
+antes, e reimplementou `judges.py` por engano — a cópia voltou a oferecer `1, 2, 3 ou "na"` em toda
+chamada e voltou a aceitar o "na" indevido no parse. O rejulgamento rodou com o prompt **anterior**
+à correção de §11.1. O código canônico de `7194a7d` nunca chegou a rodar.
+
+**Pendência aberta:** `rejulgar_juiz.py --completar correctness completeness`.
+
+### 11.3 A recusa: o achado que decide o tratamento
+
+Em **508 das 519** a resposta do sistema é uma recusa. O detector (frase-âncora normalizada
+"nao tenho informacoes suficientes") casa **461 das 1200** respostas — e elas se partem em dois
+grupos **opostos**:
+
+| | respostas | `answer_relevance` que os juízes dão |
+|---|---|---|
+| Recusa **errada** (a pergunta tinha resposta) | 224 | nota **1** em 894 de 895 — 100% |
+| Recusa **certa** (pergunta irrespondível) | 237 | nota **3** em 915 de 948 — 97% |
+
+O critério `refusal` confirma por outro caminho: 0 em 98% das erradas, 1 em 100% das certas.
+
+**Conclusão 1 — a nota certa para uma recusa indevida é 1, não "na".** Quando pontuam, os juízes já
+dão 1: 554 de 566 em correctness (98%), 713 de 715 em completeness (100%). O que varia é *quem* se
+recusa a pontuar:
+
+| % de "na" numa recusa errada | glm | gemini | llama | mistral |
+|---|---|---|---|---|
+| `correctness` | 0,4% | 0% | **77%** | **70%** |
+| `completeness` | 0% | 0% | 9% | **71%** |
+
+**Conclusão 2 — NÃO adotar a regra `answer_relevance = "na"` na recusa**, sugerida na nota da Helen.
+Ela a justificou com "1 registro de diferença", mas esse 1 é artefato: o `--completar` só reabre
+células já "na", e `answer_relevance` não tinha nenhuma, então a regra nunca chegou a disparar. O
+alcance real é **1843 células**. Simulado (virar as 1843 para "na" e rodar `04_agreement.py`):
+
+| α de `answer_relevance` | hoje | com a regra |
+|---|---|---|
+| agregado | 0,765 (n=1199) | **0,256** (n=739) |
+| sem-RAG | 0,826 | **0,102** |
+| RAG | 0,596 | **0,391** |
+
+O α médio do sem-RAG cairia de 0,624 para 0,479. A regra apagaria justamente o sinal mais limpo do
+acervo: é `answer_relevance` que distingue recusa certa de recusa errada, com 97–100% de
+concordância entre os quatro juízes. Nas médias o efeito é o espelho — o sem-RAG do qwen3 subiria
+de 2,047 para 2,598 (+0,55) e a distância RAG vs sem-RAG cairia de 0,78 para 0,23, dois terços do
+efeito que sustenta o "recuperação domina".
+
+Documento completo entregue à Helen: `LEME/NOTA_para_Helen_regra_da_recusa.md` — **fora do
+repositório**, não viaja com o git.
+
+### 11.4 α por cenário — o agregado inflava
+
+Juntar os dois braços inflava o α: parte da "concordância" vinha de os braços terem qualidade
+diferente, não de os juízes concordarem na nota. O `04_agreement.py` passou a reportar **por
+cenário**, e é essa a leitura a usar (`eval/results/agreement/agreement_por_cenario.csv`):
+
+| critério | agregado | sem-RAG | RAG |
+|---|---|---|---|
+| faithfulness | 0,262 | — | 0,262 |
+| hallucination | 0,344 | — | 0,344 |
+| answer_relevance | 0,765 | 0,826 | 0,596 |
+| correctness | 0,606 | 0,488 | 0,522 |
+| completeness | 0,634 | 0,556 | 0,536 |
+| citation | 0,549 | 0,326 | 0,502 |
+| refusal | 0,903 | 0,923 | 0,809 |
+
+α médio: **RAG 0,510 · sem-RAG 0,624** (o agregado ~0,580 infla). `refusal` é de longe o mais
+confiável; faithfulness e hallucination só existem no RAG.
+
+Em `5789fd5` os CSVs de agreement passaram a sair do código canônico. O agregado mudou para
+melhor: faithfulness e hallucination agora saem só do braço RAG (n=600, α 0,262 e 0,344) em vez de
+misturar os dois (n=1198/1196, α 0,413 e 0,495).
+
+### 11.5 O voto de maioria esconde as 519 nas médias — mas não no α
+
+As 519 células "na" **não movem a tabela de qualidade**. O voto de maioria do painel aberto
+(llama + glm + mistral) tem n = 225 de 225 em todas as células, porque o glm quase nunca diz "na" e
+carrega o registro sozinho. Recontar as recusas como 1 muda uma única célula, em 0,002.
+
+Onde elas mordem é no **α** (derrubam o n por juiz) e na **reprodutibilidade**. Não use a
+completude das médias como prova de que o rejulgamento fechou — ele não fechou.
+
+Qualidade medida (`matriz_qualidade.csv`, voto de maioria, qwen3-27b no RAG): faithfulness 2,863 ·
+answer_relevance 2,827 · correctness 2,707 · completeness 2,640 · citation 93,7% · refusal 93,7% ·
+hallucination 100%.
+
+### 11.6 A armadilha do interpretador — degradação silenciosa
+
+O projeto tem venv em `niar-rag/venv` (python 3.12.10, numpy 2.5.2, scipy 1.18.1, pandas 3.0.5).
+O `python` solto resolve para o msys2 (`C:\msys64\mingw64`), que **não tem numpy nem scipy**.
+
+Com o interpretador errado, `eval/tools/significancia_geracao.py` **omite todas as linhas de
+Wilcoxon e grava um CSV incompleto, sem erro nenhum** — só as de McNemar saem. O `04_agreement.py`
+nem roda. Sempre `venv/Scripts/python.exe`.
+
+### 11.7 Significância da geração (novo)
+
+`eval/tools/significancia_geracao.py` — McNemar exato para os binários e Wilcoxon pareado para os
+ternários, pareando por pergunta (simetria com o McNemar da recuperação). Resultados em
+`significancia_geracao.csv`:
+
+- RAG vs sem-RAG: p < 0,001 em tudo → a recuperação domina.
+- qwen3 vs gpt-oss no RAG: qwen3 vence em 6 de 7 (p < 0,01); **hallucination empata (p = 0,06)** —
+  os dois abertos são igualmente seguros contra alucinação.
+
+### 11.8 Histórico de merges desta linha
+
+| commit | o que é |
+|---|---|
+| `e682c22` | trabalho da Helen: rejulgamento + scripts de análise (PR #6) |
+| `c92deb4` | merge do PR #6 na branch; conflitos de `judges.py` e `04_agreement.py` resolvidos para a versão canônica |
+| `5789fd5` | agreement regerado pelo código canônico; `completar_criterios.py` descartado (duplicava `rejulgar_juiz.py --completar`) |
+| `1c1693e` | merge da branch inteira para a main — 24 commits |
+
+Saíram também os quatro `agreement_{overall,pairs}_{rag,norag}.csv`: eram saída da cópia da Helen
+do script e nada no repositório os reproduzia. O que traziam a mais — n e amplitude por cenário, e
+o detalhe par a par dentro de cada braço — está no histórico do git, e volta com uma mudança no
+`04_agreement.py` se valer como saída fixa.
