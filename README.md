@@ -19,3 +19,14 @@ uso da coleção pronta, reprodução dos embeddings e validação do índice.
 
 Copie `.env.example` para `.env` e preencha as credenciais localmente. O `.env`
 real não deve ser versionado nem compartilhado por canais inseguros.
+
+## Licença
+
+- **Código:** licença MIT — ver [LICENSE](LICENSE).
+- **Dados de avaliação** em [`eval/data/`](eval/data/) (gold set de perguntas,
+  respostas de referência, julgamentos de relevância e consultas): licença
+  [Creative Commons Atribuição 4.0 Internacional (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+- **Documentos do corpus:** são normas e documentos públicos cujos direitos
+  continuam com os respectivos emissores; cada trecho preserva a URL de origem.
+  As licenças acima cobrem a curadoria, a segmentação e os metadados produzidos
+  por este projeto, não o texto original das normas.
