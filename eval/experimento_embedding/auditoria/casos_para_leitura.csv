@@ -1,0 +1,145 @@
+﻿anotador;analise;qid;tipo;o_que_falta;trecho_id;observacao;nota
+especialista_1;3: auto acerta, humano N;c027;comparative;"Salvo melhor juízo, a pena de interdição temporária de direitos referente à proibição do exercício de profissão se aplica ao crime de violação do segredo profissional. Portanto, o retorno de trechos que contenham o art. 47, inciso II, e o art. 56 do Código Penal complementaria o conteúdo da pergunta.
+
+Além disso, é desejável incluir as penas disciplinares aplicáveis pelos Conselhos Regionais aos seus membros, como forma de indicar possíveis consequências para a infração ética de revelar segredo médico. Portanto, é recomendado retornar trecho que contenha o art. 22 da Lei nº 3.268/57.";;;
+especialista_1;3: auto erra, humano S;c020;comparative;Nada a acrescentar.;;;
+especialista_1;3: auto erra, humano S;f013;factual;Nada a acrescentar, para além do fato de que o trecho retorna uma resposta para o questionamento da pergunta, ainda que de forma genérica.;;;
+especialista_1;3: auto erra, humano S;f034;factual;Nada a acrescentar.;;;
+especialista_1;3: auto erra, humano S;15;factual;Nada a acrescentar.;;;
+especialista_1;3: auto erra, humano S;q0016;factual;Nada a acrescentar.;;;
+especialista_1;3: auto erra, humano S;q0071;multi_hop;Nada a acrescentar.;;;
+especialista_1;3: auto erra, humano S;q0058;multi_hop;Nada a acrescentar.;;;
+especialista_1;3: auto erra, humano S;90;multi_hop;Nada a acrescentar, considerando que a pergunta não especifica nehum ordenamento jurídico específico, o que permitiu retornar trechos normativos da União Europeia (GDPR) e não do Brasil (LGPD), por exemplo.;;;
+especialista_1;3: auto erra, humano S;c010;comparative;Nada a acrescentar.;;;
+especialista_1;3: auto erra, humano S;q0089;comparative;Nada a acrescentar.;;;
+especialista_1;3: auto erra, humano S;c014;comparative;"A título explicativo, é importante conderarar que o retorno de temas distintos pelos trechos (avaliação de impacto algorítmico no contexto do PL nº 2.338/23 e avaliação de impacto de proteção de dados no contexto da GDPR) não está incorreto.
+
+Isso se deve, salvo melhor juízo, pelo fato de que a pergunta não especifica qual é o tipo de avaliação nem qual é o ordenamento jurídico de referência.
+";;;
+especialista_1;3: auto erra, humano S;c036;comparative;Nada a acrescentar.;;;
+especialista_1;3: auto erra, humano S;q0070;multi_hop;Nada a acrescentar.;;;
+especialista_1;3: auto erra, humano S;97;multi_hop;Nada a acrescentar.;;;
+especialista_1;3: auto erra, humano S;q0073;multi_hop;Nada a acrescentar.;;;
+especialista_1;4: nota 3 fora do gabarito;c011;comparative;;regulamento_interno_CEP_2024_822b2611d855;"Relevante para apresentar o enquadramento ""pendente"" para os protocolos de pesquisa, que enseja uma resposta por parte do pesquisador.";
+especialista_1;4: nota 3 fora do gabarito;c011;comparative;;regulamento_interno_CEP_2024_0c9d119cda3d;"Relevante para apresentar i) o enquadramento ""arquivado"" para os protocolos de pesquisa, que é a consequência para o descumprimento do prazo de resposta; e ii) a retirada do processo do sistema no caso de não resposta. ";
+especialista_1;4: no gabarito, nota 0-1;c011;comparative;;regulamento_interno_CEP_2024_ffa83c46c949;A indicação sobre a retirada do processo do sistema no caso de não resposta já consta no Trecho 2, referente ao mesmo documento.;0.0
+especialista_1;4: nota 3 fora do gabarito;c011;comparative;;regulamento_interno_CEP_2024_8c7454f2ae75;Relevante para indicar o que fica sob guarda do comitê após o prazo, em documento específico para a regulamentação do CEP .;
+especialista_1;4: nota 3 fora do gabarito;c003;comparative;;resolucao_2306_CFM_2022_8a15c1eb6201;O trecho indica o CRM competente para apurar falta ética em casos específicos (atendimento por telemedicina e publicidade médica).;
+especialista_1;4: nota 3 fora do gabarito;c003;comparative;;resolucao_2314_CFM_2022_b532af02182f;O trecho indica o CRM competente para apurar e julgar infrações éticas, especificamente para o caso da telemedicina. ;
+especialista_1;4: nota 3 fora do gabarito;c022;comparative;;imdrf_good_ml_practice_2025_0732a9aa77a6;O trecho indica que dados de treinamento devem ser independentes.;
+especialista_1;4: nota 3 fora do gabarito;c022;comparative;;imdrf_ml_medical_devices_terms_2022_d87f49be3fc1;O trecho indica a exigência de que dados de treinamento não façam parte do conjunto de dados de teste, no contexto da definição de conjunto de dados de treinamento.;
+especialista_1;4: nota 3 fora do gabarito;c034;comparative;;resolucao_2454_CFM_2026_6f86a242080d;O trecho retorna a transparência em IA como uma medida a ser adotada no âmbito da Resolução.;
+especialista_1;4: nota 3 fora do gabarito;c034;comparative;;resolucao_2454_CFM_2026_f0e72420c21a;O trecho indica a transparência como um princípio dos serviços médicos que adotam IA.;
+especialista_1;4: nota 3 fora do gabarito;c034;comparative;;resolucao_2454_CFM_2026_5e8bf82b03c3;O trecho é parte dos motivos para a elaboração da Resolução, ocasião na qual a transparência é abordada como princípio a ser observado em soluções de IA na área médica.;
+especialista_1;4: nota 3 fora do gabarito;q0097;comparative;;resolucao_19_ANPD_2024_fe3dbcef88f4;O trecho retorna algumas das medidas eficazes quanto a salvaguardas na transferência internacional dados pessoais.;
+especialista_1;4: nota 3 fora do gabarito;q0097;comparative;;resolucao_19_ANPD_2024_40b223c60fa7;O trecho retorna o restante das medidas eficazes quanto a salvaguardas na transferência internacional dados pessoais, em continuidade ao trecho acima.;
+especialista_1;4: nota 3 fora do gabarito;q0097;comparative;;resolucao_19_ANPD_2024_b9e2645c74ad;O trecho retorna a necessidade de salvaguardas adicionais para o caso de transferência internacional de dados sensíveis e dados de crianças e adolescentes.;
+especialista_1;4: nota 3 fora do gabarito;c040;comparative;;global_digital_health_strategy_WHO_2020_2027_c2342bf2fbb9;O trecho aborda questões sobre investimento no sistema de saúde digital.;
+especialista_1;4: nota 3 fora do gabarito;c040;comparative;;global_digital_health_strategy_WHO_2020_2027_cc378bfadcde;O trecho indica a importância da saúde digital, bem como seus princípios basilares.;
+especialista_1;4: nota 3 fora do gabarito;c040;comparative;;global_digital_health_strategy_WHO_2020_2027_46c69d61b59c;O trecho indica a importância da saúde digital, bem como seus princípios basilares.;
+especialista_1;4: nota 3 fora do gabarito;c020;comparative;;aiml_samd_action_plan_FDA_2021_6862f12c1520;O trecho indica o que descreve um protocolo de alteração de algortimo (Algorithm Change Control - ACP).;
+especialista_1;4: nota 3 fora do gabarito;c020;comparative;;aiml_samd_action_plan_FDA_2021_96c860af75f1;O trecho indica a caracterização do plano predeterminado de controle de mudanças e no que consiste o protocolo de alteração de algoritmo.;
+especialista_1;4: nota 3 fora do gabarito;c020;comparative;;predetermined_change_control_FDA_2023_91df890fca56;O trecho indica do que se trata um plano predeterminado de controle de mudanças (predetermined change control plan - PCCP).;
+especialista_1;4: nota 3 fora do gabarito;c020;comparative;;ai_ml_discussion_paper_FDA_2021_015f5dcb5df2;O trecho indica a caracterização do plano predeterminado de controle de mudanças e no que consiste o protocolo de alteração de algoritmo.;
+especialista_1;4: nota 3 fora do gabarito;f017;factual;;plano_brasileiro_ia_BR_2025_2e51894d27ca;O trecho indica a sustentabilidade como diferencial competitivo e na busca por alcançar objetivos estratégicos nacionais.;
+especialista_1;4: nota 3 fora do gabarito;f013;factual;;de_identifying_government_datasets_NIST_2023_9a744c6a65f6;O trecho indica o monitoramento posterior ao lançamento de deidentificação como ação necessária.;
+especialista_1;4: nota 3 fora do gabarito;f034;factual;;imdrf_samd_risk_framework_2014_2e65b9320606;O trecho retorna uma definição para software as a medical device, segundo o IMDRF.;
+especialista_1;4: nota 3 fora do gabarito;f034;factual;;regulatory_considerations_ai_health_WHO_2024_1611479fd1af;O trecho retorna a definição de software as a medical service do IMDRF, ainda que em fonte de outra instituição.;
+especialista_1;4: nota 3 fora do gabarito;f034;factual;;regulatory_considerations_ai_health_WHO_2024_c18b4b650d8a;O trecho retorna a definição de software as a medical service do IMDRF, ainda que em fonte de outra instituição.;
+especialista_1;4: nota 3 fora do gabarito;15;factual;;ai_ml_discussion_paper_FDA_2021_f793324ad2cf;O trecho indica que modificações dentro dos limites de SPS e ACP podem ser apenas documentadas no histórico.;
+especialista_1;4: nota 3 fora do gabarito;q0016;factual;;gdpr_regulation_EU_2016_ee78e1535b02;O trecho indica a não aplicação do direito à portabilidade de dados quando do tratamento baseado em obrigação legal do controlador, bem como inclui informações complementares para o tema.;
+especialista_1;4: nota 3 fora do gabarito;56;multi_hop;;multimodal_models_guidance_WHO_2024_758a8a90ab7e;O trecho indica riscos de dependência e de cibersegurança.;
+especialista_1;4: nota 3 fora do gabarito;56;multi_hop;;multimodal_models_guidance_WHO_2024_c696a6b5a637;O trecho aborda riscos de cibersegurança.;
+especialista_1;4: nota 3 fora do gabarito;92;multi_hop;;resolucao_2314_CFM_2022_b532af02182f;O trecho trata sobre a fiscalização da telemedicina por parte dos CRMs.;
+especialista_1;4: nota 3 fora do gabarito;92;multi_hop;;lei_3268_BR_1957_023ea5e7ce33;O trecho indica competências dos CRMs, inclusive sobre inscrição de profissionais e fiscalização do exercício da profissão.;
+especialista_1;4: nota 3 fora do gabarito;13;multi_hop;;european_health_data_space_EU_2025_16cb5ee6f214;O trecho indica informações que devem ser repassadas como decorrência do acesso a dados de saúde de utilização secundária.;
+especialista_1;4: nota 3 fora do gabarito;13;multi_hop;;european_health_data_space_EU_2025_17d7ac081316;O trecho indica a necessidade de publicização dos resultados/produtos da utilização secundária de dados de saúde.;
+especialista_1;4: nota 3 fora do gabarito;q0071;multi_hop;;ai_device_software_guidance_FDA_2025_8244df1feeb0;O trecho apresenta obrigações relacionadas ao monitoramento pós-comercialização como parte do sistema de qualidade.;
+especialista_1;4: nota 3 fora do gabarito;q0071;multi_hop;;ai_device_software_guidance_FDA_2025_6ca83ca35c27;O trecho trata sobre descrição da população de pacientes.;
+especialista_1;4: nota 3 fora do gabarito;q0071;multi_hop;;ai_ml_discussion_paper_FDA_2021_e58223975f84;O trecho indica a obrigação de manter um sistema de qualidade adequado.;
+especialista_1;4: nota 3 fora do gabarito;q0071;multi_hop;;ai_device_software_guidance_FDA_2025_66602ec1e6d9;O trecho trata sobre descrição da população de pacientes.;
+especialista_1;4: nota 3 fora do gabarito;q0058;multi_hop;;ai_device_software_guidance_FDA_2025_cfe6d77e0a13;O trecho indica informações destinadas a pacientes e cuidadores.;
+especialista_1;4: nota 3 fora do gabarito;q0058;multi_hop;;ai_device_software_guidance_FDA_2025_229da0ed5d93;O trecho indica avaliações de cibersegurança.;
+especialista_1;4: nota 3 fora do gabarito;90;multi_hop;;gdpr_regulation_EU_2016_113524b93e1f;O trecho indica que o tratamento de dados por um médico isolado não configura larga escala.;
+especialista_1;4: nota 3 fora do gabarito;m013;multi_hop;;regulatory_considerations_ai_health_WHO_2024_ae97d85bac4f;O trecho aborda a documentação da seleção e das características dos conjuntos de dados, além da validação externa e da representatividade dos dados;
+especialista_1;4: nota 3 fora do gabarito;m013;multi_hop;;regulatory_considerations_ai_health_WHO_2024_4d3248d3ea2d;O trecho indica a documentação de aspectos como finalidade médica, dados utilizados, parâmetros, métricas, desvios e atualizações durante o desenvolvimento.;
+especialista_1;4: nota 3 fora do gabarito;c006;comparative;;decreto_44045_BR_1958_67f42705f4b2;O trecho indica o CFM como instituição responsável por fixar a anuidade dos Conselhos de Medicina, bem como a consequência do pagamento fora do prazo.;
+especialista_1;4: nota 3 fora do gabarito;c006;comparative;;decreto_44045_BR_1958_2ed5235284c5;O trecho indica o Conselho Federal de Medicina como competente para a atualização do valor da anuidade.;
+especialista_1;4: nota 3 fora do gabarito;c001;comparative;;lei_3268_BR_1957_6929a05abc23;O trecho indica o rol de penas disciplinares aplicáveis pelos Conselhos Regionais.;
+especialista_1;4: nota 3 fora do gabarito;c047;comparative;;cdc_BR_1990_14f7fc1f1e58;O trecho indica a responsabilização dos profissionais liberais mediante verificação de culpa.;
+especialista_1;4: nota 3 fora do gabarito;q0076;comparative;;ai_risk_management_framework_NIST_2023_3f0e5990b563;O trecho trata sobre considerações do NIST a respeito de transparência de sistemas de IA, bem como sua relação com a responsabilização.;
+especialista_1;4: nota 3 fora do gabarito;q0076;comparative;;ai_risk_management_framework_NIST_2023_177ce6ca8d56;O trecho trata sobre considerações do NIST a respeito de transparência e responsabilização de sistemas de IA.;
+especialista_1;4: nota 3 fora do gabarito;c013;comparative;;gdpr_regulation_EU_2016_55e8bcf35567;O trecho indica que a autoridade de supervisão deve ser consultada antes do tratamento de dados, se o controlador não consegue mitigar riscos das operações de tratamento.;
+especialista_1;4: nota 3 fora do gabarito;c013;comparative;;gdpr_regulation_EU_2016_0354af8fa2e7;O trecho indica que a autoridade de supervisão deve ser consultada antes do tratamento de dados, se o controlador não consegue mitigar riscos das operações de tratamento.;
+especialista_1;4: nota 3 fora do gabarito;q0089;comparative;;estrategia_brasileira_ia_MCTI_2021_ade8e7ca3ca6;O trecho explora estatísticas sobre startups e as caracteriza como objeto de interesse para o empreendedorismo brasileiro.;
+especialista_1;4: nota 3 fora do gabarito;q0089;comparative;;estrategia_brasileira_ia_MCTI_2021_efcfe98232af;O trecho explora estatísticas sobre startups de IA, inlcuindo o número de fincanciamentos por programas governamentais e os principais setores de atuação.;
+especialista_1;4: nota 3 fora do gabarito;95;factual;;resolucao_1627_CFM_2001_fe632c25722f;O trecho indica as pessoas como destinatárias do ato profissional de médico,;
+especialista_1;4: nota 3 fora do gabarito;95;factual;;resolucao_1627_CFM_2001_bafc3f9b2388;O trecho indica as pessoas que necessitam de ato profissional de médico como destinatárias deste.;
+especialista_1;4: nota 3 fora do gabarito;95;factual;;resolucao_1627_CFM_2001_05f41e073afd;O trecho indica os pacientes solicitantes ou necessitados como beneficiários dos atos profissionais.;
+especialista_1;4: nota 3 fora do gabarito;31;factual;;imdrf_samd_risk_framework_2014_c4b8439c67e4;O trecho indica os dois fatores usados para decrever o uso pretendido de um SaMD.;
+especialista_1;4: nota 3 fora do gabarito;q0007;factual;;projeto_lei_2338_BR_2023_3711972ac190;O trecho indica que startups e e pequenas empresas devem ter acesso prioritário a ambientes de testagem, no contexto de sandbox regulatório.;
+especialista_1;4: nota 3 fora do gabarito;f025;factual;;multimodal_models_guidance_WHO_2024_d746c909612d;O trecho trata sobre o que o público deve fazer a respeito do desenvolvimento de IA para a saúde.;
+especialista_1;4: nota 3 fora do gabarito;91;multi_hop;;multimodal_models_guidance_WHO_2024_402852a06a4c;O trecho indica a insuficiência de compromisso corporativo com preceitos éticos e de transparência como risco decorrente da dominância de grandes empresas de tecnologia.;
+especialista_1;4: nota 3 fora do gabarito;91;multi_hop;;multimodal_models_guidance_WHO_2024_6005bf16e71e;O trecho indica a captura dos profissionais pelo mundo corporativo como um risco social associado ao monopólio de grandes empresas de tecnologia.;
+especialista_1;4: nota 3 fora do gabarito;91;multi_hop;;multimodal_models_guidance_WHO_2024_c68b2a28e562;O trecho indica o risco ao compliance regulatório como um risco social decorrente da concentração do desenvolvimento de modelos por grandes empresas de tecnologia.;
+especialista_1;4: nota 3 fora do gabarito;85;multi_hop;;ethics_governance_ai_health_WHO_2021_8441fb38a2a4;O trecho indica o número de mortes adicionais esperadas por mudança climática.;
+especialista_1;4: nota 3 fora do gabarito;11;multi_hop;;de_identifying_government_datasets_NIST_2023_a122d5ac3672;O trecho indica o monitoramento e aprimoramento contínuos da proteção da privacidade.;
+especialista_1;4: nota 3 fora do gabarito;9;multi_hop;;resolucao_19_ANPD_2024_c89cfd030260;O trecho indica que as partes envolvidas na transferência internacional de dados, entre as quais enquadra-se o operador, devem manter registrados incidentes de segurança  com dados pessoais.;
+especialista_1;4: nota 3 fora do gabarito;9;multi_hop;;lgpd_BR_2018_d1078bf1983f;O trecho indica que o operador deve registrar as operações de tratamento de dados pessoais realizadas, ainda que de forma geral.;
+especialista_1;4: no gabarito, nota 0-1;c002;comparative;;lei_3268_BR_1957_bcbbc5fa1bea;O trecho não indica por completo a composição dos Conselhos Regionais de Medicina e foca especificamente na composição da diretoria de cada Conselho Regional.;1.0
+especialista_1;4: nota 3 fora do gabarito;c002;comparative;;lei_6681_BR_1979_66090970bcf4;O trecho indica que médicos militares não podem participar de eleições nos Conselhos em que estiverem inscritos.;
+especialista_1;4: nota 3 fora do gabarito;c031;comparative;;resolucao_2454_CFM_2026_ac15e44f0540;O trecho indica que a supervisão humana não é dispensável, via de regra.;
+especialista_1;4: nota 3 fora do gabarito;c031;comparative;;resolucao_2454_CFM_2026_f4ad3eef7649;O trecho indica a responsabilidade dos profissionais de saúde e de instituições por decisões tomadas com auxílio de IA, no contexto do princípio da responsabilização (accountability);
+especialista_1;4: nota 3 fora do gabarito;q0095;comparative;;projeto_lei_2338_BR_2023_77709f606907;O trecho trata sobre a importância de que sistemas de IA atendam a medidas de governança antes de serem colcoados em circulação no mercado.;
+especialista_1;4: nota 3 fora do gabarito;c014;comparative;;projeto_lei_2338_BR_2023_055da3d477b2;O trecho indica que a avaliação de impacto deve ser realizada anteriormente à circulação de sistemas de IA no mercado, bem como que a periodicidade da atualização da avaliação ainda será estabelecida.;
+especialista_1;4: nota 3 fora do gabarito;c014;comparative;;gdpr_regulation_EU_2016_d3e25979fb1c;O trecho indica que a avaliação de impacto de proteção de dados, quando aplicável, deve ser realizada pelo controlador antes do tratamento.;
+especialista_1;4: nota 3 fora do gabarito;c036;comparative;;estrategia_brasileira_ia_MCTI_2021_e293c4f411f8;"O trecho indica a definição da OCDE de sistema de inteligência artificial, ainda que através de documentos de terceiro, mas de forma parcialmente incompleta.
+
+O trecho ainda indica ramificações da IA como subcategorias.";
+especialista_1;4: nota 3 fora do gabarito;q0080;comparative;;projeto_lei_2338_BR_2023_77709f606907;O trecho trata sobre particularidades da regulação de sistemas de IA de alto risco.;
+especialista_1;4: nota 3 fora do gabarito;q0080;comparative;;projeto_lei_2338_BR_2023_2f72464049f5;O trecho trata sobre particularidades da regulação de sistemas de IA de alto risco.;
+especialista_1;4: nota 3 fora do gabarito;24;factual;;decreto_44045_BR_1958_d5ae42be67ec;O trecho indica o meio eletrônico como forma de tramitação dos processos éticos. ;
+especialista_1;4: no gabarito, nota 0-1;24;factual;;decreto_44045_BR_1958_52228ba5dd5a;O trecho faz referência ao local de consulta do processo ético, mas o artigo encontra-se revogado.;0.0
+especialista_1;4: nota 3 fora do gabarito;24;factual;;resolucao_2306_CFM_2022_bb0e9b0bb7fb;O trecho indica o meio eletrônico como forma de tramitação dos processos éticos. ;
+especialista_1;4: nota 3 fora do gabarito;m006;multi_hop;;cdc_BR_1990_08f3690df41e;O trecho indica que o ônus da prova da veracidade e correção da comunicação publicitária cabe a que a patrocina.;
+especialista_1;4: nota 3 fora do gabarito;m006;multi_hop;;cdc_BR_1990_36681c61e132;O trecho indica os diferentes juízos competentes para a execução do juízo.;
+especialista_1;4: nota 3 fora do gabarito;q0070;multi_hop;;estrategia_brasileira_ia_MCTI_2021_54ab9b8f40a3;O trecho faz um panorama geral sobre viés algorítmico.;
+especialista_1;4: nota 3 fora do gabarito;q0070;multi_hop;;estrategia_brasileira_ia_MCTI_2021_f2d9602ac735;O trecho faz um panorama geral sobre o uso de IA na segurança pública.;
+especialista_1;4: nota 3 fora do gabarito;q0070;multi_hop;;estrategia_brasileira_ia_MCTI_2021_2ea084055f2f;O trecho explora o uso de IA na segurança pública.;
+especialista_1;4: nota 3 fora do gabarito;q0070;multi_hop;;estrategia_brasileira_ia_MCTI_2021_3aa1ceb7941b;O trecho explora o uso de IA na segurança pública e faz uma conexão com o tema do viés algorítmico.;
+especialista_1;4: nota 3 fora do gabarito;q0063;multi_hop;;resolucao_2314_CFM_2022_6d669becaca2;O trecho indica a necessidade de assegurar o consentimento explícito do paciente ou de seu representante legal a respeito do compartilhamento de infomações pessoais.;
+especialista_1;4: nota 3 fora do gabarito;97;multi_hop;;estrategia_brasileira_ia_MCTI_2021_29ea74e97e33;O trecho trata de estatísticas relacionadas a riscos trazidos pela IA aos trabalhadores, inclusive com recorte para o cenário brasileiro.;
+especialista_1;4: nota 3 fora do gabarito;97;multi_hop;;estrategia_brasileira_ia_MCTI_2021_6e401bf8465f;O trecho trata da desigualdade de renda e da redução de empregos de faixa salarial intermediária como consequências da automação.;
+especialista_1;4: nota 3 fora do gabarito;q0073;multi_hop;;ethics_governance_ai_health_WHO_2021_ef251bb76029;O trecho indica o risco de que empresas controladoras de dados de saúde exerçam poder excessivo sobre figuras como governos e pacientes.;
+especialista_1;4: nota 3 fora do gabarito;q0073;multi_hop;;ethics_governance_ai_health_WHO_2021_b815fa8b4462;O trecho indica riscos de perda de autonomia, controle de dados e privacidade, decorrentes do controle exercido por empresas de tecnologia.;
+especialista_1;4: nota 3 fora do gabarito;q0073;multi_hop;;ethics_governance_ai_health_WHO_2021_d382342d00d4;O trecho indica que empresas de tecnologia devem assumir a responsabilidade por consequências negativas relacionadas à saúde que sejam causadas por sistemas de IA.;
+especialista_1;4: nota 3 fora do gabarito;q0051;multi_hop;;projeto_lei_2338_BR_2023_5d2bf3859f0b;O trecho indica os direitos de pessoas afetadas por sistemas de IA de alto risco, ainda que o caput do artigo, que anuncia a temática em questão, não tenha sido retornado.;
+especialista_1;4: no gabarito, nota 0-1;q0051;multi_hop;;projeto_lei_2338_BR_2023_846f05137a8d;O trecho trata sobre definições relacionadas à disciplina de sistemas de IA e sobre direitos de pessoas afetadas por sistema de IA, sem foco para a categoria de sistemas de alto risco e para as medidas de governança cabíveis para essa categoria.;0.0
+anotador_2;3: auto erra, humano S;q0016;factual;;;;
+anotador_2;3: auto erra, humano S;f013;factual;;;;
+anotador_2;3: auto acerta, humano N;f017;factual;"Falta o conceito que dá nome ao plano: ""IA para o Bem de Todos"".";;;
+anotador_2;3: auto erra, humano S;f034;factual;;;;
+anotador_2;4: nota 3 fora do gabarito;c027;comparative;;cp_BR_1940_02483289a2c3;;
+anotador_2;4: nota 3 fora do gabarito;15;factual;;ai_ml_discussion_paper_FDA_2021_213f22503630;Falta a resposta pela Anvisa;
+anotador_2;4: nota 3 fora do gabarito;15;factual;;ai_ml_discussion_paper_FDA_2021_f793324ad2cf;Falta a resposta pela Anvisa;
+anotador_2;4: nota 3 fora do gabarito;15;factual;;ai_ml_discussion_paper_FDA_2021_02ffcf49b734;Falta a resposta pela Anvisa;
+anotador_2;4: nota 3 fora do gabarito;c038;comparative;;regulamento_interno_CEP_2024_b1228c3492ce;;
+anotador_2;4: no gabarito, nota 0-1;c038;comparative;;regulamento_interno_CEP_2024_ffa83c46c949;Não responde o tipo de pesquisa;1.0
+anotador_2;4: no gabarito, nota 0-1;90;multi_hop;;gdpr_regulation_EU_2016_6e3231338658;A interpretação no Brasil pode ser diferente. A LGPD não traz essa explicação, mas 1 médico que tem um banco de dados de 2 milhões de pacientes pode ser considerado larga escala, depende de análise caso a caso.;1.0
+anotador_2;4: nota 3 fora do gabarito;q0016;factual;;gdpr_regulation_EU_2016_ee78e1535b02;;
+anotador_2;4: nota 3 fora do gabarito;q0016;factual;;lgpd_BR_2018_e2c6b7a4e79e;;
+anotador_2;4: nota 3 fora do gabarito;q0016;factual;;european_health_data_space_EU_2025_40e9ab42edd0;;
+anotador_2;4: no gabarito, nota 0-1;56;multi_hop;;multimodal_models_guidance_WHO_2024_07abdccb4702;Cita o assunto somente na última linha;1.0
+anotador_2;4: nota 3 fora do gabarito;56;multi_hop;;multimodal_models_guidance_WHO_2024_758a8a90ab7e;;
+anotador_2;4: nota 3 fora do gabarito;77;factual;;projeto_lei_2338_BR_2023_c8c240c891cc;;
+anotador_2;4: nota 3 fora do gabarito;77;factual;;projeto_lei_2338_BR_2023_fb3dae7f2ffe;;
+anotador_2;4: nota 3 fora do gabarito;c020;comparative;;aiml_samd_action_plan_FDA_2021_6862f12c1520;;
+anotador_2;4: nota 3 fora do gabarito;c020;comparative;;predetermined_change_control_FDA_2023_91df890fca56;;
+anotador_2;4: nota 3 fora do gabarito;c020;comparative;;aiml_samd_action_plan_FDA_2021_96c860af75f1;;
+anotador_2;4: nota 3 fora do gabarito;f013;factual;;de_identifying_government_datasets_NIST_2023_cfc843590029;;
+anotador_2;4: nota 3 fora do gabarito;f013;factual;;de_identifying_government_datasets_NIST_2023_06725c82dbe7;;
+anotador_2;4: no gabarito, nota 0-1;f017;factual;;plano_brasileiro_ia_BR_2025_49533e792954;Não explica o conceito questionado.;1.0
+anotador_2;4: nota 3 fora do gabarito;f034;factual;;ai_ml_discussion_paper_FDA_2021_8de2a1efc878;Poderia apresentar somente o conceito de forma objetiva.;
+anotador_2;4: nota 3 fora do gabarito;f034;factual;;regulatory_considerations_ai_health_WHO_2024_1611479fd1af;;
+anotador_2;4: nota 3 fora do gabarito;f034;factual;;imdrf_samd_risk_framework_2014_2e65b9320606;Poderia apresentar somente o conceito de forma objetiva.;
+anotador_2;4: nota 3 fora do gabarito;f034;factual;;regulatory_considerations_ai_health_WHO_2024_c18b4b650d8a;;

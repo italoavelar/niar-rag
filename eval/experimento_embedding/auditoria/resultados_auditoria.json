@@ -1,0 +1,411 @@
+{
+  "desenho": "auditoria/DESENHO_ANALISE_AUDITORIA.md",
+  "amostra": {
+    "especialista_1": {
+      "perguntas": 78,
+      "trechos_com_nota": 390,
+      "vereditos": 75
+    },
+    "anotador_2": {
+      "perguntas": 30,
+      "trechos_com_nota": 150,
+      "vereditos": 29
+    },
+    "celulas": {
+      "comparative|erra": 15,
+      "comparative|acerta": 13,
+      "factual|erra": 5,
+      "factual|acerta": 15,
+      "multi_hop|erra": 15,
+      "multi_hop|acerta": 15
+    }
+  },
+  "analise1_concordancia": {
+    "nota_trecho": {
+      "kappa": 0.371,
+      "ic95": [
+        0.205,
+        0.519
+      ],
+      "n_itens": 150,
+      "n_perguntas": 30,
+      "concordancia_bruta": 0.32,
+      "confusao_linhas_e1_colunas_a2": [
+        [
+          14,
+          8,
+          11,
+          3
+        ],
+        [
+          3,
+          7,
+          5,
+          5
+        ],
+        [
+          5,
+          0,
+          11,
+          4
+        ],
+        [
+          1,
+          13,
+          44,
+          16
+        ]
+      ],
+      "marginal_e1": {
+        "0": 36,
+        "1": 20,
+        "2": 20,
+        "3": 74
+      },
+      "marginal_a2": {
+        "0": 23,
+        "1": 28,
+        "2": 71,
+        "3": 28
+      }
+    },
+    "veredito": {
+      "kappa": 0.296,
+      "ic95": [
+        0.076,
+        0.577
+      ],
+      "n_itens": 29,
+      "n_perguntas": 29,
+      "concordancia_bruta": 0.586,
+      "confusao_linhas_e1_colunas_a2_N_P_S": [
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        [
+          2,
+          7,
+          12
+        ]
+      ]
+    }
+  },
+  "analise2_vies_especialista_1": {
+    "nota_media_por_pergunta": {
+      "e1": 1.88,
+      "a2": 1.693,
+      "diferenca_media_e1_menos_a2": 0.187,
+      "perguntas_e1_maior": 18,
+      "perguntas_e1_menor": 12,
+      "empates": 0,
+      "wilcoxon_p": 0.338
+    },
+    "veredito": {
+      "e1_mais_favoravel": 9,
+      "e1_menos_favoravel": 3,
+      "teste_sinal_p": 0.146
+    },
+    "regra": "vies se algum p < 0,05 na direcao e1 mais favoravel",
+    "vies_detectado": false,
+    "base_principal": "especialista_1 (78)"
+  },
+  "analise3_humano_x_auto__especialista_1": {
+    "principal_so_S": {
+      "tabela_linhas_humano_0_1_colunas_auto_0_1": [
+        [
+          19,
+          4
+        ],
+        [
+          15,
+          37
+        ]
+      ],
+      "concordancia_bruta": 0.747,
+      "kappa": 0.474,
+      "taxa_humano_acerto": {
+        "ponderada": 0.7,
+        "sem_peso": 0.693,
+        "n": 75,
+        "populacao_coberta": 225
+      },
+      "por_tipo": {
+        "comparative": {
+          "n": 28,
+          "humano": 14,
+          "auto": 13,
+          "concordam": 19
+        },
+        "factual": {
+          "n": 20,
+          "humano": 19,
+          "auto": 15,
+          "concordam": 16
+        },
+        "multi_hop": {
+          "n": 27,
+          "humano": 19,
+          "auto": 13,
+          "concordam": 21
+        }
+      }
+    },
+    "sensibilidade_S_ou_PARCIAL": {
+      "tabela_linhas_humano_0_1_colunas_auto_0_1": [
+        [
+          5,
+          1
+        ],
+        [
+          29,
+          40
+        ]
+      ],
+      "concordancia_bruta": 0.6,
+      "kappa": 0.132,
+      "taxa_humano_acerto": {
+        "ponderada": 0.938,
+        "sem_peso": 0.92,
+        "n": 75,
+        "populacao_coberta": 225
+      },
+      "por_tipo": {
+        "comparative": {
+          "n": 28,
+          "humano": 26,
+          "auto": 13,
+          "concordam": 13
+        },
+        "factual": {
+          "n": 20,
+          "humano": 19,
+          "auto": 15,
+          "concordam": 16
+        },
+        "multi_hop": {
+          "n": 27,
+          "humano": 24,
+          "auto": 13,
+          "concordam": 16
+        }
+      }
+    },
+    "tabela_3x2_linhas_N_P_S_colunas_auto_erra_acerta": [
+      [
+        5,
+        1
+      ],
+      [
+        14,
+        3
+      ],
+      [
+        15,
+        37
+      ]
+    ],
+    "taxa_auto_acerto_na_amostra": {
+      "ponderada": 0.538,
+      "sem_peso": 0.547,
+      "n": 75,
+      "populacao_coberta": 225
+    }
+  },
+  "analise4_trechos__especialista_1": {
+    "principal_nota_ge_2": {
+      "tabela_linhas_humano_0_1_colunas_gabarito_0_1": [
+        [
+          161,
+          4
+        ],
+        [
+          129,
+          96
+        ]
+      ],
+      "kappa": 0.366
+    },
+    "sensibilidade_nota_3": {
+      "tabela_linhas_humano_0_1_colunas_gabarito_0_1": [
+        [
+          201,
+          18
+        ],
+        [
+          89,
+          82
+        ]
+      ],
+      "kappa": 0.416
+    },
+    "nota_por_status_no_gabarito": {
+      "no_gabarito": {
+        "0": 3,
+        "1": 1,
+        "2": 14,
+        "3": 82
+      },
+      "fora_do_gabarito": {
+        "0": 95,
+        "1": 66,
+        "2": 40,
+        "3": 89
+      }
+    }
+  },
+  "analise3_humano_x_auto__anotador_2": {
+    "principal_so_S": {
+      "tabela_linhas_humano_0_1_colunas_auto_0_1": [
+        [
+          12,
+          5
+        ],
+        [
+          3,
+          9
+        ]
+      ],
+      "concordancia_bruta": 0.724,
+      "kappa": 0.445,
+      "taxa_humano_acerto": {
+        "ponderada": 0.36,
+        "sem_peso": 0.414,
+        "n": 29,
+        "populacao_coberta": 225
+      },
+      "por_tipo": {
+        "comparative": {
+          "n": 10,
+          "humano": 4,
+          "auto": 5,
+          "concordam": 9
+        },
+        "factual": {
+          "n": 9,
+          "humano": 6,
+          "auto": 4,
+          "concordam": 5
+        },
+        "multi_hop": {
+          "n": 10,
+          "humano": 2,
+          "auto": 5,
+          "concordam": 7
+        }
+      }
+    },
+    "sensibilidade_S_ou_PARCIAL": {
+      "tabela_linhas_humano_0_1_colunas_auto_0_1": [
+        [
+          1,
+          1
+        ],
+        [
+          14,
+          13
+        ]
+      ],
+      "concordancia_bruta": 0.483,
+      "kappa": -0.005,
+      "taxa_humano_acerto": {
+        "ponderada": 0.889,
+        "sem_peso": 0.931,
+        "n": 29,
+        "populacao_coberta": 225
+      },
+      "por_tipo": {
+        "comparative": {
+          "n": 10,
+          "humano": 10,
+          "auto": 5,
+          "concordam": 5
+        },
+        "factual": {
+          "n": 9,
+          "humano": 8,
+          "auto": 4,
+          "concordam": 3
+        },
+        "multi_hop": {
+          "n": 10,
+          "humano": 9,
+          "auto": 5,
+          "concordam": 6
+        }
+      }
+    },
+    "tabela_3x2_linhas_N_P_S_colunas_auto_erra_acerta": [
+      [
+        1,
+        1
+      ],
+      [
+        11,
+        4
+      ],
+      [
+        3,
+        9
+      ]
+    ],
+    "taxa_auto_acerto_na_amostra": {
+      "ponderada": 0.538,
+      "sem_peso": 0.483,
+      "n": 29,
+      "populacao_coberta": 225
+    }
+  },
+  "analise4_trechos__anotador_2": {
+    "principal_nota_ge_2": {
+      "tabela_linhas_humano_0_1_colunas_gabarito_0_1": [
+        [
+          47,
+          4
+        ],
+        [
+          66,
+          33
+        ]
+      ],
+      "kappa": 0.197
+    },
+    "sensibilidade_nota_3": {
+      "tabela_linhas_humano_0_1_colunas_gabarito_0_1": [
+        [
+          93,
+          29
+        ],
+        [
+          20,
+          8
+        ]
+      ],
+      "kappa": 0.043
+    },
+    "nota_por_status_no_gabarito": {
+      "no_gabarito": {
+        "1.0": 4,
+        "2.0": 25,
+        "3.0": 8
+      },
+      "fora_do_gabarito": {
+        "0.0": 23,
+        "1.0": 24,
+        "2.0": 46,
+        "3.0": 20
+      }
+    }
+  },
+  "analise3_especialista_1_so_lote1": {
+    "n": 30,
+    "concordancia_bruta_so_S": 0.7,
+    "kappa_so_S": 0.4
+  }
+}
